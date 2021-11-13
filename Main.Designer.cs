@@ -34,7 +34,7 @@ namespace ChinChin
             this.KhoHangBTN = new FontAwesome.Sharp.IconButton();
             this.ThongKeBTN = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.labelName = new System.Windows.Forms.Label();
+            this.btnHome = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelMenu.SuspendLayout();
@@ -73,6 +73,7 @@ namespace ChinChin
             this.ChamCongBTN.Text = "CHẤM CÔNG";
             this.ChamCongBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ChamCongBTN.UseVisualStyleBackColor = true;
+            this.ChamCongBTN.Click += new System.EventHandler(this.ChamCongBTN_Click);
             // 
             // KhoHangBTN
             // 
@@ -92,6 +93,7 @@ namespace ChinChin
             this.KhoHangBTN.Text = "KHO HÀNG";
             this.KhoHangBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.KhoHangBTN.UseVisualStyleBackColor = true;
+            this.KhoHangBTN.Click += new System.EventHandler(this.KhoHangBTN_Click);
             // 
             // ThongKeBTN
             // 
@@ -111,27 +113,29 @@ namespace ChinChin
             this.ThongKeBTN.Text = "THỐNG KÊ";
             this.ThongKeBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ThongKeBTN.UseVisualStyleBackColor = true;
+            this.ThongKeBTN.Click += new System.EventHandler(this.ThongKeBTN_Click);
             // 
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.panelLogo.Controls.Add(this.labelName);
+            this.panelLogo.Controls.Add(this.btnHome);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(250, 125);
             this.panelLogo.TabIndex = 0;
             // 
-            // labelName
+            // btnHome
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.Font = new System.Drawing.Font("MV Boli", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.ForeColor = System.Drawing.Color.Black;
-            this.labelName.Location = new System.Drawing.Point(12, 29);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(215, 63);
-            this.labelName.TabIndex = 0;
-            this.labelName.Text = "ChinChin";
+            this.btnHome.AutoSize = true;
+            this.btnHome.Font = new System.Drawing.Font("MV Boli", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.Black;
+            this.btnHome.Location = new System.Drawing.Point(12, 29);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(215, 63);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "ChinChin";
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panel2
             // 
@@ -164,7 +168,7 @@ namespace ChinChin
 
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label btnHome;
         private System.Windows.Forms.Panel panel2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private FontAwesome.Sharp.IconButton ChamCongBTN;
