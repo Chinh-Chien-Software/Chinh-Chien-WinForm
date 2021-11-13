@@ -1,0 +1,12 @@
+E:\repos\ChinChin\bin\Debug\ChinChin.exe.config
+E:\repos\ChinChin\bin\Debug\ChinChin.exe
+E:\repos\ChinChin\bin\Debug\ChinChin.pdb
+E:\repos\ChinChin\bin\Debug\FontAwesome.Sharp.dll
+E:\repos\ChinChin\obj\Debug\ChinChin.csproj.AssemblyReference.cache
+E:\repos\ChinChin\obj\Debug\ChinChin.Main.resources
+E:\repos\ChinChin\obj\Debug\ChinChin.Properties.Resources.resources
+E:\repos\ChinChin\obj\Debug\ChinChin.csproj.GenerateResource.cache
+E:\repos\ChinChin\obj\Debug\ChinChin.csproj.CoreCompileInputs.cache
+E:\repos\ChinChin\obj\Debug\ChinChin.csproj.CopyComplete
+E:\repos\ChinChin\obj\Debug\ChinChin.exe
+E:\repos\ChinChin\obj\Debug\ChinChin.pdb
