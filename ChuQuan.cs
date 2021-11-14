@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -11,19 +12,26 @@ using FontAwesome.Sharp;
 
 namespace ChinChin
 {
-    public partial class Main : Form
+    public partial class ChuQuan : Form
     {
         //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
+        private Form currentChildForm;
 
         //Constructor
-        public Main()
+        public ChuQuan()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
+
+            //Forms - Custom Tittle Bar
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         //Structs
@@ -38,7 +46,7 @@ namespace ChinChin
         }
 
         //Methods
-        private void ActivateButton (object senderBtn, Color color)
+        private void ActivateButton(object senderBtn, Color color)
         {
             if (senderBtn != null)
             {
@@ -57,12 +65,16 @@ namespace ChinChin
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
+
+                //Icon Current Child Form
+                iconCurrentChildForm.IconChar = currentBtn.IconChar;
+                iconCurrentChildForm.IconColor = color;
             }
         }
 
         private void DisableButton()
         {
-            if(currentBtn != null)
+            if (currentBtn != null)
             {
                 currentBtn.BackColor = Color.FromArgb(96, 110, 253);
                 currentBtn.ForeColor = Color.Gainsboro;
@@ -73,23 +85,45 @@ namespace ChinChin
             }
         }
 
+        private void OpenChildForm(Form childForm)
+        {
+            if (currentChildForm != null)
+            {
+                //Open Only Form
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelDesktop.Controls.Add(childForm);
+            panelDesktop.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+            labelTittleChildForm.Text = childForm.Text;
+        }
+
         private void ThongKeBTN_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormsChuQuan.FormThongKe());
         }
 
         private void KhoHangBTN_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new FormsChuQuan.FormKhoHang());
         }
 
         private void ChamCongBTN_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new FormsChuQuan.FormChamCong());
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            currentChildForm.Close();
             Reset();
         }
 
@@ -97,6 +131,41 @@ namespace ChinChin
         {
             DisableButton();
             leftBorderBtn.Visible = false;
+            iconCurrentChildForm.IconChar = IconChar.Home;
+            iconCurrentChildForm.IconColor = Color.MediumPurple;
+            labelTittleChildForm.Text = "Home";
+        }
+
+        //Drag my Software
+        [DllImport("user32")]
+        private static extern bool ReleaseCapture();
+
+        [DllImport("user32")]
+        private static extern int SendMessage(IntPtr hWnd, int Msg, int wp, int lp);
+        private void panelTittleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+                WindowState = FormWindowState.Normal;
+        }
+
+        private void iconPictureBox3_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

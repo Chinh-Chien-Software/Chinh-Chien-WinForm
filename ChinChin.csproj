@@ -49,16 +49,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs">
+    <Compile Include="FormsChuQuan\ChamCong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="FormsChuQuan\ChamCong.Designer.cs">
+      <DependentUpon>ChamCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsChuQuan\KhoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsChuQuan\KhoHang.Designer.cs">
+      <DependentUpon>KhoHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsChuQuan\ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsChuQuan\ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChuQuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChuQuan.Designer.cs">
+      <DependentUpon>ChuQuan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="FormsChuQuan\ChamCong.resx">
+      <DependentUpon>ChamCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsChuQuan\KhoHang.resx">
+      <DependentUpon>KhoHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsChuQuan\ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChuQuan.resx">
+      <DependentUpon>ChuQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

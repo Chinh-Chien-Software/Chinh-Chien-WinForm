@@ -10,3 +10,6 @@ E:\repos\ChinChin\obj\Debug\ChinChin.csproj.CoreCompileInputs.cache
 E:\repos\ChinChin\obj\Debug\ChinChin.csproj.CopyComplete
 E:\repos\ChinChin\obj\Debug\ChinChin.exe
 E:\repos\ChinChin\obj\Debug\ChinChin.pdb
+E:\repos\ChinChin\obj\Debug\ChinChin.FormsChuQuan.FormChamCong.resources
+E:\repos\ChinChin\obj\Debug\ChinChin.FormsChuQuan.FormKhoHang.resources
+E:\repos\ChinChin\obj\Debug\ChinChin.FormsChuQuan.FormThongKe.resources
