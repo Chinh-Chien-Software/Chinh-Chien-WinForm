@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 
-namespace ChinChin
+namespace ChinChin.FormsChuQuan
 {
     public partial class ChuQuan : Form
     {
@@ -19,7 +19,6 @@ namespace ChinChin
         private Panel leftBorderBtn;
         private Form currentChildForm;
 
-        //Constructor
         public ChuQuan()
         {
             InitializeComponent();

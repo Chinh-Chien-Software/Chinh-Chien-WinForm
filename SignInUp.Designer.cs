@@ -1,7 +1,7 @@
 ﻿
-namespace ChinChin.FormsChuQuan
+namespace ChinChin
 {
-    partial class FormThongKe
+    partial class SignInUp
     {
         /// <summary>
         /// Required designer variable.
@@ -29,34 +29,26 @@ namespace ChinChin.FormsChuQuan
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelThongKe = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
-            // labelThongKe
+            // SignInUp
             // 
-            this.labelThongKe.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelThongKe.AutoSize = true;
-            this.labelThongKe.Location = new System.Drawing.Point(312, 171);
-            this.labelThongKe.Name = "labelThongKe";
-            this.labelThongKe.Size = new System.Drawing.Size(139, 17);
-            this.labelThongKe.TabIndex = 0;
-            this.labelThongKe.Text = "Thống Kê Lại Tất Cà";
-            // 
-            // FormThongKe
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 533);
-            this.Controls.Add(this.labelThongKe);
-            this.Name = "FormThongKe";
-            this.Text = "ThongKe";
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(284, 461);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.HelpButton = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "SignInUp";
+            this.Text = "Chủ Quán";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelThongKe;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
+
