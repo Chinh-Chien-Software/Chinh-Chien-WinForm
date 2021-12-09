@@ -73,11 +73,11 @@
     <Compile Include="FormsChuQuan\ThongKe.Designer.cs">
       <DependentUpon>ThongKe.cs</DependentUpon>
     </Compile>
-    <Compile Include="SignInUp.cs">
+    <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SignInUp.Designer.cs">
-      <DependentUpon>SignInUp.cs</DependentUpon>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsQuanLy\QuanLy.cs">
       <SubType>Form</SubType>
@@ -99,8 +99,8 @@
     <EmbeddedResource Include="FormsChuQuan\ThongKe.resx">
       <DependentUpon>ThongKe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SignInUp.resx">
-      <DependentUpon>SignInUp.cs</DependentUpon>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsQuanLy\QuanLy.resx">
       <DependentUpon>QuanLy.cs</DependentUpon>
