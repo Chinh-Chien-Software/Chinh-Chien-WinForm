@@ -166,5 +166,11 @@ namespace ChinChin.FormsChuQuan
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void iconButtonThucDon_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new Forms_ChuQuan.FormThucDon());
+        }
     }
 }

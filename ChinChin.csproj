@@ -73,6 +73,12 @@
     <Compile Include="Forms_ChuQuan\ThongKe.Designer.cs">
       <DependentUpon>ThongKe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms_ChuQuan\ThucDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_ChuQuan\ThucDon.Designer.cs">
+      <DependentUpon>ThucDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_ChuQuan\ThongKe.resx">
       <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_ChuQuan\ThucDon.resx">
+      <DependentUpon>ThucDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
