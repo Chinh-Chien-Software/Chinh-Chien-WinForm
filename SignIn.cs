@@ -12,9 +12,9 @@ using FontAwesome.Sharp;
 
 namespace ChinChin
 {
-    public partial class SignInUp : Form
+    public partial class SignIn : Form
     {
-        public SignInUp()
+        public SignIn()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace ChinChin
 {
-    partial class SignInUp
+    partial class SignIn
     {
         /// <summary>
         /// Required designer variable.
