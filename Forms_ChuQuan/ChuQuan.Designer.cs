@@ -39,7 +39,7 @@ namespace ChinChin.FormsChuQuan
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Label();
             this.panelTittleBar = new System.Windows.Forms.Panel();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            this.btnMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.btnMaximize = new FontAwesome.Sharp.IconPictureBox();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
@@ -48,7 +48,7 @@ namespace ChinChin.FormsChuQuan
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTittleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
@@ -120,6 +120,7 @@ namespace ChinChin.FormsChuQuan
             this.ChamCongBTN.Text = "CHẤM CÔNG";
             this.ChamCongBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ChamCongBTN.UseVisualStyleBackColor = true;
+            this.ChamCongBTN.Click += new System.EventHandler(this.ChamCongBTN_Click_1);
             // 
             // KhoHangBTN
             // 
@@ -140,13 +141,14 @@ namespace ChinChin.FormsChuQuan
             this.KhoHangBTN.Text = "KHO HÀNG";
             this.KhoHangBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.KhoHangBTN.UseVisualStyleBackColor = true;
+            this.KhoHangBTN.Click += new System.EventHandler(this.KhoHangBTN_Click_1);
             // 
             // ThongKeBTN
             // 
             this.ThongKeBTN.Dock = System.Windows.Forms.DockStyle.Top;
             this.ThongKeBTN.FlatAppearance.BorderSize = 0;
             this.ThongKeBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ThongKeBTN.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThongKeBTN.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThongKeBTN.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ThongKeBTN.IconChar = FontAwesome.Sharp.IconChar.Dashcube;
             this.ThongKeBTN.IconColor = System.Drawing.Color.YellowGreen;
@@ -161,6 +163,7 @@ namespace ChinChin.FormsChuQuan
             this.ThongKeBTN.Text = "THỐNG KÊ";
             this.ThongKeBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ThongKeBTN.UseVisualStyleBackColor = true;
+            this.ThongKeBTN.Click += new System.EventHandler(this.ThongKeBTN_Click_1);
             // 
             // panelLogo
             // 
@@ -194,11 +197,12 @@ namespace ChinChin.FormsChuQuan
             this.btnHome.Size = new System.Drawing.Size(167, 63);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Owner";
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click_1);
             // 
             // panelTittleBar
             // 
             this.panelTittleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panelTittleBar.Controls.Add(this.iconPictureBox3);
+            this.panelTittleBar.Controls.Add(this.btnMinimize);
             this.panelTittleBar.Controls.Add(this.btnMaximize);
             this.panelTittleBar.Controls.Add(this.btnExit);
             this.panelTittleBar.Controls.Add(this.iconCurrentChildForm);
@@ -210,22 +214,25 @@ namespace ChinChin.FormsChuQuan
             this.panelTittleBar.Size = new System.Drawing.Size(1067, 50);
             this.panelTittleBar.TabIndex = 4;
             this.panelTittleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTittleBar_Paint);
+            this.panelTittleBar.DoubleClick += new System.EventHandler(this.panelTittleBar_DoubleClick);
+            this.panelTittleBar.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDoubleClick);
             this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown_1);
             // 
-            // iconPictureBox3
+            // btnMinimize
             // 
-            this.iconPictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.iconPictureBox3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
-            this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.Location = new System.Drawing.Point(956, 1);
-            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox3.TabIndex = 4;
-            this.iconPictureBox3.TabStop = false;
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnMinimize.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
+            this.btnMinimize.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMinimize.Location = new System.Drawing.Point(956, 1);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(32, 32);
+            this.btnMinimize.TabIndex = 4;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click_1);
             // 
             // btnMaximize
             // 
@@ -241,6 +248,7 @@ namespace ChinChin.FormsChuQuan
             this.btnMaximize.Size = new System.Drawing.Size(32, 32);
             this.btnMaximize.TabIndex = 3;
             this.btnMaximize.TabStop = false;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click_1);
             // 
             // btnExit
             // 
@@ -256,6 +264,7 @@ namespace ChinChin.FormsChuQuan
             this.btnExit.Size = new System.Drawing.Size(32, 32);
             this.btnExit.TabIndex = 2;
             this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // iconCurrentChildForm
             // 
@@ -296,7 +305,7 @@ namespace ChinChin.FormsChuQuan
             this.panelLogo.PerformLayout();
             this.panelTittleBar.ResumeLayout(false);
             this.panelTittleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
@@ -315,7 +324,7 @@ namespace ChinChin.FormsChuQuan
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Label btnHome;
         private System.Windows.Forms.Panel panelTittleBar;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
+        private FontAwesome.Sharp.IconPictureBox btnMinimize;
         private FontAwesome.Sharp.IconPictureBox btnMaximize;
         private FontAwesome.Sharp.IconPictureBox btnExit;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;

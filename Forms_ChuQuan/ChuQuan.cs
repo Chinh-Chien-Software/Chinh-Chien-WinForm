@@ -58,6 +58,7 @@ namespace ChinChin.FormsChuQuan
                 currentBtn.IconColor = color;
                 currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
+                currentBtn.Size = new Size(251, 60);
 
                 //left border button
                 leftBorderBtn.BackColor = color;
@@ -101,31 +102,27 @@ namespace ChinChin.FormsChuQuan
             childForm.Show();
             labelTittleChildForm.Text = childForm.Text;
         }
-
-        private void ThongKeBTN_Click(object sender, EventArgs e)
+        private void ThongKeBTN_Click_1(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormsChuQuan.FormThongKe());
         }
 
-        private void KhoHangBTN_Click(object sender, EventArgs e)
+        private void KhoHangBTN_Click_1(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new FormsChuQuan.FormKhoHang());
         }
-
-        private void ChamCongBTN_Click(object sender, EventArgs e)
+        private void ChamCongBTN_Click_1(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
             OpenChildForm(new FormsChuQuan.FormChamCong());
         }
-
-        private void btnHome_Click(object sender, EventArgs e)
+        private void btnHome_Click_1(object sender, EventArgs e)
         {
             currentChildForm.Close();
             Reset();
         }
-
         private void Reset()
         {
             DisableButton();
@@ -135,14 +132,13 @@ namespace ChinChin.FormsChuQuan
             labelTittleChildForm.Text = "Home";
         }
 
-        
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnMaximize_Click(object sender, EventArgs e)
+        private void btnMaximize_Click_1(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
             {
@@ -152,10 +148,12 @@ namespace ChinChin.FormsChuQuan
                 WindowState = FormWindowState.Normal;
         }
 
-        private void iconPictureBox3_Click(object sender, EventArgs e)
+        private void btnMinimize_Click_1(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
+
+
 
         private void iconButtonThucDon_Click(object sender, EventArgs e)
         {
@@ -180,5 +178,19 @@ namespace ChinChin.FormsChuQuan
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        private void panelTittleBar_DoubleClick(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void panelTittleBar_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+                WindowState = FormWindowState.Normal;
+        }
     }
 }
