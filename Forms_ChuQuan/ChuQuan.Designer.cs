@@ -1,7 +1,7 @@
 ﻿
 namespace ChinChin.FormsChuQuan
 {
-    partial class ChuQuan
+    partial class formChuQuan
     {
         /// <summary>
         /// Required designer variable.
@@ -278,7 +278,7 @@ namespace ChinChin.FormsChuQuan
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // ChuQuan
+            // formChuQuan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -287,7 +287,7 @@ namespace ChinChin.FormsChuQuan
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelTittleBar);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ChuQuan";
+            this.Name = "formChuQuan";
             this.Text = "ChuQuan";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);

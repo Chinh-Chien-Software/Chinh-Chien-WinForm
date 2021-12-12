@@ -12,14 +12,14 @@ using FontAwesome.Sharp;
 
 namespace ChinChin.FormsChuQuan
 {
-    public partial class ChuQuan : Form
+    public partial class formChuQuan : Form
     {
         //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
 
-        public ChuQuan()
+        public formChuQuan()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();

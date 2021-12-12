@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using ChinChin.FormsChuQuan;
 
 namespace ChinChin
 {
@@ -17,6 +18,16 @@ namespace ChinChin
         public SignIn()
         {
             InitializeComponent();
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            string username = txtBxUsername.Text;
+            string password = txtBxPassword.Text;
+            formChuQuan f2 = new formChuQuan();
+            f2.Show();
+            this.Hide();
+
         }
     }
 }

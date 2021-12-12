@@ -13,6 +13,6 @@ E:\repos\ChinChin\obj\Debug\ChinChin.FormsChuQuan.FormChamCong.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.FormsChuQuan.FormKhoHang.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.FormsChuQuan.FormThongKe.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.FormsQuanLy.QuanLy.resources
-E:\repos\ChinChin\obj\Debug\ChinChin.FormsChuQuan.ChuQuan.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.Forms_ChuQuan.FormThucDon.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.SignIn.resources
+E:\repos\ChinChin\obj\Debug\ChinChin.FormsChuQuan.formChuQuan.resources
