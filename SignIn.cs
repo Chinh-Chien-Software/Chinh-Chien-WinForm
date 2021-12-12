@@ -18,6 +18,7 @@ namespace ChinChin
         public SignIn()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
@@ -27,6 +28,11 @@ namespace ChinChin
             formChuQuan f2 = new formChuQuan();
             f2.Show();
             this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

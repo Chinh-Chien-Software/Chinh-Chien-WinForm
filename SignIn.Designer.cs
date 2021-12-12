@@ -29,14 +29,13 @@ namespace ChinChin
         /// </summary>
         private void InitializeComponent()
         {
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.txtBxUsername = new System.Windows.Forms.TextBox();
             this.txtBxPassword = new System.Windows.Forms.TextBox();
             this.lblSignIn = new System.Windows.Forms.Label();
-            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
             this.btnSignIn = new System.Windows.Forms.Button();
             this.ckBxRememberSignIn = new System.Windows.Forms.CheckBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtBxUsername
@@ -45,7 +44,6 @@ namespace ChinChin
             this.txtBxUsername.Name = "txtBxUsername";
             this.txtBxUsername.Size = new System.Drawing.Size(237, 22);
             this.txtBxUsername.TabIndex = 1;
-            this.txtBxUsername.Text = "Username";
             // 
             // txtBxPassword
             // 
@@ -53,17 +51,18 @@ namespace ChinChin
             this.txtBxPassword.Name = "txtBxPassword";
             this.txtBxPassword.Size = new System.Drawing.Size(237, 22);
             this.txtBxPassword.TabIndex = 2;
-            this.txtBxPassword.Text = "Pasword";
+            this.txtBxPassword.Tag = "";
             // 
             // lblSignIn
             // 
             this.lblSignIn.AutoSize = true;
             this.lblSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignIn.Location = new System.Drawing.Point(4, 23);
+            this.lblSignIn.Location = new System.Drawing.Point(-8, 23);
             this.lblSignIn.Name = "lblSignIn";
             this.lblSignIn.Size = new System.Drawing.Size(375, 78);
             this.lblSignIn.TabIndex = 3;
             this.lblSignIn.Text = "Đăng nhập";
+            this.lblSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnSignIn
             // 
@@ -86,36 +85,58 @@ namespace ChinChin
             this.ckBxRememberSignIn.Text = "Ghi nhớ đăng nhập";
             this.ckBxRememberSignIn.UseVisualStyleBackColor = true;
             // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.White;
+            this.lblUsername.Location = new System.Drawing.Point(80, 168);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(73, 17);
+            this.lblUsername.TabIndex = 7;
+            this.lblUsername.Text = "Username";
+            this.lblUsername.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.White;
+            this.lblPassword.Location = new System.Drawing.Point(80, 211);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(69, 17);
+            this.lblPassword.TabIndex = 8;
+            this.lblPassword.Text = "Password";
+            // 
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(379, 567);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.ckBxRememberSignIn);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.lblSignIn);
             this.Controls.Add(this.txtBxPassword);
             this.Controls.Add(this.txtBxUsername);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SignIn";
-            this.Text = "Chủ Quán";
+            this.Text = "Đăng Nhập";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TextBox txtBxUsername;
         private System.Windows.Forms.TextBox txtBxPassword;
         private System.Windows.Forms.Label lblSignIn;
-        private System.ComponentModel.BackgroundWorker backgroundWorker2;
-        private System.ComponentModel.BackgroundWorker backgroundWorker3;
         private System.Windows.Forms.Button btnSignIn;
         private System.Windows.Forms.CheckBox ckBxRememberSignIn;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblPassword;
     }
 }
 
