@@ -209,6 +209,8 @@ namespace ChinChin.FormsChuQuan
             this.panelTittleBar.Name = "panelTittleBar";
             this.panelTittleBar.Size = new System.Drawing.Size(1067, 50);
             this.panelTittleBar.TabIndex = 4;
+            this.panelTittleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTittleBar_Paint);
+            this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown_1);
             // 
             // iconPictureBox3
             // 

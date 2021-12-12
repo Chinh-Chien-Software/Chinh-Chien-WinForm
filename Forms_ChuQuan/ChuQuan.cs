@@ -135,17 +135,7 @@ namespace ChinChin.FormsChuQuan
             labelTittleChildForm.Text = "Home";
         }
 
-        //Drag my Software
-        [DllImport("user32")]
-        private static extern bool ReleaseCapture();
-
-        [DllImport("user32")]
-        private static extern int SendMessage(IntPtr hWnd, int Msg, int wp, int lp);
-        private void panelTittleBar_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
+        
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -172,5 +162,23 @@ namespace ChinChin.FormsChuQuan
             ActivateButton(sender, RGBColors.color3);
             OpenChildForm(new Forms_ChuQuan.FormThucDon());
         }
+
+        private void panelTittleBar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        //Drag my Software
+        [DllImport("user32")]
+        private static extern bool ReleaseCapture();
+
+        [DllImport("user32")]
+        private static extern int SendMessage(IntPtr hWnd, int Msg, int wp, int lp);
+        private void panelTittleBar_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
     }
 }

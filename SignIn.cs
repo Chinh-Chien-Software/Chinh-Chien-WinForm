@@ -27,7 +27,6 @@ namespace ChinChin
             formChuQuan f2 = new formChuQuan();
             f2.Show();
             this.Hide();
-
         }
     }
 }
