@@ -94,7 +94,7 @@ namespace ChinChin.FormsQuanLy
             this.ChamCongBTN.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
             this.ChamCongBTN.Size = new System.Drawing.Size(251, 60);
             this.ChamCongBTN.TabIndex = 3;
-            this.ChamCongBTN.Text = "CHẤM CÔNG";
+            this.ChamCongBTN.Text = "BÁO CÁO";
             this.ChamCongBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ChamCongBTN.UseVisualStyleBackColor = true;
             // 
@@ -117,13 +117,14 @@ namespace ChinChin.FormsQuanLy
             this.KhoHangBTN.Text = "KHO HÀNG";
             this.KhoHangBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.KhoHangBTN.UseVisualStyleBackColor = true;
+            this.KhoHangBTN.Click += new System.EventHandler(this.KhoHangBTN_Click);
             // 
             // ThongKeBTN
             // 
             this.ThongKeBTN.Dock = System.Windows.Forms.DockStyle.Top;
             this.ThongKeBTN.FlatAppearance.BorderSize = 0;
             this.ThongKeBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ThongKeBTN.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThongKeBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.ThongKeBTN.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ThongKeBTN.IconChar = FontAwesome.Sharp.IconChar.Dashcube;
             this.ThongKeBTN.IconColor = System.Drawing.Color.YellowGreen;
@@ -135,9 +136,10 @@ namespace ChinChin.FormsQuanLy
             this.ThongKeBTN.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
             this.ThongKeBTN.Size = new System.Drawing.Size(251, 60);
             this.ThongKeBTN.TabIndex = 1;
-            this.ThongKeBTN.Text = "THỐNG KÊ";
+            this.ThongKeBTN.Text = "LỊCH LÀM";
             this.ThongKeBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ThongKeBTN.UseVisualStyleBackColor = true;
+            this.ThongKeBTN.Click += new System.EventHandler(this.LichLamBTN_Click);
             // 
             // panelLogo
             // 
@@ -164,11 +166,11 @@ namespace ChinChin.FormsQuanLy
             // btnHome
             // 
             this.btnHome.AutoSize = true;
-            this.btnHome.Font = new System.Drawing.Font("MV Boli", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.Black;
-            this.btnHome.Location = new System.Drawing.Point(22, 26);
+            this.btnHome.Location = new System.Drawing.Point(3, 26);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(211, 63);
+            this.btnHome.Size = new System.Drawing.Size(176, 52);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Manager";
             // 
@@ -263,7 +265,7 @@ namespace ChinChin.FormsQuanLy
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelTittleBar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "QuanLy";
             this.Text = "QuanLy";
             this.panelMenu.ResumeLayout(false);
