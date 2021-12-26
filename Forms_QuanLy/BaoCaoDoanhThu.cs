@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin.FormsChuQuan
+namespace ChinChin.Forms_QuanLy
 {
-    public partial class FormThongKe : Form
+    public partial class BaoCaoDoanhThu : Form
     {
-        public FormThongKe()
+        public BaoCaoDoanhThu()
         {
             InitializeComponent();
         }
