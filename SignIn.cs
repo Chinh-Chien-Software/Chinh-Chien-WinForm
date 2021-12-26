@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using ChinChin.FormsChuQuan;
+using ChinChin.FormsQuanLy;
 
 namespace ChinChin
 {
@@ -26,7 +27,15 @@ namespace ChinChin
             string username = txtBxUsername.Text;
             string password = txtBxPassword.Text;
             formChuQuan f2 = new formChuQuan();
-            f2.Show();
+            QuanLy f3 = new QuanLy();
+            if (username == "chuquan")
+            {
+                f2.Show();
+            } else if (username == "quanly")
+            {
+                f3.Show();
+            }
+
             this.Hide();
         }
 

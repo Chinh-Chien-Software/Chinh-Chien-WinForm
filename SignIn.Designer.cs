@@ -34,8 +34,6 @@ namespace ChinChin
             this.lblSignIn = new System.Windows.Forms.Label();
             this.btnSignIn = new System.Windows.Forms.Button();
             this.ckBxRememberSignIn = new System.Windows.Forms.CheckBox();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.lblPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtBxUsername
@@ -85,35 +83,12 @@ namespace ChinChin
             this.ckBxRememberSignIn.Text = "Ghi nhớ đăng nhập";
             this.ckBxRememberSignIn.UseVisualStyleBackColor = true;
             // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.BackColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(80, 168);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(73, 17);
-            this.lblUsername.TabIndex = 7;
-            this.lblUsername.Text = "Username";
-            this.lblUsername.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.BackColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(80, 211);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(69, 17);
-            this.lblPassword.TabIndex = 8;
-            this.lblPassword.Text = "Password";
-            // 
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(379, 567);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.ckBxRememberSignIn);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.lblSignIn);
@@ -135,8 +110,6 @@ namespace ChinChin
         private System.Windows.Forms.Label lblSignIn;
         private System.Windows.Forms.Button btnSignIn;
         private System.Windows.Forms.CheckBox ckBxRememberSignIn;
-        private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.Label lblPassword;
     }
 }
 
