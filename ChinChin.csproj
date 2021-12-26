@@ -61,23 +61,47 @@
     <Compile Include="Forms_ChuQuan\ChuQuan.Designer.cs">
       <DependentUpon>ChuQuan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms_ChuQuan\KhoHang.cs">
+    <Compile Include="Forms_ChuQuan\XemKhoHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms_ChuQuan\KhoHang.Designer.cs">
-      <DependentUpon>KhoHang.cs</DependentUpon>
+    <Compile Include="Forms_ChuQuan\XemKhoHang.Designer.cs">
+      <DependentUpon>XemKhoHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms_ChuQuan\ThongKe.cs">
+    <Compile Include="Forms_ChuQuan\XemThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms_ChuQuan\ThongKe.Designer.cs">
-      <DependentUpon>ThongKe.cs</DependentUpon>
+    <Compile Include="Forms_ChuQuan\XemThongKe.Designer.cs">
+      <DependentUpon>XemThongKe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms_ChuQuan\ThucDon.cs">
+    <Compile Include="Forms_ChuQuan\QuanLyThucDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms_ChuQuan\ThucDon.Designer.cs">
-      <DependentUpon>ThucDon.cs</DependentUpon>
+    <Compile Include="Forms_ChuQuan\QuanLyThucDon.Designer.cs">
+      <DependentUpon>QuanLyThucDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_NhanVien\TiepNhanDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_NhanVien\TiepNhanDonHang.Designer.cs">
+      <DependentUpon>TiepNhanDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_QuanLy\BaoCaoDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_QuanLy\BaoCaoDoanhThu.Designer.cs">
+      <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_QuanLy\QuanLyKhoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_QuanLy\QuanLyKhoHang.Designer.cs">
+      <DependentUpon>QuanLyKhoHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_QuanLy\QuanLyLichLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_QuanLy\QuanLyLichLam.Designer.cs">
+      <DependentUpon>QuanLyLichLam.cs</DependentUpon>
     </Compile>
     <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
@@ -99,14 +123,17 @@
     <EmbeddedResource Include="Forms_ChuQuan\ChuQuan.resx">
       <DependentUpon>ChuQuan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms_ChuQuan\KhoHang.resx">
-      <DependentUpon>KhoHang.cs</DependentUpon>
+    <EmbeddedResource Include="Forms_ChuQuan\XemKhoHang.resx">
+      <DependentUpon>XemKhoHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms_ChuQuan\ThongKe.resx">
-      <DependentUpon>ThongKe.cs</DependentUpon>
+    <EmbeddedResource Include="Forms_ChuQuan\XemThongKe.resx">
+      <DependentUpon>XemThongKe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms_ChuQuan\ThucDon.resx">
-      <DependentUpon>ThucDon.cs</DependentUpon>
+    <EmbeddedResource Include="Forms_ChuQuan\QuanLyThucDon.resx">
+      <DependentUpon>QuanLyThucDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_QuanLy\QuanLyLichLam.resx">
+      <DependentUpon>QuanLyLichLam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
@@ -137,8 +164,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms_NV_ThuNgan\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,3 +16,4 @@ E:\repos\ChinChin\obj\Debug\ChinChin.FormsQuanLy.QuanLy.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.Forms_ChuQuan.FormThucDon.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.SignIn.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.FormsChuQuan.formChuQuan.resources
+E:\repos\ChinChin\obj\Debug\ChinChin.Forms_QuanLy.QuanLyLichLam.resources

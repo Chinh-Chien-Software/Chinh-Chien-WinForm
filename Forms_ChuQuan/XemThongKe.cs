@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin.Forms_ChuQuan
+namespace ChinChin.FormsChuQuan
 {
-    public partial class FormThucDon : Form
+    public partial class FormThongKe : Form
     {
-        public FormThucDon()
+        public FormThongKe()
         {
             InitializeComponent();
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
