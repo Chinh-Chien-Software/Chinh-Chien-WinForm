@@ -1,7 +1,7 @@
 ﻿
-namespace ChinChin.FormsQuanLy
+namespace ChinChin.Forms_NhanVien
 {
-    partial class QuanLy
+    partial class NhanVienThuNgan
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,6 @@ namespace ChinChin.FormsQuanLy
         {
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.ChamCongBTN = new FontAwesome.Sharp.IconButton();
             this.KhoHangBTN = new FontAwesome.Sharp.IconButton();
             this.ThongKeBTN = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
@@ -61,13 +60,12 @@ namespace ChinChin.FormsQuanLy
             this.panelDesktop.Location = new System.Drawing.Point(251, 50);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(715, 530);
-            this.panelDesktop.TabIndex = 5;
+            this.panelDesktop.Size = new System.Drawing.Size(830, 547);
+            this.panelDesktop.TabIndex = 8;
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.panelMenu.Controls.Add(this.ChamCongBTN);
             this.panelMenu.Controls.Add(this.KhoHangBTN);
             this.panelMenu.Controls.Add(this.ThongKeBTN);
             this.panelMenu.Controls.Add(this.panelLogo);
@@ -76,28 +74,8 @@ namespace ChinChin.FormsQuanLy
             this.panelMenu.Location = new System.Drawing.Point(0, 50);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(251, 530);
-            this.panelMenu.TabIndex = 3;
-            // 
-            // ChamCongBTN
-            // 
-            this.ChamCongBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ChamCongBTN.FlatAppearance.BorderSize = 0;
-            this.ChamCongBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ChamCongBTN.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ChamCongBTN.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.ChamCongBTN.IconColor = System.Drawing.Color.YellowGreen;
-            this.ChamCongBTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ChamCongBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ChamCongBTN.Location = new System.Drawing.Point(0, 246);
-            this.ChamCongBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ChamCongBTN.Name = "ChamCongBTN";
-            this.ChamCongBTN.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.ChamCongBTN.Size = new System.Drawing.Size(251, 60);
-            this.ChamCongBTN.TabIndex = 3;
-            this.ChamCongBTN.Text = "BÁO CÁO";
-            this.ChamCongBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ChamCongBTN.UseVisualStyleBackColor = true;
+            this.panelMenu.Size = new System.Drawing.Size(251, 547);
+            this.panelMenu.TabIndex = 6;
             // 
             // KhoHangBTN
             // 
@@ -115,10 +93,9 @@ namespace ChinChin.FormsQuanLy
             this.KhoHangBTN.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
             this.KhoHangBTN.Size = new System.Drawing.Size(251, 60);
             this.KhoHangBTN.TabIndex = 2;
-            this.KhoHangBTN.Text = "KHO HÀNG";
+            this.KhoHangBTN.Text = "BÁO CÁO";
             this.KhoHangBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.KhoHangBTN.UseVisualStyleBackColor = true;
-            this.KhoHangBTN.Click += new System.EventHandler(this.KhoHangBTN_Click);
             // 
             // ThongKeBTN
             // 
@@ -137,10 +114,10 @@ namespace ChinChin.FormsQuanLy
             this.ThongKeBTN.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
             this.ThongKeBTN.Size = new System.Drawing.Size(251, 60);
             this.ThongKeBTN.TabIndex = 1;
-            this.ThongKeBTN.Text = "LỊCH LÀM";
+            this.ThongKeBTN.Text = "NHẬN ĐƠN";
             this.ThongKeBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ThongKeBTN.UseVisualStyleBackColor = true;
-            this.ThongKeBTN.Click += new System.EventHandler(this.LichLamBTN_Click);
+            this.ThongKeBTN.Click += new System.EventHandler(this.ThongKeBTN_Click);
             // 
             // panelLogo
             // 
@@ -167,7 +144,6 @@ namespace ChinChin.FormsQuanLy
             this.buttonLogOut.Text = "Log out";
             this.buttonLogOut.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonLogOut.UseVisualStyleBackColor = true;
-            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // lblVersion
             // 
@@ -186,9 +162,9 @@ namespace ChinChin.FormsQuanLy
             this.btnHome.ForeColor = System.Drawing.Color.Black;
             this.btnHome.Location = new System.Drawing.Point(4, 38);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(176, 52);
+            this.btnHome.Size = new System.Drawing.Size(152, 52);
             this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "Manager";
+            this.btnHome.Text = "Cashier";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panelTittleBar
@@ -203,9 +179,8 @@ namespace ChinChin.FormsQuanLy
             this.panelTittleBar.Location = new System.Drawing.Point(0, 0);
             this.panelTittleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTittleBar.Name = "panelTittleBar";
-            this.panelTittleBar.Size = new System.Drawing.Size(966, 50);
-            this.panelTittleBar.TabIndex = 4;
-            this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown);
+            this.panelTittleBar.Size = new System.Drawing.Size(1081, 50);
+            this.panelTittleBar.TabIndex = 7;
             // 
             // MinimizeBtn
             // 
@@ -215,13 +190,12 @@ namespace ChinChin.FormsQuanLy
             this.MinimizeBtn.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
             this.MinimizeBtn.IconColor = System.Drawing.SystemColors.ControlText;
             this.MinimizeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.MinimizeBtn.Location = new System.Drawing.Point(855, 9);
+            this.MinimizeBtn.Location = new System.Drawing.Point(970, 9);
             this.MinimizeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimizeBtn.Name = "MinimizeBtn";
             this.MinimizeBtn.Size = new System.Drawing.Size(32, 32);
             this.MinimizeBtn.TabIndex = 4;
             this.MinimizeBtn.TabStop = false;
-            this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
             // 
             // btnMaximize
             // 
@@ -231,13 +205,12 @@ namespace ChinChin.FormsQuanLy
             this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.ExpandArrowsAlt;
             this.btnMaximize.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaximize.Location = new System.Drawing.Point(894, 9);
+            this.btnMaximize.Location = new System.Drawing.Point(1009, 9);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(32, 32);
             this.btnMaximize.TabIndex = 3;
             this.btnMaximize.TabStop = false;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // btnExit
             // 
@@ -247,13 +220,12 @@ namespace ChinChin.FormsQuanLy
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.Location = new System.Drawing.Point(931, 9);
+            this.btnExit.Location = new System.Drawing.Point(1046, 9);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(32, 32);
             this.btnExit.TabIndex = 2;
             this.btnExit.TabStop = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // iconCurrentChildForm
             // 
@@ -278,17 +250,16 @@ namespace ChinChin.FormsQuanLy
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // QuanLy
+            // NhanVienThuNgan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(966, 580);
+            this.ClientSize = new System.Drawing.Size(1081, 597);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelTittleBar);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "QuanLy";
-            this.Text = "QuanLy";
+            this.Name = "NhanVienThuNgan";
+            this.Text = "NhanVienThuNgan";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
@@ -306,10 +277,10 @@ namespace ChinChin.FormsQuanLy
 
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Panel panelMenu;
-        private FontAwesome.Sharp.IconButton ChamCongBTN;
         private FontAwesome.Sharp.IconButton KhoHangBTN;
         private FontAwesome.Sharp.IconButton ThongKeBTN;
         private System.Windows.Forms.Panel panelLogo;
+        private System.Windows.Forms.Button buttonLogOut;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Label btnHome;
         private System.Windows.Forms.Panel panelTittleBar;
@@ -319,6 +290,5 @@ namespace ChinChin.FormsQuanLy
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Label labelTittleChildForm;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button buttonLogOut;
     }
 }

@@ -79,6 +79,18 @@
     <Compile Include="Forms_ChuQuan\QuanLyMenu.Designer.cs">
       <DependentUpon>QuanLyMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms_NhanVien\NhanVienPhaChe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_NhanVien\NhanVienPhaChe.Designer.cs">
+      <DependentUpon>NhanVienPhaChe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_NhanVien\NhanVienThuNgan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_NhanVien\NhanVienThuNgan.Designer.cs">
+      <DependentUpon>NhanVienThuNgan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms_NhanVien\TiepNhanDonHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +143,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_ChuQuan\QuanLyMenu.resx">
       <DependentUpon>QuanLyMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_NhanVien\NhanVienThuNgan.resx">
+      <DependentUpon>NhanVienThuNgan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_QuanLy\BaoCaoDoanhThu.resx">
+      <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_QuanLy\QuanLyKhoHang.resx">
       <DependentUpon>QuanLyKhoHang.cs</DependentUpon>
