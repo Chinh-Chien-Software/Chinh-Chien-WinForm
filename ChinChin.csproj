@@ -73,11 +73,11 @@
     <Compile Include="Forms_ChuQuan\XemThongKe.Designer.cs">
       <DependentUpon>XemThongKe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms_ChuQuan\QuanLyThucDon.cs">
+    <Compile Include="Forms_ChuQuan\QuanLyMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms_ChuQuan\QuanLyThucDon.Designer.cs">
-      <DependentUpon>QuanLyThucDon.cs</DependentUpon>
+    <Compile Include="Forms_ChuQuan\QuanLyMenu.Designer.cs">
+      <DependentUpon>QuanLyMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms_NhanVien\TiepNhanDonHang.cs">
       <SubType>Form</SubType>
@@ -129,8 +129,8 @@
     <EmbeddedResource Include="Forms_ChuQuan\XemThongKe.resx">
       <DependentUpon>XemThongKe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms_ChuQuan\QuanLyThucDon.resx">
-      <DependentUpon>QuanLyThucDon.cs</DependentUpon>
+    <EmbeddedResource Include="Forms_ChuQuan\QuanLyMenu.resx">
+      <DependentUpon>QuanLyMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_QuanLy\QuanLyKhoHang.resx">
       <DependentUpon>QuanLyKhoHang.cs</DependentUpon>
