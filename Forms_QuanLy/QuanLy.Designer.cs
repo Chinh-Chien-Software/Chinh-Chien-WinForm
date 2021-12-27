@@ -35,10 +35,11 @@ namespace ChinChin.FormsQuanLy
             this.KhoHangBTN = new FontAwesome.Sharp.IconButton();
             this.ThongKeBTN = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.buttonLogOut = new System.Windows.Forms.Button();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Label();
             this.panelTittleBar = new System.Windows.Forms.Panel();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            this.MinimizeBtn = new FontAwesome.Sharp.IconPictureBox();
             this.btnMaximize = new FontAwesome.Sharp.IconPictureBox();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
@@ -47,7 +48,7 @@ namespace ChinChin.FormsQuanLy
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTittleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
@@ -144,6 +145,7 @@ namespace ChinChin.FormsQuanLy
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panelLogo.Controls.Add(this.buttonLogOut);
             this.panelLogo.Controls.Add(this.lblVersion);
             this.panelLogo.Controls.Add(this.btnHome);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -152,6 +154,20 @@ namespace ChinChin.FormsQuanLy
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(251, 126);
             this.panelLogo.TabIndex = 0;
+            // 
+            // buttonLogOut
+            // 
+            this.buttonLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonLogOut.ForeColor = System.Drawing.Color.Black;
+            this.buttonLogOut.Location = new System.Drawing.Point(170, 5);
+            this.buttonLogOut.Name = "buttonLogOut";
+            this.buttonLogOut.Size = new System.Drawing.Size(75, 25);
+            this.buttonLogOut.TabIndex = 3;
+            this.buttonLogOut.Text = "Log out";
+            this.buttonLogOut.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonLogOut.UseVisualStyleBackColor = true;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // lblVersion
             // 
@@ -165,21 +181,20 @@ namespace ChinChin.FormsQuanLy
             // 
             // btnHome
             // 
-            this.btnHome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHome.AutoSize = true;
             this.btnHome.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.Black;
-            this.btnHome.Location = new System.Drawing.Point(38, 47);
+            this.btnHome.Location = new System.Drawing.Point(4, 38);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(176, 52);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Manager";
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panelTittleBar
             // 
             this.panelTittleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panelTittleBar.Controls.Add(this.iconPictureBox3);
+            this.panelTittleBar.Controls.Add(this.MinimizeBtn);
             this.panelTittleBar.Controls.Add(this.btnMaximize);
             this.panelTittleBar.Controls.Add(this.btnExit);
             this.panelTittleBar.Controls.Add(this.iconCurrentChildForm);
@@ -190,21 +205,23 @@ namespace ChinChin.FormsQuanLy
             this.panelTittleBar.Name = "panelTittleBar";
             this.panelTittleBar.Size = new System.Drawing.Size(1640, 50);
             this.panelTittleBar.TabIndex = 4;
+            this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown);
             // 
-            // iconPictureBox3
+            // MinimizeBtn
             // 
-            this.iconPictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.iconPictureBox3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
-            this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.Location = new System.Drawing.Point(1529, 1);
-            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox3.TabIndex = 4;
-            this.iconPictureBox3.TabStop = false;
+            this.MinimizeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MinimizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.MinimizeBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.MinimizeBtn.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
+            this.MinimizeBtn.IconColor = System.Drawing.SystemColors.ControlText;
+            this.MinimizeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MinimizeBtn.Location = new System.Drawing.Point(1529, 1);
+            this.MinimizeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimizeBtn.Name = "MinimizeBtn";
+            this.MinimizeBtn.Size = new System.Drawing.Size(32, 32);
+            this.MinimizeBtn.TabIndex = 4;
+            this.MinimizeBtn.TabStop = false;
+            this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
             // 
             // btnMaximize
             // 
@@ -220,6 +237,7 @@ namespace ChinChin.FormsQuanLy
             this.btnMaximize.Size = new System.Drawing.Size(32, 32);
             this.btnMaximize.TabIndex = 3;
             this.btnMaximize.TabStop = false;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // btnExit
             // 
@@ -235,10 +253,11 @@ namespace ChinChin.FormsQuanLy
             this.btnExit.Size = new System.Drawing.Size(32, 32);
             this.btnExit.TabIndex = 2;
             this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // iconCurrentChildForm
             // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.Transparent;
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.White;
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -275,7 +294,7 @@ namespace ChinChin.FormsQuanLy
             this.panelLogo.PerformLayout();
             this.panelTittleBar.ResumeLayout(false);
             this.panelTittleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
@@ -294,11 +313,12 @@ namespace ChinChin.FormsQuanLy
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Label btnHome;
         private System.Windows.Forms.Panel panelTittleBar;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
+        private FontAwesome.Sharp.IconPictureBox MinimizeBtn;
         private FontAwesome.Sharp.IconPictureBox btnMaximize;
         private FontAwesome.Sharp.IconPictureBox btnExit;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Label labelTittleChildForm;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button buttonLogOut;
     }
 }

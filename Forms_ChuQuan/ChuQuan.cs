@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 
+
 namespace ChinChin.FormsChuQuan
 {
     public partial class formChuQuan : Form
@@ -180,7 +181,12 @@ namespace ChinChin.FormsChuQuan
 
         private void panelTittleBar_DoubleClick(object sender, EventArgs e)
         {
-            
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+                WindowState = FormWindowState.Normal;
         }
 
         private void panelTittleBar_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -191,6 +197,13 @@ namespace ChinChin.FormsChuQuan
             }
             else
                 WindowState = FormWindowState.Normal;
+        }
+
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            SignIn logout = new SignIn();
+            logout.Show();
+            this.Hide();
         }
     }
 }

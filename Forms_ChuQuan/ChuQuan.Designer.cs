@@ -36,6 +36,7 @@ namespace ChinChin.FormsChuQuan
             this.KhoHangBTN = new FontAwesome.Sharp.IconButton();
             this.ThongKeBTN = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.buttonLogOut = new System.Windows.Forms.Button();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Label();
             this.panelTittleBar = new System.Windows.Forms.Panel();
@@ -168,6 +169,7 @@ namespace ChinChin.FormsChuQuan
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panelLogo.Controls.Add(this.buttonLogOut);
             this.panelLogo.Controls.Add(this.lblVersion);
             this.panelLogo.Controls.Add(this.btnHome);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -176,6 +178,20 @@ namespace ChinChin.FormsChuQuan
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(251, 126);
             this.panelLogo.TabIndex = 0;
+            // 
+            // buttonLogOut
+            // 
+            this.buttonLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonLogOut.ForeColor = System.Drawing.Color.Black;
+            this.buttonLogOut.Location = new System.Drawing.Point(170, 6);
+            this.buttonLogOut.Name = "buttonLogOut";
+            this.buttonLogOut.Size = new System.Drawing.Size(75, 25);
+            this.buttonLogOut.TabIndex = 2;
+            this.buttonLogOut.Text = "Log out";
+            this.buttonLogOut.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonLogOut.UseVisualStyleBackColor = true;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // lblVersion
             // 
@@ -192,7 +208,7 @@ namespace ChinChin.FormsChuQuan
             this.btnHome.AutoSize = true;
             this.btnHome.Font = new System.Drawing.Font("MV Boli", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.Black;
-            this.btnHome.Location = new System.Drawing.Point(35, 26);
+            this.btnHome.Location = new System.Drawing.Point(-4, 26);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(167, 63);
             this.btnHome.TabIndex = 0;
@@ -214,8 +230,6 @@ namespace ChinChin.FormsChuQuan
             this.panelTittleBar.Size = new System.Drawing.Size(1067, 50);
             this.panelTittleBar.TabIndex = 4;
             this.panelTittleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTittleBar_Paint);
-            this.panelTittleBar.DoubleClick += new System.EventHandler(this.panelTittleBar_DoubleClick);
-            this.panelTittleBar.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDoubleClick);
             this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown_1);
             // 
             // btnMinimize
@@ -331,5 +345,6 @@ namespace ChinChin.FormsChuQuan
         private System.Windows.Forms.Label labelTittleChildForm;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private FontAwesome.Sharp.IconButton iconButtonThucDon;
+        private System.Windows.Forms.Button buttonLogOut;
     }
 }

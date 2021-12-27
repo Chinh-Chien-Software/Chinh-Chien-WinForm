@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -106,6 +107,59 @@ namespace ChinChin.FormsQuanLy
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new Forms_QuanLy.QuanLyKhoHang());
+        }
+
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            SignIn logout = new SignIn();
+            logout.Show();
+            this.Hide();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            currentChildForm.Close();
+            Reset();
+        }
+        private void Reset()
+        {
+            DisableButton();
+            leftBorderBtn.Visible = false;
+            iconCurrentChildForm.IconChar = IconChar.Home;
+            iconCurrentChildForm.IconColor = Color.MediumPurple;
+            labelTittleChildForm.Text = "Home";
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+                WindowState = FormWindowState.Normal;
+        }
+
+        private void MinimizeBtn_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        //Drag my Software
+        [DllImport("user32")]
+        private static extern bool ReleaseCapture();
+
+        [DllImport("user32")]
+        private static extern int SendMessage(IntPtr hWnd, int Msg, int wp, int lp);
+        private void panelTittleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }
