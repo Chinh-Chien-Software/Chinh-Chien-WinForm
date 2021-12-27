@@ -132,6 +132,9 @@
     <EmbeddedResource Include="Forms_ChuQuan\QuanLyThucDon.resx">
       <DependentUpon>QuanLyThucDon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms_QuanLy\QuanLyKhoHang.resx">
+      <DependentUpon>QuanLyKhoHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms_QuanLy\QuanLyLichLam.resx">
       <DependentUpon>QuanLyLichLam.cs</DependentUpon>
     </EmbeddedResource>

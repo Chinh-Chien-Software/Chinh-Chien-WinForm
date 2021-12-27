@@ -165,10 +165,12 @@ namespace ChinChin.FormsQuanLy
             // 
             // btnHome
             // 
+            this.btnHome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHome.AutoSize = true;
             this.btnHome.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.Black;
-            this.btnHome.Location = new System.Drawing.Point(3, 26);
+            this.btnHome.Location = new System.Drawing.Point(38, 47);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(176, 52);
             this.btnHome.TabIndex = 0;

@@ -54,13 +54,14 @@ namespace ChinChin
             // lblSignIn
             // 
             this.lblSignIn.AutoSize = true;
+            this.lblSignIn.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignIn.Location = new System.Drawing.Point(-8, 23);
+            this.lblSignIn.Location = new System.Drawing.Point(0, 0);
             this.lblSignIn.Name = "lblSignIn";
             this.lblSignIn.Size = new System.Drawing.Size(375, 78);
             this.lblSignIn.TabIndex = 3;
             this.lblSignIn.Text = "Đăng nhập";
-            this.lblSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSignIn
             // 
