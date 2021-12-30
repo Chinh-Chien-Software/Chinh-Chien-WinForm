@@ -60,8 +60,9 @@ namespace ChinChin.Forms_NhanVien
             this.panelDesktop.Location = new System.Drawing.Point(251, 50);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(830, 547);
+            this.panelDesktop.Size = new System.Drawing.Size(959, 547);
             this.panelDesktop.TabIndex = 8;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
             // panelMenu
             // 
@@ -179,7 +180,7 @@ namespace ChinChin.Forms_NhanVien
             this.panelTittleBar.Location = new System.Drawing.Point(0, 0);
             this.panelTittleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTittleBar.Name = "panelTittleBar";
-            this.panelTittleBar.Size = new System.Drawing.Size(1081, 50);
+            this.panelTittleBar.Size = new System.Drawing.Size(1210, 50);
             this.panelTittleBar.TabIndex = 7;
             // 
             // MinimizeBtn
@@ -190,7 +191,7 @@ namespace ChinChin.Forms_NhanVien
             this.MinimizeBtn.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
             this.MinimizeBtn.IconColor = System.Drawing.SystemColors.ControlText;
             this.MinimizeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.MinimizeBtn.Location = new System.Drawing.Point(970, 9);
+            this.MinimizeBtn.Location = new System.Drawing.Point(1099, 9);
             this.MinimizeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimizeBtn.Name = "MinimizeBtn";
             this.MinimizeBtn.Size = new System.Drawing.Size(32, 32);
@@ -205,7 +206,7 @@ namespace ChinChin.Forms_NhanVien
             this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.ExpandArrowsAlt;
             this.btnMaximize.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaximize.Location = new System.Drawing.Point(1009, 9);
+            this.btnMaximize.Location = new System.Drawing.Point(1138, 9);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(32, 32);
@@ -220,7 +221,7 @@ namespace ChinChin.Forms_NhanVien
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.Location = new System.Drawing.Point(1046, 9);
+            this.btnExit.Location = new System.Drawing.Point(1175, 9);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(32, 32);
@@ -254,7 +255,7 @@ namespace ChinChin.Forms_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 597);
+            this.ClientSize = new System.Drawing.Size(1210, 597);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelTittleBar);

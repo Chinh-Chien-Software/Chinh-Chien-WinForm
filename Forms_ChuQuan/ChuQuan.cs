@@ -23,6 +23,9 @@ namespace ChinChin.FormsChuQuan
         public formChuQuan()
         {
             InitializeComponent();
+            this.Size = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            this.WindowState = FormWindowState.Maximized;
+
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
@@ -204,6 +207,11 @@ namespace ChinChin.FormsChuQuan
             SignIn logout = new SignIn();
             logout.Show();
             this.Hide();
+        }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -26,5 +26,10 @@ namespace ChinChin.Forms_NhanVien
         {
 
         }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
