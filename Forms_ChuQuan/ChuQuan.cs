@@ -15,20 +15,33 @@ namespace ChinChin.FormsChuQuan
 {
     public partial class formChuQuan : Form
     {
+        
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+           int nLeftRect,     // x-coordinate of upper-left corner
+           int nTopRect,      // y-coordinate of upper-left corner
+           int nRightRect,    // x-coordinate of lower-right corner
+           int nBottomRect,   // y-coordinate of lower-right corner
+           int nWidthEllipse, // width of ellipse
+           int nHeightEllipse // height of ellipse
+        );
+
         //Fields
         private IconButton currentBtn;
-        private Panel leftBorderBtn;
+        //private Panel leftBorderBtn;
         private Form currentChildForm;
 
         public formChuQuan()
         {
             InitializeComponent();
-            this.Size = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
             this.WindowState = FormWindowState.Maximized;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
-            leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 60);
-            panelMenu.Controls.Add(leftBorderBtn);
+            //leftBorderBtn = new Panel();
+            //leftBorderBtn.Size = new Size(7, 100);
+            //panelMenu.Controls.Add(leftBorderBtn);
 
             //Forms - Custom Tittle Bar
             this.Text = string.Empty;
@@ -36,6 +49,7 @@ namespace ChinChin.FormsChuQuan
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
+        
 
         //Structs
         private struct RGBColors
@@ -62,13 +76,13 @@ namespace ChinChin.FormsChuQuan
                 currentBtn.IconColor = color;
                 currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
-                currentBtn.Size = new Size(251, 60);
+                currentBtn.Size = new Size(498, 100);
 
                 //left border button
-                leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
+                //leftBorderBtn.BackColor = color;
+                //leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
+                //leftBorderBtn.Visible = true;
+                //leftBorderBtn.BringToFront();
 
                 //Icon Current Child Form
                 iconCurrentChildForm.IconChar = currentBtn.IconChar;
@@ -80,12 +94,13 @@ namespace ChinChin.FormsChuQuan
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(96, 110, 253);
-                currentBtn.ForeColor = Color.Gainsboro;
+                currentBtn.BackColor = Color.FromArgb(255, 255, 255);
+                currentBtn.ForeColor = Color.Black;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Gainsboro;
+                currentBtn.IconColor = Color.Black;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
+                currentBtn.Size = new Size(498, 100);
             }
         }
 
@@ -130,7 +145,7 @@ namespace ChinChin.FormsChuQuan
         private void Reset()
         {
             DisableButton();
-            leftBorderBtn.Visible = false;
+            //leftBorderBtn.Visible = false;
             iconCurrentChildForm.IconChar = IconChar.Home;
             iconCurrentChildForm.IconColor = Color.MediumPurple;
             labelTittleChildForm.Text = "Home";
@@ -202,16 +217,26 @@ namespace ChinChin.FormsChuQuan
                 WindowState = FormWindowState.Normal;
         }
 
-        private void buttonLogOut_Click(object sender, EventArgs e)
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconCurrentChildForm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTittleChildForm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignInButton_Click(object sender, EventArgs e)
         {
             SignIn logout = new SignIn();
             logout.Show();
             this.Hide();
-        }
-
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

@@ -49,7 +49,7 @@ namespace ChinChin.FormsChuQuan
             this.ClientSize = new System.Drawing.Size(774, 533);
             this.Controls.Add(this.labelThongKe);
             this.Name = "FormThongKe";
-            this.Text = "ThongKe";
+            this.Text = "Xem Thống Kê";
             this.ResumeLayout(false);
             this.PerformLayout();
 

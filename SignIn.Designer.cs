@@ -29,6 +29,7 @@ namespace ChinChin
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
             this.txtBxUsername = new System.Windows.Forms.TextBox();
             this.txtBxPassword = new System.Windows.Forms.TextBox();
             this.lblSignIn = new System.Windows.Forms.Label();
@@ -50,7 +51,7 @@ namespace ChinChin
             // txtBxUsername
             // 
             this.txtBxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxUsername.Location = new System.Drawing.Point(1372, 188);
+            this.txtBxUsername.Location = new System.Drawing.Point(260, 177);
             this.txtBxUsername.Name = "txtBxUsername";
             this.txtBxUsername.Size = new System.Drawing.Size(300, 45);
             this.txtBxUsername.TabIndex = 1;
@@ -58,7 +59,7 @@ namespace ChinChin
             // txtBxPassword
             // 
             this.txtBxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxPassword.Location = new System.Drawing.Point(1372, 244);
+            this.txtBxPassword.Location = new System.Drawing.Point(260, 233);
             this.txtBxPassword.Name = "txtBxPassword";
             this.txtBxPassword.Size = new System.Drawing.Size(300, 45);
             this.txtBxPassword.TabIndex = 2;
@@ -68,7 +69,7 @@ namespace ChinChin
             // 
             this.lblSignIn.AutoSize = true;
             this.lblSignIn.Font = new System.Drawing.Font("Inter", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignIn.Location = new System.Drawing.Point(1118, 38);
+            this.lblSignIn.Location = new System.Drawing.Point(6, 27);
             this.lblSignIn.Name = "lblSignIn";
             this.lblSignIn.Size = new System.Drawing.Size(390, 82);
             this.lblSignIn.TabIndex = 3;
@@ -79,7 +80,7 @@ namespace ChinChin
             // 
             this.ckBxRememberSignIn.AutoSize = true;
             this.ckBxRememberSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckBxRememberSignIn.Location = new System.Drawing.Point(1273, 303);
+            this.ckBxRememberSignIn.Location = new System.Drawing.Point(161, 292);
             this.ckBxRememberSignIn.Name = "ckBxRememberSignIn";
             this.ckBxRememberSignIn.Size = new System.Drawing.Size(171, 24);
             this.ckBxRememberSignIn.TabIndex = 5;
@@ -90,7 +91,7 @@ namespace ChinChin
             // 
             this.labelPasword.AutoSize = true;
             this.labelPasword.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPasword.Location = new System.Drawing.Point(1125, 248);
+            this.labelPasword.Location = new System.Drawing.Point(13, 237);
             this.labelPasword.Name = "labelPasword";
             this.labelPasword.Size = new System.Drawing.Size(161, 40);
             this.labelPasword.TabIndex = 7;
@@ -101,7 +102,7 @@ namespace ChinChin
             // 
             this.labelUserName.AutoSize = true;
             this.labelUserName.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUserName.Location = new System.Drawing.Point(1125, 192);
+            this.labelUserName.Location = new System.Drawing.Point(13, 181);
             this.labelUserName.Name = "labelUserName";
             this.labelUserName.Size = new System.Drawing.Size(172, 40);
             this.labelUserName.TabIndex = 6;
@@ -141,10 +142,10 @@ namespace ChinChin
             this.panelRight.Controls.Add(this.txtBxUsername);
             this.panelRight.Controls.Add(this.labelUserName);
             this.panelRight.Controls.Add(this.txtBxPassword);
-            this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRight.Location = new System.Drawing.Point(0, 0);
+            this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelRight.Location = new System.Drawing.Point(640, 0);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(1920, 1080);
+            this.panelRight.Size = new System.Drawing.Size(1280, 1080);
             this.panelRight.TabIndex = 10;
             // 
             // labelThongBao
@@ -152,7 +153,7 @@ namespace ChinChin
             this.labelThongBao.AutoSize = true;
             this.labelThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThongBao.ForeColor = System.Drawing.Color.Lime;
-            this.labelThongBao.Location = new System.Drawing.Point(1129, 386);
+            this.labelThongBao.Location = new System.Drawing.Point(17, 375);
             this.labelThongBao.Name = "labelThongBao";
             this.labelThongBao.Size = new System.Drawing.Size(67, 24);
             this.labelThongBao.TabIndex = 9;
@@ -166,8 +167,8 @@ namespace ChinChin
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 59;
-            this.btnExit.Location = new System.Drawing.Point(1856, 2);
+            this.btnExit.IconSize = 60;
+            this.btnExit.Location = new System.Drawing.Point(1207, 11);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(61, 59);
@@ -186,7 +187,7 @@ namespace ChinChin
             this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignInButton.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignInButton.ForeColor = System.Drawing.Color.White;
-            this.SignInButton.Location = new System.Drawing.Point(1208, 490);
+            this.SignInButton.Location = new System.Drawing.Point(96, 479);
             this.SignInButton.Name = "SignInButton";
             this.SignInButton.Size = new System.Drawing.Size(350, 150);
             this.SignInButton.TabIndex = 10;
@@ -202,11 +203,11 @@ namespace ChinChin
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.ControlBox = false;
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelRight);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SignIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
