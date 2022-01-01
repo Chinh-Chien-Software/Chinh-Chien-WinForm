@@ -37,6 +37,7 @@ namespace ChinChin.FormsChuQuan
             this.KhoHangBTN = new FontAwesome.Sharp.IconButton();
             this.ThongKeBTN = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Label();
             this.panelTittleBar = new System.Windows.Forms.Panel();
@@ -46,7 +47,6 @@ namespace ChinChin.FormsChuQuan
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTittleBar.SuspendLayout();
@@ -63,7 +63,7 @@ namespace ChinChin.FormsChuQuan
             this.panelDesktop.Location = new System.Drawing.Point(500, 75);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1420, 980);
+            this.panelDesktop.Size = new System.Drawing.Size(1402, 958);
             this.panelDesktop.TabIndex = 5;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
@@ -81,7 +81,7 @@ namespace ChinChin.FormsChuQuan
             this.panelMenu.Location = new System.Drawing.Point(0, 75);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(500, 980);
+            this.panelMenu.Size = new System.Drawing.Size(500, 958);
             this.panelMenu.TabIndex = 3;
             // 
             // iconButtonThucDon
@@ -186,6 +186,26 @@ namespace ChinChin.FormsChuQuan
             this.panelLogo.Size = new System.Drawing.Size(498, 150);
             this.panelLogo.TabIndex = 0;
             // 
+            // SignInButton
+            // 
+            this.SignInButton.BackColor = System.Drawing.Color.Black;
+            this.SignInButton.BackgroundColor = System.Drawing.Color.Black;
+            this.SignInButton.BorderColor = System.Drawing.Color.Black;
+            this.SignInButton.BorderRadius = 0;
+            this.SignInButton.BorderSize = 0;
+            this.SignInButton.FlatAppearance.BorderSize = 0;
+            this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignInButton.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignInButton.ForeColor = System.Drawing.Color.White;
+            this.SignInButton.Location = new System.Drawing.Point(242, 9);
+            this.SignInButton.Name = "SignInButton";
+            this.SignInButton.Size = new System.Drawing.Size(250, 50);
+            this.SignInButton.TabIndex = 11;
+            this.SignInButton.Text = "ĐĂNG XUẤT";
+            this.SignInButton.TextColor = System.Drawing.Color.White;
+            this.SignInButton.UseVisualStyleBackColor = false;
+            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
+            // 
             // lblVersion
             // 
             this.lblVersion.AutoSize = true;
@@ -221,7 +241,7 @@ namespace ChinChin.FormsChuQuan
             this.panelTittleBar.Location = new System.Drawing.Point(0, 0);
             this.panelTittleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTittleBar.Name = "panelTittleBar";
-            this.panelTittleBar.Size = new System.Drawing.Size(1920, 75);
+            this.panelTittleBar.Size = new System.Drawing.Size(1902, 75);
             this.panelTittleBar.TabIndex = 4;
             this.panelTittleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTittleBar_Paint);
             this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown_1);
@@ -235,7 +255,7 @@ namespace ChinChin.FormsChuQuan
             this.btnMinimize.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMinimize.IconSize = 62;
-            this.btnMinimize.Location = new System.Drawing.Point(1714, 2);
+            this.btnMinimize.Location = new System.Drawing.Point(1696, 2);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(62, 62);
@@ -252,7 +272,7 @@ namespace ChinChin.FormsChuQuan
             this.btnMaximize.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMaximize.IconSize = 60;
-            this.btnMaximize.Location = new System.Drawing.Point(1782, 2);
+            this.btnMaximize.Location = new System.Drawing.Point(1764, 2);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(67, 60);
@@ -269,7 +289,7 @@ namespace ChinChin.FormsChuQuan
             this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 62;
-            this.btnExit.Location = new System.Drawing.Point(1855, 2);
+            this.btnExit.Location = new System.Drawing.Point(1837, 2);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(63, 62);
@@ -305,31 +325,11 @@ namespace ChinChin.FormsChuQuan
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.labelTittleChildForm.Click += new System.EventHandler(this.labelTittleChildForm_Click);
             // 
-            // SignInButton
-            // 
-            this.SignInButton.BackColor = System.Drawing.Color.Black;
-            this.SignInButton.BackgroundColor = System.Drawing.Color.Black;
-            this.SignInButton.BorderColor = System.Drawing.Color.Black;
-            this.SignInButton.BorderRadius = 0;
-            this.SignInButton.BorderSize = 0;
-            this.SignInButton.FlatAppearance.BorderSize = 0;
-            this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignInButton.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignInButton.ForeColor = System.Drawing.Color.White;
-            this.SignInButton.Location = new System.Drawing.Point(242, 9);
-            this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(250, 50);
-            this.SignInButton.TabIndex = 11;
-            this.SignInButton.Text = "ĐĂNG XUẤT";
-            this.SignInButton.TextColor = System.Drawing.Color.White;
-            this.SignInButton.UseVisualStyleBackColor = false;
-            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
-            // 
             // formChuQuan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1920, 1055);
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelTittleBar);

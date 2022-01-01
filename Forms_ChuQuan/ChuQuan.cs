@@ -29,7 +29,7 @@ namespace ChinChin.FormsChuQuan
 
         //Fields
         private IconButton currentBtn;
-        //private Panel leftBorderBtn;
+        private Panel leftBorderBtn;
         private Form currentChildForm;
 
         public formChuQuan()
@@ -39,9 +39,9 @@ namespace ChinChin.FormsChuQuan
             this.WindowState = FormWindowState.Maximized;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
-            //leftBorderBtn = new Panel();
-            //leftBorderBtn.Size = new Size(7, 100);
-            //panelMenu.Controls.Add(leftBorderBtn);
+            leftBorderBtn = new Panel();
+            leftBorderBtn.Size = new Size(7, 100);
+            panelMenu.Controls.Add(leftBorderBtn);
 
             //Forms - Custom Tittle Bar
             this.Text = string.Empty;

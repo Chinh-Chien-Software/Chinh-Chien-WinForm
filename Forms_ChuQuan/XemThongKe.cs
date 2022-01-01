@@ -16,5 +16,11 @@ namespace ChinChin.FormsChuQuan
         {
             InitializeComponent();
         }
+
+        private void FormThongKe_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

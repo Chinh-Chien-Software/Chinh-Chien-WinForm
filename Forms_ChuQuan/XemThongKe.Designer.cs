@@ -29,34 +29,32 @@ namespace ChinChin.FormsChuQuan
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelThongKe = new System.Windows.Forms.Label();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
-            // labelThongKe
+            // reportViewer1
             // 
-            this.labelThongKe.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelThongKe.AutoSize = true;
-            this.labelThongKe.Location = new System.Drawing.Point(312, 171);
-            this.labelThongKe.Name = "labelThongKe";
-            this.labelThongKe.Size = new System.Drawing.Size(139, 17);
-            this.labelThongKe.TabIndex = 0;
-            this.labelThongKe.Text = "Thống Kê Lại Tất Cà";
+            this.reportViewer1.Location = new System.Drawing.Point(191, 95);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.TabIndex = 0;
             // 
             // FormThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 533);
-            this.Controls.Add(this.labelThongKe);
+            this.ClientSize = new System.Drawing.Size(915, 533);
+            this.Controls.Add(this.reportViewer1);
             this.Name = "FormThongKe";
             this.Text = "Xem Thống Kê";
+            this.Load += new System.EventHandler(this.FormThongKe_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label labelThongKe;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

@@ -14,15 +14,30 @@ namespace ChinChin.FormsQuanLy
 {
     public partial class QuanLy : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+           int nLeftRect,     // x-coordinate of upper-left corner
+           int nTopRect,      // y-coordinate of upper-left corner
+           int nRightRect,    // x-coordinate of lower-right corner
+           int nBottomRect,   // y-coordinate of lower-right corner
+           int nWidthEllipse, // width of ellipse
+           int nHeightEllipse // height of ellipse
+        );
+
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
 
         public QuanLy()
         {
-            InitializeComponent(); 
+            InitializeComponent();
+            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            this.WindowState = FormWindowState.Maximized;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 60);
+            leftBorderBtn.Size = new Size(7, 100);
             panelMenu.Controls.Add(leftBorderBtn);
 
             //Forms - Custom Tittle Bar
@@ -53,7 +68,7 @@ namespace ChinChin.FormsQuanLy
                 currentBtn.IconColor = color;
                 currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
-                currentBtn.Size = new Size(251, 60);
+                currentBtn.Size = new Size(498, 100);
 
                 //left border button
                 leftBorderBtn.BackColor = color;
@@ -71,10 +86,10 @@ namespace ChinChin.FormsQuanLy
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(96, 110, 253);
-                currentBtn.ForeColor = Color.Gainsboro;
+                currentBtn.BackColor = Color.FromArgb(255, 255, 255);
+                currentBtn.ForeColor = Color.Black;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Gainsboro;
+                currentBtn.IconColor = Color.Black;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -97,25 +112,6 @@ namespace ChinChin.FormsQuanLy
             labelTittleChildForm.Text = childForm.Text;
         }
 
-        private void LichLamBTN_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new Forms_QuanLy.QuanLyLichLam());
-        }
-
-        private void KhoHangBTN_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new Forms_QuanLy.QuanLyKhoHang());
-        }
-
-        private void buttonLogOut_Click(object sender, EventArgs e)
-        {
-            SignIn logout = new SignIn();
-            logout.Show();
-            this.Hide();
-        }
-
         private void btnHome_Click(object sender, EventArgs e)
         {
             currentChildForm.Close();
@@ -130,12 +126,24 @@ namespace ChinChin.FormsQuanLy
             labelTittleChildForm.Text = "Home";
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        //Drag my Software
+        [DllImport("user32")]
+        private static extern bool ReleaseCapture();
+
+        [DllImport("user32")]
+        private static extern int SendMessage(IntPtr hWnd, int Msg, int wp, int lp);
+
+        private void btnHome_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
 
-        private void btnMaximize_Click(object sender, EventArgs e)
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMaximize_Click_1(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
             {
@@ -145,18 +153,31 @@ namespace ChinChin.FormsQuanLy
                 WindowState = FormWindowState.Normal;
         }
 
-        private void MinimizeBtn_Click(object sender, EventArgs e)
+        private void btnExit_Click_1(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Minimized;
+            Application.Exit();
         }
 
-        //Drag my Software
-        [DllImport("user32")]
-        private static extern bool ReleaseCapture();
+        private void SignInButton_Click(object sender, EventArgs e)
+        {
+            SignIn logout = new SignIn();
+            logout.Show();
+            this.Hide();
+        }
 
-        [DllImport("user32")]
-        private static extern int SendMessage(IntPtr hWnd, int Msg, int wp, int lp);
-        private void panelTittleBar_MouseDown(object sender, MouseEventArgs e)
+        private void KhoHangBTN_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new Forms_QuanLy.QuanLyKhoHang());
+        }
+
+        private void ChamCongBTN_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new Forms_QuanLy.QuanLyLichLam());
+        }
+
+        private void panelTittleBar_MouseDown_1(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);

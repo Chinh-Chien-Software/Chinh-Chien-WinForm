@@ -30,7 +30,6 @@ namespace ChinChin.Forms_QuanLy
         private void InitializeComponent()
         {
             this.DateChoose = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.ThuHai = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,33 +38,10 @@ namespace ChinChin.Forms_QuanLy
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panelWeekDay = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panelWeekDay.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
             this.SuspendLayout();
@@ -79,13 +55,6 @@ namespace ChinChin.Forms_QuanLy
             this.DateChoose.Size = new System.Drawing.Size(241, 29);
             this.DateChoose.TabIndex = 0;
             this.DateChoose.Text = "December 26th, 2021";
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(3, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(160, 140);
-            this.panel1.TabIndex = 2;
             // 
             // ThuHai
             // 
@@ -148,9 +117,9 @@ namespace ChinChin.Forms_QuanLy
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.BackColor = System.Drawing.Color.Yellow;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(841, 0);
+            this.label5.Location = new System.Drawing.Point(828, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(160, 45);
+            this.label5.Size = new System.Drawing.Size(167, 45);
             this.label5.TabIndex = 5;
             this.label5.Text = "Thứ Bảy";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,7 +129,7 @@ namespace ChinChin.Forms_QuanLy
             // 
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1005, 0);
+            this.label6.Location = new System.Drawing.Point(994, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(163, 45);
             this.label6.TabIndex = 6;
@@ -169,6 +138,8 @@ namespace ChinChin.Forms_QuanLy
             // 
             // panelWeekDay
             // 
+            this.panelWeekDay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelWeekDay.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelWeekDay.Controls.Add(this.label6);
             this.panelWeekDay.Controls.Add(this.label5);
@@ -177,153 +148,10 @@ namespace ChinChin.Forms_QuanLy
             this.panelWeekDay.Controls.Add(this.label2);
             this.panelWeekDay.Controls.Add(this.label1);
             this.panelWeekDay.Controls.Add(this.ThuHai);
-            this.panelWeekDay.Location = new System.Drawing.Point(0, 71);
+            this.panelWeekDay.Location = new System.Drawing.Point(188, 70);
             this.panelWeekDay.Name = "panelWeekDay";
-            this.panelWeekDay.Size = new System.Drawing.Size(1172, 45);
+            this.panelWeekDay.Size = new System.Drawing.Size(1179, 45);
             this.panelWeekDay.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(3, 152);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(160, 140);
-            this.panel2.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(3, 302);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(160, 140);
-            this.panel3.TabIndex = 3;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(169, 302);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(160, 140);
-            this.panel4.TabIndex = 6;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.panel7);
-            this.panel5.Controls.Add(this.panel8);
-            this.panel5.Controls.Add(this.panel9);
-            this.panel5.Location = new System.Drawing.Point(169, 152);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(160, 140);
-            this.panel5.TabIndex = 5;
-            // 
-            // panel7
-            // 
-            this.panel7.Location = new System.Drawing.Point(165, 150);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(165, 140);
-            this.panel7.TabIndex = 6;
-            // 
-            // panel8
-            // 
-            this.panel8.Location = new System.Drawing.Point(165, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(165, 140);
-            this.panel8.TabIndex = 5;
-            // 
-            // panel9
-            // 
-            this.panel9.Location = new System.Drawing.Point(165, -146);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(165, 140);
-            this.panel9.TabIndex = 4;
-            // 
-            // panel6
-            // 
-            this.panel6.Location = new System.Drawing.Point(169, 6);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(160, 140);
-            this.panel6.TabIndex = 4;
-            // 
-            // panel10
-            // 
-            this.panel10.Location = new System.Drawing.Point(501, 303);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(160, 140);
-            this.panel10.TabIndex = 6;
-            // 
-            // panel11
-            // 
-            this.panel11.Location = new System.Drawing.Point(501, 153);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(160, 140);
-            this.panel11.TabIndex = 5;
-            // 
-            // panel12
-            // 
-            this.panel12.Location = new System.Drawing.Point(501, 7);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(160, 140);
-            this.panel12.TabIndex = 4;
-            // 
-            // panel13
-            // 
-            this.panel13.Location = new System.Drawing.Point(671, 303);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(160, 140);
-            this.panel13.TabIndex = 9;
-            // 
-            // panel14
-            // 
-            this.panel14.Location = new System.Drawing.Point(671, 153);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(160, 140);
-            this.panel14.TabIndex = 8;
-            // 
-            // panel15
-            // 
-            this.panel15.Location = new System.Drawing.Point(671, 7);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(160, 140);
-            this.panel15.TabIndex = 7;
-            // 
-            // panel16
-            // 
-            this.panel16.Location = new System.Drawing.Point(841, 303);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(160, 140);
-            this.panel16.TabIndex = 9;
-            // 
-            // panel17
-            // 
-            this.panel17.Location = new System.Drawing.Point(841, 153);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(160, 140);
-            this.panel17.TabIndex = 8;
-            // 
-            // panel18
-            // 
-            this.panel18.Location = new System.Drawing.Point(841, 7);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(160, 140);
-            this.panel18.TabIndex = 7;
-            // 
-            // panel19
-            // 
-            this.panel19.Location = new System.Drawing.Point(336, 302);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(160, 140);
-            this.panel19.TabIndex = 9;
-            // 
-            // panel20
-            // 
-            this.panel20.Location = new System.Drawing.Point(336, 152);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(160, 140);
-            this.panel20.TabIndex = 8;
-            // 
-            // panel21
-            // 
-            this.panel21.Location = new System.Drawing.Point(336, 6);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(160, 140);
-            this.panel21.TabIndex = 7;
             // 
             // panel22
             // 
@@ -331,64 +159,46 @@ namespace ChinChin.Forms_QuanLy
             this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel22.Location = new System.Drawing.Point(0, 0);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(1174, 64);
+            this.panel22.Size = new System.Drawing.Size(1602, 64);
             this.panel22.TabIndex = 10;
             // 
             // panel23
             // 
-            this.panel23.Controls.Add(this.panel24);
-            this.panel23.Controls.Add(this.panel25);
-            this.panel23.Controls.Add(this.panel19);
-            this.panel23.Controls.Add(this.panel26);
-            this.panel23.Controls.Add(this.panel20);
-            this.panel23.Controls.Add(this.panel16);
-            this.panel23.Controls.Add(this.panel21);
-            this.panel23.Controls.Add(this.panel13);
-            this.panel23.Controls.Add(this.panel17);
-            this.panel23.Controls.Add(this.panel18);
-            this.panel23.Controls.Add(this.panel10);
-            this.panel23.Controls.Add(this.panel14);
-            this.panel23.Controls.Add(this.panel15);
-            this.panel23.Controls.Add(this.panel4);
-            this.panel23.Controls.Add(this.panel11);
-            this.panel23.Controls.Add(this.panel12);
-            this.panel23.Controls.Add(this.panel3);
-            this.panel23.Controls.Add(this.panel5);
-            this.panel23.Controls.Add(this.panel2);
-            this.panel23.Controls.Add(this.panel6);
-            this.panel23.Controls.Add(this.panel1);
-            this.panel23.Location = new System.Drawing.Point(0, 115);
+            this.panel23.Controls.Add(this.tableLayoutPanel1);
+            this.panel23.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel23.Location = new System.Drawing.Point(0, 118);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(1173, 454);
+            this.panel23.Size = new System.Drawing.Size(1602, 915);
             this.panel23.TabIndex = 11;
             this.panel23.Paint += new System.Windows.Forms.PaintEventHandler(this.panel23_Paint);
             // 
-            // panel24
+            // tableLayoutPanel1
             // 
-            this.panel24.Location = new System.Drawing.Point(1009, 303);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(160, 140);
-            this.panel24.TabIndex = 12;
-            // 
-            // panel25
-            // 
-            this.panel25.Location = new System.Drawing.Point(1009, 153);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(160, 140);
-            this.panel25.TabIndex = 11;
-            // 
-            // panel26
-            // 
-            this.panel26.Location = new System.Drawing.Point(1009, 7);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(160, 140);
-            this.panel26.TabIndex = 10;
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 8;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.14286F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.85714F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 427F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 83);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1587, 70);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // QuanLyLichLam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 570);
+            this.ClientSize = new System.Drawing.Size(1602, 1033);
             this.Controls.Add(this.panel23);
             this.Controls.Add(this.panel22);
             this.Controls.Add(this.panelWeekDay);
@@ -396,7 +206,6 @@ namespace ChinChin.Forms_QuanLy
             this.Text = "LichLam";
             this.Load += new System.EventHandler(this.QuanLyLichLam_Load);
             this.panelWeekDay.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
             this.panel23.ResumeLayout(false);
@@ -407,7 +216,6 @@ namespace ChinChin.Forms_QuanLy
         #endregion
 
         private System.Windows.Forms.Label DateChoose;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label ThuHai;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -416,30 +224,8 @@ namespace ChinChin.Forms_QuanLy
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panelWeekDay;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
