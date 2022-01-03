@@ -182,5 +182,11 @@ namespace ChinChin.FormsQuanLy
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void ThongKeBTN_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new Forms_QuanLy.BaoCaoDoanhThu());
+        }
     }
 }

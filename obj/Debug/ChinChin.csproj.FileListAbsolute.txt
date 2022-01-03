@@ -81,3 +81,5 @@ E:\repos\ChinChin\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
 E:\repos\ChinChin\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 E:\repos\ChinChin\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 E:\repos\ChinChin\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\repos\ChinChin\obj\Debug\ChinChin.Forms_NhanVien.KiemSoatLuongTonHang.resources
+E:\repos\ChinChin\obj\Debug\ChinChin.Forms_NhanVien.TiepNhanDonHang.resources

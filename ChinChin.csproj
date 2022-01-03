@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Logo_Chin_Chin.ico</ApplicationIcon>
+    <ApplicationIcon>Favicon\Logo_Chin_Chin.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
@@ -114,6 +114,12 @@
     <Compile Include="Forms_ChuQuan\QuanLyMenu.Designer.cs">
       <DependentUpon>QuanLyMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms_NhanVien\KiemSoatLuongTonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_NhanVien\KiemSoatLuongTonHang.Designer.cs">
+      <DependentUpon>KiemSoatLuongTonHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms_NhanVien\NhanVienPhaChe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,11 @@
     <Compile Include="Forms_QuanLy\QuanLyLichLam.Designer.cs">
       <DependentUpon>QuanLyLichLam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,8 +194,14 @@
     <EmbeddedResource Include="Forms_ChuQuan\QuanLyMenu.resx">
       <DependentUpon>QuanLyMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms_NhanVien\KiemSoatLuongTonHang.resx">
+      <DependentUpon>KiemSoatLuongTonHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms_NhanVien\NhanVienThuNgan.resx">
       <DependentUpon>NhanVienThuNgan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_NhanVien\TiepNhanDonHang.resx">
+      <DependentUpon>TiepNhanDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_QuanLy\BaoCaoDoanhThu.resx">
       <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
@@ -204,14 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -240,10 +252,10 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Chin_Chin_Logo_All_Black.png" />
-    <None Include="Chin_Chin_Logo_Dark_Backremove.png" />
-    <None Include="Logo-Dark.jpg" />
-    <Content Include="Logo_Chin_Chin.ico" />
+    <None Include="Favicon\Chin_Chin_Logo_All_Black.png" />
+    <None Include="Favicon\Chin_Chin_Logo_Dark_Backremove.png" />
+    <None Include="Favicon\Logo-Dark.jpg" />
+    <Content Include="Favicon\Logo_Chin_Chin.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

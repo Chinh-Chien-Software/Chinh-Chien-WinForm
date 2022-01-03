@@ -30,9 +30,9 @@ namespace ChinChin.Forms_QuanLy
         private void InitializeComponent()
         {
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.panelRight = new System.Windows.Forms.Panel();
-            this.panelLeftTop = new System.Windows.Forms.Panel();
             this.panelLeftBottom = new System.Windows.Forms.Panel();
+            this.panelLeftTop = new System.Windows.Forms.Panel();
+            this.panelRight = new System.Windows.Forms.Panel();
             this.panelLeft.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,22 +46,6 @@ namespace ChinChin.Forms_QuanLy
             this.panelLeft.Size = new System.Drawing.Size(407, 450);
             this.panelLeft.TabIndex = 0;
             // 
-            // panelRight
-            // 
-            this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight.Location = new System.Drawing.Point(405, 0);
-            this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(395, 450);
-            this.panelRight.TabIndex = 1;
-            // 
-            // panelLeftTop
-            // 
-            this.panelLeftTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLeftTop.Location = new System.Drawing.Point(0, 0);
-            this.panelLeftTop.Name = "panelLeftTop";
-            this.panelLeftTop.Size = new System.Drawing.Size(407, 217);
-            this.panelLeftTop.TabIndex = 0;
-            // 
             // panelLeftBottom
             // 
             this.panelLeftBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -69,6 +53,22 @@ namespace ChinChin.Forms_QuanLy
             this.panelLeftBottom.Name = "panelLeftBottom";
             this.panelLeftBottom.Size = new System.Drawing.Size(407, 227);
             this.panelLeftBottom.TabIndex = 1;
+            // 
+            // panelLeftTop
+            // 
+            this.panelLeftTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLeftTop.Location = new System.Drawing.Point(0, 0);
+            this.panelLeftTop.Name = "panelLeftTop";
+            this.panelLeftTop.Size = new System.Drawing.Size(407, 226);
+            this.panelLeftTop.TabIndex = 0;
+            // 
+            // panelRight
+            // 
+            this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelRight.Location = new System.Drawing.Point(405, 0);
+            this.panelRight.Name = "panelRight";
+            this.panelRight.Size = new System.Drawing.Size(395, 450);
+            this.panelRight.TabIndex = 1;
             // 
             // BaoCaoDoanhThu
             // 
