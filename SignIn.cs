@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using ChinChin.FormsChuQuan;
 using ChinChin.FormsQuanLy;
+using ChinChin.Forms_NhanVien;
 using ChinChin.Extra;
 
 namespace ChinChin
@@ -39,7 +40,6 @@ namespace ChinChin
             //this.FormBorderStyle = FormBorderStyle.FixedDialog;
         }
 
-        
 
         private void labelUserName_Click(object sender, EventArgs e)
         {
@@ -70,16 +70,28 @@ namespace ChinChin
         {
             string username = txtBxUsername.Text;
             string password = txtBxPassword.Text;
-            formChuQuan f2 = new formChuQuan();
-            QuanLy f3 = new QuanLy();
+            formChuQuan ChuQuan = new formChuQuan();
+            QuanLy QuanLy = new QuanLy();
+            NhanVienThuNgan NhanVienThuNgan = new NhanVienThuNgan();
+            NhanVienPhaChe Barista = new NhanVienPhaChe();
             if (username == "chuquan")
             {
-                f2.Show();
+                ChuQuan.Show();
                 this.Hide();
             }
             else if (username == "quanly")
             {
-                f3.Show();
+                QuanLy.Show();
+                this.Hide();
+            }
+            else if (username == "thungan")
+            {
+                NhanVienThuNgan.Show();
+                this.Hide();
+            }
+            else if (username == "barista")
+            {
+                Barista.Show();
                 this.Hide();
             }
             else if (username == "")
