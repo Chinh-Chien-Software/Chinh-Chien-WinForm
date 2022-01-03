@@ -17,19 +17,16 @@ namespace ChinChin.Forms_NhanVien
             InitializeComponent();
         }
 
-        private void ThongKeBTN_Click(object sender, EventArgs e)
+        private void SignOutButton_Click(object sender, EventArgs e)
         {
-
+            SignIn logout = new SignIn();
+            logout.Show();
+            this.Hide();
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
-        {
-
+            Application.Exit();
         }
     }
 }

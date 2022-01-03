@@ -232,7 +232,7 @@ namespace ChinChin.FormsChuQuan
 
         }
 
-        private void SignInButton_Click(object sender, EventArgs e)
+        private void SignOutButton_Click(object sender, EventArgs e)
         {
             SignIn logout = new SignIn();
             logout.Show();
