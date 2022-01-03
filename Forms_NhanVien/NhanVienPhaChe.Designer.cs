@@ -36,16 +36,16 @@ namespace ChinChin.Forms_NhanVien
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelTittleBar = new System.Windows.Forms.Panel();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
-            this.lblVersion = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.Label();
+            this.panelMenu = new System.Windows.Forms.Panel();
             this.iconButtonThucDon = new FontAwesome.Sharp.IconButton();
             this.ChamCongBTN = new FontAwesome.Sharp.IconButton();
             this.KhoHangBTN = new FontAwesome.Sharp.IconButton();
             this.ThongKeBTN = new FontAwesome.Sharp.IconButton();
-            this.panelMenu = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelDesktop = new System.Windows.Forms.Panel();
             this.SignOutButton = new ChinChin.Extra.BlackWhiteButton();
+            this.lblVersion = new System.Windows.Forms.Label();
+            this.btnHome = new System.Windows.Forms.Label();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -145,27 +145,22 @@ namespace ChinChin.Forms_NhanVien
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lblVersion
+            // panelMenu
             // 
-            this.lblVersion.AutoSize = true;
-            this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVersion.ForeColor = System.Drawing.Color.Black;
-            this.lblVersion.Location = new System.Drawing.Point(4, 9);
-            this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(93, 20);
-            this.lblVersion.TabIndex = 1;
-            this.lblVersion.Text = "Version 0.2";
-            // 
-            // btnHome
-            // 
-            this.btnHome.AutoSize = true;
-            this.btnHome.Font = new System.Drawing.Font("MV Boli", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.Black;
-            this.btnHome.Location = new System.Drawing.Point(-4, 51);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(179, 63);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "Barista";
+            this.panelMenu.BackColor = System.Drawing.Color.White;
+            this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMenu.Controls.Add(this.iconButtonThucDon);
+            this.panelMenu.Controls.Add(this.ChamCongBTN);
+            this.panelMenu.Controls.Add(this.KhoHangBTN);
+            this.panelMenu.Controls.Add(this.ThongKeBTN);
+            this.panelMenu.Controls.Add(this.panelLogo);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.ForeColor = System.Drawing.Color.Coral;
+            this.panelMenu.Location = new System.Drawing.Point(0, 75);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(500, 958);
+            this.panelMenu.TabIndex = 10;
             // 
             // iconButtonThucDon
             // 
@@ -251,24 +246,6 @@ namespace ChinChin.Forms_NhanVien
             this.ThongKeBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ThongKeBTN.UseVisualStyleBackColor = true;
             // 
-            // panelMenu
-            // 
-            this.panelMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panelMenu.BackColor = System.Drawing.Color.White;
-            this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMenu.Controls.Add(this.iconButtonThucDon);
-            this.panelMenu.Controls.Add(this.ChamCongBTN);
-            this.panelMenu.Controls.Add(this.KhoHangBTN);
-            this.panelMenu.Controls.Add(this.ThongKeBTN);
-            this.panelMenu.Controls.Add(this.panelLogo);
-            this.panelMenu.ForeColor = System.Drawing.Color.Coral;
-            this.panelMenu.Location = new System.Drawing.Point(0, 75);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(500, 958);
-            this.panelMenu.TabIndex = 6;
-            // 
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.Transparent;
@@ -282,16 +259,6 @@ namespace ChinChin.Forms_NhanVien
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(498, 150);
             this.panelLogo.TabIndex = 0;
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.White;
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(0, 0);
-            this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1902, 1033);
-            this.panelDesktop.TabIndex = 8;
             // 
             // SignOutButton
             // 
@@ -311,16 +278,48 @@ namespace ChinChin.Forms_NhanVien
             this.SignOutButton.Text = "ĐĂNG XUẤT";
             this.SignOutButton.TextColor = System.Drawing.Color.White;
             this.SignOutButton.UseVisualStyleBackColor = false;
-            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click);
+            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click_1);
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.ForeColor = System.Drawing.Color.Black;
+            this.lblVersion.Location = new System.Drawing.Point(4, 9);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(93, 20);
+            this.lblVersion.TabIndex = 1;
+            this.lblVersion.Text = "Version 0.2";
+            // 
+            // btnHome
+            // 
+            this.btnHome.AutoSize = true;
+            this.btnHome.Font = new System.Drawing.Font("MV Boli", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.Black;
+            this.btnHome.Location = new System.Drawing.Point(-4, 51);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(179, 63);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "Barista";
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(500, 75);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1402, 958);
+            this.panelDesktop.TabIndex = 11;
             // 
             // NhanVienPhaChe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
-            this.Controls.Add(this.panelTittleBar);
-            this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelDesktop);
+            this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelTittleBar);
             this.Name = "NhanVienPhaChe";
             this.Text = "NhanVienPhaChe";
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
@@ -345,15 +344,15 @@ namespace ChinChin.Forms_NhanVien
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Panel panelTittleBar;
         private System.Windows.Forms.Label labelTittleChildForm;
-        private Extra.BlackWhiteButton SignOutButton;
-        private System.Windows.Forms.Label lblVersion;
-        private System.Windows.Forms.Label btnHome;
+        private System.Windows.Forms.Panel panelMenu;
         private FontAwesome.Sharp.IconButton iconButtonThucDon;
         private FontAwesome.Sharp.IconButton ChamCongBTN;
         private FontAwesome.Sharp.IconButton KhoHangBTN;
         private FontAwesome.Sharp.IconButton ThongKeBTN;
-        private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelLogo;
+        private Extra.BlackWhiteButton SignOutButton;
+        private System.Windows.Forms.Label lblVersion;
+        private System.Windows.Forms.Label btnHome;
         private System.Windows.Forms.Panel panelDesktop;
     }
 }
