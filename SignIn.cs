@@ -13,6 +13,7 @@ using ChinChin.FormsChuQuan;
 using ChinChin.FormsQuanLy;
 using ChinChin.Forms_NhanVien;
 using ChinChin.Extra;
+using System.Windows.Input;
 
 namespace ChinChin
 {
@@ -67,6 +68,18 @@ namespace ChinChin
         }
 
         private void SignInButton_Click(object sender, EventArgs e)
+        {
+                CheckUserPassAndSignIn();
+        }
+
+        private void txtBxUsername_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckUserPassAndSignIn();
+            }
+        }
+        private void CheckUserPassAndSignIn()
         {
             string username = txtBxUsername.Text;
             string password = txtBxPassword.Text;
