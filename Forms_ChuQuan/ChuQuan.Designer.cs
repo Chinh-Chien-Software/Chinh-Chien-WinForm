@@ -37,7 +37,7 @@ namespace ChinChin.FormsChuQuan
             this.KhoHangBTN = new FontAwesome.Sharp.IconButton();
             this.ThongKeBTN = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
+            this.SignOutButton = new ChinChin.Extra.BlackWhiteButton();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Label();
             this.panelTittleBar = new System.Windows.Forms.Panel();
@@ -176,7 +176,7 @@ namespace ChinChin.FormsChuQuan
             // 
             this.panelLogo.BackColor = System.Drawing.Color.Transparent;
             this.panelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelLogo.Controls.Add(this.SignInButton);
+            this.panelLogo.Controls.Add(this.SignOutButton);
             this.panelLogo.Controls.Add(this.lblVersion);
             this.panelLogo.Controls.Add(this.btnHome);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -186,25 +186,25 @@ namespace ChinChin.FormsChuQuan
             this.panelLogo.Size = new System.Drawing.Size(498, 150);
             this.panelLogo.TabIndex = 0;
             // 
-            // SignInButton
+            // SignOutButton
             // 
-            this.SignInButton.BackColor = System.Drawing.Color.Black;
-            this.SignInButton.BackgroundColor = System.Drawing.Color.Black;
-            this.SignInButton.BorderColor = System.Drawing.Color.Black;
-            this.SignInButton.BorderRadius = 0;
-            this.SignInButton.BorderSize = 0;
-            this.SignInButton.FlatAppearance.BorderSize = 0;
-            this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignInButton.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignInButton.ForeColor = System.Drawing.Color.White;
-            this.SignInButton.Location = new System.Drawing.Point(242, 9);
-            this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(250, 50);
-            this.SignInButton.TabIndex = 11;
-            this.SignInButton.Text = "ĐĂNG XUẤT";
-            this.SignInButton.TextColor = System.Drawing.Color.White;
-            this.SignInButton.UseVisualStyleBackColor = false;
-            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
+            this.SignOutButton.BackColor = System.Drawing.Color.Black;
+            this.SignOutButton.BackgroundColor = System.Drawing.Color.Black;
+            this.SignOutButton.BorderColor = System.Drawing.Color.Black;
+            this.SignOutButton.BorderRadius = 0;
+            this.SignOutButton.BorderSize = 0;
+            this.SignOutButton.FlatAppearance.BorderSize = 0;
+            this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignOutButton.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignOutButton.ForeColor = System.Drawing.Color.White;
+            this.SignOutButton.Location = new System.Drawing.Point(242, 9);
+            this.SignOutButton.Name = "SignOutButton";
+            this.SignOutButton.Size = new System.Drawing.Size(250, 50);
+            this.SignOutButton.TabIndex = 11;
+            this.SignOutButton.Text = "ĐĂNG XUẤT";
+            this.SignOutButton.TextColor = System.Drawing.Color.White;
+            this.SignOutButton.UseVisualStyleBackColor = false;
+            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click);
             // 
             // lblVersion
             // 
@@ -369,6 +369,6 @@ namespace ChinChin.FormsChuQuan
         private System.Windows.Forms.Label labelTittleChildForm;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private FontAwesome.Sharp.IconButton iconButtonThucDon;
-        private Extra.BlackWhiteButton SignInButton;
+        private Extra.BlackWhiteButton SignOutButton;
     }
 }
