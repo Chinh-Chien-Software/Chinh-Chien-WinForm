@@ -87,7 +87,7 @@ GO
 
 insert into NhanVien 
 values ('12356123','Tung','Tungchinchin','123456789','15000đ/h','16/02/2018','nam','25/4/2000','0816148776','362 Truong Cong Dinh','phuc vu'),
-('13546123','Ngan', 'NganChinChin','123456789','18000đ/h','26/03/2018','nu','25/5/1999','0542136161','46 Hoang Hoa Tham','thu ngan')
+('13546123','Ngan', 'NganChinChin','123456789','18000đ/h','26/03/2018','nu','25/5/1999','0542136161','46 Hoang Hoa Tham','thu ngan'),
 ('15639854','Thu','Thuchinchin','123456789','15000đ/h','20/01/2018','nu','12/06/2000','0654782153','491 Ton Sach','phuc vu'),
 ('41923647','Trung','Trungchinchin','123456789','20000đ/h','27/06/2018','nam','16/08/1996','0541278961','45/12 Nguyen Binh Khiem','quan ly'),
 ('52143689','thinh','Tinhchinchin','123456789','15000đ/h','14/09/2018','nam','11/04/2001','0475963214','78 Trung Truc','phuc vu')
