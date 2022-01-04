@@ -16,7 +16,7 @@ namespace ChinChin.FormsChuQuan
     public partial class formChuQuan : Form
     {
         
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        /*[DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
            int nLeftRect,     // x-coordinate of upper-left corner
@@ -25,11 +25,11 @@ namespace ChinChin.FormsChuQuan
            int nBottomRect,   // y-coordinate of lower-right corner
            int nWidthEllipse, // width of ellipse
            int nHeightEllipse // height of ellipse
-        );
+        );*/
 
         //Fields
         private IconButton currentBtn;
-        private Panel leftBorderBtn;
+        //private Panel leftBorderBtn;
         private Form currentChildForm;
 
         public formChuQuan()
@@ -37,17 +37,17 @@ namespace ChinChin.FormsChuQuan
             InitializeComponent();
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
             this.WindowState = FormWindowState.Maximized;
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            /*Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 100);
-            panelMenu.Controls.Add(leftBorderBtn);
+            panelMenu.Controls.Add(leftBorderBtn);*/
 
             //Forms - Custom Tittle Bar
             this.Text = string.Empty;
             this.ControlBox = false;
-            this.DoubleBuffered = true;
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            //this.DoubleBuffered = true;
+            //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
         
 

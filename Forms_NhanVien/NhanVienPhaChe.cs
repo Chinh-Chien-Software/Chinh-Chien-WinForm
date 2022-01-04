@@ -100,6 +100,15 @@ namespace ChinChin.Forms_NhanVien
             childForm.Show();
             labelTittleChildForm.Text = childForm.Text;
         }
+        private void Reset()
+        {
+            DisableButton();
+            //leftBorderBtn.Visible = false;
+            iconCurrentChildForm.IconChar = IconChar.Home;
+            iconCurrentChildForm.IconColor = Color.MediumPurple;
+            labelTittleChildForm.Text = "Home";
+        }
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -148,6 +157,12 @@ namespace ChinChin.Forms_NhanVien
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            currentChildForm.Close();
+            Reset();
         }
     }
 }

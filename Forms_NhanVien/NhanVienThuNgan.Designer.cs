@@ -39,13 +39,12 @@ namespace ChinChin.Forms_NhanVien
             this.panelMenu = new System.Windows.Forms.Panel();
             this.iconButtonThucDon = new FontAwesome.Sharp.IconButton();
             this.ChamCongBTN = new FontAwesome.Sharp.IconButton();
-            this.KhoHangBTN = new FontAwesome.Sharp.IconButton();
             this.ThongKeBTN = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.SignOutButton = new ChinChin.Extra.BlackWhiteButton();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.SignOutButton = new ChinChin.Extra.BlackWhiteButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -134,6 +133,7 @@ namespace ChinChin.Forms_NhanVien
             this.panelTittleBar.Name = "panelTittleBar";
             this.panelTittleBar.Size = new System.Drawing.Size(1902, 75);
             this.panelTittleBar.TabIndex = 7;
+            this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown);
             // 
             // labelTittleChildForm
             // 
@@ -152,7 +152,6 @@ namespace ChinChin.Forms_NhanVien
             this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMenu.Controls.Add(this.iconButtonThucDon);
             this.panelMenu.Controls.Add(this.ChamCongBTN);
-            this.panelMenu.Controls.Add(this.KhoHangBTN);
             this.panelMenu.Controls.Add(this.ThongKeBTN);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -174,13 +173,13 @@ namespace ChinChin.Forms_NhanVien
             this.iconButtonThucDon.IconColor = System.Drawing.Color.Black;
             this.iconButtonThucDon.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonThucDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonThucDon.Location = new System.Drawing.Point(0, 525);
+            this.iconButtonThucDon.Location = new System.Drawing.Point(0, 400);
             this.iconButtonThucDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButtonThucDon.Name = "iconButtonThucDon";
             this.iconButtonThucDon.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
             this.iconButtonThucDon.Size = new System.Drawing.Size(498, 125);
             this.iconButtonThucDon.TabIndex = 4;
-            this.iconButtonThucDon.Text = "THỰC ĐƠN";
+            this.iconButtonThucDon.Text = "TÀI KHOẢN";
             this.iconButtonThucDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButtonThucDon.UseVisualStyleBackColor = true;
             // 
@@ -195,36 +194,15 @@ namespace ChinChin.Forms_NhanVien
             this.ChamCongBTN.IconColor = System.Drawing.Color.Black;
             this.ChamCongBTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ChamCongBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ChamCongBTN.Location = new System.Drawing.Point(0, 400);
+            this.ChamCongBTN.Location = new System.Drawing.Point(0, 275);
             this.ChamCongBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChamCongBTN.Name = "ChamCongBTN";
             this.ChamCongBTN.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
             this.ChamCongBTN.Size = new System.Drawing.Size(498, 125);
             this.ChamCongBTN.TabIndex = 3;
-            this.ChamCongBTN.Text = "CHẤM CÔNG";
+            this.ChamCongBTN.Text = "KẾT CA";
             this.ChamCongBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ChamCongBTN.UseVisualStyleBackColor = true;
-            // 
-            // KhoHangBTN
-            // 
-            this.KhoHangBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.KhoHangBTN.FlatAppearance.BorderSize = 0;
-            this.KhoHangBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.KhoHangBTN.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KhoHangBTN.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.KhoHangBTN.IconChar = FontAwesome.Sharp.IconChar.Boxes;
-            this.KhoHangBTN.IconColor = System.Drawing.Color.Black;
-            this.KhoHangBTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.KhoHangBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.KhoHangBTN.Location = new System.Drawing.Point(0, 275);
-            this.KhoHangBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.KhoHangBTN.Name = "KhoHangBTN";
-            this.KhoHangBTN.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.KhoHangBTN.Size = new System.Drawing.Size(498, 125);
-            this.KhoHangBTN.TabIndex = 2;
-            this.KhoHangBTN.Text = "KHO HÀNG";
-            this.KhoHangBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.KhoHangBTN.UseVisualStyleBackColor = true;
             // 
             // ThongKeBTN
             // 
@@ -243,9 +221,10 @@ namespace ChinChin.Forms_NhanVien
             this.ThongKeBTN.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
             this.ThongKeBTN.Size = new System.Drawing.Size(498, 125);
             this.ThongKeBTN.TabIndex = 1;
-            this.ThongKeBTN.Text = "THỐNG KÊ";
+            this.ThongKeBTN.Text = "NHẬN ĐƠN";
             this.ThongKeBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ThongKeBTN.UseVisualStyleBackColor = true;
+            this.ThongKeBTN.Click += new System.EventHandler(this.ThongKeBTN_Click);
             // 
             // panelLogo
             // 
@@ -260,26 +239,6 @@ namespace ChinChin.Forms_NhanVien
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(498, 150);
             this.panelLogo.TabIndex = 0;
-            // 
-            // SignOutButton
-            // 
-            this.SignOutButton.BackColor = System.Drawing.Color.Black;
-            this.SignOutButton.BackgroundColor = System.Drawing.Color.Black;
-            this.SignOutButton.BorderColor = System.Drawing.Color.Black;
-            this.SignOutButton.BorderRadius = 0;
-            this.SignOutButton.BorderSize = 0;
-            this.SignOutButton.FlatAppearance.BorderSize = 0;
-            this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignOutButton.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignOutButton.ForeColor = System.Drawing.Color.White;
-            this.SignOutButton.Location = new System.Drawing.Point(242, 9);
-            this.SignOutButton.Name = "SignOutButton";
-            this.SignOutButton.Size = new System.Drawing.Size(250, 50);
-            this.SignOutButton.TabIndex = 11;
-            this.SignOutButton.Text = "ĐĂNG XUẤT";
-            this.SignOutButton.TextColor = System.Drawing.Color.White;
-            this.SignOutButton.UseVisualStyleBackColor = false;
-            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click_1);
             // 
             // lblVersion
             // 
@@ -302,6 +261,7 @@ namespace ChinChin.Forms_NhanVien
             this.btnHome.Size = new System.Drawing.Size(181, 63);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Cashier";
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panelDesktop
             // 
@@ -312,6 +272,26 @@ namespace ChinChin.Forms_NhanVien
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1402, 958);
             this.panelDesktop.TabIndex = 10;
+            // 
+            // SignOutButton
+            // 
+            this.SignOutButton.BackColor = System.Drawing.Color.Black;
+            this.SignOutButton.BackgroundColor = System.Drawing.Color.Black;
+            this.SignOutButton.BorderColor = System.Drawing.Color.Black;
+            this.SignOutButton.BorderRadius = 0;
+            this.SignOutButton.BorderSize = 0;
+            this.SignOutButton.FlatAppearance.BorderSize = 0;
+            this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignOutButton.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignOutButton.ForeColor = System.Drawing.Color.White;
+            this.SignOutButton.Location = new System.Drawing.Point(242, 9);
+            this.SignOutButton.Name = "SignOutButton";
+            this.SignOutButton.Size = new System.Drawing.Size(250, 50);
+            this.SignOutButton.TabIndex = 11;
+            this.SignOutButton.Text = "ĐĂNG XUẤT";
+            this.SignOutButton.TextColor = System.Drawing.Color.White;
+            this.SignOutButton.UseVisualStyleBackColor = false;
+            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click_1);
             // 
             // NhanVienThuNgan
             // 
@@ -348,7 +328,6 @@ namespace ChinChin.Forms_NhanVien
         private System.Windows.Forms.Panel panelMenu;
         private FontAwesome.Sharp.IconButton iconButtonThucDon;
         private FontAwesome.Sharp.IconButton ChamCongBTN;
-        private FontAwesome.Sharp.IconButton KhoHangBTN;
         private FontAwesome.Sharp.IconButton ThongKeBTN;
         private System.Windows.Forms.Panel panelLogo;
         private Extra.BlackWhiteButton SignOutButton;
