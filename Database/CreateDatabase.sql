@@ -6,11 +6,10 @@ GO
 
 CREATE TABLE NhanVien
 (
-  MaNhanVien NVARCHAR(4),
-  TenNhanVien NVARCHAR,
-  TenTaiKhoan NVARCHAR,
-  MatKhau NVARCHAR,
-  LuongTrenGio NVARCHAR,
+  MaNhanVien VARCHAR(4),
+  TenNhanVien NVARCHAR(40),
+  TenTaiKhoan VARCHAR(10),
+  LuongTrenGio INT,
   NgayVaoLam DateTime,
   GioiTinh NVARCHAR,
   NgaySinh NVARCHAR,
@@ -24,6 +23,7 @@ CREATE TABLE TaiKhoan
 (
   TenTaiKhoan NVARCHAR,
   MatKhau NVARCHAR,
+  LoaiTaiKhoan NVARCHAR,
   CONSTRAINT PK_TaiKhoan_TenTaiKhoan PRIMARY KEY (TenTaiKhoan)
 )
 GO
