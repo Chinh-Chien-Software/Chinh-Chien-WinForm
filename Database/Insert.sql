@@ -1,5 +1,26 @@
 ﻿USE QuanLyQuanTraSua
 GO
+
+--Test Insert 1 Record
+INSERT into NhanVien (
+MaNhanVien, 
+TenNhanVien, 
+TenTaiKhoan, 
+LuongTrenGio, 
+NgayVaoLam, 
+GioiTinh,
+NgaySinh,
+SoDienThoai,
+DiaChi,
+LoaiNhanVien
+)
+values
+('1235','Tung', '1234567890','15000','20180216','nam','25/4/2000', '0816148776',
+'362 Truong Cong Dinh',   
+'1'
+)
+
+-- Insert Lượng Lớn
 insert into NhanVien (
 MaNhanVien, 
 TenNhanVien, 
@@ -13,7 +34,7 @@ DiaChi,
 LoaiNhanVien
 )
 values
-('1235','Tung', '123456789','15000','16/02/2018','nam','25/4/2000', '0816148776',
+('1235','Tung', '123456789','15000','20180216','nam','25/4/2000', '0816148776',
 '362 Truong Cong Dinh',   
 'phuc vu'
 ),
@@ -36,7 +57,9 @@ values
 
 GO
 insert into TaiKhoan (
-
+TenTaiKhoan,
+MatKhau,
+LoaiTaiKhoan
 )
 values
 ('chuquan','cq'),

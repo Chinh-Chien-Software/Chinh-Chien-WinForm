@@ -11,10 +11,10 @@ CREATE TABLE NhanVien
   TenTaiKhoan VARCHAR(10),
   LuongTrenGio INT,
   NgayVaoLam DateTime,
-  GioiTinh NVARCHAR,
-  NgaySinh NVARCHAR,
-  SoDienThoai NVARCHAR,
-  DiaChi NVARCHAR,
+  GioiTinh VARCHAR(3),
+  NgaySinh DateTime,
+  SoDienThoai VARCHAR(13),
+  DiaChi NVARCHAR(40),
   LoaiNhanVien INT,
   CONSTRAINT PK_NhanVien_MaNhanVien PRIMARY KEY (MaNhanVien)
 )
