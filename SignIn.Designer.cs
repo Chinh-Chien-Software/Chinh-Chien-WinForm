@@ -99,7 +99,6 @@ namespace ChinChin
             this.labelPasword.Size = new System.Drawing.Size(161, 40);
             this.labelPasword.TabIndex = 7;
             this.labelPasword.Text = "Password";
-            this.labelPasword.Click += new System.EventHandler(this.labelPasword_Click);
             // 
             // labelUserName
             // 

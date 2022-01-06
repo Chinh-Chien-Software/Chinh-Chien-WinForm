@@ -61,12 +61,14 @@ namespace ChinChin
 
             sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan='" + username + "' and MatKhau='" + password + "'";
 
+            // Kiểm tra Mật Khẩu
             ketnoi.Open();
             SqlDataAdapter sda = new SqlDataAdapter(sqlcode, ketnoi);
             DataTable dttb = new DataTable();
             sda.Fill(dttb);
             ketnoi.Close();
 
+            //Kiểm tra LoaiTaiKhoan
             ketnoi.Open();
             thuchien = new SqlCommand(sqlcode, ketnoi);
             docdulieu = thuchien.ExecuteReader();
@@ -108,11 +110,6 @@ namespace ChinChin
         }
 
         private void SignIn_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelPasword_Click(object sender, EventArgs e)
         {
 
         }
