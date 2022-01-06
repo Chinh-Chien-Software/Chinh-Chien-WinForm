@@ -14,6 +14,7 @@ using ChinChin.FormsQuanLy;
 using ChinChin.Forms_NhanVien;
 using ChinChin.Extra;
 using System.Windows.Input;
+using System.Data.SqlClient;
 
 namespace ChinChin
 {
@@ -40,7 +41,66 @@ namespace ChinChin
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             //this.FormBorderStyle = FormBorderStyle.FixedDialog;
         }
+        // Database
+        string chuoiketnoi = @"Data Source=DESKTOP-AN8O8G6\TQK;Initial Catalog=QuanLyQuanTraSua;Integrated Security=True";
+        string sqlcode;
+        SqlConnection ketnoi;
+        SqlCommand thuchien;
+        SqlDataReader docdulieu;
 
+        private void CheckUserPassAndSignIn()
+        {
+            ketnoi = new SqlConnection(chuoiketnoi);
+
+            string username = txtBxUsername.Text;
+            string password = txtBxPassword.Text;
+            formChuQuan ChuQuan = new formChuQuan();
+            QuanLy QuanLy = new QuanLy();
+            NhanVienThuNgan NhanVienThuNgan = new NhanVienThuNgan();
+            NhanVienPhaChe Barista = new NhanVienPhaChe();
+
+            sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan='" + username + "' and MatKhau='" + password + "'";
+
+            ketnoi.Open();
+            SqlDataAdapter sda = new SqlDataAdapter(sqlcode, ketnoi);
+            DataTable dttb = new DataTable();
+            sda.Fill(dttb);
+            ketnoi.Close();
+
+            ketnoi.Open();
+            thuchien = new SqlCommand(sqlcode, ketnoi);
+            docdulieu = thuchien.ExecuteReader();
+            docdulieu.Read();
+
+            if (dttb.Rows.Count == 1)
+            {
+                if (docdulieu[2].ToString() == "chuquan")
+                {
+                    ChuQuan.Show();
+                    this.Hide();
+                }
+                else if (docdulieu[2].ToString() == "quanly")
+                {
+                    QuanLy.Show();
+                    this.Hide();
+                }
+                else if (docdulieu[2].ToString() == "thungan")
+                {
+                    NhanVienThuNgan.Show();
+                    this.Hide();
+                }
+                else if (docdulieu[2].ToString() == "phache")
+                {
+                    Barista.Show();
+                    this.Hide();
+                }
+            }
+            else
+            {
+                labelThongBao.Text = "Không tìm thấy tài khoản hoặc sai mật khẩu";
+            }
+            ketnoi.Close();
+        }
 
         private void labelUserName_Click(object sender, EventArgs e)
         {
@@ -79,39 +139,7 @@ namespace ChinChin
                 CheckUserPassAndSignIn();
             }
         }
-        private void CheckUserPassAndSignIn()
-        {
-            string username = txtBxUsername.Text;
-            string password = txtBxPassword.Text;
-            formChuQuan ChuQuan = new formChuQuan();
-            QuanLy QuanLy = new QuanLy();
-            NhanVienThuNgan NhanVienThuNgan = new NhanVienThuNgan();
-            NhanVienPhaChe Barista = new NhanVienPhaChe();
-            if (username == "chuquan")
-            {
-                ChuQuan.Show();
-                this.Hide();
-            }
-            else if (username == "quanly")
-            {
-                QuanLy.Show();
-                this.Hide();
-            }
-            else if (username == "thungan")
-            {
-                NhanVienThuNgan.Show();
-                this.Hide();
-            }
-            else if (username == "barista")
-            {
-                Barista.Show();
-                this.Hide();
-            }
-            else if (username == "")
-            {
-                labelThongBao.Text = "Chưa Nhập Nội Dung";
-            }
-        }
+        
     }
 }
 
