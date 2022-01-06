@@ -139,7 +139,14 @@ namespace ChinChin
                 CheckUserPassAndSignIn();
             }
         }
-        
+
+        private void txtBxPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckUserPassAndSignIn();
+            }
+        }
     }
 }
 

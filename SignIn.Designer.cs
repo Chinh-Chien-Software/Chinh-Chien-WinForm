@@ -65,6 +65,7 @@ namespace ChinChin
             this.txtBxPassword.Size = new System.Drawing.Size(300, 45);
             this.txtBxPassword.TabIndex = 2;
             this.txtBxPassword.Tag = "";
+            this.txtBxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBxPassword_KeyDown);
             // 
             // lblSignIn
             // 
