@@ -33,13 +33,14 @@ namespace ChinChin.Forms_NhanVien
             this.panelMenu = new System.Windows.Forms.Panel();
             this.labelMenuList = new System.Windows.Forms.Label();
             this.panelHoaDon = new System.Windows.Forms.Panel();
-            this.labelHoaDon = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelHoaDon = new System.Windows.Forms.Label();
+            this.panelButtons = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelHoaDon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -50,7 +51,7 @@ namespace ChinChin.Forms_NhanVien
             this.flowLayoutPanelMenuList.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanelMenuList.Location = new System.Drawing.Point(0, 103);
             this.flowLayoutPanelMenuList.Name = "flowLayoutPanelMenuList";
-            this.flowLayoutPanelMenuList.Size = new System.Drawing.Size(695, 930);
+            this.flowLayoutPanelMenuList.Size = new System.Drawing.Size(526, 930);
             this.flowLayoutPanelMenuList.TabIndex = 1;
             // 
             // panelMenu
@@ -60,15 +61,15 @@ namespace ChinChin.Forms_NhanVien
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(695, 1033);
+            this.panelMenu.Size = new System.Drawing.Size(526, 1033);
             this.panelMenu.TabIndex = 0;
             // 
             // labelMenuList
             // 
-            this.labelMenuList.AutoSize = true;
-            this.labelMenuList.Location = new System.Drawing.Point(359, 43);
+            this.labelMenuList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelMenuList.Location = new System.Drawing.Point(0, 0);
             this.labelMenuList.Name = "labelMenuList";
-            this.labelMenuList.Size = new System.Drawing.Size(48, 17);
+            this.labelMenuList.Size = new System.Drawing.Size(526, 103);
             this.labelMenuList.TabIndex = 2;
             this.labelMenuList.Text = "MENU";
             // 
@@ -77,19 +78,10 @@ namespace ChinChin.Forms_NhanVien
             this.panelHoaDon.Controls.Add(this.dataGridView1);
             this.panelHoaDon.Controls.Add(this.labelHoaDon);
             this.panelHoaDon.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelHoaDon.Location = new System.Drawing.Point(879, 0);
+            this.panelHoaDon.Location = new System.Drawing.Point(728, 0);
             this.panelHoaDon.Name = "panelHoaDon";
-            this.panelHoaDon.Size = new System.Drawing.Size(723, 1033);
+            this.panelHoaDon.Size = new System.Drawing.Size(874, 1033);
             this.panelHoaDon.TabIndex = 1;
-            // 
-            // labelHoaDon
-            // 
-            this.labelHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelHoaDon.Location = new System.Drawing.Point(0, 0);
-            this.labelHoaDon.Name = "labelHoaDon";
-            this.labelHoaDon.Size = new System.Drawing.Size(723, 50);
-            this.labelHoaDon.TabIndex = 1;
-            this.labelHoaDon.Text = "HÓA ĐƠN";
             // 
             // dataGridView1
             // 
@@ -105,7 +97,7 @@ namespace ChinChin.Forms_NhanVien
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(723, 983);
+            this.dataGridView1.Size = new System.Drawing.Size(874, 983);
             this.dataGridView1.TabIndex = 2;
             // 
             // STT
@@ -145,17 +137,34 @@ namespace ChinChin.Forms_NhanVien
             this.TongTien.Name = "TongTien";
             this.TongTien.Width = 125;
             // 
+            // labelHoaDon
+            // 
+            this.labelHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelHoaDon.Location = new System.Drawing.Point(0, 0);
+            this.labelHoaDon.Name = "labelHoaDon";
+            this.labelHoaDon.Size = new System.Drawing.Size(874, 50);
+            this.labelHoaDon.TabIndex = 1;
+            this.labelHoaDon.Text = "HÓA ĐƠN";
+            // 
+            // panelButtons
+            // 
+            this.panelButtons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelButtons.Location = new System.Drawing.Point(526, 0);
+            this.panelButtons.Name = "panelButtons";
+            this.panelButtons.Size = new System.Drawing.Size(202, 1033);
+            this.panelButtons.TabIndex = 2;
+            // 
             // TiepNhanDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1602, 1033);
+            this.Controls.Add(this.panelButtons);
             this.Controls.Add(this.panelHoaDon);
             this.Controls.Add(this.panelMenu);
             this.Name = "TiepNhanDonHang";
             this.Text = "TiepNhanDonHang";
             this.panelMenu.ResumeLayout(false);
-            this.panelMenu.PerformLayout();
             this.panelHoaDon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -174,5 +183,6 @@ namespace ChinChin.Forms_NhanVien
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
+        private System.Windows.Forms.Panel panelButtons;
     }
 }
