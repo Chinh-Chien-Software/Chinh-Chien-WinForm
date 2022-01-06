@@ -31,10 +31,15 @@ namespace ChinChin.Forms_NhanVien
         {
             this.flowLayoutPanelMenuList = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelHoaDon = new System.Windows.Forms.Panel();
-            this.listViewThucUong = new System.Windows.Forms.ListView();
-            this.labelHoaDon = new System.Windows.Forms.Label();
             this.labelMenuList = new System.Windows.Forms.Label();
+            this.panelHoaDon = new System.Windows.Forms.Panel();
+            this.labelHoaDon = new System.Windows.Forms.Label();
+            this.listViewThucUong = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelMenu.SuspendLayout();
             this.panelHoaDon.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +62,15 @@ namespace ChinChin.Forms_NhanVien
             this.panelMenu.Size = new System.Drawing.Size(800, 1033);
             this.panelMenu.TabIndex = 0;
             // 
+            // labelMenuList
+            // 
+            this.labelMenuList.AutoSize = true;
+            this.labelMenuList.Location = new System.Drawing.Point(359, 43);
+            this.labelMenuList.Name = "labelMenuList";
+            this.labelMenuList.Size = new System.Drawing.Size(48, 17);
+            this.labelMenuList.TabIndex = 2;
+            this.labelMenuList.Text = "MENU";
+            // 
             // panelHoaDon
             // 
             this.panelHoaDon.Controls.Add(this.labelHoaDon);
@@ -67,8 +81,23 @@ namespace ChinChin.Forms_NhanVien
             this.panelHoaDon.Size = new System.Drawing.Size(500, 1033);
             this.panelHoaDon.TabIndex = 1;
             // 
+            // labelHoaDon
+            // 
+            this.labelHoaDon.AutoSize = true;
+            this.labelHoaDon.Location = new System.Drawing.Point(171, 44);
+            this.labelHoaDon.Name = "labelHoaDon";
+            this.labelHoaDon.Size = new System.Drawing.Size(73, 17);
+            this.labelHoaDon.TabIndex = 1;
+            this.labelHoaDon.Text = "HÓA ĐƠN";
+            // 
             // listViewThucUong
             // 
+            this.listViewThucUong.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
             this.listViewThucUong.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.listViewThucUong.GridLines = true;
             this.listViewThucUong.HideSelection = false;
@@ -79,23 +108,25 @@ namespace ChinChin.Forms_NhanVien
             this.listViewThucUong.UseCompatibleStateImageBehavior = false;
             this.listViewThucUong.View = System.Windows.Forms.View.Details;
             // 
-            // labelHoaDon
+            // columnHeader1
             // 
-            this.labelHoaDon.AutoSize = true;
-            this.labelHoaDon.Location = new System.Drawing.Point(171, 44);
-            this.labelHoaDon.Name = "labelHoaDon";
-            this.labelHoaDon.Size = new System.Drawing.Size(73, 17);
-            this.labelHoaDon.TabIndex = 1;
-            this.labelHoaDon.Text = "HÓA ĐƠN";
+            this.columnHeader1.Text = "STT";
             // 
-            // labelMenuList
+            // columnHeader2
             // 
-            this.labelMenuList.AutoSize = true;
-            this.labelMenuList.Location = new System.Drawing.Point(359, 43);
-            this.labelMenuList.Name = "labelMenuList";
-            this.labelMenuList.Size = new System.Drawing.Size(48, 17);
-            this.labelMenuList.TabIndex = 2;
-            this.labelMenuList.Text = "MENU";
+            this.columnHeader2.Text = "Tên";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "S.Lượng";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Giá";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "T.Tiền";
             // 
             // TiepNhanDonHang
             // 
@@ -121,5 +152,10 @@ namespace ChinChin.Forms_NhanVien
         private System.Windows.Forms.ListView listViewThucUong;
         private System.Windows.Forms.Label labelHoaDon;
         private System.Windows.Forms.Label labelMenuList;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }
