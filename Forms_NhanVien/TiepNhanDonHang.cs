@@ -16,12 +16,6 @@ namespace ChinChin.Forms_NhanVien
         {
             InitializeComponent();
 
-            ListViewItem ThucUong = new ListViewItem();
-            ThucUong.Text = "Tên";
-            ThucUong.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = "SL" });
-            ThucUong.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = "Giá" });
-            ThucUong.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = "T.Tiền" });
-            listViewThucUong.Items.Add(ThucUong);
         }
     }
 }

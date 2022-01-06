@@ -34,14 +34,15 @@ namespace ChinChin.Forms_NhanVien
             this.labelMenuList = new System.Windows.Forms.Label();
             this.panelHoaDon = new System.Windows.Forms.Panel();
             this.labelHoaDon = new System.Windows.Forms.Label();
-            this.listViewThucUong = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelMenu.SuspendLayout();
             this.panelHoaDon.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanelMenuList
@@ -49,7 +50,7 @@ namespace ChinChin.Forms_NhanVien
             this.flowLayoutPanelMenuList.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanelMenuList.Location = new System.Drawing.Point(0, 103);
             this.flowLayoutPanelMenuList.Name = "flowLayoutPanelMenuList";
-            this.flowLayoutPanelMenuList.Size = new System.Drawing.Size(800, 930);
+            this.flowLayoutPanelMenuList.Size = new System.Drawing.Size(695, 930);
             this.flowLayoutPanelMenuList.TabIndex = 1;
             // 
             // panelMenu
@@ -59,7 +60,7 @@ namespace ChinChin.Forms_NhanVien
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(800, 1033);
+            this.panelMenu.Size = new System.Drawing.Size(695, 1033);
             this.panelMenu.TabIndex = 0;
             // 
             // labelMenuList
@@ -73,60 +74,76 @@ namespace ChinChin.Forms_NhanVien
             // 
             // panelHoaDon
             // 
+            this.panelHoaDon.Controls.Add(this.dataGridView1);
             this.panelHoaDon.Controls.Add(this.labelHoaDon);
-            this.panelHoaDon.Controls.Add(this.listViewThucUong);
             this.panelHoaDon.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelHoaDon.Location = new System.Drawing.Point(1102, 0);
+            this.panelHoaDon.Location = new System.Drawing.Point(879, 0);
             this.panelHoaDon.Name = "panelHoaDon";
-            this.panelHoaDon.Size = new System.Drawing.Size(500, 1033);
+            this.panelHoaDon.Size = new System.Drawing.Size(723, 1033);
             this.panelHoaDon.TabIndex = 1;
             // 
             // labelHoaDon
             // 
-            this.labelHoaDon.AutoSize = true;
-            this.labelHoaDon.Location = new System.Drawing.Point(171, 44);
+            this.labelHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelHoaDon.Location = new System.Drawing.Point(0, 0);
             this.labelHoaDon.Name = "labelHoaDon";
-            this.labelHoaDon.Size = new System.Drawing.Size(73, 17);
+            this.labelHoaDon.Size = new System.Drawing.Size(723, 50);
             this.labelHoaDon.TabIndex = 1;
             this.labelHoaDon.Text = "HÓA ĐƠN";
             // 
-            // listViewThucUong
+            // dataGridView1
             // 
-            this.listViewThucUong.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
-            this.listViewThucUong.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.listViewThucUong.GridLines = true;
-            this.listViewThucUong.HideSelection = false;
-            this.listViewThucUong.Location = new System.Drawing.Point(0, 103);
-            this.listViewThucUong.Name = "listViewThucUong";
-            this.listViewThucUong.Size = new System.Drawing.Size(500, 930);
-            this.listViewThucUong.TabIndex = 0;
-            this.listViewThucUong.UseCompatibleStateImageBehavior = false;
-            this.listViewThucUong.View = System.Windows.Forms.View.Details;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.STT,
+            this.Ten,
+            this.SoLuong,
+            this.Gia,
+            this.TongTien});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 50);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(723, 983);
+            this.dataGridView1.TabIndex = 2;
             // 
-            // columnHeader1
+            // STT
             // 
-            this.columnHeader1.Text = "STT";
+            this.STT.HeaderText = "STT";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
+            this.STT.ToolTipText = "Số Thứ Tự";
+            this.STT.Width = 125;
             // 
-            // columnHeader2
+            // Ten
             // 
-            this.columnHeader2.Text = "Tên";
+            this.Ten.HeaderText = "Tên";
+            this.Ten.MinimumWidth = 6;
+            this.Ten.Name = "Ten";
+            this.Ten.Width = 125;
             // 
-            // columnHeader3
+            // SoLuong
             // 
-            this.columnHeader3.Text = "S.Lượng";
+            this.SoLuong.HeaderText = "S.Lượng";
+            this.SoLuong.MinimumWidth = 6;
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.ToolTipText = "Số Lượng";
+            this.SoLuong.Width = 125;
             // 
-            // columnHeader4
+            // Gia
             // 
-            this.columnHeader4.Text = "Giá";
+            this.Gia.HeaderText = "Giá";
+            this.Gia.MinimumWidth = 6;
+            this.Gia.Name = "Gia";
+            this.Gia.Width = 125;
             // 
-            // columnHeader5
+            // TongTien
             // 
-            this.columnHeader5.Text = "T.Tiền";
+            this.TongTien.HeaderText = "T.Tiền";
+            this.TongTien.MinimumWidth = 6;
+            this.TongTien.Name = "TongTien";
+            this.TongTien.Width = 125;
             // 
             // TiepNhanDonHang
             // 
@@ -140,7 +157,7 @@ namespace ChinChin.Forms_NhanVien
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.panelHoaDon.ResumeLayout(false);
-            this.panelHoaDon.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -149,13 +166,13 @@ namespace ChinChin.Forms_NhanVien
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelMenuList;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelHoaDon;
-        private System.Windows.Forms.ListView listViewThucUong;
         private System.Windows.Forms.Label labelHoaDon;
         private System.Windows.Forms.Label labelMenuList;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
     }
 }
