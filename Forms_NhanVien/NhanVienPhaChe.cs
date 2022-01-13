@@ -28,7 +28,7 @@ namespace ChinChin.Forms_NhanVien
         }
         //Fields
         private IconButton currentBtn;
-        private Panel leftBorderBtn;
+        //private Panel leftBorderBtn;
         private Form currentChildForm;
 
         private struct RGBColors

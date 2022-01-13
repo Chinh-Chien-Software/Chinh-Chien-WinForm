@@ -20,7 +20,6 @@ E:\repos\ChinChin\obj\Debug\ChinChin.Forms_QuanLy.QuanLyKhoHang.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.Forms_NhanVien.NhanVienThuNgan.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.Forms_QuanLy.BaoCaoDoanhThu.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.Extra.Notification.resources
-E:\repos\ChinChin\obj\Debug\ChinChin.csproj.AssemblyReference.cache
 E:\repos\ChinChin\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 E:\repos\ChinChin\obj\Debug\RdlCompile.cache
 E:\repos\ChinChin\obj\Debug\RdlCompile.compiled
@@ -84,3 +83,5 @@ E:\repos\ChinChin\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 E:\repos\ChinChin\obj\Debug\ChinChin.Forms_NhanVien.KiemSoatLuongTonHang.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.Forms_NhanVien.TiepNhanDonHang.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.Forms_NhanVien.NhanVienPhaChe.resources
+E:\repos\ChinChin\obj\Debug\ChinChin.Forms_NhanVien.ButtonSanPham.resources
+E:\repos\ChinChin\obj\Debug\ChinChin.csproj.AssemblyReference.cache

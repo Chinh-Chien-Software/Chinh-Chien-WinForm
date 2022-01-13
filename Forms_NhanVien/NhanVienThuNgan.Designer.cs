@@ -41,10 +41,10 @@ namespace ChinChin.Forms_NhanVien
             this.ChamCongBTN = new FontAwesome.Sharp.IconButton();
             this.ThongKeBTN = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.SignOutButton = new ChinChin.Extra.BlackWhiteButton();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.SignOutButton = new ChinChin.Extra.BlackWhiteButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -69,6 +69,7 @@ namespace ChinChin.Forms_NhanVien
             this.btnMinimize.Size = new System.Drawing.Size(62, 62);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.TabStop = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // btnMaximize
             // 
@@ -85,6 +86,7 @@ namespace ChinChin.Forms_NhanVien
             this.btnMaximize.Size = new System.Drawing.Size(67, 60);
             this.btnMaximize.TabIndex = 3;
             this.btnMaximize.TabStop = false;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // btnExit
             // 
@@ -240,6 +242,26 @@ namespace ChinChin.Forms_NhanVien
             this.panelLogo.Size = new System.Drawing.Size(498, 150);
             this.panelLogo.TabIndex = 0;
             // 
+            // SignOutButton
+            // 
+            this.SignOutButton.BackColor = System.Drawing.Color.Black;
+            this.SignOutButton.BackgroundColor = System.Drawing.Color.Black;
+            this.SignOutButton.BorderColor = System.Drawing.Color.Black;
+            this.SignOutButton.BorderRadius = 0;
+            this.SignOutButton.BorderSize = 0;
+            this.SignOutButton.FlatAppearance.BorderSize = 0;
+            this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignOutButton.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignOutButton.ForeColor = System.Drawing.Color.White;
+            this.SignOutButton.Location = new System.Drawing.Point(242, 9);
+            this.SignOutButton.Name = "SignOutButton";
+            this.SignOutButton.Size = new System.Drawing.Size(250, 50);
+            this.SignOutButton.TabIndex = 11;
+            this.SignOutButton.Text = "ĐĂNG XUẤT";
+            this.SignOutButton.TextColor = System.Drawing.Color.White;
+            this.SignOutButton.UseVisualStyleBackColor = false;
+            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click_1);
+            // 
             // lblVersion
             // 
             this.lblVersion.AutoSize = true;
@@ -272,26 +294,6 @@ namespace ChinChin.Forms_NhanVien
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1402, 958);
             this.panelDesktop.TabIndex = 10;
-            // 
-            // SignOutButton
-            // 
-            this.SignOutButton.BackColor = System.Drawing.Color.Black;
-            this.SignOutButton.BackgroundColor = System.Drawing.Color.Black;
-            this.SignOutButton.BorderColor = System.Drawing.Color.Black;
-            this.SignOutButton.BorderRadius = 0;
-            this.SignOutButton.BorderSize = 0;
-            this.SignOutButton.FlatAppearance.BorderSize = 0;
-            this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignOutButton.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignOutButton.ForeColor = System.Drawing.Color.White;
-            this.SignOutButton.Location = new System.Drawing.Point(242, 9);
-            this.SignOutButton.Name = "SignOutButton";
-            this.SignOutButton.Size = new System.Drawing.Size(250, 50);
-            this.SignOutButton.TabIndex = 11;
-            this.SignOutButton.Text = "ĐĂNG XUẤT";
-            this.SignOutButton.TextColor = System.Drawing.Color.White;
-            this.SignOutButton.UseVisualStyleBackColor = false;
-            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click_1);
             // 
             // NhanVienThuNgan
             // 
