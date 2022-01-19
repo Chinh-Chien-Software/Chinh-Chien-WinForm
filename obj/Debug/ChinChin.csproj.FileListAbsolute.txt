@@ -21,8 +21,6 @@ E:\repos\ChinChin\obj\Debug\ChinChin.Forms_NhanVien.NhanVienThuNgan.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.Forms_QuanLy.BaoCaoDoanhThu.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.Extra.Notification.resources
 E:\repos\ChinChin\bin\Debug\Microsoft.ReportViewer.WinForms.dll
-E:\repos\ChinChin\obj\Debug\RdlCompile.cache
-E:\repos\ChinChin\obj\Debug\RdlCompile.compiled
 E:\repos\ChinChin\bin\Debug\Microsoft.ReportViewer.Common.dll
 E:\repos\ChinChin\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
 E:\repos\ChinChin\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
@@ -33,13 +31,7 @@ E:\repos\ChinChin\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
 E:\repos\ChinChin\bin\Debug\Microsoft.ReportViewer.Design.dll
 E:\repos\ChinChin\bin\Debug\Microsoft.SqlServer.Types.dll
 E:\repos\ChinChin\bin\Debug\EnvDTE.dll
-E:\repos\ChinChin\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
-E:\repos\ChinChin\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
 E:\repos\ChinChin\bin\Debug\stdole.dll
-E:\repos\ChinChin\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
-E:\repos\ChinChin\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
-E:\repos\ChinChin\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
-E:\repos\ChinChin\bin\Debug\Microsoft.MSXML.dll
 E:\repos\ChinChin\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
 E:\repos\ChinChin\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 E:\repos\ChinChin\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
@@ -85,3 +77,5 @@ E:\repos\ChinChin\obj\Debug\ChinChin.Forms_NhanVien.TiepNhanDonHang.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.Forms_NhanVien.NhanVienPhaChe.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.Forms_NhanVien.ButtonSanPham.resources
 E:\repos\ChinChin\obj\Debug\ChinChin.csproj.AssemblyReference.cache
+E:\repos\ChinChin\bin\Debug\EnvDTE.xml
+E:\repos\ChinChin\obj\Debug\ChinChin.csproj.SuggestedBindingRedirects.cache
