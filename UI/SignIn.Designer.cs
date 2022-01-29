@@ -72,6 +72,9 @@ namespace ChinChin
             // 
             // panelRight
             // 
+            this.panelRight.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelRight.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
             this.panelRight.Controls.Add(this.txtBxUsername);
             this.panelRight.Controls.Add(this.SignInButton);
@@ -82,7 +85,6 @@ namespace ChinChin
             this.panelRight.Controls.Add(this.ckBxRememberSignIn);
             this.panelRight.Controls.Add(this.labelUserName);
             this.panelRight.Controls.Add(this.txtBxPassword);
-            this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelRight.Location = new System.Drawing.Point(640, 0);
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(1280, 1080);
