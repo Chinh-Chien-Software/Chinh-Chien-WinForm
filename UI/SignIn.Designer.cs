@@ -74,7 +74,7 @@ namespace ChinChin
             this.lblSignIn.Font = new System.Drawing.Font("Inter", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSignIn.Location = new System.Drawing.Point(6, 27);
             this.lblSignIn.Name = "lblSignIn";
-            this.lblSignIn.Size = new System.Drawing.Size(390, 82);
+            this.lblSignIn.Size = new System.Drawing.Size(388, 81);
             this.lblSignIn.TabIndex = 3;
             this.lblSignIn.Text = "Đăng nhập";
             this.lblSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -178,9 +178,9 @@ namespace ChinChin
             this.labelThongBao.ForeColor = System.Drawing.Color.Lime;
             this.labelThongBao.Location = new System.Drawing.Point(17, 375);
             this.labelThongBao.Name = "labelThongBao";
-            this.labelThongBao.Size = new System.Drawing.Size(67, 24);
+            this.labelThongBao.Size = new System.Drawing.Size(411, 24);
             this.labelThongBao.TabIndex = 9;
-            this.labelThongBao.Text = "label1";
+            this.labelThongBao.Text = "hiện thông báo về mật khẩu và username";
             // 
             // btnExit
             // 
