@@ -1,4 +1,4 @@
-﻿
+
 namespace ChinChin
 {
     partial class SignIn
@@ -199,6 +199,17 @@ namespace ChinChin
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // 
+            // txtBxPassword
+            // 
+            this.txtBxPassword.BackColor = System.Drawing.Color.White;
+            this.txtBxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxPassword.Location = new System.Drawing.Point(260, 233);
+            this.txtBxPassword.Name = "txtBxPassword";
+            this.txtBxPassword.PasswordChar = '*';
+            this.txtBxPassword.Size = new System.Drawing.Size(300, 45);
+            this.txtBxPassword.TabIndex = 2;
+            this.txtBxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBxPassword_KeyDown);
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
