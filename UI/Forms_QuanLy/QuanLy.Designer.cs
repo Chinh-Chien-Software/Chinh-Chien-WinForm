@@ -185,7 +185,7 @@ namespace ChinChin.FormsQuanLy
             this.btnHome.ForeColor = System.Drawing.Color.Black;
             this.btnHome.Location = new System.Drawing.Point(-4, 51);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(211, 63);
+            this.btnHome.Size = new System.Drawing.Size(208, 62);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Manager";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click_1);
@@ -293,6 +293,7 @@ namespace ChinChin.FormsQuanLy
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
             this.panelDesktop.Location = new System.Drawing.Point(500, 75);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";

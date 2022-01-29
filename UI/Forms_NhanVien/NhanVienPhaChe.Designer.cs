@@ -29,6 +29,7 @@ namespace ChinChin.Forms_NhanVien
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhanVienPhaChe));
             this.btnMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.btnMaximize = new FontAwesome.Sharp.IconPictureBox();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
@@ -256,7 +257,7 @@ namespace ChinChin.Forms_NhanVien
             this.btnHome.ForeColor = System.Drawing.Color.Black;
             this.btnHome.Location = new System.Drawing.Point(-4, 51);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(179, 63);
+            this.btnHome.Size = new System.Drawing.Size(177, 62);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Barista";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
@@ -264,6 +265,7 @@ namespace ChinChin.Forms_NhanVien
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(500, 75);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -279,6 +281,7 @@ namespace ChinChin.Forms_NhanVien
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelTittleBar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NhanVienPhaChe";
             this.Text = "NhanVienPhaChe";
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();

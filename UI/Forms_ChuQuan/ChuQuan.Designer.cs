@@ -59,6 +59,7 @@ namespace ChinChin.FormsChuQuan
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(500, 75);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -224,7 +225,7 @@ namespace ChinChin.FormsChuQuan
             this.btnHome.ForeColor = System.Drawing.Color.Black;
             this.btnHome.Location = new System.Drawing.Point(-4, 51);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(167, 63);
+            this.btnHome.Size = new System.Drawing.Size(164, 62);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Owner";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click_1);
@@ -317,7 +318,7 @@ namespace ChinChin.FormsChuQuan
             // 
             this.labelTittleChildForm.AutoSize = true;
             this.labelTittleChildForm.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTittleChildForm.Location = new System.Drawing.Point(67, 33);
+            this.labelTittleChildForm.Location = new System.Drawing.Point(67, 29);
             this.labelTittleChildForm.Name = "labelTittleChildForm";
             this.labelTittleChildForm.Size = new System.Drawing.Size(58, 20);
             this.labelTittleChildForm.TabIndex = 1;

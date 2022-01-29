@@ -280,7 +280,7 @@ namespace ChinChin.Forms_NhanVien
             this.btnHome.ForeColor = System.Drawing.Color.Black;
             this.btnHome.Location = new System.Drawing.Point(-4, 51);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(181, 63);
+            this.btnHome.Size = new System.Drawing.Size(178, 62);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Cashier";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
@@ -288,6 +288,7 @@ namespace ChinChin.Forms_NhanVien
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(500, 75);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
