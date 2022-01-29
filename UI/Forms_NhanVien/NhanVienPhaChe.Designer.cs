@@ -1,4 +1,4 @@
-﻿
+
 namespace ChinChin.Forms_NhanVien
 {
     partial class NhanVienPhaChe
@@ -264,6 +264,7 @@ namespace ChinChin.Forms_NhanVien
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(500, 75);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

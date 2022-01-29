@@ -1,4 +1,4 @@
-﻿
+
 namespace ChinChin.FormsQuanLy
 {
     partial class QuanLy
@@ -293,6 +293,7 @@ namespace ChinChin.FormsQuanLy
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
             this.panelDesktop.Location = new System.Drawing.Point(500, 75);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";
