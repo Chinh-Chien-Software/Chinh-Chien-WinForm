@@ -1,4 +1,4 @@
-
+﻿
 namespace ChinChin.Forms_NhanVien
 {
     partial class NhanVienThuNgan
@@ -280,7 +280,7 @@ namespace ChinChin.Forms_NhanVien
             this.btnHome.ForeColor = System.Drawing.Color.Black;
             this.btnHome.Location = new System.Drawing.Point(-4, 51);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(181, 63);
+            this.btnHome.Size = new System.Drawing.Size(178, 62);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Cashier";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);

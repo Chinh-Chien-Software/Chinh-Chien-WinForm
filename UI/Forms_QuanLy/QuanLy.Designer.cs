@@ -1,4 +1,4 @@
-
+﻿
 namespace ChinChin.FormsQuanLy
 {
     partial class QuanLy
@@ -185,7 +185,7 @@ namespace ChinChin.FormsQuanLy
             this.btnHome.ForeColor = System.Drawing.Color.Black;
             this.btnHome.Location = new System.Drawing.Point(-4, 51);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(211, 63);
+            this.btnHome.Size = new System.Drawing.Size(208, 62);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Manager";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click_1);

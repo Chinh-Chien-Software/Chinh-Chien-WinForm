@@ -1,4 +1,4 @@
-
+﻿
 namespace ChinChin.FormsChuQuan
 {
     partial class formChuQuan
@@ -225,7 +225,7 @@ namespace ChinChin.FormsChuQuan
             this.btnHome.ForeColor = System.Drawing.Color.Black;
             this.btnHome.Location = new System.Drawing.Point(-4, 51);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(167, 63);
+            this.btnHome.Size = new System.Drawing.Size(164, 62);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Owner";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click_1);
@@ -318,7 +318,7 @@ namespace ChinChin.FormsChuQuan
             // 
             this.labelTittleChildForm.AutoSize = true;
             this.labelTittleChildForm.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTittleChildForm.Location = new System.Drawing.Point(67, 33);
+            this.labelTittleChildForm.Location = new System.Drawing.Point(67, 29);
             this.labelTittleChildForm.Name = "labelTittleChildForm";
             this.labelTittleChildForm.Size = new System.Drawing.Size(58, 20);
             this.labelTittleChildForm.TabIndex = 1;

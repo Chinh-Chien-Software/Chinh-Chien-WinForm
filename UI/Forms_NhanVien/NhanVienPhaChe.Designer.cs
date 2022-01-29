@@ -1,4 +1,4 @@
-
+﻿
 namespace ChinChin.Forms_NhanVien
 {
     partial class NhanVienPhaChe
@@ -29,6 +29,7 @@ namespace ChinChin.Forms_NhanVien
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhanVienPhaChe));
             this.btnMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.btnMaximize = new FontAwesome.Sharp.IconPictureBox();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
@@ -256,7 +257,7 @@ namespace ChinChin.Forms_NhanVien
             this.btnHome.ForeColor = System.Drawing.Color.Black;
             this.btnHome.Location = new System.Drawing.Point(-4, 51);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(179, 63);
+            this.btnHome.Size = new System.Drawing.Size(177, 62);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Barista";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
@@ -280,6 +281,7 @@ namespace ChinChin.Forms_NhanVien
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelTittleBar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NhanVienPhaChe";
             this.Text = "NhanVienPhaChe";
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
