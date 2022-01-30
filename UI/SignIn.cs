@@ -149,6 +149,11 @@ namespace ChinChin
         {
 
         }
+
+        private void labelPasword_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
