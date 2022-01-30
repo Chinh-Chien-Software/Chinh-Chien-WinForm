@@ -144,6 +144,11 @@ namespace ChinChin
                 CheckUserPassAndSignIn();
             }
         }
+
+        private void txtBxUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
