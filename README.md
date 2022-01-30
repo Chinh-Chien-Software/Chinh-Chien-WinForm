@@ -1,5 +1,6 @@
 # Phần Mềm Quản Lý Quán Trà Sữa Chin Chin
-
+# Development
+I am using Visual Studio 2022 to working with this project.
 # Ideas
 - [ ] Tăng cao sự tùy chỉnh để nó có thể trở thành phần mềm quản lý của bất kỳ quán nào.
 # Usage
