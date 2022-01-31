@@ -184,6 +184,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI\MenuAnimation.cs" />
     <Compile Include="UI\SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
