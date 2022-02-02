@@ -27,10 +27,9 @@ namespace ChinChin.Forms_NhanVien
             //this.DoubleBuffered = true;
             //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
+
         //Fields
-        private IconButton currentBtn;
-        //private Panel leftBorderBtn;
-        private Form currentChildForm;
+        public static Form currentChildForm;
 
         //Methods
 
@@ -49,7 +48,7 @@ namespace ChinChin.Forms_NhanVien
         private void KhoQuayBTN_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color5, iconCurrentChildForm);
-            MenuAnimation.OpenChildForm(new KiemSoatLuongTonHang(), currentChildForm, panelDesktop, labelTittleChildForm);
+            MenuAnimation.OpenChildForm(new KiemSoatLuongTonHang(), ref currentChildForm, panelDesktop, labelTittleChildForm);
         }
 
         private void TaiKhoanBTN_Click(object sender, EventArgs e)
