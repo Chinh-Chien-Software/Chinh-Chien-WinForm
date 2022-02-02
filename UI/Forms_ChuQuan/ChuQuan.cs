@@ -22,7 +22,7 @@ namespace ChinChin.FormsChuQuan
            int nHeightEllipse // height of ellipse
         );*/
 
-        private Form currentChildForm;
+        private Form currentChildForm = null;
 
         public formChuQuan()
         {
@@ -49,18 +49,18 @@ namespace ChinChin.FormsChuQuan
         private void ThongKeBTN_Click_1(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color1, iconCurrentChildForm);
-            MenuAnimation.OpenChildForm(new FormsChuQuan.FormThongKe(), currentChildForm, panelDesktop, labelTittleChildForm);
+            MenuAnimation.OpenChildForm(new FormsChuQuan.FormThongKe(),ref currentChildForm, panelDesktop, labelTittleChildForm);
         }
 
         private void KhoHangBTN_Click_1(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color2, iconCurrentChildForm);
-            MenuAnimation.OpenChildForm(new FormsChuQuan.FormKhoHang(), currentChildForm, panelDesktop, labelTittleChildForm);
+            MenuAnimation.OpenChildForm(new FormsChuQuan.FormKhoHang(),ref currentChildForm, panelDesktop, labelTittleChildForm);
         }
         private void ChamCongBTN_Click_1(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color3, iconCurrentChildForm);
-            MenuAnimation.OpenChildForm(new FormsChuQuan.FormChamCong(), currentChildForm, panelDesktop, labelTittleChildForm);
+            MenuAnimation.OpenChildForm(new FormsChuQuan.FormChamCong(),ref currentChildForm, panelDesktop, labelTittleChildForm);
         }
         private void btnHome_Click_1(object sender, EventArgs e)
         {
@@ -95,7 +95,7 @@ namespace ChinChin.FormsChuQuan
         private void iconButtonThucDon_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color3, iconCurrentChildForm);
-            MenuAnimation.OpenChildForm(new Forms_ChuQuan.FormThucDon(), currentChildForm, panelDesktop, labelTittleChildForm);
+            MenuAnimation.OpenChildForm(new Forms_ChuQuan.FormThucDon(),ref currentChildForm, panelDesktop, labelTittleChildForm);
         }
 
         private void panelTittleBar_Paint(object sender, PaintEventArgs e)
