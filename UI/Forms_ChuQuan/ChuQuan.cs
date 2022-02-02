@@ -49,7 +49,7 @@ namespace ChinChin.FormsChuQuan
         private void ThongKeBTN_Click_1(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color1, iconCurrentChildForm);
-            MenuAnimation.OpenChildForm(new FormsChuQuan.FormThongKe(),ref currentChildForm, panelDesktop, labelTittleChildForm);
+            MenuAnimation.OpenChildForm(new FormsChuQuan.FormThongKe(), ref currentChildForm, panelDesktop, labelTittleChildForm);
         }
 
         private void KhoHangBTN_Click_1(object sender, EventArgs e)
