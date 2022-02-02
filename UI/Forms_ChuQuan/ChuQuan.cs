@@ -44,9 +44,6 @@ namespace ChinChin.FormsChuQuan
             //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
         
-
-        //Structs
-        
         //Methods
         
         private void ThongKeBTN_Click_1(object sender, EventArgs e)
