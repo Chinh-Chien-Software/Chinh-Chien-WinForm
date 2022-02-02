@@ -71,7 +71,7 @@ namespace ChinChin.UI
             iconCurrentChildForm.IconColor = Color.MediumPurple;
             labelTittleChildForm.Text = "Home";
         }
-        public static void OpenChildForm(Form childForm, Form currentChildForm, Panel panelDesktop, Label labelTittleChildForm)
+        public static void OpenChildForm(Form childForm, ref Form currentChildForm, Panel panelDesktop, Label labelTittleChildForm)
         {
             if (currentChildForm != null)
             {
