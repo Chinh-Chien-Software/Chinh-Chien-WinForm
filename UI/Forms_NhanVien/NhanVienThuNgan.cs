@@ -24,8 +24,6 @@ namespace ChinChin.Forms_NhanVien
             this.ControlBox = false;
         }
         //Fields
-        private IconButton currentBtn;
-        //private Panel leftBorderBtn;
         private Form currentChildForm;
 
         //Methods

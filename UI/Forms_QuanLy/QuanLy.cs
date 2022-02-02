@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using ChinChin.UI;
 
 namespace ChinChin.FormsQuanLy
 {
@@ -25,8 +26,6 @@ namespace ChinChin.FormsQuanLy
            int nHeightEllipse // height of ellipse
         );
 
-        private IconButton currentBtn;
-        private Panel leftBorderBtn;
         private Form currentChildForm;
 
         public QuanLy()
@@ -36,9 +35,9 @@ namespace ChinChin.FormsQuanLy
             this.WindowState = FormWindowState.Maximized;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
-            leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 100);
-            panelMenu.Controls.Add(leftBorderBtn);
+            //leftBorderBtn = new Panel();
+            //leftBorderBtn.Size = new Size(7, 100);
+            //panelMenu.Controls.Add(leftBorderBtn);
 
             //Forms - Custom Tittle Bar
             this.Text = string.Empty;
@@ -46,84 +45,11 @@ namespace ChinChin.FormsQuanLy
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
-        private struct RGBColors
-        {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(249, 188, 176);
-            public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(95, 77, 221);
-            public static Color color5 = Color.FromArgb(249, 88, 155);
-            public static Color color6 = Color.FromArgb(24, 161, 241);
-        }
-        private void ActivateButton(object senderBtn, Color color)
-        {
-            if (senderBtn != null)
-            {
-                DisableButton();
-                //Button
-                currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
-                currentBtn.ForeColor = color;
-                currentBtn.TextAlign = ContentAlignment.MiddleCenter;
-                currentBtn.IconColor = color;
-                currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
-                currentBtn.ImageAlign = ContentAlignment.MiddleRight;
-                currentBtn.Size = new Size(498, 100);
-
-                //left border button
-                leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
-
-                //Icon Current Child Form
-                iconCurrentChildForm.IconChar = currentBtn.IconChar;
-                iconCurrentChildForm.IconColor = color;
-            }
-        }
-
-        private void DisableButton()
-        {
-            if (currentBtn != null)
-            {
-                currentBtn.BackColor = Color.FromArgb(255, 255, 255);
-                currentBtn.ForeColor = Color.Black;
-                currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Black;
-                currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
-                currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            }
-        }
-        private void OpenChildForm(Form childForm)
-        {
-            if (currentChildForm != null)
-            {
-                //Open Only Form
-                currentChildForm.Close();
-            }
-            currentChildForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelDesktop.Controls.Add(childForm);
-            panelDesktop.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-            labelTittleChildForm.Text = childForm.Text;
-        }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
             currentChildForm.Close();
-            Reset();
-        }
-        private void Reset()
-        {
-            DisableButton();
-            leftBorderBtn.Visible = false;
-            iconCurrentChildForm.IconChar = IconChar.Home;
-            iconCurrentChildForm.IconColor = Color.MediumPurple;
-            labelTittleChildForm.Text = "Home";
+            MenuAnimation.Reset(iconCurrentChildForm, labelTittleChildForm);
         }
 
         //Drag my Software
@@ -167,14 +93,14 @@ namespace ChinChin.FormsQuanLy
 
         private void KhoHangBTN_Click_1(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new Forms_QuanLy.QuanLyKhoHang());
+            MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color2, iconCurrentChildForm);
+            MenuAnimation.OpenChildForm(new Forms_QuanLy.QuanLyKhoHang(), ref currentChildForm, panelDesktop, labelTittleChildForm);
         }
 
         private void ChamCongBTN_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new Forms_QuanLy.QuanLyLichLam());
+            MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color1, iconCurrentChildForm);
+            MenuAnimation.OpenChildForm(new Forms_QuanLy.QuanLyLichLam(), ref currentChildForm, panelDesktop, labelTittleChildForm);
         }
 
         private void panelTittleBar_MouseDown_1(object sender, MouseEventArgs e)
@@ -185,8 +111,8 @@ namespace ChinChin.FormsQuanLy
 
         private void ThongKeBTN_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color4);
-            OpenChildForm(new Forms_QuanLy.BaoCaoDoanhThu());
+            MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color4, iconCurrentChildForm);
+            MenuAnimation.OpenChildForm(new Forms_QuanLy.BaoCaoDoanhThu(), ref currentChildForm, panelDesktop, labelTittleChildForm);
         }
     }
 }
