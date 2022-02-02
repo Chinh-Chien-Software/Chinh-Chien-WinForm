@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
+using ChinChin.UI;
 
 namespace ChinChin.Forms_NhanVien
 {
@@ -31,83 +32,7 @@ namespace ChinChin.Forms_NhanVien
         //private Panel leftBorderBtn;
         private Form currentChildForm;
 
-        private struct RGBColors
-        {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(249, 188, 176);
-            public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(95, 77, 221);
-            public static Color color5 = Color.FromArgb(249, 88, 155);
-            public static Color color6 = Color.FromArgb(24, 161, 241);
-        }
-
         //Methods
-        private void ActivateButton(object senderBtn, Color color)
-        {
-            if (senderBtn != null)
-            {
-                DisableButton();
-                //Button
-                currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
-                currentBtn.ForeColor = color;
-                currentBtn.TextAlign = ContentAlignment.MiddleCenter;
-                currentBtn.IconColor = color;
-                currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
-                currentBtn.ImageAlign = ContentAlignment.MiddleRight;
-                currentBtn.Size = new Size(498, 100);
-
-                //left border button
-                //leftBorderBtn.BackColor = color;
-                //leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
-                //leftBorderBtn.Visible = true;
-                //leftBorderBtn.BringToFront();
-
-                //Icon Current Child Form
-                iconCurrentChildForm.IconChar = currentBtn.IconChar;
-                iconCurrentChildForm.IconColor = color;
-            }
-        }
-
-        private void DisableButton()
-        {
-            if (currentBtn != null)
-            {
-                currentBtn.BackColor = Color.FromArgb(255, 255, 255);
-                currentBtn.ForeColor = Color.Black;
-                currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Black;
-                currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
-                currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
-                currentBtn.Size = new Size(498, 100);
-            }
-        }
-
-        private void OpenChildForm(Form childForm)
-        {
-            if (currentChildForm != null)
-            {
-                //Open Only Form
-                currentChildForm.Close();
-            }
-            currentChildForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelDesktop.Controls.Add(childForm);
-            panelDesktop.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-            labelTittleChildForm.Text = childForm.Text;
-        }
-        private void Reset()
-        {
-            DisableButton();
-            //leftBorderBtn.Visible = false;
-            iconCurrentChildForm.IconChar = IconChar.Home;
-            iconCurrentChildForm.IconColor = Color.MediumPurple;
-            labelTittleChildForm.Text = "Home";
-        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -123,8 +48,8 @@ namespace ChinChin.Forms_NhanVien
 
         private void KhoQuayBTN_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color5);
-            OpenChildForm(new KiemSoatLuongTonHang());
+            MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color5, iconCurrentChildForm);
+            MenuAnimation.OpenChildForm(new KiemSoatLuongTonHang(), currentChildForm, panelDesktop, labelTittleChildForm);
         }
 
         private void TaiKhoanBTN_Click(object sender, EventArgs e)
@@ -162,7 +87,7 @@ namespace ChinChin.Forms_NhanVien
         private void btnHome_Click(object sender, EventArgs e)
         {
             currentChildForm.Close();
-            Reset();
+            MenuAnimation.Reset(iconCurrentChildForm, labelTittleChildForm);
         }
     }
 }
