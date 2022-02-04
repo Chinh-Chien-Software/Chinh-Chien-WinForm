@@ -41,12 +41,6 @@ namespace ChinChin
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             //this.FormBorderStyle = FormBorderStyle.FixedDialog;
         }
-        // Database
-        string chuoiketnoi = @"Data Source=DESKTOP-AN8O8G6\TQK;Initial Catalog=QuanLyQuanTraSua;Integrated Security=True";
-        string sqlcode;
-        SqlConnection ketnoi;
-        SqlCommand thuchien;
-        SqlDataReader docdulieu;
 
         private void CheckUserPassAndSignIn()
         {
@@ -101,7 +95,6 @@ namespace ChinChin
             {
                 labelThongBao.Text = "Không tìm thấy tài khoản hoặc sai mật khẩu";
             }
-            ketnoi.Close();
         }
 
         private void labelUserName_Click(object sender, EventArgs e)
