@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,12 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using System.Windows.Input;
+using System.Data.SqlClient;
 using ChinChin.FormsChuQuan;
 using ChinChin.FormsQuanLy;
 using ChinChin.Forms_NhanVien;
 using ChinChin.Extra;
-using System.Windows.Input;
-using System.Data.SqlClient;
+using ChinChin.Database;
 
 namespace ChinChin
 {
