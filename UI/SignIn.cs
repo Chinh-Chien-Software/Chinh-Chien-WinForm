@@ -44,7 +44,6 @@ namespace ChinChin
 
         private void CheckUserPassAndSignIn()
         {
-            ketnoi = new SqlConnection(chuoiketnoi);
 
             string username = txtBxUsername.Text;
             string password = txtBxPassword.Text;
@@ -53,21 +52,10 @@ namespace ChinChin
             NhanVienThuNgan NhanVienThuNgan = new NhanVienThuNgan();
             NhanVienPhaChe Barista = new NhanVienPhaChe();
 
-            sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan='" + username + "' and MatKhau='" + password + "'";
+            string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan='" + username + "' and MatKhau='" + password + "'";
 
             // Kiểm tra Mật Khẩu
-            ketnoi.Open();
-            SqlDataAdapter sda = new SqlDataAdapter(sqlcode, ketnoi);
-            DataTable dttb = new DataTable();
-            sda.Fill(dttb);
-            ketnoi.Close();
-
             //Kiểm tra LoaiTaiKhoan
-            ketnoi.Open();
-            thuchien = new SqlCommand(sqlcode, ketnoi);
-            docdulieu = thuchien.ExecuteReader();
-            docdulieu.Read();
-
             if (dttb.Rows.Count == 1)
             {
                 if (docdulieu[2].ToString() == "chuquan")
