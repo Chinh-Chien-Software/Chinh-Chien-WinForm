@@ -91,6 +91,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\DataProvider.cs" />
     <Compile Include="Extra\BlackWhiteButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -288,9 +289,7 @@
     <None Include="Favicon\Logo-Dark.jpg" />
     <Content Include="Favicon\Logo_Chin_Chin.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Database\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>

@@ -9,12 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using System.Windows.Input;
+using System.Data.SqlClient;
 using ChinChin.FormsChuQuan;
 using ChinChin.FormsQuanLy;
 using ChinChin.Forms_NhanVien;
 using ChinChin.Extra;
-using System.Windows.Input;
-using System.Data.SqlClient;
+using ChinChin.Database;
 
 namespace ChinChin
 {
@@ -41,16 +42,9 @@ namespace ChinChin
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             //this.FormBorderStyle = FormBorderStyle.FixedDialog;
         }
-        // Database
-        string chuoiketnoi = @"Data Source=DESKTOP-AN8O8G6\TQK;Initial Catalog=QuanLyQuanTraSua;Integrated Security=True";
-        string sqlcode;
-        SqlConnection ketnoi;
-        SqlCommand thuchien;
-        SqlDataReader docdulieu;
 
         private void CheckUserPassAndSignIn()
         {
-            ketnoi = new SqlConnection(chuoiketnoi);
 
             string username = txtBxUsername.Text;
             string password = txtBxPassword.Text;
@@ -59,39 +53,29 @@ namespace ChinChin
             NhanVienThuNgan NhanVienThuNgan = new NhanVienThuNgan();
             NhanVienPhaChe Barista = new NhanVienPhaChe();
 
-            sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan='" + username + "' and MatKhau='" + password + "'";
-
+            string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan='" + username + "' and MatKhau='" + password + "'";
+            DataTable TaiKhoan = new DataTable();
+            TaiKhoan = DataProvider.LoadDatabase(sqlcode);
             // Kiểm tra Mật Khẩu
-            ketnoi.Open();
-            SqlDataAdapter sda = new SqlDataAdapter(sqlcode, ketnoi);
-            DataTable dttb = new DataTable();
-            sda.Fill(dttb);
-            ketnoi.Close();
-
             //Kiểm tra LoaiTaiKhoan
-            ketnoi.Open();
-            thuchien = new SqlCommand(sqlcode, ketnoi);
-            docdulieu = thuchien.ExecuteReader();
-            docdulieu.Read();
-
-            if (dttb.Rows.Count == 1)
+            if (TaiKhoan.Rows.Count == 1)
             {
-                if (docdulieu[2].ToString() == "chuquan")
+                if (TaiKhoan.Rows[0][0].ToString() == "chuquan")
                 {
                     ChuQuan.Show();
                     this.Hide();
                 }
-                else if (docdulieu[2].ToString() == "quanly")
+                else if (TaiKhoan.Rows[0][0].ToString()  == "quanly")
                 {
                     QuanLy.Show();
                     this.Hide();
                 }
-                else if (docdulieu[2].ToString() == "thungan")
+                else if (TaiKhoan.Rows[0][0].ToString() == "thungan")
                 {
                     NhanVienThuNgan.Show();
                     this.Hide();
                 }
-                else if (docdulieu[2].ToString() == "phache")
+                else if (TaiKhoan.Rows[0][0].ToString() == "phache")
                 {
                     Barista.Show();
                     this.Hide();
@@ -101,7 +85,6 @@ namespace ChinChin
             {
                 labelThongBao.Text = "Không tìm thấy tài khoản hoặc sai mật khẩu";
             }
-            ketnoi.Close();
         }
 
         private void labelUserName_Click(object sender, EventArgs e)
