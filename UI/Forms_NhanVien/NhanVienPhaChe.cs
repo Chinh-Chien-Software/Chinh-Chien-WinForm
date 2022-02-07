@@ -19,7 +19,7 @@ namespace ChinChin.Forms_NhanVien
         {
             InitializeComponent();
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
-            this.WindowState = FormWindowState.Maximized;
+            // this.WindowState = FormWindowState.Maximized;
 
             //Forms - Custom Tittle Bar
             this.Text = string.Empty;
