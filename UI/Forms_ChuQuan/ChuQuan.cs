@@ -27,9 +27,9 @@ namespace ChinChin.FormsChuQuan
         public formChuQuan()
         {
             InitializeComponent();
-            // Full Màn Hình
+            // Full Màn Hình => #35 trên Github
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
-            this.WindowState = FormWindowState.Maximized;
+            // this.WindowState = FormWindowState.Maximized;
             /*Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
             leftBorderBtn = new Panel();
