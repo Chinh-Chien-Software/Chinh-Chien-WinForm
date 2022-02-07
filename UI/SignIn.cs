@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,27 +54,28 @@ namespace ChinChin
             NhanVienPhaChe Barista = new NhanVienPhaChe();
 
             string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan='" + username + "' and MatKhau='" + password + "'";
-
+            DataTable TaiKhoan = new DataTable();
+            TaiKhoan = DataProvider.LoadDatabase(sqlcode);
             // Kiểm tra Mật Khẩu
             //Kiểm tra LoaiTaiKhoan
-            if (dttb.Rows.Count == 1)
+            if (TaiKhoan.Rows.Count == 1)
             {
-                if (docdulieu[2].ToString() == "chuquan")
+                if (TaiKhoan.Rows[0][0].ToString() == "chuquan")
                 {
                     ChuQuan.Show();
                     this.Hide();
                 }
-                else if (docdulieu[2].ToString() == "quanly")
+                else if (TaiKhoan.Rows[0][0].ToString()  == "quanly")
                 {
                     QuanLy.Show();
                     this.Hide();
                 }
-                else if (docdulieu[2].ToString() == "thungan")
+                else if (TaiKhoan.Rows[0][0].ToString() == "thungan")
                 {
                     NhanVienThuNgan.Show();
                     this.Hide();
                 }
-                else if (docdulieu[2].ToString() == "phache")
+                else if (TaiKhoan.Rows[0][0].ToString() == "phache")
                 {
                     Barista.Show();
                     this.Hide();
