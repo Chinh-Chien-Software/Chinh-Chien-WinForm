@@ -19,7 +19,7 @@ namespace ChinChin.Forms_NhanVien
         {
             InitializeComponent();
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
-            this.WindowState = FormWindowState.Maximized;
+            // this.WindowState = FormWindowState.Maximized;
             this.Text = string.Empty;
             this.ControlBox = false;
         }
