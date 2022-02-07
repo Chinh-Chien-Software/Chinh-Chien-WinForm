@@ -116,7 +116,7 @@ namespace ChinChin
         {
             if (e.KeyCode == Keys.Enter)
             {
-                CheckUserPassAndSignIn();
+                txtBxPassword.Focus();
             }
         }
 
