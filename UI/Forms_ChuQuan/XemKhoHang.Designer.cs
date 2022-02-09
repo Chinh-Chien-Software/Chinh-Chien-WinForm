@@ -31,24 +31,31 @@ namespace ChinChin.FormsChuQuan
         {
             this.components = new System.ComponentModel.Container();
             this.labelKhoHang = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewKhoHang = new System.Windows.Forms.DataGridView();
+            this.khoHangBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.khoHangDataSet = new ChinChin.KhoHangDataSet();
             this.panel1 = new System.Windows.Forms.Panel();
             this.storageDataSet = new ChinChin.StorageDataSet();
             this.khoHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.khoHangTableAdapter = new ChinChin.StorageDataSetTableAdapters.KhoHangTableAdapter();
-            this.khoHangDataSet = new ChinChin.KhoHangDataSet();
-            this.khoHangBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.khoHangTableAdapter1 = new ChinChin.KhoHangDataSetTableAdapters.KhoHangTableAdapter();
-            this.maKhoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenKhoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dienTichDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.quanLyQuanTraSuaDataSet = new ChinChin.QuanLyQuanTraSuaDataSet();
+            this.vatLieuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vatLieuTableAdapter = new ChinChin.QuanLyQuanTraSuaDataSetTableAdapters.VatLieuTableAdapter();
+            this.maVatLieuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenVatLieuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nhaCungCapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soLuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donViTinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKhoHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoHangBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoHangDataSet)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.storageDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khoHangBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoHangDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoHangBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vatLieuBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // labelKhoHang
@@ -58,38 +65,51 @@ namespace ChinChin.FormsChuQuan
             this.labelKhoHang.Location = new System.Drawing.Point(0, 0);
             this.labelKhoHang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelKhoHang.Name = "labelKhoHang";
-            this.labelKhoHang.Size = new System.Drawing.Size(600, 32);
+            this.labelKhoHang.Size = new System.Drawing.Size(854, 32);
             this.labelKhoHang.TabIndex = 1;
             this.labelKhoHang.Text = "Danh Sách Vật Liệu";
             this.labelKhoHang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // dataGridViewKhoHang
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maKhoDataGridViewTextBoxColumn,
-            this.tenKhoDataGridViewTextBoxColumn,
-            this.diaChiDataGridViewTextBoxColumn,
-            this.dienTichDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.khoHangBindingSource1;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 32);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(600, 334);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridViewKhoHang.AutoGenerateColumns = false;
+            this.dataGridViewKhoHang.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridViewKhoHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewKhoHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maVatLieuDataGridViewTextBoxColumn,
+            this.tenVatLieuDataGridViewTextBoxColumn,
+            this.nhaCungCapDataGridViewTextBoxColumn,
+            this.soLuongDataGridViewTextBoxColumn,
+            this.giaDataGridViewTextBoxColumn,
+            this.donViTinhDataGridViewTextBoxColumn});
+            this.dataGridViewKhoHang.DataSource = this.vatLieuBindingSource;
+            this.dataGridViewKhoHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewKhoHang.Location = new System.Drawing.Point(0, 32);
+            this.dataGridViewKhoHang.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewKhoHang.Name = "dataGridViewKhoHang";
+            this.dataGridViewKhoHang.RowHeadersWidth = 51;
+            this.dataGridViewKhoHang.RowTemplate.Height = 24;
+            this.dataGridViewKhoHang.Size = new System.Drawing.Size(854, 334);
+            this.dataGridViewKhoHang.TabIndex = 2;
+            // 
+            // khoHangBindingSource1
+            // 
+            this.khoHangBindingSource1.DataMember = "KhoHang";
+            this.khoHangBindingSource1.DataSource = this.khoHangDataSet;
+            // 
+            // khoHangDataSet
+            // 
+            this.khoHangDataSet.DataSetName = "KhoHangDataSet";
+            this.khoHangDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.labelKhoHang);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 32);
+            this.panel1.Size = new System.Drawing.Size(854, 32);
             this.panel1.TabIndex = 3;
             // 
             // storageDataSet
@@ -106,61 +126,79 @@ namespace ChinChin.FormsChuQuan
             // 
             this.khoHangTableAdapter.ClearBeforeFill = true;
             // 
-            // khoHangDataSet
-            // 
-            this.khoHangDataSet.DataSetName = "KhoHangDataSet";
-            this.khoHangDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // khoHangBindingSource1
-            // 
-            this.khoHangBindingSource1.DataMember = "KhoHang";
-            this.khoHangBindingSource1.DataSource = this.khoHangDataSet;
-            // 
             // khoHangTableAdapter1
             // 
             this.khoHangTableAdapter1.ClearBeforeFill = true;
             // 
-            // maKhoDataGridViewTextBoxColumn
+            // quanLyQuanTraSuaDataSet
             // 
-            this.maKhoDataGridViewTextBoxColumn.DataPropertyName = "MaKho";
-            this.maKhoDataGridViewTextBoxColumn.HeaderText = "MaKho";
-            this.maKhoDataGridViewTextBoxColumn.Name = "maKhoDataGridViewTextBoxColumn";
+            this.quanLyQuanTraSuaDataSet.DataSetName = "QuanLyQuanTraSuaDataSet";
+            this.quanLyQuanTraSuaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tenKhoDataGridViewTextBoxColumn
+            // vatLieuBindingSource
             // 
-            this.tenKhoDataGridViewTextBoxColumn.DataPropertyName = "TenKho";
-            this.tenKhoDataGridViewTextBoxColumn.HeaderText = "TenKho";
-            this.tenKhoDataGridViewTextBoxColumn.Name = "tenKhoDataGridViewTextBoxColumn";
+            this.vatLieuBindingSource.DataMember = "VatLieu";
+            this.vatLieuBindingSource.DataSource = this.quanLyQuanTraSuaDataSet;
             // 
-            // diaChiDataGridViewTextBoxColumn
+            // vatLieuTableAdapter
             // 
-            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.HeaderText = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            this.vatLieuTableAdapter.ClearBeforeFill = true;
             // 
-            // dienTichDataGridViewTextBoxColumn
+            // maVatLieuDataGridViewTextBoxColumn
             // 
-            this.dienTichDataGridViewTextBoxColumn.DataPropertyName = "DienTich";
-            this.dienTichDataGridViewTextBoxColumn.HeaderText = "DienTich";
-            this.dienTichDataGridViewTextBoxColumn.Name = "dienTichDataGridViewTextBoxColumn";
+            this.maVatLieuDataGridViewTextBoxColumn.DataPropertyName = "MaVatLieu";
+            this.maVatLieuDataGridViewTextBoxColumn.HeaderText = "MaVatLieu";
+            this.maVatLieuDataGridViewTextBoxColumn.Name = "maVatLieuDataGridViewTextBoxColumn";
+            // 
+            // tenVatLieuDataGridViewTextBoxColumn
+            // 
+            this.tenVatLieuDataGridViewTextBoxColumn.DataPropertyName = "TenVatLieu";
+            this.tenVatLieuDataGridViewTextBoxColumn.HeaderText = "TenVatLieu";
+            this.tenVatLieuDataGridViewTextBoxColumn.Name = "tenVatLieuDataGridViewTextBoxColumn";
+            // 
+            // nhaCungCapDataGridViewTextBoxColumn
+            // 
+            this.nhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "NhaCungCap";
+            this.nhaCungCapDataGridViewTextBoxColumn.HeaderText = "NhaCungCap";
+            this.nhaCungCapDataGridViewTextBoxColumn.Name = "nhaCungCapDataGridViewTextBoxColumn";
+            // 
+            // soLuongDataGridViewTextBoxColumn
+            // 
+            this.soLuongDataGridViewTextBoxColumn.DataPropertyName = "SoLuong";
+            this.soLuongDataGridViewTextBoxColumn.HeaderText = "SoLuong";
+            this.soLuongDataGridViewTextBoxColumn.Name = "soLuongDataGridViewTextBoxColumn";
+            // 
+            // giaDataGridViewTextBoxColumn
+            // 
+            this.giaDataGridViewTextBoxColumn.DataPropertyName = "Gia";
+            this.giaDataGridViewTextBoxColumn.HeaderText = "Gia";
+            this.giaDataGridViewTextBoxColumn.Name = "giaDataGridViewTextBoxColumn";
+            // 
+            // donViTinhDataGridViewTextBoxColumn
+            // 
+            this.donViTinhDataGridViewTextBoxColumn.DataPropertyName = "DonViTinh";
+            this.donViTinhDataGridViewTextBoxColumn.HeaderText = "DonViTinh";
+            this.donViTinhDataGridViewTextBoxColumn.Name = "donViTinhDataGridViewTextBoxColumn";
             // 
             // FormKhoHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(854, 366);
+            this.Controls.Add(this.dataGridViewKhoHang);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormKhoHang";
             this.Text = "Kho Hàng";
             this.Load += new System.EventHandler(this.FormKhoHang_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKhoHang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoHangBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoHangDataSet)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.storageDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khoHangBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoHangDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoHangBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vatLieuBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -168,7 +206,7 @@ namespace ChinChin.FormsChuQuan
         #endregion
 
         private System.Windows.Forms.Label labelKhoHang;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewKhoHang;
         private System.Windows.Forms.Panel panel1;
         private StorageDataSet storageDataSet;
         private System.Windows.Forms.BindingSource khoHangBindingSource;
@@ -176,9 +214,14 @@ namespace ChinChin.FormsChuQuan
         private KhoHangDataSet khoHangDataSet;
         private System.Windows.Forms.BindingSource khoHangBindingSource1;
         private KhoHangDataSetTableAdapters.KhoHangTableAdapter khoHangTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maKhoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenKhoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dienTichDataGridViewTextBoxColumn;
+        private QuanLyQuanTraSuaDataSet quanLyQuanTraSuaDataSet;
+        private System.Windows.Forms.BindingSource vatLieuBindingSource;
+        private QuanLyQuanTraSuaDataSetTableAdapters.VatLieuTableAdapter vatLieuTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maVatLieuDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenVatLieuDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nhaCungCapDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soLuongDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donViTinhDataGridViewTextBoxColumn;
     }
 }
