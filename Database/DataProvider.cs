@@ -17,8 +17,8 @@ namespace ChinChin.Database
         // Connection String for set up infomation to connect.
         static string cnStr = @"Data Source=DESKTOP-AN8O8G6\TQK;Initial Catalog=QuanLyQuanTraSua;Integrated Security=True";
         static SqlConnection cn; // Create a connection
-        SqlCommand thuchien;
-        SqlDataReader docdulieu;
+        // SqlCommand thuchien;
+        // SqlDataReader docdulieu;
 
         private void OleMethod()
         {
@@ -40,7 +40,7 @@ namespace ChinChin.Database
             cn = new SqlConnection(cnStr); //Khởi tạo 1 kết nối
             SqlCommand cm = new SqlCommand(sql, cn); //Tạo các lệnh
             SqlDataAdapter da = new SqlDataAdapter(cm); //Thực thi những lệnh được truyền từ SqlCommand
-            da.Fill(dt);//Đổ dữ liệu từ DataAdapter vào Datatable
+            da.Fill(dt); //Đổ dữ liệu từ DataAdapter vào Datatable
             return dt;
         }
         // Tại sao lại tạo DataSet trong khi chỉ toàn dùng DataTable

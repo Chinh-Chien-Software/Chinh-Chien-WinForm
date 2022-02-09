@@ -29,32 +29,50 @@ namespace ChinChin.FormsChuQuan
         /// </summary>
         private void InitializeComponent()
         {
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.panelDoanhThu = new System.Windows.Forms.Panel();
+            this.labelDoanhThu = new System.Windows.Forms.Label();
+            this.panelDoanhThu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // panelDoanhThu
             // 
-            this.reportViewer1.Location = new System.Drawing.Point(191, 95);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
-            this.reportViewer1.TabIndex = 0;
+            this.panelDoanhThu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelDoanhThu.Controls.Add(this.labelDoanhThu);
+            this.panelDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelDoanhThu.Location = new System.Drawing.Point(238, 150);
+            this.panelDoanhThu.Name = "panelDoanhThu";
+            this.panelDoanhThu.Size = new System.Drawing.Size(200, 100);
+            this.panelDoanhThu.TabIndex = 0;
+            // 
+            // labelDoanhThu
+            // 
+            this.labelDoanhThu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDoanhThu.Location = new System.Drawing.Point(0, 0);
+            this.labelDoanhThu.Name = "labelDoanhThu";
+            this.labelDoanhThu.Size = new System.Drawing.Size(200, 40);
+            this.labelDoanhThu.TabIndex = 0;
+            this.labelDoanhThu.Text = "DOANH THU";
+            this.labelDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormThongKe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(915, 533);
-            this.Controls.Add(this.reportViewer1);
+            this.ClientSize = new System.Drawing.Size(686, 433);
+            this.Controls.Add(this.panelDoanhThu);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormThongKe";
             this.Text = "Xem Thống Kê";
             this.Load += new System.EventHandler(this.FormThongKe_Load);
+            this.panelDoanhThu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.Panel panelDoanhThu;
+        private System.Windows.Forms.Label labelDoanhThu;
     }
 }
