@@ -1,4 +1,4 @@
-[submodule "Database-Chin-Chin-SQL"]
-	path = Database-Chin-Chin-SQL
+[submodule "Database-SQL"]
+	path = Database-SQL
 	url = git@github.com:DH20LT/Database-ChinChin.git
 	branch = main
