@@ -2,3 +2,7 @@
 	path = Database-SQL
 	url = git@github.com:DH20LT/Database-ChinChin.git
 	branch = main
+[submodule "Diagram"]
+	path = Diagram
+	url = git@github.com:DH20LT/Diagram-ChinChin.git
+	branch = main
