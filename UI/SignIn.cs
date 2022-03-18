@@ -133,8 +133,8 @@ namespace ChinChin
         private void SignIn_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan' table. You can move, or remove it, as needed.
-            this.taiKhoanTableAdapter.Fill(this.quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan);
-
+            // this.taiKhoanTableAdapter.Fill(this.quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan);
+            // khong chay duoc tren may tinh khac ngoai` Khoi.
         }
     }
 }
