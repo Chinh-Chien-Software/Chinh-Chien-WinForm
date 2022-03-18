@@ -57,7 +57,7 @@ namespace ChinChin.UI
                 currentBtn.BackColor = Color.FromArgb(255, 255, 255);
                 currentBtn.ForeColor = Color.Black;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Black;
+                currentBtn.IconColor = Color.FromArgb(80, 108, 247);
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
                 currentBtn.Size = new Size(498, 100);
