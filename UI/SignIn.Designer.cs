@@ -72,7 +72,7 @@ namespace ChinChin
             this.labelNoAccount.AutoSize = true;
             this.labelNoAccount.BackColor = System.Drawing.Color.Transparent;
             this.labelNoAccount.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNoAccount.Location = new System.Drawing.Point(621, 597);
+            this.labelNoAccount.Location = new System.Drawing.Point(602, 592);
             this.labelNoAccount.Name = "labelNoAccount";
             this.labelNoAccount.Size = new System.Drawing.Size(189, 19);
             this.labelNoAccount.TabIndex = 13;
@@ -84,7 +84,7 @@ namespace ChinChin
             this.labelThongBao.AutoSize = true;
             this.labelThongBao.BackColor = System.Drawing.Color.Transparent;
             this.labelThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelThongBao.ForeColor = System.Drawing.Color.Lime;
+            this.labelThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelThongBao.Location = new System.Drawing.Point(535, 409);
             this.labelThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelThongBao.Name = "labelThongBao";
@@ -128,7 +128,7 @@ namespace ChinChin
             this.ckBxRememberSignIn.AutoSize = true;
             this.ckBxRememberSignIn.BackColor = System.Drawing.Color.Transparent;
             this.ckBxRememberSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckBxRememberSignIn.Location = new System.Drawing.Point(625, 369);
+            this.ckBxRememberSignIn.Location = new System.Drawing.Point(625, 372);
             this.ckBxRememberSignIn.Margin = new System.Windows.Forms.Padding(2);
             this.ckBxRememberSignIn.Name = "ckBxRememberSignIn";
             this.ckBxRememberSignIn.Size = new System.Drawing.Size(149, 21);
