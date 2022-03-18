@@ -82,6 +82,7 @@ namespace ChinChin
             }
             else
             {
+                labelThongBao.Visible = true;
                 labelThongBao.Text = "Không tìm thấy tài khoản hoặc sai mật khẩu";
             }
         }
@@ -93,7 +94,7 @@ namespace ChinChin
 
         private void SignInButton_MouseHover(object sender, EventArgs e)
         {
-            SignInButton.BackgroundColor = Color.Black;
+            //SignInButton.BackgroundColor = Color.Black;
         }
 
         private void SignInButton_Click(object sender, EventArgs e)
@@ -115,6 +116,16 @@ namespace ChinChin
             {
                 CheckUserPassAndSignIn();
             }
+        }
+
+        private void txtBxUsername_Enter(object sender, EventArgs e)
+        {
+            labelThongBao.Visible = false;
+        }
+
+        private void txtBxPassword_Enter(object sender, EventArgs e)
+        {
+            labelThongBao.Visible = false;
         }
     }
 }

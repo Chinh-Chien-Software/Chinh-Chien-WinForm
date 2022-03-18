@@ -51,7 +51,6 @@ namespace ChinChin
             // 
             // panelBackground
             // 
-            this.panelBackground.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
             this.panelBackground.Controls.Add(this.labelNoAccount);
             this.panelBackground.Controls.Add(this.SignInButton);
             this.panelBackground.Controls.Add(this.labelThongBao);
@@ -72,10 +71,10 @@ namespace ChinChin
             this.labelNoAccount.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelNoAccount.AutoSize = true;
             this.labelNoAccount.BackColor = System.Drawing.Color.Transparent;
-            this.labelNoAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNoAccount.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNoAccount.Location = new System.Drawing.Point(621, 597);
             this.labelNoAccount.Name = "labelNoAccount";
-            this.labelNoAccount.Size = new System.Drawing.Size(176, 20);
+            this.labelNoAccount.Size = new System.Drawing.Size(189, 19);
             this.labelNoAccount.TabIndex = 13;
             this.labelNoAccount.Text = "Bạn chưa có tài khoản?";
             // 
@@ -166,13 +165,14 @@ namespace ChinChin
             // txtBxUsername
             // 
             this.txtBxUsername.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.txtBxUsername.BackColor = System.Drawing.Color.White;
+            this.txtBxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.txtBxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxUsername.Location = new System.Drawing.Point(561, 37);
             this.txtBxUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtBxUsername.Name = "txtBxUsername";
             this.txtBxUsername.Size = new System.Drawing.Size(271, 37);
             this.txtBxUsername.TabIndex = 1;
+            this.txtBxUsername.Enter += new System.EventHandler(this.txtBxUsername_Enter);
             this.txtBxUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBxUsername_KeyDown);
             // 
             // panelPassword
@@ -190,7 +190,7 @@ namespace ChinChin
             // txtBxPassword
             // 
             this.txtBxPassword.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.txtBxPassword.BackColor = System.Drawing.Color.White;
+            this.txtBxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.txtBxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxPassword.Location = new System.Drawing.Point(563, 40);
             this.txtBxPassword.Margin = new System.Windows.Forms.Padding(2);
@@ -198,6 +198,7 @@ namespace ChinChin
             this.txtBxPassword.PasswordChar = '*';
             this.txtBxPassword.Size = new System.Drawing.Size(271, 37);
             this.txtBxPassword.TabIndex = 2;
+            this.txtBxPassword.Enter += new System.EventHandler(this.txtBxPassword_Enter);
             this.txtBxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBxPassword_KeyDown);
             // 
             // labelPasword
