@@ -55,13 +55,13 @@ namespace ChinChin
             string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan='" + username + "' and MatKhau='" + password + "'";
             DataTable TaiKhoan = new DataTable();
             TaiKhoan = DataProvider.LoadDatabase(sqlcode);
-            // Kiểm tra Mật Khẩu
-            //Kiểm tra LoaiTaiKhoan
+            
+            // Điều kiện Kiểm tra LoaiTaiKhoan
             if (TaiKhoan.Rows.Count == 1)
             {
                 if (TaiKhoan.Rows[0][0].ToString() == "chuquan")
                 {
-                    ChuQuan.Show();
+                    ChuQuan.Show(); // nếu tài khoản chủ quán thì hiện form chủ quán
                     this.Hide();
                 }
                 else if (TaiKhoan.Rows[0][0].ToString()  == "quanly")
@@ -82,18 +82,20 @@ namespace ChinChin
             }
             else
             {
-                labelThongBao.Visible = true;
+                labelThongBao.Visible = true; // Cho phép hiện thông báo lỗi,kết thúc hiệu lực của txtBxUsername_Enter và txtBxPassword_Enter
                 labelThongBao.Text = "Không tìm thấy tài khoản hoặc sai mật khẩu";
             }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            // Kết thúc phần mềm
             Application.Exit();
         }
 
         private void SignInButton_MouseHover(object sender, EventArgs e)
         {
+            // Tắt việc chuyển cái nút của mình thành màu đen khi rơ chuột lên nút Đăng Nhập
             //SignInButton.BackgroundColor = Color.Black;
         }
 
@@ -126,6 +128,13 @@ namespace ChinChin
         private void txtBxPassword_Enter(object sender, EventArgs e)
         {
             labelThongBao.Visible = false;
+        }
+
+        private void SignIn_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan' table. You can move, or remove it, as needed.
+            this.taiKhoanTableAdapter.Fill(this.quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan);
+
         }
     }
 }

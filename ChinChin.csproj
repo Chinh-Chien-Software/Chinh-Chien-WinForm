@@ -111,6 +111,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyQuanTraSuaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyQuanTraSuaDataSetTaiKhoan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyQuanTraSuaDataSetTaiKhoan.xsd</DependentUpon>
+    </Compile>
     <Compile Include="StorageDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -301,6 +306,17 @@
     </None>
     <None Include="QuanLyQuanTraSuaDataSet.xss">
       <DependentUpon>QuanLyQuanTraSuaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyQuanTraSuaDataSetTaiKhoan.xsc">
+      <DependentUpon>QuanLyQuanTraSuaDataSetTaiKhoan.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyQuanTraSuaDataSetTaiKhoan.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyQuanTraSuaDataSetTaiKhoan.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyQuanTraSuaDataSetTaiKhoan.xss">
+      <DependentUpon>QuanLyQuanTraSuaDataSetTaiKhoan.xsd</DependentUpon>
     </None>
     <None Include="StorageDataSet.xsc">
       <DependentUpon>StorageDataSet.xsd</DependentUpon>
