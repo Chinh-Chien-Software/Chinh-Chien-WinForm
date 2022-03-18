@@ -30,7 +30,7 @@ namespace ChinChin
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
-            this.panelRight = new System.Windows.Forms.Panel();
+            this.panelBackground = new System.Windows.Forms.Panel();
             this.labelThongBao = new System.Windows.Forms.Label();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.lblSignIn = new System.Windows.Forms.Label();
@@ -43,29 +43,29 @@ namespace ChinChin
             this.labelPasword = new System.Windows.Forms.Label();
             this.labelNoAccount = new System.Windows.Forms.Label();
             this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
-            this.panelRight.SuspendLayout();
+            this.panelBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panelUsername.SuspendLayout();
             this.panelPassword.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelRight
+            // panelBackground
             // 
-            this.panelRight.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
-            this.panelRight.Controls.Add(this.labelNoAccount);
-            this.panelRight.Controls.Add(this.SignInButton);
-            this.panelRight.Controls.Add(this.labelThongBao);
-            this.panelRight.Controls.Add(this.btnExit);
-            this.panelRight.Controls.Add(this.lblSignIn);
-            this.panelRight.Controls.Add(this.ckBxRememberSignIn);
-            this.panelRight.Controls.Add(this.panelUsername);
-            this.panelRight.Controls.Add(this.panelPassword);
-            this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRight.Location = new System.Drawing.Point(0, 0);
-            this.panelRight.Margin = new System.Windows.Forms.Padding(2);
-            this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(1400, 878);
-            this.panelRight.TabIndex = 10;
+            this.panelBackground.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
+            this.panelBackground.Controls.Add(this.labelNoAccount);
+            this.panelBackground.Controls.Add(this.SignInButton);
+            this.panelBackground.Controls.Add(this.labelThongBao);
+            this.panelBackground.Controls.Add(this.btnExit);
+            this.panelBackground.Controls.Add(this.lblSignIn);
+            this.panelBackground.Controls.Add(this.ckBxRememberSignIn);
+            this.panelBackground.Controls.Add(this.panelUsername);
+            this.panelBackground.Controls.Add(this.panelPassword);
+            this.panelBackground.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBackground.Location = new System.Drawing.Point(0, 0);
+            this.panelBackground.Margin = new System.Windows.Forms.Padding(2);
+            this.panelBackground.Name = "panelBackground";
+            this.panelBackground.Size = new System.Drawing.Size(1400, 878);
+            this.panelBackground.TabIndex = 10;
             // 
             // labelThongBao
             // 
@@ -245,7 +245,7 @@ namespace ChinChin
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1400, 878);
-            this.Controls.Add(this.panelRight);
+            this.Controls.Add(this.panelBackground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -254,8 +254,8 @@ namespace ChinChin
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panelRight.ResumeLayout(false);
-            this.panelRight.PerformLayout();
+            this.panelBackground.ResumeLayout(false);
+            this.panelBackground.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.panelUsername.ResumeLayout(false);
             this.panelUsername.PerformLayout();
@@ -271,7 +271,7 @@ namespace ChinChin
         private System.Windows.Forms.CheckBox ckBxRememberSignIn;
         private System.Windows.Forms.Label labelPasword;
         private FontAwesome.Sharp.IconPictureBox btnExit;
-        private System.Windows.Forms.Panel panelRight;
+        private System.Windows.Forms.Panel panelBackground;
         private System.Windows.Forms.Label labelThongBao;
         private Extra.BlackWhiteButton SignInButton;
         private System.Windows.Forms.Panel panelUsername;
