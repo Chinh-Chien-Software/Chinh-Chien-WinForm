@@ -31,6 +31,7 @@ namespace ChinChin
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
             this.panelBackground = new System.Windows.Forms.Panel();
+            this.labelNoAccount = new System.Windows.Forms.Label();
             this.labelThongBao = new System.Windows.Forms.Label();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.lblSignIn = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@ namespace ChinChin
             this.panelPassword = new System.Windows.Forms.Panel();
             this.txtBxPassword = new System.Windows.Forms.TextBox();
             this.labelPasword = new System.Windows.Forms.Label();
-            this.labelNoAccount = new System.Windows.Forms.Label();
             this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
             this.panelBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -64,8 +64,20 @@ namespace ChinChin
             this.panelBackground.Location = new System.Drawing.Point(0, 0);
             this.panelBackground.Margin = new System.Windows.Forms.Padding(2);
             this.panelBackground.Name = "panelBackground";
-            this.panelBackground.Size = new System.Drawing.Size(1400, 878);
+            this.panelBackground.Size = new System.Drawing.Size(1400, 735);
             this.panelBackground.TabIndex = 10;
+            // 
+            // labelNoAccount
+            // 
+            this.labelNoAccount.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelNoAccount.AutoSize = true;
+            this.labelNoAccount.BackColor = System.Drawing.Color.Transparent;
+            this.labelNoAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNoAccount.Location = new System.Drawing.Point(621, 597);
+            this.labelNoAccount.Name = "labelNoAccount";
+            this.labelNoAccount.Size = new System.Drawing.Size(176, 20);
+            this.labelNoAccount.TabIndex = 13;
+            this.labelNoAccount.Text = "Bạn chưa có tài khoản?";
             // 
             // labelThongBao
             // 
@@ -150,7 +162,6 @@ namespace ChinChin
             this.labelUserName.TabIndex = 6;
             this.labelUserName.Text = "Username";
             this.labelUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelUserName.Click += new System.EventHandler(this.labelUserName_Click);
             // 
             // txtBxUsername
             // 
@@ -162,7 +173,6 @@ namespace ChinChin
             this.txtBxUsername.Name = "txtBxUsername";
             this.txtBxUsername.Size = new System.Drawing.Size(271, 37);
             this.txtBxUsername.TabIndex = 1;
-            this.txtBxUsername.TextChanged += new System.EventHandler(this.txtBxUsername_TextChanged);
             this.txtBxUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBxUsername_KeyDown);
             // 
             // panelPassword
@@ -202,19 +212,6 @@ namespace ChinChin
             this.labelPasword.Size = new System.Drawing.Size(134, 33);
             this.labelPasword.TabIndex = 7;
             this.labelPasword.Text = "Password";
-            this.labelPasword.Click += new System.EventHandler(this.labelPasword_Click);
-            // 
-            // labelNoAccount
-            // 
-            this.labelNoAccount.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelNoAccount.AutoSize = true;
-            this.labelNoAccount.BackColor = System.Drawing.Color.Transparent;
-            this.labelNoAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNoAccount.Location = new System.Drawing.Point(621, 597);
-            this.labelNoAccount.Name = "labelNoAccount";
-            this.labelNoAccount.Size = new System.Drawing.Size(176, 20);
-            this.labelNoAccount.TabIndex = 13;
-            this.labelNoAccount.Text = "Bạn chưa có tài khoản?";
             // 
             // SignInButton
             // 
@@ -244,9 +241,8 @@ namespace ChinChin
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1400, 878);
+            this.ClientSize = new System.Drawing.Size(1400, 735);
             this.Controls.Add(this.panelBackground);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
