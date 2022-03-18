@@ -216,8 +216,8 @@ namespace ChinChin
             // SignInButton
             // 
             this.SignInButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.SignInButton.BackColor = System.Drawing.Color.Black;
-            this.SignInButton.BackgroundColor = System.Drawing.Color.Black;
+            this.SignInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.SignInButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.SignInButton.BorderColor = System.Drawing.Color.Black;
             this.SignInButton.BorderRadius = 0;
             this.SignInButton.BorderSize = 0;
