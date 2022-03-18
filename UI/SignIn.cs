@@ -39,8 +39,7 @@ namespace ChinChin
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
             this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.None;
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-            //this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
         private void CheckUserPassAndSignIn()
@@ -87,16 +86,6 @@ namespace ChinChin
             }
         }
 
-        private void labelUserName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SignIn_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -126,16 +115,6 @@ namespace ChinChin
             {
                 CheckUserPassAndSignIn();
             }
-        }
-
-        private void txtBxUsername_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelPasword_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
