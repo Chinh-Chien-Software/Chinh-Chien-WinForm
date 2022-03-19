@@ -83,9 +83,9 @@ namespace ChinChin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Chin_Chin_Logo_Dark_Backremove {
+        internal static System.Drawing.Bitmap Chin_Chin_Logo_Dark_Background_removed {
             get {
-                object obj = ResourceManager.GetObject("Chin_Chin_Logo_Dark_Backremove", resourceCulture);
+                object obj = ResourceManager.GetObject("Chin_Chin_Logo_Dark_Background-removed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
