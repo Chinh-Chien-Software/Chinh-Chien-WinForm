@@ -41,11 +41,12 @@ namespace ChinChin.Forms_NhanVien
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 150);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 122);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1578, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(1184, 122);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel1
@@ -55,8 +56,9 @@ namespace ChinChin.Forms_NhanVien
             this.panel1.Controls.Add(this.EditButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1602, 59);
+            this.panel1.Size = new System.Drawing.Size(1202, 48);
             this.panel1.TabIndex = 4;
             // 
             // DeleteButton
@@ -64,13 +66,14 @@ namespace ChinChin.Forms_NhanVien
             this.DeleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteButton.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.DeleteButton.IconColor = System.Drawing.Color.Red;
+            this.DeleteButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.DeleteButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.DeleteButton.IconSize = 40;
             this.DeleteButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.DeleteButton.Location = new System.Drawing.Point(1453, 0);
+            this.DeleteButton.Location = new System.Drawing.Point(1090, 0);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(146, 56);
+            this.DeleteButton.Size = new System.Drawing.Size(110, 46);
             this.DeleteButton.TabIndex = 3;
             this.DeleteButton.Text = "Delete";
             this.DeleteButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -81,13 +84,14 @@ namespace ChinChin.Forms_NhanVien
             this.NewButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.NewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewButton.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.NewButton.IconColor = System.Drawing.Color.Gold;
+            this.NewButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.NewButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.NewButton.IconSize = 40;
             this.NewButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.NewButton.Location = new System.Drawing.Point(1203, 0);
+            this.NewButton.Location = new System.Drawing.Point(902, 0);
+            this.NewButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NewButton.Name = "NewButton";
-            this.NewButton.Size = new System.Drawing.Size(119, 56);
+            this.NewButton.Size = new System.Drawing.Size(89, 46);
             this.NewButton.TabIndex = 2;
             this.NewButton.Text = "New";
             this.NewButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -98,13 +102,14 @@ namespace ChinChin.Forms_NhanVien
             this.EditButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.EditButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditButton.IconChar = FontAwesome.Sharp.IconChar.Edit;
-            this.EditButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.EditButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.EditButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.EditButton.IconSize = 40;
             this.EditButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.EditButton.Location = new System.Drawing.Point(1328, 0);
+            this.EditButton.Location = new System.Drawing.Point(996, 0);
+            this.EditButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(119, 56);
+            this.EditButton.Size = new System.Drawing.Size(89, 46);
             this.EditButton.TabIndex = 1;
             this.EditButton.Text = "Edit";
             this.EditButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -112,11 +117,12 @@ namespace ChinChin.Forms_NhanVien
             // 
             // KiemSoatLuongTonHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1602, 1033);
+            this.ClientSize = new System.Drawing.Size(1202, 839);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "KiemSoatLuongTonHang";
             this.Text = "KiemSoatLuongTonHang";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
