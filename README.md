@@ -1,4 +1,4 @@
-# Phần Mềm Quản Lý Quán Trà Sữa Chin Chin
+# Phần Mềm Quản Lý Quán Trà Sữa Chinh Chiến
 # Development and TeckStack
 - WinForm .NET Framework 4.7.2
 - IDE Visual Studio Community 2022
