@@ -35,6 +35,9 @@ namespace ChinChin.Forms_NhanVien
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelTittleBar = new System.Windows.Forms.Panel();
+            this.labelRole = new System.Windows.Forms.Label();
+            this.labelUserName = new System.Windows.Forms.Label();
+            this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.TaiKhoanBTN = new FontAwesome.Sharp.IconButton();
@@ -44,17 +47,16 @@ namespace ChinChin.Forms_NhanVien
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
-            this.labelUserName = new System.Windows.Forms.Label();
-            this.labelRole = new System.Windows.Forms.Label();
+            this.panelIconUser = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.panelTittleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
+            this.panelIconUser.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnMinimize
@@ -65,11 +67,11 @@ namespace ChinChin.Forms_NhanVien
             this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
             this.btnMinimize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMinimize.IconSize = 61;
-            this.btnMinimize.Location = new System.Drawing.Point(1696, 2);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMinimize.IconSize = 46;
+            this.btnMinimize.Location = new System.Drawing.Point(946, 2);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(61, 62);
+            this.btnMinimize.Size = new System.Drawing.Size(46, 50);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
@@ -82,11 +84,11 @@ namespace ChinChin.Forms_NhanVien
             this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.ExpandArrowsAlt;
             this.btnMaximize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaximize.IconSize = 60;
-            this.btnMaximize.Location = new System.Drawing.Point(1764, 2);
-            this.btnMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMaximize.IconSize = 49;
+            this.btnMaximize.Location = new System.Drawing.Point(997, 2);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(67, 60);
+            this.btnMaximize.Size = new System.Drawing.Size(50, 49);
             this.btnMaximize.TabIndex = 3;
             this.btnMaximize.TabStop = false;
             this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
@@ -99,11 +101,11 @@ namespace ChinChin.Forms_NhanVien
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 62;
-            this.btnExit.Location = new System.Drawing.Point(1837, 2);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExit.IconSize = 47;
+            this.btnExit.Location = new System.Drawing.Point(1052, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(63, 62);
+            this.btnExit.Size = new System.Drawing.Size(47, 50);
             this.btnExit.TabIndex = 2;
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -115,39 +117,69 @@ namespace ChinChin.Forms_NhanVien
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 61;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(0, 11);
-            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconCurrentChildForm.IconSize = 46;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(0, 9);
+            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(61, 62);
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(46, 50);
             this.iconCurrentChildForm.TabIndex = 0;
             this.iconCurrentChildForm.TabStop = false;
             // 
             // panelTittleBar
             // 
             this.panelTittleBar.BackColor = System.Drawing.Color.White;
-            this.panelTittleBar.Controls.Add(this.labelRole);
-            this.panelTittleBar.Controls.Add(this.labelUserName);
-            this.panelTittleBar.Controls.Add(this.pictureBoxAvatar);
+            this.panelTittleBar.Controls.Add(this.panelIconUser);
             this.panelTittleBar.Controls.Add(this.btnMinimize);
             this.panelTittleBar.Controls.Add(this.btnMaximize);
             this.panelTittleBar.Controls.Add(this.btnExit);
             this.panelTittleBar.Controls.Add(this.iconCurrentChildForm);
             this.panelTittleBar.Controls.Add(this.labelTittleChildForm);
-            this.panelTittleBar.Location = new System.Drawing.Point(1, 2);
-            this.panelTittleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTittleBar.Location = new System.Drawing.Point(0, 0);
+            this.panelTittleBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelTittleBar.Name = "panelTittleBar";
-            this.panelTittleBar.Size = new System.Drawing.Size(1901, 75);
+            this.panelTittleBar.Size = new System.Drawing.Size(1100, 61);
             this.panelTittleBar.TabIndex = 7;
             this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown);
+            // 
+            // labelRole
+            // 
+            this.labelRole.AutoSize = true;
+            this.labelRole.Location = new System.Drawing.Point(78, 32);
+            this.labelRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelRole.Name = "labelRole";
+            this.labelRole.Size = new System.Drawing.Size(29, 13);
+            this.labelRole.TabIndex = 14;
+            this.labelRole.Text = "Role";
+            // 
+            // labelUserName
+            // 
+            this.labelUserName.AutoSize = true;
+            this.labelUserName.Location = new System.Drawing.Point(78, 8);
+            this.labelUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelUserName.Name = "labelUserName";
+            this.labelUserName.Size = new System.Drawing.Size(35, 13);
+            this.labelUserName.TabIndex = 13;
+            this.labelUserName.Text = "Name";
+            // 
+            // pictureBoxAvatar
+            // 
+            this.pictureBoxAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAvatar.Image")));
+            this.pictureBoxAvatar.Location = new System.Drawing.Point(11, 2);
+            this.pictureBoxAvatar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxAvatar.Name = "pictureBoxAvatar";
+            this.pictureBoxAvatar.Size = new System.Drawing.Size(53, 61);
+            this.pictureBoxAvatar.TabIndex = 5;
+            this.pictureBoxAvatar.TabStop = false;
             // 
             // labelTittleChildForm
             // 
             this.labelTittleChildForm.AutoSize = true;
             this.labelTittleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTittleChildForm.Location = new System.Drawing.Point(67, 33);
+            this.labelTittleChildForm.Location = new System.Drawing.Point(50, 27);
+            this.labelTittleChildForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTittleChildForm.Name = "labelTittleChildForm";
-            this.labelTittleChildForm.Size = new System.Drawing.Size(58, 20);
+            this.labelTittleChildForm.Size = new System.Drawing.Size(49, 17);
             this.labelTittleChildForm.TabIndex = 1;
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -160,10 +192,10 @@ namespace ChinChin.Forms_NhanVien
             this.panelMenu.Controls.Add(this.KhoQuayBTN);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.ForeColor = System.Drawing.Color.Coral;
-            this.panelMenu.Location = new System.Drawing.Point(0, 194);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMenu.Location = new System.Drawing.Point(0, 158);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(501, 492);
+            this.panelMenu.Size = new System.Drawing.Size(376, 400);
             this.panelMenu.TabIndex = 10;
             // 
             // TaiKhoanBTN
@@ -177,11 +209,11 @@ namespace ChinChin.Forms_NhanVien
             this.TaiKhoanBTN.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.TaiKhoanBTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.TaiKhoanBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TaiKhoanBTN.Location = new System.Drawing.Point(0, 276);
-            this.TaiKhoanBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TaiKhoanBTN.Location = new System.Drawing.Point(0, 224);
+            this.TaiKhoanBTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TaiKhoanBTN.Name = "TaiKhoanBTN";
-            this.TaiKhoanBTN.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.TaiKhoanBTN.Size = new System.Drawing.Size(499, 126);
+            this.TaiKhoanBTN.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.TaiKhoanBTN.Size = new System.Drawing.Size(374, 102);
             this.TaiKhoanBTN.TabIndex = 2;
             this.TaiKhoanBTN.Text = "TÀI KHOẢN";
             this.TaiKhoanBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -199,11 +231,11 @@ namespace ChinChin.Forms_NhanVien
             this.KhoQuayBTN.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.KhoQuayBTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.KhoQuayBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.KhoQuayBTN.Location = new System.Drawing.Point(0, 150);
-            this.KhoQuayBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.KhoQuayBTN.Location = new System.Drawing.Point(0, 122);
+            this.KhoQuayBTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.KhoQuayBTN.Name = "KhoQuayBTN";
-            this.KhoQuayBTN.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.KhoQuayBTN.Size = new System.Drawing.Size(499, 126);
+            this.KhoQuayBTN.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.KhoQuayBTN.Size = new System.Drawing.Size(374, 102);
             this.KhoQuayBTN.TabIndex = 1;
             this.KhoQuayBTN.Text = "KHO QUẦY";
             this.KhoQuayBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -219,9 +251,9 @@ namespace ChinChin.Forms_NhanVien
             this.panelLogo.Controls.Add(this.btnHome);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(499, 150);
+            this.panelLogo.Size = new System.Drawing.Size(374, 122);
             this.panelLogo.TabIndex = 0;
             // 
             // SignOutButton
@@ -235,10 +267,10 @@ namespace ChinChin.Forms_NhanVien
             this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignOutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignOutButton.ForeColor = System.Drawing.Color.White;
-            this.SignOutButton.Location = new System.Drawing.Point(243, 9);
-            this.SignOutButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SignOutButton.Location = new System.Drawing.Point(182, 7);
+            this.SignOutButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SignOutButton.Name = "SignOutButton";
-            this.SignOutButton.Size = new System.Drawing.Size(251, 50);
+            this.SignOutButton.Size = new System.Drawing.Size(188, 41);
             this.SignOutButton.TabIndex = 11;
             this.SignOutButton.Text = "ĐĂNG XUẤT";
             this.SignOutButton.TextColor = System.Drawing.Color.White;
@@ -250,9 +282,10 @@ namespace ChinChin.Forms_NhanVien
             this.lblVersion.AutoSize = true;
             this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.Color.Black;
-            this.lblVersion.Location = new System.Drawing.Point(4, 9);
+            this.lblVersion.Location = new System.Drawing.Point(3, 7);
+            this.lblVersion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(93, 20);
+            this.lblVersion.Size = new System.Drawing.Size(80, 17);
             this.lblVersion.TabIndex = 1;
             this.lblVersion.Text = "Version 0.2";
             // 
@@ -261,9 +294,10 @@ namespace ChinChin.Forms_NhanVien
             this.btnHome.AutoSize = true;
             this.btnHome.Font = new System.Drawing.Font("MV Boli", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.Black;
-            this.btnHome.Location = new System.Drawing.Point(-4, 50);
+            this.btnHome.Location = new System.Drawing.Point(-3, 41);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(177, 62);
+            this.btnHome.Size = new System.Drawing.Size(143, 50);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Barista";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
@@ -272,49 +306,32 @@ namespace ChinChin.Forms_NhanVien
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.White;
             this.panelDesktop.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
-            this.panelDesktop.Location = new System.Drawing.Point(501, 266);
-            this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelDesktop.Location = new System.Drawing.Point(376, 216);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1400, 421);
+            this.panelDesktop.Size = new System.Drawing.Size(1050, 342);
             this.panelDesktop.TabIndex = 11;
             // 
-            // pictureBoxAvatar
+            // panelIconUser
             // 
-            this.pictureBoxAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAvatar.Image")));
-            this.pictureBoxAvatar.Location = new System.Drawing.Point(1183, 0);
-            this.pictureBoxAvatar.Name = "pictureBoxAvatar";
-            this.pictureBoxAvatar.Size = new System.Drawing.Size(71, 75);
-            this.pictureBoxAvatar.TabIndex = 5;
-            this.pictureBoxAvatar.TabStop = false;
-            // 
-            // labelUserName
-            // 
-            this.labelUserName.AutoSize = true;
-            this.labelUserName.Location = new System.Drawing.Point(1272, 8);
-            this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(44, 16);
-            this.labelUserName.TabIndex = 13;
-            this.labelUserName.Text = "Name";
-            // 
-            // labelRole
-            // 
-            this.labelRole.AutoSize = true;
-            this.labelRole.Location = new System.Drawing.Point(1272, 37);
-            this.labelRole.Name = "labelRole";
-            this.labelRole.Size = new System.Drawing.Size(36, 16);
-            this.labelRole.TabIndex = 14;
-            this.labelRole.Text = "Role";
+            this.panelIconUser.Controls.Add(this.pictureBoxAvatar);
+            this.panelIconUser.Controls.Add(this.labelRole);
+            this.panelIconUser.Controls.Add(this.labelUserName);
+            this.panelIconUser.Location = new System.Drawing.Point(741, 0);
+            this.panelIconUser.Name = "panelIconUser";
+            this.panelIconUser.Size = new System.Drawing.Size(200, 61);
+            this.panelIconUser.TabIndex = 15;
             // 
             // NhanVienPhaChe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1466, 597);
+            this.ClientSize = new System.Drawing.Size(1100, 485);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelTittleBar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "NhanVienPhaChe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NhanVienPhaChe";
@@ -324,10 +341,12 @@ namespace ChinChin.Forms_NhanVien
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             this.panelTittleBar.ResumeLayout(false);
             this.panelTittleBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).EndInit();
+            this.panelIconUser.ResumeLayout(false);
+            this.panelIconUser.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -350,5 +369,6 @@ namespace ChinChin.Forms_NhanVien
         private System.Windows.Forms.Label labelRole;
         private System.Windows.Forms.Label labelUserName;
         private System.Windows.Forms.PictureBox pictureBoxAvatar;
+        private System.Windows.Forms.Panel panelIconUser;
     }
 }
