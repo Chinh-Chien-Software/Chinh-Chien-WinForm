@@ -1,8 +1,8 @@
 [submodule "Database-SQL"]
 	path = Database-SQL
-	url = git@github.com:DH20LT/Database-ChinChin.git
+	url = git@gitlab.com:TaQuangKhoi/Database-ChinChin.git
 	branch = main
 [submodule "Diagram"]
 	path = Diagram
-	url = git@github.com:DH20LT/Diagram-ChinChin.git
+	url = git@gitlab.com:TaQuangKhoi/Diagram-ChinChin.git
 	branch = main
