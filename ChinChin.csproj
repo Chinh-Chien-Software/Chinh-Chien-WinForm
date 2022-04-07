@@ -151,35 +151,35 @@
     <Compile Include="UI\fChuQuan\QuanLyMenu.Designer.cs">
       <DependentUpon>QuanLyMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Forms_NhanVien\ButtonSanPham.cs">
+    <Compile Include="UI\fsNhanVien\ButtonSanPham.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\Forms_NhanVien\ButtonSanPham.Designer.cs">
+    <Compile Include="UI\fsNhanVien\ButtonSanPham.Designer.cs">
       <DependentUpon>ButtonSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Forms_NhanVien\KiemSoatLuongTonHang.cs">
+    <Compile Include="UI\fsNhanVien\KiemSoatLuongTonHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Forms_NhanVien\KiemSoatLuongTonHang.Designer.cs">
+    <Compile Include="UI\fsNhanVien\KiemSoatLuongTonHang.Designer.cs">
       <DependentUpon>KiemSoatLuongTonHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Forms_NhanVien\NhanVienPhaChe.cs">
+    <Compile Include="UI\fsNhanVien\NhanVienPhaChe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Forms_NhanVien\NhanVienPhaChe.Designer.cs">
+    <Compile Include="UI\fsNhanVien\NhanVienPhaChe.Designer.cs">
       <DependentUpon>NhanVienPhaChe.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Forms_NhanVien\NhanVienThuNgan.cs">
+    <Compile Include="UI\fsNhanVien\NhanVienThuNgan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Forms_NhanVien\NhanVienThuNgan.Designer.cs">
+    <Compile Include="UI\fsNhanVien\NhanVienThuNgan.Designer.cs">
       <DependentUpon>NhanVienThuNgan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Forms_NhanVien\SanPham.cs" />
-    <Compile Include="UI\Forms_NhanVien\TiepNhanDonHang.cs">
+    <Compile Include="UI\fsNhanVien\SanPham.cs" />
+    <Compile Include="UI\fsNhanVien\TiepNhanDonHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Forms_NhanVien\TiepNhanDonHang.Designer.cs">
+    <Compile Include="UI\fsNhanVien\TiepNhanDonHang.Designer.cs">
       <DependentUpon>TiepNhanDonHang.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Forms_QuanLy\BaoCaoDoanhThu.cs">
@@ -239,19 +239,19 @@
     <EmbeddedResource Include="UI\fChuQuan\QuanLyMenu.resx">
       <DependentUpon>QuanLyMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Forms_NhanVien\ButtonSanPham.resx">
+    <EmbeddedResource Include="UI\fsNhanVien\ButtonSanPham.resx">
       <DependentUpon>ButtonSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Forms_NhanVien\KiemSoatLuongTonHang.resx">
+    <EmbeddedResource Include="UI\fsNhanVien\KiemSoatLuongTonHang.resx">
       <DependentUpon>KiemSoatLuongTonHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Forms_NhanVien\NhanVienPhaChe.resx">
+    <EmbeddedResource Include="UI\fsNhanVien\NhanVienPhaChe.resx">
       <DependentUpon>NhanVienPhaChe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Forms_NhanVien\NhanVienThuNgan.resx">
+    <EmbeddedResource Include="UI\fsNhanVien\NhanVienThuNgan.resx">
       <DependentUpon>NhanVienThuNgan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Forms_NhanVien\TiepNhanDonHang.resx">
+    <EmbeddedResource Include="UI\fsNhanVien\TiepNhanDonHang.resx">
       <DependentUpon>TiepNhanDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Forms_QuanLy\BaoCaoDoanhThu.resx">
