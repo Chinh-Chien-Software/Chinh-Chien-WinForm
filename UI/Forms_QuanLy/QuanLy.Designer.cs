@@ -35,14 +35,14 @@ namespace ChinChin.FormsQuanLy
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelTittleBar = new System.Windows.Forms.Panel();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
-            this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
-            this.lblVersion = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.Label();
+            this.panelMenu = new System.Windows.Forms.Panel();
             this.ChamCongBTN = new FontAwesome.Sharp.IconButton();
             this.KhoHangBTN = new FontAwesome.Sharp.IconButton();
             this.ThongKeBTN = new FontAwesome.Sharp.IconButton();
-            this.panelMenu = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
+            this.lblVersion = new System.Windows.Forms.Label();
+            this.btnHome = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
@@ -63,7 +63,7 @@ namespace ChinChin.FormsQuanLy
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMinimize.IconSize = 46;
             this.btnMinimize.Location = new System.Drawing.Point(1272, 2);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(46, 50);
             this.btnMinimize.TabIndex = 4;
@@ -80,7 +80,7 @@ namespace ChinChin.FormsQuanLy
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMaximize.IconSize = 49;
             this.btnMaximize.Location = new System.Drawing.Point(1323, 2);
-            this.btnMaximize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(50, 49);
             this.btnMaximize.TabIndex = 3;
@@ -97,7 +97,7 @@ namespace ChinChin.FormsQuanLy
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 47;
             this.btnExit.Location = new System.Drawing.Point(1378, 2);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(47, 50);
             this.btnExit.TabIndex = 2;
@@ -113,7 +113,7 @@ namespace ChinChin.FormsQuanLy
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCurrentChildForm.IconSize = 46;
             this.iconCurrentChildForm.Location = new System.Drawing.Point(0, 9);
-            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(2);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
             this.iconCurrentChildForm.Size = new System.Drawing.Size(46, 50);
             this.iconCurrentChildForm.TabIndex = 0;
@@ -129,7 +129,7 @@ namespace ChinChin.FormsQuanLy
             this.panelTittleBar.Controls.Add(this.labelTittleChildForm);
             this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTittleBar.Location = new System.Drawing.Point(0, 0);
-            this.panelTittleBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTittleBar.Margin = new System.Windows.Forms.Padding(2);
             this.panelTittleBar.Name = "panelTittleBar";
             this.panelTittleBar.Size = new System.Drawing.Size(1426, 61);
             this.panelTittleBar.TabIndex = 7;
@@ -147,6 +147,99 @@ namespace ChinChin.FormsQuanLy
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // panelMenu
+            // 
+            this.panelMenu.BackColor = System.Drawing.Color.White;
+            this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMenu.Controls.Add(this.ChamCongBTN);
+            this.panelMenu.Controls.Add(this.KhoHangBTN);
+            this.panelMenu.Controls.Add(this.ThongKeBTN);
+            this.panelMenu.Controls.Add(this.panelLogo);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.ForeColor = System.Drawing.Color.Coral;
+            this.panelMenu.Location = new System.Drawing.Point(0, 61);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(376, 524);
+            this.panelMenu.TabIndex = 9;
+            // 
+            // ChamCongBTN
+            // 
+            this.ChamCongBTN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ChamCongBTN.FlatAppearance.BorderSize = 0;
+            this.ChamCongBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ChamCongBTN.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChamCongBTN.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ChamCongBTN.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ChamCongBTN.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ChamCongBTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ChamCongBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ChamCongBTN.Location = new System.Drawing.Point(0, 326);
+            this.ChamCongBTN.Margin = new System.Windows.Forms.Padding(2);
+            this.ChamCongBTN.Name = "ChamCongBTN";
+            this.ChamCongBTN.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ChamCongBTN.Size = new System.Drawing.Size(374, 102);
+            this.ChamCongBTN.TabIndex = 3;
+            this.ChamCongBTN.Text = "LỊCH LÀM";
+            this.ChamCongBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ChamCongBTN.UseVisualStyleBackColor = true;
+            // 
+            // KhoHangBTN
+            // 
+            this.KhoHangBTN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.KhoHangBTN.FlatAppearance.BorderSize = 0;
+            this.KhoHangBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.KhoHangBTN.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KhoHangBTN.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.KhoHangBTN.IconChar = FontAwesome.Sharp.IconChar.Boxes;
+            this.KhoHangBTN.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.KhoHangBTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.KhoHangBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.KhoHangBTN.Location = new System.Drawing.Point(0, 224);
+            this.KhoHangBTN.Margin = new System.Windows.Forms.Padding(2);
+            this.KhoHangBTN.Name = "KhoHangBTN";
+            this.KhoHangBTN.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.KhoHangBTN.Size = new System.Drawing.Size(374, 102);
+            this.KhoHangBTN.TabIndex = 2;
+            this.KhoHangBTN.Text = "KHO HÀNG";
+            this.KhoHangBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.KhoHangBTN.UseVisualStyleBackColor = true;
+            // 
+            // ThongKeBTN
+            // 
+            this.ThongKeBTN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ThongKeBTN.FlatAppearance.BorderSize = 0;
+            this.ThongKeBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ThongKeBTN.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThongKeBTN.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ThongKeBTN.IconChar = FontAwesome.Sharp.IconChar.Dashcube;
+            this.ThongKeBTN.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ThongKeBTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ThongKeBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ThongKeBTN.Location = new System.Drawing.Point(0, 122);
+            this.ThongKeBTN.Margin = new System.Windows.Forms.Padding(2);
+            this.ThongKeBTN.Name = "ThongKeBTN";
+            this.ThongKeBTN.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ThongKeBTN.Size = new System.Drawing.Size(374, 102);
+            this.ThongKeBTN.TabIndex = 1;
+            this.ThongKeBTN.Text = "THỐNG KÊ";
+            this.ThongKeBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ThongKeBTN.UseVisualStyleBackColor = true;
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.Transparent;
+            this.panelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelLogo.Controls.Add(this.SignInButton);
+            this.panelLogo.Controls.Add(this.lblVersion);
+            this.panelLogo.Controls.Add(this.btnHome);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(374, 122);
+            this.panelLogo.TabIndex = 0;
+            // 
             // SignInButton
             // 
             this.SignInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
@@ -159,14 +252,13 @@ namespace ChinChin.FormsQuanLy
             this.SignInButton.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignInButton.ForeColor = System.Drawing.Color.White;
             this.SignInButton.Location = new System.Drawing.Point(182, 7);
-            this.SignInButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SignInButton.Margin = new System.Windows.Forms.Padding(2);
             this.SignInButton.Name = "SignInButton";
             this.SignInButton.Size = new System.Drawing.Size(188, 41);
             this.SignInButton.TabIndex = 11;
             this.SignInButton.Text = "ĐĂNG XUẤT";
             this.SignInButton.TextColor = System.Drawing.Color.White;
             this.SignInButton.UseVisualStyleBackColor = false;
-            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
             // 
             // lblVersion
             // 
@@ -191,126 +283,26 @@ namespace ChinChin.FormsQuanLy
             this.btnHome.Size = new System.Drawing.Size(167, 50);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Manager";
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click_1);
-            // 
-            // ChamCongBTN
-            // 
-            this.ChamCongBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ChamCongBTN.FlatAppearance.BorderSize = 0;
-            this.ChamCongBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ChamCongBTN.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChamCongBTN.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ChamCongBTN.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.ChamCongBTN.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ChamCongBTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ChamCongBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ChamCongBTN.Location = new System.Drawing.Point(0, 326);
-            this.ChamCongBTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ChamCongBTN.Name = "ChamCongBTN";
-            this.ChamCongBTN.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ChamCongBTN.Size = new System.Drawing.Size(374, 102);
-            this.ChamCongBTN.TabIndex = 3;
-            this.ChamCongBTN.Text = "LỊCH LÀM";
-            this.ChamCongBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ChamCongBTN.UseVisualStyleBackColor = true;
-            this.ChamCongBTN.Click += new System.EventHandler(this.ChamCongBTN_Click);
-            // 
-            // KhoHangBTN
-            // 
-            this.KhoHangBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.KhoHangBTN.FlatAppearance.BorderSize = 0;
-            this.KhoHangBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.KhoHangBTN.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KhoHangBTN.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.KhoHangBTN.IconChar = FontAwesome.Sharp.IconChar.Boxes;
-            this.KhoHangBTN.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.KhoHangBTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.KhoHangBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.KhoHangBTN.Location = new System.Drawing.Point(0, 224);
-            this.KhoHangBTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.KhoHangBTN.Name = "KhoHangBTN";
-            this.KhoHangBTN.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.KhoHangBTN.Size = new System.Drawing.Size(374, 102);
-            this.KhoHangBTN.TabIndex = 2;
-            this.KhoHangBTN.Text = "KHO HÀNG";
-            this.KhoHangBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.KhoHangBTN.UseVisualStyleBackColor = true;
-            this.KhoHangBTN.Click += new System.EventHandler(this.KhoHangBTN_Click_1);
-            // 
-            // ThongKeBTN
-            // 
-            this.ThongKeBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ThongKeBTN.FlatAppearance.BorderSize = 0;
-            this.ThongKeBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ThongKeBTN.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThongKeBTN.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ThongKeBTN.IconChar = FontAwesome.Sharp.IconChar.Dashcube;
-            this.ThongKeBTN.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ThongKeBTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ThongKeBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ThongKeBTN.Location = new System.Drawing.Point(0, 122);
-            this.ThongKeBTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ThongKeBTN.Name = "ThongKeBTN";
-            this.ThongKeBTN.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ThongKeBTN.Size = new System.Drawing.Size(374, 102);
-            this.ThongKeBTN.TabIndex = 1;
-            this.ThongKeBTN.Text = "THỐNG KÊ";
-            this.ThongKeBTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ThongKeBTN.UseVisualStyleBackColor = true;
-            this.ThongKeBTN.Click += new System.EventHandler(this.ThongKeBTN_Click);
-            // 
-            // panelMenu
-            // 
-            this.panelMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panelMenu.BackColor = System.Drawing.Color.White;
-            this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMenu.Controls.Add(this.ChamCongBTN);
-            this.panelMenu.Controls.Add(this.KhoHangBTN);
-            this.panelMenu.Controls.Add(this.ThongKeBTN);
-            this.panelMenu.Controls.Add(this.panelLogo);
-            this.panelMenu.ForeColor = System.Drawing.Color.Coral;
-            this.panelMenu.Location = new System.Drawing.Point(0, 61);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(376, 525);
-            this.panelMenu.TabIndex = 6;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.Transparent;
-            this.panelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelLogo.Controls.Add(this.SignInButton);
-            this.panelLogo.Controls.Add(this.lblVersion);
-            this.panelLogo.Controls.Add(this.btnHome);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(374, 122);
-            this.panelLogo.TabIndex = 0;
             // 
             // panelDesktop
             // 
-            this.panelDesktop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDesktop.BackColor = System.Drawing.Color.White;
             this.panelDesktop.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
-            this.panelDesktop.Location = new System.Drawing.Point(375, 61);
-            this.panelDesktop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(376, 61);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1052, 524);
-            this.panelDesktop.TabIndex = 8;
+            this.panelDesktop.Size = new System.Drawing.Size(1050, 524);
+            this.panelDesktop.TabIndex = 10;
             // 
             // QuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1426, 585);
-            this.Controls.Add(this.panelTittleBar);
-            this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelDesktop);
+            this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelTittleBar);
             this.Name = "QuanLy";
             this.Text = "QuanLy";
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
@@ -333,14 +325,14 @@ namespace ChinChin.FormsQuanLy
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Panel panelTittleBar;
         private System.Windows.Forms.Label labelTittleChildForm;
-        private Extra.BlackWhiteButton SignInButton;
-        private System.Windows.Forms.Label lblVersion;
-        private System.Windows.Forms.Label btnHome;
+        private System.Windows.Forms.Panel panelMenu;
         private FontAwesome.Sharp.IconButton ChamCongBTN;
         private FontAwesome.Sharp.IconButton KhoHangBTN;
         private FontAwesome.Sharp.IconButton ThongKeBTN;
-        private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelLogo;
+        private Extra.BlackWhiteButton SignInButton;
+        private System.Windows.Forms.Label lblVersion;
+        private System.Windows.Forms.Label btnHome;
         private System.Windows.Forms.Panel panelDesktop;
     }
 }
