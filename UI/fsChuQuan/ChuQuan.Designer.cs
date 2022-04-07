@@ -46,9 +46,6 @@ namespace ChinChin.FormsChuQuan
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelLeftMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTittleBar.SuspendLayout();
@@ -56,17 +53,16 @@ namespace ChinChin.FormsChuQuan
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.White;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(376, 85);
+            this.panelDesktop.Location = new System.Drawing.Point(376, 61);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1050, 681);
+            this.panelDesktop.Size = new System.Drawing.Size(1050, 705);
             this.panelDesktop.TabIndex = 5;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
@@ -81,10 +77,10 @@ namespace ChinChin.FormsChuQuan
             this.panelLeftMenu.Controls.Add(this.panelLogo);
             this.panelLeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeftMenu.ForeColor = System.Drawing.Color.Coral;
-            this.panelLeftMenu.Location = new System.Drawing.Point(0, 85);
+            this.panelLeftMenu.Location = new System.Drawing.Point(0, 61);
             this.panelLeftMenu.Margin = new System.Windows.Forms.Padding(2);
             this.panelLeftMenu.Name = "panelLeftMenu";
-            this.panelLeftMenu.Size = new System.Drawing.Size(376, 681);
+            this.panelLeftMenu.Size = new System.Drawing.Size(376, 705);
             this.panelLeftMenu.TabIndex = 3;
             // 
             // iconButtonThucDon
@@ -244,7 +240,7 @@ namespace ChinChin.FormsChuQuan
             this.panelTittleBar.Controls.Add(this.iconCurrentChildForm);
             this.panelTittleBar.Controls.Add(this.labelTittleChildForm);
             this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTittleBar.Location = new System.Drawing.Point(0, 24);
+            this.panelTittleBar.Location = new System.Drawing.Point(0, 0);
             this.panelTittleBar.Margin = new System.Windows.Forms.Padding(2);
             this.panelTittleBar.Name = "panelTittleBar";
             this.panelTittleBar.Size = new System.Drawing.Size(1426, 61);
@@ -332,29 +328,6 @@ namespace ChinChin.FormsChuQuan
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.labelTittleChildForm.Click += new System.EventHandler(this.labelTittleChildForm_Click);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.tàiKhoảnToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1426, 24);
-            this.menuStrip1.TabIndex = 6;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // tàiKhoảnToolStripMenuItem
-            // 
-            this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
-            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.tàiKhoảnToolStripMenuItem.Text = "Tài Khoản";
-            // 
             // formChuQuan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -363,7 +336,6 @@ namespace ChinChin.FormsChuQuan
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelLeftMenu);
             this.Controls.Add(this.panelTittleBar);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formChuQuan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -377,10 +349,7 @@ namespace ChinChin.FormsChuQuan
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -402,8 +371,5 @@ namespace ChinChin.FormsChuQuan
         private System.Windows.Forms.Label labelTittleChildForm;
         private FontAwesome.Sharp.IconButton iconButtonThucDon;
         private Extra.BlackWhiteButton SignOutButton;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tàiKhoảnToolStripMenuItem;
     }
 }
