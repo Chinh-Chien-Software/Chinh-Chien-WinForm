@@ -132,14 +132,14 @@ namespace ChinChin.FormsQuanLy
             this.panelTittleBar.Margin = new System.Windows.Forms.Padding(2);
             this.panelTittleBar.Name = "panelTittleBar";
             this.panelTittleBar.Size = new System.Drawing.Size(1426, 61);
-            this.panelTittleBar.TabIndex = 7;
+            this.panelTittleBar.TabIndex = 4;
             this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown_1);
             // 
             // labelTittleChildForm
             // 
             this.labelTittleChildForm.AutoSize = true;
             this.labelTittleChildForm.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTittleChildForm.Location = new System.Drawing.Point(50, 27);
+            this.labelTittleChildForm.Location = new System.Drawing.Point(50, 25);
             this.labelTittleChildForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTittleChildForm.Name = "labelTittleChildForm";
             this.labelTittleChildForm.Size = new System.Drawing.Size(48, 17);
