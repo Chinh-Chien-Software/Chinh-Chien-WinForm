@@ -121,34 +121,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StorageDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="UI\fChuQuan\ChamCong.cs">
+    <Compile Include="UI\fsChuQuan\ChamCong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\fChuQuan\ChamCong.Designer.cs">
+    <Compile Include="UI\fsChuQuan\ChamCong.Designer.cs">
       <DependentUpon>ChamCong.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\fChuQuan\ChuQuan.cs">
+    <Compile Include="UI\fsChuQuan\ChuQuan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\fChuQuan\ChuQuan.Designer.cs">
+    <Compile Include="UI\fsChuQuan\ChuQuan.Designer.cs">
       <DependentUpon>ChuQuan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\fChuQuan\XemKhoHang.cs">
+    <Compile Include="UI\fsChuQuan\XemKhoHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\fChuQuan\XemKhoHang.Designer.cs">
+    <Compile Include="UI\fsChuQuan\XemKhoHang.Designer.cs">
       <DependentUpon>XemKhoHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\fChuQuan\XemThongKe.cs">
+    <Compile Include="UI\fsChuQuan\XemThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\fChuQuan\XemThongKe.Designer.cs">
+    <Compile Include="UI\fsChuQuan\XemThongKe.Designer.cs">
       <DependentUpon>XemThongKe.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\fChuQuan\QuanLyMenu.cs">
+    <Compile Include="UI\fsChuQuan\QuanLyMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\fChuQuan\QuanLyMenu.Designer.cs">
+    <Compile Include="UI\fsChuQuan\QuanLyMenu.Designer.cs">
       <DependentUpon>QuanLyMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\fsNhanVien\ButtonSanPham.cs">
@@ -182,22 +182,22 @@
     <Compile Include="UI\fsNhanVien\TiepNhanDonHang.Designer.cs">
       <DependentUpon>TiepNhanDonHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Forms_QuanLy\BaoCaoDoanhThu.cs">
+    <Compile Include="UI\fsQuanLy\BaoCaoDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Forms_QuanLy\BaoCaoDoanhThu.Designer.cs">
+    <Compile Include="UI\fsQuanLy\BaoCaoDoanhThu.Designer.cs">
       <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Forms_QuanLy\QuanLyKhoHang.cs">
+    <Compile Include="UI\fsQuanLy\QuanLyKhoHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Forms_QuanLy\QuanLyKhoHang.Designer.cs">
+    <Compile Include="UI\fsQuanLy\QuanLyKhoHang.Designer.cs">
       <DependentUpon>QuanLyKhoHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Forms_QuanLy\QuanLyLichLam.cs">
+    <Compile Include="UI\fsQuanLy\QuanLyLichLam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Forms_QuanLy\QuanLyLichLam.Designer.cs">
+    <Compile Include="UI\fsQuanLy\QuanLyLichLam.Designer.cs">
       <DependentUpon>QuanLyLichLam.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -212,10 +212,10 @@
     <Compile Include="UI\SignIn.Designer.cs">
       <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Forms_QuanLy\QuanLy.cs">
+    <Compile Include="UI\fsQuanLy\QuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Forms_QuanLy\QuanLy.Designer.cs">
+    <Compile Include="UI\fsQuanLy\QuanLy.Designer.cs">
       <DependentUpon>QuanLy.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -224,19 +224,19 @@
     <EmbeddedResource Include="Extra\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\fChuQuan\ChamCong.resx">
+    <EmbeddedResource Include="UI\fsChuQuan\ChamCong.resx">
       <DependentUpon>ChamCong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\fChuQuan\ChuQuan.resx">
+    <EmbeddedResource Include="UI\fsChuQuan\ChuQuan.resx">
       <DependentUpon>ChuQuan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\fChuQuan\XemKhoHang.resx">
+    <EmbeddedResource Include="UI\fsChuQuan\XemKhoHang.resx">
       <DependentUpon>XemKhoHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\fChuQuan\XemThongKe.resx">
+    <EmbeddedResource Include="UI\fsChuQuan\XemThongKe.resx">
       <DependentUpon>XemThongKe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\fChuQuan\QuanLyMenu.resx">
+    <EmbeddedResource Include="UI\fsChuQuan\QuanLyMenu.resx">
       <DependentUpon>QuanLyMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\fsNhanVien\ButtonSanPham.resx">
@@ -254,20 +254,20 @@
     <EmbeddedResource Include="UI\fsNhanVien\TiepNhanDonHang.resx">
       <DependentUpon>TiepNhanDonHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Forms_QuanLy\BaoCaoDoanhThu.resx">
+    <EmbeddedResource Include="UI\fsQuanLy\BaoCaoDoanhThu.resx">
       <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Forms_QuanLy\QuanLyKhoHang.resx">
+    <EmbeddedResource Include="UI\fsQuanLy\QuanLyKhoHang.resx">
       <DependentUpon>QuanLyKhoHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Forms_QuanLy\QuanLyLichLam.resx">
+    <EmbeddedResource Include="UI\fsQuanLy\QuanLyLichLam.resx">
       <DependentUpon>QuanLyLichLam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="UI\SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Forms_QuanLy\QuanLy.resx">
+    <EmbeddedResource Include="UI\fsQuanLy\QuanLy.resx">
       <DependentUpon>QuanLy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

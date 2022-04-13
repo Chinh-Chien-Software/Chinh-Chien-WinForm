@@ -20,20 +20,6 @@ namespace ChinChin.Database
         // SqlCommand thuchien;
         // SqlDataReader docdulieu;
 
-        private void OleMethod()
-        {
-            //ketnoi.Open();
-            //ketnoi.Close();
-            //// Kiểm tra Mật Khẩu
-            //SqlDataAdapter sda = new SqlDataAdapter(sqlcode, ketnoi);
-            //DataTable dttb = new DataTable();
-            //sda.Fill(dttb);
-            ////Kiểm tra LoaiTaiKhoan
-            //ketnoi.Open();
-            //thuchien = new SqlCommand(sqlcode, ketnoi);
-            //docdulieu = thuchien.ExecuteReader();
-            //docdulieu.Read();
-        }
         static public DataTable LoadDatabase(string sql)
         {
             DataTable dt = new DataTable(); //Khởi tạo một datatable để lưu dữ liệu
