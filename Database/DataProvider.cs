@@ -12,14 +12,11 @@ namespace ChinChin.Database
     
     internal class DataProvider
     {
-        // cnStr is connection String
-        // ketnoi = new SqlConnection(chuoiketnoi);
-        // Connection String for set up infomation to connect.
+        // cnStr chứa thông tin về tên Server, Database..
         static string cnStr = @"Data Source=DESKTOP-AN8O8G6\TQK;Initial Catalog=QuanLyQuanTraSua;Integrated Security=True";
-        static SqlConnection cn; // Create a connection
-        // SqlCommand thuchien;
-        // SqlDataReader docdulieu;
 
+        static SqlConnection cn; // Create a connection
+        
         static public DataTable LoadDatabase(string sql)
         {
             DataTable dt = new DataTable(); //Khởi tạo một datatable để lưu dữ liệu
