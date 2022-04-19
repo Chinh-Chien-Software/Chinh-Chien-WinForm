@@ -31,7 +31,8 @@ namespace ChinChin
            int nWidthEllipse, // width of ellipse
            int nHeightEllipse // height of ellipse
         );
-
+        public static string username;
+        public static string password;
         public SignIn()
         {
             InitializeComponent();
@@ -44,14 +45,13 @@ namespace ChinChin
 
         private void CheckUserPassAndSignIn()
         {
-
-            string username = txtBxUsername.Text;
-            string password = txtBxPassword.Text;
+            username = txtBxUsername.Text;
+            password = txtBxPassword.Text;
+            
             formChuQuan ChuQuan = new formChuQuan();
             QuanLy QuanLy = new QuanLy();
             NhanVienThuNgan NhanVienThuNgan = new NhanVienThuNgan();
             NhanVienPhaChe Barista = new NhanVienPhaChe();
-
             string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan = '" + username + "' AND MatKhau = '" + password + "'";
             DataTable TaiKhoan = new DataTable();
             TaiKhoan = DataProvider.LoadDatabase(sqlcode);
