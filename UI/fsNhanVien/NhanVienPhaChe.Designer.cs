@@ -39,18 +39,16 @@ namespace ChinChin.Forms_NhanVien
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MnsTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đổiMậtKhẩuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.càiĐặtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.TaiKhoanBTN = new FontAwesome.Sharp.IconButton();
             this.KhoQuayBTN = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.SignOutButton = new ChinChin.Extra.BlackWhiteButton();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.SignOutButton = new ChinChin.Extra.BlackWhiteButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -184,24 +182,9 @@ namespace ChinChin.Forms_NhanVien
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
-            this.đổiMậtKhẩuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.đổiMậtKhẩuToolStripMenuItem1,
-            this.đăngXuấtToolStripMenuItem});
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
             this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Thông tin tài khoản";
-            // 
-            // đổiMậtKhẩuToolStripMenuItem1
-            // 
-            this.đổiMậtKhẩuToolStripMenuItem1.Name = "đổiMậtKhẩuToolStripMenuItem1";
-            this.đổiMậtKhẩuToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
-            this.đổiMậtKhẩuToolStripMenuItem1.Text = "Đổi mật khẩu";
-            // 
-            // đăngXuấtToolStripMenuItem
-            // 
-            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
-            this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             // 
             // càiĐặtToolStripMenuItem
             // 
@@ -294,27 +277,6 @@ namespace ChinChin.Forms_NhanVien
             this.panelLogo.Size = new System.Drawing.Size(374, 122);
             this.panelLogo.TabIndex = 0;
             // 
-            // SignOutButton
-            // 
-            this.SignOutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.SignOutButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.SignOutButton.BorderColor = System.Drawing.Color.Black;
-            this.SignOutButton.BorderRadius = 0;
-            this.SignOutButton.BorderSize = 0;
-            this.SignOutButton.FlatAppearance.BorderSize = 0;
-            this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignOutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignOutButton.ForeColor = System.Drawing.Color.White;
-            this.SignOutButton.Location = new System.Drawing.Point(182, 7);
-            this.SignOutButton.Margin = new System.Windows.Forms.Padding(2);
-            this.SignOutButton.Name = "SignOutButton";
-            this.SignOutButton.Size = new System.Drawing.Size(188, 41);
-            this.SignOutButton.TabIndex = 11;
-            this.SignOutButton.Text = "ĐĂNG XUẤT";
-            this.SignOutButton.TextColor = System.Drawing.Color.White;
-            this.SignOutButton.UseVisualStyleBackColor = false;
-            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click_1);
-            // 
             // lblVersion
             // 
             this.lblVersion.AutoSize = true;
@@ -350,6 +312,27 @@ namespace ChinChin.Forms_NhanVien
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(724, 415);
             this.panelDesktop.TabIndex = 11;
+            // 
+            // SignOutButton
+            // 
+            this.SignOutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.SignOutButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.SignOutButton.BorderColor = System.Drawing.Color.Black;
+            this.SignOutButton.BorderRadius = 0;
+            this.SignOutButton.BorderSize = 0;
+            this.SignOutButton.FlatAppearance.BorderSize = 0;
+            this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignOutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignOutButton.ForeColor = System.Drawing.Color.White;
+            this.SignOutButton.Location = new System.Drawing.Point(182, 7);
+            this.SignOutButton.Margin = new System.Windows.Forms.Padding(2);
+            this.SignOutButton.Name = "SignOutButton";
+            this.SignOutButton.Size = new System.Drawing.Size(188, 41);
+            this.SignOutButton.TabIndex = 11;
+            this.SignOutButton.Text = "ĐĂNG XUẤT";
+            this.SignOutButton.TextColor = System.Drawing.Color.White;
+            this.SignOutButton.UseVisualStyleBackColor = false;
+            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click_1);
             // 
             // NhanVienPhaChe
             // 
@@ -402,8 +385,6 @@ namespace ChinChin.Forms_NhanVien
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem MnsTaiKhoan;
         private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem càiĐặtToolStripMenuItem;
     }
 }
