@@ -19,7 +19,7 @@ namespace ChinChin.Forms_NhanVien
             InitializeComponent();
             HienMenu();
         }
-        string chuoiketnoi = @"Data Source=DESKTOP-AN8O8G6\TQK;Initial Catalog=QuanLyQuanTraSua;Integrated Security=True";
+        string chuoiketnoi = Properties.Settings.Default.ChinhChienConnectionString;
         string sqlcode;
         SqlConnection ketnoi;
         //SqlCommand thuchien;

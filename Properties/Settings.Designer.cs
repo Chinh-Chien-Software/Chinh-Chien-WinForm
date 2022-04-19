@@ -26,8 +26,8 @@ namespace ChinChin.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-AN8O8G6\\TQK;Initial Catalog=ChinhChien;Integrated Security=Tr" +
-            "ue")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source = localhost; Initial Catalog = ChinhChien; Integrated Security = True" +
+            "")]
         public string ChinhChienConnectionString {
             get {
                 return ((string)(this["ChinhChienConnectionString"]));

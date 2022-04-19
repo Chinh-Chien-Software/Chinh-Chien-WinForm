@@ -28,7 +28,10 @@ namespace ChinChin.Database
 
         static public void Create_Check_Database ()
         {
-            
+            string sql = Properties.Settings.Default.ChinhChienConnectionString;
+            conn = new SqlConnection(connStr); //Khởi tạo 1 kết nối
+            SqlCommand cm = new SqlCommand(sql, conn); //Tạo các lệnh
+
         }
 
         // Tại sao lại tạo DataSet trong khi chỉ toàn dùng DataTable
