@@ -26,9 +26,9 @@ namespace ChinChin.Database
             return dt;
         }
 
-        static public Create_Check_Database ()
+        static public void Create_Check_Database ()
         {
-
+            
         }
 
         // Tại sao lại tạo DataSet trong khi chỉ toàn dùng DataTable
