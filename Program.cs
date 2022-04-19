@@ -16,7 +16,7 @@ namespace ChinChin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChinChin.Forms_NhanVien.NhanVienPhaChe());
+            Application.Run(new SignIn());
         }
     }
 }

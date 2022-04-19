@@ -52,29 +52,29 @@ namespace ChinChin
             NhanVienThuNgan NhanVienThuNgan = new NhanVienThuNgan();
             NhanVienPhaChe Barista = new NhanVienPhaChe();
 
-            string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan='" + username + "' and MatKhau='" + password + "'";
+            string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan = '" + username + "' AND MatKhau = '" + password + "'";
             DataTable TaiKhoan = new DataTable();
             TaiKhoan = DataProvider.LoadDatabase(sqlcode);
             
             // Điều kiện Kiểm tra LoaiTaiKhoan
             if (TaiKhoan.Rows.Count == 1)
             {
-                if (TaiKhoan.Rows[0][0].ToString() == "chuquan")
+                if (TaiKhoan.Rows[0][2].ToString() == "chuquan")
                 {
                     ChuQuan.Show(); // nếu tài khoản chủ quán thì hiện form chủ quán
                     this.Hide();
                 }
-                else if (TaiKhoan.Rows[0][0].ToString()  == "quanly")
+                else if (TaiKhoan.Rows[0][2].ToString()  == "quanly")
                 {
                     QuanLy.Show();
                     this.Hide();
                 }
-                else if (TaiKhoan.Rows[0][0].ToString() == "thungan")
+                else if (TaiKhoan.Rows[0][2].ToString() == "thungan")
                 {
                     NhanVienThuNgan.Show();
                     this.Hide();
                 }
-                else if (TaiKhoan.Rows[0][0].ToString() == "phache")
+                else if (TaiKhoan.Rows[0][2].ToString() == "phache")
                 {
                     Barista.Show();
                     this.Hide();
@@ -132,6 +132,8 @@ namespace ChinChin
 
         private void SignIn_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'taiKhoanDataSet.TaiKhoan' table. You can move, or remove it, as needed.
+            this.taiKhoanTableAdapter1.Fill(this.taiKhoanDataSet.TaiKhoan);
             // TODO: This line of code loads data into the 'quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan' table. You can move, or remove it, as needed.
             // this.taiKhoanTableAdapter.Fill(this.quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan);
             // khong chay duoc tren may tinh khac ngoai` Khoi.

@@ -33,11 +33,6 @@ namespace ChinChin
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
             this.panelBackground = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tenTaiKhoanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.matKhauDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiTaiKhoanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.taiKhoanBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinChin.QuanLyQuanTraSuaDataSetTaiKhoan();
             this.labelNoAccount = new System.Windows.Forms.Label();
             this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
             this.labelThongBao = new System.Windows.Forms.Label();
@@ -50,14 +45,24 @@ namespace ChinChin
             this.panelPassword = new System.Windows.Forms.Panel();
             this.txtBxPassword = new System.Windows.Forms.TextBox();
             this.labelPasword = new System.Windows.Forms.Label();
+            this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinChin.QuanLyQuanTraSuaDataSetTaiKhoan();
             this.taiKhoanTableAdapter = new ChinChin.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter();
+            this.taiKhoanDataSet = new ChinChin.TaiKhoanDataSet();
+            this.taiKhoanBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.taiKhoanTableAdapter1 = new ChinChin.TaiKhoanDataSetTableAdapters.TaiKhoanTableAdapter();
+            this.tenTaiKhoanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.matKhauDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiTaiKhoanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maNhanVienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uIModeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSetTaiKhoan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panelUsername.SuspendLayout();
             this.panelPassword.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSetTaiKhoan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBackground
@@ -85,40 +90,14 @@ namespace ChinChin
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tenTaiKhoanDataGridViewTextBoxColumn,
             this.matKhauDataGridViewTextBoxColumn,
-            this.loaiTaiKhoanDataGridViewTextBoxColumn});
+            this.loaiTaiKhoanDataGridViewTextBoxColumn,
+            this.maNhanVienDataGridViewTextBoxColumn,
+            this.uIModeDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.taiKhoanBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(42, 431);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(349, 150);
             this.dataGridView1.TabIndex = 14;
-            // 
-            // tenTaiKhoanDataGridViewTextBoxColumn
-            // 
-            this.tenTaiKhoanDataGridViewTextBoxColumn.DataPropertyName = "TenTaiKhoan";
-            this.tenTaiKhoanDataGridViewTextBoxColumn.HeaderText = "TenTaiKhoan";
-            this.tenTaiKhoanDataGridViewTextBoxColumn.Name = "tenTaiKhoanDataGridViewTextBoxColumn";
-            // 
-            // matKhauDataGridViewTextBoxColumn
-            // 
-            this.matKhauDataGridViewTextBoxColumn.DataPropertyName = "MatKhau";
-            this.matKhauDataGridViewTextBoxColumn.HeaderText = "MatKhau";
-            this.matKhauDataGridViewTextBoxColumn.Name = "matKhauDataGridViewTextBoxColumn";
-            // 
-            // loaiTaiKhoanDataGridViewTextBoxColumn
-            // 
-            this.loaiTaiKhoanDataGridViewTextBoxColumn.DataPropertyName = "LoaiTaiKhoan";
-            this.loaiTaiKhoanDataGridViewTextBoxColumn.HeaderText = "LoaiTaiKhoan";
-            this.loaiTaiKhoanDataGridViewTextBoxColumn.Name = "loaiTaiKhoanDataGridViewTextBoxColumn";
-            // 
-            // taiKhoanBindingSource
-            // 
-            this.taiKhoanBindingSource.DataMember = "TaiKhoan";
-            this.taiKhoanBindingSource.DataSource = this.quanLyQuanTraSuaDataSetTaiKhoan;
-            // 
-            // quanLyQuanTraSuaDataSetTaiKhoan
-            // 
-            this.quanLyQuanTraSuaDataSetTaiKhoan.DataSetName = "QuanLyQuanTraSuaDataSetTaiKhoan";
-            this.quanLyQuanTraSuaDataSetTaiKhoan.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // labelNoAccount
             // 
@@ -165,9 +144,9 @@ namespace ChinChin
             this.labelThongBao.Location = new System.Drawing.Point(535, 409);
             this.labelThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelThongBao.Name = "labelThongBao";
-            this.labelThongBao.Size = new System.Drawing.Size(331, 19);
+            this.labelThongBao.Size = new System.Drawing.Size(322, 19);
             this.labelThongBao.TabIndex = 9;
-            this.labelThongBao.Text = "hiện thông báo về mật khẩu và username";
+            this.labelThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
             // 
             // btnExit
             // 
@@ -234,9 +213,9 @@ namespace ChinChin
             this.labelUserName.Location = new System.Drawing.Point(555, 2);
             this.labelUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(142, 33);
+            this.labelUserName.Size = new System.Drawing.Size(133, 33);
             this.labelUserName.TabIndex = 6;
-            this.labelUserName.Text = "Username";
+            this.labelUserName.Text = "Tài khoản";
             this.labelUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtBxUsername
@@ -287,13 +266,62 @@ namespace ChinChin
             this.labelPasword.Location = new System.Drawing.Point(557, -1);
             this.labelPasword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPasword.Name = "labelPasword";
-            this.labelPasword.Size = new System.Drawing.Size(134, 33);
+            this.labelPasword.Size = new System.Drawing.Size(128, 33);
             this.labelPasword.TabIndex = 7;
-            this.labelPasword.Text = "Password";
+            this.labelPasword.Text = "Mật khẩu";
+            // 
+            // quanLyQuanTraSuaDataSetTaiKhoan
+            // 
+            this.quanLyQuanTraSuaDataSetTaiKhoan.DataSetName = "QuanLyQuanTraSuaDataSetTaiKhoan";
+            this.quanLyQuanTraSuaDataSetTaiKhoan.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // taiKhoanTableAdapter
             // 
             this.taiKhoanTableAdapter.ClearBeforeFill = true;
+            // 
+            // taiKhoanDataSet
+            // 
+            this.taiKhoanDataSet.DataSetName = "TaiKhoanDataSet";
+            this.taiKhoanDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // taiKhoanBindingSource
+            // 
+            this.taiKhoanBindingSource.DataMember = "TaiKhoan";
+            this.taiKhoanBindingSource.DataSource = this.taiKhoanDataSet;
+            // 
+            // taiKhoanTableAdapter1
+            // 
+            this.taiKhoanTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tenTaiKhoanDataGridViewTextBoxColumn
+            // 
+            this.tenTaiKhoanDataGridViewTextBoxColumn.DataPropertyName = "TenTaiKhoan";
+            this.tenTaiKhoanDataGridViewTextBoxColumn.HeaderText = "TenTaiKhoan";
+            this.tenTaiKhoanDataGridViewTextBoxColumn.Name = "tenTaiKhoanDataGridViewTextBoxColumn";
+            // 
+            // matKhauDataGridViewTextBoxColumn
+            // 
+            this.matKhauDataGridViewTextBoxColumn.DataPropertyName = "MatKhau";
+            this.matKhauDataGridViewTextBoxColumn.HeaderText = "MatKhau";
+            this.matKhauDataGridViewTextBoxColumn.Name = "matKhauDataGridViewTextBoxColumn";
+            // 
+            // loaiTaiKhoanDataGridViewTextBoxColumn
+            // 
+            this.loaiTaiKhoanDataGridViewTextBoxColumn.DataPropertyName = "LoaiTaiKhoan";
+            this.loaiTaiKhoanDataGridViewTextBoxColumn.HeaderText = "LoaiTaiKhoan";
+            this.loaiTaiKhoanDataGridViewTextBoxColumn.Name = "loaiTaiKhoanDataGridViewTextBoxColumn";
+            // 
+            // maNhanVienDataGridViewTextBoxColumn
+            // 
+            this.maNhanVienDataGridViewTextBoxColumn.DataPropertyName = "MaNhanVien";
+            this.maNhanVienDataGridViewTextBoxColumn.HeaderText = "MaNhanVien";
+            this.maNhanVienDataGridViewTextBoxColumn.Name = "maNhanVienDataGridViewTextBoxColumn";
+            // 
+            // uIModeDataGridViewTextBoxColumn
+            // 
+            this.uIModeDataGridViewTextBoxColumn.DataPropertyName = "UIMode";
+            this.uIModeDataGridViewTextBoxColumn.HeaderText = "UIMode";
+            this.uIModeDataGridViewTextBoxColumn.Name = "uIModeDataGridViewTextBoxColumn";
             // 
             // SignIn
             // 
@@ -313,13 +341,14 @@ namespace ChinChin
             this.panelBackground.ResumeLayout(false);
             this.panelBackground.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSetTaiKhoan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.panelUsername.ResumeLayout(false);
             this.panelUsername.PerformLayout();
             this.panelPassword.ResumeLayout(false);
             this.panelPassword.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSetTaiKhoan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -340,11 +369,15 @@ namespace ChinChin
         private System.Windows.Forms.Label labelNoAccount;
         private System.Windows.Forms.DataGridView dataGridView1;
         private QuanLyQuanTraSuaDataSetTaiKhoan quanLyQuanTraSuaDataSetTaiKhoan;
-        private System.Windows.Forms.BindingSource taiKhoanBindingSource;
         private QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter taiKhoanTableAdapter;
+        private TaiKhoanDataSet taiKhoanDataSet;
+        private System.Windows.Forms.BindingSource taiKhoanBindingSource;
+        private TaiKhoanDataSetTableAdapters.TaiKhoanTableAdapter taiKhoanTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenTaiKhoanDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn matKhauDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiTaiKhoanDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maNhanVienDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn uIModeDataGridViewTextBoxColumn;
     }
 }
 

@@ -14,7 +14,7 @@ namespace ChinChin.Database
     {
         // cnStr chứa thông tin về tên Server, Database..
         static SqlConnection conn; // Create a connection
-        static string connStr = @"Data Source=DESKTOP-AN8O8G6\TQK;Initial Catalog=QuanLyQuanTraSua;Integrated Security=True";
+        static string connStr = Properties.Settings.Default.ChinhChienConnectionString;
 
         static public DataTable LoadDatabase(string sql)
         {

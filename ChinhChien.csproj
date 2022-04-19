@@ -121,6 +121,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StorageDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TaiKhoanDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UI\fsChuQuan\ChamCong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -328,6 +333,17 @@
     </None>
     <None Include="StorageDataSet.xss">
       <DependentUpon>StorageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TaiKhoanDataSet.xsc">
+      <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TaiKhoanDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TaiKhoanDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TaiKhoanDataSet.xss">
+      <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
