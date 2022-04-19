@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
 using ChinChin.UI;
+using ChinChin.Database;
 
 namespace ChinChin.Forms_NhanVien
 {
@@ -87,6 +88,16 @@ namespace ChinChin.Forms_NhanVien
         {
             currentChildForm.Close();
             MenuAnimation.Reset(iconCurrentChildForm, labelTittleChildForm);
+        }
+
+
+
+        private void NhanVienPhaChe_Load(object sender, EventArgs e)
+        {
+            string sqlcode = "SELECT nv.TenNhanVien FROM TaiKhoan tk, NhanVien nv WHERE tk.TenTaiKhoan = '" + ChinChin.SignIn.username + "' AND tk.MatKhau = '" + ChinChin.SignIn.password + "' AND nv.MaNhanVien = tk.MaNhanVien";
+            DataTable TaiKhoan = new DataTable();
+            TaiKhoan = DataProvider.LoadDatabase(sqlcode);
+            MnsTaiKhoan.Text = TaiKhoan.Rows[0][0].ToString();
         }
     }
 }

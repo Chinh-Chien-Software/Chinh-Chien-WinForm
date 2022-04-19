@@ -35,10 +35,13 @@ namespace ChinChin.Forms_NhanVien
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelTittleBar = new System.Windows.Forms.Panel();
-            this.panelIconUser = new System.Windows.Forms.Panel();
-            this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
-            this.labelRole = new System.Windows.Forms.Label();
-            this.labelUserName = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MnsTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
+            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đổiMậtKhẩuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.càiĐặtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.TaiKhoanBTN = new FontAwesome.Sharp.IconButton();
@@ -53,8 +56,8 @@ namespace ChinChin.Forms_NhanVien
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.panelTittleBar.SuspendLayout();
-            this.panelIconUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.SuspendLayout();
@@ -68,7 +71,7 @@ namespace ChinChin.Forms_NhanVien
             this.btnMinimize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMinimize.IconSize = 46;
-            this.btnMinimize.Location = new System.Drawing.Point(946, 2);
+            this.btnMinimize.Location = new System.Drawing.Point(93, 1);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(46, 50);
@@ -85,7 +88,7 @@ namespace ChinChin.Forms_NhanVien
             this.btnMaximize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMaximize.IconSize = 49;
-            this.btnMaximize.Location = new System.Drawing.Point(997, 2);
+            this.btnMaximize.Location = new System.Drawing.Point(143, 2);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(50, 49);
@@ -102,7 +105,7 @@ namespace ChinChin.Forms_NhanVien
             this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 47;
-            this.btnExit.Location = new System.Drawing.Point(1052, 2);
+            this.btnExit.Location = new System.Drawing.Point(197, 2);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(47, 50);
@@ -128,60 +131,83 @@ namespace ChinChin.Forms_NhanVien
             // panelTittleBar
             // 
             this.panelTittleBar.BackColor = System.Drawing.Color.White;
-            this.panelTittleBar.Controls.Add(this.panelIconUser);
-            this.panelTittleBar.Controls.Add(this.btnMinimize);
-            this.panelTittleBar.Controls.Add(this.btnMaximize);
-            this.panelTittleBar.Controls.Add(this.btnExit);
+            this.panelTittleBar.Controls.Add(this.panel1);
             this.panelTittleBar.Controls.Add(this.iconCurrentChildForm);
             this.panelTittleBar.Controls.Add(this.labelTittleChildForm);
             this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTittleBar.Location = new System.Drawing.Point(0, 0);
             this.panelTittleBar.Margin = new System.Windows.Forms.Padding(2);
             this.panelTittleBar.Name = "panelTittleBar";
-            this.panelTittleBar.Size = new System.Drawing.Size(1100, 61);
+            this.panelTittleBar.Size = new System.Drawing.Size(1100, 70);
             this.panelTittleBar.TabIndex = 7;
             this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown);
             // 
-            // panelIconUser
+            // panel1
             // 
-            this.panelIconUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelIconUser.Controls.Add(this.pictureBoxAvatar);
-            this.panelIconUser.Controls.Add(this.labelRole);
-            this.panelIconUser.Controls.Add(this.labelUserName);
-            this.panelIconUser.Location = new System.Drawing.Point(741, 0);
-            this.panelIconUser.Name = "panelIconUser";
-            this.panelIconUser.Size = new System.Drawing.Size(200, 61);
-            this.panelIconUser.TabIndex = 15;
+            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Controls.Add(this.btnMaximize);
+            this.panel1.Controls.Add(this.btnMinimize);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(854, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(246, 70);
+            this.panel1.TabIndex = 17;
             // 
-            // pictureBoxAvatar
+            // menuStrip1
             // 
-            this.pictureBoxAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAvatar.Image")));
-            this.pictureBoxAvatar.Location = new System.Drawing.Point(11, 0);
-            this.pictureBoxAvatar.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxAvatar.Name = "pictureBoxAvatar";
-            this.pictureBoxAvatar.Size = new System.Drawing.Size(53, 61);
-            this.pictureBoxAvatar.TabIndex = 5;
-            this.pictureBoxAvatar.TabStop = false;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnsTaiKhoan});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 1);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(197, 70);
+            this.menuStrip1.TabIndex = 16;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // labelRole
+            // MnsTaiKhoan
             // 
-            this.labelRole.AutoSize = true;
-            this.labelRole.Location = new System.Drawing.Point(78, 32);
-            this.labelRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelRole.Name = "labelRole";
-            this.labelRole.Size = new System.Drawing.Size(29, 13);
-            this.labelRole.TabIndex = 14;
-            this.labelRole.Text = "Role";
+            this.MnsTaiKhoan.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.MnsTaiKhoan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.đổiMậtKhẩuToolStripMenuItem,
+            this.càiĐặtToolStripMenuItem});
+            this.MnsTaiKhoan.Image = ((System.Drawing.Image)(resources.GetObject("MnsTaiKhoan.Image")));
+            this.MnsTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.MnsTaiKhoan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MnsTaiKhoan.Name = "MnsTaiKhoan";
+            this.MnsTaiKhoan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.MnsTaiKhoan.RightToLeftAutoMirrorImage = true;
+            this.MnsTaiKhoan.Size = new System.Drawing.Size(69, 66);
+            this.MnsTaiKhoan.Text = "Tài khoản";
+            this.MnsTaiKhoan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.MnsTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // labelUserName
+            // đổiMậtKhẩuToolStripMenuItem
             // 
-            this.labelUserName.AutoSize = true;
-            this.labelUserName.Location = new System.Drawing.Point(78, 8);
-            this.labelUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(35, 13);
-            this.labelUserName.TabIndex = 13;
-            this.labelUserName.Text = "Name";
+            this.đổiMậtKhẩuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.đổiMậtKhẩuToolStripMenuItem1,
+            this.đăngXuấtToolStripMenuItem});
+            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.đổiMậtKhẩuToolStripMenuItem.Text = "Thông tin tài khoản";
+            // 
+            // đổiMậtKhẩuToolStripMenuItem1
+            // 
+            this.đổiMậtKhẩuToolStripMenuItem1.Name = "đổiMậtKhẩuToolStripMenuItem1";
+            this.đổiMậtKhẩuToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
+            this.đổiMậtKhẩuToolStripMenuItem1.Text = "Đổi mật khẩu";
+            // 
+            // đăngXuấtToolStripMenuItem
+            // 
+            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
+            // 
+            // càiĐặtToolStripMenuItem
+            // 
+            this.càiĐặtToolStripMenuItem.Name = "càiĐặtToolStripMenuItem";
+            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.càiĐặtToolStripMenuItem.Text = "Cài đặt";
             // 
             // labelTittleChildForm
             // 
@@ -204,10 +230,10 @@ namespace ChinChin.Forms_NhanVien
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.ForeColor = System.Drawing.Color.Coral;
-            this.panelMenu.Location = new System.Drawing.Point(0, 61);
+            this.panelMenu.Location = new System.Drawing.Point(0, 70);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(376, 424);
+            this.panelMenu.Size = new System.Drawing.Size(376, 415);
             this.panelMenu.TabIndex = 10;
             // 
             // TaiKhoanBTN
@@ -319,10 +345,10 @@ namespace ChinChin.Forms_NhanVien
             this.panelDesktop.BackColor = System.Drawing.Color.White;
             this.panelDesktop.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(376, 61);
+            this.panelDesktop.Location = new System.Drawing.Point(376, 70);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(724, 424);
+            this.panelDesktop.Size = new System.Drawing.Size(724, 415);
             this.panelDesktop.TabIndex = 11;
             // 
             // NhanVienPhaChe
@@ -334,19 +360,22 @@ namespace ChinChin.Forms_NhanVien
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelTittleBar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NhanVienPhaChe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NhanVienPhaChe";
+            this.Load += new System.EventHandler(this.NhanVienPhaChe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             this.panelTittleBar.ResumeLayout(false);
             this.panelTittleBar.PerformLayout();
-            this.panelIconUser.ResumeLayout(false);
-            this.panelIconUser.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
@@ -369,9 +398,12 @@ namespace ChinChin.Forms_NhanVien
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Label btnHome;
         private System.Windows.Forms.Panel panelDesktop;
-        private System.Windows.Forms.Label labelRole;
-        private System.Windows.Forms.Label labelUserName;
-        private System.Windows.Forms.PictureBox pictureBoxAvatar;
-        private System.Windows.Forms.Panel panelIconUser;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem MnsTaiKhoan;
+        private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem càiĐặtToolStripMenuItem;
     }
 }
