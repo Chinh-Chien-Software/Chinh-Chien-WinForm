@@ -91,6 +91,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ChuQuan.cs" />
+    <Compile Include="Classes\NhanVien.cs" />
+    <Compile Include="Classes\QuanLy.cs" />
+    <Compile Include="Classes\TaiKhoan.cs" />
     <Compile Include="Database\DataProvider.cs" />
     <Compile Include="Extra\BlackWhiteButton.cs">
       <SubType>Component</SubType>

@@ -52,7 +52,9 @@ namespace ChinChin
             QuanLy QuanLy = new QuanLy();
             NhanVienThuNgan NhanVienThuNgan = new NhanVienThuNgan();
             NhanVienPhaChe Barista = new NhanVienPhaChe();
-            string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan = '" + username + "' AND MatKhau = '" + password + "'";
+            string sqlcode = "SELECT * FROM TaiKhoan" +
+                "WHERE TenTaiKhoan = '" + username + "'" +
+                "AND MatKhau = '" + password + "'";
             DataTable TaiKhoan = new DataTable();
             TaiKhoan = DataProvider.LoadDatabase(sqlcode);
             
