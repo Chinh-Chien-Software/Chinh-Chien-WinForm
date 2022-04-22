@@ -216,7 +216,7 @@
             this.mnsTaiKhoan});
             this.menuStrip1.Location = new System.Drawing.Point(0, 1);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(77, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(197, 70);
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "msTaiKhoan";
             // 
@@ -227,12 +227,13 @@
             this.đổiMậtKhẩuToolStripMenuItem,
             this.càiĐặtToolStripMenuItem,
             this.mnsDangXuat});
+            this.mnsTaiKhoan.Image = global::ChinChin.Properties.Resources.image;
             this.mnsTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.mnsTaiKhoan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnsTaiKhoan.Name = "mnsTaiKhoan";
             this.mnsTaiKhoan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.mnsTaiKhoan.RightToLeftAutoMirrorImage = true;
-            this.mnsTaiKhoan.Size = new System.Drawing.Size(69, 20);
+            this.mnsTaiKhoan.Size = new System.Drawing.Size(69, 66);
             this.mnsTaiKhoan.Text = "Tài khoản";
             this.mnsTaiKhoan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.mnsTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
