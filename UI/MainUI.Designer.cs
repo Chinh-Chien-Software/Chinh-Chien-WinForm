@@ -38,9 +38,10 @@
             this.ibtn1 = new FontAwesome.Sharp.IconButton();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.MnsTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.càiĐặtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsDangXuat = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.btnMaximize = new FontAwesome.Sharp.IconPictureBox();
@@ -211,40 +212,48 @@
             // 
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MnsTaiKhoan});
+            this.mnsTaiKhoan});
             this.menuStrip1.Location = new System.Drawing.Point(0, 1);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(77, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(197, 24);
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "msTaiKhoan";
             // 
-            // MnsTaiKhoan
+            // mnsTaiKhoan
             // 
-            this.MnsTaiKhoan.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.MnsTaiKhoan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsTaiKhoan.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.mnsTaiKhoan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.đổiMậtKhẩuToolStripMenuItem,
-            this.càiĐặtToolStripMenuItem});
-            this.MnsTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.MnsTaiKhoan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.MnsTaiKhoan.Name = "MnsTaiKhoan";
-            this.MnsTaiKhoan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.MnsTaiKhoan.RightToLeftAutoMirrorImage = true;
-            this.MnsTaiKhoan.Size = new System.Drawing.Size(69, 20);
-            this.MnsTaiKhoan.Text = "Tài khoản";
-            this.MnsTaiKhoan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.MnsTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.càiĐặtToolStripMenuItem,
+            this.mnsDangXuat});
+            this.mnsTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.mnsTaiKhoan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mnsTaiKhoan.Name = "mnsTaiKhoan";
+            this.mnsTaiKhoan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.mnsTaiKhoan.RightToLeftAutoMirrorImage = true;
+            this.mnsTaiKhoan.Size = new System.Drawing.Size(69, 20);
+            this.mnsTaiKhoan.Text = "Tài khoản";
+            this.mnsTaiKhoan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.mnsTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Thông tin tài khoản";
             // 
             // càiĐặtToolStripMenuItem
             // 
             this.càiĐặtToolStripMenuItem.Name = "càiĐặtToolStripMenuItem";
-            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.càiĐặtToolStripMenuItem.Text = "Cài đặt";
+            // 
+            // mnsDangXuat
+            // 
+            this.mnsDangXuat.Name = "mnsDangXuat";
+            this.mnsDangXuat.Size = new System.Drawing.Size(180, 22);
+            this.mnsDangXuat.Text = "Đăng Xuất";
+            this.mnsDangXuat.Click += new System.EventHandler(this.ĐăngXuất_Click);
             // 
             // panel1
             // 
@@ -307,6 +316,7 @@
             this.btnMinimize.Size = new System.Drawing.Size(46, 50);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.TabStop = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // panelTittleBar
             // 
@@ -385,7 +395,7 @@
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Label labelTittleChildForm;
         private System.Windows.Forms.ToolStripMenuItem càiĐặtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem MnsTaiKhoan;
+        private System.Windows.Forms.ToolStripMenuItem mnsTaiKhoan;
         private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Panel panel1;
@@ -399,5 +409,6 @@
         private FontAwesome.Sharp.IconButton ibtn2;
         private FontAwesome.Sharp.IconButton ibtn3;
         private FontAwesome.Sharp.IconButton ibtn4;
+        private System.Windows.Forms.ToolStripMenuItem mnsDangXuat;
     }
 }
