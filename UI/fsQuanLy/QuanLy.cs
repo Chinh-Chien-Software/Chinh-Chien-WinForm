@@ -114,5 +114,10 @@ namespace ChinChin.FormsQuanLy
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color4, iconCurrentChildForm);
             MenuAnimation.OpenChildForm(new Forms_QuanLy.BaoCaoDoanhThu(), ref currentChildForm, panelDesktop, labelTittleChildForm);
         }
+
+        private void SignInButton_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
