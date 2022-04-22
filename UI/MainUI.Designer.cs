@@ -32,6 +32,9 @@
             this.btnHome_Role = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.pnButtons = new System.Windows.Forms.Panel();
+            this.ibtn4 = new FontAwesome.Sharp.IconButton();
+            this.ibtn3 = new FontAwesome.Sharp.IconButton();
+            this.ibtn2 = new FontAwesome.Sharp.IconButton();
             this.ibtn1 = new FontAwesome.Sharp.IconButton();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -45,9 +48,6 @@
             this.panelTittleBar = new System.Windows.Forms.Panel();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.ibtn2 = new FontAwesome.Sharp.IconButton();
-            this.ibtn3 = new FontAwesome.Sharp.IconButton();
-            this.ibtn4 = new FontAwesome.Sharp.IconButton();
             this.panelLogo.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.pnButtons.SuspendLayout();
@@ -110,6 +110,69 @@
             this.pnButtons.Size = new System.Drawing.Size(374, 417);
             this.pnButtons.TabIndex = 1;
             // 
+            // ibtn4
+            // 
+            this.ibtn4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtn4.FlatAppearance.BorderSize = 0;
+            this.ibtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtn4.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtn4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtn4.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtn4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtn4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtn4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtn4.Location = new System.Drawing.Point(0, 302);
+            this.ibtn4.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtn4.Name = "ibtn4";
+            this.ibtn4.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtn4.Size = new System.Drawing.Size(374, 102);
+            this.ibtn4.TabIndex = 6;
+            this.ibtn4.Text = "Nút 4";
+            this.ibtn4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtn4.UseVisualStyleBackColor = true;
+            // 
+            // ibtn3
+            // 
+            this.ibtn3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtn3.FlatAppearance.BorderSize = 0;
+            this.ibtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtn3.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtn3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtn3.IconChar = FontAwesome.Sharp.IconChar.MugHot;
+            this.ibtn3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtn3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtn3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtn3.Location = new System.Drawing.Point(0, 200);
+            this.ibtn3.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtn3.Name = "ibtn3";
+            this.ibtn3.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtn3.Size = new System.Drawing.Size(374, 102);
+            this.ibtn3.TabIndex = 5;
+            this.ibtn3.Text = "Nút 3";
+            this.ibtn3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtn3.UseVisualStyleBackColor = true;
+            // 
+            // ibtn2
+            // 
+            this.ibtn2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtn2.FlatAppearance.BorderSize = 0;
+            this.ibtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtn2.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtn2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtn2.IconChar = FontAwesome.Sharp.IconChar.Dashcube;
+            this.ibtn2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtn2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtn2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtn2.Location = new System.Drawing.Point(0, 100);
+            this.ibtn2.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtn2.Name = "ibtn2";
+            this.ibtn2.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtn2.Size = new System.Drawing.Size(374, 100);
+            this.ibtn2.TabIndex = 3;
+            this.ibtn2.Text = "Nút 2";
+            this.ibtn2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtn2.UseVisualStyleBackColor = true;
+            // 
             // ibtn1
             // 
             this.ibtn1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -150,9 +213,9 @@
             this.MnsTaiKhoan});
             this.menuStrip1.Location = new System.Drawing.Point(0, 1);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(77, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(197, 24);
             this.menuStrip1.TabIndex = 16;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Text = "msTaiKhoan";
             // 
             // MnsTaiKhoan
             // 
@@ -280,69 +343,6 @@
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(603, 541);
             this.panelDesktop.TabIndex = 14;
-            // 
-            // ibtn2
-            // 
-            this.ibtn2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn2.FlatAppearance.BorderSize = 0;
-            this.ibtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn2.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn2.IconChar = FontAwesome.Sharp.IconChar.Dashcube;
-            this.ibtn2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn2.Location = new System.Drawing.Point(0, 100);
-            this.ibtn2.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn2.Name = "ibtn2";
-            this.ibtn2.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn2.Size = new System.Drawing.Size(374, 100);
-            this.ibtn2.TabIndex = 3;
-            this.ibtn2.Text = "Nút 2";
-            this.ibtn2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn2.UseVisualStyleBackColor = true;
-            // 
-            // ibtn3
-            // 
-            this.ibtn3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn3.FlatAppearance.BorderSize = 0;
-            this.ibtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn3.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn3.IconChar = FontAwesome.Sharp.IconChar.MugHot;
-            this.ibtn3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn3.Location = new System.Drawing.Point(0, 200);
-            this.ibtn3.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn3.Name = "ibtn3";
-            this.ibtn3.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn3.Size = new System.Drawing.Size(374, 102);
-            this.ibtn3.TabIndex = 5;
-            this.ibtn3.Text = "Nút 3";
-            this.ibtn3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn3.UseVisualStyleBackColor = true;
-            // 
-            // ibtn4
-            // 
-            this.ibtn4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn4.FlatAppearance.BorderSize = 0;
-            this.ibtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn4.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn4.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.ibtn4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn4.Location = new System.Drawing.Point(0, 302);
-            this.ibtn4.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn4.Name = "ibtn4";
-            this.ibtn4.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn4.Size = new System.Drawing.Size(374, 102);
-            this.ibtn4.TabIndex = 6;
-            this.ibtn4.Text = "Nút 4";
-            this.ibtn4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn4.UseVisualStyleBackColor = true;
             // 
             // MainUI
             // 
