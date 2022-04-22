@@ -64,7 +64,7 @@ namespace ChinChin.UI
             }
             else if (LoaiTaiKhoan == "phache")
             {
-                lblHomeButton_Role.Text = "Quản Lý";
+                lblHomeButton_Role.Text = "Pha Chế";
                 ibtn1.Text = "KHO QUẦY"; ibtn1.IconChar = IconChar.Store;
                 ibtn2.Visible = false;
                 ibtn3.Visible = false;
