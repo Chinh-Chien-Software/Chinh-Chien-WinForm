@@ -40,10 +40,10 @@ namespace ChinChin.FormsQuanLy
             this.KhoHangBTN = new FontAwesome.Sharp.IconButton();
             this.ThongKeBTN = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -240,26 +240,6 @@ namespace ChinChin.FormsQuanLy
             this.panelLogo.Size = new System.Drawing.Size(374, 122);
             this.panelLogo.TabIndex = 0;
             // 
-            // SignInButton
-            // 
-            this.SignInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.SignInButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.SignInButton.BorderColor = System.Drawing.Color.Black;
-            this.SignInButton.BorderRadius = 0;
-            this.SignInButton.BorderSize = 0;
-            this.SignInButton.FlatAppearance.BorderSize = 0;
-            this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignInButton.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignInButton.ForeColor = System.Drawing.Color.White;
-            this.SignInButton.Location = new System.Drawing.Point(182, 7);
-            this.SignInButton.Margin = new System.Windows.Forms.Padding(2);
-            this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(188, 41);
-            this.SignInButton.TabIndex = 11;
-            this.SignInButton.Text = "ĐĂNG XUẤT";
-            this.SignInButton.TextColor = System.Drawing.Color.White;
-            this.SignInButton.UseVisualStyleBackColor = false;
-            // 
             // lblVersion
             // 
             this.lblVersion.AutoSize = true;
@@ -294,6 +274,27 @@ namespace ChinChin.FormsQuanLy
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1050, 524);
             this.panelDesktop.TabIndex = 10;
+            // 
+            // SignInButton
+            // 
+            this.SignInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.SignInButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.SignInButton.BorderColor = System.Drawing.Color.Black;
+            this.SignInButton.BorderRadius = 0;
+            this.SignInButton.BorderSize = 0;
+            this.SignInButton.FlatAppearance.BorderSize = 0;
+            this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignInButton.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignInButton.ForeColor = System.Drawing.Color.White;
+            this.SignInButton.Location = new System.Drawing.Point(182, 7);
+            this.SignInButton.Margin = new System.Windows.Forms.Padding(2);
+            this.SignInButton.Name = "SignInButton";
+            this.SignInButton.Size = new System.Drawing.Size(188, 41);
+            this.SignInButton.TabIndex = 11;
+            this.SignInButton.Text = "ĐĂNG XUẤT";
+            this.SignInButton.TextColor = System.Drawing.Color.White;
+            this.SignInButton.UseVisualStyleBackColor = false;
+            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click_1);
             // 
             // QuanLy
             // 

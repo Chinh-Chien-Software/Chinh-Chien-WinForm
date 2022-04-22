@@ -8,8 +8,19 @@ namespace ChinChin.Classes
 {
     internal class TaiKhoan
     {
-        string TenTaiKhoan;
-        string LoaiTaiKhoan;
+        public string tentaikhoan;
+        public string TenTaiKhoan
+        {
+            get { return tentaikhoan; }
+            set { tentaikhoan = value; }
+        }
+
+        string loaitaikhoan;
+        string LoaiTaiKhoan
+        {
+            set { loaitaikhoan = value; }
+            get { return loaitaikhoan; }
+        }
         string MaNhanVien;
         int UIMode;
     }

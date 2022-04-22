@@ -29,15 +29,19 @@
         private void InitializeComponent()
         {
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.btnHome_Role = new System.Windows.Forms.Label();
+            this.lblHomeButton_Role = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.pnButtons = new System.Windows.Forms.Panel();
+            this.ibtn4 = new FontAwesome.Sharp.IconButton();
+            this.ibtn3 = new FontAwesome.Sharp.IconButton();
+            this.ibtn2 = new FontAwesome.Sharp.IconButton();
             this.ibtn1 = new FontAwesome.Sharp.IconButton();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.MnsTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.càiĐặtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsDangXuat = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.btnMaximize = new FontAwesome.Sharp.IconPictureBox();
@@ -45,9 +49,6 @@
             this.panelTittleBar = new System.Windows.Forms.Panel();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.ibtn2 = new FontAwesome.Sharp.IconButton();
-            this.ibtn3 = new FontAwesome.Sharp.IconButton();
-            this.ibtn4 = new FontAwesome.Sharp.IconButton();
             this.panelLogo.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.pnButtons.SuspendLayout();
@@ -64,7 +65,7 @@
             // 
             this.panelLogo.BackColor = System.Drawing.Color.Transparent;
             this.panelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelLogo.Controls.Add(this.btnHome_Role);
+            this.panelLogo.Controls.Add(this.lblHomeButton_Role);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
@@ -72,17 +73,18 @@
             this.panelLogo.Size = new System.Drawing.Size(374, 122);
             this.panelLogo.TabIndex = 0;
             // 
-            // btnHome_Role
+            // lblHomeButton_Role
             // 
-            this.btnHome_Role.AutoSize = true;
-            this.btnHome_Role.Font = new System.Drawing.Font("MV Boli", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome_Role.ForeColor = System.Drawing.Color.Black;
-            this.btnHome_Role.Location = new System.Drawing.Point(-3, 41);
-            this.btnHome_Role.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnHome_Role.Name = "btnHome_Role";
-            this.btnHome_Role.Size = new System.Drawing.Size(98, 50);
-            this.btnHome_Role.TabIndex = 0;
-            this.btnHome_Role.Text = "Role";
+            this.lblHomeButton_Role.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblHomeButton_Role.Font = new System.Drawing.Font("Inter", 29.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHomeButton_Role.ForeColor = System.Drawing.Color.Black;
+            this.lblHomeButton_Role.Location = new System.Drawing.Point(0, 0);
+            this.lblHomeButton_Role.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHomeButton_Role.Name = "lblHomeButton_Role";
+            this.lblHomeButton_Role.Size = new System.Drawing.Size(372, 120);
+            this.lblHomeButton_Role.TabIndex = 0;
+            this.lblHomeButton_Role.Text = "Role";
+            this.lblHomeButton_Role.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelMenu
             // 
@@ -110,6 +112,69 @@
             this.pnButtons.Size = new System.Drawing.Size(374, 417);
             this.pnButtons.TabIndex = 1;
             // 
+            // ibtn4
+            // 
+            this.ibtn4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtn4.FlatAppearance.BorderSize = 0;
+            this.ibtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtn4.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtn4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtn4.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtn4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtn4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtn4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtn4.Location = new System.Drawing.Point(0, 302);
+            this.ibtn4.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtn4.Name = "ibtn4";
+            this.ibtn4.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtn4.Size = new System.Drawing.Size(374, 102);
+            this.ibtn4.TabIndex = 6;
+            this.ibtn4.Text = "Nút 4";
+            this.ibtn4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtn4.UseVisualStyleBackColor = true;
+            // 
+            // ibtn3
+            // 
+            this.ibtn3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtn3.FlatAppearance.BorderSize = 0;
+            this.ibtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtn3.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtn3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtn3.IconChar = FontAwesome.Sharp.IconChar.MugHot;
+            this.ibtn3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtn3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtn3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtn3.Location = new System.Drawing.Point(0, 200);
+            this.ibtn3.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtn3.Name = "ibtn3";
+            this.ibtn3.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtn3.Size = new System.Drawing.Size(374, 102);
+            this.ibtn3.TabIndex = 5;
+            this.ibtn3.Text = "Nút 3";
+            this.ibtn3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtn3.UseVisualStyleBackColor = true;
+            // 
+            // ibtn2
+            // 
+            this.ibtn2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtn2.FlatAppearance.BorderSize = 0;
+            this.ibtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtn2.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtn2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtn2.IconChar = FontAwesome.Sharp.IconChar.Dashcube;
+            this.ibtn2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtn2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtn2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtn2.Location = new System.Drawing.Point(0, 100);
+            this.ibtn2.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtn2.Name = "ibtn2";
+            this.ibtn2.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtn2.Size = new System.Drawing.Size(374, 100);
+            this.ibtn2.TabIndex = 3;
+            this.ibtn2.Text = "Nút 2";
+            this.ibtn2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtn2.UseVisualStyleBackColor = true;
+            // 
             // ibtn1
             // 
             this.ibtn1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -130,12 +195,13 @@
             this.ibtn1.Text = "Nút 1";
             this.ibtn1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn1.UseVisualStyleBackColor = true;
+            this.ibtn1.Click += new System.EventHandler(this.ibtn1_Click);
             // 
             // labelTittleChildForm
             // 
             this.labelTittleChildForm.AutoSize = true;
             this.labelTittleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTittleChildForm.Location = new System.Drawing.Point(50, 27);
+            this.labelTittleChildForm.Location = new System.Drawing.Point(50, 21);
             this.labelTittleChildForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTittleChildForm.Name = "labelTittleChildForm";
             this.labelTittleChildForm.Size = new System.Drawing.Size(49, 17);
@@ -147,40 +213,49 @@
             // 
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MnsTaiKhoan});
+            this.mnsTaiKhoan});
             this.menuStrip1.Location = new System.Drawing.Point(0, 1);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(77, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(197, 70);
             this.menuStrip1.TabIndex = 16;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Text = "msTaiKhoan";
             // 
-            // MnsTaiKhoan
+            // mnsTaiKhoan
             // 
-            this.MnsTaiKhoan.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.MnsTaiKhoan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsTaiKhoan.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.mnsTaiKhoan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.đổiMậtKhẩuToolStripMenuItem,
-            this.càiĐặtToolStripMenuItem});
-            this.MnsTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.MnsTaiKhoan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.MnsTaiKhoan.Name = "MnsTaiKhoan";
-            this.MnsTaiKhoan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.MnsTaiKhoan.RightToLeftAutoMirrorImage = true;
-            this.MnsTaiKhoan.Size = new System.Drawing.Size(69, 20);
-            this.MnsTaiKhoan.Text = "Tài khoản";
-            this.MnsTaiKhoan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.MnsTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.càiĐặtToolStripMenuItem,
+            this.mnsDangXuat});
+            this.mnsTaiKhoan.Image = global::ChinChin.Properties.Resources.image;
+            this.mnsTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.mnsTaiKhoan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mnsTaiKhoan.Name = "mnsTaiKhoan";
+            this.mnsTaiKhoan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.mnsTaiKhoan.RightToLeftAutoMirrorImage = true;
+            this.mnsTaiKhoan.Size = new System.Drawing.Size(69, 66);
+            this.mnsTaiKhoan.Text = "Tài khoản";
+            this.mnsTaiKhoan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.mnsTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Thông tin tài khoản";
             // 
             // càiĐặtToolStripMenuItem
             // 
             this.càiĐặtToolStripMenuItem.Name = "càiĐặtToolStripMenuItem";
-            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.càiĐặtToolStripMenuItem.Text = "Cài đặt";
+            // 
+            // mnsDangXuat
+            // 
+            this.mnsDangXuat.Name = "mnsDangXuat";
+            this.mnsDangXuat.Size = new System.Drawing.Size(180, 22);
+            this.mnsDangXuat.Text = "Đăng Xuất";
+            this.mnsDangXuat.Click += new System.EventHandler(this.ĐăngXuất_Click);
             // 
             // panel1
             // 
@@ -209,13 +284,14 @@
             this.btnExit.Size = new System.Drawing.Size(47, 50);
             this.btnExit.TabIndex = 2;
             this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnMaximize
             // 
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximize.BackColor = System.Drawing.Color.White;
             this.btnMaximize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.ExpandArrowsAlt;
+            this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
             this.btnMaximize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMaximize.IconSize = 49;
@@ -225,6 +301,7 @@
             this.btnMaximize.Size = new System.Drawing.Size(50, 49);
             this.btnMaximize.TabIndex = 3;
             this.btnMaximize.TabStop = false;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // btnMinimize
             // 
@@ -241,6 +318,7 @@
             this.btnMinimize.Size = new System.Drawing.Size(46, 50);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.TabStop = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // panelTittleBar
             // 
@@ -254,6 +332,7 @@
             this.panelTittleBar.Name = "panelTittleBar";
             this.panelTittleBar.Size = new System.Drawing.Size(979, 70);
             this.panelTittleBar.TabIndex = 12;
+            this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown);
             // 
             // iconCurrentChildForm
             // 
@@ -281,69 +360,6 @@
             this.panelDesktop.Size = new System.Drawing.Size(603, 541);
             this.panelDesktop.TabIndex = 14;
             // 
-            // ibtn2
-            // 
-            this.ibtn2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn2.FlatAppearance.BorderSize = 0;
-            this.ibtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn2.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn2.IconChar = FontAwesome.Sharp.IconChar.Dashcube;
-            this.ibtn2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn2.Location = new System.Drawing.Point(0, 100);
-            this.ibtn2.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn2.Name = "ibtn2";
-            this.ibtn2.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn2.Size = new System.Drawing.Size(374, 100);
-            this.ibtn2.TabIndex = 3;
-            this.ibtn2.Text = "Nút 2";
-            this.ibtn2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn2.UseVisualStyleBackColor = true;
-            // 
-            // ibtn3
-            // 
-            this.ibtn3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn3.FlatAppearance.BorderSize = 0;
-            this.ibtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn3.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn3.IconChar = FontAwesome.Sharp.IconChar.MugHot;
-            this.ibtn3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn3.Location = new System.Drawing.Point(0, 200);
-            this.ibtn3.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn3.Name = "ibtn3";
-            this.ibtn3.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn3.Size = new System.Drawing.Size(374, 102);
-            this.ibtn3.TabIndex = 5;
-            this.ibtn3.Text = "Nút 3";
-            this.ibtn3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn3.UseVisualStyleBackColor = true;
-            // 
-            // ibtn4
-            // 
-            this.ibtn4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn4.FlatAppearance.BorderSize = 0;
-            this.ibtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn4.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn4.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.ibtn4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn4.Location = new System.Drawing.Point(0, 302);
-            this.ibtn4.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn4.Name = "ibtn4";
-            this.ibtn4.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn4.Size = new System.Drawing.Size(374, 102);
-            this.ibtn4.TabIndex = 6;
-            this.ibtn4.Text = "Nút 4";
-            this.ibtn4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn4.UseVisualStyleBackColor = true;
-            // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,7 +372,6 @@
             this.Text = "MainUI";
             this.Load += new System.EventHandler(this.MainUI_Load);
             this.panelLogo.ResumeLayout(false);
-            this.panelLogo.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.pnButtons.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
@@ -377,11 +392,11 @@
 
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Label btnHome_Role;
+        private System.Windows.Forms.Label lblHomeButton_Role;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Label labelTittleChildForm;
         private System.Windows.Forms.ToolStripMenuItem càiĐặtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem MnsTaiKhoan;
+        private System.Windows.Forms.ToolStripMenuItem mnsTaiKhoan;
         private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Panel panel1;
@@ -395,5 +410,6 @@
         private FontAwesome.Sharp.IconButton ibtn2;
         private FontAwesome.Sharp.IconButton ibtn3;
         private FontAwesome.Sharp.IconButton ibtn4;
+        private System.Windows.Forms.ToolStripMenuItem mnsDangXuat;
     }
 }

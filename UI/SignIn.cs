@@ -16,6 +16,7 @@ using ChinChin.FormsQuanLy;
 using ChinChin.Forms_NhanVien;
 using ChinChin.Extra;
 using ChinChin.Database;
+using ChinChin.UI;
 
 namespace ChinChin
 {
@@ -47,40 +48,21 @@ namespace ChinChin
         {
             username = txtBxUsername.Text;
             password = txtBxPassword.Text;
-            
+
             formChuQuan ChuQuan = new formChuQuan();
             QuanLy QuanLy = new QuanLy();
             NhanVienThuNgan NhanVienThuNgan = new NhanVienThuNgan();
             NhanVienPhaChe Barista = new NhanVienPhaChe();
-            string sqlcode = "SELECT * FROM TaiKhoan" +
-                "WHERE TenTaiKhoan = '" + username + "'" +
-                "AND MatKhau = '" + password + "'";
+            string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan = '" + username + "' AND MatKhau = '" + password + "'";
             DataTable TaiKhoan = new DataTable();
             TaiKhoan = DataProvider.LoadDatabase(sqlcode);
             
             // Điều kiện Kiểm tra LoaiTaiKhoan
             if (TaiKhoan.Rows.Count == 1)
             {
-                if (TaiKhoan.Rows[0][2].ToString() == "chuquan")
-                {
-                    ChuQuan.Show(); // nếu tài khoản chủ quán thì hiện form chủ quán
-                    this.Hide();
-                }
-                else if (TaiKhoan.Rows[0][2].ToString()  == "quanly")
-                {
-                    QuanLy.Show();
-                    this.Hide();
-                }
-                else if (TaiKhoan.Rows[0][2].ToString() == "thungan")
-                {
-                    NhanVienThuNgan.Show();
-                    this.Hide();
-                }
-                else if (TaiKhoan.Rows[0][2].ToString() == "phache")
-                {
-                    Barista.Show();
-                    this.Hide();
-                }
+                MainUI MainUIcq = new MainUI(TaiKhoan.Rows[0][1].ToString(), TaiKhoan.Rows[0][2].ToString());
+                MainUIcq.Show();
+                this.Hide();
             }
             else
             {
