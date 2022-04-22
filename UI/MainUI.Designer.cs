@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.btnHome_Role = new System.Windows.Forms.Label();
+            this.lblHomeButton_Role = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.pnButtons = new System.Windows.Forms.Panel();
             this.ibtn4 = new FontAwesome.Sharp.IconButton();
@@ -64,7 +64,7 @@
             // 
             this.panelLogo.BackColor = System.Drawing.Color.Transparent;
             this.panelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelLogo.Controls.Add(this.btnHome_Role);
+            this.panelLogo.Controls.Add(this.lblHomeButton_Role);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
@@ -72,17 +72,17 @@
             this.panelLogo.Size = new System.Drawing.Size(374, 122);
             this.panelLogo.TabIndex = 0;
             // 
-            // btnHome_Role
+            // lblHomeButton_Role
             // 
-            this.btnHome_Role.AutoSize = true;
-            this.btnHome_Role.Font = new System.Drawing.Font("MV Boli", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome_Role.ForeColor = System.Drawing.Color.Black;
-            this.btnHome_Role.Location = new System.Drawing.Point(-3, 41);
-            this.btnHome_Role.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnHome_Role.Name = "btnHome_Role";
-            this.btnHome_Role.Size = new System.Drawing.Size(98, 50);
-            this.btnHome_Role.TabIndex = 0;
-            this.btnHome_Role.Text = "Role";
+            this.lblHomeButton_Role.AutoSize = true;
+            this.lblHomeButton_Role.Font = new System.Drawing.Font("Inter", 29.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHomeButton_Role.ForeColor = System.Drawing.Color.Black;
+            this.lblHomeButton_Role.Location = new System.Drawing.Point(23, 30);
+            this.lblHomeButton_Role.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHomeButton_Role.Name = "lblHomeButton_Role";
+            this.lblHomeButton_Role.Size = new System.Drawing.Size(97, 47);
+            this.lblHomeButton_Role.TabIndex = 0;
+            this.lblHomeButton_Role.Text = "Role";
             // 
             // panelMenu
             // 
@@ -193,12 +193,13 @@
             this.ibtn1.Text = "Nút 1";
             this.ibtn1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn1.UseVisualStyleBackColor = true;
+            this.ibtn1.Click += new System.EventHandler(this.ibtn1_Click);
             // 
             // labelTittleChildForm
             // 
             this.labelTittleChildForm.AutoSize = true;
             this.labelTittleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTittleChildForm.Location = new System.Drawing.Point(50, 27);
+            this.labelTittleChildForm.Location = new System.Drawing.Point(50, 21);
             this.labelTittleChildForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTittleChildForm.Name = "labelTittleChildForm";
             this.labelTittleChildForm.Size = new System.Drawing.Size(49, 17);
@@ -213,7 +214,7 @@
             this.MnsTaiKhoan});
             this.menuStrip1.Location = new System.Drawing.Point(0, 1);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(197, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(77, 24);
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "msTaiKhoan";
             // 
@@ -272,6 +273,7 @@
             this.btnExit.Size = new System.Drawing.Size(47, 50);
             this.btnExit.TabIndex = 2;
             this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnMaximize
             // 
@@ -317,6 +319,7 @@
             this.panelTittleBar.Name = "panelTittleBar";
             this.panelTittleBar.Size = new System.Drawing.Size(979, 70);
             this.panelTittleBar.TabIndex = 12;
+            this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown);
             // 
             // iconCurrentChildForm
             // 
@@ -377,7 +380,7 @@
 
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Label btnHome_Role;
+        private System.Windows.Forms.Label lblHomeButton_Role;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Label labelTittleChildForm;
         private System.Windows.Forms.ToolStripMenuItem càiĐặtToolStripMenuItem;
