@@ -75,15 +75,16 @@
             // 
             // lblHomeButton_Role
             // 
-            this.lblHomeButton_Role.AutoSize = true;
+            this.lblHomeButton_Role.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblHomeButton_Role.Font = new System.Drawing.Font("Inter", 29.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHomeButton_Role.ForeColor = System.Drawing.Color.Black;
-            this.lblHomeButton_Role.Location = new System.Drawing.Point(23, 30);
+            this.lblHomeButton_Role.Location = new System.Drawing.Point(0, 0);
             this.lblHomeButton_Role.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHomeButton_Role.Name = "lblHomeButton_Role";
-            this.lblHomeButton_Role.Size = new System.Drawing.Size(97, 47);
+            this.lblHomeButton_Role.Size = new System.Drawing.Size(372, 120);
             this.lblHomeButton_Role.TabIndex = 0;
             this.lblHomeButton_Role.Text = "Role";
+            this.lblHomeButton_Role.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelMenu
             // 
@@ -215,7 +216,7 @@
             this.mnsTaiKhoan});
             this.menuStrip1.Location = new System.Drawing.Point(0, 1);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(197, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(77, 24);
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "msTaiKhoan";
             // 
@@ -289,7 +290,7 @@
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximize.BackColor = System.Drawing.Color.White;
             this.btnMaximize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.ExpandArrowsAlt;
+            this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
             this.btnMaximize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMaximize.IconSize = 49;
@@ -370,7 +371,6 @@
             this.Text = "MainUI";
             this.Load += new System.EventHandler(this.MainUI_Load);
             this.panelLogo.ResumeLayout(false);
-            this.panelLogo.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.pnButtons.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);

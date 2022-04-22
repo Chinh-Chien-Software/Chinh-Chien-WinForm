@@ -116,7 +116,7 @@ namespace ChinChin.UI
             else
             {
                 WindowState = FormWindowState.Normal;
-                btnMaximize.IconChar = IconChar.ExpandArrowsAlt;
+                btnMaximize.IconChar = IconChar.WindowMaximize;
             }
         }
 
