@@ -290,6 +290,7 @@
             this.btnMaximize.Size = new System.Drawing.Size(50, 49);
             this.btnMaximize.TabIndex = 3;
             this.btnMaximize.TabStop = false;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // btnMinimize
             // 

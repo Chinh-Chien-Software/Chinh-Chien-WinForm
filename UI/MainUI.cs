@@ -29,6 +29,14 @@ namespace ChinChin.UI
         }
         private void MainUI_Load(object sender, EventArgs e)
         {
+            if (WindowState == FormWindowState.Normal)
+            {
+                btnMaximize.IconChar = IconChar.WindowMaximize;
+            }
+            else
+            {
+                btnMaximize.IconChar = IconChar.WindowMinimize;
+            }
             if (LoaiTaiKhoan == "chuquan")
             {
                 lblHomeButton_Role.Text = "Chủ Quán";
@@ -95,6 +103,20 @@ namespace ChinChin.UI
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+                btnMaximize.IconChar = IconChar.WindowMinimize;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+                btnMaximize.IconChar = IconChar.WindowMaximize;
+            }
         }
     }
 }
