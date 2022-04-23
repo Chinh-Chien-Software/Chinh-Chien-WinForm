@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace ChinChin {
+namespace ChinChin.DataSets {
     
     
     /// <summary>
@@ -20,9 +20,9 @@ namespace ChinChin {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("StorageDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("KhoHangDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class StorageDataSet : global::System.Data.DataSet {
+    public partial class KhoHangDataSet : global::System.Data.DataSet {
         
         private KhoHangDataTable tableKhoHang;
         
@@ -30,7 +30,7 @@ namespace ChinChin {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public StorageDataSet() {
+        public KhoHangDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace ChinChin {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected StorageDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected KhoHangDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace ChinChin {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            StorageDataSet cln = ((StorageDataSet)(base.Clone()));
+            KhoHangDataSet cln = ((KhoHangDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace ChinChin {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "StorageDataSet";
+            this.DataSetName = "KhoHangDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/StorageDataSet.xsd";
+            this.Namespace = "http://tempuri.org/KhoHangDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableKhoHang = new KhoHangDataTable();
@@ -225,7 +225,7 @@ namespace ChinChin {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            StorageDataSet ds = new StorageDataSet();
+            KhoHangDataSet ds = new KhoHangDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -446,9 +446,9 @@ namespace ChinChin {
                                 this.columnMaKho}, true));
                 this.columnMaKho.AllowDBNull = false;
                 this.columnMaKho.Unique = true;
-                this.columnMaKho.MaxLength = 1;
-                this.columnTenKho.MaxLength = 1;
-                this.columnDiaChi.MaxLength = 1;
+                this.columnMaKho.MaxLength = 10;
+                this.columnTenKho.MaxLength = 40;
+                this.columnDiaChi.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -516,7 +516,7 @@ namespace ChinChin {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                StorageDataSet ds = new StorageDataSet();
+                KhoHangDataSet ds = new KhoHangDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -720,7 +720,7 @@ namespace ChinChin {
         }
     }
 }
-namespace ChinChin.StorageDataSetTableAdapters {
+namespace ChinChin.DataSets.KhoHangDataSetTableAdapters {
     
     
     /// <summary>
@@ -909,7 +909,7 @@ SELECT MaKho, TenKho, DiaChi, DienTich FROM KhoHang WHERE (MaKho = @MaKho)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(StorageDataSet.KhoHangDataTable dataTable) {
+        public virtual int Fill(KhoHangDataSet.KhoHangDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -922,9 +922,9 @@ SELECT MaKho, TenKho, DiaChi, DienTich FROM KhoHang WHERE (MaKho = @MaKho)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual StorageDataSet.KhoHangDataTable GetData() {
+        public virtual KhoHangDataSet.KhoHangDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            StorageDataSet.KhoHangDataTable dataTable = new StorageDataSet.KhoHangDataTable();
+            KhoHangDataSet.KhoHangDataTable dataTable = new KhoHangDataSet.KhoHangDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -932,14 +932,14 @@ SELECT MaKho, TenKho, DiaChi, DienTich FROM KhoHang WHERE (MaKho = @MaKho)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(StorageDataSet.KhoHangDataTable dataTable) {
+        public virtual int Update(KhoHangDataSet.KhoHangDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(StorageDataSet dataSet) {
+        public virtual int Update(KhoHangDataSet dataSet) {
             return this.Adapter.Update(dataSet, "KhoHang");
         }
         
@@ -1229,7 +1229,7 @@ SELECT MaKho, TenKho, DiaChi, DienTich FROM KhoHang WHERE (MaKho = @MaKho)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(StorageDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(KhoHangDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._khoHangTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.KhoHang.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1248,7 +1248,7 @@ SELECT MaKho, TenKho, DiaChi, DienTich FROM KhoHang WHERE (MaKho = @MaKho)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(StorageDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(KhoHangDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._khoHangTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.KhoHang.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1266,7 +1266,7 @@ SELECT MaKho, TenKho, DiaChi, DienTich FROM KhoHang WHERE (MaKho = @MaKho)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(StorageDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(KhoHangDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._khoHangTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.KhoHang.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1308,7 +1308,7 @@ SELECT MaKho, TenKho, DiaChi, DienTich FROM KhoHang WHERE (MaKho = @MaKho)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(StorageDataSet dataSet) {
+        public virtual int UpdateAll(KhoHangDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
