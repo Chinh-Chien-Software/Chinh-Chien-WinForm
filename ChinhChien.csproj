@@ -97,6 +97,9 @@
     <Compile Include="Classes\TaiKhoan.cs" />
     <Compile Include="Database\WorkingDatabase.cs" />
     <Compile Include="Database\DataProvider.cs" />
+    <Compile Include="DataSets\KhoHangDataSet.cs">
+      <DependentUpon>KhoHangDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Extra\BlackWhiteButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -106,27 +109,27 @@
     <Compile Include="Extra\Notification.Designer.cs">
       <DependentUpon>Notification.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhoHangDataSet.Designer.cs">
+    <Compile Include="DataSets\KhoHangDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>KhoHangDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyQuanTraSuaDataSet.Designer.cs">
+    <Compile Include="DataSets\QuanLyQuanTraSuaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyQuanTraSuaDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyQuanTraSuaDataSetTaiKhoan.Designer.cs">
+    <Compile Include="DataSets\QuanLyQuanTraSuaDataSetTaiKhoan.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyQuanTraSuaDataSetTaiKhoan.xsd</DependentUpon>
     </Compile>
-    <Compile Include="StorageDataSet.Designer.cs">
+    <Compile Include="DataSets\StorageDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StorageDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="TaiKhoanDataSet.Designer.cs">
+    <Compile Include="DataSets\TaiKhoanDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
@@ -312,15 +315,15 @@
     <EmbeddedResource Include="UI\ThongTinTaiKhoan.resx">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="KhoHangDataSet.xsc">
+    <None Include="DataSets\KhoHangDataSet.xsc">
       <DependentUpon>KhoHangDataSet.xsd</DependentUpon>
     </None>
-    <None Include="KhoHangDataSet.xsd">
+    <None Include="DataSets\KhoHangDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>KhoHangDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="KhoHangDataSet.xss">
+    <None Include="DataSets\KhoHangDataSet.xss">
       <DependentUpon>KhoHangDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -333,48 +336,48 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="QuanLyQuanTraSuaDataSet.xsc">
+    <None Include="DataSets\QuanLyQuanTraSuaDataSet.xsc">
       <DependentUpon>QuanLyQuanTraSuaDataSet.xsd</DependentUpon>
     </None>
-    <None Include="QuanLyQuanTraSuaDataSet.xsd">
+    <None Include="DataSets\QuanLyQuanTraSuaDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>QuanLyQuanTraSuaDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="QuanLyQuanTraSuaDataSet.xss">
+    <None Include="DataSets\QuanLyQuanTraSuaDataSet.xss">
       <DependentUpon>QuanLyQuanTraSuaDataSet.xsd</DependentUpon>
     </None>
-    <None Include="QuanLyQuanTraSuaDataSetTaiKhoan.xsc">
+    <None Include="DataSets\QuanLyQuanTraSuaDataSetTaiKhoan.xsc">
       <DependentUpon>QuanLyQuanTraSuaDataSetTaiKhoan.xsd</DependentUpon>
     </None>
-    <None Include="QuanLyQuanTraSuaDataSetTaiKhoan.xsd">
+    <None Include="DataSets\QuanLyQuanTraSuaDataSetTaiKhoan.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>QuanLyQuanTraSuaDataSetTaiKhoan.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="QuanLyQuanTraSuaDataSetTaiKhoan.xss">
+    <None Include="DataSets\QuanLyQuanTraSuaDataSetTaiKhoan.xss">
       <DependentUpon>QuanLyQuanTraSuaDataSetTaiKhoan.xsd</DependentUpon>
     </None>
-    <None Include="StorageDataSet.xsc">
+    <None Include="DataSets\StorageDataSet.xsc">
       <DependentUpon>StorageDataSet.xsd</DependentUpon>
     </None>
-    <None Include="StorageDataSet.xsd">
+    <None Include="DataSets\StorageDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>StorageDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="StorageDataSet.xss">
+    <None Include="DataSets\StorageDataSet.xss">
       <DependentUpon>StorageDataSet.xsd</DependentUpon>
     </None>
-    <None Include="TaiKhoanDataSet.xsc">
+    <None Include="DataSets\TaiKhoanDataSet.xsc">
       <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
     </None>
-    <None Include="TaiKhoanDataSet.xsd">
+    <None Include="DataSets\TaiKhoanDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>TaiKhoanDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="TaiKhoanDataSet.xss">
+    <None Include="DataSets\TaiKhoanDataSet.xss">
       <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
