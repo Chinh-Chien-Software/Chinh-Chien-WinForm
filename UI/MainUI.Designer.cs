@@ -37,11 +37,11 @@
             this.ibtn2 = new FontAwesome.Sharp.IconButton();
             this.ibtn1 = new FontAwesome.Sharp.IconButton();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.mnsTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
-            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.càiĐặtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsDangXuat = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsTaiKhoan = new System.Windows.Forms.MenuStrip();
+            this.mnsiIconTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsiThongTinTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsiCaiDat = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsiDangXuat = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.btnMaximize = new FontAwesome.Sharp.IconPictureBox();
@@ -52,7 +52,7 @@
             this.panelLogo.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.pnButtons.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.mnsTaiKhoan.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
@@ -209,57 +209,58 @@
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnsTaiKhoan});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 1);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(197, 70);
-            this.menuStrip1.TabIndex = 16;
-            this.menuStrip1.Text = "msTaiKhoan";
-            // 
             // mnsTaiKhoan
             // 
-            this.mnsTaiKhoan.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.mnsTaiKhoan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.đổiMậtKhẩuToolStripMenuItem,
-            this.càiĐặtToolStripMenuItem,
-            this.mnsDangXuat});
-            this.mnsTaiKhoan.Image = global::ChinChin.Properties.Resources.image;
-            this.mnsTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.mnsTaiKhoan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mnsTaiKhoan.Dock = System.Windows.Forms.DockStyle.None;
+            this.mnsTaiKhoan.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsiIconTaiKhoan});
+            this.mnsTaiKhoan.Location = new System.Drawing.Point(0, 1);
             this.mnsTaiKhoan.Name = "mnsTaiKhoan";
-            this.mnsTaiKhoan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.mnsTaiKhoan.RightToLeftAutoMirrorImage = true;
-            this.mnsTaiKhoan.Size = new System.Drawing.Size(69, 66);
-            this.mnsTaiKhoan.Text = "Tài khoản";
-            this.mnsTaiKhoan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.mnsTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.mnsTaiKhoan.Size = new System.Drawing.Size(197, 70);
+            this.mnsTaiKhoan.TabIndex = 16;
+            this.mnsTaiKhoan.Text = "msTaiKhoan";
             // 
-            // đổiMậtKhẩuToolStripMenuItem
+            // mnsiIconTaiKhoan
             // 
-            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.đổiMậtKhẩuToolStripMenuItem.Text = "Thông tin tài khoản";
+            this.mnsiIconTaiKhoan.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.mnsiIconTaiKhoan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsiThongTinTaiKhoan,
+            this.mnsiCaiDat,
+            this.mnsiDangXuat});
+            this.mnsiIconTaiKhoan.Image = global::ChinChin.Properties.Resources.image;
+            this.mnsiIconTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.mnsiIconTaiKhoan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mnsiIconTaiKhoan.Name = "mnsiIconTaiKhoan";
+            this.mnsiIconTaiKhoan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.mnsiIconTaiKhoan.RightToLeftAutoMirrorImage = true;
+            this.mnsiIconTaiKhoan.Size = new System.Drawing.Size(69, 66);
+            this.mnsiIconTaiKhoan.Text = "Tài khoản";
+            this.mnsiIconTaiKhoan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.mnsiIconTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // càiĐặtToolStripMenuItem
+            // mnsiThongTinTaiKhoan
             // 
-            this.càiĐặtToolStripMenuItem.Name = "càiĐặtToolStripMenuItem";
-            this.càiĐặtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.càiĐặtToolStripMenuItem.Text = "Cài đặt";
+            this.mnsiThongTinTaiKhoan.Name = "mnsiThongTinTaiKhoan";
+            this.mnsiThongTinTaiKhoan.Size = new System.Drawing.Size(180, 22);
+            this.mnsiThongTinTaiKhoan.Text = "Thông tin tài khoản";
             // 
-            // mnsDangXuat
+            // mnsiCaiDat
             // 
-            this.mnsDangXuat.Name = "mnsDangXuat";
-            this.mnsDangXuat.Size = new System.Drawing.Size(180, 22);
-            this.mnsDangXuat.Text = "Đăng Xuất";
-            this.mnsDangXuat.Click += new System.EventHandler(this.ĐăngXuất_Click);
+            this.mnsiCaiDat.Name = "mnsiCaiDat";
+            this.mnsiCaiDat.Size = new System.Drawing.Size(180, 22);
+            this.mnsiCaiDat.Text = "Cài đặt";
+            this.mnsiCaiDat.Click += new System.EventHandler(this.mnsiCaiDat_Click);
+            // 
+            // mnsiDangXuat
+            // 
+            this.mnsiDangXuat.Name = "mnsiDangXuat";
+            this.mnsiDangXuat.Size = new System.Drawing.Size(180, 22);
+            this.mnsiDangXuat.Text = "Đăng Xuất";
+            this.mnsiDangXuat.Click += new System.EventHandler(this.ĐăngXuất_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Controls.Add(this.mnsTaiKhoan);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnMaximize);
             this.panel1.Controls.Add(this.btnMinimize);
@@ -374,8 +375,8 @@
             this.panelLogo.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.pnButtons.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.mnsTaiKhoan.ResumeLayout(false);
+            this.mnsTaiKhoan.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
@@ -395,10 +396,10 @@
         private System.Windows.Forms.Label lblHomeButton_Role;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Label labelTittleChildForm;
-        private System.Windows.Forms.ToolStripMenuItem càiĐặtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnsTaiKhoan;
-        private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mnsiCaiDat;
+        private System.Windows.Forms.ToolStripMenuItem mnsiIconTaiKhoan;
+        private System.Windows.Forms.ToolStripMenuItem mnsiThongTinTaiKhoan;
+        private System.Windows.Forms.MenuStrip mnsTaiKhoan;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconPictureBox btnExit;
         private FontAwesome.Sharp.IconPictureBox btnMaximize;
@@ -410,6 +411,6 @@
         private FontAwesome.Sharp.IconButton ibtn2;
         private FontAwesome.Sharp.IconButton ibtn3;
         private FontAwesome.Sharp.IconButton ibtn4;
-        private System.Windows.Forms.ToolStripMenuItem mnsDangXuat;
+        private System.Windows.Forms.ToolStripMenuItem mnsiDangXuat;
     }
 }
