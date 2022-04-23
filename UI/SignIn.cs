@@ -116,16 +116,22 @@ namespace ChinChin
 
         private void SignIn_Load(object sender, EventArgs e)
         {
-            //RegistryKey rk = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Microsoft SQL Server");
-            //String[] instances = (String[])rk.GetValue("InstalledInstances");
+            // Kiểm Tra Database
+            if (Database.WorkingDatabase.CheckLocalDatabase())
+            {
+                //RegistryKey rk = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Microsoft SQL Server");
+                //String[] instances = (String[])rk.GetValue("InstalledInstances");
 
-            // TODO: This line of code loads data into the 'taiKhoanDataSet.TaiKhoan' table. You can move, or remove it, as needed.
-            this.taiKhoanTableAdapter1.Fill(this.taiKhoanDataSet.TaiKhoan);
-            // TODO: This line of code loads data into the 'quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan' table. You can move, or remove it, as needed.
-            // this.taiKhoanTableAdapter.Fill(this.quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan);
-            // khong chay duoc tren may tinh khac ngoai` Khoi.
-
-            // 
+                // TODO: This line of code loads data into the 'taiKhoanDataSet.TaiKhoan' table. You can move, or remove it, as needed.
+                this.taiKhoanTableAdapter1.Fill(this.taiKhoanDataSet.TaiKhoan);
+                // TODO: This line of code loads data into the 'quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan' table. You can move, or remove it, as needed.
+                // this.taiKhoanTableAdapter.Fill(this.quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan);
+                // khong chay duoc tren may tinh khac ngoai` Khoi.
+            }
+            else
+            {
+                MessageBox.Show("Không có Database hoặc Dữ liệu bé ơi", "Oh My God", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
