@@ -131,5 +131,11 @@ namespace ChinChin.UI
             logout.Show();
             this.Hide();
         }
+
+        private void mnsiCaiDat_Click(object sender, EventArgs e)
+        {
+            CaiDat CaiDat = new CaiDat();
+            CaiDat.Show();
+        }
     }
 }
