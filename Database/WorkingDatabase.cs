@@ -12,7 +12,7 @@ namespace ChinChin.Database
         public static bool CheckLocalDatabase()
         {
             var connString = Properties.Settings.Default.ChinhChienConnectionString;
-            // Tìm thử xem có tài khoản nào chuquan nào không.. 
+            // Tìm thử xem có tài khoản nào chuquan nào không..
             var cmdText = "select count(*) from ChinhChien.dbo.TaiKhoan where LoaiTaiKhoan='chuquan' ";
 
             SqlConnection con = new SqlConnection(connString);
