@@ -1,7 +1,15 @@
 # Phần Mềm Quản Lý Quán Trà Sữa Chinh Chiến
+# Tính năng
+- Tạo quán vô hạn
+- Thêm tài khoản khác vào quán
 # Development and TeckStack
 - WinForm .NET Framework 4.7.2
 - IDE Visual Studio Community 2022
+## Giải thích tên các thư mục
+- **Classes**: Chứa các lớp như ChuQuan, QuanLy
+- **Custom**: Chứa các User Control tùy chỉnh
+- **DataSets**: Chứa các DataSet
+- **Database**: Chứa các hàm làm việc với Database
 
 # Ideas
 - [ ] Tăng cao sự tùy chỉnh để nó có thể trở thành phần mềm quản lý của bất kỳ quán nào.
