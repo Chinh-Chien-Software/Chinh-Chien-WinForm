@@ -216,7 +216,7 @@
             this.mnsiIconTaiKhoan});
             this.mnsTaiKhoan.Location = new System.Drawing.Point(0, 1);
             this.mnsTaiKhoan.Name = "mnsTaiKhoan";
-            this.mnsTaiKhoan.Size = new System.Drawing.Size(197, 70);
+            this.mnsTaiKhoan.Size = new System.Drawing.Size(77, 70);
             this.mnsTaiKhoan.TabIndex = 16;
             this.mnsTaiKhoan.Text = "msTaiKhoan";
             // 
@@ -343,7 +343,7 @@
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCurrentChildForm.IconSize = 46;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(0, 9);
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(0, 11);
             this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(2);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
             this.iconCurrentChildForm.Size = new System.Drawing.Size(46, 50);
@@ -353,7 +353,6 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.White;
-            this.panelDesktop.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(376, 70);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(2);
