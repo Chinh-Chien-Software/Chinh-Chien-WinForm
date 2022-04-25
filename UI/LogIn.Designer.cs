@@ -33,8 +33,14 @@ namespace ChinChin
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.panelBackground = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.labelNoAccount = new System.Windows.Forms.Label();
-            this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
+            this.tenTaiKhoanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.matKhauDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiTaiKhoanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maNhanVienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uIModeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.taiKhoanBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.taiKhoanDataSet = new ChinChin.DataSets.TaiKhoanDataSet();
+            this.lblNoAccount = new System.Windows.Forms.Label();
             this.labelThongBao = new System.Windows.Forms.Label();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.lblSignIn = new System.Windows.Forms.Label();
@@ -47,28 +53,22 @@ namespace ChinChin
             this.labelPasword = new System.Windows.Forms.Label();
             this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan();
             this.taiKhoanTableAdapter = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter();
-            this.taiKhoanDataSet = new ChinChin.DataSets.TaiKhoanDataSet();
-            this.taiKhoanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.taiKhoanTableAdapter1 = new ChinChin.DataSets.TaiKhoanDataSetTableAdapters.TaiKhoanTableAdapter();
-            this.tenTaiKhoanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.matKhauDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiTaiKhoanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maNhanVienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uIModeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
             this.panelBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panelUsername.SuspendLayout();
             this.panelPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSetTaiKhoan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBackground
             // 
             this.panelBackground.Controls.Add(this.dataGridView1);
-            this.panelBackground.Controls.Add(this.labelNoAccount);
+            this.panelBackground.Controls.Add(this.lblNoAccount);
             this.panelBackground.Controls.Add(this.SignInButton);
             this.panelBackground.Controls.Add(this.labelThongBao);
             this.panelBackground.Controls.Add(this.btnExit);
@@ -99,40 +99,60 @@ namespace ChinChin
             this.dataGridView1.Size = new System.Drawing.Size(349, 150);
             this.dataGridView1.TabIndex = 14;
             // 
-            // labelNoAccount
+            // tenTaiKhoanDataGridViewTextBoxColumn
             // 
-            this.labelNoAccount.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelNoAccount.AutoSize = true;
-            this.labelNoAccount.BackColor = System.Drawing.Color.Transparent;
-            this.labelNoAccount.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNoAccount.Location = new System.Drawing.Point(602, 592);
-            this.labelNoAccount.Name = "labelNoAccount";
-            this.labelNoAccount.Size = new System.Drawing.Size(189, 19);
-            this.labelNoAccount.TabIndex = 13;
-            this.labelNoAccount.Text = "Bạn chưa có tài khoản?";
+            this.tenTaiKhoanDataGridViewTextBoxColumn.DataPropertyName = "TenTaiKhoan";
+            this.tenTaiKhoanDataGridViewTextBoxColumn.HeaderText = "TenTaiKhoan";
+            this.tenTaiKhoanDataGridViewTextBoxColumn.Name = "tenTaiKhoanDataGridViewTextBoxColumn";
             // 
-            // SignInButton
+            // matKhauDataGridViewTextBoxColumn
             // 
-            this.SignInButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.SignInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.SignInButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.SignInButton.BorderColor = System.Drawing.Color.Black;
-            this.SignInButton.BorderRadius = 0;
-            this.SignInButton.BorderSize = 0;
-            this.SignInButton.FlatAppearance.BorderSize = 0;
-            this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignInButton.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignInButton.ForeColor = System.Drawing.Color.White;
-            this.SignInButton.Location = new System.Drawing.Point(563, 459);
-            this.SignInButton.Margin = new System.Windows.Forms.Padding(2);
-            this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(271, 122);
-            this.SignInButton.TabIndex = 10;
-            this.SignInButton.Text = "ĐĂNG NHẬP";
-            this.SignInButton.TextColor = System.Drawing.Color.White;
-            this.SignInButton.UseVisualStyleBackColor = false;
-            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
-            this.SignInButton.MouseHover += new System.EventHandler(this.SignInButton_MouseHover);
+            this.matKhauDataGridViewTextBoxColumn.DataPropertyName = "MatKhau";
+            this.matKhauDataGridViewTextBoxColumn.HeaderText = "MatKhau";
+            this.matKhauDataGridViewTextBoxColumn.Name = "matKhauDataGridViewTextBoxColumn";
+            // 
+            // loaiTaiKhoanDataGridViewTextBoxColumn
+            // 
+            this.loaiTaiKhoanDataGridViewTextBoxColumn.DataPropertyName = "LoaiTaiKhoan";
+            this.loaiTaiKhoanDataGridViewTextBoxColumn.HeaderText = "LoaiTaiKhoan";
+            this.loaiTaiKhoanDataGridViewTextBoxColumn.Name = "loaiTaiKhoanDataGridViewTextBoxColumn";
+            // 
+            // maNhanVienDataGridViewTextBoxColumn
+            // 
+            this.maNhanVienDataGridViewTextBoxColumn.DataPropertyName = "MaNhanVien";
+            this.maNhanVienDataGridViewTextBoxColumn.HeaderText = "MaNhanVien";
+            this.maNhanVienDataGridViewTextBoxColumn.Name = "maNhanVienDataGridViewTextBoxColumn";
+            // 
+            // uIModeDataGridViewTextBoxColumn
+            // 
+            this.uIModeDataGridViewTextBoxColumn.DataPropertyName = "UIMode";
+            this.uIModeDataGridViewTextBoxColumn.HeaderText = "UIMode";
+            this.uIModeDataGridViewTextBoxColumn.Name = "uIModeDataGridViewTextBoxColumn";
+            // 
+            // taiKhoanBindingSource
+            // 
+            this.taiKhoanBindingSource.DataMember = "TaiKhoan";
+            this.taiKhoanBindingSource.DataSource = this.taiKhoanDataSet;
+            // 
+            // taiKhoanDataSet
+            // 
+            this.taiKhoanDataSet.DataSetName = "TaiKhoanDataSet";
+            this.taiKhoanDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lblNoAccount
+            // 
+            this.lblNoAccount.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblNoAccount.AutoSize = true;
+            this.lblNoAccount.BackColor = System.Drawing.Color.Transparent;
+            this.lblNoAccount.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoAccount.Location = new System.Drawing.Point(602, 592);
+            this.lblNoAccount.Name = "lblNoAccount";
+            this.lblNoAccount.Size = new System.Drawing.Size(189, 19);
+            this.lblNoAccount.TabIndex = 13;
+            this.lblNoAccount.Text = "Bạn chưa có tài khoản?";
+            this.lblNoAccount.Click += new System.EventHandler(this.labelNoAccount_Click);
+            this.lblNoAccount.MouseLeave += new System.EventHandler(this.lblNoAccount_MouseLeave);
+            this.lblNoAccount.MouseHover += new System.EventHandler(this.labelNoAccount_MouseHover);
             // 
             // labelThongBao
             // 
@@ -279,51 +299,34 @@ namespace ChinChin
             // 
             this.taiKhoanTableAdapter.ClearBeforeFill = true;
             // 
-            // taiKhoanDataSet
-            // 
-            this.taiKhoanDataSet.DataSetName = "TaiKhoanDataSet";
-            this.taiKhoanDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // taiKhoanBindingSource
-            // 
-            this.taiKhoanBindingSource.DataMember = "TaiKhoan";
-            this.taiKhoanBindingSource.DataSource = this.taiKhoanDataSet;
-            // 
             // taiKhoanTableAdapter1
             // 
             this.taiKhoanTableAdapter1.ClearBeforeFill = true;
             // 
-            // tenTaiKhoanDataGridViewTextBoxColumn
+            // SignInButton
             // 
-            this.tenTaiKhoanDataGridViewTextBoxColumn.DataPropertyName = "TenTaiKhoan";
-            this.tenTaiKhoanDataGridViewTextBoxColumn.HeaderText = "TenTaiKhoan";
-            this.tenTaiKhoanDataGridViewTextBoxColumn.Name = "tenTaiKhoanDataGridViewTextBoxColumn";
+            this.SignInButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.SignInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.SignInButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.SignInButton.BorderColor = System.Drawing.Color.Black;
+            this.SignInButton.BorderRadius = 0;
+            this.SignInButton.BorderSize = 0;
+            this.SignInButton.FlatAppearance.BorderSize = 0;
+            this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignInButton.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignInButton.ForeColor = System.Drawing.Color.White;
+            this.SignInButton.Location = new System.Drawing.Point(563, 459);
+            this.SignInButton.Margin = new System.Windows.Forms.Padding(2);
+            this.SignInButton.Name = "SignInButton";
+            this.SignInButton.Size = new System.Drawing.Size(271, 122);
+            this.SignInButton.TabIndex = 10;
+            this.SignInButton.Text = "ĐĂNG NHẬP";
+            this.SignInButton.TextColor = System.Drawing.Color.White;
+            this.SignInButton.UseVisualStyleBackColor = false;
+            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
+            this.SignInButton.MouseHover += new System.EventHandler(this.SignInButton_MouseHover);
             // 
-            // matKhauDataGridViewTextBoxColumn
-            // 
-            this.matKhauDataGridViewTextBoxColumn.DataPropertyName = "MatKhau";
-            this.matKhauDataGridViewTextBoxColumn.HeaderText = "MatKhau";
-            this.matKhauDataGridViewTextBoxColumn.Name = "matKhauDataGridViewTextBoxColumn";
-            // 
-            // loaiTaiKhoanDataGridViewTextBoxColumn
-            // 
-            this.loaiTaiKhoanDataGridViewTextBoxColumn.DataPropertyName = "LoaiTaiKhoan";
-            this.loaiTaiKhoanDataGridViewTextBoxColumn.HeaderText = "LoaiTaiKhoan";
-            this.loaiTaiKhoanDataGridViewTextBoxColumn.Name = "loaiTaiKhoanDataGridViewTextBoxColumn";
-            // 
-            // maNhanVienDataGridViewTextBoxColumn
-            // 
-            this.maNhanVienDataGridViewTextBoxColumn.DataPropertyName = "MaNhanVien";
-            this.maNhanVienDataGridViewTextBoxColumn.HeaderText = "MaNhanVien";
-            this.maNhanVienDataGridViewTextBoxColumn.Name = "maNhanVienDataGridViewTextBoxColumn";
-            // 
-            // uIModeDataGridViewTextBoxColumn
-            // 
-            this.uIModeDataGridViewTextBoxColumn.DataPropertyName = "UIMode";
-            this.uIModeDataGridViewTextBoxColumn.HeaderText = "UIMode";
-            this.uIModeDataGridViewTextBoxColumn.Name = "uIModeDataGridViewTextBoxColumn";
-            // 
-            // SignIn
+            // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -333,7 +336,7 @@ namespace ChinChin
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "SignIn";
+            this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -341,14 +344,14 @@ namespace ChinChin
             this.panelBackground.ResumeLayout(false);
             this.panelBackground.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.panelUsername.ResumeLayout(false);
             this.panelUsername.PerformLayout();
             this.panelPassword.ResumeLayout(false);
             this.panelPassword.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSetTaiKhoan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -366,7 +369,7 @@ namespace ChinChin
         private System.Windows.Forms.Panel panelPassword;
         private System.Windows.Forms.TextBox txtBxUsername;
         private System.Windows.Forms.Label labelUserName;
-        private System.Windows.Forms.Label labelNoAccount;
+        private System.Windows.Forms.Label lblNoAccount;
         private System.Windows.Forms.DataGridView dataGridView1;
         private ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan quanLyQuanTraSuaDataSetTaiKhoan;
         private ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter taiKhoanTableAdapter;

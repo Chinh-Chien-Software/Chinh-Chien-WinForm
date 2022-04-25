@@ -133,6 +133,22 @@ namespace ChinChin
                 MessageBox.Show("Không có Database hoặc Dữ liệu bé ơi", "Oh My God", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void labelNoAccount_Click(object sender, EventArgs e)
+        {
+            SignUp SignUp = new SignUp();
+            SignUp.Show();
+        }
+
+        private void labelNoAccount_MouseHover(object sender, EventArgs e)
+        {
+            lblNoAccount.Font = new Font("Inter", 12, ((FontStyle)((FontStyle.Bold | FontStyle.Underline))));
+        }
+
+        private void lblNoAccount_MouseLeave(object sender, EventArgs e)
+        {
+            lblNoAccount.Font = new Font("Inter", 12, FontStyle.Bold);
+        }
     }
 }
 
