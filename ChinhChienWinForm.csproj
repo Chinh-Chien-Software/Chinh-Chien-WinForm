@@ -100,13 +100,13 @@
     <Compile Include="DataSets\KhoHangDataSet.cs">
       <DependentUpon>KhoHangDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Extra\BlackWhiteButton.cs">
+    <Compile Include="Custom\BlackWhiteButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Extra\Notification.cs">
+    <Compile Include="Custom\Notification.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Extra\Notification.Designer.cs">
+    <Compile Include="Custom\Notification.Designer.cs">
       <DependentUpon>Notification.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSets\KhoHangDataSet.Designer.cs">
@@ -258,7 +258,7 @@
     <Compile Include="UI\ThongTinTaiKhoan.Designer.cs">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Extra\Notification.resx">
+    <EmbeddedResource Include="Custom\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CaiDat.resx">
