@@ -152,7 +152,7 @@ namespace ChinChin.FormsChuQuan
 
         private void SignOutButton_Click(object sender, EventArgs e)
         {
-            SignIn logout = new SignIn();
+            LogIn logout = new LogIn();
             logout.Show();
             this.Hide();
         }

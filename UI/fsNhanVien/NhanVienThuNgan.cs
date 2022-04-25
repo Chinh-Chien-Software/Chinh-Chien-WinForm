@@ -34,7 +34,7 @@ namespace ChinChin.Forms_NhanVien
         
         private void SignOutButton_Click_1(object sender, EventArgs e)
         {
-            SignIn logout = new SignIn();
+            LogIn logout = new LogIn();
             logout.Show();
             this.Hide();
         }
