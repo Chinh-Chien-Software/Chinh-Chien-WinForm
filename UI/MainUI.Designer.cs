@@ -241,20 +241,20 @@
             // mnsiThongTinTaiKhoan
             // 
             this.mnsiThongTinTaiKhoan.Name = "mnsiThongTinTaiKhoan";
-            this.mnsiThongTinTaiKhoan.Size = new System.Drawing.Size(180, 22);
-            this.mnsiThongTinTaiKhoan.Text = "Thông tin tài khoản";
+            this.mnsiThongTinTaiKhoan.Size = new System.Drawing.Size(181, 22);
+            this.mnsiThongTinTaiKhoan.Text = "Thông Tin Tài Khoản";
             // 
             // mnsiCaiDat
             // 
             this.mnsiCaiDat.Name = "mnsiCaiDat";
-            this.mnsiCaiDat.Size = new System.Drawing.Size(180, 22);
+            this.mnsiCaiDat.Size = new System.Drawing.Size(181, 22);
             this.mnsiCaiDat.Text = "Cài đặt";
             this.mnsiCaiDat.Click += new System.EventHandler(this.mnsiCaiDat_Click);
             // 
             // mnsiDangXuat
             // 
             this.mnsiDangXuat.Name = "mnsiDangXuat";
-            this.mnsiDangXuat.Size = new System.Drawing.Size(180, 22);
+            this.mnsiDangXuat.Size = new System.Drawing.Size(181, 22);
             this.mnsiDangXuat.Text = "Đăng Xuất";
             this.mnsiDangXuat.Click += new System.EventHandler(this.ĐăngXuất_Click);
             // 
@@ -296,7 +296,7 @@
             this.btnMaximize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMaximize.IconSize = 49;
-            this.btnMaximize.Location = new System.Drawing.Point(143, 2);
+            this.btnMaximize.Location = new System.Drawing.Point(143, 1);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(50, 49);
