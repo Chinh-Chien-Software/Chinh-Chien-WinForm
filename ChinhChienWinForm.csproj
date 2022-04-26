@@ -37,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -100,6 +101,12 @@
     </Compile>
     <Compile Include="Custom\TextBox_Custom.Designer.cs">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\WorkingDatabase.cs" />
     <Compile Include="Database\DataProvider.cs" />
@@ -269,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom\TextBox_Custom.resx">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CaiDat.resx">
       <DependentUpon>CaiDat.cs</DependentUpon>

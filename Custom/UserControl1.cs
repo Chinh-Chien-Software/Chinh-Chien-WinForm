@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ChinChin.Custom
 {
-    public partial class TextBox_Custom : UserControl
+    public partial class UserControl1 : UserControl
     {
-        public TextBox_Custom()
+        public UserControl1()
         {
             InitializeComponent();
-        }
-        public string TextBoxText
-        {
-            get { return textBox.Text; }
-            set { textBox.Text = value; }
         }
     }
 }
