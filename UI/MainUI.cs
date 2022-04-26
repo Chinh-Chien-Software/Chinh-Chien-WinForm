@@ -137,5 +137,11 @@ namespace ChinChin.UI
             CaiDat CaiDat = new CaiDat();
             CaiDat.Show();
         }
+
+        private void mnsiThongTinTaiKhoan_Click(object sender, EventArgs e)
+        {
+            ThongTinTaiKhoan ThongTinTaiKhoan = new ThongTinTaiKhoan();
+            ThongTinTaiKhoan.Show();
+        }
     }
 }

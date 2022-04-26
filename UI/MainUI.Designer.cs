@@ -216,7 +216,7 @@
             this.mnsiIconTaiKhoan});
             this.mnsTaiKhoan.Location = new System.Drawing.Point(0, 1);
             this.mnsTaiKhoan.Name = "mnsTaiKhoan";
-            this.mnsTaiKhoan.Size = new System.Drawing.Size(77, 70);
+            this.mnsTaiKhoan.Size = new System.Drawing.Size(197, 70);
             this.mnsTaiKhoan.TabIndex = 16;
             this.mnsTaiKhoan.Text = "msTaiKhoan";
             // 
@@ -243,6 +243,7 @@
             this.mnsiThongTinTaiKhoan.Name = "mnsiThongTinTaiKhoan";
             this.mnsiThongTinTaiKhoan.Size = new System.Drawing.Size(181, 22);
             this.mnsiThongTinTaiKhoan.Text = "Thông Tin Tài Khoản";
+            this.mnsiThongTinTaiKhoan.Click += new System.EventHandler(this.mnsiThongTinTaiKhoan_Click);
             // 
             // mnsiCaiDat
             // 
