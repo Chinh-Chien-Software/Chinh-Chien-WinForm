@@ -49,10 +49,13 @@ namespace ChinChin
             username = txtBxUsername.Text;
             password = txtBxPassword.Text;
 
+            /*
             formChuQuan ChuQuan = new formChuQuan();
             QuanLy QuanLy = new QuanLy();
             NhanVienThuNgan NhanVienThuNgan = new NhanVienThuNgan();
             NhanVienPhaChe Barista = new NhanVienPhaChe();
+            */
+
             string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan = '" + username + "' AND MatKhau = '" + password + "'";
             DataTable TaiKhoan = new DataTable();
             TaiKhoan = DataProvider.LoadDatabase(sqlcode);
@@ -148,6 +151,16 @@ namespace ChinChin
         private void lblNoAccount_MouseLeave(object sender, EventArgs e)
         {
             lblNoAccount.Font = new Font("Inter", 12, FontStyle.Bold);
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelPassword_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

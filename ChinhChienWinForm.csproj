@@ -95,6 +95,12 @@
     <Compile Include="Classes\NhanVien.cs" />
     <Compile Include="Classes\QuanLy.cs" />
     <Compile Include="Classes\TaiKhoan.cs" />
+    <Compile Include="Custom\TextBox_Custom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom\TextBox_Custom.Designer.cs">
+      <DependentUpon>TextBox_Custom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database\WorkingDatabase.cs" />
     <Compile Include="Database\DataProvider.cs" />
     <Compile Include="DataSets\KhoHangDataSet.cs">
@@ -260,6 +266,9 @@
     </Compile>
     <EmbeddedResource Include="Custom\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom\TextBox_Custom.resx">
+      <DependentUpon>TextBox_Custom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CaiDat.resx">
       <DependentUpon>CaiDat.cs</DependentUpon>
