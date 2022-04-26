@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin.UI
+namespace ChinChin.Custom
 {
-    public partial class SignUp : Form
+    public partial class TextBox_Custom : UserControl
     {
-        public SignUp()
+        public TextBox_Custom()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
