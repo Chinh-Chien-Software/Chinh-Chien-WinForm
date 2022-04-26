@@ -57,7 +57,7 @@
             this.pbAvatarNhanVien.Location = new System.Drawing.Point(0, 12);
             this.pbAvatarNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.pbAvatarNhanVien.Name = "pbAvatarNhanVien";
-            this.pbAvatarNhanVien.Size = new System.Drawing.Size(250, 250);
+            this.pbAvatarNhanVien.Size = new System.Drawing.Size(210, 210);
             this.pbAvatarNhanVien.TabIndex = 0;
             this.pbAvatarNhanVien.TabStop = false;
             // 
