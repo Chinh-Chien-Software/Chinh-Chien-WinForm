@@ -1,4 +1,4 @@
-﻿
+
 namespace ChinChin
 {
     partial class LogIn
@@ -351,7 +351,6 @@ namespace ChinChin
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.SignIn_Load);
             this.panelBackground.ResumeLayout(false);
             this.panelBackground.PerformLayout();
