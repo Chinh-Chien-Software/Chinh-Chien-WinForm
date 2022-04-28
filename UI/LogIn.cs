@@ -157,10 +157,5 @@ namespace ChinChin
         {
 
         }
-
-        private void iPBxShowHidePasword_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -83,7 +83,7 @@ namespace ChinChin.UI
             if (LoaiTaiKhoan == "chuquan" || LoaiTaiKhoan == "quanly")
             {
                 MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color1, iconCurrentChildForm);
-                MenuAnimation.OpenChildForm(new FormsChuQuan.FormThongKe(), ref currentChildForm, panelDesktop, labelTittleChildForm);
+                MenuAnimation.OpenChildForm(new FormsChuQuan.FormThongKe(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
             }
             else if (LoaiTaiKhoan == "thungan")
             {
@@ -125,7 +125,7 @@ namespace ChinChin.UI
             WindowState = FormWindowState.Minimized;
         }
 
-        private void ĐăngXuất_Click(object sender, EventArgs e)
+        private void DangXuat_Click(object sender, EventArgs e)
         {
             LogIn logout = new LogIn();
             logout.Show();
@@ -142,6 +142,11 @@ namespace ChinChin.UI
         {
             ThongTinTaiKhoan ThongTinTaiKhoan = new ThongTinTaiKhoan();
             ThongTinTaiKhoan.Show();
+        }
+
+        private void ibtn2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
