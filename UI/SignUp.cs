@@ -15,11 +15,31 @@ namespace ChinChin.UI
         public SignUp()
         {
             InitializeComponent();
+            lblThongBao.Visible = false;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void lblNoAccount_Click(object sender, EventArgs e)
+        {
+            LogIn LogIn = new LogIn();
+            LogIn.Show();
+            this.Hide();
         }
     }
 }
