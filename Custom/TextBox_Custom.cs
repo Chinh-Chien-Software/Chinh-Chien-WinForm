@@ -16,10 +16,15 @@ namespace ChinChin.Custom
         {
             InitializeComponent();
         }
-        public string TextBoxText
+        public string Text
         {
             get { return textBox.Text; }
             set { textBox.Text = value; }
+        }
+        public char PasswordChar
+        {
+            get { return textBox.PasswordChar; }
+            set { textBox.PasswordChar = value; }
         }
     }
 }

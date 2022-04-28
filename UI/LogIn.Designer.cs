@@ -43,28 +43,28 @@ namespace ChinChin
             this.lblNoAccount = new System.Windows.Forms.Label();
             this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
             this.labelThongBao = new System.Windows.Forms.Label();
+            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.lblSignIn = new System.Windows.Forms.Label();
             this.ckBxRememberSignIn = new System.Windows.Forms.CheckBox();
             this.panelUsername = new System.Windows.Forms.Panel();
+            this.tbcUserName = new ChinChin.Custom.TextBox_Custom();
             this.labelUserName = new System.Windows.Forms.Label();
-            this.txtBxUsername = new System.Windows.Forms.TextBox();
             this.panelPassword = new System.Windows.Forms.Panel();
-            this.txtBxPassword = new System.Windows.Forms.TextBox();
+            this.tbcPassword = new ChinChin.Custom.TextBox_Custom();
+            this.iPBxShowHidePasword = new FontAwesome.Sharp.IconPictureBox();
             this.labelPasword = new System.Windows.Forms.Label();
             this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan();
             this.taiKhoanTableAdapter = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter();
             this.taiKhoanTableAdapter1 = new ChinChin.DataSets.TaiKhoanDataSetTableAdapters.TaiKhoanTableAdapter();
-            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
-            this.iPBxShowHidePasword = new FontAwesome.Sharp.IconPictureBox();
             this.panelBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.taiKhoanDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panelUsername.SuspendLayout();
             this.panelPassword.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSetTaiKhoan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHidePasword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSetTaiKhoan)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBackground
@@ -193,6 +193,23 @@ namespace ChinChin
             this.labelThongBao.TabIndex = 9;
             this.labelThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 46;
+            this.btnExit.Location = new System.Drawing.Point(1345, 9);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(46, 48);
+            this.btnExit.TabIndex = 8;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // lblSignIn
             // 
             this.lblSignIn.BackColor = System.Drawing.Color.Transparent;
@@ -225,12 +242,21 @@ namespace ChinChin
             this.panelUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelUsername.BackColor = System.Drawing.Color.Transparent;
+            this.panelUsername.Controls.Add(this.tbcUserName);
             this.panelUsername.Controls.Add(this.labelUserName);
-            this.panelUsername.Controls.Add(this.txtBxUsername);
             this.panelUsername.Location = new System.Drawing.Point(2, 211);
             this.panelUsername.Name = "panelUsername";
             this.panelUsername.Size = new System.Drawing.Size(1398, 74);
             this.panelUsername.TabIndex = 11;
+            // 
+            // tbcUserName
+            // 
+            this.tbcUserName.ForeColor = System.Drawing.Color.White;
+            this.tbcUserName.Location = new System.Drawing.Point(561, 38);
+            this.tbcUserName.Name = "tbcUserName";
+            this.tbcUserName.Size = new System.Drawing.Size(271, 36);
+            this.tbcUserName.TabIndex = 7;
+            this.tbcUserName.TextBox_Text = "";
             // 
             // labelUserName
             // 
@@ -246,46 +272,44 @@ namespace ChinChin
             this.labelUserName.Text = "Tài khoản";
             this.labelUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // txtBxUsername
-            // 
-            this.txtBxUsername.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.txtBxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.txtBxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxUsername.Location = new System.Drawing.Point(561, 37);
-            this.txtBxUsername.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBxUsername.Name = "txtBxUsername";
-            this.txtBxUsername.Size = new System.Drawing.Size(271, 37);
-            this.txtBxUsername.TabIndex = 1;
-            this.txtBxUsername.Enter += new System.EventHandler(this.txtBxUsername_Enter);
-            this.txtBxUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBxUsername_KeyDown);
-            // 
             // panelPassword
             // 
             this.panelPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelPassword.BackColor = System.Drawing.Color.Transparent;
+            this.panelPassword.Controls.Add(this.tbcPassword);
             this.panelPassword.Controls.Add(this.iPBxShowHidePasword);
-            this.panelPassword.Controls.Add(this.txtBxPassword);
             this.panelPassword.Controls.Add(this.labelPasword);
             this.panelPassword.Location = new System.Drawing.Point(0, 288);
             this.panelPassword.Name = "panelPassword";
             this.panelPassword.Size = new System.Drawing.Size(1400, 79);
             this.panelPassword.TabIndex = 12;
-            this.panelPassword.Click += new System.EventHandler(this.panelPassword_Click);
             // 
-            // txtBxPassword
+            // tbcPassword
             // 
-            this.txtBxPassword.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.txtBxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.txtBxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxPassword.Location = new System.Drawing.Point(563, 40);
-            this.txtBxPassword.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBxPassword.Name = "txtBxPassword";
-            this.txtBxPassword.PasswordChar = '*';
-            this.txtBxPassword.Size = new System.Drawing.Size(271, 37);
-            this.txtBxPassword.TabIndex = 2;
-            this.txtBxPassword.Enter += new System.EventHandler(this.txtBxPassword_Enter);
-            this.txtBxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBxPassword_KeyDown);
+            this.tbcPassword.ForeColor = System.Drawing.Color.White;
+            this.tbcPassword.Location = new System.Drawing.Point(563, 35);
+            this.tbcPassword.Name = "tbcPassword";
+            this.tbcPassword.Size = new System.Drawing.Size(271, 36);
+            this.tbcPassword.TabIndex = 8;
+            this.tbcPassword.TextBox_Text = "";
+            // 
+            // iPBxShowHidePasword
+            // 
+            this.iPBxShowHidePasword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iPBxShowHidePasword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.iPBxShowHidePasword.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iPBxShowHidePasword.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.iPBxShowHidePasword.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iPBxShowHidePasword.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iPBxShowHidePasword.IconSize = 25;
+            this.iPBxShowHidePasword.Location = new System.Drawing.Point(883, 31);
+            this.iPBxShowHidePasword.Margin = new System.Windows.Forms.Padding(2);
+            this.iPBxShowHidePasword.Name = "iPBxShowHidePasword";
+            this.iPBxShowHidePasword.Size = new System.Drawing.Size(29, 25);
+            this.iPBxShowHidePasword.TabIndex = 16;
+            this.iPBxShowHidePasword.TabStop = false;
+            this.iPBxShowHidePasword.Click += new System.EventHandler(this.iPBxShowHidePasword_Click);
             // 
             // labelPasword
             // 
@@ -313,39 +337,6 @@ namespace ChinChin
             // 
             this.taiKhoanTableAdapter1.ClearBeforeFill = true;
             // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(1345, 9);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(46, 48);
-            this.btnExit.TabIndex = 8;
-            this.btnExit.TabStop = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // iPBxShowHidePasword
-            // 
-            this.iPBxShowHidePasword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iPBxShowHidePasword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.iPBxShowHidePasword.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iPBxShowHidePasword.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.iPBxShowHidePasword.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iPBxShowHidePasword.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iPBxShowHidePasword.IconSize = 25;
-            this.iPBxShowHidePasword.Location = new System.Drawing.Point(805, 49);
-            this.iPBxShowHidePasword.Margin = new System.Windows.Forms.Padding(2);
-            this.iPBxShowHidePasword.Name = "iPBxShowHidePasword";
-            this.iPBxShowHidePasword.Size = new System.Drawing.Size(29, 25);
-            this.iPBxShowHidePasword.TabIndex = 16;
-            this.iPBxShowHidePasword.TabStop = false;
-            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,19 +357,18 @@ namespace ChinChin
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.taiKhoanDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.panelUsername.ResumeLayout(false);
             this.panelUsername.PerformLayout();
             this.panelPassword.ResumeLayout(false);
             this.panelPassword.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSetTaiKhoan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHidePasword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSetTaiKhoan)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtBxPassword;
         private System.Windows.Forms.Label lblSignIn;
         private System.Windows.Forms.CheckBox ckBxRememberSignIn;
         private System.Windows.Forms.Label labelPasword;
@@ -388,7 +378,6 @@ namespace ChinChin
         private Extra.BlackWhiteButton SignInButton;
         private System.Windows.Forms.Panel panelUsername;
         private System.Windows.Forms.Panel panelPassword;
-        private System.Windows.Forms.TextBox txtBxUsername;
         private System.Windows.Forms.Label labelUserName;
         private System.Windows.Forms.Label lblNoAccount;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -403,6 +392,8 @@ namespace ChinChin
         private System.Windows.Forms.DataGridViewTextBoxColumn maNhanVienDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn uIModeDataGridViewTextBoxColumn;
         private FontAwesome.Sharp.IconPictureBox iPBxShowHidePasword;
+        private Custom.TextBox_Custom tbcUserName;
+        private Custom.TextBox_Custom tbcPassword;
     }
 }
 
