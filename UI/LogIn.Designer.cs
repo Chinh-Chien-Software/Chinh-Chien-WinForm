@@ -256,7 +256,7 @@ namespace ChinChin
             this.tbcUserName.Name = "tbcUserName";
             this.tbcUserName.Size = new System.Drawing.Size(271, 36);
             this.tbcUserName.TabIndex = 7;
-            this.tbcUserName.TextBox_Text = "";
+            this.tbcUserName.Text = "";
             // 
             // labelUserName
             // 
@@ -292,7 +292,7 @@ namespace ChinChin
             this.tbcPassword.Name = "tbcPassword";
             this.tbcPassword.Size = new System.Drawing.Size(271, 36);
             this.tbcPassword.TabIndex = 8;
-            this.tbcPassword.TextBox_Text = "";
+            this.tbcPassword.Text = "";
             // 
             // iPBxShowHidePasword
             // 
