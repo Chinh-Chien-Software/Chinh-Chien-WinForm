@@ -251,12 +251,13 @@ namespace ChinChin
             // 
             // tbcUserName
             // 
+            this.tbcUserName.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tbcUserName.ForeColor = System.Drawing.Color.White;
             this.tbcUserName.Location = new System.Drawing.Point(561, 38);
             this.tbcUserName.Name = "tbcUserName";
+            this.tbcUserName.PasswordChar = '\0';
             this.tbcUserName.Size = new System.Drawing.Size(271, 36);
             this.tbcUserName.TabIndex = 7;
-            this.tbcUserName.Text = "";
             // 
             // labelUserName
             // 
@@ -277,9 +278,9 @@ namespace ChinChin
             this.panelPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelPassword.BackColor = System.Drawing.Color.Transparent;
-            this.panelPassword.Controls.Add(this.tbcPassword);
             this.panelPassword.Controls.Add(this.iPBxShowHidePasword);
             this.panelPassword.Controls.Add(this.labelPasword);
+            this.panelPassword.Controls.Add(this.tbcPassword);
             this.panelPassword.Location = new System.Drawing.Point(0, 288);
             this.panelPassword.Name = "panelPassword";
             this.panelPassword.Size = new System.Drawing.Size(1400, 79);
@@ -287,29 +288,29 @@ namespace ChinChin
             // 
             // tbcPassword
             // 
+            this.tbcPassword.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tbcPassword.ForeColor = System.Drawing.Color.White;
             this.tbcPassword.Location = new System.Drawing.Point(563, 35);
             this.tbcPassword.Name = "tbcPassword";
+            this.tbcPassword.PasswordChar = '\0';
             this.tbcPassword.Size = new System.Drawing.Size(271, 36);
             this.tbcPassword.TabIndex = 8;
-            this.tbcPassword.Text = "";
             // 
             // iPBxShowHidePasword
             // 
             this.iPBxShowHidePasword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iPBxShowHidePasword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.iPBxShowHidePasword.BackColor = System.Drawing.Color.White;
             this.iPBxShowHidePasword.ForeColor = System.Drawing.SystemColors.ControlText;
             this.iPBxShowHidePasword.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.iPBxShowHidePasword.IconColor = System.Drawing.SystemColors.ControlText;
             this.iPBxShowHidePasword.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iPBxShowHidePasword.IconSize = 25;
-            this.iPBxShowHidePasword.Location = new System.Drawing.Point(883, 31);
+            this.iPBxShowHidePasword.Location = new System.Drawing.Point(805, 44);
             this.iPBxShowHidePasword.Margin = new System.Windows.Forms.Padding(2);
             this.iPBxShowHidePasword.Name = "iPBxShowHidePasword";
             this.iPBxShowHidePasword.Size = new System.Drawing.Size(29, 25);
             this.iPBxShowHidePasword.TabIndex = 16;
             this.iPBxShowHidePasword.TabStop = false;
-            this.iPBxShowHidePasword.Click += new System.EventHandler(this.iPBxShowHidePasword_Click);
             // 
             // labelPasword
             // 
