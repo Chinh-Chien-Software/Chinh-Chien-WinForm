@@ -50,9 +50,9 @@ namespace ChinChin
             this.tbcUserName = new ChinChin.Custom.TextBox_Custom();
             this.labelUserName = new System.Windows.Forms.Label();
             this.panelPassword = new System.Windows.Forms.Panel();
-            this.tbcPassword = new ChinChin.Custom.TextBox_Custom();
             this.iPBxShowHidePasword = new FontAwesome.Sharp.IconPictureBox();
             this.labelPasword = new System.Windows.Forms.Label();
+            this.tbcPassword = new ChinChin.Custom.TextBox_Custom();
             this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan();
             this.taiKhoanTableAdapter = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter();
             this.taiKhoanTableAdapter1 = new ChinChin.DataSets.TaiKhoanDataSetTableAdapters.TaiKhoanTableAdapter();
@@ -286,16 +286,6 @@ namespace ChinChin
             this.panelPassword.Size = new System.Drawing.Size(1400, 79);
             this.panelPassword.TabIndex = 12;
             // 
-            // tbcPassword
-            // 
-            this.tbcPassword.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.tbcPassword.ForeColor = System.Drawing.Color.White;
-            this.tbcPassword.Location = new System.Drawing.Point(563, 35);
-            this.tbcPassword.Name = "tbcPassword";
-            this.tbcPassword.PasswordChar = '\0';
-            this.tbcPassword.Size = new System.Drawing.Size(271, 36);
-            this.tbcPassword.TabIndex = 8;
-            // 
             // iPBxShowHidePasword
             // 
             this.iPBxShowHidePasword.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -325,6 +315,16 @@ namespace ChinChin
             this.labelPasword.TabIndex = 7;
             this.labelPasword.Text = "Mật khẩu";
             // 
+            // tbcPassword
+            // 
+            this.tbcPassword.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tbcPassword.ForeColor = System.Drawing.Color.White;
+            this.tbcPassword.Location = new System.Drawing.Point(563, 35);
+            this.tbcPassword.Name = "tbcPassword";
+            this.tbcPassword.PasswordChar = '\0';
+            this.tbcPassword.Size = new System.Drawing.Size(271, 36);
+            this.tbcPassword.TabIndex = 8;
+            // 
             // quanLyQuanTraSuaDataSetTaiKhoan
             // 
             this.quanLyQuanTraSuaDataSetTaiKhoan.DataSetName = "QuanLyQuanTraSuaDataSetTaiKhoan";
@@ -351,7 +351,6 @@ namespace ChinChin
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.SignIn_Load);
             this.panelBackground.ResumeLayout(false);
             this.panelBackground.PerformLayout();

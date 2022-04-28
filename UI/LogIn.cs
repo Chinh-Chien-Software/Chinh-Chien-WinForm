@@ -38,9 +38,14 @@ namespace ChinChin
         {
             InitializeComponent();
             labelThongBao.Text = "";
-            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
-            this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.None;
+
+            // Làm cửa sổ Full màn hình - Disable with #85 - https://gitlab.com/chinh-chien/ChinhChien/-/issues/85
+            //this.WindowState = FormWindowState.Maximized;
+
+            // Cho cửa sổ có kích thước vừa đẹp với màn hình làm việc
+            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+
             //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
@@ -98,7 +103,6 @@ namespace ChinChin
                 tbcPassword.Focus();
             }
         }
-
         private void txtBxPassword_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
