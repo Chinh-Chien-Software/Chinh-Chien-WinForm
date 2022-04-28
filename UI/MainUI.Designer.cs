@@ -96,6 +96,7 @@
             this.panelTittleBar.Name = "panelTittleBar";
             this.panelTittleBar.Size = new System.Drawing.Size(977, 70);
             this.panelTittleBar.TabIndex = 16;
+            this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown);
             // 
             // pnlTaiKhoanVaButtons
             // 
