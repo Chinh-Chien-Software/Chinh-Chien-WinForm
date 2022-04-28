@@ -46,8 +46,8 @@ namespace ChinChin
 
         private void CheckUserPassAndSignIn()
         {
-            username = txtBxUsername.Text;
-            password = txtBxPassword.Text;
+            username = tbcUserName.Text;
+            password = tbcPassword.Text;
 
             /*
             formChuQuan ChuQuan = new formChuQuan();
@@ -95,7 +95,7 @@ namespace ChinChin
         {
             if (e.KeyCode == Keys.Enter)
             {
-                txtBxPassword.Focus();
+                tbcPassword.Focus();
             }
         }
 
@@ -158,11 +158,9 @@ namespace ChinChin
 
         }
 
-        private void panelPassword_Click(object sender, EventArgs e)
+        private void iPBxShowHidePasword_Click(object sender, EventArgs e)
         {
 
         }
     }
 }
-
-        
