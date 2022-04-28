@@ -38,13 +38,14 @@ namespace ChinChin
         {
             InitializeComponent();
             labelThongBao.Text = "";
+            this.FormBorderStyle = FormBorderStyle.None;
 
             // Làm cửa sổ Full màn hình - Disable with #85 - https://gitlab.com/chinh-chien/ChinhChien/-/issues/85
             //this.WindowState = FormWindowState.Maximized;
-            //Dòng dưới và dòng trên có chức năng giống nhau
+
+            // Cho cửa sổ có kích thước vừa đẹp với màn hình làm việc
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
 
-            this.FormBorderStyle = FormBorderStyle.None;
             //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
