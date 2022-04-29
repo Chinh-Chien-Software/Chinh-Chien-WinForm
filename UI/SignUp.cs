@@ -39,7 +39,7 @@ namespace ChinChin.UI
 
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            ChinChin.Database.WorkingDatabase.CreateAccount(tbcUsername.TB_Text, tbcPassword.TB_Text, "", "", 0);
+            ChinChin.Database.WorkingDatabase.CreateAccount(tbcUsername.TB_Text, tbcPassword.TB_Text, "", 1);
         }
     }
 }

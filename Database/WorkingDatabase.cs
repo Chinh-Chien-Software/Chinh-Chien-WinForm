@@ -29,10 +29,10 @@ namespace ChinChin.Database
         {
         }
 
-        public static void CreateAccount(string TenTaiKhoan, string MatKhau, string LoaiTaiKhoan, string MaNhanVien, int UIMode)
+        public static void CreateAccount(string TenTaiKhoan, string MatKhau, string LoaiTaiKhoan, int UIMode)
         {
             con.Open();
-            string sqlCreateAccount = "EXEC CreateAccount('"+ TenTaiKhoan +"', '"+ MatKhau +"', '" + LoaiTaiKhoan + "', '"+ MaNhanVien + "', '"+ UIMode + "')";
+            string sqlCreateAccount = "EXEC CreateAccount '"+ TenTaiKhoan +"', '"+ MatKhau +"', '" + LoaiTaiKhoan +"', '"+ UIMode +"'";
             cmd = new SqlCommand(sqlCreateAccount, con);
             cmd.ExecuteNonQuery();
             con.Close();
