@@ -26,8 +26,8 @@ namespace ChinChin.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source = 20.211.185.211,1433; Initial Catalog = ChinhChien; User ID=ChinhChi" +
-            "en ; Password = 123")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source = 20.211.185.211,1433; Initial Catalog = ChinhChienVPS; User ID = Chi" +
+            "nhChien; Password = 123")]
         public string ChinhChienConnectionString {
             get {
                 return ((string)(this["ChinhChienConnectionString"]));
