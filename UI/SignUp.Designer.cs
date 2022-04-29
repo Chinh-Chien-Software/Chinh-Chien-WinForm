@@ -260,7 +260,7 @@
             this.iPBxShowHideRewritePasword.IconColor = System.Drawing.SystemColors.ControlText;
             this.iPBxShowHideRewritePasword.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iPBxShowHideRewritePasword.IconSize = 25;
-            this.iPBxShowHideRewritePasword.Location = new System.Drawing.Point(503, 45);
+            this.iPBxShowHideRewritePasword.Location = new System.Drawing.Point(503, 44);
             this.iPBxShowHideRewritePasword.Margin = new System.Windows.Forms.Padding(2);
             this.iPBxShowHideRewritePasword.Name = "iPBxShowHideRewritePasword";
             this.iPBxShowHideRewritePasword.Size = new System.Drawing.Size(29, 25);
@@ -307,6 +307,7 @@
             this.SignInButton.Text = "ĐĂNG KÝ";
             this.SignInButton.TextColor = System.Drawing.Color.White;
             this.SignInButton.UseVisualStyleBackColor = false;
+            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
             // 
             // tbcUsername
             // 

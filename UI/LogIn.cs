@@ -40,9 +40,6 @@ namespace ChinChin
             labelThongBao.Text = "";
             this.FormBorderStyle = FormBorderStyle.None;
 
-            // Làm cửa sổ Full màn hình - Disable with #85 - https://gitlab.com/chinh-chien/ChinhChien/-/issues/85
-            //this.WindowState = FormWindowState.Maximized;
-
             // Cho cửa sổ có kích thước vừa đẹp với màn hình làm việc
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
 
@@ -51,8 +48,8 @@ namespace ChinChin
 
         private void CheckUserPassAndSignIn()
         {
-            username = tbcUserName.Text;
-            password = tbcPassword.Text;
+            username = tbcUserName.TB_Text;
+            password = tbcPassword.TB_Text;
 
             /*
             formChuQuan ChuQuan = new formChuQuan();
@@ -110,7 +107,6 @@ namespace ChinChin
                 CheckUserPassAndSignIn();
             }
         }
-
         private void txtBxUsername_Enter(object sender, EventArgs e)
         {
             labelThongBao.Visible = false;
@@ -145,6 +141,7 @@ namespace ChinChin
         {
             SignUp SignUp = new SignUp();
             SignUp.Show();
+            this.Hide();
         }
 
         private void labelNoAccount_MouseHover(object sender, EventArgs e)
@@ -157,7 +154,62 @@ namespace ChinChin
             lblNoAccount.Font = new Font("Inter", 12, FontStyle.Bold);
         }
 
-        private void iconPictureBox1_Click(object sender, EventArgs e)
+        private void panelBackground_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void taiKhoanBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSignIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelThongBao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ckBxRememberSignIn_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelUsername_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelUserName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelPassword_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iPBxShowHidePasword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelPasword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbcUserName_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbcPassword_Load(object sender, EventArgs e)
         {
 
         }
