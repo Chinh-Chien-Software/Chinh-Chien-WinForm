@@ -399,3 +399,4 @@ FodyWeavers.xsd
 bin/Debug/
 
 obj/
+/Properties/Settings.Designer.cs
