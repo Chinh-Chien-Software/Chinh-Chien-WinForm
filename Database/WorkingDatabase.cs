@@ -9,21 +9,33 @@ namespace ChinChin.Database
 {
     public class WorkingDatabase
     {
+        static string connString = Properties.Settings.Default.ChinhChienConnectionString;
+        static SqlConnection con = new SqlConnection(connString);
+        static SqlCommand cmd;
+
         public static bool CheckLocalDatabase()
         {
-            var connString = Properties.Settings.Default.ChinhChienConnectionString;
             // Tìm thử xem có tài khoản nào chuquan nào không..
-            var cmdText = "select count(*) from ChinhChien.dbo.TaiKhoan where LoaiTaiKhoan='chuquan' ";
+            var sql = "select count(*) from ChinhChienVPS.dbo.TaiKhoan where LoaiTaiKhoan='chuquan' ";
 
-            SqlConnection con = new SqlConnection(connString);
             con.Open();
-            SqlCommand cmd = new SqlCommand(cmdText, con);
-            
-            return (Convert.ToInt32(cmd.ExecuteScalar()) > 0);
-        }
-        public void CreateLocalDatabase()
-        {
+            cmd = new SqlCommand(sql, con);
+            int i = Convert.ToInt32(cmd.ExecuteScalar());
+            con.Close();
 
+            return (i > 0);
+        }
+        public static void CreateLocalDatabase()
+        {
+        }
+
+        public static void CreateAccount(string TenTaiKhoan, string MatKhau, string LoaiTaiKhoan, string MaNhanVien, int UIMode)
+        {
+            con.Open();
+            string sqlCreateAccount = "EXEC CreateAccount('"+ TenTaiKhoan +"', '"+ MatKhau +"', '" + LoaiTaiKhoan + "', '"+ MaNhanVien + "', '"+ UIMode + "')";
+            cmd = new SqlCommand(sqlCreateAccount, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
     }
 }
