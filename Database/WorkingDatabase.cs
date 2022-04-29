@@ -13,7 +13,7 @@ namespace ChinChin.Database
         {
             var connString = Properties.Settings.Default.ChinhChienConnectionString;
             // Tìm thử xem có tài khoản nào chuquan nào không..
-            var cmdText = "select count(*) from ChinhChien.dbo.TaiKhoan where LoaiTaiKhoan='chuquan' ";
+            var cmdText = "select count(*) from TaiKhoan where LoaiTaiKhoan='chuquan' ";
 
             SqlConnection con = new SqlConnection(connString);
             con.Open();
