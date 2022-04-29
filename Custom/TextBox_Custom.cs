@@ -16,7 +16,7 @@ namespace ChinChin.Custom
         {
             InitializeComponent();
         }
-        public string Text
+        public string TB_Text
         {
             get { return textBox.Text; }
             set { textBox.Text = value; }
