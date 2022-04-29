@@ -20,11 +20,6 @@ namespace ChinChin.UI
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SignUp_Load(object sender, EventArgs e)
         {
 
