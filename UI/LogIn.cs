@@ -22,6 +22,12 @@ namespace ChinChin
 {
     public partial class LogIn : Form
     {
+        SqlConnection conn;
+        string connStr = Properties.Settings.Default.ChinhChienConnectionString;
+        SqlDataAdapter adapter;
+        DataSet dsTaiKhoan = new DataSet();
+        string strSqlTaiKhoan = "SELECT * FROM TaiKhoan";
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -126,7 +132,16 @@ namespace ChinChin
                 //String[] instances = (String[])rk.GetValue("InstalledInstances");
 
                 // TODO: This line of code loads data into the 'taiKhoanDataSet.TaiKhoan' table. You can move, or remove it, as needed.
-                this.taiKhoanTableAdapter1.Fill(this.taiKhoanDataSet.TaiKhoan);
+                //this.taiKhoanTableAdapter1.Fill(this.taiKhoanDataSet.TaiKhoan);
+                conn = new SqlConnection(connStr);
+
+                if (conn.State == ConnectionState.Closed)
+                {
+                    conn.Open();
+                }
+                adapter = new SqlDataAdapter(strSqlTaiKhoan, conn);
+                adapter.Fill(dsTaiKhoan, "TAIKHOAN");
+                dgvTaiKhoan.DataSource = dsTaiKhoan.Tables[0];
                 // TODO: This line of code loads data into the 'quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan' table. You can move, or remove it, as needed.
                 // this.taiKhoanTableAdapter.Fill(this.quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan);
                 // khong chay duoc tren may tinh khac ngoai` Khoi.
