@@ -44,21 +44,12 @@ namespace ChinChin
 
             // Cho cửa sổ có kích thước vừa đẹp với màn hình làm việc
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
-
-            //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
         private void CheckUserPassAndSignIn()
         {
             username = tbcUserName.TB_Text;
             password = tbcPassword.TB_Text;
-
-            /*
-            formChuQuan ChuQuan = new formChuQuan();
-            QuanLy QuanLy = new QuanLy();
-            NhanVienThuNgan NhanVienThuNgan = new NhanVienThuNgan();
-            NhanVienPhaChe Barista = new NhanVienPhaChe();
-            */
 
             string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan = '" + username + "' AND MatKhau = '" + password + "'";
             DataTable TaiKhoan = new DataTable();
@@ -67,8 +58,8 @@ namespace ChinChin
             // Điều kiện Kiểm tra LoaiTaiKhoan
             if (TaiKhoan.Rows.Count == 1)
             {
-                MainUI MainUIcq = new MainUI(TaiKhoan.Rows[0][1].ToString(), TaiKhoan.Rows[0][2].ToString());
-                MainUIcq.Show();
+                MainUI MainUI = new MainUI(TaiKhoan.Rows[0][1].ToString());
+                MainUI.Show();
                 this.Hide();
             }
             else
@@ -124,11 +115,6 @@ namespace ChinChin
             // Kiểm Tra Database
             if (Database.WorkingDatabase.CheckLocalDatabase())
             {
-                //RegistryKey rk = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Microsoft SQL Server");
-                //String[] instances = (String[])rk.GetValue("InstalledInstances");
-
-                // TODO: This line of code loads data into the 'taiKhoanDataSet.TaiKhoan' table. You can move, or remove it, as needed.
-                //this.taiKhoanTableAdapter1.Fill(this.taiKhoanDataSet.TaiKhoan);
                 conn = new SqlConnection(connStr);
 
                 if (conn.State == ConnectionState.Closed)
@@ -138,9 +124,6 @@ namespace ChinChin
                 adapter = new SqlDataAdapter(strSqlTaiKhoan, conn);
                 adapter.Fill(dsTaiKhoan, "TAIKHOAN");
                 dgvTaiKhoan.DataSource = dsTaiKhoan.Tables[0];
-                // TODO: This line of code loads data into the 'quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan' table. You can move, or remove it, as needed.
-                // this.taiKhoanTableAdapter.Fill(this.quanLyQuanTraSuaDataSetTaiKhoan.TaiKhoan);
-                // khong chay duoc tren may tinh khac ngoai` Khoi.
             }
             else
             {
@@ -175,32 +158,12 @@ namespace ChinChin
 
         }
 
-        private void lblSignIn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void labelThongBao_Click(object sender, EventArgs e)
         {
 
         }
 
         private void ckBxRememberSignIn_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelUsername_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void labelUserName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelPassword_Paint(object sender, PaintEventArgs e)
         {
 
         }
