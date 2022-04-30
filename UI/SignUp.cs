@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FontAwesome.Sharp;
 
 namespace ChinChin.UI
 {
@@ -40,6 +41,34 @@ namespace ChinChin.UI
         private void SignInButton_Click(object sender, EventArgs e)
         {
             ChinChin.Database.WorkingDatabase.CreateAccount(tbcUsername.TB_Text, tbcPassword.TB_Text, "", 1);
+        }
+
+        private void iPBxShowHidePasword_Click(object sender, EventArgs e)
+        {
+            if (tbcPassword.PasswordChar == '\0')
+            {
+                tbcPassword.PasswordChar = '*';
+                iPBxShowHidePasword.IconChar = IconChar.Eye;
+            }
+            else
+            {
+                tbcPassword.PasswordChar = '\0';
+                iPBxShowHidePasword.IconChar = IconChar.EyeSlash;
+            }
+        }
+
+        private void iPBxShowHideRewritePasword_Click(object sender, EventArgs e)
+        {
+            if (tbcRewritePassword.PasswordChar == '\0')
+            {
+                tbcRewritePassword.PasswordChar = '*';
+                iPBxShowHideRewritePasword.IconChar = IconChar.Eye;
+            }
+            else
+            {
+                tbcRewritePassword.PasswordChar = '\0';
+                iPBxShowHideRewritePasword.IconChar = IconChar.EyeSlash;
+            }
         }
     }
 }

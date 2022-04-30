@@ -38,11 +38,11 @@
             this.panelUsername = new System.Windows.Forms.Panel();
             this.panelPassword = new System.Windows.Forms.Panel();
             this.panelBackground = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblRewritePassword = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.iPBxShowHideRewritePasword = new FontAwesome.Sharp.IconPictureBox();
+            this.lblRewritePassword = new System.Windows.Forms.Label();
             this.tbcEmal = new ChinChin.Custom.TextBox_Custom();
             this.tbcRewritePassword = new ChinChin.Custom.TextBox_Custom();
             this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
@@ -53,8 +53,8 @@
             this.panelUsername.SuspendLayout();
             this.panelPassword.SuspendLayout();
             this.panelBackground.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHideRewritePasword)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,6 +90,7 @@
             this.iPBxShowHidePasword.Size = new System.Drawing.Size(29, 25);
             this.iPBxShowHidePasword.TabIndex = 16;
             this.iPBxShowHidePasword.TabStop = false;
+            this.iPBxShowHidePasword.Click += new System.EventHandler(this.iPBxShowHidePasword_Click);
             // 
             // labelPasword
             // 
@@ -200,32 +201,6 @@
             this.panelBackground.Size = new System.Drawing.Size(800, 726);
             this.panelBackground.TabIndex = 11;
             // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.iPBxShowHideRewritePasword);
-            this.panel1.Controls.Add(this.lblRewritePassword);
-            this.panel1.Controls.Add(this.tbcRewritePassword);
-            this.panel1.Location = new System.Drawing.Point(0, 386);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 79);
-            this.panel1.TabIndex = 17;
-            // 
-            // lblRewritePassword
-            // 
-            this.lblRewritePassword.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblRewritePassword.AutoSize = true;
-            this.lblRewritePassword.BackColor = System.Drawing.Color.Transparent;
-            this.lblRewritePassword.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRewritePassword.Location = new System.Drawing.Point(257, -1);
-            this.lblRewritePassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRewritePassword.Name = "lblRewritePassword";
-            this.lblRewritePassword.Size = new System.Drawing.Size(238, 33);
-            this.lblRewritePassword.TabIndex = 7;
-            this.lblRewritePassword.Text = "Nhập lại mật khẩu";
-            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -251,6 +226,19 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Email";
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.iPBxShowHideRewritePasword);
+            this.panel1.Controls.Add(this.lblRewritePassword);
+            this.panel1.Controls.Add(this.tbcRewritePassword);
+            this.panel1.Location = new System.Drawing.Point(0, 386);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 79);
+            this.panel1.TabIndex = 17;
+            // 
             // iPBxShowHideRewritePasword
             // 
             this.iPBxShowHideRewritePasword.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -266,6 +254,20 @@
             this.iPBxShowHideRewritePasword.Size = new System.Drawing.Size(29, 25);
             this.iPBxShowHideRewritePasword.TabIndex = 17;
             this.iPBxShowHideRewritePasword.TabStop = false;
+            this.iPBxShowHideRewritePasword.Click += new System.EventHandler(this.iPBxShowHideRewritePasword_Click);
+            // 
+            // lblRewritePassword
+            // 
+            this.lblRewritePassword.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblRewritePassword.AutoSize = true;
+            this.lblRewritePassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblRewritePassword.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRewritePassword.Location = new System.Drawing.Point(257, -1);
+            this.lblRewritePassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRewritePassword.Name = "lblRewritePassword";
+            this.lblRewritePassword.Size = new System.Drawing.Size(238, 33);
+            this.lblRewritePassword.TabIndex = 7;
+            this.lblRewritePassword.Text = "Nhập lại mật khẩu";
             // 
             // tbcEmal
             // 
@@ -276,6 +278,7 @@
             this.tbcEmal.PasswordChar = '\0';
             this.tbcEmal.Size = new System.Drawing.Size(271, 36);
             this.tbcEmal.TabIndex = 8;
+            this.tbcEmal.TB_Text = "";
             // 
             // tbcRewritePassword
             // 
@@ -283,9 +286,10 @@
             this.tbcRewritePassword.ForeColor = System.Drawing.Color.White;
             this.tbcRewritePassword.Location = new System.Drawing.Point(263, 35);
             this.tbcRewritePassword.Name = "tbcRewritePassword";
-            this.tbcRewritePassword.PasswordChar = '\0';
+            this.tbcRewritePassword.PasswordChar = '*';
             this.tbcRewritePassword.Size = new System.Drawing.Size(271, 36);
             this.tbcRewritePassword.TabIndex = 8;
+            this.tbcRewritePassword.TB_Text = "";
             // 
             // SignInButton
             // 
@@ -318,6 +322,7 @@
             this.tbcUsername.PasswordChar = '\0';
             this.tbcUsername.Size = new System.Drawing.Size(271, 36);
             this.tbcUsername.TabIndex = 7;
+            this.tbcUsername.TB_Text = "";
             // 
             // tbcPassword
             // 
@@ -325,9 +330,10 @@
             this.tbcPassword.ForeColor = System.Drawing.Color.White;
             this.tbcPassword.Location = new System.Drawing.Point(263, 35);
             this.tbcPassword.Name = "tbcPassword";
-            this.tbcPassword.PasswordChar = '\0';
+            this.tbcPassword.PasswordChar = '*';
             this.tbcPassword.Size = new System.Drawing.Size(271, 36);
             this.tbcPassword.TabIndex = 8;
+            this.tbcPassword.TB_Text = "";
             // 
             // SignUp
             // 
@@ -349,10 +355,10 @@
             this.panelPassword.PerformLayout();
             this.panelBackground.ResumeLayout(false);
             this.panelBackground.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHideRewritePasword)).EndInit();
             this.ResumeLayout(false);
 
