@@ -11,10 +11,6 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Windows.Input;
 using System.Data.SqlClient;
-using ChinChin.FormsChuQuan;
-using ChinChin.FormsQuanLy;
-using ChinChin.Forms_NhanVien;
-using ChinChin.Extra;
 using ChinChin.Database;
 using ChinChin.UI;
 
@@ -211,7 +207,16 @@ namespace ChinChin
 
         private void iPBxShowHidePasword_Click(object sender, EventArgs e)
         {
-
+            if (tbcPassword.PasswordChar == '\0')
+            {
+                tbcPassword.PasswordChar = '*';
+                iPBxShowHidePasword.IconChar = IconChar.Eye;
+            }
+            else
+            {
+                tbcPassword.PasswordChar = '\0';
+                iPBxShowHidePasword.IconChar = IconChar.EyeSlash;
+            }
         }
 
         private void labelPasword_Click(object sender, EventArgs e)
