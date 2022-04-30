@@ -33,8 +33,6 @@ namespace ChinChin
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.panelBackground = new System.Windows.Forms.Panel();
             this.dgvTaiKhoan = new System.Windows.Forms.DataGridView();
-            this.taiKhoanBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.taiKhoanDataSet = new ChinChin.DataSets.TaiKhoanDataSet();
             this.lblNoAccount = new System.Windows.Forms.Label();
             this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
             this.labelThongBao = new System.Windows.Forms.Label();
@@ -48,17 +46,19 @@ namespace ChinChin
             this.iPBxShowHidePasword = new FontAwesome.Sharp.IconPictureBox();
             this.labelPasword = new System.Windows.Forms.Label();
             this.tbcPassword = new ChinChin.Custom.TextBox_Custom();
+            this.taiKhoanBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.taiKhoanDataSet = new ChinChin.DataSets.TaiKhoanDataSet();
             this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan();
             this.taiKhoanTableAdapter = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter();
             this.taiKhoanTableAdapter1 = new ChinChin.DataSets.TaiKhoanDataSetTableAdapters.TaiKhoanTableAdapter();
             this.panelBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTaiKhoan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panelUsername.SuspendLayout();
             this.panelPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHidePasword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSetTaiKhoan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,17 +88,6 @@ namespace ChinChin
             this.dgvTaiKhoan.Name = "dgvTaiKhoan";
             this.dgvTaiKhoan.Size = new System.Drawing.Size(349, 179);
             this.dgvTaiKhoan.TabIndex = 14;
-            // 
-            // taiKhoanBindingSource
-            // 
-            this.taiKhoanBindingSource.DataMember = "TaiKhoan";
-            this.taiKhoanBindingSource.DataSource = this.taiKhoanDataSet;
-            this.taiKhoanBindingSource.CurrentChanged += new System.EventHandler(this.taiKhoanBindingSource_CurrentChanged);
-            // 
-            // taiKhoanDataSet
-            // 
-            this.taiKhoanDataSet.DataSetName = "TaiKhoanDataSet";
-            this.taiKhoanDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lblNoAccount
             // 
@@ -290,11 +279,22 @@ namespace ChinChin
             this.tbcPassword.ForeColor = System.Drawing.Color.White;
             this.tbcPassword.Location = new System.Drawing.Point(430, 35);
             this.tbcPassword.Name = "tbcPassword";
-            this.tbcPassword.PasswordChar = '\0';
+            this.tbcPassword.PasswordChar = '*';
             this.tbcPassword.Size = new System.Drawing.Size(271, 36);
             this.tbcPassword.TabIndex = 8;
             this.tbcPassword.TB_Text = "";
             this.tbcPassword.Load += new System.EventHandler(this.tbcPassword_Load);
+            // 
+            // taiKhoanBindingSource
+            // 
+            this.taiKhoanBindingSource.DataMember = "TaiKhoan";
+            this.taiKhoanBindingSource.DataSource = this.taiKhoanDataSet;
+            this.taiKhoanBindingSource.CurrentChanged += new System.EventHandler(this.taiKhoanBindingSource_CurrentChanged);
+            // 
+            // taiKhoanDataSet
+            // 
+            this.taiKhoanDataSet.DataSetName = "TaiKhoanDataSet";
+            this.taiKhoanDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // quanLyQuanTraSuaDataSetTaiKhoan
             // 
@@ -326,14 +326,14 @@ namespace ChinChin
             this.panelBackground.ResumeLayout(false);
             this.panelBackground.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTaiKhoan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.panelUsername.ResumeLayout(false);
             this.panelUsername.PerformLayout();
             this.panelPassword.ResumeLayout(false);
             this.panelPassword.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHidePasword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taiKhoanDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSetTaiKhoan)).EndInit();
             this.ResumeLayout(false);
 

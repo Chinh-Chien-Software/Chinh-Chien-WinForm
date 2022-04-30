@@ -211,7 +211,16 @@ namespace ChinChin
 
         private void iPBxShowHidePasword_Click(object sender, EventArgs e)
         {
-
+            if (tbcPassword.PasswordChar == '\0')
+            {
+                tbcPassword.PasswordChar = '*';
+                iPBxShowHidePasword.IconChar = IconChar.Eye;
+            }
+            else
+            {
+                tbcPassword.PasswordChar = '\0';
+                iPBxShowHidePasword.IconChar = IconChar.EyeSlash;
+            }
         }
 
         private void labelPasword_Click(object sender, EventArgs e)
