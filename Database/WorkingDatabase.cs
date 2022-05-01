@@ -37,5 +37,23 @@ namespace ChinChin.Database
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        public static bool CheckUsername(string NewUsername)
+        {
+            con.Open();
+            string sqlCheckUsername = "SELECT COUNT(*) FROM TaiKhoan WHERE TenTaiKhoan = '" + NewUsername + "'";
+            cmd = new SqlCommand(sqlCheckUsername, con);
+            int Check = (int)cmd.ExecuteScalar();
+            con.Close();
+
+            if (Check == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

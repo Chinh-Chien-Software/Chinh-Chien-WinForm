@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using ChinChin.Database;
 
 namespace ChinChin.UI
 {
@@ -68,6 +69,21 @@ namespace ChinChin.UI
             {
                 tbcRewritePassword.PasswordChar = '\0';
                 iPBxShowHideRewritePasword.IconChar = IconChar.EyeSlash;
+            }
+        }
+
+        private void tbcUsername_TextChanged(object sender, EventArgs e)
+        {
+            bool KetQua = WorkingDatabase.CheckUsername(tbcUsername.TB_Text);
+            if (KetQua)
+            {
+                iPBCheckUsername.IconChar = IconChar.Check;
+                iPBCheckUsername.IconColor = Color.Yellow;
+            }
+            else
+            {
+                iPBCheckUsername.IconChar = IconChar.Times;
+                iPBCheckUsername.IconColor = Color.Red;
             }
         }
     }
