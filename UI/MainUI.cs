@@ -17,7 +17,8 @@ namespace ChinChin.UI
         public MainUI()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.None;
+            //this.FormBorderStyle = FormBorderStyle.None;
+            this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
         }
         string TenTaiKhoan;
         string LoaiTaiKhoan;
@@ -36,6 +37,7 @@ namespace ChinChin.UI
         }
         private void MainUI_Load(object sender, EventArgs e)
         {
+            
             ibtn1.Text = "THỐNG KÊ"; ibtn1.IconChar = IconChar.Dashcube;
             ibtn2.Text = "CHẤM CÔNG"; ibtn3.IconChar = IconChar.MoneyCheckAlt;
             ibtn3.Text = "NHẬN ĐƠN"; ibtn1.IconChar = IconChar.Receipt;
@@ -87,19 +89,8 @@ namespace ChinChin.UI
         private Form currentChildForm = null;
         private void ibtn1_Click(object sender, EventArgs e)
         {
-            if (LoaiTaiKhoan == "chuquan" || LoaiTaiKhoan == "quanly")
-            {
-                MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color1, iconCurrentChildForm);
-                MenuAnimation.OpenChildForm(new FormsChuQuan.FormThongKe(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
-            }
-            else if (LoaiTaiKhoan == "thungan")
-            {
-                ibtn1.Text = "NHẬN ĐƠN";
-            }
-            else if (LoaiTaiKhoan == "phache")
-            {
-                ibtn1.Text = "KHO QUẦY";
-            }
+            MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color1, iconCurrentChildForm);
+            MenuAnimation.OpenChildForm(new FormsChuQuan.FormThongKe(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 
         // Drag The Form - using System.Runtime.InteropServices;
@@ -116,15 +107,9 @@ namespace ChinChin.UI
         private void btnMaximize_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
-            {
-                this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
-                btnMaximize.IconChar = IconChar.WindowRestore;
-            }
+                WindowState = FormWindowState.Maximized;
             else
-            {
                 WindowState = FormWindowState.Normal;
-                btnMaximize.IconChar = IconChar.WindowMaximize;
-            }
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)

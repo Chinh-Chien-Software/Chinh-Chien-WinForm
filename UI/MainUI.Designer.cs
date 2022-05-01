@@ -31,6 +31,9 @@
             this.pnlChildForm = new System.Windows.Forms.Panel();
             this.pnlBorderOfForm = new System.Windows.Forms.Panel();
             this.panelLeftSidebar = new System.Windows.Forms.Panel();
+            this.ibtn7 = new FontAwesome.Sharp.IconButton();
+            this.ibtn6 = new FontAwesome.Sharp.IconButton();
+            this.ibtn5 = new FontAwesome.Sharp.IconButton();
             this.ibtn4 = new FontAwesome.Sharp.IconButton();
             this.ibtn3 = new FontAwesome.Sharp.IconButton();
             this.ibtn2 = new FontAwesome.Sharp.IconButton();
@@ -49,9 +52,6 @@
             this.btnMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
-            this.ibtn5 = new FontAwesome.Sharp.IconButton();
-            this.ibtn6 = new FontAwesome.Sharp.IconButton();
-            this.ibtn7 = new FontAwesome.Sharp.IconButton();
             this.pnlBorderOfForm.SuspendLayout();
             this.panelLeftSidebar.SuspendLayout();
             this.pnlQuan.SuspendLayout();
@@ -105,6 +105,69 @@
             this.panelLeftSidebar.Name = "panelLeftSidebar";
             this.panelLeftSidebar.Size = new System.Drawing.Size(376, 797);
             this.panelLeftSidebar.TabIndex = 17;
+            // 
+            // ibtn7
+            // 
+            this.ibtn7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtn7.FlatAppearance.BorderSize = 0;
+            this.ibtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtn7.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtn7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtn7.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtn7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtn7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtn7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtn7.Location = new System.Drawing.Point(0, 671);
+            this.ibtn7.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtn7.Name = "ibtn7";
+            this.ibtn7.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtn7.Size = new System.Drawing.Size(376, 102);
+            this.ibtn7.TabIndex = 13;
+            this.ibtn7.Text = "Nút 7";
+            this.ibtn7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtn7.UseVisualStyleBackColor = true;
+            // 
+            // ibtn6
+            // 
+            this.ibtn6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtn6.FlatAppearance.BorderSize = 0;
+            this.ibtn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtn6.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtn6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtn6.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtn6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtn6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtn6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtn6.Location = new System.Drawing.Point(0, 569);
+            this.ibtn6.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtn6.Name = "ibtn6";
+            this.ibtn6.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtn6.Size = new System.Drawing.Size(376, 102);
+            this.ibtn6.TabIndex = 12;
+            this.ibtn6.Text = "Nút 6";
+            this.ibtn6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtn6.UseVisualStyleBackColor = true;
+            // 
+            // ibtn5
+            // 
+            this.ibtn5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtn5.FlatAppearance.BorderSize = 0;
+            this.ibtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtn5.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtn5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtn5.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtn5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtn5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtn5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtn5.Location = new System.Drawing.Point(0, 467);
+            this.ibtn5.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtn5.Name = "ibtn5";
+            this.ibtn5.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtn5.Size = new System.Drawing.Size(376, 102);
+            this.ibtn5.TabIndex = 11;
+            this.ibtn5.Text = "Nút 5";
+            this.ibtn5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtn5.UseVisualStyleBackColor = true;
             // 
             // ibtn4
             // 
@@ -367,79 +430,17 @@
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // ibtn5
-            // 
-            this.ibtn5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn5.FlatAppearance.BorderSize = 0;
-            this.ibtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn5.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn5.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.ibtn5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn5.Location = new System.Drawing.Point(0, 467);
-            this.ibtn5.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn5.Name = "ibtn5";
-            this.ibtn5.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn5.Size = new System.Drawing.Size(376, 102);
-            this.ibtn5.TabIndex = 11;
-            this.ibtn5.Text = "Nút 5";
-            this.ibtn5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn5.UseVisualStyleBackColor = true;
-            // 
-            // ibtn6
-            // 
-            this.ibtn6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn6.FlatAppearance.BorderSize = 0;
-            this.ibtn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn6.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn6.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.ibtn6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn6.Location = new System.Drawing.Point(0, 569);
-            this.ibtn6.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn6.Name = "ibtn6";
-            this.ibtn6.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn6.Size = new System.Drawing.Size(376, 102);
-            this.ibtn6.TabIndex = 12;
-            this.ibtn6.Text = "Nút 6";
-            this.ibtn6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn6.UseVisualStyleBackColor = true;
-            // 
-            // ibtn7
-            // 
-            this.ibtn7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn7.FlatAppearance.BorderSize = 0;
-            this.ibtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn7.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn7.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.ibtn7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn7.Location = new System.Drawing.Point(0, 671);
-            this.ibtn7.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn7.Name = "ibtn7";
-            this.ibtn7.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn7.Size = new System.Drawing.Size(376, 102);
-            this.ibtn7.TabIndex = 13;
-            this.ibtn7.Text = "Nút 7";
-            this.ibtn7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn7.UseVisualStyleBackColor = true;
-            // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 869);
             this.Controls.Add(this.pnlBorderOfForm);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainUI";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainUI_Load);
             this.pnlBorderOfForm.ResumeLayout(false);
             this.panelLeftSidebar.ResumeLayout(false);
