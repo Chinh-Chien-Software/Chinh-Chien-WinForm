@@ -26,5 +26,15 @@ namespace ChinChin.Custom
             get { return textBox.PasswordChar; }
             set { textBox.PasswordChar = value; }
         }
+
+        [Browsable(true)] [Category("Action")]
+        [Description("Invoked when user clicks button")]
+        public event EventHandler TextChanged;
+
+        private void textBox_TextChanged(object sender, EventArgs e)
+        {
+            if (this.TextChanged != null)
+                this.TextChanged(this, e);
+        }
     }
 }
