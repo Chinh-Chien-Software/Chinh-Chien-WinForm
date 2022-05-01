@@ -11,21 +11,21 @@ using ChinChin.Database;
 
 namespace ChinChin.UI
 {
-    public partial class ThongTinTaiKhoan : Form
+    public partial class ThongTinNhanVien : Form
     {
-        public ThongTinTaiKhoan()
+        public ThongTinNhanVien()
         {
             InitializeComponent();
         }
         public string TenTaiKhoan;
-        public ThongTinTaiKhoan(string TenTaiKhoan) : this()
+        public ThongTinNhanVien(string TenTaiKhoan) : this()
         {
             // Viết hàm khởi tạo này để mang theo dữ liệu khi chạy Form MainUI
             this.TenTaiKhoan = TenTaiKhoan;
         }
         private void ThongTinTaiKhoan_Load(object sender, EventArgs e)
         {
-            string sqlcode = "SELECT nv.MaNhanVien, nv.TenNhanVien, nv.GioiTinh, nv.LoaiNhanVien, nv.NgayVaoLam, nv.LuongTrenGio, nv.NgaySinh, nv.DiaChi, nv.SoDienThoai FROM TaiKhoan tk, NhanVien nv WHERE tk.TenTaiKhoan = '"+TenTaiKhoan+"' and tk.MaNhanVien = nv.MaNhanVien";
+            string sqlcode = "SELECT nv.MaNhanVien, nv.TenNhanVien, nv.GioiTinh,  nv.NgayVaoLam, nv.LuongTrenGio, nv.NgaySinh, nv.DiaChi, nv.SoDienThoai FROM TaiKhoan tk, NhanVien nv WHERE tk.TenTaiKhoan = '"+TenTaiKhoan+"' and tk.MaNhanVien = nv.MaNhanVien";
             DataTable TaiKhoan = new DataTable();
             TaiKhoan = DataProvider.LoadDatabase(sqlcode);
 
