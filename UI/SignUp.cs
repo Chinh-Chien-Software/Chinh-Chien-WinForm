@@ -87,5 +87,15 @@ namespace ChinChin.UI
                 iPBCheckUsername.IconColor = Color.Red;
             }
         }
+
+        private void lblYesAccount_MouseHover(object sender, EventArgs e)
+        {
+            lblYesAccount.Font = new Font("Inter", 12, ((FontStyle)((FontStyle.Bold | FontStyle.Underline))));
+        }
+
+        private void lblYesAccount_MouseLeave(object sender, EventArgs e)
+        {
+            lblYesAccount.Font = new Font("Inter", 12, FontStyle.Bold);
+        }
     }
 }
