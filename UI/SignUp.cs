@@ -77,8 +77,9 @@ namespace ChinChin.UI
             bool KetQua = WorkingDatabase.CheckUsername(tbcUsername.TB_Text);
             if (KetQua)
             {
+                iPBCheckUsername.Visible = true;
                 iPBCheckUsername.IconChar = IconChar.Check;
-                iPBCheckUsername.IconColor = Color.Yellow;
+                iPBCheckUsername.IconColor = Color.FromArgb(80, 108, 247);
             }
             else
             {

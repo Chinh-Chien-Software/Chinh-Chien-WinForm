@@ -36,6 +36,7 @@
             this.lblThongBao = new System.Windows.Forms.Label();
             this.lblSignIn = new System.Windows.Forms.Label();
             this.panelUsername = new System.Windows.Forms.Panel();
+            this.iPBCheckUsername = new FontAwesome.Sharp.IconPictureBox();
             this.tbcUsername = new ChinChin.Custom.TextBox_Custom();
             this.panelPassword = new System.Windows.Forms.Panel();
             this.tbcPassword = new ChinChin.Custom.TextBox_Custom();
@@ -48,16 +49,15 @@
             this.lblRewritePassword = new System.Windows.Forms.Label();
             this.tbcRewritePassword = new ChinChin.Custom.TextBox_Custom();
             this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
-            this.iPBCheckUsername = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHidePasword)).BeginInit();
             this.panelUsername.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iPBCheckUsername)).BeginInit();
             this.panelPassword.SuspendLayout();
             this.panelBackground.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHideRewritePasword)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iPBCheckUsername)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -173,6 +173,23 @@
             this.panelUsername.Name = "panelUsername";
             this.panelUsername.Size = new System.Drawing.Size(798, 74);
             this.panelUsername.TabIndex = 11;
+            // 
+            // iPBCheckUsername
+            // 
+            this.iPBCheckUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iPBCheckUsername.BackColor = System.Drawing.Color.White;
+            this.iPBCheckUsername.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iPBCheckUsername.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.iPBCheckUsername.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iPBCheckUsername.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iPBCheckUsername.IconSize = 25;
+            this.iPBCheckUsername.Location = new System.Drawing.Point(502, 47);
+            this.iPBCheckUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.iPBCheckUsername.Name = "iPBCheckUsername";
+            this.iPBCheckUsername.Size = new System.Drawing.Size(29, 25);
+            this.iPBCheckUsername.TabIndex = 17;
+            this.iPBCheckUsername.TabStop = false;
+            this.iPBCheckUsername.Visible = false;
             // 
             // tbcUsername
             // 
@@ -339,22 +356,6 @@
             this.SignInButton.UseVisualStyleBackColor = false;
             this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
             // 
-            // iPBCheckUsername
-            // 
-            this.iPBCheckUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iPBCheckUsername.BackColor = System.Drawing.Color.White;
-            this.iPBCheckUsername.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iPBCheckUsername.IconChar = FontAwesome.Sharp.IconChar.Check;
-            this.iPBCheckUsername.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iPBCheckUsername.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iPBCheckUsername.IconSize = 25;
-            this.iPBCheckUsername.Location = new System.Drawing.Point(502, 47);
-            this.iPBCheckUsername.Margin = new System.Windows.Forms.Padding(2);
-            this.iPBCheckUsername.Name = "iPBCheckUsername";
-            this.iPBCheckUsername.Size = new System.Drawing.Size(29, 25);
-            this.iPBCheckUsername.TabIndex = 17;
-            this.iPBCheckUsername.TabStop = false;
-            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,6 +372,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHidePasword)).EndInit();
             this.panelUsername.ResumeLayout(false);
             this.panelUsername.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iPBCheckUsername)).EndInit();
             this.panelPassword.ResumeLayout(false);
             this.panelPassword.PerformLayout();
             this.panelBackground.ResumeLayout(false);
@@ -380,7 +382,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHideRewritePasword)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iPBCheckUsername)).EndInit();
             this.ResumeLayout(false);
 
         }
