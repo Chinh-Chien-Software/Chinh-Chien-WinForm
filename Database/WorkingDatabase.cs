@@ -16,7 +16,7 @@ namespace ChinChin.Database
         public static bool CheckLocalDatabase()
         {
             // Tìm thử xem có tài khoản nào chuquan nào không..
-            var sql = "select count(*) from TaiKhoan where LoaiTaiKhoan='chuquan' ";
+            var sql = "select count(*) from TaiKhoan";
 
             con.Open();
             cmd = new SqlCommand(sql, con);

@@ -171,7 +171,6 @@ namespace ChinChin
             this.lblSignIn.TabIndex = 3;
             this.lblSignIn.Text = "Đăng nhập";
             this.lblSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSignIn.Click += new System.EventHandler(this.lblSignIn_Click);
             // 
             // ckBxRememberSignIn
             // 
@@ -199,7 +198,6 @@ namespace ChinChin
             this.panelUsername.Name = "panelUsername";
             this.panelUsername.Size = new System.Drawing.Size(1132, 74);
             this.panelUsername.TabIndex = 11;
-            this.panelUsername.Paint += new System.Windows.Forms.PaintEventHandler(this.panelUsername_Paint);
             // 
             // tbcUserName
             // 
@@ -226,7 +224,6 @@ namespace ChinChin
             this.labelUserName.TabIndex = 6;
             this.labelUserName.Text = "Tài khoản";
             this.labelUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelUserName.Click += new System.EventHandler(this.labelUserName_Click);
             // 
             // panelPassword
             // 
@@ -240,7 +237,6 @@ namespace ChinChin
             this.panelPassword.Name = "panelPassword";
             this.panelPassword.Size = new System.Drawing.Size(1134, 79);
             this.panelPassword.TabIndex = 12;
-            this.panelPassword.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPassword_Paint);
             // 
             // iPBxShowHidePasword
             // 
@@ -271,7 +267,6 @@ namespace ChinChin
             this.labelPasword.Size = new System.Drawing.Size(128, 33);
             this.labelPasword.TabIndex = 7;
             this.labelPasword.Text = "Mật khẩu";
-            this.labelPasword.Click += new System.EventHandler(this.labelPasword_Click);
             // 
             // tbcPassword
             // 
@@ -283,7 +278,6 @@ namespace ChinChin
             this.tbcPassword.Size = new System.Drawing.Size(271, 36);
             this.tbcPassword.TabIndex = 8;
             this.tbcPassword.TB_Text = "";
-            this.tbcPassword.Load += new System.EventHandler(this.tbcPassword_Load);
             // 
             // taiKhoanBindingSource
             // 
