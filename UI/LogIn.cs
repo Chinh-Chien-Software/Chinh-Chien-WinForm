@@ -14,7 +14,7 @@ using System.Data.SqlClient;
 using ChinChin.Database;
 using ChinChin.UI;
 
-namespace ChinChin
+namespace ChinChin.UI
 {
     public partial class LogIn : Form
     {

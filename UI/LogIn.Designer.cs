@@ -1,5 +1,5 @@
 ﻿
-namespace ChinChin
+namespace ChinChin.UI
 {
     partial class LogIn
     {

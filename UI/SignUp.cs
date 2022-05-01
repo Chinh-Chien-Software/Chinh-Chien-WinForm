@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using ChinChin.Database;
+using ChinChin.UI;
 
 namespace ChinChin.UI
 {
@@ -41,7 +42,13 @@ namespace ChinChin.UI
 
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            ChinChin.Database.WorkingDatabase.CreateAccount(tbcUsername.TB_Text, tbcPassword.TB_Text, "", 1);
+            WorkingDatabase.CreateAccount(tbcUsername.TB_Text, tbcPassword.TB_Text, "", 1);
+            if (WorkingDatabase.CheckUsername(tbcUsername.TB_Text) == false)
+            {
+                MainUI MainUI = new MainUI();
+                MainUI.Show();
+                this.Hide();
+            }
         }
 
         private void iPBxShowHidePasword_Click(object sender, EventArgs e)
