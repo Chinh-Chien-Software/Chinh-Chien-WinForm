@@ -25,7 +25,7 @@ namespace ChinChin.UI
         }
         private void ThongTinTaiKhoan_Load(object sender, EventArgs e)
         {
-            string sqlcode = "SELECT nv.MaNhanVien, nv.TenNhanVien, nv.GioiTinh, nv.LoaiNhanVien, nv.NgayVaoLam, nv.LuongTrenGio, nv.NgaySinh, nv.DiaChi, nv.SoDienThoai FROM TaiKhoan tk, NhanVien nv WHERE tk.TenTaiKhoan = '"+TenTaiKhoan+"' and tk.MaNhanVien = nv.MaNhanVien";
+            string sqlcode = "SELECT nv.MaNhanVien, nv.TenNhanVien, nv.GioiTinh,  nv.NgayVaoLam, nv.LuongTrenGio, nv.NgaySinh, nv.DiaChi, nv.SoDienThoai FROM TaiKhoan tk, NhanVien nv WHERE tk.TenTaiKhoan = '"+TenTaiKhoan+"' and tk.MaNhanVien = nv.MaNhanVien";
             DataTable TaiKhoan = new DataTable();
             TaiKhoan = DataProvider.LoadDatabase(sqlcode);
 
