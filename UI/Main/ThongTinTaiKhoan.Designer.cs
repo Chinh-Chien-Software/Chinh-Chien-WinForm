@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -38,24 +37,14 @@
             this.tbNgaySinh = new System.Windows.Forms.TextBox();
             this.tbDiaChi = new System.Windows.Forms.TextBox();
             this.tbSDT = new System.Windows.Forms.TextBox();
-            this.tbTenNhanVien = new System.Windows.Forms.TextBox();
             this.tbGioiTinh = new System.Windows.Forms.TextBox();
             this.pbAvatarNhanVien = new System.Windows.Forms.PictureBox();
             this.tbcUserName = new ChinChin.Custom.TextBox_Custom();
-            this.labelUserName = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox_Custom1 = new ChinChin.Custom.TextBox_Custom();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatarNhanVien)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-4, 286);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Họ tên:";
             // 
             // label3
             // 
@@ -149,16 +138,6 @@
             this.tbSDT.TabIndex = 3;
             this.tbSDT.Text = "tbSDT";
             // 
-            // tbTenNhanVien
-            // 
-            this.tbTenNhanVien.BackColor = System.Drawing.SystemColors.Menu;
-            this.tbTenNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbTenNhanVien.Location = new System.Drawing.Point(64, 287);
-            this.tbTenNhanVien.Name = "tbTenNhanVien";
-            this.tbTenNhanVien.Size = new System.Drawing.Size(100, 17);
-            this.tbTenNhanVien.TabIndex = 3;
-            this.tbTenNhanVien.Text = "tbTenNhanVien";
-            // 
             // tbGioiTinh
             // 
             this.tbGioiTinh.BackColor = System.Drawing.SystemColors.Menu;
@@ -183,36 +162,63 @@
             this.tbcUserName.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tbcUserName.ForeColor = System.Drawing.Color.White;
             this.tbcUserName.Location = new System.Drawing.Point(267, 47);
-            this.tbcUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbcUserName.Margin = new System.Windows.Forms.Padding(4);
             this.tbcUserName.Name = "tbcUserName";
             this.tbcUserName.PasswordChar = '\0';
-            this.tbcUserName.Size = new System.Drawing.Size(362, 38);
+            this.tbcUserName.Size = new System.Drawing.Size(362, 40);
             this.tbcUserName.TabIndex = 9;
             this.tbcUserName.TB_Text = "";
             // 
-            // labelUserName
+            // lblUserName
             // 
-            this.labelUserName.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelUserName.AutoSize = true;
-            this.labelUserName.BackColor = System.Drawing.Color.Transparent;
-            this.labelUserName.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUserName.Location = new System.Drawing.Point(261, 10);
-            this.labelUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(133, 33);
-            this.labelUserName.TabIndex = 8;
-            this.labelUserName.Text = "Tài khoản";
-            this.labelUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblUserName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.BackColor = System.Drawing.Color.Transparent;
+            this.lblUserName.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.Location = new System.Drawing.Point(261, 10);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(181, 33);
+            this.lblUserName.TabIndex = 8;
+            this.lblUserName.Text = "Tên tài khoản";
+            this.lblUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(261, 92);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(136, 33);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Họ và tên";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox_Custom1
+            // 
+            this.textBox_Custom1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox_Custom1.ForeColor = System.Drawing.Color.White;
+            this.textBox_Custom1.Location = new System.Drawing.Point(267, 131);
+            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox_Custom1.Name = "textBox_Custom1";
+            this.textBox_Custom1.PasswordChar = '\0';
+            this.textBox_Custom1.Size = new System.Drawing.Size(362, 40);
+            this.textBox_Custom1.TabIndex = 11;
+            this.textBox_Custom1.TB_Text = "";
             // 
             // ThongTinTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 470);
+            this.Controls.Add(this.textBox_Custom1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.tbcUserName);
-            this.Controls.Add(this.labelUserName);
+            this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.tbGioiTinh);
-            this.Controls.Add(this.tbTenNhanVien);
             this.Controls.Add(this.tbSDT);
             this.Controls.Add(this.tbDiaChi);
             this.Controls.Add(this.tbNgaySinh);
@@ -222,7 +228,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pbAvatarNhanVien);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -238,7 +243,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pbAvatarNhanVien;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -248,9 +252,10 @@
         private System.Windows.Forms.TextBox tbNgaySinh;
         private System.Windows.Forms.TextBox tbDiaChi;
         private System.Windows.Forms.TextBox tbSDT;
-        private System.Windows.Forms.TextBox tbTenNhanVien;
         private System.Windows.Forms.TextBox tbGioiTinh;
         private Custom.TextBox_Custom tbcUserName;
-        private System.Windows.Forms.Label labelUserName;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.Label label2;
+        private Custom.TextBox_Custom textBox_Custom1;
     }
 }

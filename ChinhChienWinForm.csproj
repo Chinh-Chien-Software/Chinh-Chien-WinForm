@@ -141,10 +141,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="UI\CaiDat.cs">
+    <Compile Include="UI\Main\CaiDat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\CaiDat.Designer.cs">
+    <Compile Include="UI\Main\CaiDat.Designer.cs">
       <DependentUpon>CaiDat.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\fsChuQuan\ChamCong.cs">
@@ -231,17 +231,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="UI\MainUI.cs">
+    <Compile Include="UI\Main\MainUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\MainUI.Designer.cs">
+    <Compile Include="UI\Main\MainUI.Designer.cs">
       <DependentUpon>MainUI.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\MenuAnimation.cs" />
-    <Compile Include="UI\LogIn.cs">
+    <Compile Include="UI\Main\LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\LogIn.Designer.cs">
+    <Compile Include="UI\Main\LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\fsQuanLy\QuanLy.cs">
@@ -253,16 +253,16 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="UI\SignUp.cs">
+    <Compile Include="UI\Main\SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\SignUp.Designer.cs">
+    <Compile Include="UI\Main\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\ThongTinTaiKhoan.cs">
+    <Compile Include="UI\Main\ThongTinTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\ThongTinTaiKhoan.Designer.cs">
+    <Compile Include="UI\Main\ThongTinTaiKhoan.Designer.cs">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Custom\Notification.resx">
@@ -271,7 +271,7 @@
     <EmbeddedResource Include="Custom\TextBox_Custom.resx">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\CaiDat.resx">
+    <EmbeddedResource Include="UI\Main\CaiDat.resx">
       <DependentUpon>CaiDat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\fsChuQuan\ChamCong.resx">
@@ -314,10 +314,10 @@
       <DependentUpon>QuanLyLichLam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
-    <EmbeddedResource Include="UI\MainUI.resx">
+    <EmbeddedResource Include="UI\Main\MainUI.resx">
       <DependentUpon>MainUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\LogIn.resx">
+    <EmbeddedResource Include="UI\Main\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\fsQuanLy\QuanLy.resx">
@@ -328,10 +328,10 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\SignUp.resx">
+    <EmbeddedResource Include="UI\Main\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\ThongTinTaiKhoan.resx">
+    <EmbeddedResource Include="UI\Main\ThongTinTaiKhoan.resx">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSets\KhoHangDataSet.xsc">

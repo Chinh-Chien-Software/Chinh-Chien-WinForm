@@ -30,7 +30,7 @@ namespace ChinChin.UI
             TaiKhoan = DataProvider.LoadDatabase(sqlcode);
 
             //tbMaNhanVien.Text = TaiKhoan.Rows[0][0].ToString();
-            tbTenNhanVien.Text = TaiKhoan.Rows[0][1].ToString();
+            //tbTenNhanVien.Text = TaiKhoan.Rows[0][1].ToString();
             tbGioiTinh.Text = TaiKhoan.Rows[0][2].ToString();
             //tbChucVu.Text = TaiKhoan.Rows[0][3].ToString();
             //tbNgayVaoLam.Text = TaiKhoan.Rows[0][4].ToString();
