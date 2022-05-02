@@ -40,8 +40,9 @@
             this.textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox.Location = new System.Drawing.Point(0, 0);
             this.textBox.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox.Multiline = true;
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(319, 30);
+            this.textBox.Size = new System.Drawing.Size(319, 34);
             this.textBox.TabIndex = 2;
             this.textBox.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
@@ -49,7 +50,7 @@
             // 
             this.panelUnderline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.panelUnderline.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelUnderline.Location = new System.Drawing.Point(0, 34);
+            this.panelUnderline.Location = new System.Drawing.Point(0, 32);
             this.panelUnderline.Name = "panelUnderline";
             this.panelUnderline.Size = new System.Drawing.Size(319, 2);
             this.panelUnderline.TabIndex = 3;
@@ -62,7 +63,7 @@
             this.Controls.Add(this.textBox);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "TextBox_Custom";
-            this.Size = new System.Drawing.Size(319, 36);
+            this.Size = new System.Drawing.Size(319, 34);
             this.ResumeLayout(false);
             this.PerformLayout();
 
