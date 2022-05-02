@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Data.SqlClient;
 using ChinChin.Database;
 using ChinChin.UI;
+using System.IO;
 
 namespace ChinChin.UI
 {
@@ -23,6 +24,8 @@ namespace ChinChin.UI
         SqlDataAdapter adapter;
         DataSet dsTaiKhoan = new DataSet();
         string strSqlTaiKhoan = "SELECT * FROM TaiKhoan";
+        string folderAPPDATA = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        string specificFolder = Path.Combine(folderAPPDATA, "ChinhChien");
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -54,16 +57,14 @@ namespace ChinChin.UI
             string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan = '" + username + "' AND MatKhau = '" + password + "'";
             DataTable TaiKhoan = new DataTable();
             TaiKhoan = DataProvider.LoadDatabase(sqlcode);
-            
+
             // Điều kiện Kiểm tra LoaiTaiKhoan
             if (TaiKhoan.Rows.Count == 1)
             {
                 if (ckBxRememberSignIn.Checked)
                 {
                     // Dẫn tới thứ mục %appdata% => the roaming current user 
-                    string folder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-
-                    string specificFolder = Path.Combine(folder, "ChinhChien");
+                    
 
                     Directory.CreateDirectory(specificFolder);
 
@@ -82,6 +83,11 @@ namespace ChinChin.UI
                         File.WriteAllText(Path.Combine(specificFolder, "SavedUsername.txt"), tbcUserName.TB_Text);
                     }
                 }
+                else
+                {
+                    File.WriteAllText(Path.Combine(specificFolder, "SavedUsername.txt"), "");
+                }
+
                 MainUI MainUI = new MainUI(TaiKhoan.Rows[0][1].ToString());
                 MainUI.Show();
                 this.Hide();
@@ -107,7 +113,7 @@ namespace ChinChin.UI
 
         private void SignInButton_Click(object sender, EventArgs e)
         {
-                CheckUserPassAndSignIn();
+            CheckUserPassAndSignIn();
         }
 
         private void txtBxUsername_KeyDown(object sender, KeyEventArgs e)
@@ -153,6 +159,8 @@ namespace ChinChin.UI
             {
                 MessageBox.Show("Không có Database hoặc Dữ liệu bé ơi", "Oh My God", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            string usernameSaved = System.IO.File.ReadAllText(specificFolder);
+
         }
 
         private void labelNoAccount_Click(object sender, EventArgs e)
@@ -189,7 +197,9 @@ namespace ChinChin.UI
 
         private void ckBxRememberSignIn_CheckedChanged(object sender, EventArgs e)
         {
-
+            //MessageBox.Show(ckBxRememberSignIn.Checked.ToString());
+            //string pathString = @"%appdata%\ChinhChien";
+            
         }
 
         private void iPBxShowHidePasword_Click(object sender, EventArgs e)
@@ -205,18 +215,7 @@ namespace ChinChin.UI
                 iPBxShowHidePasword.IconChar = IconChar.EyeSlash;
             }
         }
-
-        private void labelPasword_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tbcUserName_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbcPassword_Load(object sender, EventArgs e)
         {
 
         }

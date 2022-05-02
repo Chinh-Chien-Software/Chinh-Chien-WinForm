@@ -177,11 +177,11 @@ namespace ChinChin.UI
             this.ckBxRememberSignIn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ckBxRememberSignIn.AutoSize = true;
             this.ckBxRememberSignIn.BackColor = System.Drawing.Color.Transparent;
-            this.ckBxRememberSignIn.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckBxRememberSignIn.Location = new System.Drawing.Point(492, 350);
+            this.ckBxRememberSignIn.Font = new System.Drawing.Font("Inter", 14F);
+            this.ckBxRememberSignIn.Location = new System.Drawing.Point(473, 337);
             this.ckBxRememberSignIn.Margin = new System.Windows.Forms.Padding(2);
             this.ckBxRememberSignIn.Name = "ckBxRememberSignIn";
-            this.ckBxRememberSignIn.Size = new System.Drawing.Size(168, 23);
+            this.ckBxRememberSignIn.Size = new System.Drawing.Size(192, 27);
             this.ckBxRememberSignIn.TabIndex = 5;
             this.ckBxRememberSignIn.Text = "Ghi nhớ đăng nhập";
             this.ckBxRememberSignIn.UseVisualStyleBackColor = false;
