@@ -58,6 +58,30 @@ namespace ChinChin.UI
             // Điều kiện Kiểm tra LoaiTaiKhoan
             if (TaiKhoan.Rows.Count == 1)
             {
+                if (ckBxRememberSignIn.Checked)
+                {
+                    // Dẫn tới thứ mục %appdata% => the roaming current user 
+                    string folder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+                    string specificFolder = Path.Combine(folder, "ChinhChien");
+
+                    Directory.CreateDirectory(specificFolder);
+
+                    string fileName = "SavedUsername.txt";
+                    string pathString = System.IO.Path.Combine(specificFolder, fileName);
+
+                    if (!System.IO.File.Exists(pathString))
+                    {
+                        using (System.IO.FileStream fs = System.IO.File.Create(pathString))
+                        {
+                            File.Create(pathString).Close();
+                        }
+                    }
+                    else
+                    {
+                        File.WriteAllText(Path.Combine(specificFolder, "SavedUsername.txt"), tbcUserName.TB_Text);
+                    }
+                }
                 MainUI MainUI = new MainUI(TaiKhoan.Rows[0][1].ToString());
                 MainUI.Show();
                 this.Hide();
