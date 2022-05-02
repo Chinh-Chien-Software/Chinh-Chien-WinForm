@@ -94,7 +94,7 @@ namespace ChinChin.Forms_NhanVien
 
         private void NhanVienPhaChe_Load(object sender, EventArgs e)
         {
-            string sqlcode = "SELECT nv.TenNhanVien FROM TaiKhoan tk, NhanVien nv WHERE tk.TenTaiKhoan = '" + ChinChin.LogIn.username + "' AND tk.MatKhau = '" + ChinChin.LogIn.password + "' AND nv.MaNhanVien = tk.MaNhanVien";
+            string sqlcode = "SELECT nv.TenNhanVien FROM TaiKhoan tk, NhanVien nv WHERE tk.TenTaiKhoan = '" + ChinChin.UI.LogIn.username + "' AND tk.MatKhau = '" + ChinChin.UI.LogIn.password + "' AND nv.MaNhanVien = tk.MaNhanVien";
             DataTable TaiKhoan = new DataTable();
             TaiKhoan = DataProvider.LoadDatabase(sqlcode);
             //MnsTaiKhoan.Text = TaiKhoan.Rows[0][0].ToString();
