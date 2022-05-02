@@ -24,8 +24,10 @@ namespace ChinChin.UI
         SqlDataAdapter adapter;
         DataSet dsTaiKhoan = new DataSet();
         string strSqlTaiKhoan = "SELECT * FROM TaiKhoan";
-        string folderAPPDATA = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        string specificFolder = Path.Combine(folderAPPDATA, "ChinhChien");
+        public static string folderAPPDATA = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        public static string specificFolder = Path.Combine(folderAPPDATA, "ChinhChien");
+        static string fileName = "SavedUsername.txt";
+        string pathString = System.IO.Path.Combine(specificFolder, fileName);
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -65,11 +67,7 @@ namespace ChinChin.UI
                 {
                     // Dẫn tới thứ mục %appdata% => the roaming current user 
                     
-
                     Directory.CreateDirectory(specificFolder);
-
-                    string fileName = "SavedUsername.txt";
-                    string pathString = System.IO.Path.Combine(specificFolder, fileName);
 
                     if (!System.IO.File.Exists(pathString))
                     {
@@ -159,7 +157,7 @@ namespace ChinChin.UI
             {
                 MessageBox.Show("Không có Database hoặc Dữ liệu bé ơi", "Oh My God", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            string usernameSaved = System.IO.File.ReadAllText(specificFolder);
+            string usernameSaved = System.IO.File.ReadAllText(pathString);
 
         }
 
@@ -199,7 +197,6 @@ namespace ChinChin.UI
         {
             //MessageBox.Show(ckBxRememberSignIn.Checked.ToString());
             //string pathString = @"%appdata%\ChinhChien";
-            
         }
 
         private void iPBxShowHidePasword_Click(object sender, EventArgs e)
