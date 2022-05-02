@@ -132,7 +132,7 @@ namespace ChinChin.UI
 
         private void mnsiThongTinTaiKhoan_Click(object sender, EventArgs e)
         {
-            ThongTinNhanVien ThongTinTaiKhoan = new ThongTinNhanVien();
+            ThongTinTaiKhoan ThongTinTaiKhoan = new ThongTinNhanVien();
             ThongTinTaiKhoan.Show();
         }
 

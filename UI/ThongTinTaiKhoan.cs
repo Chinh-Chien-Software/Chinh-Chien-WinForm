@@ -11,14 +11,14 @@ using ChinChin.Database;
 
 namespace ChinChin.UI
 {
-    public partial class ThongTinNhanVien : Form
+    public partial class ThongTinTaiKhoan : Form
     {
-        public ThongTinNhanVien()
+        public ThongTinTaiKhoan()
         {
             InitializeComponent();
         }
         public string TenTaiKhoan;
-        public ThongTinNhanVien(string TenTaiKhoan) : this()
+        public ThongTinTaiKhoan(string TenTaiKhoan) : this()
         {
             // Viết hàm khởi tạo này để mang theo dữ liệu khi chạy Form MainUI
             this.TenTaiKhoan = TenTaiKhoan;

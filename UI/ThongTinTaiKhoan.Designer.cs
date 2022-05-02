@@ -1,6 +1,6 @@
 ﻿namespace ChinChin.UI
 {
-    partial class ThongTinNhanVien
+    partial class ThongTinTaiKhoan
     {
         /// <summary>
         /// Required designer variable.
@@ -28,38 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbAvatarNhanVien = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.btDoiMatKhau = new System.Windows.Forms.Button();
             this.btCapNhatThongTin = new System.Windows.Forms.Button();
-            this.tbNgayVaoLam = new System.Windows.Forms.TextBox();
-            this.tbTienLuong = new System.Windows.Forms.TextBox();
             this.tbNgaySinh = new System.Windows.Forms.TextBox();
             this.tbDiaChi = new System.Windows.Forms.TextBox();
             this.tbSDT = new System.Windows.Forms.TextBox();
             this.tbTenNhanVien = new System.Windows.Forms.TextBox();
             this.tbGioiTinh = new System.Windows.Forms.TextBox();
-            this.tbMaNhanVien = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbChucVu = new System.Windows.Forms.TextBox();
+            this.pbAvatarNhanVien = new System.Windows.Forms.PictureBox();
+            this.tbcUserName = new ChinChin.Custom.TextBox_Custom();
+            this.labelUserName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatarNhanVien)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbAvatarNhanVien
-            // 
-            this.pbAvatarNhanVien.Location = new System.Drawing.Point(13, 10);
-            this.pbAvatarNhanVien.Margin = new System.Windows.Forms.Padding(4);
-            this.pbAvatarNhanVien.Name = "pbAvatarNhanVien";
-            this.pbAvatarNhanVien.Size = new System.Drawing.Size(210, 210);
-            this.pbAvatarNhanVien.TabIndex = 0;
-            this.pbAvatarNhanVien.TabStop = false;
             // 
             // label1
             // 
@@ -71,17 +56,6 @@
             this.label1.Size = new System.Drawing.Size(61, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Họ tên:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(-4, 266);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Mã nhân viên:";
             // 
             // label3
             // 
@@ -127,28 +101,6 @@
             this.label7.TabIndex = 1;
             this.label7.Text = "Địa chỉ";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(250, 32);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 20);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Ngày vào làm:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(250, 52);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 20);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Tiền lương:";
-            // 
             // btDoiMatKhau
             // 
             this.btDoiMatKhau.Location = new System.Drawing.Point(480, 432);
@@ -166,26 +118,6 @@
             this.btCapNhatThongTin.TabIndex = 2;
             this.btCapNhatThongTin.Text = "Cập Nhật Thông Tin";
             this.btCapNhatThongTin.UseVisualStyleBackColor = true;
-            // 
-            // tbNgayVaoLam
-            // 
-            this.tbNgayVaoLam.BackColor = System.Drawing.SystemColors.Menu;
-            this.tbNgayVaoLam.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbNgayVaoLam.Location = new System.Drawing.Point(364, 33);
-            this.tbNgayVaoLam.Name = "tbNgayVaoLam";
-            this.tbNgayVaoLam.Size = new System.Drawing.Size(100, 17);
-            this.tbNgayVaoLam.TabIndex = 3;
-            this.tbNgayVaoLam.Text = "tbNgayVaoLam";
-            // 
-            // tbTienLuong
-            // 
-            this.tbTienLuong.BackColor = System.Drawing.SystemColors.Menu;
-            this.tbTienLuong.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbTienLuong.Location = new System.Drawing.Point(343, 53);
-            this.tbTienLuong.Name = "tbTienLuong";
-            this.tbTienLuong.Size = new System.Drawing.Size(100, 17);
-            this.tbTienLuong.TabIndex = 3;
-            this.tbTienLuong.Text = "tbTienLuong";
             // 
             // tbNgaySinh
             // 
@@ -237,66 +169,64 @@
             this.tbGioiTinh.TabIndex = 3;
             this.tbGioiTinh.Text = "tbGioiTinh";
             // 
-            // tbMaNhanVien
+            // pbAvatarNhanVien
             // 
-            this.tbMaNhanVien.BackColor = System.Drawing.SystemColors.Menu;
-            this.tbMaNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbMaNhanVien.Location = new System.Drawing.Point(110, 267);
-            this.tbMaNhanVien.Name = "tbMaNhanVien";
-            this.tbMaNhanVien.Size = new System.Drawing.Size(100, 17);
-            this.tbMaNhanVien.TabIndex = 3;
-            this.tbMaNhanVien.Text = "tbMaNhanVien";
+            this.pbAvatarNhanVien.Location = new System.Drawing.Point(13, 10);
+            this.pbAvatarNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.pbAvatarNhanVien.Name = "pbAvatarNhanVien";
+            this.pbAvatarNhanVien.Size = new System.Drawing.Size(210, 210);
+            this.pbAvatarNhanVien.TabIndex = 0;
+            this.pbAvatarNhanVien.TabStop = false;
             // 
-            // label4
+            // tbcUserName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(250, 12);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 20);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Chức vụ:";
+            this.tbcUserName.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tbcUserName.ForeColor = System.Drawing.Color.White;
+            this.tbcUserName.Location = new System.Drawing.Point(267, 47);
+            this.tbcUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbcUserName.Name = "tbcUserName";
+            this.tbcUserName.PasswordChar = '\0';
+            this.tbcUserName.Size = new System.Drawing.Size(362, 38);
+            this.tbcUserName.TabIndex = 9;
+            this.tbcUserName.TB_Text = "";
             // 
-            // tbChucVu
+            // labelUserName
             // 
-            this.tbChucVu.BackColor = System.Drawing.SystemColors.Menu;
-            this.tbChucVu.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbChucVu.Location = new System.Drawing.Point(327, 13);
-            this.tbChucVu.Name = "tbChucVu";
-            this.tbChucVu.Size = new System.Drawing.Size(100, 17);
-            this.tbChucVu.TabIndex = 3;
-            this.tbChucVu.Text = "tbChucVu";
+            this.labelUserName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelUserName.AutoSize = true;
+            this.labelUserName.BackColor = System.Drawing.Color.Transparent;
+            this.labelUserName.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserName.Location = new System.Drawing.Point(261, 10);
+            this.labelUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelUserName.Name = "labelUserName";
+            this.labelUserName.Size = new System.Drawing.Size(133, 33);
+            this.labelUserName.TabIndex = 8;
+            this.labelUserName.Text = "Tài khoản";
+            this.labelUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // ThongTinNhanVien
+            // ThongTinTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 470);
-            this.Controls.Add(this.tbMaNhanVien);
+            this.Controls.Add(this.tbcUserName);
+            this.Controls.Add(this.labelUserName);
             this.Controls.Add(this.tbGioiTinh);
             this.Controls.Add(this.tbTenNhanVien);
             this.Controls.Add(this.tbSDT);
             this.Controls.Add(this.tbDiaChi);
             this.Controls.Add(this.tbNgaySinh);
-            this.Controls.Add(this.tbTienLuong);
-            this.Controls.Add(this.tbNgayVaoLam);
-            this.Controls.Add(this.tbChucVu);
             this.Controls.Add(this.btCapNhatThongTin);
             this.Controls.Add(this.btDoiMatKhau);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbAvatarNhanVien);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ThongTinNhanVien";
+            this.Name = "ThongTinTaiKhoan";
             this.Text = "ThongTinNhanVien";
             this.Load += new System.EventHandler(this.ThongTinTaiKhoan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatarNhanVien)).EndInit();
@@ -309,24 +239,18 @@
 
         private System.Windows.Forms.PictureBox pbAvatarNhanVien;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btDoiMatKhau;
         private System.Windows.Forms.Button btCapNhatThongTin;
-        private System.Windows.Forms.TextBox tbNgayVaoLam;
-        private System.Windows.Forms.TextBox tbTienLuong;
         private System.Windows.Forms.TextBox tbNgaySinh;
         private System.Windows.Forms.TextBox tbDiaChi;
         private System.Windows.Forms.TextBox tbSDT;
         private System.Windows.Forms.TextBox tbTenNhanVien;
         private System.Windows.Forms.TextBox tbGioiTinh;
-        private System.Windows.Forms.TextBox tbMaNhanVien;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbChucVu;
+        private Custom.TextBox_Custom tbcUserName;
+        private System.Windows.Forms.Label labelUserName;
     }
 }
