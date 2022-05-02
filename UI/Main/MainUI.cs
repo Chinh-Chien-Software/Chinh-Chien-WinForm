@@ -134,6 +134,8 @@ namespace ChinChin.UI
         {
             //ThongTinTaiKhoan ThongTinTaiKhoan = new ThongTinNhanVien();
             //ThongTinTaiKhoan.Show();
+            MenuAnimation.OpenChildForm(new ThongTinTaiKhoan(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
+
         }
 
         private void ibtn2_Click(object sender, EventArgs e)
