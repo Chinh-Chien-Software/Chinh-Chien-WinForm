@@ -259,11 +259,11 @@
     <Compile Include="UI\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\ThongTinNhanVien.cs">
+    <Compile Include="UI\ThongTinTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\ThongTinNhanVien.Designer.cs">
-      <DependentUpon>ThongTinNhanVien.cs</DependentUpon>
+    <Compile Include="UI\ThongTinTaiKhoan.Designer.cs">
+      <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Custom\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
@@ -331,8 +331,8 @@
     <EmbeddedResource Include="UI\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\ThongTinNhanVien.resx">
-      <DependentUpon>ThongTinNhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="UI\ThongTinTaiKhoan.resx">
+      <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSets\KhoHangDataSet.xsc">
       <DependentUpon>KhoHangDataSet.xsd</DependentUpon>
