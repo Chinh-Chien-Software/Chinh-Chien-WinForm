@@ -27,20 +27,25 @@ namespace ChinChin.UI
         {
             string sqlcode = "SELECT nv.MaNhanVien, nv.TenNhanVien, nv.GioiTinh,  nv.NgayVaoLam, nv.LuongTrenGio, nv.NgaySinh, nv.DiaChi, nv.SoDienThoai FROM TaiKhoan tk, NhanVien nv WHERE tk.TenTaiKhoan = '"+TenTaiKhoan+"' and tk.MaNhanVien = nv.MaNhanVien";
             DataTable TaiKhoan = new DataTable();
-            TaiKhoan = DataProvider.LoadDatabase(sqlcode);
+            //TaiKhoan = DataProvider.LoadDatabase(sqlcode);
 
             //tbMaNhanVien.Text = TaiKhoan.Rows[0][0].ToString();
             //tbTenNhanVien.Text = TaiKhoan.Rows[0][1].ToString();
-            tbGioiTinh.Text = TaiKhoan.Rows[0][2].ToString();
+            //tbGioiTinh.Text = TaiKhoan.Rows[0][2].ToString();
             //tbChucVu.Text = TaiKhoan.Rows[0][3].ToString();
             //tbNgayVaoLam.Text = TaiKhoan.Rows[0][4].ToString();
             //tbTienLuong.Text = TaiKhoan.Rows[0][5].ToString();
-            tbNgaySinh.Text = TaiKhoan.Rows[0][6].ToString();
-            tbDiaChi.Text = TaiKhoan.Rows[0][7].ToString();
-            tbSDT.Text = TaiKhoan.Rows[0][8].ToString();
+            //tbNgaySinh.Text = TaiKhoan.Rows[0][6].ToString();
+            //tbDiaChi.Text = TaiKhoan.Rows[0][7].ToString();
+            //tbSDT.Text = TaiKhoan.Rows[0][8].ToString();
         }
 
         private void btDoiMatKhau_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }
