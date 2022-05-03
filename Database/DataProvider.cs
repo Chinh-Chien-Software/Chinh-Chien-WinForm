@@ -13,13 +13,13 @@ namespace ChinChin.Database
     internal class DataProvider
     {
         // cnStr chứa thông tin về tên Server, Database..
-        static SqlConnection conn; // Create a connection
-        static string connStr = Properties.Settings.Default.ChinhChienConnectionString;
+        static SqlConnection conn; // Create a connection - Dây cấm
+        static string connStr = Properties.Settings.Default.ChinhChienConnectionString; // Ổ cấm
 
         static public DataTable LoadDatabase(string sql)
         {
             DataTable dt = new DataTable(); //Khởi tạo một datatable để lưu dữ liệu
-            conn = new SqlConnection(connStr); //Khởi tạo 1 kết nối
+            conn = new SqlConnection(connStr); // Khởi tạo 1 kết nối - Cấm vào
             SqlCommand cm = new SqlCommand(sql, conn); //Tạo các lệnh
             SqlDataAdapter da = new SqlDataAdapter(cm); //Thực thi những lệnh được truyền từ SqlCommand
             da.Fill(dt); //Đổ dữ liệu từ DataAdapter vào Datatable

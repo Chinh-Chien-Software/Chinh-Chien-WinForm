@@ -126,14 +126,14 @@ namespace ChinChin.UI
 
         private void mnsiCaiDat_Click(object sender, EventArgs e)
         {
-            CaiDat CaiDat = new CaiDat();
-            CaiDat.Show();
+            //CaiDat CaiDat = new CaiDat();
+            //CaiDat.Show();
+            Console.WriteLine("Đăng mở Cài Đặt, đợi xíu");
+            MenuAnimation.OpenChildForm(new CaiDat(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 
         private void mnsiThongTinTaiKhoan_Click(object sender, EventArgs e)
         {
-            //ThongTinTaiKhoan ThongTinTaiKhoan = new ThongTinNhanVien();
-            //ThongTinTaiKhoan.Show();
             MenuAnimation.OpenChildForm(new ThongTinTaiKhoan(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
 
         }
