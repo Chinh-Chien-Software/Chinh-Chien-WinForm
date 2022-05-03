@@ -123,7 +123,7 @@
             this.ibtn7.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
             this.ibtn7.Size = new System.Drawing.Size(376, 102);
             this.ibtn7.TabIndex = 13;
-            this.ibtn7.Text = "Nút 7";
+            this.ibtn7.Text = "NHÂN SỰ";
             this.ibtn7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn7.UseVisualStyleBackColor = true;
             // 
@@ -144,7 +144,7 @@
             this.ibtn6.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
             this.ibtn6.Size = new System.Drawing.Size(376, 102);
             this.ibtn6.TabIndex = 12;
-            this.ibtn6.Text = "Nút 6";
+            this.ibtn6.Text = "LỊCH LÀM";
             this.ibtn6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn6.UseVisualStyleBackColor = true;
             // 
@@ -165,7 +165,7 @@
             this.ibtn5.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
             this.ibtn5.Size = new System.Drawing.Size(376, 102);
             this.ibtn5.TabIndex = 11;
-            this.ibtn5.Text = "Nút 5";
+            this.ibtn5.Text = "THỰC ĐƠN";
             this.ibtn5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn5.UseVisualStyleBackColor = true;
             // 
@@ -186,7 +186,7 @@
             this.ibtn4.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
             this.ibtn4.Size = new System.Drawing.Size(376, 102);
             this.ibtn4.TabIndex = 10;
-            this.ibtn4.Text = "Nút 4";
+            this.ibtn4.Text = "KHO HÀNG";
             this.ibtn4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn4.UseVisualStyleBackColor = true;
             // 
@@ -207,7 +207,7 @@
             this.ibtn3.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
             this.ibtn3.Size = new System.Drawing.Size(376, 102);
             this.ibtn3.TabIndex = 9;
-            this.ibtn3.Text = "Nút 3";
+            this.ibtn3.Text = "NHẬN ĐƠN";
             this.ibtn3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn3.UseVisualStyleBackColor = true;
             // 
@@ -228,7 +228,7 @@
             this.ibtn2.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
             this.ibtn2.Size = new System.Drawing.Size(376, 100);
             this.ibtn2.TabIndex = 8;
-            this.ibtn2.Text = "Nút 2";
+            this.ibtn2.Text = "CHẤM CÔNG";
             this.ibtn2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn2.UseVisualStyleBackColor = true;
             this.ibtn2.Click += new System.EventHandler(this.ibtn2_Click);
@@ -250,7 +250,7 @@
             this.ibtn1.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
             this.ibtn1.Size = new System.Drawing.Size(376, 100);
             this.ibtn1.TabIndex = 7;
-            this.ibtn1.Text = "Nút 1";
+            this.ibtn1.Text = "THỐNG KÊ";
             this.ibtn1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn1.UseVisualStyleBackColor = true;
             this.ibtn1.Click += new System.EventHandler(this.ibtn1_Click);
