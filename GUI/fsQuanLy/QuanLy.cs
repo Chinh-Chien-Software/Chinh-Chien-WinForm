@@ -94,7 +94,7 @@ namespace ChinChin.FormsQuanLy
         private void KhoHangBTN_Click_1(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color2, iconCurrentChildForm);
-            MenuAnimation.OpenChildForm(new Forms_QuanLy.QuanLyKhoHang(), ref currentChildForm, panelDesktop, labelTittleChildForm);
+            MenuAnimation.OpenChildForm(new Forms_QuanLy.KhoHang(), ref currentChildForm, panelDesktop, labelTittleChildForm);
         }
 
         private void ChamCongBTN_Click(object sender, EventArgs e)

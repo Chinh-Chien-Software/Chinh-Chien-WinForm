@@ -55,7 +55,7 @@ namespace ChinChin.Forms_NhanVien
                 {
                     TenSanPham = row["TenSanPham"].ToString(),
                 };
-                flowLayoutPanelMenuList.Controls.Add(uc);
+                //flowLayoutPanelMenuList.Controls.Add(uc);
             }
         }
 

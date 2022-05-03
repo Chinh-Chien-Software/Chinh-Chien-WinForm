@@ -159,11 +159,11 @@
     <Compile Include="GUI\fsChuQuan\ChuQuan.Designer.cs">
       <DependentUpon>ChuQuan.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\fsChuQuan\KhoHang.cs">
+    <Compile Include="GUI\fsChuQuan\XemKhoHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\fsChuQuan\KhoHang.Designer.cs">
-      <DependentUpon>KhoHang.cs</DependentUpon>
+    <Compile Include="GUI\fsChuQuan\XemKhoHang.Designer.cs">
+      <DependentUpon>XemKhoHang.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\fsChuQuan\XemThongKe.cs">
       <SubType>Form</SubType>
@@ -214,11 +214,11 @@
     <Compile Include="GUI\fsQuanLy\BaoCaoDoanhThu.Designer.cs">
       <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\fsQuanLy\QuanLyKhoHang.cs">
+    <Compile Include="GUI\fsQuanLy\KhoHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\fsQuanLy\QuanLyKhoHang.Designer.cs">
-      <DependentUpon>QuanLyKhoHang.cs</DependentUpon>
+    <Compile Include="GUI\fsQuanLy\KhoHang.Designer.cs">
+      <DependentUpon>KhoHang.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\fsQuanLy\QuanLyLichLam.cs">
       <SubType>Form</SubType>
@@ -280,8 +280,8 @@
     <EmbeddedResource Include="GUI\fsChuQuan\ChuQuan.resx">
       <DependentUpon>ChuQuan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\fsChuQuan\KhoHang.resx">
-      <DependentUpon>KhoHang.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\fsChuQuan\XemKhoHang.resx">
+      <DependentUpon>XemKhoHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fsChuQuan\XemThongKe.resx">
       <DependentUpon>XemThongKe.cs</DependentUpon>
@@ -307,8 +307,8 @@
     <EmbeddedResource Include="GUI\fsQuanLy\BaoCaoDoanhThu.resx">
       <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\fsQuanLy\QuanLyKhoHang.resx">
-      <DependentUpon>QuanLyKhoHang.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\fsQuanLy\KhoHang.resx">
+      <DependentUpon>KhoHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fsQuanLy\QuanLyLichLam.resx">
       <DependentUpon>QuanLyLichLam.cs</DependentUpon>

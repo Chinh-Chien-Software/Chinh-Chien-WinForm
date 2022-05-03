@@ -1,7 +1,7 @@
 ﻿
 namespace ChinChin.Forms_QuanLy
 {
-    partial class QuanLyKhoHang
+    partial class KhoHang
     {
         /// <summary>
         /// Required designer variable.
@@ -29,29 +29,30 @@ namespace ChinChin.Forms_QuanLy
         /// </summary>
         private void InitializeComponent()
         {
-            this.VatLieuGridView = new System.Windows.Forms.DataGridView();
+            this.dgvVatLieu = new System.Windows.Forms.DataGridView();
             this.MaVatLieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EditButton = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlTopBar = new System.Windows.Forms.Panel();
             this.DeleteButton = new FontAwesome.Sharp.IconButton();
             this.NewButton = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)(this.VatLieuGridView)).BeginInit();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).BeginInit();
+            this.pnlTopBar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // VatLieuGridView
+            // dgvVatLieu
             // 
-            this.VatLieuGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.VatLieuGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvVatLieu.BackgroundColor = System.Drawing.Color.White;
+            this.dgvVatLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVatLieu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaVatLieu});
-            this.VatLieuGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.VatLieuGridView.Location = new System.Drawing.Point(0, 0);
-            this.VatLieuGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.VatLieuGridView.Name = "VatLieuGridView";
-            this.VatLieuGridView.RowHeadersWidth = 51;
-            this.VatLieuGridView.RowTemplate.Height = 24;
-            this.VatLieuGridView.Size = new System.Drawing.Size(600, 366);
-            this.VatLieuGridView.TabIndex = 0;
+            this.dgvVatLieu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvVatLieu.Location = new System.Drawing.Point(0, 0);
+            this.dgvVatLieu.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvVatLieu.Name = "dgvVatLieu";
+            this.dgvVatLieu.RowHeadersWidth = 51;
+            this.dgvVatLieu.RowTemplate.Height = 24;
+            this.dgvVatLieu.Size = new System.Drawing.Size(600, 366);
+            this.dgvVatLieu.TabIndex = 0;
             // 
             // MaVatLieu
             // 
@@ -70,7 +71,7 @@ namespace ChinChin.Forms_QuanLy
             this.EditButton.IconSize = 40;
             this.EditButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.EditButton.Location = new System.Drawing.Point(394, 0);
-            this.EditButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EditButton.Margin = new System.Windows.Forms.Padding(2);
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(89, 46);
             this.EditButton.TabIndex = 1;
@@ -78,17 +79,19 @@ namespace ChinChin.Forms_QuanLy
             this.EditButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.EditButton.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // pnlTopBar
             // 
-            this.panel1.Controls.Add(this.DeleteButton);
-            this.panel1.Controls.Add(this.NewButton);
-            this.panel1.Controls.Add(this.EditButton);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 48);
-            this.panel1.TabIndex = 2;
+            this.pnlTopBar.BackColor = System.Drawing.Color.White;
+            this.pnlTopBar.Controls.Add(this.DeleteButton);
+            this.pnlTopBar.Controls.Add(this.NewButton);
+            this.pnlTopBar.Controls.Add(this.EditButton);
+            this.pnlTopBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTopBar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlTopBar.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopBar.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlTopBar.Name = "pnlTopBar";
+            this.pnlTopBar.Size = new System.Drawing.Size(600, 48);
+            this.pnlTopBar.TabIndex = 2;
             // 
             // DeleteButton
             // 
@@ -100,7 +103,7 @@ namespace ChinChin.Forms_QuanLy
             this.DeleteButton.IconSize = 40;
             this.DeleteButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.DeleteButton.Location = new System.Drawing.Point(488, 0);
-            this.DeleteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(110, 46);
             this.DeleteButton.TabIndex = 3;
@@ -118,35 +121,37 @@ namespace ChinChin.Forms_QuanLy
             this.NewButton.IconSize = 40;
             this.NewButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.NewButton.Location = new System.Drawing.Point(301, 0);
-            this.NewButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NewButton.Margin = new System.Windows.Forms.Padding(2);
             this.NewButton.Name = "NewButton";
             this.NewButton.Size = new System.Drawing.Size(89, 46);
             this.NewButton.TabIndex = 2;
             this.NewButton.Text = "New";
             this.NewButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NewButton.UseVisualStyleBackColor = true;
+            this.NewButton.Click += new System.EventHandler(this.NewButton_Click);
             // 
-            // QuanLyKhoHang
+            // KhoHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.VatLieuGridView);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "QuanLyKhoHang";
+            this.Controls.Add(this.pnlTopBar);
+            this.Controls.Add(this.dgvVatLieu);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "KhoHang";
             this.Text = "QuanLyKhoHang";
-            ((System.ComponentModel.ISupportInitialize)(this.VatLieuGridView)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.KhoHang_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).EndInit();
+            this.pnlTopBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView VatLieuGridView;
+        private System.Windows.Forms.DataGridView dgvVatLieu;
         private FontAwesome.Sharp.IconButton EditButton;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlTopBar;
         private FontAwesome.Sharp.IconButton NewButton;
         private FontAwesome.Sharp.IconButton DeleteButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaVatLieu;
