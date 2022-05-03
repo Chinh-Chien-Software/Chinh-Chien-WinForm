@@ -361,7 +361,7 @@
             this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 47;
-            this.btnExit.Location = new System.Drawing.Point(197, 2);
+            this.btnExit.Location = new System.Drawing.Point(197, 1);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(47, 50);
