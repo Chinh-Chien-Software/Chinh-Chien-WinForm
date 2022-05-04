@@ -58,7 +58,7 @@ namespace ChinChin.UI
 
             string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan = '" + username + "' AND MatKhau = '" + password + "'";
             DataTable TaiKhoan = new DataTable();
-            TaiKhoan = DataProvider.LoadDatabase(sqlcode);
+            TaiKhoan = DataProvider.LoadDataTable(sqlcode);
 
             // Điều kiện Kiểm tra LoaiTaiKhoan
             if (TaiKhoan.Rows.Count == 1)
@@ -140,6 +140,10 @@ namespace ChinChin.UI
 
         private void SignIn_Load(object sender, EventArgs e)
         {
+            // #91 - Đọc file
+
+            // Console.WriteLine(System.IO.File.ReadLines(pathString));
+            
             // Kiểm Tra Database
             if (Database.WorkingDatabase.CheckLocalDatabase())
             {
@@ -158,7 +162,6 @@ namespace ChinChin.UI
                 MessageBox.Show("Không có Database hoặc Dữ liệu bé ơi", "Oh My God", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             string usernameSaved = System.IO.File.ReadAllText(pathString);
-
         }
 
         private void labelNoAccount_Click(object sender, EventArgs e)

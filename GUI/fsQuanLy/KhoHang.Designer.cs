@@ -31,10 +31,10 @@ namespace ChinChin.Forms_QuanLy
         {
             this.dgvVatLieu = new System.Windows.Forms.DataGridView();
             this.MaVatLieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EditButton = new FontAwesome.Sharp.IconButton();
+            this.btnEdit = new FontAwesome.Sharp.IconButton();
             this.pnlTopBar = new System.Windows.Forms.Panel();
-            this.DeleteButton = new FontAwesome.Sharp.IconButton();
-            this.NewButton = new FontAwesome.Sharp.IconButton();
+            this.btnDelete = new FontAwesome.Sharp.IconButton();
+            this.btnNew = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).BeginInit();
             this.pnlTopBar.SuspendLayout();
             this.SuspendLayout();
@@ -61,30 +61,30 @@ namespace ChinChin.Forms_QuanLy
             this.MaVatLieu.Name = "MaVatLieu";
             this.MaVatLieu.Width = 125;
             // 
-            // EditButton
+            // btnEdit
             // 
-            this.EditButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.EditButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditButton.IconChar = FontAwesome.Sharp.IconChar.Edit;
-            this.EditButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.EditButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.EditButton.IconSize = 40;
-            this.EditButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.EditButton.Location = new System.Drawing.Point(394, 0);
-            this.EditButton.Margin = new System.Windows.Forms.Padding(2);
-            this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(89, 46);
-            this.EditButton.TabIndex = 1;
-            this.EditButton.Text = "Edit";
-            this.EditButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.EditButton.UseVisualStyleBackColor = true;
+            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            this.btnEdit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEdit.IconSize = 40;
+            this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnEdit.Location = new System.Drawing.Point(394, 0);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(89, 46);
+            this.btnEdit.TabIndex = 1;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // pnlTopBar
             // 
             this.pnlTopBar.BackColor = System.Drawing.Color.White;
-            this.pnlTopBar.Controls.Add(this.DeleteButton);
-            this.pnlTopBar.Controls.Add(this.NewButton);
-            this.pnlTopBar.Controls.Add(this.EditButton);
+            this.pnlTopBar.Controls.Add(this.btnDelete);
+            this.pnlTopBar.Controls.Add(this.btnNew);
+            this.pnlTopBar.Controls.Add(this.btnEdit);
             this.pnlTopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopBar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlTopBar.Location = new System.Drawing.Point(0, 0);
@@ -93,42 +93,42 @@ namespace ChinChin.Forms_QuanLy
             this.pnlTopBar.Size = new System.Drawing.Size(600, 48);
             this.pnlTopBar.TabIndex = 2;
             // 
-            // DeleteButton
+            // btnDelete
             // 
-            this.DeleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteButton.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.DeleteButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.DeleteButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.DeleteButton.IconSize = 40;
-            this.DeleteButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.DeleteButton.Location = new System.Drawing.Point(488, 0);
-            this.DeleteButton.Margin = new System.Windows.Forms.Padding(2);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(110, 46);
-            this.DeleteButton.TabIndex = 3;
-            this.DeleteButton.Text = "Delete";
-            this.DeleteButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDelete.IconSize = 40;
+            this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnDelete.Location = new System.Drawing.Point(488, 0);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(110, 46);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // NewButton
+            // btnNew
             // 
-            this.NewButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.NewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewButton.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.NewButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.NewButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.NewButton.IconSize = 40;
-            this.NewButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.NewButton.Location = new System.Drawing.Point(301, 0);
-            this.NewButton.Margin = new System.Windows.Forms.Padding(2);
-            this.NewButton.Name = "NewButton";
-            this.NewButton.Size = new System.Drawing.Size(89, 46);
-            this.NewButton.TabIndex = 2;
-            this.NewButton.Text = "New";
-            this.NewButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.NewButton.UseVisualStyleBackColor = true;
-            this.NewButton.Click += new System.EventHandler(this.NewButton_Click);
+            this.btnNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNew.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnNew.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnNew.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNew.IconSize = 40;
+            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnNew.Location = new System.Drawing.Point(301, 0);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(89, 46);
+            this.btnNew.TabIndex = 2;
+            this.btnNew.Text = "New";
+            this.btnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // KhoHang
             // 
@@ -150,10 +150,10 @@ namespace ChinChin.Forms_QuanLy
         #endregion
 
         private System.Windows.Forms.DataGridView dgvVatLieu;
-        private FontAwesome.Sharp.IconButton EditButton;
+        private FontAwesome.Sharp.IconButton btnEdit;
         private System.Windows.Forms.Panel pnlTopBar;
-        private FontAwesome.Sharp.IconButton NewButton;
-        private FontAwesome.Sharp.IconButton DeleteButton;
+        private FontAwesome.Sharp.IconButton btnNew;
+        private FontAwesome.Sharp.IconButton btnDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaVatLieu;
     }
 }

@@ -189,6 +189,7 @@
             this.ibtn4.Text = "KHO HÀNG";
             this.ibtn4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn4.UseVisualStyleBackColor = true;
+            this.ibtn4.Click += new System.EventHandler(this.ibtn4_Click);
             // 
             // ibtn3
             // 

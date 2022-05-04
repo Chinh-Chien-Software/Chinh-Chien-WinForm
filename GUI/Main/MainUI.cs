@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
+using ChinChin.Forms_QuanLy;
 
 namespace ChinChin.UI
 {
@@ -135,12 +136,16 @@ namespace ChinChin.UI
         private void mnsiThongTinTaiKhoan_Click(object sender, EventArgs e)
         {
             MenuAnimation.OpenChildForm(new ThongTinTaiKhoan(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
-
         }
 
         private void ibtn2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ibtn4_Click(object sender, EventArgs e)
+        {
+            MenuAnimation.OpenChildForm(new KhoHang(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
     }
 }

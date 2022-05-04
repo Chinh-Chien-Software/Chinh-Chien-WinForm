@@ -21,11 +21,11 @@ namespace ChinChin.Forms_QuanLy
         private void KhoHang_Load(object sender, EventArgs e)
         {
             string sql = "SELECT * FROM KhoHang";
-            DataSet dsVatLieu = DataProvider.LoadDataSet(sql);
-            dgvVatLieu.DataSource = dsVatLieu.Tables[0];
+            DataTable dtVatLieu = DataProvider.LoadDataTable(sql);
+            dgvVatLieu.DataSource = dtVatLieu;
         }
 
-        private void NewButton_Click(object sender, EventArgs e)
+        private void btnNew_Click(object sender, EventArgs e)
         {
             
         }

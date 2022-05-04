@@ -16,7 +16,7 @@ namespace ChinChin.Database
         static SqlConnection conn; // Create a connection - Dây cấm
         static string connStr = Properties.Settings.Default.ChinhChienConnectionString; // Ổ cấm
 
-        static public DataTable LoadDatabase(string sql)
+        static public DataTable LoadDataTable(string sql)
         {
             DataTable dt = new DataTable(); //Khởi tạo một datatable để lưu dữ liệu
             conn = new SqlConnection(connStr); // Khởi tạo 1 kết nối - Cấm vào
@@ -31,7 +31,6 @@ namespace ChinChin.Database
             string sql = Properties.Settings.Default.ChinhChienConnectionString;
             conn = new SqlConnection(connStr); //Khởi tạo 1 kết nối
             SqlCommand cm = new SqlCommand(sql, conn); //Tạo các lệnh
-
         }
 
         // Tại sao lại tạo DataSet trong khi chỉ toàn dùng DataTable
