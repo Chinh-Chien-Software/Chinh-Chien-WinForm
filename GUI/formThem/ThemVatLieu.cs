@@ -15,6 +15,22 @@ namespace ChinChin.GUI.formThem
         public ThemVatLieu()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+
+        private void ThemVatLieu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

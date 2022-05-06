@@ -141,6 +141,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GUI\formThem\ThemVatLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\formThem\ThemVatLieu.Designer.cs">
+      <DependentUpon>ThemVatLieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Main\CaiDat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,10 +220,10 @@
     <Compile Include="GUI\fsQuanLy\BaoCaoDoanhThu.Designer.cs">
       <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\fsQuanLy\KhoHang.cs">
+    <Compile Include="GUI\KhoHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\fsQuanLy\KhoHang.Designer.cs">
+    <Compile Include="GUI\KhoHang.Designer.cs">
       <DependentUpon>KhoHang.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\fsQuanLy\QuanLyLichLam.cs">
@@ -271,6 +277,9 @@
     <EmbeddedResource Include="Custom\TextBox_Custom.resx">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\formThem\ThemVatLieu.resx">
+      <DependentUpon>ThemVatLieu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Main\CaiDat.resx">
       <DependentUpon>CaiDat.cs</DependentUpon>
     </EmbeddedResource>
@@ -307,7 +316,7 @@
     <EmbeddedResource Include="GUI\fsQuanLy\BaoCaoDoanhThu.resx">
       <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\fsQuanLy\KhoHang.resx">
+    <EmbeddedResource Include="GUI\KhoHang.resx">
       <DependentUpon>KhoHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fsQuanLy\QuanLyLichLam.resx">

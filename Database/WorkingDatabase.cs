@@ -55,5 +55,19 @@ namespace ChinChin.Database
                 return false;
             }
         }
+
+        public static void ThemVatLieu(
+            string MaVatLieu,
+            string TenVatLieu,
+            string NhaCungCap,
+            int SoLuong,
+            float Gia,
+            string DonViTinh
+            )
+        {
+            con.Open();
+            string sqlAddVatLieu = "";
+            con.Close();
+        }
     }
 }

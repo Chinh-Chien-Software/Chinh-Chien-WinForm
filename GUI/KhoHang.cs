@@ -20,14 +20,15 @@ namespace ChinChin.Forms_QuanLy
 
         private void KhoHang_Load(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM KhoHang";
-            DataTable dtVatLieu = DataProvider.LoadDataTable(sql);
-            dgvVatLieu.DataSource = dtVatLieu;
+            string sql = "SELECT * FROM VatLieu";
+            //DataTable dtVatLieu = DataProvider.LoadDataTable(sql);
+            dgvVatLieu.DataSource = DataProvider.LoadDataTable(sql);
         }
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            
+            ChinChin.GUI.formThem.ThemVatLieu ThemVatLieu = new ChinChin.GUI.formThem.ThemVatLieu();
+            ThemVatLieu.Show();
         }
     }
 }
