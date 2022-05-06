@@ -13,6 +13,8 @@ namespace ChinChin.Forms_QuanLy
 {
     public partial class KhoHang : Form
     {
+        static string sqlVL = "SELECT * FROM VatLieu";
+
         public KhoHang()
         {
             InitializeComponent();
@@ -20,15 +22,18 @@ namespace ChinChin.Forms_QuanLy
 
         private void KhoHang_Load(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM VatLieu";
-            //DataTable dtVatLieu = DataProvider.LoadDataTable(sql);
-            dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sql);
+            dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVL);
         }
 
         private void btnNew_Click(object sender, EventArgs e)
         {
             ChinChin.GUI.formThem.ThemVatLieu ThemVatLieu = new ChinChin.GUI.formThem.ThemVatLieu();
             ThemVatLieu.Show();
+        }
+
+        private void ibtbRefresh_Click(object sender, EventArgs e)
+        {
+            dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVL);
         }
     }
 }

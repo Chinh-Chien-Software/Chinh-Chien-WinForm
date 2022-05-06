@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ChinChin.Database;
 
 namespace ChinChin.GUI.formThem
 {
@@ -26,11 +27,17 @@ namespace ChinChin.GUI.formThem
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            //ThemVatLieu(tbcMaVL.TB_Text);
+            Them.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text, Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text);
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

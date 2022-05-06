@@ -102,6 +102,7 @@
     <Compile Include="Custom\TextBox_Custom.Designer.cs">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database\Them.cs" />
     <Compile Include="Database\WorkingDatabase.cs" />
     <Compile Include="Database\DataProvider.cs" />
     <Compile Include="DataSets\KhoHangDataSet.cs">

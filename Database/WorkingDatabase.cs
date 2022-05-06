@@ -55,37 +55,5 @@ namespace ChinChin.Database
                 return false;
             }
         }
-
-        public static void ThemVatLieu(
-            string MaVatLieu,
-            string TenVatLieu,
-            string NhaCungCap,
-            int SoLuong,
-            float Gia,
-            string DonViTinh
-            )
-        {
-            con.Open();
-            string sqlAddVatLieu = "insert into VatLieu values ('"+ MaVatLieu + "', '" + TenVatLieu + "', '" + NhaCungCap + "', " + SoLuong + ", " + Gia + ", '" + DonViTinh + "')";
-            cmd = new SqlCommand(sqlAddVatLieu, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
-
-        public static void ThemSanPham(
-            string MaSanPham,
-            string TenSanPham,
-            string CongThuc,
-            string ThanhPhan,
-            float Gia,
-            int DanhGia
-            )
-        {
-            con.Open();
-            string sqlAddSanPham = "insert into VatLieu values ('" + MaSanPham + "', '" + TenSanPham + "', '" + CongThuc + "', '" + ThanhPhan + "', " + Gia + ", " + DanhGia + ")";
-            cmd = new SqlCommand(sqlAddSanPham, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ChinChin.GUI.formThem
 {
-    partial class ThemSanPham
+    partial class ThemSuaSanPham
     {
         /// <summary>
         /// Required designer variable.
@@ -42,7 +42,6 @@
             this.tbcMaSP = new ChinChin.Custom.TextBox_Custom();
             this.tbcTenSP = new ChinChin.Custom.TextBox_Custom();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
-            this.btnHuy = new ChinChin.Extra.BlackWhiteButton();
             this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -144,7 +143,7 @@
             this.pnlThongTin.Controls.Add(this.label1);
             this.pnlThongTin.Controls.Add(this.tbcTenSP);
             this.pnlThongTin.Controls.Add(this.lblNgaySinh);
-            this.pnlThongTin.Location = new System.Drawing.Point(21, 12);
+            this.pnlThongTin.Location = new System.Drawing.Point(12, 12);
             this.pnlThongTin.Name = "pnlThongTin";
             this.pnlThongTin.Size = new System.Drawing.Size(646, 550);
             this.pnlThongTin.TabIndex = 26;
@@ -219,34 +218,12 @@
             this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(777, 11);
+            this.btnExit.Location = new System.Drawing.Point(785, 11);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(46, 48);
             this.btnExit.TabIndex = 29;
             this.btnExit.TabStop = false;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnHuy.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnHuy.BorderColor = System.Drawing.Color.Black;
-            this.btnHuy.BorderRadius = 0;
-            this.btnHuy.BorderSize = 0;
-            this.btnHuy.FlatAppearance.BorderSize = 0;
-            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuy.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.Location = new System.Drawing.Point(565, 664);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(2);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(258, 50);
-            this.btnHuy.TabIndex = 28;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.TextColor = System.Drawing.Color.White;
-            this.btnHuy.UseVisualStyleBackColor = false;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
@@ -260,7 +237,7 @@
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(565, 610);
+            this.btnLuu.Location = new System.Drawing.Point(573, 664);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(258, 50);
@@ -270,17 +247,16 @@
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // ThemSanPham
+            // ThemSuaSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 725);
+            this.ClientSize = new System.Drawing.Size(842, 725);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.pnlThongTin);
-            this.Name = "ThemSanPham";
-            this.Text = "ThemSanPham";
+            this.Name = "ThemSuaSanPham";
+            this.Text = "Thêm và Sửa thông tin SanPham";
             this.pnlThongTin.ResumeLayout(false);
             this.pnlThongTin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
@@ -304,7 +280,6 @@
         private Custom.TextBox_Custom tbcMaSP;
         private Custom.TextBox_Custom tbcTenSP;
         private FontAwesome.Sharp.IconPictureBox btnExit;
-        private Extra.BlackWhiteButton btnHuy;
         private Extra.BlackWhiteButton btnLuu;
     }
 }
