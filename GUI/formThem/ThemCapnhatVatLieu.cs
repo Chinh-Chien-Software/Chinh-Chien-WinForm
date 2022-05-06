@@ -30,6 +30,12 @@ namespace ChinChin.GUI.formThem
         {
             InitializeComponent();
             btnLuuCapnhat.Text = "Cập nhật";
+            tbcMaVL.Text = MaVatLieu;
+            tbcTenVL.Text = TenVatLieu;
+            tbcNhaCC.Text = NhaCungCap;
+            tbcSL.Text = SoLuong.ToString();
+            tbcGia.Text = Gia.ToString();
+            tbcDVT.Text = DonViTinh;
         }
 
         private void ThemVatLieu_Load(object sender, EventArgs e)

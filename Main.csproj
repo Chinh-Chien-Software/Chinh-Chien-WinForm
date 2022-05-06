@@ -102,9 +102,9 @@
     <Compile Include="Custom\TextBox_Custom.Designer.cs">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Database\Them.cs" />
-    <Compile Include="Database\WorkingDatabase.cs" />
-    <Compile Include="Database\DataProvider.cs" />
+    <Compile Include="DAL\Them.cs" />
+    <Compile Include="DAL\WorkingDatabase.cs" />
+    <Compile Include="DAL\DataProvider.cs" />
     <Compile Include="DataSets\KhoHangDataSet.cs">
       <DependentUpon>KhoHangDataSet.xsd</DependentUpon>
     </Compile>
@@ -142,17 +142,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="GUI\formThem\ThemSanPham.cs">
+    <Compile Include="GUI\formThem\ThemSuaSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\formThem\ThemSanPham.Designer.cs">
-      <DependentUpon>ThemSanPham.cs</DependentUpon>
+    <Compile Include="GUI\formThem\ThemSuaSanPham.Designer.cs">
+      <DependentUpon>ThemSuaSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\formThem\ThemVatLieu.cs">
+    <Compile Include="GUI\formThem\ThemCapnhatVatLieu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\formThem\ThemVatLieu.Designer.cs">
-      <DependentUpon>ThemVatLieu.cs</DependentUpon>
+    <Compile Include="GUI\formThem\ThemCapnhatVatLieu.Designer.cs">
+      <DependentUpon>ThemCapnhatVatLieu.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Main\CaiDat.cs">
       <SubType>Form</SubType>
@@ -284,11 +284,11 @@
     <EmbeddedResource Include="Custom\TextBox_Custom.resx">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\formThem\ThemSanPham.resx">
-      <DependentUpon>ThemSanPham.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\formThem\ThemSuaSanPham.resx">
+      <DependentUpon>ThemSuaSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\formThem\ThemVatLieu.resx">
-      <DependentUpon>ThemVatLieu.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\formThem\ThemCapnhatVatLieu.resx">
+      <DependentUpon>ThemCapnhatVatLieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Main\CaiDat.resx">
       <DependentUpon>CaiDat.cs</DependentUpon>

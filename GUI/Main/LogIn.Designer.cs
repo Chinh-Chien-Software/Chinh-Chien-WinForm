@@ -120,7 +120,7 @@ namespace ChinChin.UI
             this.SignInButton.Margin = new System.Windows.Forms.Padding(2);
             this.SignInButton.Name = "SignInButton";
             this.SignInButton.Size = new System.Drawing.Size(271, 122);
-            this.SignInButton.TabIndex = 10;
+            this.SignInButton.TabIndex = 4;
             this.SignInButton.Text = "ĐĂNG NHẬP";
             this.SignInButton.TextColor = System.Drawing.Color.White;
             this.SignInButton.UseVisualStyleBackColor = false;
@@ -182,7 +182,7 @@ namespace ChinChin.UI
             this.ckBxRememberSignIn.Margin = new System.Windows.Forms.Padding(2);
             this.ckBxRememberSignIn.Name = "ckBxRememberSignIn";
             this.ckBxRememberSignIn.Size = new System.Drawing.Size(192, 27);
-            this.ckBxRememberSignIn.TabIndex = 5;
+            this.ckBxRememberSignIn.TabIndex = 3;
             this.ckBxRememberSignIn.Text = "Ghi nhớ đăng nhập";
             this.ckBxRememberSignIn.UseVisualStyleBackColor = false;
             this.ckBxRememberSignIn.CheckedChanged += new System.EventHandler(this.ckBxRememberSignIn_CheckedChanged);
@@ -207,8 +207,7 @@ namespace ChinChin.UI
             this.tbcUserName.Name = "tbcUserName";
             this.tbcUserName.PasswordChar = '\0';
             this.tbcUserName.Size = new System.Drawing.Size(271, 36);
-            this.tbcUserName.TabIndex = 7;
-            this.tbcUserName.Text = "";
+            this.tbcUserName.TabIndex = 1;
             this.tbcUserName.Load += new System.EventHandler(this.tbcUserName_Load);
             // 
             // labelUserName
@@ -276,8 +275,7 @@ namespace ChinChin.UI
             this.tbcPassword.Name = "tbcPassword";
             this.tbcPassword.PasswordChar = '*';
             this.tbcPassword.Size = new System.Drawing.Size(271, 36);
-            this.tbcPassword.TabIndex = 8;
-            this.tbcPassword.Text = "";
+            this.tbcPassword.TabIndex = 2;
             // 
             // taiKhoanBindingSource
             // 

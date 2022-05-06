@@ -29,13 +29,13 @@ namespace ChinChin.Forms_QuanLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvVatLieu = new System.Windows.Forms.DataGridView();
             this.btnEdit = new FontAwesome.Sharp.IconButton();
             this.pnlTopBar = new System.Windows.Forms.Panel();
+            this.ibtbRefresh = new FontAwesome.Sharp.IconButton();
             this.btnDelete = new FontAwesome.Sharp.IconButton();
             this.btnNew = new FontAwesome.Sharp.IconButton();
-            this.ibtbRefresh = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).BeginInit();
             this.pnlTopBar.SuspendLayout();
             this.SuspendLayout();
@@ -57,9 +57,9 @@ namespace ChinChin.Forms_QuanLy
             this.dgvVatLieu.Name = "dgvVatLieu";
             this.dgvVatLieu.ReadOnly = true;
             this.dgvVatLieu.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dgvVatLieu.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvVatLieu.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvVatLieu.RowTemplate.Height = 24;
             this.dgvVatLieu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvVatLieu.Size = new System.Drawing.Size(600, 318);
@@ -85,6 +85,7 @@ namespace ChinChin.Forms_QuanLy
             this.btnEdit.Text = "Edit";
             this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // pnlTopBar
             // 
@@ -100,6 +101,28 @@ namespace ChinChin.Forms_QuanLy
             this.pnlTopBar.Name = "pnlTopBar";
             this.pnlTopBar.Size = new System.Drawing.Size(600, 48);
             this.pnlTopBar.TabIndex = 2;
+            // 
+            // ibtbRefresh
+            // 
+            this.ibtbRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ibtbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtbRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtbRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtbRefresh.ForeColor = System.Drawing.Color.White;
+            this.ibtbRefresh.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.ibtbRefresh.IconColor = System.Drawing.Color.White;
+            this.ibtbRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtbRefresh.IconSize = 40;
+            this.ibtbRefresh.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.ibtbRefresh.Location = new System.Drawing.Point(189, 0);
+            this.ibtbRefresh.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtbRefresh.Name = "ibtbRefresh";
+            this.ibtbRefresh.Size = new System.Drawing.Size(109, 46);
+            this.ibtbRefresh.TabIndex = 4;
+            this.ibtbRefresh.Text = "Refresh";
+            this.ibtbRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtbRefresh.UseVisualStyleBackColor = false;
+            this.ibtbRefresh.Click += new System.EventHandler(this.ibtbRefresh_Click);
             // 
             // btnDelete
             // 
@@ -143,28 +166,6 @@ namespace ChinChin.Forms_QuanLy
             this.btnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNew.UseVisualStyleBackColor = false;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
-            // 
-            // ibtbRefresh
-            // 
-            this.ibtbRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ibtbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtbRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtbRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtbRefresh.ForeColor = System.Drawing.Color.White;
-            this.ibtbRefresh.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.ibtbRefresh.IconColor = System.Drawing.Color.White;
-            this.ibtbRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtbRefresh.IconSize = 40;
-            this.ibtbRefresh.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.ibtbRefresh.Location = new System.Drawing.Point(189, 0);
-            this.ibtbRefresh.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtbRefresh.Name = "ibtbRefresh";
-            this.ibtbRefresh.Size = new System.Drawing.Size(109, 46);
-            this.ibtbRefresh.TabIndex = 4;
-            this.ibtbRefresh.Text = "Refresh";
-            this.ibtbRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtbRefresh.UseVisualStyleBackColor = false;
-            this.ibtbRefresh.Click += new System.EventHandler(this.ibtbRefresh_Click);
             // 
             // KhoHang
             // 

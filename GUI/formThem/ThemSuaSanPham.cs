@@ -13,10 +13,22 @@ namespace ChinChin.GUI.formThem
 {
     public partial class ThemSuaSanPham : Form
     {
-        int ChucNang = 0;
+        //int ChucNang = 0;
         public ThemSuaSanPham()
         {
             InitializeComponent();
+        }
+        public ThemSuaSanPham(int ChucNang)
+        {
+            InitializeComponent();
+            if (ChucNang == 0)
+            {
+                btnLuu.Text = "Lưu";
+            }
+            if (ChucNang == 1)
+            {
+                btnLuu.Text = "Cập nhật";
+            }
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
