@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinhChienWinForm", "ChinhChienWinForm.csproj", "{351DD642-65F5-4C8B-90C0-18014A4A2B3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quan-Ly-Thue-Nha", "..\..\..\GitLab\QuanLyThueNha\QLThueNha\QLThueNha\Quan-Ly-Thue-Nha.csproj", "{294D5E6A-61DA-4569-B7AB-65431090C2EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{351DD642-65F5-4C8B-90C0-18014A4A2B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{351DD642-65F5-4C8B-90C0-18014A4A2B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{351DD642-65F5-4C8B-90C0-18014A4A2B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{294D5E6A-61DA-4569-B7AB-65431090C2EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{294D5E6A-61DA-4569-B7AB-65431090C2EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{294D5E6A-61DA-4569-B7AB-65431090C2EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{294D5E6A-61DA-4569-B7AB-65431090C2EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

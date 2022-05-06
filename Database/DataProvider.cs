@@ -33,7 +33,7 @@ namespace ChinChin.Database
             SqlCommand cm = new SqlCommand(sql, conn); //Tạo các lệnh
         }
 
-        // Tại sao lại tạo DataSet trong khi chỉ toàn dùng DataTable
+        // Tại sao lại tạo DataSet trong khi chỉ toàn dùng DataTable => 
         static public DataSet LoadDataSet(string sql)
         {
             DataSet DataSet = new DataSet(); //Khởi tạo một DataSet để lưu dữ liệu

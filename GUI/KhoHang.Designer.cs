@@ -139,7 +139,7 @@ namespace ChinChin.Forms_QuanLy
             this.Controls.Add(this.dgvVatLieu);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "KhoHang";
-            this.Text = "QuanLyKhoHang";
+            this.Text = "QuanLyKhoHang - Các Vật Liệu";
             this.Load += new System.EventHandler(this.KhoHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).EndInit();
             this.pnlTopBar.ResumeLayout(false);
