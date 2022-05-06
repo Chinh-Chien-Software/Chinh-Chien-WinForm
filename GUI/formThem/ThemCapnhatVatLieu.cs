@@ -11,17 +11,30 @@ using ChinChin.Database;
 
 namespace ChinChin.GUI.formThem
 {
-    public partial class ThemVatLieu : Form
+    public partial class ThemCapnhatVatLieu : Form
     {
-        public ThemVatLieu()
+        public ThemCapnhatVatLieu()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.None;
+            btnLuuCapnhat.Text = "Lưu";
+        }
+
+        public ThemCapnhatVatLieu(
+            string MaVatLieu,
+            string TenVatLieu,
+            string NhaCungCap,
+            int SoLuong,
+            float Gia,
+            string DonViTinh
+            )
+        {
+            InitializeComponent();
+            btnLuuCapnhat.Text = "Cập nhật";
         }
 
         private void ThemVatLieu_Load(object sender, EventArgs e)
         {
-
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
