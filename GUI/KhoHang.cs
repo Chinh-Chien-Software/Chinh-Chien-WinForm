@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChinChin.Database;
+using ChinChin.DAL_DAO;
 
 namespace ChinChin.Forms_QuanLy
 {
@@ -53,6 +54,12 @@ namespace ChinChin.Forms_QuanLy
                     MaVatLieu, TenVatLieu, NhaCungCap, SoLuong, Gia, DonViTinh);
 
             ThemVatLieu.Show();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string MaVatLieu = dgvVatLieu.SelectedRows[0].Cells[0].Value.ToString();
+            XoaDAL.VatLieu(MaVatLieu);
         }
     }
 }

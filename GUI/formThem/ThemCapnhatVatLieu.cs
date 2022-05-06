@@ -7,16 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ChinChin.Database;
+using ChinChin.DAL_DAO;
 
 namespace ChinChin.GUI.formThem
 {
     public partial class ThemCapnhatVatLieu : Form
     {
+        int ChucNang;
         public ThemCapnhatVatLieu()
         {
             InitializeComponent();
             btnLuuCapnhat.Text = "Lưu";
+            ChucNang = 0;
         }
 
         public ThemCapnhatVatLieu(
@@ -36,6 +38,7 @@ namespace ChinChin.GUI.formThem
             tbcSL.Text = SoLuong.ToString();
             tbcGia.Text = Gia.ToString();
             tbcDVT.Text = DonViTinh;
+            ChucNang = 1;
         }
 
         private void ThemVatLieu_Load(object sender, EventArgs e)
@@ -51,7 +54,14 @@ namespace ChinChin.GUI.formThem
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            Them.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text, Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text);
+            if (ChucNang == 0)
+            {
+                ThemDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text, Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text);
+            }
+            else if (ChucNang == 1)
+            {
+                CapNhatDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text, Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text);
+            }
         }
 
         private void btnHuy_Click(object sender, EventArgs e)

@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace ChinChin.Database
+namespace ChinChin.DAL_DAO
 {
-    public class Them
+    public class ThemDAL
     {
         static string connString = Properties.Settings.Default.ChinhChienConnectionString;
         static SqlConnection con = new SqlConnection(connString);
@@ -23,7 +23,7 @@ namespace ChinChin.Database
             )
         {
             con.Open();
-            string sqlAddVatLieu = "insert into VatLieu values ('" + MaVatLieu + "', '" + TenVatLieu + "', '" + NhaCungCap + "', " + SoLuong + ", " + Gia + ", '" + DonViTinh + "')";
+            string sqlAddVatLieu = "insert into VatLieu values ('" + MaVatLieu + "', N'" + TenVatLieu + "', '" + NhaCungCap + "', " + SoLuong + ", " + Gia + ", '" + DonViTinh + "')";
             cmd = new SqlCommand(sqlAddVatLieu, con);
             cmd.ExecuteNonQuery();
             con.Close();

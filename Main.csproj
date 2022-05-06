@@ -102,9 +102,11 @@
     <Compile Include="Custom\TextBox_Custom.Designer.cs">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
     </Compile>
-    <Compile Include="DAL\Them.cs" />
-    <Compile Include="DAL\WorkingDatabase.cs" />
-    <Compile Include="DAL\DataProvider.cs" />
+    <Compile Include="DAL-DAO\CapNhatDAL.cs" />
+    <Compile Include="DAL-DAO\ThemDAL.cs" />
+    <Compile Include="DAL-DAO\WorkingDatabase.cs" />
+    <Compile Include="DAL-DAO\DataProvider.cs" />
+    <Compile Include="DAL-DAO\XoaDAL.cs" />
     <Compile Include="DataSets\KhoHangDataSet.cs">
       <DependentUpon>KhoHangDataSet.xsd</DependentUpon>
     </Compile>
