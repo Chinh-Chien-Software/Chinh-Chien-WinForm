@@ -29,40 +29,40 @@ namespace ChinChin.Forms_ChuQuan
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgvVatLieu = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dgvSanPham = new System.Windows.Forms.DataGridView();
             this.btnEdit = new FontAwesome.Sharp.IconButton();
             this.pnlTopBar = new System.Windows.Forms.Panel();
             this.btnDelete = new FontAwesome.Sharp.IconButton();
             this.btnNew = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.pnlTopBar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvVatLieu
+            // dgvSanPham
             // 
-            this.dgvVatLieu.AllowUserToAddRows = false;
-            this.dgvVatLieu.AllowUserToDeleteRows = false;
-            this.dgvVatLieu.AllowUserToResizeColumns = false;
-            this.dgvVatLieu.AllowUserToResizeRows = false;
-            this.dgvVatLieu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvVatLieu.BackgroundColor = System.Drawing.Color.White;
-            this.dgvVatLieu.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvVatLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVatLieu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvVatLieu.GridColor = System.Drawing.Color.White;
-            this.dgvVatLieu.Location = new System.Drawing.Point(0, 48);
-            this.dgvVatLieu.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvVatLieu.Name = "dgvVatLieu";
-            this.dgvVatLieu.ReadOnly = true;
-            this.dgvVatLieu.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dgvVatLieu.RowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvVatLieu.RowTemplate.Height = 24;
-            this.dgvVatLieu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvVatLieu.Size = new System.Drawing.Size(600, 318);
-            this.dgvVatLieu.TabIndex = 3;
+            this.dgvSanPham.AllowUserToAddRows = false;
+            this.dgvSanPham.AllowUserToDeleteRows = false;
+            this.dgvSanPham.AllowUserToResizeColumns = false;
+            this.dgvSanPham.AllowUserToResizeRows = false;
+            this.dgvSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSanPham.BackgroundColor = System.Drawing.Color.White;
+            this.dgvSanPham.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvSanPham.GridColor = System.Drawing.Color.White;
+            this.dgvSanPham.Location = new System.Drawing.Point(0, 48);
+            this.dgvSanPham.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvSanPham.Name = "dgvSanPham";
+            this.dgvSanPham.ReadOnly = true;
+            this.dgvSanPham.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dgvSanPham.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvSanPham.RowTemplate.Height = 24;
+            this.dgvSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSanPham.Size = new System.Drawing.Size(600, 318);
+            this.dgvSanPham.TabIndex = 3;
             // 
             // btnEdit
             // 
@@ -140,18 +140,20 @@ namespace ChinChin.Forms_ChuQuan
             this.btnNew.Text = "New";
             this.btnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNew.UseVisualStyleBackColor = false;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // FormThucDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.dgvVatLieu);
+            this.Controls.Add(this.dgvSanPham);
             this.Controls.Add(this.pnlTopBar);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThucDon";
             this.Text = "Quản Lý Menu";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).EndInit();
+            this.Load += new System.EventHandler(this.FormThucDon_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
             this.pnlTopBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -159,7 +161,7 @@ namespace ChinChin.Forms_ChuQuan
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvVatLieu;
+        private System.Windows.Forms.DataGridView dgvSanPham;
         private FontAwesome.Sharp.IconButton btnEdit;
         private System.Windows.Forms.Panel pnlTopBar;
         private FontAwesome.Sharp.IconButton btnDelete;

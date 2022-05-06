@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ChinChin.Database;
 
 namespace ChinChin.Forms_ChuQuan
 {
@@ -17,7 +18,13 @@ namespace ChinChin.Forms_ChuQuan
             InitializeComponent();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void FormThucDon_Load(object sender, EventArgs e)
+        {
+            string sql = "SELECT * FROM SanPham";
+            dgvSanPham.DataSource = DataProvider.ReturnDataTable(sql);
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
         {
 
         }

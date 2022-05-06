@@ -16,7 +16,7 @@ namespace ChinChin.Database
         static SqlConnection conn; // Create a connection - Dây cấm
         static string connStr = Properties.Settings.Default.ChinhChienConnectionString; // Ổ cấm
 
-        static public DataTable LoadDataTable(string sql)
+        static public DataTable ReturnDataTable(string sql)
         {
             DataTable dt = new DataTable(); //Khởi tạo một datatable để lưu dữ liệu
             conn = new SqlConnection(connStr); // Khởi tạo 1 kết nối - Cấm vào

@@ -71,5 +71,21 @@ namespace ChinChin.Database
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        public static void ThemSanPham(
+            string MaSanPham,
+            string TenSanPham,
+            string CongThuc,
+            string ThanhPhan,
+            float Gia,
+            int DanhGia
+            )
+        {
+            con.Open();
+            string sqlAddSanPham = "insert into VatLieu values ('" + MaSanPham + "', '" + TenSanPham + "', '" + CongThuc + "', '" + ThanhPhan + "', " + Gia + ", " + DanhGia + ")";
+            cmd = new SqlCommand(sqlAddSanPham, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }

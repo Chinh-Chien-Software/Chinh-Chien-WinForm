@@ -22,7 +22,7 @@ namespace ChinChin.Forms_QuanLy
         {
             string sql = "SELECT * FROM VatLieu";
             //DataTable dtVatLieu = DataProvider.LoadDataTable(sql);
-            dgvVatLieu.DataSource = DataProvider.LoadDataTable(sql);
+            dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sql);
         }
 
         private void btnNew_Click(object sender, EventArgs e)

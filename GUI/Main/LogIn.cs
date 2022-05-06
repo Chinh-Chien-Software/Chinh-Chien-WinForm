@@ -58,7 +58,7 @@ namespace ChinChin.UI
 
             string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan = '" + username + "' AND MatKhau = '" + password + "'";
             DataTable TaiKhoan = new DataTable();
-            TaiKhoan = DataProvider.LoadDataTable(sqlcode);
+            TaiKhoan = DataProvider.ReturnDataTable(sqlcode);
 
             // Điều kiện Kiểm tra LoaiTaiKhoan
             if (TaiKhoan.Rows.Count == 1)
