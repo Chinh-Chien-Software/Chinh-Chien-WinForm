@@ -53,8 +53,8 @@ namespace ChinChin.UI
 
         private void CheckUserPassAndSignIn()
         {
-            username = tbcUserName.TB_Text;
-            password = tbcPassword.TB_Text;
+            username = tbcUserName.Text;
+            password = tbcPassword.Text;
 
             string sqlcode = "SELECT * FROM TaiKhoan WHERE TenTaiKhoan = '" + username + "' AND MatKhau = '" + password + "'";
             DataTable TaiKhoan = new DataTable();
@@ -78,7 +78,7 @@ namespace ChinChin.UI
                     }
                     else
                     {
-                        File.WriteAllText(Path.Combine(specificFolder, "SavedUsername.txt"), tbcUserName.TB_Text);
+                        File.WriteAllText(Path.Combine(specificFolder, "SavedUsername.txt"), tbcUserName.Text);
                     }
                 }
                 else

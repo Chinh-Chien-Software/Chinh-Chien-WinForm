@@ -42,8 +42,8 @@ namespace ChinChin.UI
 
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            WorkingDatabase.CreateAccount(tbcUsername.TB_Text, tbcPassword.TB_Text, "", 1);
-            if (WorkingDatabase.CheckUsername(tbcUsername.TB_Text) == false)
+            WorkingDatabase.CreateAccount(tbcUsername.Text, tbcPassword.Text, "", 1);
+            if (WorkingDatabase.CheckUsername(tbcUsername.Text) == false)
             {
                 MainUI MainUI = new MainUI();
                 MainUI.Show();
@@ -81,7 +81,7 @@ namespace ChinChin.UI
 
         private void tbcUsername_TextChanged(object sender, EventArgs e)
         {
-            bool KetQua = WorkingDatabase.CheckUsername(tbcUsername.TB_Text);
+            bool KetQua = WorkingDatabase.CheckUsername(tbcUsername.Text);
             if (KetQua)
             {
                 iPBCheckUsername.Visible = true;

@@ -208,7 +208,7 @@ namespace ChinChin.UI
             this.tbcUserName.PasswordChar = '\0';
             this.tbcUserName.Size = new System.Drawing.Size(271, 36);
             this.tbcUserName.TabIndex = 7;
-            this.tbcUserName.TB_Text = "";
+            this.tbcUserName.Text = "";
             this.tbcUserName.Load += new System.EventHandler(this.tbcUserName_Load);
             // 
             // labelUserName
@@ -277,7 +277,7 @@ namespace ChinChin.UI
             this.tbcPassword.PasswordChar = '*';
             this.tbcPassword.Size = new System.Drawing.Size(271, 36);
             this.tbcPassword.TabIndex = 8;
-            this.tbcPassword.TB_Text = "";
+            this.tbcPassword.Text = "";
             // 
             // taiKhoanBindingSource
             // 

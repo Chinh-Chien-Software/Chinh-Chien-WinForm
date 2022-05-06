@@ -66,7 +66,9 @@ namespace ChinChin.Database
             )
         {
             con.Open();
-            string sqlAddVatLieu = "";
+            string sqlAddVatLieu = "insert into VatLieu values ('"+ MaVatLieu + "', '" + TenVatLieu + "', '" + NhaCungCap + "', " + SoLuong + ", " + Gia + ", '" + DonViTinh + "')";
+            cmd = new SqlCommand(sqlAddVatLieu, con);
+            cmd.ExecuteNonQuery();
             con.Close();
         }
     }

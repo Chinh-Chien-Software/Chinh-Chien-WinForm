@@ -168,7 +168,7 @@
             this.textBox_Custom1.PasswordChar = '\0';
             this.textBox_Custom1.Size = new System.Drawing.Size(362, 40);
             this.textBox_Custom1.TabIndex = 11;
-            this.textBox_Custom1.TB_Text = "";
+            this.textBox_Custom1.Text = "";
             // 
             // tbcUserName
             // 
@@ -181,7 +181,7 @@
             this.tbcUserName.PasswordChar = '\0';
             this.tbcUserName.Size = new System.Drawing.Size(362, 40);
             this.tbcUserName.TabIndex = 9;
-            this.tbcUserName.TB_Text = "";
+            this.tbcUserName.Text = "";
             // 
             // pnlThongTin
             // 

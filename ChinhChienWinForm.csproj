@@ -177,11 +177,11 @@
     <Compile Include="GUI\fsChuQuan\XemThongKe.Designer.cs">
       <DependentUpon>XemThongKe.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\fsChuQuan\QuanLyMenu.cs">
+    <Compile Include="GUI\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\fsChuQuan\QuanLyMenu.Designer.cs">
-      <DependentUpon>QuanLyMenu.cs</DependentUpon>
+    <Compile Include="GUI\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\fsNhanVien\ButtonSanPham.cs">
       <SubType>UserControl</SubType>
@@ -295,8 +295,8 @@
     <EmbeddedResource Include="GUI\fsChuQuan\XemThongKe.resx">
       <DependentUpon>XemThongKe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\fsChuQuan\QuanLyMenu.resx">
-      <DependentUpon>QuanLyMenu.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fsNhanVien\ButtonSanPham.resx">
       <DependentUpon>ButtonSanPham.cs</DependentUpon>

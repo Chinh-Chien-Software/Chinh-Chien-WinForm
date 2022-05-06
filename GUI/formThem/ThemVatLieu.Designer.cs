@@ -35,15 +35,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblNgaySinh = new System.Windows.Forms.Label();
             this.pnlThongTin = new System.Windows.Forms.Panel();
+            this.tbcDVT = new ChinChin.Custom.TextBox_Custom();
+            this.tbcGia = new ChinChin.Custom.TextBox_Custom();
+            this.tbcSL = new ChinChin.Custom.TextBox_Custom();
+            this.tbcNhaCC = new ChinChin.Custom.TextBox_Custom();
+            this.tbcMaVL = new ChinChin.Custom.TextBox_Custom();
+            this.tbcTenVL = new ChinChin.Custom.TextBox_Custom();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.blackWhiteButton1 = new ChinChin.Extra.BlackWhiteButton();
             this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
-            this.textBox_Custom5 = new ChinChin.Custom.TextBox_Custom();
-            this.textBox_Custom4 = new ChinChin.Custom.TextBox_Custom();
-            this.textBox_Custom3 = new ChinChin.Custom.TextBox_Custom();
-            this.textBox_Custom2 = new ChinChin.Custom.TextBox_Custom();
-            this.tbcUserName = new ChinChin.Custom.TextBox_Custom();
-            this.textBox_Custom1 = new ChinChin.Custom.TextBox_Custom();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
@@ -132,22 +132,89 @@
             // 
             // pnlThongTin
             // 
-            this.pnlThongTin.Controls.Add(this.textBox_Custom5);
-            this.pnlThongTin.Controls.Add(this.textBox_Custom4);
-            this.pnlThongTin.Controls.Add(this.textBox_Custom3);
-            this.pnlThongTin.Controls.Add(this.textBox_Custom2);
+            this.pnlThongTin.Controls.Add(this.tbcDVT);
+            this.pnlThongTin.Controls.Add(this.tbcGia);
+            this.pnlThongTin.Controls.Add(this.tbcSL);
+            this.pnlThongTin.Controls.Add(this.tbcNhaCC);
             this.pnlThongTin.Controls.Add(this.label4);
             this.pnlThongTin.Controls.Add(this.lblUserName);
             this.pnlThongTin.Controls.Add(this.label3);
-            this.pnlThongTin.Controls.Add(this.tbcUserName);
+            this.pnlThongTin.Controls.Add(this.tbcMaVL);
             this.pnlThongTin.Controls.Add(this.label2);
             this.pnlThongTin.Controls.Add(this.label1);
-            this.pnlThongTin.Controls.Add(this.textBox_Custom1);
+            this.pnlThongTin.Controls.Add(this.tbcTenVL);
             this.pnlThongTin.Controls.Add(this.lblNgaySinh);
             this.pnlThongTin.Location = new System.Drawing.Point(36, 15);
             this.pnlThongTin.Name = "pnlThongTin";
             this.pnlThongTin.Size = new System.Drawing.Size(646, 550);
             this.pnlThongTin.TabIndex = 22;
+            // 
+            // tbcDVT
+            // 
+            this.tbcDVT.ForeColor = System.Drawing.Color.White;
+            this.tbcDVT.Location = new System.Drawing.Point(20, 480);
+            this.tbcDVT.Margin = new System.Windows.Forms.Padding(6);
+            this.tbcDVT.Name = "tbcDVT";
+            this.tbcDVT.PasswordChar = '\0';
+            this.tbcDVT.Size = new System.Drawing.Size(362, 40);
+            this.tbcDVT.TabIndex = 21;
+            this.tbcDVT.Text = "";
+            // 
+            // tbcGia
+            // 
+            this.tbcGia.ForeColor = System.Drawing.Color.White;
+            this.tbcGia.Location = new System.Drawing.Point(20, 397);
+            this.tbcGia.Margin = new System.Windows.Forms.Padding(6);
+            this.tbcGia.Name = "tbcGia";
+            this.tbcGia.PasswordChar = '\0';
+            this.tbcGia.Size = new System.Drawing.Size(362, 40);
+            this.tbcGia.TabIndex = 20;
+            this.tbcGia.Text = "";
+            // 
+            // tbcSL
+            // 
+            this.tbcSL.ForeColor = System.Drawing.Color.White;
+            this.tbcSL.Location = new System.Drawing.Point(20, 312);
+            this.tbcSL.Margin = new System.Windows.Forms.Padding(6);
+            this.tbcSL.Name = "tbcSL";
+            this.tbcSL.PasswordChar = '\0';
+            this.tbcSL.Size = new System.Drawing.Size(362, 40);
+            this.tbcSL.TabIndex = 19;
+            this.tbcSL.Text = "";
+            // 
+            // tbcNhaCC
+            // 
+            this.tbcNhaCC.ForeColor = System.Drawing.Color.White;
+            this.tbcNhaCC.Location = new System.Drawing.Point(20, 227);
+            this.tbcNhaCC.Margin = new System.Windows.Forms.Padding(6);
+            this.tbcNhaCC.Name = "tbcNhaCC";
+            this.tbcNhaCC.PasswordChar = '\0';
+            this.tbcNhaCC.Size = new System.Drawing.Size(362, 40);
+            this.tbcNhaCC.TabIndex = 18;
+            this.tbcNhaCC.Text = "";
+            // 
+            // tbcMaVL
+            // 
+            this.tbcMaVL.BackColor = System.Drawing.Color.White;
+            this.tbcMaVL.ForeColor = System.Drawing.Color.White;
+            this.tbcMaVL.Location = new System.Drawing.Point(20, 54);
+            this.tbcMaVL.Margin = new System.Windows.Forms.Padding(4);
+            this.tbcMaVL.Name = "tbcMaVL";
+            this.tbcMaVL.PasswordChar = '\0';
+            this.tbcMaVL.Size = new System.Drawing.Size(362, 40);
+            this.tbcMaVL.TabIndex = 9;
+            this.tbcMaVL.Text = "";
+            // 
+            // tbcTenVL
+            // 
+            this.tbcTenVL.ForeColor = System.Drawing.Color.White;
+            this.tbcTenVL.Location = new System.Drawing.Point(20, 136);
+            this.tbcTenVL.Margin = new System.Windows.Forms.Padding(6);
+            this.tbcTenVL.Name = "tbcTenVL";
+            this.tbcTenVL.PasswordChar = '\0';
+            this.tbcTenVL.Size = new System.Drawing.Size(362, 40);
+            this.tbcTenVL.TabIndex = 11;
+            this.tbcTenVL.Text = "";
             // 
             // btnExit
             // 
@@ -209,73 +276,6 @@
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // textBox_Custom5
-            // 
-            this.textBox_Custom5.ForeColor = System.Drawing.Color.White;
-            this.textBox_Custom5.Location = new System.Drawing.Point(20, 480);
-            this.textBox_Custom5.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox_Custom5.Name = "textBox_Custom5";
-            this.textBox_Custom5.PasswordChar = '\0';
-            this.textBox_Custom5.Size = new System.Drawing.Size(362, 40);
-            this.textBox_Custom5.TabIndex = 21;
-            this.textBox_Custom5.TB_Text = "";
-            // 
-            // textBox_Custom4
-            // 
-            this.textBox_Custom4.ForeColor = System.Drawing.Color.White;
-            this.textBox_Custom4.Location = new System.Drawing.Point(20, 397);
-            this.textBox_Custom4.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox_Custom4.Name = "textBox_Custom4";
-            this.textBox_Custom4.PasswordChar = '\0';
-            this.textBox_Custom4.Size = new System.Drawing.Size(362, 40);
-            this.textBox_Custom4.TabIndex = 20;
-            this.textBox_Custom4.TB_Text = "";
-            // 
-            // textBox_Custom3
-            // 
-            this.textBox_Custom3.ForeColor = System.Drawing.Color.White;
-            this.textBox_Custom3.Location = new System.Drawing.Point(20, 312);
-            this.textBox_Custom3.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox_Custom3.Name = "textBox_Custom3";
-            this.textBox_Custom3.PasswordChar = '\0';
-            this.textBox_Custom3.Size = new System.Drawing.Size(362, 40);
-            this.textBox_Custom3.TabIndex = 19;
-            this.textBox_Custom3.TB_Text = "";
-            // 
-            // textBox_Custom2
-            // 
-            this.textBox_Custom2.ForeColor = System.Drawing.Color.White;
-            this.textBox_Custom2.Location = new System.Drawing.Point(20, 227);
-            this.textBox_Custom2.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox_Custom2.Name = "textBox_Custom2";
-            this.textBox_Custom2.PasswordChar = '\0';
-            this.textBox_Custom2.Size = new System.Drawing.Size(362, 40);
-            this.textBox_Custom2.TabIndex = 18;
-            this.textBox_Custom2.TB_Text = "";
-            // 
-            // tbcUserName
-            // 
-            this.tbcUserName.BackColor = System.Drawing.Color.White;
-            this.tbcUserName.ForeColor = System.Drawing.Color.White;
-            this.tbcUserName.Location = new System.Drawing.Point(20, 54);
-            this.tbcUserName.Margin = new System.Windows.Forms.Padding(4);
-            this.tbcUserName.Name = "tbcUserName";
-            this.tbcUserName.PasswordChar = '\0';
-            this.tbcUserName.Size = new System.Drawing.Size(362, 40);
-            this.tbcUserName.TabIndex = 9;
-            this.tbcUserName.TB_Text = "";
-            // 
-            // textBox_Custom1
-            // 
-            this.textBox_Custom1.ForeColor = System.Drawing.Color.White;
-            this.textBox_Custom1.Location = new System.Drawing.Point(20, 136);
-            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox_Custom1.Name = "textBox_Custom1";
-            this.textBox_Custom1.PasswordChar = '\0';
-            this.textBox_Custom1.Size = new System.Drawing.Size(362, 40);
-            this.textBox_Custom1.TabIndex = 11;
-            this.textBox_Custom1.TB_Text = "";
-            // 
             // ThemVatLieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,18 +301,18 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label label3;
-        private Custom.TextBox_Custom tbcUserName;
+        private Custom.TextBox_Custom tbcMaVL;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Custom.TextBox_Custom textBox_Custom1;
+        private Custom.TextBox_Custom tbcTenVL;
         private System.Windows.Forms.Label lblNgaySinh;
         private Extra.BlackWhiteButton blackWhiteButton1;
         private Extra.BlackWhiteButton btnLuu;
         private System.Windows.Forms.Panel pnlThongTin;
         private FontAwesome.Sharp.IconPictureBox btnExit;
-        private Custom.TextBox_Custom textBox_Custom3;
-        private Custom.TextBox_Custom textBox_Custom2;
-        private Custom.TextBox_Custom textBox_Custom4;
-        private Custom.TextBox_Custom textBox_Custom5;
+        private Custom.TextBox_Custom tbcSL;
+        private Custom.TextBox_Custom tbcNhaCC;
+        private Custom.TextBox_Custom tbcGia;
+        private Custom.TextBox_Custom tbcDVT;
     }
 }

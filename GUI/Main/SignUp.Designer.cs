@@ -300,7 +300,7 @@
             this.tbcEmal.PasswordChar = '\0';
             this.tbcEmal.Size = new System.Drawing.Size(271, 36);
             this.tbcEmal.TabIndex = 8;
-            this.tbcEmal.TB_Text = "";
+            this.tbcEmal.Text = "";
             // 
             // tbcRewritePassword
             // 
@@ -311,7 +311,7 @@
             this.tbcRewritePassword.PasswordChar = '*';
             this.tbcRewritePassword.Size = new System.Drawing.Size(271, 36);
             this.tbcRewritePassword.TabIndex = 8;
-            this.tbcRewritePassword.TB_Text = "";
+            this.tbcRewritePassword.Text = "";
             // 
             // SignInButton
             // 
@@ -344,7 +344,7 @@
             this.tbcUsername.PasswordChar = '\0';
             this.tbcUsername.Size = new System.Drawing.Size(271, 36);
             this.tbcUsername.TabIndex = 7;
-            this.tbcUsername.TB_Text = "";
+            this.tbcUsername.Text = "";
             this.tbcUsername.TextChanged += new System.EventHandler(this.tbcUsername_TextChanged);
             // 
             // tbcPassword
@@ -356,7 +356,7 @@
             this.tbcPassword.PasswordChar = '*';
             this.tbcPassword.Size = new System.Drawing.Size(271, 36);
             this.tbcPassword.TabIndex = 8;
-            this.tbcPassword.TB_Text = "";
+            this.tbcPassword.Text = "";
             // 
             // SignUp
             // 

@@ -168,6 +168,7 @@
             this.ibtn5.Text = "THỰC ĐƠN";
             this.ibtn5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn5.UseVisualStyleBackColor = true;
+            this.ibtn5.Click += new System.EventHandler(this.ibtn5_Click);
             // 
             // ibtn4
             // 

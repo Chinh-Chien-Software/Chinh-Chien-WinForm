@@ -30,7 +30,7 @@ namespace ChinChin.GUI.formThem
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-
+            //ThemVatLieu(tbcMaVL.TB_Text);
         }
     }
 }

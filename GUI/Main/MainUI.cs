@@ -147,5 +147,10 @@ namespace ChinChin.UI
         {
             MenuAnimation.OpenChildForm(new KhoHang(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
+
+        private void ibtn5_Click(object sender, EventArgs e)
+        {
+            MenuAnimation.OpenChildForm(new ChinChin.Forms_ChuQuan.FormThucDon(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
+        }
     }
 }

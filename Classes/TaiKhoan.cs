@@ -21,7 +21,7 @@ namespace ChinChin.Classes
             set { loaitaikhoan = value; }
             get { return loaitaikhoan; }
         }
-        string MaNhanVien;
-        int UIMode;
+        //string MaNhanVien;
+        //int UIMode;
     }
 }
