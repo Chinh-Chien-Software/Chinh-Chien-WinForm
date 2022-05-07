@@ -144,11 +144,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="GUI\formThem\ThemSuaSanPham.cs">
+    <Compile Include="GUI\formThem\ThemCapnhatSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\formThem\ThemSuaSanPham.Designer.cs">
-      <DependentUpon>ThemSuaSanPham.cs</DependentUpon>
+    <Compile Include="GUI\formThem\ThemCapnhatSanPham.Designer.cs">
+      <DependentUpon>ThemCapnhatSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\formThem\ThemCapnhatVatLieu.cs">
       <SubType>Form</SubType>
@@ -286,8 +286,8 @@
     <EmbeddedResource Include="Custom\TextBox_Custom.resx">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\formThem\ThemSuaSanPham.resx">
-      <DependentUpon>ThemSuaSanPham.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\formThem\ThemCapnhatSanPham.resx">
+      <DependentUpon>ThemCapnhatSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\formThem\ThemCapnhatVatLieu.resx">
       <DependentUpon>ThemCapnhatVatLieu.cs</DependentUpon>

@@ -307,13 +307,13 @@ namespace ChinChin.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1134, 611);
+            this.ControlBox = false;
             this.Controls.Add(this.panelBackground);
-            this.HelpButton = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Đăng Nhập";
             this.Load += new System.EventHandler(this.SignIn_Load);
             this.panelBackground.ResumeLayout(false);
             this.panelBackground.PerformLayout();

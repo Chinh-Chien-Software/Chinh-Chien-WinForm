@@ -1,6 +1,6 @@
 ﻿namespace ChinChin.GUI.formThem
 {
-    partial class ThemSuaSanPham
+    partial class ThemCapnhatSanPham
     {
         /// <summary>
         /// Required designer variable.
@@ -35,14 +35,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblNgaySinh = new System.Windows.Forms.Label();
             this.pnlThongTin = new System.Windows.Forms.Panel();
+            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
+            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
             this.tbcDanhGia = new ChinChin.Custom.TextBox_Custom();
             this.tbcGia = new ChinChin.Custom.TextBox_Custom();
             this.tbcTPhan = new ChinChin.Custom.TextBox_Custom();
             this.tbcCT = new ChinChin.Custom.TextBox_Custom();
             this.tbcMaSP = new ChinChin.Custom.TextBox_Custom();
             this.tbcTenSP = new ChinChin.Custom.TextBox_Custom();
-            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
-            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
@@ -148,6 +148,44 @@
             this.pnlThongTin.Size = new System.Drawing.Size(646, 550);
             this.pnlThongTin.TabIndex = 26;
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 46;
+            this.btnExit.Location = new System.Drawing.Point(785, 11);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(46, 48);
+            this.btnExit.TabIndex = 29;
+            this.btnExit.TabStop = false;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnLuu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnLuu.BorderColor = System.Drawing.Color.Black;
+            this.btnLuu.BorderRadius = 0;
+            this.btnLuu.BorderSize = 0;
+            this.btnLuu.FlatAppearance.BorderSize = 0;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Location = new System.Drawing.Point(573, 664);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(258, 50);
+            this.btnLuu.TabIndex = 27;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.TextColor = System.Drawing.Color.White;
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
             // tbcDanhGia
             // 
             this.tbcDanhGia.ForeColor = System.Drawing.Color.White;
@@ -209,54 +247,17 @@
             this.tbcTenSP.Size = new System.Drawing.Size(362, 40);
             this.tbcTenSP.TabIndex = 11;
             // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(785, 11);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(46, 48);
-            this.btnExit.TabIndex = 29;
-            this.btnExit.TabStop = false;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnLuu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnLuu.BorderColor = System.Drawing.Color.Black;
-            this.btnLuu.BorderRadius = 0;
-            this.btnLuu.BorderSize = 0;
-            this.btnLuu.FlatAppearance.BorderSize = 0;
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(573, 664);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(258, 50);
-            this.btnLuu.TabIndex = 27;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.TextColor = System.Drawing.Color.White;
-            this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // ThemSuaSanPham
+            // ThemCapnhatSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(842, 725);
+            this.ControlBox = false;
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.pnlThongTin);
-            this.Name = "ThemSuaSanPham";
-            this.Text = "Thêm và Sửa thông tin SanPham";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "ThemCapnhatSanPham";
             this.pnlThongTin.ResumeLayout(false);
             this.pnlThongTin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();

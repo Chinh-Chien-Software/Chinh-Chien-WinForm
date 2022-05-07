@@ -11,14 +11,14 @@ using ChinChin.DAL_DAO;
 
 namespace ChinChin.GUI.formThem
 {
-    public partial class ThemSuaSanPham : Form
+    public partial class ThemCapnhatSanPham : Form
     {
         //int ChucNang = 0;
-        public ThemSuaSanPham()
+        public ThemCapnhatSanPham()
         {
             InitializeComponent();
         }
-        public ThemSuaSanPham(int ChucNang)
+        public ThemCapnhatSanPham(int ChucNang)
         {
             InitializeComponent();
             if (ChucNang == 0)

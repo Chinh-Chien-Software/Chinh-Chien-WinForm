@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
 using ChinChin.UI;
-using ChinChin.Database;
+using ChinChin.DAL_DAO;
 
 namespace ChinChin.Forms_NhanVien
 {
@@ -25,8 +25,6 @@ namespace ChinChin.Forms_NhanVien
             //Forms - Custom Tittle Bar
             this.Text = string.Empty;
             this.ControlBox = false;
-            //this.DoubleBuffered = true;
-            //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         //Fields

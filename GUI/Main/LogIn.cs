@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Windows.Input;
 using System.Data.SqlClient;
-using ChinChin.Database;
+using ChinChin.DAL_DAO;
 using ChinChin.UI;
 using System.IO;
 
@@ -45,7 +45,7 @@ namespace ChinChin.UI
         {
             InitializeComponent();
             labelThongBao.Text = "";
-            this.FormBorderStyle = FormBorderStyle.None;
+            //this.FormBorderStyle = FormBorderStyle.None;
 
             // Cho cửa sổ có kích thước vừa đẹp với màn hình làm việc
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
