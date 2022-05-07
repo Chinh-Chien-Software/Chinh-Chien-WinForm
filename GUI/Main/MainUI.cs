@@ -18,8 +18,7 @@ namespace ChinChin.UI
         public MainUI()
         {
             InitializeComponent();
-            //this.FormBorderStyle = FormBorderStyle.None;
-            this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
+            
         }
         string TenTaiKhoan;
         string LoaiTaiKhoan;
@@ -38,7 +37,9 @@ namespace ChinChin.UI
         }
         private void MainUI_Load(object sender, EventArgs e)
         {
-            
+            //this.Text = "";
+            this.ControlBox = false;
+
             ibtn1.Text = "THỐNG KÊ"; ibtn1.IconChar = IconChar.Dashcube;
             ibtn2.Text = "CHẤM CÔNG"; ibtn3.IconChar = IconChar.MoneyCheckAlt;
             ibtn3.Text = "NHẬN ĐƠN"; ibtn1.IconChar = IconChar.Receipt;
@@ -46,40 +47,6 @@ namespace ChinChin.UI
             ibtn5.Text = "THỰC ĐƠN"; ibtn4.IconChar = IconChar.MugHot;
             ibtn6.Text = "LỊCH LÀM"; ibtn3.IconChar = IconChar.Calendar;
             ibtn7.Text = "NHÂN SỰ"; ibtn2.IconChar = IconChar.PeopleCarry;
-            /*
-            if (LoaiTaiKhoan == "chuquan")
-            {
-                //lblHomeButton_Role.Text = "Chủ Quán";
-                ibtn1.Text = "THỐNG KÊ"; ibtn1.IconChar = IconChar.Dashcube;
-                ibtn2.Text = "KHO HÀNG"; ibtn2.IconChar = IconChar.Boxes;
-                ibtn3.Text = "CHẤM CÔNG"; ibtn3.IconChar = IconChar.MoneyCheckAlt;
-                ibtn4.Text = "THỰC ĐƠN"; ibtn4.IconChar = IconChar.MugHot;
-            }
-            else if (LoaiTaiKhoan == "quanly")
-            {
-                //lblHomeButton_Role.Text = "Quản Lý";
-                ibtn1.Text = "THỐNG KÊ"; ibtn1.IconChar = IconChar.Dashcube;
-                ibtn2.Text = "KHO HÀNG"; ibtn2.IconChar = IconChar.Boxes;
-                ibtn3.Text = "LỊCH LÀM"; ibtn3.IconChar = IconChar.Calendar;
-                ibtn4.Visible = false;
-            }
-            else if (LoaiTaiKhoan == "thungan")
-            {
-                //lblHomeButton_Role.Text = "Thu Ngân";
-                ibtn1.Text = "NHẬN ĐƠN"; ibtn1.IconChar = IconChar.Receipt;
-                ibtn2.Text = "KẾT CA"; ibtn2.IconChar = IconChar.HourglassEnd;
-                ibtn3.Visible = false;
-                ibtn4.Visible = false;
-            }
-            else if (LoaiTaiKhoan == "phache")
-            {
-                //lblHomeButton_Role.Text = "Pha Chế";
-                ibtn1.Text = "KHO QUẦY"; ibtn1.IconChar = IconChar.Store;
-                ibtn2.Visible = false;
-                ibtn3.Visible = false;
-                ibtn4.Visible = false;
-            }
-            */
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -99,6 +66,7 @@ namespace ChinChin.UI
         private static extern bool ReleaseCapture();
         [DllImport("user32")]
         private static extern int SendMessage(IntPtr hWnd, int Msg, int wp, int lp);
+
         private void panelTittleBar_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -127,9 +95,7 @@ namespace ChinChin.UI
 
         private void mnsiCaiDat_Click(object sender, EventArgs e)
         {
-            //CaiDat CaiDat = new CaiDat();
-            //CaiDat.Show();
-            Console.WriteLine("Đăng mở Cài Đặt, đợi xíu");
+            Console.WriteLine("Đang mở Cài Đặt, đợi xíu");
             MenuAnimation.OpenChildForm(new CaiDat(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 

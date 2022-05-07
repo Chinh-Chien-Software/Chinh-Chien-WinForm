@@ -39,7 +39,7 @@ namespace ChinChin.DAL_DAO
             )
         {
             con.Open();
-            string sqlAddSanPham = "insert into VatLieu values ('" + MaSanPham + "', '" + TenSanPham + "', '" + CongThuc + "', '" + ThanhPhan + "', " + Gia + ", " + DanhGia + ")";
+            string sqlAddSanPham = "insert into SanPham values ('" + MaSanPham + "', N'" + TenSanPham + "', '" + CongThuc + "', '" + ThanhPhan + "', " + Gia + ", " + DanhGia + ")";
             cmd = new SqlCommand(sqlAddSanPham, con);
             cmd.ExecuteNonQuery();
             con.Close();

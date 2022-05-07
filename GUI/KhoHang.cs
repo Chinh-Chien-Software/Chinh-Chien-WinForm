@@ -15,6 +15,7 @@ namespace ChinChin.Forms_QuanLy
     public partial class KhoHang : Form
     {
         static string sqlVL = "SELECT * FROM VatLieu";
+        static string sqlKH = "SELECT * FROM KhoHang";
 
         public KhoHang()
         {
@@ -24,6 +25,8 @@ namespace ChinChin.Forms_QuanLy
         private void KhoHang_Load(object sender, EventArgs e)
         {
             dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVL);
+            cbbKhoHang.DataSource = DataProvider.ReturnDataTable(sqlKH);
+            cbbKhoHang.DisplayMember = "TenKho";
         }
 
         private void btnNew_Click(object sender, EventArgs e)

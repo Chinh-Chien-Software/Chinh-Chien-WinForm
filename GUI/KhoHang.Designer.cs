@@ -29,13 +29,14 @@ namespace ChinChin.Forms_QuanLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvVatLieu = new System.Windows.Forms.DataGridView();
             this.btnEdit = new FontAwesome.Sharp.IconButton();
             this.pnlTopBar = new System.Windows.Forms.Panel();
             this.ibtbRefresh = new FontAwesome.Sharp.IconButton();
             this.btnDelete = new FontAwesome.Sharp.IconButton();
             this.btnNew = new FontAwesome.Sharp.IconButton();
+            this.cbbKhoHang = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).BeginInit();
             this.pnlTopBar.SuspendLayout();
             this.SuspendLayout();
@@ -57,12 +58,12 @@ namespace ChinChin.Forms_QuanLy
             this.dgvVatLieu.Name = "dgvVatLieu";
             this.dgvVatLieu.ReadOnly = true;
             this.dgvVatLieu.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dgvVatLieu.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dgvVatLieu.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvVatLieu.RowTemplate.Height = 24;
             this.dgvVatLieu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvVatLieu.Size = new System.Drawing.Size(600, 318);
+            this.dgvVatLieu.Size = new System.Drawing.Size(800, 318);
             this.dgvVatLieu.TabIndex = 0;
             // 
             // btnEdit
@@ -77,7 +78,7 @@ namespace ChinChin.Forms_QuanLy
             this.btnEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEdit.IconSize = 40;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnEdit.Location = new System.Drawing.Point(395, 0);
+            this.btnEdit.Location = new System.Drawing.Point(595, 0);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(89, 46);
@@ -90,6 +91,7 @@ namespace ChinChin.Forms_QuanLy
             // pnlTopBar
             // 
             this.pnlTopBar.BackColor = System.Drawing.Color.White;
+            this.pnlTopBar.Controls.Add(this.cbbKhoHang);
             this.pnlTopBar.Controls.Add(this.ibtbRefresh);
             this.pnlTopBar.Controls.Add(this.btnDelete);
             this.pnlTopBar.Controls.Add(this.btnNew);
@@ -99,7 +101,7 @@ namespace ChinChin.Forms_QuanLy
             this.pnlTopBar.Location = new System.Drawing.Point(0, 0);
             this.pnlTopBar.Margin = new System.Windows.Forms.Padding(2);
             this.pnlTopBar.Name = "pnlTopBar";
-            this.pnlTopBar.Size = new System.Drawing.Size(600, 48);
+            this.pnlTopBar.Size = new System.Drawing.Size(800, 48);
             this.pnlTopBar.TabIndex = 2;
             // 
             // ibtbRefresh
@@ -114,7 +116,7 @@ namespace ChinChin.Forms_QuanLy
             this.ibtbRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtbRefresh.IconSize = 40;
             this.ibtbRefresh.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.ibtbRefresh.Location = new System.Drawing.Point(189, 0);
+            this.ibtbRefresh.Location = new System.Drawing.Point(389, 0);
             this.ibtbRefresh.Margin = new System.Windows.Forms.Padding(2);
             this.ibtbRefresh.Name = "ibtbRefresh";
             this.ibtbRefresh.Size = new System.Drawing.Size(109, 46);
@@ -136,7 +138,7 @@ namespace ChinChin.Forms_QuanLy
             this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDelete.IconSize = 40;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnDelete.Location = new System.Drawing.Point(488, 0);
+            this.btnDelete.Location = new System.Drawing.Point(688, 0);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(110, 46);
@@ -158,7 +160,7 @@ namespace ChinChin.Forms_QuanLy
             this.btnNew.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNew.IconSize = 40;
             this.btnNew.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnNew.Location = new System.Drawing.Point(302, 0);
+            this.btnNew.Location = new System.Drawing.Point(502, 0);
             this.btnNew.Margin = new System.Windows.Forms.Padding(2);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(89, 46);
@@ -168,11 +170,21 @@ namespace ChinChin.Forms_QuanLy
             this.btnNew.UseVisualStyleBackColor = false;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
+            // cbbKhoHang
+            // 
+            this.cbbKhoHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbKhoHang.FormattingEnabled = true;
+            this.cbbKhoHang.Location = new System.Drawing.Point(0, 9);
+            this.cbbKhoHang.Name = "cbbKhoHang";
+            this.cbbKhoHang.Size = new System.Drawing.Size(258, 28);
+            this.cbbKhoHang.TabIndex = 5;
+            this.cbbKhoHang.Text = "Chọn Kho Hàng";
+            // 
             // KhoHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 366);
             this.Controls.Add(this.dgvVatLieu);
             this.Controls.Add(this.pnlTopBar);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -193,5 +205,6 @@ namespace ChinChin.Forms_QuanLy
         private FontAwesome.Sharp.IconButton btnNew;
         private FontAwesome.Sharp.IconButton btnDelete;
         private FontAwesome.Sharp.IconButton ibtbRefresh;
+        private System.Windows.Forms.ComboBox cbbKhoHang;
     }
 }

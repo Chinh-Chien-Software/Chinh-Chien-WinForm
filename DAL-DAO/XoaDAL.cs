@@ -21,5 +21,14 @@ namespace ChinChin.DAL_DAO
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        public static void SanPham(string MaSanPham)
+        {
+            con.Open();
+            string sqlXoaSanPham = "DELETE FROM SanPham WHERE MaSanPham = '" + MaSanPham + "'";
+            cmd = new SqlCommand(sqlXoaSanPham, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }

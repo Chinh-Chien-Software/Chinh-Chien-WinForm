@@ -28,5 +28,22 @@ namespace ChinChin.DAL_DAO
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        
+        public static void SanPham(
+            string MaSanPham,
+            string TenSanPham,
+            string CongThuc,
+            string ThanhPhan,
+            float Gia,
+            int DanhGia
+            )
+        {
+            con.Open();
+            string sqlAddVatLieu 
+                = "update SanPham set TenSanPham = N'" + TenSanPham + "', CongThuc = N'" + CongThuc + "', ThanhPhan = '" + ThanhPhan + "', Gia = " + Gia + ", DanhGia = " + DanhGia + " where MaSanPham = '" + MaSanPham + "'";
+            cmd = new SqlCommand(sqlAddVatLieu, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }

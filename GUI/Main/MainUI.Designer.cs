@@ -437,11 +437,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 869);
-            this.ControlBox = false;
             this.Controls.Add(this.pnlBorderOfForm);
             this.Name = "MainUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainUI_Load);
             this.pnlBorderOfForm.ResumeLayout(false);
             this.panelLeftSidebar.ResumeLayout(false);

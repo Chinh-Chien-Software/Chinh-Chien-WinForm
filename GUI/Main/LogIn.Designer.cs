@@ -83,6 +83,7 @@ namespace ChinChin.UI
             // 
             // dgvTaiKhoan
             // 
+            this.dgvTaiKhoan.BackgroundColor = System.Drawing.Color.White;
             this.dgvTaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTaiKhoan.Location = new System.Drawing.Point(35, 380);
             this.dgvTaiKhoan.Name = "dgvTaiKhoan";
