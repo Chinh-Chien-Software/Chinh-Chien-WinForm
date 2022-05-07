@@ -42,6 +42,7 @@
             this.pnlThongTin = new System.Windows.Forms.Panel();
             this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
             this.blackWhiteButton1 = new ChinChin.Extra.BlackWhiteButton();
+            this.textBox_Custom2 = new ChinChin.Custom.TextBox_Custom();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatarNhanVien)).BeginInit();
             this.pnlThongTin.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +76,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 100);
+            this.label2.Location = new System.Drawing.Point(14, 105);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 33);
@@ -127,7 +128,7 @@
             "Nữ"});
             this.comboBox1.Location = new System.Drawing.Point(17, 304);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1.Size = new System.Drawing.Size(96, 26);
             this.comboBox1.TabIndex = 15;
             // 
             // label3
@@ -150,7 +151,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 417);
+            this.label4.Location = new System.Drawing.Point(11, 438);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(179, 33);
@@ -160,31 +161,28 @@
             // 
             // textBox_Custom1
             // 
-            this.textBox_Custom1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBox_Custom1.ForeColor = System.Drawing.Color.White;
-            this.textBox_Custom1.Location = new System.Drawing.Point(17, 139);
-            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(6);
+            this.textBox_Custom1.Location = new System.Drawing.Point(16, 138);
+            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.textBox_Custom1.Name = "textBox_Custom1";
             this.textBox_Custom1.PasswordChar = '\0';
             this.textBox_Custom1.Size = new System.Drawing.Size(362, 40);
             this.textBox_Custom1.TabIndex = 11;
-            this.textBox_Custom1.Text = "";
             // 
             // tbcUserName
             // 
-            this.tbcUserName.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tbcUserName.BackColor = System.Drawing.Color.White;
             this.tbcUserName.ForeColor = System.Drawing.Color.White;
-            this.tbcUserName.Location = new System.Drawing.Point(17, 56);
-            this.tbcUserName.Margin = new System.Windows.Forms.Padding(4);
+            this.tbcUserName.Location = new System.Drawing.Point(16, 55);
+            this.tbcUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbcUserName.Name = "tbcUserName";
             this.tbcUserName.PasswordChar = '\0';
             this.tbcUserName.Size = new System.Drawing.Size(362, 40);
             this.tbcUserName.TabIndex = 9;
-            this.tbcUserName.Text = "";
             // 
             // pnlThongTin
             // 
+            this.pnlThongTin.Controls.Add(this.textBox_Custom2);
             this.pnlThongTin.Controls.Add(this.label4);
             this.pnlThongTin.Controls.Add(this.lblUserName);
             this.pnlThongTin.Controls.Add(this.label3);
@@ -195,9 +193,9 @@
             this.pnlThongTin.Controls.Add(this.textBox_Custom1);
             this.pnlThongTin.Controls.Add(this.dateTimePicker1);
             this.pnlThongTin.Controls.Add(this.lblNgaySinh);
-            this.pnlThongTin.Location = new System.Drawing.Point(245, 12);
+            this.pnlThongTin.Location = new System.Drawing.Point(242, 12);
             this.pnlThongTin.Name = "pnlThongTin";
-            this.pnlThongTin.Size = new System.Drawing.Size(385, 493);
+            this.pnlThongTin.Size = new System.Drawing.Size(385, 553);
             this.pnlThongTin.TabIndex = 18;
             // 
             // SignInButton
@@ -212,7 +210,7 @@
             this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignInButton.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignInButton.ForeColor = System.Drawing.Color.White;
-            this.SignInButton.Location = new System.Drawing.Point(366, 556);
+            this.SignInButton.Location = new System.Drawing.Point(475, 638);
             this.SignInButton.Margin = new System.Windows.Forms.Padding(2);
             this.SignInButton.Name = "SignInButton";
             this.SignInButton.Size = new System.Drawing.Size(258, 50);
@@ -233,7 +231,7 @@
             this.blackWhiteButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.blackWhiteButton1.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blackWhiteButton1.ForeColor = System.Drawing.Color.White;
-            this.blackWhiteButton1.Location = new System.Drawing.Point(366, 610);
+            this.blackWhiteButton1.Location = new System.Drawing.Point(475, 692);
             this.blackWhiteButton1.Margin = new System.Windows.Forms.Padding(2);
             this.blackWhiteButton1.Name = "blackWhiteButton1";
             this.blackWhiteButton1.Size = new System.Drawing.Size(258, 50);
@@ -242,12 +240,22 @@
             this.blackWhiteButton1.TextColor = System.Drawing.Color.White;
             this.blackWhiteButton1.UseVisualStyleBackColor = false;
             // 
+            // textBox_Custom2
+            // 
+            this.textBox_Custom2.ForeColor = System.Drawing.Color.White;
+            this.textBox_Custom2.Location = new System.Drawing.Point(16, 385);
+            this.textBox_Custom2.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.textBox_Custom2.Name = "textBox_Custom2";
+            this.textBox_Custom2.PasswordChar = '\0';
+            this.textBox_Custom2.Size = new System.Drawing.Size(362, 39);
+            this.textBox_Custom2.TabIndex = 18;
+            // 
             // ThongTinTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(642, 671);
+            this.ClientSize = new System.Drawing.Size(744, 753);
             this.Controls.Add(this.blackWhiteButton1);
             this.Controls.Add(this.SignInButton);
             this.Controls.Add(this.pbAvatarNhanVien);
@@ -281,5 +289,6 @@
         private System.Windows.Forms.Panel pnlThongTin;
         private Extra.BlackWhiteButton SignInButton;
         private Extra.BlackWhiteButton blackWhiteButton1;
+        private Custom.TextBox_Custom textBox_Custom2;
     }
 }
