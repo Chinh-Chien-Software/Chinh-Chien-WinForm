@@ -126,6 +126,7 @@
             this.ibtn7.Text = "NHÂN SỰ";
             this.ibtn7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn7.UseVisualStyleBackColor = true;
+            this.ibtn7.Click += new System.EventHandler(this.ibtn7_Click);
             // 
             // ibtn6
             // 

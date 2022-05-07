@@ -144,6 +144,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GUI\formThem\ThemCapnhatNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\formThem\ThemCapnhatNhanVien.Designer.cs">
+      <DependentUpon>ThemCapnhatNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\formThem\ThemCapnhatSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +247,12 @@
     <Compile Include="GUI\fsQuanLy\QuanLyLichLam.Designer.cs">
       <DependentUpon>QuanLyLichLam.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\NhanSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NhanSu.Designer.cs">
+      <DependentUpon>NhanSu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -285,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom\TextBox_Custom.resx">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\formThem\ThemCapnhatNhanVien.resx">
+      <DependentUpon>ThemCapnhatNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\formThem\ThemCapnhatSanPham.resx">
       <DependentUpon>ThemCapnhatSanPham.cs</DependentUpon>
@@ -333,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fsQuanLy\QuanLyLichLam.resx">
       <DependentUpon>QuanLyLichLam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NhanSu.resx">
+      <DependentUpon>NhanSu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="GUI\Main\MainUI.resx">

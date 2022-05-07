@@ -111,12 +111,22 @@ namespace ChinChin.UI
 
         private void ibtn4_Click(object sender, EventArgs e)
         {
+            MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color2, iconCurrentChildForm);
             MenuAnimation.OpenChildForm(new KhoHang(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 
         private void ibtn5_Click(object sender, EventArgs e)
         {
-            MenuAnimation.OpenChildForm(new ChinChin.Forms_ChuQuan.FormThucDon(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
+            MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color3, iconCurrentChildForm);
+            MenuAnimation.OpenChildForm
+                (new ChinChin.Forms_ChuQuan.FormThucDon(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
+        }
+
+        private void ibtn7_Click(object sender, EventArgs e)
+        {
+            MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color4, iconCurrentChildForm);
+            MenuAnimation.OpenChildForm
+                (new ChinChin.GUI.NhanSu(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
     }
 }
