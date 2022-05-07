@@ -83,7 +83,17 @@ namespace ChinChin.UI
                 }
                 else
                 {
-                    File.WriteAllText(Path.Combine(specificFolder, "SavedUsername.txt"), "");
+                    if (!System.IO.File.Exists(pathString))
+                    {
+                        using (System.IO.FileStream fs = System.IO.File.Create(pathString))
+                        {
+                            File.Create(pathString).Close();
+                        }
+                    }
+                    else
+                    {
+                        File.WriteAllText(Path.Combine(specificFolder, "SavedUsername.txt"), "");
+                    }
                 }
 
                 MainUI MainUI = new MainUI(TaiKhoan.Rows[0][1].ToString());
@@ -161,7 +171,7 @@ namespace ChinChin.UI
             {
                 MessageBox.Show("Không có Database hoặc Dữ liệu bé ơi", "Oh My God", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            string usernameSaved = System.IO.File.ReadAllText(pathString);
+            //string usernameSaved = System.IO.File.ReadAllText(pathString);
         }
 
         private void labelNoAccount_Click(object sender, EventArgs e)

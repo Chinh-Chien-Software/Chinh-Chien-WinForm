@@ -23,7 +23,7 @@ namespace ChinChin.DAL_DAO
             )
         {
             con.Open();
-            string sqlAddVatLieu = "insert into VatLieu values ('" + MaVatLieu + "', N'" + TenVatLieu + "', '" + NhaCungCap + "', " + SoLuong + ", " + Gia + ", '" + DonViTinh + "')";
+            string sqlAddVatLieu = "insert into VatLieu values ('" + MaVatLieu + "', N'" + TenVatLieu + "', N'" + NhaCungCap + "', " + SoLuong + ", " + Gia + ", N'" + DonViTinh + "')";
             cmd = new SqlCommand(sqlAddVatLieu, con);
             cmd.ExecuteNonQuery();
             con.Close();

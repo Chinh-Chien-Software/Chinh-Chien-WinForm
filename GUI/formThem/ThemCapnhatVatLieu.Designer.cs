@@ -218,7 +218,7 @@
             this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(702, 11);
+            this.btnExit.Location = new System.Drawing.Point(637, 11);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(46, 48);
@@ -238,7 +238,7 @@
             this.btnLuuCapnhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuuCapnhat.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuuCapnhat.ForeColor = System.Drawing.Color.White;
-            this.btnLuuCapnhat.Location = new System.Drawing.Point(490, 628);
+            this.btnLuuCapnhat.Location = new System.Drawing.Point(425, 628);
             this.btnLuuCapnhat.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuuCapnhat.Name = "btnLuuCapnhat";
             this.btnLuuCapnhat.Size = new System.Drawing.Size(258, 50);
@@ -248,16 +248,16 @@
             this.btnLuuCapnhat.UseVisualStyleBackColor = false;
             this.btnLuuCapnhat.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // ThemVatLieu
+            // ThemCapnhatVatLieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(759, 689);
+            this.ClientSize = new System.Drawing.Size(694, 689);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLuuCapnhat);
             this.Controls.Add(this.pnlThongTin);
-            this.Name = "ThemVatLieu";
+            this.Name = "ThemCapnhatVatLieu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm Vật Liệu";
             this.Load += new System.EventHandler(this.ThemVatLieu_Load);
