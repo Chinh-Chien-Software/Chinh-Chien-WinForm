@@ -33,5 +33,25 @@ namespace ChinChin.GUI
             formThem.ThemCapnhatNhanVien ThemCapnhatNhanVien = new formThem.ThemCapnhatNhanVien();
             ThemCapnhatNhanVien.Show();
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            string MaNhanVien = dgvNhanVien.SelectedRows[0].Cells[0].Value.ToString();
+            string TenNhanVien = dgvNhanVien.SelectedRows[0].Cells[1].Value.ToString();
+            int LuongTrenGio = int.Parse(dgvNhanVien.SelectedRows[0].Cells[2].Value.ToString());
+            DateTime NgayVaoLam = DateTime.Parse(dgvNhanVien.SelectedRows[0].Cells[3].Value.ToString());
+            string GioiTinh = dgvNhanVien.SelectedRows[0].Cells[4].Value.ToString();
+            DateTime NgaySinh = DateTime.Parse(dgvNhanVien.SelectedRows[0].Cells[5].Value.ToString());
+            string SoDienThoai = dgvNhanVien.SelectedRows[0].Cells[6].Value.ToString();
+            string DiaChi = dgvNhanVien.SelectedRows[0].Cells[7].Value.ToString();
+            string LoaiNhanVien = dgvNhanVien.SelectedRows[0].Cells[8].Value.ToString();
+
+            formThem.ThemCapnhatNhanVien ThemCapnhatNhanVien
+                = new formThem.ThemCapnhatNhanVien(
+                    MaNhanVien, TenNhanVien, LuongTrenGio, NgayVaoLam,
+                    GioiTinh, NgaySinh, SoDienThoai, DiaChi, LoaiNhanVien
+                    );
+            ThemCapnhatNhanVien.Show();
+        }
     }
 }

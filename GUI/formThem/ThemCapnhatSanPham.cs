@@ -44,13 +44,15 @@ namespace ChinChin.GUI.formThem
         {
             if (ChucNang == 0)
             {
-                ThemDAL.SanPham(tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text, float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text));
+                ThemDAL.SanPham
+                    (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text, float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text));
                 this.Close();
             }
             if (ChucNang == 1)
             {
                 btnLuu.Text = "Cập nhật";
-                CapNhatDAL.SanPham(tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text, float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text));
+                CapNhatDAL.SanPham
+                    (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text, float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text));
             }
             
         }

@@ -37,15 +37,15 @@
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbbGioiTinh = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.lblChucVu = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbbChucVu = new System.Windows.Forms.ComboBox();
             this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
-            this.textBox_Custom1 = new ChinChin.Custom.TextBox_Custom();
-            this.textBox_Custom2 = new ChinChin.Custom.TextBox_Custom();
+            this.tbcSDT = new ChinChin.Custom.TextBox_Custom();
+            this.tbcDC = new ChinChin.Custom.TextBox_Custom();
             this.tbcLuong = new ChinChin.Custom.TextBox_Custom();
             this.tbcMaNV = new ChinChin.Custom.TextBox_Custom();
             this.tbcTenNV = new ChinChin.Custom.TextBox_Custom();
@@ -107,15 +107,15 @@
             // 
             // pnlThongTin
             // 
-            this.pnlThongTin.Controls.Add(this.comboBox2);
+            this.pnlThongTin.Controls.Add(this.cbbChucVu);
             this.pnlThongTin.Controls.Add(this.lblChucVu);
-            this.pnlThongTin.Controls.Add(this.textBox_Custom1);
-            this.pnlThongTin.Controls.Add(this.textBox_Custom2);
+            this.pnlThongTin.Controls.Add(this.tbcSDT);
+            this.pnlThongTin.Controls.Add(this.tbcDC);
             this.pnlThongTin.Controls.Add(this.label5);
             this.pnlThongTin.Controls.Add(this.label6);
-            this.pnlThongTin.Controls.Add(this.comboBox1);
+            this.pnlThongTin.Controls.Add(this.cbbGioiTinh);
             this.pnlThongTin.Controls.Add(this.label7);
-            this.pnlThongTin.Controls.Add(this.dateTimePicker2);
+            this.pnlThongTin.Controls.Add(this.dtpNgaySinh);
             this.pnlThongTin.Controls.Add(this.label8);
             this.pnlThongTin.Controls.Add(this.dtpNgayVL);
             this.pnlThongTin.Controls.Add(this.tbcLuong);
@@ -147,7 +147,7 @@
             this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(803, 11);
+            this.btnExit.Location = new System.Drawing.Point(799, 11);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(46, 48);
@@ -181,17 +181,17 @@
             this.label6.Text = "Địa chỉ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBox1
+            // cbbGioiTinh
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbbGioiTinh.FormattingEnabled = true;
+            this.cbbGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.comboBox1.Location = new System.Drawing.Point(449, 229);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(96, 21);
-            this.comboBox1.TabIndex = 26;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbbGioiTinh.Location = new System.Drawing.Point(449, 229);
+            this.cbbGioiTinh.Name = "cbbGioiTinh";
+            this.cbbGioiTinh.Size = new System.Drawing.Size(96, 21);
+            this.cbbGioiTinh.TabIndex = 26;
+            this.cbbGioiTinh.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -207,12 +207,12 @@
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // dateTimePicker2
+            // dtpNgaySinh
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(449, 145);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 24;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(449, 145);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(200, 20);
+            this.dtpNgaySinh.TabIndex = 24;
             // 
             // label8
             // 
@@ -240,16 +240,16 @@
             this.lblChucVu.Text = "Chức vụ";
             this.lblChucVu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBox2
+            // cbbChucVu
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbbChucVu.FormattingEnabled = true;
+            this.cbbChucVu.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.comboBox2.Location = new System.Drawing.Point(20, 413);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(156, 21);
-            this.comboBox2.TabIndex = 32;
+            this.cbbChucVu.Location = new System.Drawing.Point(20, 413);
+            this.cbbChucVu.Name = "cbbChucVu";
+            this.cbbChucVu.Size = new System.Drawing.Size(156, 21);
+            this.cbbChucVu.TabIndex = 32;
             // 
             // btnLuu
             // 
@@ -263,7 +263,7 @@
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(591, 566);
+            this.btnLuu.Location = new System.Drawing.Point(587, 566);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(258, 50);
@@ -272,25 +272,25 @@
             this.btnLuu.TextColor = System.Drawing.Color.White;
             this.btnLuu.UseVisualStyleBackColor = false;
             // 
-            // textBox_Custom1
+            // tbcSDT
             // 
-            this.textBox_Custom1.ForeColor = System.Drawing.Color.White;
-            this.textBox_Custom1.Location = new System.Drawing.Point(449, 398);
-            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.textBox_Custom1.Name = "textBox_Custom1";
-            this.textBox_Custom1.PasswordChar = '\0';
-            this.textBox_Custom1.Size = new System.Drawing.Size(362, 39);
-            this.textBox_Custom1.TabIndex = 30;
+            this.tbcSDT.ForeColor = System.Drawing.Color.White;
+            this.tbcSDT.Location = new System.Drawing.Point(449, 398);
+            this.tbcSDT.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.tbcSDT.Name = "tbcSDT";
+            this.tbcSDT.PasswordChar = '\0';
+            this.tbcSDT.Size = new System.Drawing.Size(362, 39);
+            this.tbcSDT.TabIndex = 30;
             // 
-            // textBox_Custom2
+            // tbcDC
             // 
-            this.textBox_Custom2.ForeColor = System.Drawing.Color.White;
-            this.textBox_Custom2.Location = new System.Drawing.Point(449, 305);
-            this.textBox_Custom2.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.textBox_Custom2.Name = "textBox_Custom2";
-            this.textBox_Custom2.PasswordChar = '\0';
-            this.textBox_Custom2.Size = new System.Drawing.Size(362, 39);
-            this.textBox_Custom2.TabIndex = 29;
+            this.tbcDC.ForeColor = System.Drawing.Color.White;
+            this.tbcDC.Location = new System.Drawing.Point(449, 305);
+            this.tbcDC.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.tbcDC.Name = "tbcDC";
+            this.tbcDC.PasswordChar = '\0';
+            this.tbcDC.Size = new System.Drawing.Size(362, 39);
+            this.tbcDC.TabIndex = 29;
             // 
             // tbcLuong
             // 
@@ -328,7 +328,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(860, 627);
+            this.ClientSize = new System.Drawing.Size(856, 627);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.pnlThongTin);
@@ -354,15 +354,15 @@
         private FontAwesome.Sharp.IconPictureBox btnExit;
         private Extra.BlackWhiteButton btnLuu;
         private System.Windows.Forms.DateTimePicker dtpNgayVL;
-        private Custom.TextBox_Custom textBox_Custom1;
-        private Custom.TextBox_Custom textBox_Custom2;
+        private Custom.TextBox_Custom tbcSDT;
+        private Custom.TextBox_Custom tbcDC;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbGioiTinh;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbbChucVu;
         private System.Windows.Forms.Label lblChucVu;
     }
 }
