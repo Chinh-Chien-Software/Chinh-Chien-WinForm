@@ -33,16 +33,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblNgaySinh = new System.Windows.Forms.Label();
             this.pnlThongTin = new System.Windows.Forms.Panel();
-            this.dtpNgayVL = new System.Windows.Forms.DateTimePicker();
-            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
+            this.cbbChucVu = new System.Windows.Forms.ComboBox();
+            this.lblChucVu = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cbbGioiTinh = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.lblChucVu = new System.Windows.Forms.Label();
-            this.cbbChucVu = new System.Windows.Forms.ComboBox();
+            this.dtpNgayVL = new System.Windows.Forms.DateTimePicker();
+            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
             this.tbcSDT = new ChinChin.Custom.TextBox_Custom();
             this.tbcDC = new ChinChin.Custom.TextBox_Custom();
@@ -130,30 +130,32 @@
             this.pnlThongTin.Size = new System.Drawing.Size(834, 483);
             this.pnlThongTin.TabIndex = 30;
             // 
-            // dtpNgayVL
+            // cbbChucVu
             // 
-            this.dtpNgayVL.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayVL.Location = new System.Drawing.Point(20, 312);
-            this.dtpNgayVL.Name = "dtpNgayVL";
-            this.dtpNgayVL.Size = new System.Drawing.Size(200, 20);
-            this.dtpNgayVL.TabIndex = 22;
+            this.cbbChucVu.FormattingEnabled = true;
+            this.cbbChucVu.Items.AddRange(new object[] {
+            "chuquan",
+            "quanly",
+            "phache",
+            "thungan",
+            "phucvu"});
+            this.cbbChucVu.Location = new System.Drawing.Point(20, 413);
+            this.cbbChucVu.Name = "cbbChucVu";
+            this.cbbChucVu.Size = new System.Drawing.Size(156, 21);
+            this.cbbChucVu.TabIndex = 32;
             // 
-            // btnExit
+            // lblChucVu
             // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(799, 11);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(46, 48);
-            this.btnExit.TabIndex = 32;
-            this.btnExit.TabStop = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.lblChucVu.AutoSize = true;
+            this.lblChucVu.BackColor = System.Drawing.Color.Transparent;
+            this.lblChucVu.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChucVu.Location = new System.Drawing.Point(14, 357);
+            this.lblChucVu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblChucVu.Name = "lblChucVu";
+            this.lblChucVu.Size = new System.Drawing.Size(116, 33);
+            this.lblChucVu.TabIndex = 31;
+            this.lblChucVu.Text = "Chức vụ";
+            this.lblChucVu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
             // 
@@ -191,7 +193,6 @@
             this.cbbGioiTinh.Name = "cbbGioiTinh";
             this.cbbGioiTinh.Size = new System.Drawing.Size(96, 21);
             this.cbbGioiTinh.TabIndex = 26;
-            this.cbbGioiTinh.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -209,6 +210,7 @@
             // 
             // dtpNgaySinh
             // 
+            this.dtpNgaySinh.CustomFormat = "yyyy-mm-dd";
             this.dtpNgaySinh.Location = new System.Drawing.Point(449, 145);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(200, 20);
@@ -227,29 +229,31 @@
             this.label8.Text = "Ngày sinh";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lblChucVu
+            // dtpNgayVL
             // 
-            this.lblChucVu.AutoSize = true;
-            this.lblChucVu.BackColor = System.Drawing.Color.Transparent;
-            this.lblChucVu.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChucVu.Location = new System.Drawing.Point(14, 357);
-            this.lblChucVu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblChucVu.Name = "lblChucVu";
-            this.lblChucVu.Size = new System.Drawing.Size(116, 33);
-            this.lblChucVu.TabIndex = 31;
-            this.lblChucVu.Text = "Chức vụ";
-            this.lblChucVu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.dtpNgayVL.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayVL.CustomFormat = "yyyy-mm-dd";
+            this.dtpNgayVL.Location = new System.Drawing.Point(20, 312);
+            this.dtpNgayVL.Name = "dtpNgayVL";
+            this.dtpNgayVL.Size = new System.Drawing.Size(200, 20);
+            this.dtpNgayVL.TabIndex = 22;
             // 
-            // cbbChucVu
+            // btnExit
             // 
-            this.cbbChucVu.FormattingEnabled = true;
-            this.cbbChucVu.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.cbbChucVu.Location = new System.Drawing.Point(20, 413);
-            this.cbbChucVu.Name = "cbbChucVu";
-            this.cbbChucVu.Size = new System.Drawing.Size(156, 21);
-            this.cbbChucVu.TabIndex = 32;
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 46;
+            this.btnExit.Location = new System.Drawing.Point(799, 11);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(46, 48);
+            this.btnExit.TabIndex = 32;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnLuu
             // 
@@ -263,7 +267,7 @@
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(587, 566);
+            this.btnLuu.Location = new System.Drawing.Point(587, 501);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(258, 50);
@@ -271,6 +275,7 @@
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextColor = System.Drawing.Color.White;
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // tbcSDT
             // 
@@ -328,7 +333,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(856, 627);
+            this.ClientSize = new System.Drawing.Size(856, 562);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.pnlThongTin);

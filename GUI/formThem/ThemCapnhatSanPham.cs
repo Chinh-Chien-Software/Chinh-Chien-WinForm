@@ -54,7 +54,6 @@ namespace ChinChin.GUI.formThem
                 CapNhatDAL.SanPham
                     (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text, float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text));
             }
-            
         }
 
         private void btnExit_Click(object sender, EventArgs e)

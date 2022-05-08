@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ChinChin.DAL_DAO;
 
 namespace ChinChin.GUI.formThem
 {
@@ -50,14 +51,26 @@ namespace ChinChin.GUI.formThem
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void btnLuu_Click(object sender, EventArgs e)
         {
-
+            if (ChucNang == 0)
+            {
+                Console.Write(cbbChucVu.SelectedItem.ToString());
+                ThemDAL.NhanVien
+                    (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value, cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text);
+                //this.Close();
+            }
+            else if (ChucNang == 1)
+            {
+                btnLuu.Text = "Cập nhật";
+                CapNhatDAL.NhanVien
+                    (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value, cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text);
+            }
         }
     }
 }
