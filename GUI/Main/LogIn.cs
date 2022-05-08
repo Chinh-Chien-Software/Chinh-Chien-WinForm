@@ -46,7 +46,7 @@ namespace ChinChin.UI
             InitializeComponent();
             labelThongBao.Text = "";
             //this.FormBorderStyle = FormBorderStyle.None;
-
+            tbcUserName.Focus(); // Cần tinh chỉnh Custom Textbox thêm Custom Event vào thì mới chạy được
             // Cho cửa sổ có kích thước vừa đẹp với màn hình làm việc
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
         }

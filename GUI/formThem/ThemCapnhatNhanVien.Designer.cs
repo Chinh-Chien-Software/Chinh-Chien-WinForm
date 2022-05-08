@@ -188,7 +188,7 @@
             this.cbbGioiTinh.FormattingEnabled = true;
             this.cbbGioiTinh.Items.AddRange(new object[] {
             "Nam",
-            "Nữ"});
+            "Nu"});
             this.cbbGioiTinh.Location = new System.Drawing.Point(449, 229);
             this.cbbGioiTinh.Name = "cbbGioiTinh";
             this.cbbGioiTinh.Size = new System.Drawing.Size(96, 21);

@@ -31,8 +31,8 @@ namespace ChinChin.Forms_NhanVien
         {
             this.panelMenu = new System.Windows.Forms.Panel();
             this.pnlChonMon = new System.Windows.Forms.Panel();
+            this.lvSanPhamTheoLoai = new System.Windows.Forms.ListView();
             this.flpnlLoai = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnType1 = new ChinChin.Extra.BlackWhiteButton();
             this.labelMenuList = new System.Windows.Forms.Label();
             this.panelHoaDon = new System.Windows.Forms.Panel();
             this.dataGridViewDanhSanhHoaDon = new System.Windows.Forms.DataGridView();
@@ -45,8 +45,11 @@ namespace ChinChin.Forms_NhanVien
             this.panelButtons = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelSoLuong = new System.Windows.Forms.Label();
-            this.blackWhiteButton1 = new ChinChin.Extra.BlackWhiteButton();
-            this.blackWhiteButton2 = new ChinChin.Extra.BlackWhiteButton();
+            this.chTenSP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chGia = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnTypeTraSua = new ChinChin.Extra.BlackWhiteButton();
+            this.btnTypeCaPhe = new ChinChin.Extra.BlackWhiteButton();
+            this.btnTypeTopping = new ChinChin.Extra.BlackWhiteButton();
             this.blackWhiteButton3 = new ChinChin.Extra.BlackWhiteButton();
             this.blackWhiteButton4 = new ChinChin.Extra.BlackWhiteButton();
             this.blackWhiteButton5 = new ChinChin.Extra.BlackWhiteButton();
@@ -73,6 +76,7 @@ namespace ChinChin.Forms_NhanVien
             // 
             // pnlChonMon
             // 
+            this.pnlChonMon.Controls.Add(this.lvSanPhamTheoLoai);
             this.pnlChonMon.Controls.Add(this.flpnlLoai);
             this.pnlChonMon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlChonMon.Location = new System.Drawing.Point(0, 40);
@@ -80,11 +84,26 @@ namespace ChinChin.Forms_NhanVien
             this.pnlChonMon.Size = new System.Drawing.Size(556, 797);
             this.pnlChonMon.TabIndex = 3;
             // 
+            // lvSanPhamTheoLoai
+            // 
+            this.lvSanPhamTheoLoai.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chTenSP,
+            this.chGia});
+            this.lvSanPhamTheoLoai.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvSanPhamTheoLoai.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lvSanPhamTheoLoai.HideSelection = false;
+            this.lvSanPhamTheoLoai.Location = new System.Drawing.Point(200, 0);
+            this.lvSanPhamTheoLoai.Name = "lvSanPhamTheoLoai";
+            this.lvSanPhamTheoLoai.Size = new System.Drawing.Size(356, 797);
+            this.lvSanPhamTheoLoai.TabIndex = 1;
+            this.lvSanPhamTheoLoai.UseCompatibleStateImageBehavior = false;
+            this.lvSanPhamTheoLoai.View = System.Windows.Forms.View.Details;
+            // 
             // flpnlLoai
             // 
-            this.flpnlLoai.Controls.Add(this.btnType1);
-            this.flpnlLoai.Controls.Add(this.blackWhiteButton1);
-            this.flpnlLoai.Controls.Add(this.blackWhiteButton2);
+            this.flpnlLoai.Controls.Add(this.btnTypeTraSua);
+            this.flpnlLoai.Controls.Add(this.btnTypeCaPhe);
+            this.flpnlLoai.Controls.Add(this.btnTypeTopping);
             this.flpnlLoai.Controls.Add(this.blackWhiteButton3);
             this.flpnlLoai.Controls.Add(this.blackWhiteButton4);
             this.flpnlLoai.Controls.Add(this.blackWhiteButton5);
@@ -94,27 +113,6 @@ namespace ChinChin.Forms_NhanVien
             this.flpnlLoai.Name = "flpnlLoai";
             this.flpnlLoai.Size = new System.Drawing.Size(200, 797);
             this.flpnlLoai.TabIndex = 0;
-            // 
-            // btnType1
-            // 
-            this.btnType1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnType1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnType1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnType1.BorderColor = System.Drawing.Color.Black;
-            this.btnType1.BorderRadius = 0;
-            this.btnType1.BorderSize = 0;
-            this.btnType1.FlatAppearance.BorderSize = 0;
-            this.btnType1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnType1.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnType1.ForeColor = System.Drawing.Color.White;
-            this.btnType1.Location = new System.Drawing.Point(2, 2);
-            this.btnType1.Margin = new System.Windows.Forms.Padding(2);
-            this.btnType1.Name = "btnType1";
-            this.btnType1.Size = new System.Drawing.Size(198, 80);
-            this.btnType1.TabIndex = 11;
-            this.btnType1.Text = "Loại 1";
-            this.btnType1.TextColor = System.Drawing.Color.White;
-            this.btnType1.UseVisualStyleBackColor = false;
             // 
             // labelMenuList
             // 
@@ -235,47 +233,79 @@ namespace ChinChin.Forms_NhanVien
             this.labelSoLuong.TabIndex = 1;
             this.labelSoLuong.Text = "SL";
             // 
-            // blackWhiteButton1
+            // chTenSP
             // 
-            this.blackWhiteButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.blackWhiteButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.blackWhiteButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.blackWhiteButton1.BorderColor = System.Drawing.Color.Black;
-            this.blackWhiteButton1.BorderRadius = 0;
-            this.blackWhiteButton1.BorderSize = 0;
-            this.blackWhiteButton1.FlatAppearance.BorderSize = 0;
-            this.blackWhiteButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.blackWhiteButton1.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blackWhiteButton1.ForeColor = System.Drawing.Color.White;
-            this.blackWhiteButton1.Location = new System.Drawing.Point(2, 86);
-            this.blackWhiteButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.blackWhiteButton1.Name = "blackWhiteButton1";
-            this.blackWhiteButton1.Size = new System.Drawing.Size(198, 80);
-            this.blackWhiteButton1.TabIndex = 12;
-            this.blackWhiteButton1.Text = "Loại 2";
-            this.blackWhiteButton1.TextColor = System.Drawing.Color.White;
-            this.blackWhiteButton1.UseVisualStyleBackColor = false;
+            this.chTenSP.Text = "Tên Sản Phẩm";
+            this.chTenSP.Width = 265;
             // 
-            // blackWhiteButton2
+            // chGia
             // 
-            this.blackWhiteButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.blackWhiteButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.blackWhiteButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.blackWhiteButton2.BorderColor = System.Drawing.Color.Black;
-            this.blackWhiteButton2.BorderRadius = 0;
-            this.blackWhiteButton2.BorderSize = 0;
-            this.blackWhiteButton2.FlatAppearance.BorderSize = 0;
-            this.blackWhiteButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.blackWhiteButton2.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blackWhiteButton2.ForeColor = System.Drawing.Color.White;
-            this.blackWhiteButton2.Location = new System.Drawing.Point(2, 170);
-            this.blackWhiteButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.blackWhiteButton2.Name = "blackWhiteButton2";
-            this.blackWhiteButton2.Size = new System.Drawing.Size(198, 80);
-            this.blackWhiteButton2.TabIndex = 13;
-            this.blackWhiteButton2.Text = "Loại 1";
-            this.blackWhiteButton2.TextColor = System.Drawing.Color.White;
-            this.blackWhiteButton2.UseVisualStyleBackColor = false;
+            this.chGia.Text = "Giá";
+            this.chGia.Width = 95;
+            // 
+            // btnTypeTraSua
+            // 
+            this.btnTypeTraSua.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnTypeTraSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnTypeTraSua.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnTypeTraSua.BorderColor = System.Drawing.Color.Black;
+            this.btnTypeTraSua.BorderRadius = 0;
+            this.btnTypeTraSua.BorderSize = 0;
+            this.btnTypeTraSua.FlatAppearance.BorderSize = 0;
+            this.btnTypeTraSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTypeTraSua.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTypeTraSua.ForeColor = System.Drawing.Color.White;
+            this.btnTypeTraSua.Location = new System.Drawing.Point(2, 2);
+            this.btnTypeTraSua.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTypeTraSua.Name = "btnTypeTraSua";
+            this.btnTypeTraSua.Size = new System.Drawing.Size(198, 80);
+            this.btnTypeTraSua.TabIndex = 11;
+            this.btnTypeTraSua.Text = "TRÀ SỮA";
+            this.btnTypeTraSua.TextColor = System.Drawing.Color.White;
+            this.btnTypeTraSua.UseVisualStyleBackColor = false;
+            this.btnTypeTraSua.Click += new System.EventHandler(this.btnTypeTraSua_Click);
+            // 
+            // btnTypeCaPhe
+            // 
+            this.btnTypeCaPhe.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnTypeCaPhe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnTypeCaPhe.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnTypeCaPhe.BorderColor = System.Drawing.Color.Black;
+            this.btnTypeCaPhe.BorderRadius = 0;
+            this.btnTypeCaPhe.BorderSize = 0;
+            this.btnTypeCaPhe.FlatAppearance.BorderSize = 0;
+            this.btnTypeCaPhe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTypeCaPhe.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTypeCaPhe.ForeColor = System.Drawing.Color.White;
+            this.btnTypeCaPhe.Location = new System.Drawing.Point(2, 86);
+            this.btnTypeCaPhe.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTypeCaPhe.Name = "btnTypeCaPhe";
+            this.btnTypeCaPhe.Size = new System.Drawing.Size(198, 80);
+            this.btnTypeCaPhe.TabIndex = 12;
+            this.btnTypeCaPhe.Text = "CÀ PHÊ";
+            this.btnTypeCaPhe.TextColor = System.Drawing.Color.White;
+            this.btnTypeCaPhe.UseVisualStyleBackColor = false;
+            // 
+            // btnTypeTopping
+            // 
+            this.btnTypeTopping.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnTypeTopping.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnTypeTopping.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnTypeTopping.BorderColor = System.Drawing.Color.Black;
+            this.btnTypeTopping.BorderRadius = 0;
+            this.btnTypeTopping.BorderSize = 0;
+            this.btnTypeTopping.FlatAppearance.BorderSize = 0;
+            this.btnTypeTopping.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTypeTopping.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTypeTopping.ForeColor = System.Drawing.Color.White;
+            this.btnTypeTopping.Location = new System.Drawing.Point(2, 170);
+            this.btnTypeTopping.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTypeTopping.Name = "btnTypeTopping";
+            this.btnTypeTopping.Size = new System.Drawing.Size(198, 80);
+            this.btnTypeTopping.TabIndex = 13;
+            this.btnTypeTopping.Text = "TOPPING";
+            this.btnTypeTopping.TextColor = System.Drawing.Color.White;
+            this.btnTypeTopping.UseVisualStyleBackColor = false;
             // 
             // blackWhiteButton3
             // 
@@ -380,11 +410,14 @@ namespace ChinChin.Forms_NhanVien
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlChonMon;
         private System.Windows.Forms.FlowLayoutPanel flpnlLoai;
-        private Extra.BlackWhiteButton btnType1;
-        private Extra.BlackWhiteButton blackWhiteButton1;
-        private Extra.BlackWhiteButton blackWhiteButton2;
+        private Extra.BlackWhiteButton btnTypeTraSua;
+        private Extra.BlackWhiteButton btnTypeCaPhe;
+        private Extra.BlackWhiteButton btnTypeTopping;
         private Extra.BlackWhiteButton blackWhiteButton3;
         private Extra.BlackWhiteButton blackWhiteButton4;
         private Extra.BlackWhiteButton blackWhiteButton5;
+        private System.Windows.Forms.ListView lvSanPhamTheoLoai;
+        private System.Windows.Forms.ColumnHeader chTenSP;
+        private System.Windows.Forms.ColumnHeader chGia;
     }
 }

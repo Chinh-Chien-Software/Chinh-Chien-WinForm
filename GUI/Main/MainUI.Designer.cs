@@ -213,6 +213,7 @@
             this.ibtn3.Text = "NHẬN ĐƠN";
             this.ibtn3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtn3.UseVisualStyleBackColor = true;
+            this.ibtn3.Click += new System.EventHandler(this.ibtn3_Click);
             // 
             // ibtn2
             // 

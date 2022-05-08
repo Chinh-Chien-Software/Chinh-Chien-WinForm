@@ -128,5 +128,12 @@ namespace ChinChin.UI
             MenuAnimation.OpenChildForm
                 (new ChinChin.GUI.NhanSu(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
+
+        private void ibtn3_Click(object sender, EventArgs e)
+        {
+            MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color5, iconCurrentChildForm);
+            MenuAnimation.OpenChildForm
+                (new ChinChin.Forms_NhanVien.TiepNhanDonHang(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
+        }
     }
 }

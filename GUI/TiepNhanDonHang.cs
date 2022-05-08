@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using ChinChin.DAL_DAO;
 
 namespace ChinChin.Forms_NhanVien
 {
@@ -59,6 +59,19 @@ namespace ChinChin.Forms_NhanVien
             }
         }
 
-
+        private void btnTypeTraSua_Click(object sender, EventArgs e)
+        {
+            lvSanPhamTheoLoai.Items.Clear();
+            int i = 0;
+            string query = "SELECT TenSanPham, Gia FROM SanPham where Loai = 'Trasua'";
+            SqlDataReader table = DataProvider.ReturnSqlDataReader(query);
+            while (table.Read())
+            {
+                lvSanPhamTheoLoai.Items.Add(table["TenSanPham"].ToString());
+                lvSanPhamTheoLoai.Items[i].SubItems.Add(table["Gia"].ToString());
+                i++;
+            }
+            table.Close();
+        }
     }
 }

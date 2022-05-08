@@ -223,10 +223,10 @@
       <DependentUpon>NhanVienThuNgan.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\fsNhanVien\SanPham.cs" />
-    <Compile Include="GUI\fsNhanVien\TiepNhanDonHang.cs">
+    <Compile Include="GUI\TiepNhanDonHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\fsNhanVien\TiepNhanDonHang.Designer.cs">
+    <Compile Include="GUI\TiepNhanDonHang.Designer.cs">
       <DependentUpon>TiepNhanDonHang.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\fsQuanLy\BaoCaoDoanhThu.cs">
@@ -337,7 +337,7 @@
     <EmbeddedResource Include="GUI\fsNhanVien\NhanVienThuNgan.resx">
       <DependentUpon>NhanVienThuNgan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\fsNhanVien\TiepNhanDonHang.resx">
+    <EmbeddedResource Include="GUI\TiepNhanDonHang.resx">
       <DependentUpon>TiepNhanDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fsQuanLy\BaoCaoDoanhThu.resx">

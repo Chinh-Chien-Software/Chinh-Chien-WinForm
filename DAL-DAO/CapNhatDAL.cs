@@ -45,5 +45,25 @@ namespace ChinChin.DAL_DAO
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        
+        public static void NhanVien(
+            string MaNhanVien,
+            string TenNhanVien,
+            int LuongTrenGio,
+            DateTime NgayVaoLam,
+            string GioiTinh,
+            DateTime NgaySinh,
+            string SoDienThoai,
+            string DiaChi,
+            string LoaiNhanVien
+            )
+        {
+            con.Open();
+            string sqlThemNhanVien
+                = "update NhanVien set TenNhanVien = N'" + TenNhanVien + "', LuongTrenGio = '" + LuongTrenGio.ToString() + "', NgayVaoLam = '" + NgayVaoLam.ToString("yyyy-mm-dd") + "', GioiTinh = '" + GioiTinh + "', NgaySinh = " + NgaySinh.ToString("yyyy-mm-dd") + ", SoDienThoai = '" + SoDienThoai + "', DiaChi = N'" + DiaChi + "', LoaiNhanVien = '" + LoaiNhanVien + "' where MaNhanVien = '" + MaNhanVien + "'";
+            cmd = new SqlCommand(sqlThemNhanVien, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }

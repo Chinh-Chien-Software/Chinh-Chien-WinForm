@@ -60,10 +60,9 @@ namespace ChinChin.GUI.formThem
         {
             if (ChucNang == 0)
             {
-                Console.Write(cbbChucVu.SelectedItem.ToString());
                 ThemDAL.NhanVien
                     (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value, cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text);
-                //this.Close();
+                this.Close();
             }
             else if (ChucNang == 1)
             {

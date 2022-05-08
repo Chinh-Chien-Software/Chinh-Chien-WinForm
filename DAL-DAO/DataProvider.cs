@@ -15,6 +15,7 @@ namespace ChinChin.DAL_DAO
         // cnStr chứa thông tin về tên Server, Database..
         static SqlConnection conn; // Create a connection - Dây cấm
         static string connStr = Properties.Settings.Default.ChinhChienConnectionString; // Ổ cấm
+        static SqlCommand cm;
 
         static public DataTable ReturnDataTable(string sql)
         {
@@ -38,10 +39,22 @@ namespace ChinChin.DAL_DAO
         {
             DataSet DataSet = new DataSet(); //Khởi tạo một DataSet để lưu dữ liệu
             conn = new SqlConnection(connStr); //Khởi tạo 1 kết nối
-            SqlCommand cm = new SqlCommand(sql, conn); //Tạo các lệnh
+            cm = new SqlCommand(sql, conn); //Tạo các lệnh
             SqlDataAdapter da = new SqlDataAdapter(cm); //Thực thi những lệnh được truyền từ SqlCommand
             da.Fill(DataSet); //Đổ dữ liệu từ DataAdapter vào DataSet
             return DataSet;
+        }
+
+        static public SqlDataReader ReturnSqlDataReader(string sql)
+        {
+            SqlDataReader SqlDataReader; //Khởi tạo một DataReader để lưu dữ liệu
+            conn = new SqlConnection(connStr);
+            conn.Open();
+            cm = new SqlCommand(sql, conn);
+            SqlDataReader = cm.ExecuteReader(); //Thực thi những lệnh được truyền từ SqlCommand
+            // ExecuteReader() trả về một bảng dữ liệu
+            //conn.Close();
+            return SqlDataReader;
         }
     }
     
