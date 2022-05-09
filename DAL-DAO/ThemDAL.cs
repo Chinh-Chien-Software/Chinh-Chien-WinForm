@@ -64,5 +64,24 @@ namespace ChinChin.DAL_DAO
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        public static void ThongTinHoaDon(string MaSanPham, string MaHoaDon, int SoLuong)
+        {
+            con.Open();
+            string sqlThemThongTinHoaDon
+                = "insert into ThongTinHoaDon values ('" + MaSanPham + "', '" + MaHoaDon + "', '" + SoLuong + "')";
+            cmd = new SqlCommand(sqlThemThongTinHoaDon, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public static void HoaDon(string MaHoaDon, string MaNhanVien, DateTime NgayLap)
+        {
+            con.Open();
+            string sqlThemHoaDon = "insert into HoaDon values ('" + MaHoaDon + "', '" + MaNhanVien + "', '" + NgayLap.ToString("yyyy-mm-dd") + "')";
+            cmd = new SqlCommand(sqlThemHoaDon, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }
