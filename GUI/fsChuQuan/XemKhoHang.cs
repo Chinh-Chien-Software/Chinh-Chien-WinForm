@@ -22,7 +22,6 @@ namespace ChinChin.FormsChuQuan
             // TODO: This line of code loads data into the 'quanLyQuanTraSuaDataSet.VatLieu' table. You can move, or remove it, as needed.
             this.vatLieuTableAdapter.Fill(this.quanLyQuanTraSuaDataSet.VatLieu);
             // TODO: This line of code loads data into the 'khoHangDataSet.KhoHang' table. You can move, or remove it, as needed.
-            this.khoHangTableAdapter1.Fill(this.khoHangDataSet.KhoHang);
         }
     }
 }

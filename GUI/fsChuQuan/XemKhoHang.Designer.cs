@@ -41,18 +41,15 @@ namespace ChinChin.FormsChuQuan
             this.vatLieuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyQuanTraSuaDataSet = new ChinChin.DataSets.QuanLyQuanTraSuaDataSet();
             this.khoHangBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.khoHangDataSet = new ChinChin.DataSets.KhoHangDataSet();
             this.panel1 = new System.Windows.Forms.Panel();
             this.storageDataSet = new ChinChin.DataSets.StorageDataSet();
             this.khoHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.khoHangTableAdapter = new ChinChin.DataSets.StorageDataSetTableAdapters.KhoHangTableAdapter();
-            this.khoHangTableAdapter1 = new ChinChin.DataSets.KhoHangDataSetTableAdapters.KhoHangTableAdapter();
             this.vatLieuTableAdapter = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTableAdapters.VatLieuTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKhoHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vatLieuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khoHangBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoHangDataSet)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.storageDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khoHangBindingSource)).BeginInit();
@@ -139,16 +136,6 @@ namespace ChinChin.FormsChuQuan
             this.quanLyQuanTraSuaDataSet.DataSetName = "QuanLyQuanTraSuaDataSet";
             this.quanLyQuanTraSuaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // khoHangBindingSource1
-            // 
-            this.khoHangBindingSource1.DataMember = "KhoHang";
-            this.khoHangBindingSource1.DataSource = this.khoHangDataSet;
-            // 
-            // khoHangDataSet
-            // 
-            this.khoHangDataSet.DataSetName = "KhoHangDataSet";
-            this.khoHangDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.labelKhoHang);
@@ -173,10 +160,6 @@ namespace ChinChin.FormsChuQuan
             // 
             this.khoHangTableAdapter.ClearBeforeFill = true;
             // 
-            // khoHangTableAdapter1
-            // 
-            this.khoHangTableAdapter1.ClearBeforeFill = true;
-            // 
             // vatLieuTableAdapter
             // 
             this.vatLieuTableAdapter.ClearBeforeFill = true;
@@ -196,7 +179,6 @@ namespace ChinChin.FormsChuQuan
             ((System.ComponentModel.ISupportInitialize)(this.vatLieuBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khoHangBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoHangDataSet)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.storageDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khoHangBindingSource)).EndInit();
@@ -212,9 +194,7 @@ namespace ChinChin.FormsChuQuan
         private ChinChin.DataSets.StorageDataSet storageDataSet;
         private System.Windows.Forms.BindingSource khoHangBindingSource;
         private ChinChin.DataSets.StorageDataSetTableAdapters.KhoHangTableAdapter khoHangTableAdapter;
-        private ChinChin.DataSets.KhoHangDataSet khoHangDataSet;
         private System.Windows.Forms.BindingSource khoHangBindingSource1;
-        private ChinChin.DataSets.KhoHangDataSetTableAdapters.KhoHangTableAdapter khoHangTableAdapter1;
         private ChinChin.DataSets.QuanLyQuanTraSuaDataSet quanLyQuanTraSuaDataSet;
         private System.Windows.Forms.BindingSource vatLieuBindingSource;
         private ChinChin.DataSets.QuanLyQuanTraSuaDataSetTableAdapters.VatLieuTableAdapter vatLieuTableAdapter;
