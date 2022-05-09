@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChinChin.Classes
 {
-    internal class TaiKhoan
+    internal class TaiKhoanVO
     {
         public string tentaikhoan;
         public string TenTaiKhoan
