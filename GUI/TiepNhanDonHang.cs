@@ -17,7 +17,8 @@ namespace ChinChin.Forms_NhanVien
         public TiepNhanDonHang()
         {
             InitializeComponent();
-            HienMenu();
+            
+            //HienMenu();
         }
         string chuoiketnoi = Properties.Settings.Default.ChinhChienConnectionString;
         string sqlcode;
@@ -39,39 +40,40 @@ namespace ChinChin.Forms_NhanVien
             sda.Fill(dttb);
             ketnoi.Close();
 
-            /*
-            ketnoi.Open();
-            thuchien = new SqlCommand(sqlcode, ketnoi);
-            docdulieu = thuchien.ExecuteReader();
-            docdulieu.Read();
-            */
-
-            //docdulieu[0].ToString();
-            //flowLayoutPanelMenuList.Controls.Add();
-
             foreach (DataRow row in dttb.Rows)
             {
                 var uc = new ButtonSanPham
                 {
                     TenSanPham = row["TenSanPham"].ToString(),
                 };
-                //flowLayoutPanelMenuList.Controls.Add(uc);
             }
         }
 
         private void btnTypeTraSua_Click(object sender, EventArgs e)
         {
+            HienSanPham("Trasua");
+        }
+
+        void HienSanPham(string Loai)
+        {
             lvSanPhamTheoLoai.Items.Clear();
+            string query = "SELECT TenSanPham, Gia, MaSanPham FROM SanPham where Loai = '"+ Loai +"'";
             int i = 0;
-            string query = "SELECT TenSanPham, Gia FROM SanPham where Loai = 'Trasua'";
             SqlDataReader table = DataProvider.ReturnSqlDataReader(query);
             while (table.Read())
             {
                 lvSanPhamTheoLoai.Items.Add(table["TenSanPham"].ToString());
                 lvSanPhamTheoLoai.Items[i].SubItems.Add(table["Gia"].ToString());
+                lvSanPhamTheoLoai.Items[i].SubItems.Add(table["MaSanPham"].ToString());
                 i++;
             }
             table.Close();
+        }
+
+        private void lvSanPhamTheoLoai_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            string i = lvSanPhamTheoLoai.SelectedItems[0].SubItems[2].Text.ToString();
+            MessageBox.Show(i);
         }
     }
 }
