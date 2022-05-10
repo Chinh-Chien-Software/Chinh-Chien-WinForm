@@ -24,6 +24,8 @@ namespace ChinChin.Forms_NhanVien
         string chuoiketnoi = Properties.Settings.Default.ChinhChienConnectionString;
         string sqlcode;
         string MaHoaDon;
+        HoaDonDAO hoaDonDAO = new HoaDonDAO();
+
         SqlConnection ketnoi;
         //SqlCommand thuchien;
         //SqlDataReader docdulieu;
@@ -50,12 +52,13 @@ namespace ChinChin.Forms_NhanVien
                 };
             }
         }
-        /*
+        
         int TaoMaHoaDon()
         {
-            string phanNgay = DateTime.Now.ToShortDateString();
-            return int i = 0;
-        }*/
+            // Kiêm Tra Mã Hóa Đơn Mới Nhất, Lấy mã HD đó +1
+            int MaHoaDonMoiNhat = hoaDonDAO.searchRecentMaHoaDon();
+            return MaHoaDonMoiNhat + 1;
+        }
 
         
         private void btnTypeTraSua_Click(object sender, EventArgs e)
@@ -85,9 +88,9 @@ namespace ChinChin.Forms_NhanVien
             lvThongTinHoaDon.Items[0].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString());
             NhapSoLuong nhapSL = new NhapSoLuong();
             nhapSL.ShowDialog();
-            int Tien = int.Parse(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString()) * int.Parse(nhapSL.SoLuong);
+            int DonGia = int.Parse(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString()) * int.Parse(nhapSL.SoLuong);
             lvThongTinHoaDon.Items[0].SubItems.Add(nhapSL.SoLuong);
-            lvThongTinHoaDon.Items[0].SubItems.Add(Tien.ToString());
+            lvThongTinHoaDon.Items[0].SubItems.Add(DonGia.ToString());
             lvThongTinHoaDon.Items[0].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[2].Text.ToString());
         }
 
@@ -99,6 +102,16 @@ namespace ChinChin.Forms_NhanVien
         private void lvSanPhamTheoLoai_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnThanhTien_Click(object sender, EventArgs e)
+        {
+            MaHoaDon = TaoMaHoaDon().ToString();
+            hoaDonDAO.addHoaDon(MaHoaDon, "1111", DateTime.Now);
+            foreach (ListViewItem item in lvThongTinHoaDon.Items)
+            {
+                hoaDonDAO.addChiTietHoaDon(MaHoaDon, item.SubItems[4].Text, int.Parse(item.SubItems[2].Text), decimal.Parse(item.SubItems[3].Text));
+            }
         }
     }
 }
