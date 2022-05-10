@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChinChin.Classes
+namespace ChinChin.DAL_DAO
 {
-    internal class ChuQuan
+    internal class ThongTinHoaDonDAO
     {
     }
 }
