@@ -42,13 +42,15 @@ namespace ChinChin.GUI.formThem
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            int Loi;
             if (ChucNang == 0)
             {
                 ThemDAL.SanPham
-                    (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text, float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text));
+                    (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text,
+                    float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text));
                 this.Close();
             }
-            if (ChucNang == 1)
+            else if (ChucNang == 1)
             {
                 btnLuu.Text = "Cập nhật";
                 CapNhatDAL.SanPham

@@ -78,7 +78,8 @@ namespace ChinChin.DAL_DAO
         public static void HoaDon(string MaHoaDon, string MaNhanVien, DateTime NgayLap)
         {
             con.Open();
-            string sqlThemHoaDon = "insert into HoaDon values ('" + MaHoaDon + "', '" + MaNhanVien + "', '" + NgayLap.ToString("yyyy-mm-dd") + "')";
+            string sqlThemHoaDon
+                = "insert into HoaDon values ('" + MaHoaDon + "', '" + MaNhanVien + "', '" + NgayLap.ToString("yyyy-mm-dd") + "')";
             cmd = new SqlCommand(sqlThemHoaDon, con);
             cmd.ExecuteNonQuery();
             con.Close();
