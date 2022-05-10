@@ -102,9 +102,19 @@ namespace ChinChin.UI
 
                 MainUI MainUI = new MainUI();
                 MainUI.TenTaiKhoan = username;
-                MainUI.TenQuan = dt.Rows[0]["TenQuan"].ToString();
-                MainUI.Show();
-                this.Hide();
+                if (dt.Rows.Count > 0)
+                {
+                    MainUI.MaQuan = dt.Rows[0]["MaQuan"].ToString();
+                    MainUI.TenQuan = dt.Rows[0]["TenQuan"].ToString();
+                    MainUI.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    ChinChin.GUI.Main.TaoQuan taoQuan = new ChinChin.GUI.Main.TaoQuan();
+                    taoQuan.Show();
+                    this.Hide();
+                }
             }
             else
             {

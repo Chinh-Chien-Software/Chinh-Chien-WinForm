@@ -50,6 +50,7 @@
             this.btnMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
+            this.cbbChuyenQuan = new System.Windows.Forms.ComboBox();
             this.pnlBorderOfForm.SuspendLayout();
             this.panelLeftSidebar.SuspendLayout();
             this.pnlQuan.SuspendLayout();
@@ -69,7 +70,7 @@
             this.pnlChildForm.Location = new System.Drawing.Point(376, 70);
             this.pnlChildForm.Margin = new System.Windows.Forms.Padding(2);
             this.pnlChildForm.Name = "pnlChildForm";
-            this.pnlChildForm.Size = new System.Drawing.Size(607, 797);
+            this.pnlChildForm.Size = new System.Drawing.Size(607, 631);
             this.pnlChildForm.TabIndex = 14;
             // 
             // pnlBorderOfForm
@@ -82,7 +83,7 @@
             this.pnlBorderOfForm.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.pnlBorderOfForm.Location = new System.Drawing.Point(0, 0);
             this.pnlBorderOfForm.Name = "pnlBorderOfForm";
-            this.pnlBorderOfForm.Size = new System.Drawing.Size(985, 869);
+            this.pnlBorderOfForm.Size = new System.Drawing.Size(985, 703);
             this.pnlBorderOfForm.TabIndex = 0;
             // 
             // panelLeftSidebar
@@ -99,7 +100,7 @@
             this.panelLeftSidebar.Location = new System.Drawing.Point(0, 70);
             this.panelLeftSidebar.Margin = new System.Windows.Forms.Padding(2);
             this.panelLeftSidebar.Name = "panelLeftSidebar";
-            this.panelLeftSidebar.Size = new System.Drawing.Size(376, 797);
+            this.panelLeftSidebar.Size = new System.Drawing.Size(376, 631);
             this.panelLeftSidebar.TabIndex = 17;
             // 
             // ibtnNhanSu
@@ -215,6 +216,7 @@
             // pnlQuan
             // 
             this.pnlQuan.BackColor = System.Drawing.Color.Transparent;
+            this.pnlQuan.Controls.Add(this.cbbChuyenQuan);
             this.pnlQuan.Controls.Add(this.lblTenQuan);
             this.pnlQuan.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlQuan.Location = new System.Drawing.Point(0, 0);
@@ -318,11 +320,11 @@
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 47;
-            this.btnExit.Location = new System.Drawing.Point(197, 1);
+            this.btnExit.IconSize = 50;
+            this.btnExit.Location = new System.Drawing.Point(194, 2);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(47, 50);
+            this.btnExit.Size = new System.Drawing.Size(50, 50);
             this.btnExit.TabIndex = 2;
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -335,11 +337,11 @@
             this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
             this.btnMaximize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaximize.IconSize = 49;
-            this.btnMaximize.Location = new System.Drawing.Point(143, 1);
+            this.btnMaximize.IconSize = 50;
+            this.btnMaximize.Location = new System.Drawing.Point(140, 2);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(50, 49);
+            this.btnMaximize.Size = new System.Drawing.Size(50, 50);
             this.btnMaximize.TabIndex = 3;
             this.btnMaximize.TabStop = false;
             this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
@@ -352,11 +354,11 @@
             this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
             this.btnMinimize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMinimize.IconSize = 46;
-            this.btnMinimize.Location = new System.Drawing.Point(93, 1);
+            this.btnMinimize.IconSize = 50;
+            this.btnMinimize.Location = new System.Drawing.Point(86, 2);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(46, 50);
+            this.btnMinimize.Size = new System.Drawing.Size(50, 50);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
@@ -388,11 +390,24 @@
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // cbbChuyenQuan
+            // 
+            this.cbbChuyenQuan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.cbbChuyenQuan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbChuyenQuan.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbChuyenQuan.ForeColor = System.Drawing.Color.White;
+            this.cbbChuyenQuan.FormattingEnabled = true;
+            this.cbbChuyenQuan.Location = new System.Drawing.Point(211, 18);
+            this.cbbChuyenQuan.Name = "cbbChuyenQuan";
+            this.cbbChuyenQuan.Size = new System.Drawing.Size(160, 33);
+            this.cbbChuyenQuan.TabIndex = 1;
+            this.cbbChuyenQuan.Text = "Chuyển quán";
+            // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 869);
+            this.ClientSize = new System.Drawing.Size(985, 703);
             this.Controls.Add(this.pnlBorderOfForm);
             this.Name = "MainUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -438,5 +453,6 @@
         private System.Windows.Forms.Label lblTenQuan;
         private FontAwesome.Sharp.IconButton ibtnThucDon;
         private FontAwesome.Sharp.IconButton ibtnNhanSu;
+        private System.Windows.Forms.ComboBox cbbChuyenQuan;
     }
 }

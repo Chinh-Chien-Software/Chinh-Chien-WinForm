@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
 using ChinChin.Forms_QuanLy;
+using ChinChin.DAL_DAO;
 
 namespace ChinChin.UI
 {
@@ -18,7 +19,6 @@ namespace ChinChin.UI
         public MainUI()
         {
             InitializeComponent();
-            
         }
         public string TenTaiKhoan
         {
@@ -30,7 +30,11 @@ namespace ChinChin.UI
             get;
             set;
         }
-
+        public string MaQuan
+        {
+            get;
+            set;
+        }
         public MainUI(string TenTaiKhoan) : this()
         {
             this.TenTaiKhoan = TenTaiKhoan;
@@ -58,6 +62,21 @@ namespace ChinChin.UI
             //ibtn6.Text = "LỊCH LÀM";
             ibtnNhanDon.IconChar = IconChar.Calendar;
             ibtnNhanSu.Text = "NHÂN SỰ"; //ibtn2.IconChar = IconChar.PeopleCarry;
+            ShowQuanInCbbChuyenQuan();
+        }
+
+        /// <method>
+        ///  Hàm để hiện thị các quán khi click vào Chuyển quán
+        /// </method>
+        void ShowQuanInCbbChuyenQuan()
+        {
+            // Đổ dữ liệu vào cbbChuyenQuan
+            QuanDAO quan = new QuanDAO();
+            DataTable dt = quan.searchQuanByTenTaiKhoan(this.TenTaiKhoan);
+            cbbChuyenQuan.DataSource = dt;
+            cbbChuyenQuan.DisplayMember = "TenQuan";
+            cbbChuyenQuan.ValueMember = "MaQuan";
+            cbbChuyenQuan.Text = "Chuyển quán";
         }
 
         private void btnExit_Click(object sender, EventArgs e)
