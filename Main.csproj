@@ -96,6 +96,7 @@
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="BUS\ThongTinHoaDonBUS.cs" />
     <Compile Include="DAL-DAO\HoaDonDAO.cs" />
+    <Compile Include="DAL-DAO\QuanDAO.cs" />
     <Compile Include="DAL-DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAL-DAO\ThongTinHoaDonDAO.cs" />
     <Compile Include="dbConnection.cs" />

@@ -97,9 +97,12 @@ namespace ChinChin.UI
                         File.WriteAllText(Path.Combine(specificFolder, "SavedUsername.txt"), "");
                     }
                 }
+                QuanDAO quan = new QuanDAO();
+                DataTable dt = quan.searchQuanByTenTaiKhoan(username);
 
                 MainUI MainUI = new MainUI();
                 MainUI.TenTaiKhoan = username;
+                MainUI.TenQuan = dt.Rows[0]["TenQuan"].ToString();
                 MainUI.Show();
                 this.Hide();
             }
