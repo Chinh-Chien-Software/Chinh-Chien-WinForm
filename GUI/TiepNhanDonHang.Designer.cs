@@ -42,14 +42,14 @@ namespace ChinChin.Forms_NhanVien
             this.chTenSanPham = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chGia1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chSoLuong = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnThanhTien = new System.Windows.Forms.Button();
+            this.chTien = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnTypeTraSua = new ChinChin.Extra.BlackWhiteButton();
             this.btnTypeCaPhe = new ChinChin.Extra.BlackWhiteButton();
             this.btnTypeTopping = new ChinChin.Extra.BlackWhiteButton();
             this.blackWhiteButton3 = new ChinChin.Extra.BlackWhiteButton();
             this.blackWhiteButton4 = new ChinChin.Extra.BlackWhiteButton();
             this.blackWhiteButton5 = new ChinChin.Extra.BlackWhiteButton();
-            this.chTien = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnlMenu.SuspendLayout();
             this.pnlChonMon.SuspendLayout();
             this.flpnlLoai.SuspendLayout();
@@ -139,7 +139,7 @@ namespace ChinChin.Forms_NhanVien
             // panelHoaDon
             // 
             this.panelHoaDon.BackColor = System.Drawing.Color.White;
-            this.panelHoaDon.Controls.Add(this.button1);
+            this.panelHoaDon.Controls.Add(this.btnThanhTien);
             this.panelHoaDon.Controls.Add(this.lvThongTinHoaDon);
             this.panelHoaDon.Controls.Add(this.labelHoaDon);
             this.panelHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -199,20 +199,26 @@ namespace ChinChin.Forms_NhanVien
             this.chSoLuong.Text = "Số lượng";
             this.chSoLuong.Width = 132;
             // 
-            // button1
+            // btnThanhTien
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(713, 786);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 50);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Thành Tiền";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnThanhTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThanhTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnThanhTien.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnThanhTien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThanhTien.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhTien.ForeColor = System.Drawing.Color.White;
+            this.btnThanhTien.Location = new System.Drawing.Point(713, 786);
+            this.btnThanhTien.Name = "btnThanhTien";
+            this.btnThanhTien.Size = new System.Drawing.Size(100, 50);
+            this.btnThanhTien.TabIndex = 5;
+            this.btnThanhTien.Text = "Thành Tiền";
+            this.btnThanhTien.UseVisualStyleBackColor = false;
+            this.btnThanhTien.Click += new System.EventHandler(this.btnThanhTien_Click);
+            // 
+            // chTien
+            // 
+            this.chTien.Text = "Tiền";
+            this.chTien.Width = 135;
             // 
             // btnTypeTraSua
             // 
@@ -342,11 +348,6 @@ namespace ChinChin.Forms_NhanVien
             this.blackWhiteButton5.TextColor = System.Drawing.Color.White;
             this.blackWhiteButton5.UseVisualStyleBackColor = false;
             // 
-            // chTien
-            // 
-            this.chTien.Text = "Tiền";
-            this.chTien.Width = 135;
-            // 
             // TiepNhanDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,7 +386,7 @@ namespace ChinChin.Forms_NhanVien
         private System.Windows.Forms.ColumnHeader chTenSanPham;
         private System.Windows.Forms.ColumnHeader chGia1;
         private System.Windows.Forms.ColumnHeader chSoLuong;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnThanhTien;
         private System.Windows.Forms.ColumnHeader chTien;
     }
 }

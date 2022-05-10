@@ -47,9 +47,7 @@ namespace ChinChin.UI
             labelThongBao.Text = "";
             //this.FormBorderStyle = FormBorderStyle.None;
 
-            //tbcUserName.Focus();
             this.ActiveControl = tbcUserName;
-            // Cần tinh chỉnh Custom Textbox thêm Custom Event vào thì mới chạy được
 
             // Cho cửa sổ có kích thước vừa đẹp với màn hình làm việc
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
@@ -100,7 +98,8 @@ namespace ChinChin.UI
                     }
                 }
 
-                MainUI MainUI = new MainUI(TaiKhoan.Rows[0][1].ToString());
+                MainUI MainUI = new MainUI();
+                MainUI.TenTaiKhoan = username;
                 MainUI.Show();
                 this.Hide();
             }

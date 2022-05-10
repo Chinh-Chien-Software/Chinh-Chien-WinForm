@@ -39,7 +39,7 @@
             this.ibtn2 = new FontAwesome.Sharp.IconButton();
             this.ibtn1 = new FontAwesome.Sharp.IconButton();
             this.pnlQuan = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTenQuan = new System.Windows.Forms.Label();
             this.panelTittleBar = new System.Windows.Forms.Panel();
             this.pnlTaiKhoanVaButtons = new System.Windows.Forms.Panel();
             this.mnsTaiKhoan = new System.Windows.Forms.MenuStrip();
@@ -262,7 +262,7 @@
             // pnlQuan
             // 
             this.pnlQuan.BackColor = System.Drawing.Color.Transparent;
-            this.pnlQuan.Controls.Add(this.label1);
+            this.pnlQuan.Controls.Add(this.lblTenQuan);
             this.pnlQuan.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlQuan.Location = new System.Drawing.Point(0, 0);
             this.pnlQuan.Margin = new System.Windows.Forms.Padding(2);
@@ -270,15 +270,15 @@
             this.pnlQuan.Size = new System.Drawing.Size(376, 63);
             this.pnlQuan.TabIndex = 0;
             // 
-            // label1
+            // lblTenQuan
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 63);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "lblTenQuan";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTenQuan.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblTenQuan.Location = new System.Drawing.Point(0, 0);
+            this.lblTenQuan.Name = "lblTenQuan";
+            this.lblTenQuan.Size = new System.Drawing.Size(99, 63);
+            this.lblTenQuan.TabIndex = 0;
+            this.lblTenQuan.Text = "lblTenQuan";
+            this.lblTenQuan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelTittleBar
             // 
@@ -482,7 +482,7 @@
         private FontAwesome.Sharp.IconPictureBox btnMinimize;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Label labelTittleChildForm;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTenQuan;
         private FontAwesome.Sharp.IconButton ibtn6;
         private FontAwesome.Sharp.IconButton ibtn5;
         private FontAwesome.Sharp.IconButton ibtn7;

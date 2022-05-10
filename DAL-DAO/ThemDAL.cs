@@ -65,11 +65,11 @@ namespace ChinChin.DAL_DAO
             con.Close();
         }
 
-        public static void ThongTinHoaDon(string MaSanPham, string MaHoaDon, int SoLuong)
+        public static void ChiTietHoaDon(string MaSanPham, string MaHoaDon, int SoLuong)
         {
             con.Open();
             string sqlThemThongTinHoaDon
-                = "insert into ThongTinHoaDon values ('" + MaSanPham + "', '" + MaHoaDon + "', '" + SoLuong + "')";
+                = "insert into ChiTietHoaDon values ('" + MaSanPham + "', '" + MaHoaDon + "', '" + SoLuong + "')";
             cmd = new SqlCommand(sqlThemThongTinHoaDon, con);
             cmd.ExecuteNonQuery();
             con.Close();

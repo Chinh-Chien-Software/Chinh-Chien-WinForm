@@ -29,7 +29,7 @@ namespace ChinChin.DAL_DAO
             parameters[2].Value = ThoiGianGiaoDich;
             return conn.executeInsertQuery(query, parameters);
         }
-        
+
         /// <method>
         /// Get HoaDon Email By Firstname or Lastname and return DataTable
         /// </method>
@@ -54,6 +54,33 @@ namespace ChinChin.DAL_DAO
             sqlParameters[0] = new SqlParameter("@MaHoaDon", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(_MaHoaDon);
             return conn.executeSelectQuery(query, sqlParameters);
+        }
+
+        /// <method>
+        /// Tìm mã hóa đơn gần đây nhất
+        /// </method> 
+        public int searchRecentMaHoaDon()
+        {
+            string query = "select top 1 MaHoaDon from HoaDon order by ThoiGianGiaoDich desc";
+            string MaHoaDon = conn.executeSelectFirstCell(query).ToString();
+            return int.Parse(MaHoaDon);
+        }
+
+        /// <method>
+        /// Thêm chi tiết hóa đơn
+        public void addChiTietHoaDon(string MaHoaDon, string MaSanPham, int SoLuong, decimal DonGia)
+        {
+            string query = "INSERT INTO ChiTietHoaDon VALUES(@maHoaDon, @maSanPham, @soLuong, @donGia)";
+            SqlParameter[] parameters = new SqlParameter[4];
+            parameters[0] = new SqlParameter("@maHoaDon", SqlDbType.VarChar, 3);
+            parameters[0].Value = MaHoaDon;
+            parameters[1] = new SqlParameter("@maSanPham", SqlDbType.VarChar, 10);
+            parameters[1].Value = MaSanPham;
+            parameters[2] = new SqlParameter("@soLuong", SqlDbType.Int);
+            parameters[2].Value = SoLuong;
+            parameters[3] = new SqlParameter("@donGia", SqlDbType.Float);
+            parameters[3].Value = DonGia;
+            conn.executeInsertQuery(query, parameters);
         }
     }
 }

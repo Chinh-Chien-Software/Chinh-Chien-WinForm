@@ -20,8 +20,16 @@ namespace ChinChin.UI
             InitializeComponent();
             
         }
-        string TenTaiKhoan;
-        string LoaiTaiKhoan;
+        public string TenTaiKhoan
+        {
+            get;
+            set;
+        }
+        string TenQuan
+        {
+            get;
+            set;
+        }
 
         public MainUI(string TenTaiKhoan) : this()
         {
@@ -32,13 +40,14 @@ namespace ChinChin.UI
         public MainUI(string TenTaiKhoan, string LoaiTaiKhoan) : this()
         {
             // Viết hàm khởi tạo này để mang theo dữ liệu khi chạy Form MainUI
-            this.LoaiTaiKhoan = LoaiTaiKhoan;
+            //this.LoaiTaiKhoan = LoaiTaiKhoan;
             this.TenTaiKhoan = TenTaiKhoan;
         }
         private void MainUI_Load(object sender, EventArgs e)
         {
             //this.Text = "";
             this.ControlBox = false;
+            mnsiIconTaiKhoan.Text = TenTaiKhoan;
 
             ibtn1.Text = "THỐNG KÊ"; ibtn1.IconChar = IconChar.Dashcube;
             ibtn2.Text = "CHẤM CÔNG"; ibtn3.IconChar = IconChar.MoneyCheckAlt;
