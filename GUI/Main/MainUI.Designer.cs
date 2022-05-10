@@ -379,11 +379,11 @@
             // labelTittleChildForm
             // 
             this.labelTittleChildForm.AutoSize = true;
-            this.labelTittleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTittleChildForm.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTittleChildForm.Location = new System.Drawing.Point(50, 21);
             this.labelTittleChildForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTittleChildForm.Name = "labelTittleChildForm";
-            this.labelTittleChildForm.Size = new System.Drawing.Size(49, 17);
+            this.labelTittleChildForm.Size = new System.Drawing.Size(45, 20);
             this.labelTittleChildForm.TabIndex = 1;
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;

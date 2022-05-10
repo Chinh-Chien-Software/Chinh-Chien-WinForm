@@ -51,12 +51,13 @@ namespace ChinChin.UI
             lblTenQuan.Text = TenQuan;
 
             ibtnThongKe.Text = "THỐNG KÊ"; ibtnThongKe.IconChar = IconChar.Dashcube;
-            ibtn2.Text = "CHẤM CÔNG"; ibtnNhanDon.IconChar = IconChar.MoneyCheckAlt;
+            //ibtn2.Text = "CHẤM CÔNG"; ibtnNhanDon.IconChar = IconChar.MoneyCheckAlt;
             ibtnNhanDon.Text = "NHẬN ĐƠN"; ibtnThongKe.IconChar = IconChar.Receipt;
-            ibtnVatTu.Text = "KHO HÀNG"; ibtn2.IconChar = IconChar.Boxes;
+            ibtnVatTu.Text = "KHO HÀNG"; //ibtn2.IconChar = IconChar.Boxes;
             ibtnThucDon.Text = "THỰC ĐƠN"; ibtnVatTu.IconChar = IconChar.MugHot;
-            ibtn6.Text = "LỊCH LÀM"; ibtnNhanDon.IconChar = IconChar.Calendar;
-            ibtnNhanSu.Text = "NHÂN SỰ"; ibtn2.IconChar = IconChar.PeopleCarry;
+            //ibtn6.Text = "LỊCH LÀM";
+            ibtnNhanDon.IconChar = IconChar.Calendar;
+            ibtnNhanSu.Text = "NHÂN SỰ"; //ibtn2.IconChar = IconChar.PeopleCarry;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
