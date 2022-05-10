@@ -92,10 +92,23 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\ChuQuan.cs" />
-    <Compile Include="Classes\NhanVien.cs" />
-    <Compile Include="Classes\QuanLy.cs" />
-    <Compile Include="Classes\TaiKhoan.cs" />
+    <Compile Include="BUS\HoaDonBUS.cs" />
+    <Compile Include="BUS\TaiKhoanBUS.cs" />
+    <Compile Include="BUS\ThongTinHoaDonBUS.cs" />
+    <Compile Include="DAL-DAO\HoaDonDAO.cs" />
+    <Compile Include="DAL-DAO\TaiKhoanDAO.cs" />
+    <Compile Include="DAL-DAO\ThongTinHoaDonDAO.cs" />
+    <Compile Include="dbConnection.cs" />
+    <Compile Include="GUI\NhapSoLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NhapSoLuong.Designer.cs">
+      <DependentUpon>NhapSoLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VO\HoaDonVO.cs" />
+    <Compile Include="VO\NhanVien.cs" />
+    <Compile Include="VO\QuanLy.cs" />
+    <Compile Include="VO\TaiKhoanVO.cs" />
     <Compile Include="Custom\TextBox_Custom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -107,9 +120,6 @@
     <Compile Include="DAL-DAO\WorkingDatabase.cs" />
     <Compile Include="DAL-DAO\DataProvider.cs" />
     <Compile Include="DAL-DAO\XoaDAL.cs" />
-    <Compile Include="DataSets\KhoHangDataSet.cs">
-      <DependentUpon>KhoHangDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Custom\BlackWhiteButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -118,11 +128,6 @@
     </Compile>
     <Compile Include="Custom\Notification.Designer.cs">
       <DependentUpon>Notification.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DataSets\KhoHangDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KhoHangDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSets\QuanLyQuanTraSuaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -138,11 +143,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StorageDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DataSets\TaiKhoanDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="GUI\formThem\ThemCapnhatNhanVien.cs">
       <SubType>Form</SubType>
@@ -337,6 +337,9 @@
     <EmbeddedResource Include="GUI\fsNhanVien\NhanVienThuNgan.resx">
       <DependentUpon>NhanVienThuNgan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NhapSoLuong.resx">
+      <DependentUpon>NhapSoLuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\TiepNhanDonHang.resx">
       <DependentUpon>TiepNhanDonHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -373,17 +376,6 @@
     <EmbeddedResource Include="GUI\Main\ThongTinTaiKhoan.resx">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataSets\KhoHangDataSet.xsc">
-      <DependentUpon>KhoHangDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\KhoHangDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>KhoHangDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSets\KhoHangDataSet.xss">
-      <DependentUpon>KhoHangDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -426,17 +418,6 @@
     </None>
     <None Include="DataSets\StorageDataSet.xss">
       <DependentUpon>StorageDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\TaiKhoanDataSet.xsc">
-      <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\TaiKhoanDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TaiKhoanDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSets\TaiKhoanDataSet.xss">
-      <DependentUpon>TaiKhoanDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
