@@ -25,7 +25,7 @@ namespace ChinChin.UI
             get;
             set;
         }
-        string TenQuan
+        public string TenQuan
         {
             get;
             set;
@@ -48,14 +48,15 @@ namespace ChinChin.UI
             //this.Text = "";
             this.ControlBox = false;
             mnsiIconTaiKhoan.Text = TenTaiKhoan;
+            lblTenQuan.Text = TenQuan;
 
-            ibtn1.Text = "THỐNG KÊ"; ibtn1.IconChar = IconChar.Dashcube;
-            ibtn2.Text = "CHẤM CÔNG"; ibtn3.IconChar = IconChar.MoneyCheckAlt;
-            ibtn3.Text = "NHẬN ĐƠN"; ibtn1.IconChar = IconChar.Receipt;
-            ibtn4.Text = "KHO HÀNG"; ibtn2.IconChar = IconChar.Boxes;
-            ibtn5.Text = "THỰC ĐƠN"; ibtn4.IconChar = IconChar.MugHot;
-            ibtn6.Text = "LỊCH LÀM"; ibtn3.IconChar = IconChar.Calendar;
-            ibtn7.Text = "NHÂN SỰ"; ibtn2.IconChar = IconChar.PeopleCarry;
+            ibtnThongKe.Text = "THỐNG KÊ"; ibtnThongKe.IconChar = IconChar.Dashcube;
+            ibtn2.Text = "CHẤM CÔNG"; ibtnNhanDon.IconChar = IconChar.MoneyCheckAlt;
+            ibtnNhanDon.Text = "NHẬN ĐƠN"; ibtnThongKe.IconChar = IconChar.Receipt;
+            ibtnVatTu.Text = "KHO HÀNG"; ibtn2.IconChar = IconChar.Boxes;
+            ibtnThucDon.Text = "THỰC ĐƠN"; ibtnVatTu.IconChar = IconChar.MugHot;
+            ibtn6.Text = "LỊCH LÀM"; ibtnNhanDon.IconChar = IconChar.Calendar;
+            ibtnNhanSu.Text = "NHÂN SỰ"; ibtn2.IconChar = IconChar.PeopleCarry;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -64,7 +65,7 @@ namespace ChinChin.UI
         }
 
         private Form currentChildForm = null;
-        private void ibtn1_Click(object sender, EventArgs e)
+        private void ibtnThongKe_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color1, iconCurrentChildForm);
             MenuAnimation.OpenChildForm(new FormsChuQuan.FormThongKe(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
@@ -118,27 +119,27 @@ namespace ChinChin.UI
 
         }
 
-        private void ibtn4_Click(object sender, EventArgs e)
+        private void ibtnVatTu_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color2, iconCurrentChildForm);
             MenuAnimation.OpenChildForm(new KhoHang(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 
-        private void ibtn5_Click(object sender, EventArgs e)
+        private void ibtnThucDon_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color3, iconCurrentChildForm);
             MenuAnimation.OpenChildForm
                 (new ChinChin.Forms_ChuQuan.FormThucDon(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 
-        private void ibtn7_Click(object sender, EventArgs e)
+        private void ibtnNhanSu_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color4, iconCurrentChildForm);
             MenuAnimation.OpenChildForm
                 (new ChinChin.GUI.NhanSu(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 
-        private void ibtn3_Click(object sender, EventArgs e)
+        private void ibtnNhanDon_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color5, iconCurrentChildForm);
             MenuAnimation.OpenChildForm

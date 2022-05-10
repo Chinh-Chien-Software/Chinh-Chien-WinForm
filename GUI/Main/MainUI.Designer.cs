@@ -31,13 +31,11 @@
             this.pnlChildForm = new System.Windows.Forms.Panel();
             this.pnlBorderOfForm = new System.Windows.Forms.Panel();
             this.panelLeftSidebar = new System.Windows.Forms.Panel();
-            this.ibtn7 = new FontAwesome.Sharp.IconButton();
-            this.ibtn6 = new FontAwesome.Sharp.IconButton();
-            this.ibtn5 = new FontAwesome.Sharp.IconButton();
-            this.ibtn4 = new FontAwesome.Sharp.IconButton();
-            this.ibtn3 = new FontAwesome.Sharp.IconButton();
-            this.ibtn2 = new FontAwesome.Sharp.IconButton();
-            this.ibtn1 = new FontAwesome.Sharp.IconButton();
+            this.ibtnNhanSu = new FontAwesome.Sharp.IconButton();
+            this.ibtnThucDon = new FontAwesome.Sharp.IconButton();
+            this.ibtnVatTu = new FontAwesome.Sharp.IconButton();
+            this.ibtnNhanDon = new FontAwesome.Sharp.IconButton();
+            this.ibtnThongKe = new FontAwesome.Sharp.IconButton();
             this.pnlQuan = new System.Windows.Forms.Panel();
             this.lblTenQuan = new System.Windows.Forms.Label();
             this.panelTittleBar = new System.Windows.Forms.Panel();
@@ -90,13 +88,11 @@
             // panelLeftSidebar
             // 
             this.panelLeftSidebar.BackColor = System.Drawing.Color.White;
-            this.panelLeftSidebar.Controls.Add(this.ibtn7);
-            this.panelLeftSidebar.Controls.Add(this.ibtn6);
-            this.panelLeftSidebar.Controls.Add(this.ibtn5);
-            this.panelLeftSidebar.Controls.Add(this.ibtn4);
-            this.panelLeftSidebar.Controls.Add(this.ibtn3);
-            this.panelLeftSidebar.Controls.Add(this.ibtn2);
-            this.panelLeftSidebar.Controls.Add(this.ibtn1);
+            this.panelLeftSidebar.Controls.Add(this.ibtnNhanSu);
+            this.panelLeftSidebar.Controls.Add(this.ibtnThucDon);
+            this.panelLeftSidebar.Controls.Add(this.ibtnVatTu);
+            this.panelLeftSidebar.Controls.Add(this.ibtnNhanDon);
+            this.panelLeftSidebar.Controls.Add(this.ibtnThongKe);
             this.panelLeftSidebar.Controls.Add(this.pnlQuan);
             this.panelLeftSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeftSidebar.ForeColor = System.Drawing.Color.Coral;
@@ -106,158 +102,115 @@
             this.panelLeftSidebar.Size = new System.Drawing.Size(376, 797);
             this.panelLeftSidebar.TabIndex = 17;
             // 
-            // ibtn7
+            // ibtnNhanSu
             // 
-            this.ibtn7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn7.FlatAppearance.BorderSize = 0;
-            this.ibtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn7.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn7.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.ibtn7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn7.Location = new System.Drawing.Point(0, 671);
-            this.ibtn7.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn7.Name = "ibtn7";
-            this.ibtn7.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn7.Size = new System.Drawing.Size(376, 102);
-            this.ibtn7.TabIndex = 13;
-            this.ibtn7.Text = "NHÂN SỰ";
-            this.ibtn7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn7.UseVisualStyleBackColor = true;
-            this.ibtn7.Click += new System.EventHandler(this.ibtn7_Click);
+            this.ibtnNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtnNhanSu.FlatAppearance.BorderSize = 0;
+            this.ibtnNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtnNhanSu.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtnNhanSu.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtnNhanSu.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtnNhanSu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtnNhanSu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnNhanSu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtnNhanSu.Location = new System.Drawing.Point(0, 469);
+            this.ibtnNhanSu.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnNhanSu.Name = "ibtnNhanSu";
+            this.ibtnNhanSu.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtnNhanSu.Size = new System.Drawing.Size(376, 102);
+            this.ibtnNhanSu.TabIndex = 13;
+            this.ibtnNhanSu.Text = "NHÂN SỰ";
+            this.ibtnNhanSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtnNhanSu.UseVisualStyleBackColor = true;
+            this.ibtnNhanSu.Click += new System.EventHandler(this.ibtnNhanSu_Click);
             // 
-            // ibtn6
+            // ibtnThucDon
             // 
-            this.ibtn6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn6.FlatAppearance.BorderSize = 0;
-            this.ibtn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn6.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn6.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.ibtn6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn6.Location = new System.Drawing.Point(0, 569);
-            this.ibtn6.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn6.Name = "ibtn6";
-            this.ibtn6.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn6.Size = new System.Drawing.Size(376, 102);
-            this.ibtn6.TabIndex = 12;
-            this.ibtn6.Text = "LỊCH LÀM";
-            this.ibtn6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn6.UseVisualStyleBackColor = true;
+            this.ibtnThucDon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtnThucDon.FlatAppearance.BorderSize = 0;
+            this.ibtnThucDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtnThucDon.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtnThucDon.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtnThucDon.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtnThucDon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtnThucDon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnThucDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtnThucDon.Location = new System.Drawing.Point(0, 367);
+            this.ibtnThucDon.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnThucDon.Name = "ibtnThucDon";
+            this.ibtnThucDon.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtnThucDon.Size = new System.Drawing.Size(376, 102);
+            this.ibtnThucDon.TabIndex = 11;
+            this.ibtnThucDon.Text = "THỰC ĐƠN";
+            this.ibtnThucDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtnThucDon.UseVisualStyleBackColor = true;
+            this.ibtnThucDon.Click += new System.EventHandler(this.ibtnThucDon_Click);
             // 
-            // ibtn5
+            // ibtnVatTu
             // 
-            this.ibtn5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn5.FlatAppearance.BorderSize = 0;
-            this.ibtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn5.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn5.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.ibtn5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn5.Location = new System.Drawing.Point(0, 467);
-            this.ibtn5.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn5.Name = "ibtn5";
-            this.ibtn5.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn5.Size = new System.Drawing.Size(376, 102);
-            this.ibtn5.TabIndex = 11;
-            this.ibtn5.Text = "THỰC ĐƠN";
-            this.ibtn5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn5.UseVisualStyleBackColor = true;
-            this.ibtn5.Click += new System.EventHandler(this.ibtn5_Click);
+            this.ibtnVatTu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtnVatTu.FlatAppearance.BorderSize = 0;
+            this.ibtnVatTu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtnVatTu.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtnVatTu.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtnVatTu.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtnVatTu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtnVatTu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnVatTu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtnVatTu.Location = new System.Drawing.Point(0, 265);
+            this.ibtnVatTu.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnVatTu.Name = "ibtnVatTu";
+            this.ibtnVatTu.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtnVatTu.Size = new System.Drawing.Size(376, 102);
+            this.ibtnVatTu.TabIndex = 10;
+            this.ibtnVatTu.Text = "VẬT TƯ";
+            this.ibtnVatTu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtnVatTu.UseVisualStyleBackColor = true;
+            this.ibtnVatTu.Click += new System.EventHandler(this.ibtnVatTu_Click);
             // 
-            // ibtn4
+            // ibtnNhanDon
             // 
-            this.ibtn4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn4.FlatAppearance.BorderSize = 0;
-            this.ibtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn4.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn4.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.ibtn4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn4.Location = new System.Drawing.Point(0, 365);
-            this.ibtn4.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn4.Name = "ibtn4";
-            this.ibtn4.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn4.Size = new System.Drawing.Size(376, 102);
-            this.ibtn4.TabIndex = 10;
-            this.ibtn4.Text = "KHO HÀNG";
-            this.ibtn4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn4.UseVisualStyleBackColor = true;
-            this.ibtn4.Click += new System.EventHandler(this.ibtn4_Click);
+            this.ibtnNhanDon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtnNhanDon.FlatAppearance.BorderSize = 0;
+            this.ibtnNhanDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtnNhanDon.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtnNhanDon.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtnNhanDon.IconChar = FontAwesome.Sharp.IconChar.MugHot;
+            this.ibtnNhanDon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtnNhanDon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnNhanDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtnNhanDon.Location = new System.Drawing.Point(0, 163);
+            this.ibtnNhanDon.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnNhanDon.Name = "ibtnNhanDon";
+            this.ibtnNhanDon.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtnNhanDon.Size = new System.Drawing.Size(376, 102);
+            this.ibtnNhanDon.TabIndex = 9;
+            this.ibtnNhanDon.Text = "NHẬN ĐƠN";
+            this.ibtnNhanDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtnNhanDon.UseVisualStyleBackColor = true;
+            this.ibtnNhanDon.Click += new System.EventHandler(this.ibtnNhanDon_Click);
             // 
-            // ibtn3
+            // ibtnThongKe
             // 
-            this.ibtn3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn3.FlatAppearance.BorderSize = 0;
-            this.ibtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn3.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn3.IconChar = FontAwesome.Sharp.IconChar.MugHot;
-            this.ibtn3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn3.Location = new System.Drawing.Point(0, 263);
-            this.ibtn3.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn3.Name = "ibtn3";
-            this.ibtn3.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn3.Size = new System.Drawing.Size(376, 102);
-            this.ibtn3.TabIndex = 9;
-            this.ibtn3.Text = "NHẬN ĐƠN";
-            this.ibtn3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn3.UseVisualStyleBackColor = true;
-            this.ibtn3.Click += new System.EventHandler(this.ibtn3_Click);
-            // 
-            // ibtn2
-            // 
-            this.ibtn2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn2.FlatAppearance.BorderSize = 0;
-            this.ibtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn2.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn2.IconChar = FontAwesome.Sharp.IconChar.Dashcube;
-            this.ibtn2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn2.Location = new System.Drawing.Point(0, 163);
-            this.ibtn2.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn2.Name = "ibtn2";
-            this.ibtn2.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn2.Size = new System.Drawing.Size(376, 100);
-            this.ibtn2.TabIndex = 8;
-            this.ibtn2.Text = "CHẤM CÔNG";
-            this.ibtn2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn2.UseVisualStyleBackColor = true;
-            this.ibtn2.Click += new System.EventHandler(this.ibtn2_Click);
-            // 
-            // ibtn1
-            // 
-            this.ibtn1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtn1.FlatAppearance.BorderSize = 0;
-            this.ibtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtn1.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtn1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtn1.IconChar = FontAwesome.Sharp.IconChar.ObjectGroup;
-            this.ibtn1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtn1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtn1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtn1.Location = new System.Drawing.Point(0, 63);
-            this.ibtn1.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtn1.Name = "ibtn1";
-            this.ibtn1.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtn1.Size = new System.Drawing.Size(376, 100);
-            this.ibtn1.TabIndex = 7;
-            this.ibtn1.Text = "THỐNG KÊ";
-            this.ibtn1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtn1.UseVisualStyleBackColor = true;
-            this.ibtn1.Click += new System.EventHandler(this.ibtn1_Click);
+            this.ibtnThongKe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtnThongKe.FlatAppearance.BorderSize = 0;
+            this.ibtnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtnThongKe.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtnThongKe.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtnThongKe.IconChar = FontAwesome.Sharp.IconChar.ObjectGroup;
+            this.ibtnThongKe.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtnThongKe.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtnThongKe.Location = new System.Drawing.Point(0, 63);
+            this.ibtnThongKe.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnThongKe.Name = "ibtnThongKe";
+            this.ibtnThongKe.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtnThongKe.Size = new System.Drawing.Size(376, 100);
+            this.ibtnThongKe.TabIndex = 7;
+            this.ibtnThongKe.Text = "THỐNG KÊ";
+            this.ibtnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtnThongKe.UseVisualStyleBackColor = true;
+            this.ibtnThongKe.Click += new System.EventHandler(this.ibtnThongKe_Click);
             // 
             // pnlQuan
             // 
@@ -273,9 +226,10 @@
             // lblTenQuan
             // 
             this.lblTenQuan.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblTenQuan.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenQuan.Location = new System.Drawing.Point(0, 0);
             this.lblTenQuan.Name = "lblTenQuan";
-            this.lblTenQuan.Size = new System.Drawing.Size(99, 63);
+            this.lblTenQuan.Size = new System.Drawing.Size(204, 63);
             this.lblTenQuan.TabIndex = 0;
             this.lblTenQuan.Text = "lblTenQuan";
             this.lblTenQuan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -465,10 +419,9 @@
         private System.Windows.Forms.Panel pnlChildForm;
         private System.Windows.Forms.Panel pnlBorderOfForm;
         private System.Windows.Forms.Panel panelLeftSidebar;
-        private FontAwesome.Sharp.IconButton ibtn4;
-        private FontAwesome.Sharp.IconButton ibtn3;
-        private FontAwesome.Sharp.IconButton ibtn2;
-        private FontAwesome.Sharp.IconButton ibtn1;
+        private FontAwesome.Sharp.IconButton ibtnVatTu;
+        private FontAwesome.Sharp.IconButton ibtnNhanDon;
+        private FontAwesome.Sharp.IconButton ibtnThongKe;
         private System.Windows.Forms.Panel pnlQuan;
         private System.Windows.Forms.Panel panelTittleBar;
         private System.Windows.Forms.Panel pnlTaiKhoanVaButtons;
@@ -483,8 +436,7 @@
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Label labelTittleChildForm;
         private System.Windows.Forms.Label lblTenQuan;
-        private FontAwesome.Sharp.IconButton ibtn6;
-        private FontAwesome.Sharp.IconButton ibtn5;
-        private FontAwesome.Sharp.IconButton ibtn7;
+        private FontAwesome.Sharp.IconButton ibtnThucDon;
+        private FontAwesome.Sharp.IconButton ibtnNhanSu;
     }
 }
