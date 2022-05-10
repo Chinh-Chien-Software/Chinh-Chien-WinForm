@@ -37,27 +37,29 @@
             this.lblSignIn = new System.Windows.Forms.Label();
             this.panelUsername = new System.Windows.Forms.Panel();
             this.iPBCheckUsername = new FontAwesome.Sharp.IconPictureBox();
+            this.tbcUsername = new ChinChin.Custom.TextBox_Custom();
             this.panelPassword = new System.Windows.Forms.Panel();
+            this.tbcPassword = new ChinChin.Custom.TextBox_Custom();
             this.panelBackground = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlEmail = new System.Windows.Forms.Panel();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.tbcEmail = new ChinChin.Custom.TextBox_Custom();
+            this.pnlRewrite = new System.Windows.Forms.Panel();
             this.iPBxShowHideRewritePasword = new FontAwesome.Sharp.IconPictureBox();
             this.lblRewritePassword = new System.Windows.Forms.Label();
-            this.tbcEmal = new ChinChin.Custom.TextBox_Custom();
             this.tbcRewritePassword = new ChinChin.Custom.TextBox_Custom();
             this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
-            this.tbcUsername = new ChinChin.Custom.TextBox_Custom();
-            this.tbcPassword = new ChinChin.Custom.TextBox_Custom();
+            this.pnlThongBao = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHidePasword)).BeginInit();
             this.panelUsername.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPBCheckUsername)).BeginInit();
             this.panelPassword.SuspendLayout();
             this.panelBackground.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnlEmail.SuspendLayout();
+            this.pnlRewrite.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHideRewritePasword)).BeginInit();
+            this.pnlThongBao.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnExit
@@ -138,17 +140,17 @@
             // 
             // lblThongBao
             // 
-            this.lblThongBao.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblThongBao.AutoSize = true;
             this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
+            this.lblThongBao.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblThongBao.Location = new System.Drawing.Point(247, 498);
+            this.lblThongBao.Location = new System.Drawing.Point(0, 0);
             this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(322, 19);
+            this.lblThongBao.Size = new System.Drawing.Size(801, 58);
             this.lblThongBao.TabIndex = 9;
             this.lblThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
+            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSignIn
             // 
@@ -185,13 +187,24 @@
             this.iPBCheckUsername.IconColor = System.Drawing.SystemColors.ControlText;
             this.iPBCheckUsername.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iPBCheckUsername.IconSize = 25;
-            this.iPBCheckUsername.Location = new System.Drawing.Point(502, 47);
+            this.iPBCheckUsername.Location = new System.Drawing.Point(537, 47);
             this.iPBCheckUsername.Margin = new System.Windows.Forms.Padding(2);
             this.iPBCheckUsername.Name = "iPBCheckUsername";
             this.iPBCheckUsername.Size = new System.Drawing.Size(29, 25);
             this.iPBCheckUsername.TabIndex = 17;
             this.iPBCheckUsername.TabStop = false;
             this.iPBCheckUsername.Visible = false;
+            // 
+            // tbcUsername
+            // 
+            this.tbcUsername.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tbcUsername.ForeColor = System.Drawing.Color.White;
+            this.tbcUsername.Location = new System.Drawing.Point(261, 38);
+            this.tbcUsername.Name = "tbcUsername";
+            this.tbcUsername.PasswordChar = '\0';
+            this.tbcUsername.Size = new System.Drawing.Size(271, 36);
+            this.tbcUsername.TabIndex = 7;
+            this.tbcUsername.TextChanged += new System.EventHandler(this.tbcUsername_TextChanged);
             // 
             // panelPassword
             // 
@@ -206,13 +219,23 @@
             this.panelPassword.Size = new System.Drawing.Size(800, 79);
             this.panelPassword.TabIndex = 12;
             // 
+            // tbcPassword
+            // 
+            this.tbcPassword.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tbcPassword.ForeColor = System.Drawing.Color.White;
+            this.tbcPassword.Location = new System.Drawing.Point(263, 35);
+            this.tbcPassword.Name = "tbcPassword";
+            this.tbcPassword.PasswordChar = '*';
+            this.tbcPassword.Size = new System.Drawing.Size(271, 36);
+            this.tbcPassword.TabIndex = 8;
+            // 
             // panelBackground
             // 
-            this.panelBackground.Controls.Add(this.panel2);
-            this.panelBackground.Controls.Add(this.panel1);
+            this.panelBackground.Controls.Add(this.pnlThongBao);
+            this.panelBackground.Controls.Add(this.pnlEmail);
+            this.panelBackground.Controls.Add(this.pnlRewrite);
             this.panelBackground.Controls.Add(this.lblYesAccount);
             this.panelBackground.Controls.Add(this.SignInButton);
-            this.panelBackground.Controls.Add(this.lblThongBao);
             this.panelBackground.Controls.Add(this.lblSignIn);
             this.panelBackground.Controls.Add(this.panelUsername);
             this.panelBackground.Controls.Add(this.panelPassword);
@@ -223,17 +246,17 @@
             this.panelBackground.Size = new System.Drawing.Size(800, 726);
             this.panelBackground.TabIndex = 11;
             // 
-            // panel2
+            // pnlEmail
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.lblEmail);
-            this.panel2.Controls.Add(this.tbcEmal);
-            this.panel2.Location = new System.Drawing.Point(3, 216);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 79);
-            this.panel2.TabIndex = 18;
+            this.pnlEmail.BackColor = System.Drawing.Color.Transparent;
+            this.pnlEmail.Controls.Add(this.lblEmail);
+            this.pnlEmail.Controls.Add(this.tbcEmail);
+            this.pnlEmail.Location = new System.Drawing.Point(3, 216);
+            this.pnlEmail.Name = "pnlEmail";
+            this.pnlEmail.Size = new System.Drawing.Size(800, 79);
+            this.pnlEmail.TabIndex = 18;
             // 
             // lblEmail
             // 
@@ -248,18 +271,28 @@
             this.lblEmail.TabIndex = 7;
             this.lblEmail.Text = "Email";
             // 
-            // panel1
+            // tbcEmail
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tbcEmail.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tbcEmail.ForeColor = System.Drawing.Color.White;
+            this.tbcEmail.Location = new System.Drawing.Point(263, 35);
+            this.tbcEmail.Name = "tbcEmail";
+            this.tbcEmail.PasswordChar = '\0';
+            this.tbcEmail.Size = new System.Drawing.Size(271, 36);
+            this.tbcEmail.TabIndex = 8;
+            // 
+            // pnlRewrite
+            // 
+            this.pnlRewrite.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.iPBxShowHideRewritePasword);
-            this.panel1.Controls.Add(this.lblRewritePassword);
-            this.panel1.Controls.Add(this.tbcRewritePassword);
-            this.panel1.Location = new System.Drawing.Point(0, 386);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 79);
-            this.panel1.TabIndex = 17;
+            this.pnlRewrite.BackColor = System.Drawing.Color.Transparent;
+            this.pnlRewrite.Controls.Add(this.iPBxShowHideRewritePasword);
+            this.pnlRewrite.Controls.Add(this.lblRewritePassword);
+            this.pnlRewrite.Controls.Add(this.tbcRewritePassword);
+            this.pnlRewrite.Location = new System.Drawing.Point(0, 386);
+            this.pnlRewrite.Name = "pnlRewrite";
+            this.pnlRewrite.Size = new System.Drawing.Size(800, 79);
+            this.pnlRewrite.TabIndex = 17;
             // 
             // iPBxShowHideRewritePasword
             // 
@@ -291,17 +324,6 @@
             this.lblRewritePassword.TabIndex = 7;
             this.lblRewritePassword.Text = "Nhập lại mật khẩu";
             // 
-            // tbcEmal
-            // 
-            this.tbcEmal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.tbcEmal.ForeColor = System.Drawing.Color.White;
-            this.tbcEmal.Location = new System.Drawing.Point(263, 35);
-            this.tbcEmal.Name = "tbcEmal";
-            this.tbcEmal.PasswordChar = '\0';
-            this.tbcEmal.Size = new System.Drawing.Size(271, 36);
-            this.tbcEmal.TabIndex = 8;
-            this.tbcEmal.Text = "";
-            // 
             // tbcRewritePassword
             // 
             this.tbcRewritePassword.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -311,7 +333,6 @@
             this.tbcRewritePassword.PasswordChar = '*';
             this.tbcRewritePassword.Size = new System.Drawing.Size(271, 36);
             this.tbcRewritePassword.TabIndex = 8;
-            this.tbcRewritePassword.Text = "";
             // 
             // SignInButton
             // 
@@ -335,28 +356,16 @@
             this.SignInButton.UseVisualStyleBackColor = false;
             this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
             // 
-            // tbcUsername
+            // pnlThongBao
             // 
-            this.tbcUsername.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.tbcUsername.ForeColor = System.Drawing.Color.White;
-            this.tbcUsername.Location = new System.Drawing.Point(261, 38);
-            this.tbcUsername.Name = "tbcUsername";
-            this.tbcUsername.PasswordChar = '\0';
-            this.tbcUsername.Size = new System.Drawing.Size(271, 36);
-            this.tbcUsername.TabIndex = 7;
-            this.tbcUsername.Text = "";
-            this.tbcUsername.TextChanged += new System.EventHandler(this.tbcUsername_TextChanged);
-            // 
-            // tbcPassword
-            // 
-            this.tbcPassword.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.tbcPassword.ForeColor = System.Drawing.Color.White;
-            this.tbcPassword.Location = new System.Drawing.Point(263, 35);
-            this.tbcPassword.Name = "tbcPassword";
-            this.tbcPassword.PasswordChar = '*';
-            this.tbcPassword.Size = new System.Drawing.Size(271, 36);
-            this.tbcPassword.TabIndex = 8;
-            this.tbcPassword.Text = "";
+            this.pnlThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlThongBao.BackColor = System.Drawing.Color.Transparent;
+            this.pnlThongBao.Controls.Add(this.lblThongBao);
+            this.pnlThongBao.Location = new System.Drawing.Point(0, 471);
+            this.pnlThongBao.Name = "pnlThongBao";
+            this.pnlThongBao.Size = new System.Drawing.Size(801, 58);
+            this.pnlThongBao.TabIndex = 19;
             // 
             // SignUp
             // 
@@ -379,11 +388,12 @@
             this.panelPassword.PerformLayout();
             this.panelBackground.ResumeLayout(false);
             this.panelBackground.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlEmail.ResumeLayout(false);
+            this.pnlEmail.PerformLayout();
+            this.pnlRewrite.ResumeLayout(false);
+            this.pnlRewrite.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHideRewritePasword)).EndInit();
+            this.pnlThongBao.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -402,13 +412,14 @@
         private System.Windows.Forms.Panel panelUsername;
         private System.Windows.Forms.Panel panelPassword;
         private System.Windows.Forms.Panel panelBackground;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlRewrite;
         private System.Windows.Forms.Label lblRewritePassword;
         private Custom.TextBox_Custom tbcRewritePassword;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlEmail;
         private System.Windows.Forms.Label lblEmail;
-        private Custom.TextBox_Custom tbcEmal;
+        private Custom.TextBox_Custom tbcEmail;
         private FontAwesome.Sharp.IconPictureBox iPBxShowHideRewritePasword;
         private FontAwesome.Sharp.IconPictureBox iPBCheckUsername;
+        private System.Windows.Forms.Panel pnlThongBao;
     }
 }

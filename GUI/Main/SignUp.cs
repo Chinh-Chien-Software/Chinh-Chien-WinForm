@@ -42,12 +42,22 @@ namespace ChinChin.UI
 
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            WorkingDatabase.CreateAccount(tbcUsername.Text, tbcPassword.Text, "", 1);
-            if (WorkingDatabase.CheckUsername(tbcUsername.Text) == false)
+            if (tbcPassword.Text != tbcRewritePassword.Text)
             {
-                MainUI MainUI = new MainUI();
-                MainUI.Show();
+                lblThongBao.Visible = true;
+                lblThongBao.Text = "Mật khẩu không khớp";
+            }
+            else if (WorkingDatabase.CheckUsername(tbcUsername.Text))
+            {
+                WorkingDatabase.CreateAccount(tbcUsername.Text, tbcPassword.Text, tbcEmail.Text, 1);
+                ChinChin.GUI.Main.TaoQuan taoQuan = new ChinChin.GUI.Main.TaoQuan();
+                taoQuan.Show();
                 this.Hide();
+            }
+            else
+            {
+                lblThongBao.Visible = true;
+                lblThongBao.Text = "Tên người dùng đã sử dụng";
             }
         }
 

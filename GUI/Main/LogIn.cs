@@ -111,7 +111,7 @@ namespace ChinChin.UI
                 }
                 else
                 {
-                    ChinChin.GUI.Main.TaoQuan taoQuan = new ChinChin.GUI.Main.TaoQuan();
+                    ChinChin.GUI.Main.ChuaCoQuan taoQuan = new ChinChin.GUI.Main.ChuaCoQuan();
                     taoQuan.Show();
                     this.Hide();
                 }

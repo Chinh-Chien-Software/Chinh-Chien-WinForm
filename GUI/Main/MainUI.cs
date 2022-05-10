@@ -52,7 +52,7 @@ namespace ChinChin.UI
             //this.Text = "";
             this.ControlBox = false;
             mnsiIconTaiKhoan.Text = TenTaiKhoan;
-            lblTenQuan.Text = TenQuan;
+            //lblTenQuan.Text = TenQuan;
 
             ibtnThongKe.Text = "THỐNG KÊ"; ibtnThongKe.IconChar = IconChar.Dashcube;
             //ibtn2.Text = "CHẤM CÔNG"; ibtnNhanDon.IconChar = IconChar.MoneyCheckAlt;
@@ -76,7 +76,7 @@ namespace ChinChin.UI
             cbbChuyenQuan.DataSource = dt;
             cbbChuyenQuan.DisplayMember = "TenQuan";
             cbbChuyenQuan.ValueMember = "MaQuan";
-            cbbChuyenQuan.Text = "Chuyển quán";
+            //cbbChuyenQuan.Text = "Chuyển quán";
         }
 
         private void btnExit_Click(object sender, EventArgs e)

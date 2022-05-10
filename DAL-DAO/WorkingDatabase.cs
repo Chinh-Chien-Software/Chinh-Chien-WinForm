@@ -12,7 +12,7 @@ namespace ChinChin.Database
         static string connString = Properties.Settings.Default.ChinhChienConnectionString;
         static SqlConnection con = new SqlConnection(connString);
         static SqlCommand cmd;
-
+        
         public static bool CheckLocalDatabase()
         {
             // Tìm thử xem có tài khoản nào chuquan nào không..
@@ -29,10 +29,11 @@ namespace ChinChin.Database
         {
         }
 
-        public static void CreateAccount(string TenTaiKhoan, string MatKhau, string LoaiTaiKhoan, int UIMode)
+        public static void CreateAccount(string TenTaiKhoan, string MatKhau, string Email, int UIMode)
         {
             con.Open();
-            string sqlCreateAccount = "EXEC CreateAccount '"+ TenTaiKhoan +"', '"+ MatKhau +"', '" + LoaiTaiKhoan +"', '"+ UIMode +"'";
+            string sqlCreateAccount
+                = "EXEC CreateAccount '"+ TenTaiKhoan +"', '"+ MatKhau +"', '"+ UIMode + "', '" + Email + "'";
             cmd = new SqlCommand(sqlCreateAccount, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -48,11 +49,11 @@ namespace ChinChin.Database
 
             if (Check == 0)
             {
-                return true;
+                return true; //Chưa sử dụng
             }
             else
             {
-                return false;
+                return false; //Có người sử dụng
             }
         }
     }

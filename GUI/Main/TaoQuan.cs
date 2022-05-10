@@ -16,5 +16,10 @@ namespace ChinChin.GUI.Main
         {
             InitializeComponent();
         }
+
+        private void lblEmail_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
