@@ -115,5 +115,26 @@ namespace ChinChin
             }
             return true;
         }
+
+        public string executeSelectFirstCell(String _query)
+        {
+            SqlCommand myCommand = new SqlCommand();
+            string firstCell;
+            try
+            {
+                myCommand.Connection = openConnection();
+                myCommand.CommandText = _query;
+                firstCell = myCommand.ExecuteScalar().ToString();
+            }
+            catch (SqlException e)
+            {
+                Console.Write("Error - Connection.executeSelectQuery - Query: " + _query + " \nException: " + e.StackTrace.ToString());
+                return null;
+            }
+            finally
+            {
+            }
+            return firstCell;
+        }
     }
 }
