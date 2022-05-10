@@ -16,6 +16,7 @@ namespace ChinChin.GUI
         {
             InitializeComponent();
             this.ActiveControl = tbcSL;
+            this.FormBorderStyle = FormBorderStyle.None;
         }
         
         public string SoLuong
