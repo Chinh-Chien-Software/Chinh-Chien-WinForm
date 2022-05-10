@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using ChinChin.DAL_DAO;
+using ChinChin.GUI;
 
 namespace ChinChin.Forms_NhanVien
 {
@@ -17,11 +18,12 @@ namespace ChinChin.Forms_NhanVien
         public TiepNhanDonHang()
         {
             InitializeComponent();
-            
+            HienSanPham("Trasua");
             //HienMenu();
         }
         string chuoiketnoi = Properties.Settings.Default.ChinhChienConnectionString;
         string sqlcode;
+        string MaHoaDon;
         SqlConnection ketnoi;
         //SqlCommand thuchien;
         //SqlDataReader docdulieu;
@@ -48,7 +50,14 @@ namespace ChinChin.Forms_NhanVien
                 };
             }
         }
+        /*
+        int TaoMaHoaDon()
+        {
+            string phanNgay = DateTime.Now.ToShortDateString();
+            return int i = 0;
+        }*/
 
+        
         private void btnTypeTraSua_Click(object sender, EventArgs e)
         {
             HienSanPham("Trasua");
@@ -72,8 +81,24 @@ namespace ChinChin.Forms_NhanVien
 
         private void lvSanPhamTheoLoai_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            string i = lvSanPhamTheoLoai.SelectedItems[0].SubItems[2].Text.ToString();
-            MessageBox.Show(i);
+            lvThongTinHoaDon.Items.Add(lvSanPhamTheoLoai.SelectedItems[0].Text.ToString());
+            lvThongTinHoaDon.Items[0].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString());
+            NhapSoLuong nhapSL = new NhapSoLuong();
+            nhapSL.ShowDialog();
+            int Tien = int.Parse(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString()) * int.Parse(nhapSL.SoLuong);
+            lvThongTinHoaDon.Items[0].SubItems.Add(nhapSL.SoLuong);
+            lvThongTinHoaDon.Items[0].SubItems.Add(Tien.ToString());
+            lvThongTinHoaDon.Items[0].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[2].Text.ToString());
+        }
+
+        private void btnTypeCaPhe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lvSanPhamTheoLoai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
