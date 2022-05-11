@@ -14,8 +14,8 @@ namespace ChinChin.Forms_QuanLy
 {
     public partial class KhoHang : Form
     {
-        static string sqlVL = "SELECT * FROM VatLieu";
-        static string sqlKH = "SELECT * FROM KhoHang";
+        static string sqlVL = "SELECT * FROM VatLieu where MaQuan = 'quanchinhchien'";
+        static string sqlKH = "SELECT * FROM KhoHang where MaQuan = 'quanchinhchien'";
 
         public KhoHang()
         {
@@ -64,6 +64,11 @@ namespace ChinChin.Forms_QuanLy
         {
             string MaVatLieu = dgvVatLieu.SelectedRows[0].Cells[0].Value.ToString();
             XoaDAL.VatLieu(MaVatLieu);
+        }
+
+        private void ipbThemQuan_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

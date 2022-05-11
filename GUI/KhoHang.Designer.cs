@@ -29,15 +29,17 @@ namespace ChinChin.Forms_QuanLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvVatLieu = new System.Windows.Forms.DataGridView();
             this.btnEdit = new FontAwesome.Sharp.IconButton();
             this.pnlTopBar = new System.Windows.Forms.Panel();
             this.cbbKhoHang = new System.Windows.Forms.ComboBox();
             this.btnDelete = new FontAwesome.Sharp.IconButton();
             this.btnNew = new FontAwesome.Sharp.IconButton();
+            this.ipbThemQuan = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).BeginInit();
             this.pnlTopBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ipbThemQuan)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvVatLieu
@@ -57,9 +59,9 @@ namespace ChinChin.Forms_QuanLy
             this.dgvVatLieu.Name = "dgvVatLieu";
             this.dgvVatLieu.ReadOnly = true;
             this.dgvVatLieu.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dgvVatLieu.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.dgvVatLieu.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvVatLieu.RowTemplate.Height = 24;
             this.dgvVatLieu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvVatLieu.Size = new System.Drawing.Size(800, 318);
@@ -82,7 +84,7 @@ namespace ChinChin.Forms_QuanLy
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(89, 46);
             this.btnEdit.TabIndex = 1;
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.Text = "Sửa";
             this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -90,6 +92,7 @@ namespace ChinChin.Forms_QuanLy
             // pnlTopBar
             // 
             this.pnlTopBar.BackColor = System.Drawing.Color.White;
+            this.pnlTopBar.Controls.Add(this.ipbThemQuan);
             this.pnlTopBar.Controls.Add(this.cbbKhoHang);
             this.pnlTopBar.Controls.Add(this.btnDelete);
             this.pnlTopBar.Controls.Add(this.btnNew);
@@ -104,9 +107,10 @@ namespace ChinChin.Forms_QuanLy
             // 
             // cbbKhoHang
             // 
+            this.cbbKhoHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbbKhoHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbKhoHang.FormattingEnabled = true;
-            this.cbbKhoHang.Location = new System.Drawing.Point(0, 9);
+            this.cbbKhoHang.Location = new System.Drawing.Point(2, 9);
             this.cbbKhoHang.Name = "cbbKhoHang";
             this.cbbKhoHang.Size = new System.Drawing.Size(258, 28);
             this.cbbKhoHang.TabIndex = 5;
@@ -129,7 +133,7 @@ namespace ChinChin.Forms_QuanLy
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(110, 46);
             this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Xóa";
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -151,10 +155,27 @@ namespace ChinChin.Forms_QuanLy
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(89, 46);
             this.btnNew.TabIndex = 2;
-            this.btnNew.Text = "New";
+            this.btnNew.Text = "Thêm";
             this.btnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNew.UseVisualStyleBackColor = false;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // ipbThemQuan
+            // 
+            this.ipbThemQuan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ipbThemQuan.BackColor = System.Drawing.Color.White;
+            this.ipbThemQuan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ipbThemQuan.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.ipbThemQuan.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ipbThemQuan.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ipbThemQuan.IconSize = 39;
+            this.ipbThemQuan.Location = new System.Drawing.Point(265, 7);
+            this.ipbThemQuan.Margin = new System.Windows.Forms.Padding(2);
+            this.ipbThemQuan.Name = "ipbThemQuan";
+            this.ipbThemQuan.Size = new System.Drawing.Size(39, 39);
+            this.ipbThemQuan.TabIndex = 6;
+            this.ipbThemQuan.TabStop = false;
+            this.ipbThemQuan.Click += new System.EventHandler(this.ipbThemQuan_Click);
             // 
             // KhoHang
             // 
@@ -169,6 +190,7 @@ namespace ChinChin.Forms_QuanLy
             this.Load += new System.EventHandler(this.KhoHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).EndInit();
             this.pnlTopBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ipbThemQuan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -181,5 +203,6 @@ namespace ChinChin.Forms_QuanLy
         private FontAwesome.Sharp.IconButton btnNew;
         private FontAwesome.Sharp.IconButton btnDelete;
         private System.Windows.Forms.ComboBox cbbKhoHang;
+        private FontAwesome.Sharp.IconPictureBox ipbThemQuan;
     }
 }

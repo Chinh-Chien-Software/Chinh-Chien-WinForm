@@ -19,6 +19,7 @@ namespace ChinChin.GUI.formThem
             InitializeComponent();
             btnLuuCapnhat.Text = "Lưu";
             ChucNang = 0;
+            lblThongBao.Visible = false;
         }
         public string MaQuan
         {
@@ -68,20 +69,25 @@ namespace ChinChin.GUI.formThem
                     || tbcGia.Text == ""
                     || tbcDVT.Text == "")
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                    lblThongBao.Visible = true;
+                    lblThongBao.Text = "Vui lòng nhập đầy đủ thông tin";
                 }
                 else if(
-                    tbcMaVL.Text == ""
-                    || tbcTenVL.Text == ""
-                    || tbcNhaCC.Text == ""
-                    || tbcSL.Text == ""
-                    || tbcGia.Text == ""
-                    || tbcDVT.Text == ""
+                    tbcMaVL.Text.Length > 4
+                    || tbcTenVL.Text.Length > 30
+                    || tbcNhaCC.Text.Length > 30
                     )
-                ThemDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
-                Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, "quanchinhchien");
-                f.RefreshDGV();
-                this.Close();
+                {
+                    lblThongBao.Visible = true;
+                    lblThongBao.Text = "Số lượng từ quá lớn";
+                }
+                else
+                {
+                    ThemDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
+                    Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, "quanchinhchien");
+                    f.RefreshDGV();
+                    this.Close();
+                }
             }
             else if (ChucNang == 1)
             {
