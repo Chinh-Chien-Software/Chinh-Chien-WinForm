@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.pnlTopBar = new System.Windows.Forms.Panel();
-            this.ibtbRefresh = new FontAwesome.Sharp.IconButton();
             this.btnDelete = new FontAwesome.Sharp.IconButton();
             this.btnNew = new FontAwesome.Sharp.IconButton();
             this.btnEdit = new FontAwesome.Sharp.IconButton();
@@ -57,9 +56,9 @@
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.ReadOnly = true;
             this.dgvNhanVien.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dgvNhanVien.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvNhanVien.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNhanVien.Size = new System.Drawing.Size(800, 402);
@@ -68,7 +67,6 @@
             // pnlTopBar
             // 
             this.pnlTopBar.BackColor = System.Drawing.Color.White;
-            this.pnlTopBar.Controls.Add(this.ibtbRefresh);
             this.pnlTopBar.Controls.Add(this.btnDelete);
             this.pnlTopBar.Controls.Add(this.btnNew);
             this.pnlTopBar.Controls.Add(this.btnEdit);
@@ -79,28 +77,6 @@
             this.pnlTopBar.Name = "pnlTopBar";
             this.pnlTopBar.Size = new System.Drawing.Size(800, 48);
             this.pnlTopBar.TabIndex = 6;
-            // 
-            // ibtbRefresh
-            // 
-            this.ibtbRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ibtbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtbRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtbRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtbRefresh.ForeColor = System.Drawing.Color.White;
-            this.ibtbRefresh.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.ibtbRefresh.IconColor = System.Drawing.Color.White;
-            this.ibtbRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtbRefresh.IconSize = 40;
-            this.ibtbRefresh.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.ibtbRefresh.Location = new System.Drawing.Point(389, 0);
-            this.ibtbRefresh.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtbRefresh.Name = "ibtbRefresh";
-            this.ibtbRefresh.Size = new System.Drawing.Size(109, 46);
-            this.ibtbRefresh.TabIndex = 5;
-            this.ibtbRefresh.Text = "Refresh";
-            this.ibtbRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtbRefresh.UseVisualStyleBackColor = false;
-            this.ibtbRefresh.Click += new System.EventHandler(this.ibtbRefresh_Click);
             // 
             // btnDelete
             // 
@@ -187,7 +163,6 @@
 
         private System.Windows.Forms.DataGridView dgvNhanVien;
         private System.Windows.Forms.Panel pnlTopBar;
-        private FontAwesome.Sharp.IconButton ibtbRefresh;
         private FontAwesome.Sharp.IconButton btnDelete;
         private FontAwesome.Sharp.IconButton btnNew;
         private FontAwesome.Sharp.IconButton btnEdit;

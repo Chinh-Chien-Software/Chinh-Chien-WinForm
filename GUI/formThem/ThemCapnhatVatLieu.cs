@@ -20,7 +20,12 @@ namespace ChinChin.GUI.formThem
             btnLuuCapnhat.Text = "Lưu";
             ChucNang = 0;
         }
-
+        public string MaQuan
+        {
+            get;
+            set;
+        }
+        
         public ThemCapnhatVatLieu(
             string MaVatLieu,
             string TenVatLieu,
@@ -49,18 +54,41 @@ namespace ChinChin.GUI.formThem
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            var f = (ChinChin.Forms_QuanLy.KhoHang)this.Owner;
             if (ChucNang == 0)
             {
-                ThemDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text, Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text);
+                if (tbcMaVL.Text == ""
+                    || tbcTenVL.Text == ""
+                    || tbcNhaCC.Text == ""
+                    || tbcSL.Text == ""
+                    || tbcGia.Text == ""
+                    || tbcDVT.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                }
+                else if(
+                    tbcMaVL.Text == ""
+                    || tbcTenVL.Text == ""
+                    || tbcNhaCC.Text == ""
+                    || tbcSL.Text == ""
+                    || tbcGia.Text == ""
+                    || tbcDVT.Text == ""
+                    )
+                ThemDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
+                Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, "quanchinhchien");
+                f.RefreshDGV();
+                this.Close();
             }
             else if (ChucNang == 1)
             {
-                CapNhatDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text, Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text);
+                CapNhatDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
+                    Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, "quanchinhchien");
+                f.RefreshDGV();
+                this.Close();
             }
         }
 

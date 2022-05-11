@@ -11,11 +11,11 @@ using ChinChin.DAL_DAO;
 
 namespace ChinChin.Forms_ChuQuan
 {
-    public partial class FormThucDon : Form
+    public partial class Menu : Form
     {
         string sql = "SELECT * FROM SanPham";
 
-        public FormThucDon()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -28,12 +28,8 @@ namespace ChinChin.Forms_ChuQuan
         private void btnNew_Click(object sender, EventArgs e)
         {
             ChinChin.GUI.formThem.ThemCapnhatSanPham ThemCapnhatSanPham = new ChinChin.GUI.formThem.ThemCapnhatSanPham();
+            ThemCapnhatSanPham.Owner = this;
             ThemCapnhatSanPham.Show();
-        }
-
-        private void ibtbRefresh_Click(object sender, EventArgs e)
-        {
-            RefreshDGV();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -47,6 +43,7 @@ namespace ChinChin.Forms_ChuQuan
                     float.Parse(dgvSanPham.CurrentRow.Cells["Gia"].Value.ToString()),
                     int.Parse(dgvSanPham.CurrentRow.Cells["DanhGia"].Value.ToString())
                     );
+            ThemCapnhatSanPham.Owner = this;
             ThemCapnhatSanPham.Show();
         }
 
@@ -57,7 +54,7 @@ namespace ChinChin.Forms_ChuQuan
             RefreshDGV();
         }
 
-        private void RefreshDGV()
+        public void RefreshDGV()
         {
             dgvSanPham.DataSource = DataProvider.ReturnDataTable(sql);
         }

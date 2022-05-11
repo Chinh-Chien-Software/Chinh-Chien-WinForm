@@ -1,7 +1,7 @@
 ﻿
 namespace ChinChin.Forms_ChuQuan
 {
-    partial class FormThucDon
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,6 @@ namespace ChinChin.Forms_ChuQuan
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnNew = new FontAwesome.Sharp.IconButton();
             this.btnDelete = new FontAwesome.Sharp.IconButton();
-            this.ibtbRefresh = new FontAwesome.Sharp.IconButton();
             this.pnlTopBar = new System.Windows.Forms.Panel();
             this.btnEdit = new FontAwesome.Sharp.IconButton();
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
@@ -84,32 +83,9 @@ namespace ChinChin.Forms_ChuQuan
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // ibtbRefresh
-            // 
-            this.ibtbRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ibtbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtbRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtbRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtbRefresh.ForeColor = System.Drawing.Color.White;
-            this.ibtbRefresh.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.ibtbRefresh.IconColor = System.Drawing.Color.White;
-            this.ibtbRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtbRefresh.IconSize = 40;
-            this.ibtbRefresh.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.ibtbRefresh.Location = new System.Drawing.Point(189, 0);
-            this.ibtbRefresh.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtbRefresh.Name = "ibtbRefresh";
-            this.ibtbRefresh.Size = new System.Drawing.Size(109, 46);
-            this.ibtbRefresh.TabIndex = 5;
-            this.ibtbRefresh.Text = "Refresh";
-            this.ibtbRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtbRefresh.UseVisualStyleBackColor = false;
-            this.ibtbRefresh.Click += new System.EventHandler(this.ibtbRefresh_Click);
-            // 
             // pnlTopBar
             // 
             this.pnlTopBar.BackColor = System.Drawing.Color.White;
-            this.pnlTopBar.Controls.Add(this.ibtbRefresh);
             this.pnlTopBar.Controls.Add(this.btnDelete);
             this.pnlTopBar.Controls.Add(this.btnNew);
             this.pnlTopBar.Controls.Add(this.btnEdit);
@@ -189,7 +165,6 @@ namespace ChinChin.Forms_ChuQuan
 
         private FontAwesome.Sharp.IconButton btnNew;
         private FontAwesome.Sharp.IconButton btnDelete;
-        private FontAwesome.Sharp.IconButton ibtbRefresh;
         private System.Windows.Forms.Panel pnlTopBar;
         private FontAwesome.Sharp.IconButton btnEdit;
         private System.Windows.Forms.DataGridView dgvSanPham;

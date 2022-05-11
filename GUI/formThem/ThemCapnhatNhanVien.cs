@@ -61,14 +61,21 @@ namespace ChinChin.GUI.formThem
             if (ChucNang == 0)
             {
                 ThemDAL.NhanVien
-                    (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value, cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text);
+                    (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value,
+                    cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text, "quanchinhchien");
+                var f = (NhanSu)this.Owner;
+                f.RefreshDGV();
                 this.Close();
             }
             else if (ChucNang == 1)
             {
                 btnLuu.Text = "Cập nhật";
                 CapNhatDAL.NhanVien
-                    (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value, cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text);
+                    (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value,
+                    cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text, "quanchinhchien");
+                var f1 = (NhanSu)this.Owner;
+                f1.RefreshDGV();
+                this.Close();
             }
         }
     }

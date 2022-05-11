@@ -32,10 +32,11 @@ namespace ChinChin.Forms_QuanLy
         private void btnNew_Click(object sender, EventArgs e)
         {
             ChinChin.GUI.formThem.ThemCapnhatVatLieu ThemVatLieu = new ChinChin.GUI.formThem.ThemCapnhatVatLieu();
+            ThemVatLieu.Owner = this;
             ThemVatLieu.Show();
         }
 
-        private void ibtbRefresh_Click(object sender, EventArgs e)
+        public void RefreshDGV()
         {
             dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVL);
         }
@@ -55,7 +56,7 @@ namespace ChinChin.Forms_QuanLy
             ChinChin.GUI.formThem.ThemCapnhatVatLieu ThemVatLieu
                 = new ChinChin.GUI.formThem.ThemCapnhatVatLieu(
                     MaVatLieu, TenVatLieu, NhaCungCap, SoLuong, Gia, DonViTinh);
-
+            ThemVatLieu.Owner = this;
             ThemVatLieu.Show();
         }
 

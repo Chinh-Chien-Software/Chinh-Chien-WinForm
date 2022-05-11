@@ -19,11 +19,13 @@ namespace ChinChin.DAL_DAO
             string NhaCungCap,
             int SoLuong,
             float Gia,
-            string DonViTinh
+            string DonViTinh,
+            string MaQuan
             )
         {
             con.Open();
-            string sqlAddVatLieu = "insert into VatLieu values ('" + MaVatLieu + "', N'" + TenVatLieu + "', N'" + NhaCungCap + "', " + SoLuong + ", " + Gia + ", N'" + DonViTinh + "')";
+            string sqlAddVatLieu =
+                "insert into VatLieu values ('" + MaVatLieu + "', N'" + TenVatLieu + "', N'" + NhaCungCap + "', " + SoLuong + ", " + Gia + ", N'" + DonViTinh + "', '" + MaQuan + "')";
             cmd = new SqlCommand(sqlAddVatLieu, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -35,11 +37,13 @@ namespace ChinChin.DAL_DAO
             string CongThuc,
             string ThanhPhan,
             float Gia,
-            int DanhGia
+            int DanhGia,
+            string Loai,
+            string MaQuan
             )
         {
             con.Open();
-            string sqlAddSanPham = "insert into SanPham values ('" + MaSanPham + "', N'" + TenSanPham + "', '" + CongThuc + "', '" + ThanhPhan + "', " + Gia + ", " + DanhGia + ")";
+            string sqlAddSanPham = "insert into SanPham values ('" + MaSanPham + "', N'" + TenSanPham + "', '" + CongThuc + "', '" + ThanhPhan + "', " + Gia + ", " + DanhGia + ", '" + Loai + "', '" + MaQuan + "')";
             cmd = new SqlCommand(sqlAddSanPham, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -54,12 +58,13 @@ namespace ChinChin.DAL_DAO
             DateTime NgaySinh,
             string SoDienThoai,
             string DiaChi,
-            string LoaiNhanVien
+            string LoaiNhanVien,
+            string MaQuan
             )
         {
             con.Open();
             string sqlThemNhanVien
-                = "insert into NhanVien values ('" + MaNhanVien + "', N'" + TenNhanVien + "', '" + LuongTrenGio.ToString() + "', '" + NgayVaoLam.ToString("yyyy-mm-dd") + "', '" + GioiTinh + "', '" + NgaySinh.ToString("yyyy-mm-dd") + "', '" + SoDienThoai + "', N'" + DiaChi + "', '" + LoaiNhanVien + "')";
+                = "insert into NhanVien values ('" + MaNhanVien + "', N'" + TenNhanVien + "', '" + LuongTrenGio.ToString() + "', '" + NgayVaoLam + "', '" + GioiTinh + "', '" + NgaySinh + "', '" + SoDienThoai + "', N'" + DiaChi + "', '" + LoaiNhanVien + "', '" + MaQuan + "')";
             cmd = new SqlCommand(sqlThemNhanVien, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -75,11 +80,11 @@ namespace ChinChin.DAL_DAO
             con.Close();
         }
 
-        public static void HoaDon(string MaHoaDon, string MaNhanVien, DateTime NgayLap)
+        public static void HoaDon(string MaHoaDon, string MaNhanVien, DateTime NgayLap, string MaQuan)
         {
             con.Open();
             string sqlThemHoaDon
-                = "insert into HoaDon values ('" + MaHoaDon + "', '" + MaNhanVien + "', '" + NgayLap.ToString("yyyy-mm-dd") + "')";
+                = "insert into HoaDon values ('" + MaHoaDon + "', '" + MaNhanVien + "', '" + NgayLap.ToString("yyyy-mm-dd") + "', '" + MaQuan + "')";
             cmd = new SqlCommand(sqlThemHoaDon, con);
             cmd.ExecuteNonQuery();
             con.Close();

@@ -19,11 +19,13 @@ namespace ChinChin.DAL_DAO
             string NhaCungCap,
             int SoLuong,
             float Gia,
-            string DonViTinh
+            string DonViTinh,
+            string MaQuan
             )
         {
             con.Open();
-            string sqlAddVatLieu = "update VatLieu set TenVatLieu = N'" + TenVatLieu + "', NhaCungCap = N'" + NhaCungCap + "', SoLuong = " + SoLuong + ", Gia = " + Gia + ", DonViTinh = N'" + DonViTinh + "' where MaVatLieu = '" + MaVatLieu + "'";
+            string sqlAddVatLieu
+                = "update VatLieu set TenVatLieu = N'" + TenVatLieu + "', NhaCungCap = N'" + NhaCungCap + "', SoLuong = " + SoLuong + ", Gia = " + Gia + ", DonViTinh = N'" + DonViTinh + "', MaQuan = '" + MaQuan + "' where MaVatLieu = '" + MaVatLieu + "'";
             cmd = new SqlCommand(sqlAddVatLieu, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -35,12 +37,14 @@ namespace ChinChin.DAL_DAO
             string CongThuc,
             string ThanhPhan,
             float Gia,
-            int DanhGia
+            int DanhGia,
+            string Loai,
+            string MaQuan
             )
         {
             con.Open();
             string sqlAddVatLieu 
-                = "update SanPham set TenSanPham = N'" + TenSanPham + "', CongThuc = N'" + CongThuc + "', ThanhPhan = '" + ThanhPhan + "', Gia = " + Gia + ", DanhGia = " + DanhGia + " where MaSanPham = '" + MaSanPham + "'";
+                = "update SanPham set TenSanPham = N'" + TenSanPham + "', CongThuc = N'" + CongThuc + "', ThanhPhan = '" + ThanhPhan + "', Gia = " + Gia + ", DanhGia = " + DanhGia + ", Loai = '"+ Loai + "', MaQuan = '" + Loai + "' where MaSanPham = '" + MaSanPham + "'";
             cmd = new SqlCommand(sqlAddVatLieu, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -55,12 +59,13 @@ namespace ChinChin.DAL_DAO
             DateTime NgaySinh,
             string SoDienThoai,
             string DiaChi,
-            string LoaiNhanVien
+            string LoaiNhanVien,
+            string MaQuan
             )
         {
             con.Open();
             string sqlThemNhanVien
-                = "update NhanVien set TenNhanVien = N'" + TenNhanVien + "', LuongTrenGio = '" + LuongTrenGio.ToString() + "', NgayVaoLam = '" + NgayVaoLam.ToString("yyyy-mm-dd") + "', GioiTinh = '" + GioiTinh + "', NgaySinh = " + NgaySinh.ToString("yyyy-mm-dd") + ", SoDienThoai = '" + SoDienThoai + "', DiaChi = N'" + DiaChi + "', LoaiNhanVien = '" + LoaiNhanVien + "' where MaNhanVien = '" + MaNhanVien + "'";
+                = "update NhanVien set TenNhanVien = N'" + TenNhanVien + "', LuongTrenGio = '" + LuongTrenGio.ToString() + "', NgayVaoLam = '" + NgayVaoLam + "', GioiTinh = '" + GioiTinh + "', NgaySinh = '" + NgaySinh + "', SoDienThoai = '" + SoDienThoai + "', DiaChi = N'" + DiaChi + "', LoaiNhanVien = '" + LoaiNhanVien + "', MaQuan = '" + MaQuan + "' where MaNhanVien = '" + MaNhanVien + "'";
             cmd = new SqlCommand(sqlThemNhanVien, con);
             cmd.ExecuteNonQuery();
             con.Close();

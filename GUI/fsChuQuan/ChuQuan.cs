@@ -95,7 +95,7 @@ namespace ChinChin.FormsChuQuan
         private void iconButtonThucDon_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color3, iconCurrentChildForm);
-            MenuAnimation.OpenChildForm(new Forms_ChuQuan.FormThucDon(),ref currentChildForm, panelDesktop, labelTittleChildForm);
+            MenuAnimation.OpenChildForm(new Forms_ChuQuan.Menu(),ref currentChildForm, panelDesktop, labelTittleChildForm);
         }
 
         private void panelTittleBar_Paint(object sender, PaintEventArgs e)

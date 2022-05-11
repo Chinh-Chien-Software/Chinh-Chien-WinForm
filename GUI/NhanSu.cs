@@ -23,7 +23,12 @@ namespace ChinChin.GUI
             dgvNhanVien.DataSource = DataProvider.ReturnDataTable("SELECT * FROM NhanVien");
         }
 
-        private void ibtbRefresh_Click(object sender, EventArgs e)
+        public void ibtbRefresh_Click(object sender, EventArgs e)
+        {
+            dgvNhanVien.DataSource = DataProvider.ReturnDataTable("SELECT * FROM NhanVien");
+        }
+
+        public void RefreshDGV()
         {
             dgvNhanVien.DataSource = DataProvider.ReturnDataTable("SELECT * FROM NhanVien");
         }
@@ -31,6 +36,7 @@ namespace ChinChin.GUI
         private void btnNew_Click(object sender, EventArgs e)
         {
             formThem.ThemCapnhatNhanVien ThemCapnhatNhanVien = new formThem.ThemCapnhatNhanVien();
+            ThemCapnhatNhanVien.Owner = this;
             ThemCapnhatNhanVien.Show();
         }
 
@@ -51,6 +57,7 @@ namespace ChinChin.GUI
                     MaNhanVien, TenNhanVien, LuongTrenGio, NgayVaoLam,
                     GioiTinh, NgaySinh, SoDienThoai, DiaChi, LoaiNhanVien
                     );
+            ThemCapnhatNhanVien.Owner = this;
             ThemCapnhatNhanVien.Show();
         }
     }
