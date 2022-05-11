@@ -32,7 +32,9 @@
             this.btnTaoQuan = new System.Windows.Forms.Button();
             this.btnThamGiaQuan = new System.Windows.Forms.Button();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
+            this.ipbBack = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ipbBack)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -90,12 +92,29 @@
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // ipbBack
+            // 
+            this.ipbBack.BackColor = System.Drawing.Color.Transparent;
+            this.ipbBack.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ipbBack.IconChar = FontAwesome.Sharp.IconChar.LongArrowAltLeft;
+            this.ipbBack.IconColor = System.Drawing.SystemColors.ControlText;
+            this.ipbBack.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ipbBack.IconSize = 46;
+            this.ipbBack.Location = new System.Drawing.Point(11, 11);
+            this.ipbBack.Margin = new System.Windows.Forms.Padding(2);
+            this.ipbBack.Name = "ipbBack";
+            this.ipbBack.Size = new System.Drawing.Size(46, 48);
+            this.ipbBack.TabIndex = 11;
+            this.ipbBack.TabStop = false;
+            this.ipbBack.Click += new System.EventHandler(this.ipbBack_Click);
+            // 
             // ChuaCoQuan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ipbBack);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnThamGiaQuan);
             this.Controls.Add(this.btnTaoQuan);
@@ -104,6 +123,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TaoQuan";
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ipbBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,5 +135,6 @@
         private System.Windows.Forms.Button btnTaoQuan;
         private System.Windows.Forms.Button btnThamGiaQuan;
         private FontAwesome.Sharp.IconPictureBox btnExit;
+        private FontAwesome.Sharp.IconPictureBox ipbBack;
     }
 }

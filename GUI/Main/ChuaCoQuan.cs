@@ -33,5 +33,12 @@ namespace ChinChin.GUI.Main
         {
             btnThamGiaQuan.Text = "Comming soon..";
         }
+
+        private void ipbBack_Click(object sender, EventArgs e)
+        {
+            ChinChin.UI.LogIn LogIn = new ChinChin.UI.LogIn();
+            LogIn.Show();
+            this.Hide();
+        }
     }
 }
