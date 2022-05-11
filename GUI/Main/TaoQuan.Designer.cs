@@ -33,6 +33,7 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.tbcTenQuan = new ChinChin.Custom.TextBox_Custom();
             this.iPBCheckMaQuan = new FontAwesome.Sharp.IconPictureBox();
+            this.btnTao = new ChinChin.Extra.BlackWhiteButton();
             ((System.ComponentModel.ISupportInitialize)(this.iPBCheckMaQuan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,11 +97,34 @@
             this.iPBCheckMaQuan.TabStop = false;
             this.iPBCheckMaQuan.Visible = false;
             // 
+            // btnTao
+            // 
+            this.btnTao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnTao.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnTao.BorderColor = System.Drawing.Color.Black;
+            this.btnTao.BorderRadius = 0;
+            this.btnTao.BorderSize = 0;
+            this.btnTao.FlatAppearance.BorderSize = 0;
+            this.btnTao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTao.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTao.ForeColor = System.Drawing.Color.White;
+            this.btnTao.Location = new System.Drawing.Point(148, 195);
+            this.btnTao.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTao.Name = "btnTao";
+            this.btnTao.Size = new System.Drawing.Size(136, 50);
+            this.btnTao.TabIndex = 32;
+            this.btnTao.Text = "Tạo";
+            this.btnTao.TextColor = System.Drawing.Color.White;
+            this.btnTao.UseVisualStyleBackColor = false;
+            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
+            // 
             // TaoQuan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(299, 275);
+            this.ClientSize = new System.Drawing.Size(295, 256);
+            this.Controls.Add(this.btnTao);
             this.Controls.Add(this.iPBCheckMaQuan);
             this.Controls.Add(this.tbcMaQuan);
             this.Controls.Add(this.lblUsername);
@@ -121,5 +145,6 @@
         private System.Windows.Forms.Label lblEmail;
         private Custom.TextBox_Custom tbcTenQuan;
         private FontAwesome.Sharp.IconPictureBox iPBCheckMaQuan;
+        private Extra.BlackWhiteButton btnTao;
     }
 }

@@ -21,5 +21,10 @@ namespace ChinChin.GUI.Main
         {
 
         }
+
+        private void btnTao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
