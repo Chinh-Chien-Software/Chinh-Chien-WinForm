@@ -48,6 +48,7 @@
             // btnTaoQuan
             // 
             this.btnTaoQuan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnTaoQuan.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnTaoQuan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaoQuan.Font = new System.Drawing.Font("Cascadia Code", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaoQuan.Location = new System.Drawing.Point(216, 220);
@@ -61,6 +62,7 @@
             // btnThamGiaQuan
             // 
             this.btnThamGiaQuan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnThamGiaQuan.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnThamGiaQuan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThamGiaQuan.Font = new System.Drawing.Font("Cascadia Code", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThamGiaQuan.Location = new System.Drawing.Point(403, 220);
