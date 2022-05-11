@@ -35,21 +35,22 @@ namespace ChinChin.Forms_NhanVien
             this.chTenSP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chGia = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.flpnlLoai = new System.Windows.Forms.FlowLayoutPanel();
-            this.labelMenuList = new System.Windows.Forms.Label();
-            this.panelHoaDon = new System.Windows.Forms.Panel();
-            this.labelHoaDon = new System.Windows.Forms.Label();
-            this.lvThongTinHoaDon = new System.Windows.Forms.ListView();
-            this.chTenSanPham = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chGia1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chSoLuong = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnThanhTien = new System.Windows.Forms.Button();
-            this.chTien = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnTypeTraSua = new ChinChin.Extra.BlackWhiteButton();
             this.btnTypeCaPhe = new ChinChin.Extra.BlackWhiteButton();
             this.btnTypeTopping = new ChinChin.Extra.BlackWhiteButton();
             this.blackWhiteButton3 = new ChinChin.Extra.BlackWhiteButton();
             this.blackWhiteButton4 = new ChinChin.Extra.BlackWhiteButton();
             this.blackWhiteButton5 = new ChinChin.Extra.BlackWhiteButton();
+            this.labelMenuList = new System.Windows.Forms.Label();
+            this.panelHoaDon = new System.Windows.Forms.Panel();
+            this.btnThanhTien = new System.Windows.Forms.Button();
+            this.lvThongTinHoaDon = new System.Windows.Forms.ListView();
+            this.chTenSanPham = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chGia1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chSoLuong = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chTien = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.labelHoaDon = new System.Windows.Forms.Label();
+            this.lblThongBao = new System.Windows.Forms.Label();
             this.pnlMenu.SuspendLayout();
             this.pnlChonMon.SuspendLayout();
             this.flpnlLoai.SuspendLayout();
@@ -122,103 +123,6 @@ namespace ChinChin.Forms_NhanVien
             this.flpnlLoai.Name = "flpnlLoai";
             this.flpnlLoai.Size = new System.Drawing.Size(200, 797);
             this.flpnlLoai.TabIndex = 0;
-            // 
-            // labelMenuList
-            // 
-            this.labelMenuList.BackColor = System.Drawing.Color.White;
-            this.labelMenuList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelMenuList.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMenuList.Location = new System.Drawing.Point(0, 0);
-            this.labelMenuList.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelMenuList.Name = "labelMenuList";
-            this.labelMenuList.Size = new System.Drawing.Size(556, 40);
-            this.labelMenuList.TabIndex = 2;
-            this.labelMenuList.Text = "MENU";
-            this.labelMenuList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelHoaDon
-            // 
-            this.panelHoaDon.BackColor = System.Drawing.Color.White;
-            this.panelHoaDon.Controls.Add(this.btnThanhTien);
-            this.panelHoaDon.Controls.Add(this.lvThongTinHoaDon);
-            this.panelHoaDon.Controls.Add(this.labelHoaDon);
-            this.panelHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHoaDon.Location = new System.Drawing.Point(558, 0);
-            this.panelHoaDon.Margin = new System.Windows.Forms.Padding(2);
-            this.panelHoaDon.Name = "panelHoaDon";
-            this.panelHoaDon.Size = new System.Drawing.Size(816, 839);
-            this.panelHoaDon.TabIndex = 1;
-            // 
-            // labelHoaDon
-            // 
-            this.labelHoaDon.BackColor = System.Drawing.Color.White;
-            this.labelHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelHoaDon.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHoaDon.Location = new System.Drawing.Point(0, 0);
-            this.labelHoaDon.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelHoaDon.Name = "labelHoaDon";
-            this.labelHoaDon.Size = new System.Drawing.Size(816, 41);
-            this.labelHoaDon.TabIndex = 1;
-            this.labelHoaDon.Text = "HÓA ĐƠN";
-            this.labelHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lvThongTinHoaDon
-            // 
-            this.lvThongTinHoaDon.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lvThongTinHoaDon.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.chTenSanPham,
-            this.chGia1,
-            this.chSoLuong,
-            this.chTien});
-            this.lvThongTinHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvThongTinHoaDon.FullRowSelect = true;
-            this.lvThongTinHoaDon.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lvThongTinHoaDon.HideSelection = false;
-            this.lvThongTinHoaDon.Location = new System.Drawing.Point(5, 44);
-            this.lvThongTinHoaDon.MultiSelect = false;
-            this.lvThongTinHoaDon.Name = "lvThongTinHoaDon";
-            this.lvThongTinHoaDon.Size = new System.Drawing.Size(808, 736);
-            this.lvThongTinHoaDon.TabIndex = 4;
-            this.lvThongTinHoaDon.UseCompatibleStateImageBehavior = false;
-            this.lvThongTinHoaDon.View = System.Windows.Forms.View.Details;
-            // 
-            // chTenSanPham
-            // 
-            this.chTenSanPham.Text = "Tên Sản Phẩm";
-            this.chTenSanPham.Width = 340;
-            // 
-            // chGia1
-            // 
-            this.chGia1.Text = "Giá";
-            this.chGia1.Width = 128;
-            // 
-            // chSoLuong
-            // 
-            this.chSoLuong.Text = "Số lượng";
-            this.chSoLuong.Width = 132;
-            // 
-            // btnThanhTien
-            // 
-            this.btnThanhTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThanhTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnThanhTien.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnThanhTien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThanhTien.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhTien.ForeColor = System.Drawing.Color.White;
-            this.btnThanhTien.Location = new System.Drawing.Point(713, 786);
-            this.btnThanhTien.Name = "btnThanhTien";
-            this.btnThanhTien.Size = new System.Drawing.Size(100, 50);
-            this.btnThanhTien.TabIndex = 5;
-            this.btnThanhTien.Text = "Thành Tiền";
-            this.btnThanhTien.UseVisualStyleBackColor = false;
-            this.btnThanhTien.Click += new System.EventHandler(this.btnThanhTien_Click);
-            // 
-            // chTien
-            // 
-            this.chTien.Text = "Tiền";
-            this.chTien.Width = 135;
             // 
             // btnTypeTraSua
             // 
@@ -348,6 +252,118 @@ namespace ChinChin.Forms_NhanVien
             this.blackWhiteButton5.TextColor = System.Drawing.Color.White;
             this.blackWhiteButton5.UseVisualStyleBackColor = false;
             // 
+            // labelMenuList
+            // 
+            this.labelMenuList.BackColor = System.Drawing.Color.White;
+            this.labelMenuList.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelMenuList.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMenuList.Location = new System.Drawing.Point(0, 0);
+            this.labelMenuList.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelMenuList.Name = "labelMenuList";
+            this.labelMenuList.Size = new System.Drawing.Size(556, 40);
+            this.labelMenuList.TabIndex = 2;
+            this.labelMenuList.Text = "MENU";
+            this.labelMenuList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelHoaDon
+            // 
+            this.panelHoaDon.BackColor = System.Drawing.Color.White;
+            this.panelHoaDon.Controls.Add(this.lblThongBao);
+            this.panelHoaDon.Controls.Add(this.btnThanhTien);
+            this.panelHoaDon.Controls.Add(this.lvThongTinHoaDon);
+            this.panelHoaDon.Controls.Add(this.labelHoaDon);
+            this.panelHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelHoaDon.Location = new System.Drawing.Point(558, 0);
+            this.panelHoaDon.Margin = new System.Windows.Forms.Padding(2);
+            this.panelHoaDon.Name = "panelHoaDon";
+            this.panelHoaDon.Size = new System.Drawing.Size(816, 839);
+            this.panelHoaDon.TabIndex = 1;
+            // 
+            // btnThanhTien
+            // 
+            this.btnThanhTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThanhTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnThanhTien.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnThanhTien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThanhTien.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhTien.ForeColor = System.Drawing.Color.White;
+            this.btnThanhTien.Location = new System.Drawing.Point(713, 786);
+            this.btnThanhTien.Name = "btnThanhTien";
+            this.btnThanhTien.Size = new System.Drawing.Size(100, 50);
+            this.btnThanhTien.TabIndex = 5;
+            this.btnThanhTien.Text = "Thành Tiền";
+            this.btnThanhTien.UseVisualStyleBackColor = false;
+            this.btnThanhTien.Click += new System.EventHandler(this.btnThanhTien_Click);
+            // 
+            // lvThongTinHoaDon
+            // 
+            this.lvThongTinHoaDon.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lvThongTinHoaDon.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chTenSanPham,
+            this.chGia1,
+            this.chSoLuong,
+            this.chTien});
+            this.lvThongTinHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvThongTinHoaDon.FullRowSelect = true;
+            this.lvThongTinHoaDon.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lvThongTinHoaDon.HideSelection = false;
+            this.lvThongTinHoaDon.Location = new System.Drawing.Point(5, 44);
+            this.lvThongTinHoaDon.MultiSelect = false;
+            this.lvThongTinHoaDon.Name = "lvThongTinHoaDon";
+            this.lvThongTinHoaDon.Size = new System.Drawing.Size(808, 736);
+            this.lvThongTinHoaDon.TabIndex = 4;
+            this.lvThongTinHoaDon.UseCompatibleStateImageBehavior = false;
+            this.lvThongTinHoaDon.View = System.Windows.Forms.View.Details;
+            // 
+            // chTenSanPham
+            // 
+            this.chTenSanPham.Text = "Tên Sản Phẩm";
+            this.chTenSanPham.Width = 340;
+            // 
+            // chGia1
+            // 
+            this.chGia1.Text = "Giá";
+            this.chGia1.Width = 128;
+            // 
+            // chSoLuong
+            // 
+            this.chSoLuong.Text = "Số lượng";
+            this.chSoLuong.Width = 132;
+            // 
+            // chTien
+            // 
+            this.chTien.Text = "Tiền";
+            this.chTien.Width = 135;
+            // 
+            // labelHoaDon
+            // 
+            this.labelHoaDon.BackColor = System.Drawing.Color.White;
+            this.labelHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelHoaDon.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHoaDon.Location = new System.Drawing.Point(0, 0);
+            this.labelHoaDon.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelHoaDon.Name = "labelHoaDon";
+            this.labelHoaDon.Size = new System.Drawing.Size(816, 41);
+            this.labelHoaDon.TabIndex = 1;
+            this.labelHoaDon.Text = "HÓA ĐƠN";
+            this.labelHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblThongBao
+            // 
+            this.lblThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblThongBao.AutoSize = true;
+            this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
+            this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblThongBao.Location = new System.Drawing.Point(386, 801);
+            this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(322, 19);
+            this.lblThongBao.TabIndex = 10;
+            this.lblThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
+            // 
             // TiepNhanDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,6 +378,7 @@ namespace ChinChin.Forms_NhanVien
             this.pnlChonMon.ResumeLayout(false);
             this.flpnlLoai.ResumeLayout(false);
             this.panelHoaDon.ResumeLayout(false);
+            this.panelHoaDon.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -388,5 +405,6 @@ namespace ChinChin.Forms_NhanVien
         private System.Windows.Forms.ColumnHeader chSoLuong;
         private System.Windows.Forms.Button btnThanhTien;
         private System.Windows.Forms.ColumnHeader chTien;
+        private System.Windows.Forms.Label lblThongBao;
     }
 }

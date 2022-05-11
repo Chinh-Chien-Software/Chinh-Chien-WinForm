@@ -20,6 +20,7 @@ namespace ChinChin.Forms_NhanVien
             InitializeComponent();
             HienSanPham("Trasua");
             //HienMenu();
+            lblThongBao.Visible = false;
         }
         string chuoiketnoi = Properties.Settings.Default.ChinhChienConnectionString;
         string sqlcode;
@@ -110,8 +111,9 @@ namespace ChinChin.Forms_NhanVien
             hoaDonDAO.addHoaDon(MaHoaDon, "1111", DateTime.Now);
             foreach (ListViewItem item in lvThongTinHoaDon.Items)
             {
-                hoaDonDAO.addChiTietHoaDon(MaHoaDon, item.SubItems[4].Text, int.Parse(item.SubItems[2].Text), decimal.Parse(item.SubItems[3].Text));
+                hoaDonDAO.addChiTietHoaDon(item.SubItems[4].Text, MaHoaDon, int.Parse(item.SubItems[2].Text), decimal.Parse(item.SubItems[3].Text));
             }
+            lblThongBao.Text = "Thêm Hóa Đơn Thành Công";
         }
     }
 }
