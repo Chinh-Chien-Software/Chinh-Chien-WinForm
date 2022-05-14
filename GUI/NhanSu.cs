@@ -20,7 +20,7 @@ namespace ChinChin.GUI
 
         private void NhanSu_Load(object sender, EventArgs e)
         {
-            dgvNhanVien.DataSource = DataProvider.ReturnDataTable("SELECT * FROM NhanVien");
+            RefreshDGV();
         }
 
         public void ibtbRefresh_Click(object sender, EventArgs e)
@@ -31,6 +31,18 @@ namespace ChinChin.GUI
         public void RefreshDGV()
         {
             dgvNhanVien.DataSource = DataProvider.ReturnDataTable("SELECT * FROM NhanVien");
+            dgvNhanVien.Columns[0].HeaderText = "Mã Nhân Viên";
+            dgvNhanVien.Columns[0].DisplayIndex = 1;
+            dgvNhanVien.Columns[1].HeaderText = "Tên Nhân Viên";
+            dgvNhanVien.Columns[0].DisplayIndex = 0;
+            dgvNhanVien.Columns[2].HeaderText = "Lương trên giờ";
+            dgvNhanVien.Columns[3].HeaderText = "Ngày vào làm";
+            dgvNhanVien.Columns[4].HeaderText = "Giới tính";
+            dgvNhanVien.Columns[5].HeaderText = "Ngày sinh";
+            dgvNhanVien.Columns[6].HeaderText = "Số điện thoại";
+            dgvNhanVien.Columns[7].HeaderText = "Địa chỉ";
+            dgvNhanVien.Columns[8].HeaderText = "Loại nhân viên";
+            dgvNhanVien.Columns[9].Visible = false;
         }
 
         private void btnNew_Click(object sender, EventArgs e)
