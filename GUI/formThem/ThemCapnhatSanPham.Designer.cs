@@ -35,14 +35,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblNgaySinh = new System.Windows.Forms.Label();
             this.pnlThongTin = new System.Windows.Forms.Panel();
-            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
-            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
             this.tbcDanhGia = new ChinChin.Custom.TextBox_Custom();
             this.tbcGia = new ChinChin.Custom.TextBox_Custom();
             this.tbcTPhan = new ChinChin.Custom.TextBox_Custom();
             this.tbcCT = new ChinChin.Custom.TextBox_Custom();
             this.tbcMaSP = new ChinChin.Custom.TextBox_Custom();
             this.tbcTenSP = new ChinChin.Custom.TextBox_Custom();
+            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
+            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbbLoai = new System.Windows.Forms.ComboBox();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +55,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 441);
+            this.label4.Location = new System.Drawing.Point(14, 561);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(124, 33);
@@ -131,6 +133,8 @@
             // 
             // pnlThongTin
             // 
+            this.pnlThongTin.Controls.Add(this.cbbLoai);
+            this.pnlThongTin.Controls.Add(this.label5);
             this.pnlThongTin.Controls.Add(this.tbcDanhGia);
             this.pnlThongTin.Controls.Add(this.tbcGia);
             this.pnlThongTin.Controls.Add(this.tbcTPhan);
@@ -145,52 +149,13 @@
             this.pnlThongTin.Controls.Add(this.lblNgaySinh);
             this.pnlThongTin.Location = new System.Drawing.Point(12, 12);
             this.pnlThongTin.Name = "pnlThongTin";
-            this.pnlThongTin.Size = new System.Drawing.Size(646, 550);
+            this.pnlThongTin.Size = new System.Drawing.Size(646, 661);
             this.pnlThongTin.TabIndex = 26;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(610, 11);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(46, 48);
-            this.btnExit.TabIndex = 29;
-            this.btnExit.TabStop = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnLuu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnLuu.BorderColor = System.Drawing.Color.Black;
-            this.btnLuu.BorderRadius = 0;
-            this.btnLuu.BorderSize = 0;
-            this.btnLuu.FlatAppearance.BorderSize = 0;
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(398, 565);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(258, 50);
-            this.btnLuu.TabIndex = 27;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.TextColor = System.Drawing.Color.White;
-            this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // tbcDanhGia
             // 
             this.tbcDanhGia.ForeColor = System.Drawing.Color.White;
-            this.tbcDanhGia.Location = new System.Drawing.Point(20, 480);
+            this.tbcDanhGia.Location = new System.Drawing.Point(20, 600);
             this.tbcDanhGia.Margin = new System.Windows.Forms.Padding(6);
             this.tbcDanhGia.Name = "tbcDanhGia";
             this.tbcDanhGia.PasswordChar = '\0';
@@ -248,12 +213,81 @@
             this.tbcTenSP.Size = new System.Drawing.Size(362, 40);
             this.tbcTenSP.TabIndex = 11;
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 46;
+            this.btnExit.Location = new System.Drawing.Point(610, 11);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(46, 48);
+            this.btnExit.TabIndex = 29;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnLuu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnLuu.BorderColor = System.Drawing.Color.Black;
+            this.btnLuu.BorderRadius = 0;
+            this.btnLuu.BorderSize = 0;
+            this.btnLuu.FlatAppearance.BorderSize = 0;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Location = new System.Drawing.Point(400, 678);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(258, 50);
+            this.btnLuu.TabIndex = 27;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.TextColor = System.Drawing.Color.White;
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(14, 460);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 33);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Loại";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // cbbLoai
+            // 
+            this.cbbLoai.BackColor = System.Drawing.Color.White;
+            this.cbbLoai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbLoai.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbLoai.ForeColor = System.Drawing.Color.Black;
+            this.cbbLoai.FormattingEnabled = true;
+            this.cbbLoai.Items.AddRange(new object[] {
+            "Trà sữa",
+            "Cà phê"});
+            this.cbbLoai.Location = new System.Drawing.Point(20, 496);
+            this.cbbLoai.Name = "cbbLoai";
+            this.cbbLoai.Size = new System.Drawing.Size(362, 36);
+            this.cbbLoai.TabIndex = 23;
+            this.cbbLoai.Text = "Chọn loại";
+            // 
             // ThemCapnhatSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(667, 626);
+            this.ClientSize = new System.Drawing.Size(667, 739);
             this.ControlBox = false;
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLuu);
@@ -284,5 +318,7 @@
         private Custom.TextBox_Custom tbcTenSP;
         private FontAwesome.Sharp.IconPictureBox btnExit;
         private Extra.BlackWhiteButton btnLuu;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbbLoai;
     }
 }

@@ -14,6 +14,8 @@ namespace ChinChin.GUI.formThem
     public partial class ThemCapnhatSanPham : Form
     {
         int ChucNang;
+        string Loai;
+        
         public ThemCapnhatSanPham()
         {
             InitializeComponent();
@@ -42,28 +44,86 @@ namespace ChinChin.GUI.formThem
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            var f = (ChinChin.Forms_ChuQuan.Menu)this.Owner;
-            if (ChucNang == 0)
+            if (KiemTra())
             {
-                ThemDAL.SanPham
-                    (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text,
-                    float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text), "trasua", "quanchinhchien");
-                f.RefreshDGV();
-                this.Close();
-            }
-            else if (ChucNang == 1)
-            {
-                btnLuu.Text = "Cập nhật";
-                CapNhatDAL.SanPham
-                    (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text,
-                    float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text), "trasua", "quanchinhchien");
-                f.RefreshDGV();
+                var fMenu = (ChinChin.Forms_ChuQuan.QuanLyMenu)this.Owner;
+                if (ChucNang == 0)
+                {
+                    ChonLoai();
+                    ThemDAL.SanPham
+                        (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text,
+                        float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text), Loai, "quanchinhchien");
+                    fMenu.RefreshDGV();
+                    this.Close();
+                }
+                else if (ChucNang == 1)
+                {
+                    btnLuu.Text = "Cập nhật";
+                    CapNhatDAL.SanPham
+                        (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text,
+                        float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text), Loai, "quanchinhchien");
+                    fMenu.RefreshDGV();
+                    this.Close();
+                }
             }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        string ChonLoai()
+        {
+            if (cbbLoai.Text == "Trà sữa")
+            {
+                Loai = "trasua";
+            }
+            else if (cbbLoai.Text == "Cà phê")
+            {
+                Loai = "caphe";
+            }
+            else
+            {
+                Loai = "";
+            }
+            return Loai;
+        }
+
+        bool KiemTra() // Kiểm tra xem đã điền đủ thông tin chưa
+        {
+            bool KetQua = true;
+            if (tbcMaSP.Text == "")
+            {
+                MessageBox.Show("Mã sản phẩm không được để trống");
+                KetQua = false;
+            }
+            else if (tbcTenSP.Text == "")
+            {
+                MessageBox.Show("Tên sản phẩm không được để trống");
+                KetQua = false;
+            }
+            else if (tbcCT.Text == "")
+            {
+                MessageBox.Show("Công thức không được để trống");
+                KetQua = false;
+            }
+            else if (tbcTPhan.Text == "")
+            {
+                MessageBox.Show("Thành phần không được để trống");
+                KetQua = false;
+            }
+            else if (tbcGia.Text == "")
+            {
+                MessageBox.Show("Giá không được để trống");
+                KetQua = false;
+            }
+            else if (cbbLoai.Text == "")
+            {
+                MessageBox.Show("Loại không được để trống");
+                KetQua = false;
+            }
+            return KetQua;
         }
     }
 }
