@@ -148,11 +148,11 @@ namespace ChinChin.UI
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(1079, 9);
+            this.btnExit.IconSize = 49;
+            this.btnExit.Location = new System.Drawing.Point(1083, 2);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(46, 48);
+            this.btnExit.Size = new System.Drawing.Size(49, 49);
             this.btnExit.TabIndex = 8;
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
