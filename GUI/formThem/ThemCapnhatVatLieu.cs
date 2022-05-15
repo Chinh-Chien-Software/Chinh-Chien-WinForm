@@ -22,8 +22,6 @@ namespace ChinChin.GUI.formThem
             lblThongBao.Visible = false;
         }
 
-        
-
         public ThemCapnhatVatLieu(
             string MaVatLieu,
             string TenVatLieu,
@@ -36,6 +34,7 @@ namespace ChinChin.GUI.formThem
             )
         {
             InitializeComponent();
+            tbcMaVL.Enabled = false;
             btnLuuCapnhat.Text = "Cập nhật";
             tbcMaVL.Text = MaVatLieu;
             tbcTenVL.Text = TenVatLieu;
@@ -49,6 +48,7 @@ namespace ChinChin.GUI.formThem
         private void ThemVatLieu_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
+            lblThongBao.Visible = false;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -61,26 +61,7 @@ namespace ChinChin.GUI.formThem
             var fKhoHang = (ChinChin.Forms_QuanLy.KhoHang)this.Owner;
             if (ChucNang == 0)
             {
-                if (tbcMaVL.Text == ""
-                    || tbcTenVL.Text == ""
-                    || tbcNhaCC.Text == ""
-                    || tbcSL.Text == ""
-                    || tbcGia.Text == ""
-                    || tbcDVT.Text == "")
-                {
-                    lblThongBao.Visible = true;
-                    lblThongBao.Text = "Vui lòng nhập đầy đủ thông tin";
-                }
-                else if(
-                    tbcMaVL.Text.Length > 4
-                    || tbcTenVL.Text.Length > 30
-                    || tbcNhaCC.Text.Length > 30
-                    )
-                {
-                    lblThongBao.Visible = true;
-                    lblThongBao.Text = "Số lượng từ quá lớn";
-                }
-                else
+                if (KiemTra())
                 {
                     ThemDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
                     Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, "quanchinhchien");
@@ -90,13 +71,84 @@ namespace ChinChin.GUI.formThem
             }
             else if (ChucNang == 1)
             {
-                CapNhatDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
+                if (KiemTra())
+                {
+                    CapNhatDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
                     Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, "quanchinhchien");
-                fKhoHang.RefreshDGV();
-                this.Close();
+                    fKhoHang.RefreshDGV();
+                    this.Close();
+                }
             }
         }
 
+        bool KiemTra()
+        {
+            if (tbcMaVL.Text == "")
+            {
+                lblThongBao.Text = "Mã vật liệu không được để trống";
+                lblThongBao.Visible = true;
+                return false;
+            }
+            else if (tbcTenVL.Text == "")
+            {
+                lblThongBao.Text = "Tên vật liệu không được để trống";
+                lblThongBao.Visible = true;
+                return false;
+            }
+            else if(tbcNhaCC.Text == "")
+            {
+                lblThongBao.Text = "Nhà cung cấp không được để trống";
+                lblThongBao.Visible = true;
+                return false;
+            }
+            else if(tbcSL.Text == "")
+            {
+                lblThongBao.Text = "Số lượng không được để trống";
+                lblThongBao.Visible = true;
+                return false;
+            }
+            else if(tbcGia.Text == "")
+            {
+                lblThongBao.Text = "Giá không được để trống";
+                lblThongBao.Visible = true;
+                return false;
+            }
+            else if(tbcDVT.Text == "")
+            {
+                lblThongBao.Text = "Đơn vị tính không được để trống";
+                lblThongBao.Visible = true;
+                return false;
+            }
+            else if(cbbKho.Text == "")
+            {
+                lblThongBao.Text = "Kho không được để trống";
+                lblThongBao.Visible = true;
+                return false;
+            }
+            else if (tbcMaVL.Text.Length > 4)
+            {
+                lblThongBao.Visible = true;
+                lblThongBao.Text = "Mã vật liệu quá dài";
+                return false;
+            }
+            else if( tbcTenVL.Text.Length > 30)
+            {
+                lblThongBao.Visible = true;
+                lblThongBao.Text = "Tên vật liệu quá dài";
+                return false;
+            }
+            else if (tbcNhaCC.Text.Length > 30)
+            {
+                lblThongBao.Visible = true;
+                lblThongBao.Text = "Tên nhà cung cấp quá dài";
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        
         private void btnHuy_Click(object sender, EventArgs e)
         {
 
