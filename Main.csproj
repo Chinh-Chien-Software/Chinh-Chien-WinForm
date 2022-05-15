@@ -112,11 +112,11 @@
     <Compile Include="GUI\Main\TaoQuan.Designer.cs">
       <DependentUpon>TaoQuan.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\NhapSoLuong.cs">
+    <Compile Include="GUI\NhapCapnhatSoLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\NhapSoLuong.Designer.cs">
-      <DependentUpon>NhapSoLuong.cs</DependentUpon>
+    <Compile Include="GUI\NhapCapnhatSoLuong.Designer.cs">
+      <DependentUpon>NhapCapnhatSoLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="VO\HoaDonVO.cs" />
     <Compile Include="VO\NhanVien.cs" />
@@ -357,8 +357,8 @@
     <EmbeddedResource Include="GUI\fsNhanVien\NhanVienThuNgan.resx">
       <DependentUpon>NhanVienThuNgan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\NhapSoLuong.resx">
-      <DependentUpon>NhapSoLuong.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\NhapCapnhatSoLuong.resx">
+      <DependentUpon>NhapCapnhatSoLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\TiepNhanDonHang.resx">
       <DependentUpon>TiepNhanDonHang.cs</DependentUpon>

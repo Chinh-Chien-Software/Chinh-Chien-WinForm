@@ -43,6 +43,7 @@ namespace ChinChin.Forms_NhanVien
             this.blackWhiteButton5 = new ChinChin.Extra.BlackWhiteButton();
             this.labelMenuList = new System.Windows.Forms.Label();
             this.panelHoaDon = new System.Windows.Forms.Panel();
+            this.lblThongBao = new System.Windows.Forms.Label();
             this.btnThanhTien = new System.Windows.Forms.Button();
             this.lvThongTinHoaDon = new System.Windows.Forms.ListView();
             this.chTenSanPham = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,7 +51,6 @@ namespace ChinChin.Forms_NhanVien
             this.chSoLuong = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chTien = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.labelHoaDon = new System.Windows.Forms.Label();
-            this.lblThongBao = new System.Windows.Forms.Label();
             this.pnlMenu.SuspendLayout();
             this.pnlChonMon.SuspendLayout();
             this.flpnlLoai.SuspendLayout();
@@ -279,6 +279,20 @@ namespace ChinChin.Forms_NhanVien
             this.panelHoaDon.Size = new System.Drawing.Size(816, 839);
             this.panelHoaDon.TabIndex = 1;
             // 
+            // lblThongBao
+            // 
+            this.lblThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblThongBao.AutoSize = true;
+            this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
+            this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblThongBao.Location = new System.Drawing.Point(386, 801);
+            this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(322, 19);
+            this.lblThongBao.TabIndex = 10;
+            this.lblThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
+            // 
             // btnThanhTien
             // 
             this.btnThanhTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -316,6 +330,7 @@ namespace ChinChin.Forms_NhanVien
             this.lvThongTinHoaDon.TabIndex = 4;
             this.lvThongTinHoaDon.UseCompatibleStateImageBehavior = false;
             this.lvThongTinHoaDon.View = System.Windows.Forms.View.Details;
+            this.lvThongTinHoaDon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lvThongTinHoaDon_MouseDoubleClick);
             // 
             // chTenSanPham
             // 
@@ -349,20 +364,6 @@ namespace ChinChin.Forms_NhanVien
             this.labelHoaDon.TabIndex = 1;
             this.labelHoaDon.Text = "HÓA ĐƠN";
             this.labelHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblThongBao
-            // 
-            this.lblThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblThongBao.AutoSize = true;
-            this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
-            this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblThongBao.Location = new System.Drawing.Point(386, 801);
-            this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(322, 19);
-            this.lblThongBao.TabIndex = 10;
-            this.lblThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
             // 
             // TiepNhanDonHang
             // 

@@ -87,14 +87,20 @@ namespace ChinChin.Forms_NhanVien
         {
             lvThongTinHoaDon.Items.Add(lvSanPhamTheoLoai.SelectedItems[0].Text.ToString());
             lvThongTinHoaDon.Items[0].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString());
-            NhapSoLuong nhapSL = new NhapSoLuong();
+            NhapCapnhatSoLuong nhapSL = new NhapCapnhatSoLuong();
             nhapSL.ShowDialog();
             int DonGia = int.Parse(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString()) * int.Parse(nhapSL.SoLuong);
             lvThongTinHoaDon.Items[0].SubItems.Add(nhapSL.SoLuong);
             lvThongTinHoaDon.Items[0].SubItems.Add(DonGia.ToString());
             lvThongTinHoaDon.Items[0].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[2].Text.ToString());
+            lblThongBao.Text = "Thêm một món thành công";
         }
 
+        void KiemTraSanPhamTonTai()
+        {
+            // Nếu có thì cộng số lượng thêm một
+        }
+        
         private void btnTypeCaPhe_Click(object sender, EventArgs e)
         {
 
@@ -114,6 +120,11 @@ namespace ChinChin.Forms_NhanVien
                 hoaDonDAO.addChiTietHoaDon(item.SubItems[4].Text, MaHoaDon, int.Parse(item.SubItems[2].Text), decimal.Parse(item.SubItems[3].Text));
             }
             lblThongBao.Text = "Thêm Hóa Đơn Thành Công";
+        }
+
+        private void lvThongTinHoaDon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
