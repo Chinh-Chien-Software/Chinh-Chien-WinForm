@@ -11,11 +11,11 @@ using ChinChin.DAL_DAO;
 
 namespace ChinChin.Forms_ChuQuan
 {
-    public partial class Menu : Form
+    public partial class QuanLyMenu : Form
     {
         string sql = "SELECT * FROM SanPham";
 
-        public Menu()
+        public QuanLyMenu()
         {
             InitializeComponent();
         }

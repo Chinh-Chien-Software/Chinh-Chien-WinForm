@@ -1,7 +1,7 @@
 ﻿
 namespace ChinChin.Forms_ChuQuan
 {
-    partial class Menu
+    partial class QuanLyMenu
     {
         /// <summary>
         /// Required designer variable.
