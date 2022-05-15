@@ -35,6 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblNgaySinh = new System.Windows.Forms.Label();
             this.pnlThongTin = new System.Windows.Forms.Panel();
+            this.cbbLoai = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.tbcDanhGia = new ChinChin.Custom.TextBox_Custom();
             this.tbcGia = new ChinChin.Custom.TextBox_Custom();
             this.tbcTPhan = new ChinChin.Custom.TextBox_Custom();
@@ -43,8 +45,7 @@
             this.tbcTenSP = new ChinChin.Custom.TextBox_Custom();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbbLoai = new System.Windows.Forms.ComboBox();
+            this.lblThongBao = new System.Windows.Forms.Label();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
@@ -152,6 +153,36 @@
             this.pnlThongTin.Size = new System.Drawing.Size(646, 661);
             this.pnlThongTin.TabIndex = 26;
             // 
+            // cbbLoai
+            // 
+            this.cbbLoai.BackColor = System.Drawing.Color.White;
+            this.cbbLoai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbLoai.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbLoai.ForeColor = System.Drawing.Color.Black;
+            this.cbbLoai.FormattingEnabled = true;
+            this.cbbLoai.Items.AddRange(new object[] {
+            "Trà sữa",
+            "Cà phê"});
+            this.cbbLoai.Location = new System.Drawing.Point(20, 496);
+            this.cbbLoai.Name = "cbbLoai";
+            this.cbbLoai.Size = new System.Drawing.Size(362, 36);
+            this.cbbLoai.TabIndex = 23;
+            this.cbbLoai.Text = "Chọn loại";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(14, 460);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 33);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Loại";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // tbcDanhGia
             // 
             this.tbcDanhGia.ForeColor = System.Drawing.Color.White;
@@ -252,35 +283,19 @@
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // label5
+            // lblThongBao
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(14, 460);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 33);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Loại";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // cbbLoai
-            // 
-            this.cbbLoai.BackColor = System.Drawing.Color.White;
-            this.cbbLoai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbLoai.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbLoai.ForeColor = System.Drawing.Color.Black;
-            this.cbbLoai.FormattingEnabled = true;
-            this.cbbLoai.Items.AddRange(new object[] {
-            "Trà sữa",
-            "Cà phê"});
-            this.cbbLoai.Location = new System.Drawing.Point(20, 496);
-            this.cbbLoai.Name = "cbbLoai";
-            this.cbbLoai.Size = new System.Drawing.Size(362, 36);
-            this.cbbLoai.TabIndex = 23;
-            this.cbbLoai.Text = "Chọn loại";
+            this.lblThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
+            this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblThongBao.Location = new System.Drawing.Point(74, 697);
+            this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(322, 19);
+            this.lblThongBao.TabIndex = 30;
+            this.lblThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
+            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ThemCapnhatSanPham
             // 
@@ -289,6 +304,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(667, 739);
             this.ControlBox = false;
+            this.Controls.Add(this.lblThongBao);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.pnlThongTin);
@@ -320,5 +336,6 @@
         private Extra.BlackWhiteButton btnLuu;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cbbLoai;
+        private System.Windows.Forms.Label lblThongBao;
     }
 }

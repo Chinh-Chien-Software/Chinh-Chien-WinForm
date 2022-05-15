@@ -32,6 +32,7 @@ namespace ChinChin.GUI.formThem
             )
         {
             InitializeComponent();
+            lblThongBao.Visible = false;
             btnLuu.Text = "Cập nhật";
             tbcMaSP.Text = MaSanPham;
             tbcTenSP.Text = TenSanPham;
@@ -95,31 +96,37 @@ namespace ChinChin.GUI.formThem
             bool KetQua = true;
             if (tbcMaSP.Text == "")
             {
+                lblThongBao.Visible = true;
                 MessageBox.Show("Mã sản phẩm không được để trống");
                 KetQua = false;
             }
             else if (tbcTenSP.Text == "")
             {
+                lblThongBao.Visible = true;
                 MessageBox.Show("Tên sản phẩm không được để trống");
                 KetQua = false;
             }
             else if (tbcCT.Text == "")
             {
+                lblThongBao.Visible = true;
                 MessageBox.Show("Công thức không được để trống");
                 KetQua = false;
             }
             else if (tbcTPhan.Text == "")
             {
+                lblThongBao.Visible = true;
                 MessageBox.Show("Thành phần không được để trống");
                 KetQua = false;
             }
             else if (tbcGia.Text == "")
             {
+                lblThongBao.Visible = true;
                 MessageBox.Show("Giá không được để trống");
                 KetQua = false;
             }
             else if (cbbLoai.Text == "")
             {
+                lblThongBao.Visible = true;
                 MessageBox.Show("Loại không được để trống");
                 KetQua = false;
             }
