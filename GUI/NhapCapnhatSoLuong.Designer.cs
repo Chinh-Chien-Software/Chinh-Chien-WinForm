@@ -1,6 +1,6 @@
 ﻿namespace ChinChin.GUI
 {
-    partial class NhapSoLuong
+    partial class NhapCapnhatSoLuong
     {
         /// <summary>
         /// Required designer variable.

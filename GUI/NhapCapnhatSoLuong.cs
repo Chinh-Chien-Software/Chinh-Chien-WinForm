@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ChinChin.GUI
 {
-    public partial class NhapSoLuong : Form
+    public partial class NhapCapnhatSoLuong : Form
     {
-        public NhapSoLuong()
+        public NhapCapnhatSoLuong()
         {
             InitializeComponent();
             this.ActiveControl = tbcSL;
