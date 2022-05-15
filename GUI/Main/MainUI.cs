@@ -155,8 +155,10 @@ namespace ChinChin.UI
         private void ibtnNhanSu_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color4, iconCurrentChildForm);
+            ChinChin.GUI.NhanSu nhanSu = new ChinChin.GUI.NhanSu();
+            nhanSu.Owner = this;
             MenuAnimation.OpenChildForm
-                (new ChinChin.GUI.NhanSu(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
+                (nhanSu, ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 
         private void ibtnNhanDon_Click(object sender, EventArgs e)
