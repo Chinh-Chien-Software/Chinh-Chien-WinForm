@@ -35,6 +35,8 @@
             this.pnlThongTin = new System.Windows.Forms.Panel();
             this.cbbChucVu = new System.Windows.Forms.ComboBox();
             this.lblChucVu = new System.Windows.Forms.Label();
+            this.tbcSDT = new ChinChin.Custom.TextBox_Custom();
+            this.tbcDC = new ChinChin.Custom.TextBox_Custom();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cbbGioiTinh = new System.Windows.Forms.ComboBox();
@@ -42,13 +44,12 @@
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.dtpNgayVL = new System.Windows.Forms.DateTimePicker();
-            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
-            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
-            this.tbcSDT = new ChinChin.Custom.TextBox_Custom();
-            this.tbcDC = new ChinChin.Custom.TextBox_Custom();
             this.tbcLuong = new ChinChin.Custom.TextBox_Custom();
             this.tbcMaNV = new ChinChin.Custom.TextBox_Custom();
             this.tbcTenNV = new ChinChin.Custom.TextBox_Custom();
+            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
+            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
+            this.lblThongBao = new System.Windows.Forms.Label();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
@@ -157,6 +158,26 @@
             this.lblChucVu.Text = "Chức vụ";
             this.lblChucVu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // tbcSDT
+            // 
+            this.tbcSDT.ForeColor = System.Drawing.Color.White;
+            this.tbcSDT.Location = new System.Drawing.Point(449, 398);
+            this.tbcSDT.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.tbcSDT.Name = "tbcSDT";
+            this.tbcSDT.PasswordChar = '\0';
+            this.tbcSDT.Size = new System.Drawing.Size(362, 39);
+            this.tbcSDT.TabIndex = 30;
+            // 
+            // tbcDC
+            // 
+            this.tbcDC.ForeColor = System.Drawing.Color.White;
+            this.tbcDC.Location = new System.Drawing.Point(449, 305);
+            this.tbcDC.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.tbcDC.Name = "tbcDC";
+            this.tbcDC.PasswordChar = '\0';
+            this.tbcDC.Size = new System.Drawing.Size(362, 39);
+            this.tbcDC.TabIndex = 29;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -238,6 +259,37 @@
             this.dtpNgayVL.Size = new System.Drawing.Size(200, 20);
             this.dtpNgayVL.TabIndex = 22;
             // 
+            // tbcLuong
+            // 
+            this.tbcLuong.ForeColor = System.Drawing.Color.White;
+            this.tbcLuong.Location = new System.Drawing.Point(20, 227);
+            this.tbcLuong.Margin = new System.Windows.Forms.Padding(6);
+            this.tbcLuong.Name = "tbcLuong";
+            this.tbcLuong.PasswordChar = '\0';
+            this.tbcLuong.Size = new System.Drawing.Size(362, 40);
+            this.tbcLuong.TabIndex = 18;
+            // 
+            // tbcMaNV
+            // 
+            this.tbcMaNV.BackColor = System.Drawing.Color.White;
+            this.tbcMaNV.ForeColor = System.Drawing.Color.White;
+            this.tbcMaNV.Location = new System.Drawing.Point(20, 54);
+            this.tbcMaNV.Margin = new System.Windows.Forms.Padding(4);
+            this.tbcMaNV.Name = "tbcMaNV";
+            this.tbcMaNV.PasswordChar = '\0';
+            this.tbcMaNV.Size = new System.Drawing.Size(362, 40);
+            this.tbcMaNV.TabIndex = 9;
+            // 
+            // tbcTenNV
+            // 
+            this.tbcTenNV.ForeColor = System.Drawing.Color.White;
+            this.tbcTenNV.Location = new System.Drawing.Point(20, 136);
+            this.tbcTenNV.Margin = new System.Windows.Forms.Padding(6);
+            this.tbcTenNV.Name = "tbcTenNV";
+            this.tbcTenNV.PasswordChar = '\0';
+            this.tbcTenNV.Size = new System.Drawing.Size(362, 40);
+            this.tbcTenNV.TabIndex = 11;
+            // 
             // btnExit
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -277,56 +329,19 @@
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // tbcSDT
+            // lblThongBao
             // 
-            this.tbcSDT.ForeColor = System.Drawing.Color.White;
-            this.tbcSDT.Location = new System.Drawing.Point(449, 398);
-            this.tbcSDT.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.tbcSDT.Name = "tbcSDT";
-            this.tbcSDT.PasswordChar = '\0';
-            this.tbcSDT.Size = new System.Drawing.Size(362, 39);
-            this.tbcSDT.TabIndex = 30;
-            // 
-            // tbcDC
-            // 
-            this.tbcDC.ForeColor = System.Drawing.Color.White;
-            this.tbcDC.Location = new System.Drawing.Point(449, 305);
-            this.tbcDC.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.tbcDC.Name = "tbcDC";
-            this.tbcDC.PasswordChar = '\0';
-            this.tbcDC.Size = new System.Drawing.Size(362, 39);
-            this.tbcDC.TabIndex = 29;
-            // 
-            // tbcLuong
-            // 
-            this.tbcLuong.ForeColor = System.Drawing.Color.White;
-            this.tbcLuong.Location = new System.Drawing.Point(20, 227);
-            this.tbcLuong.Margin = new System.Windows.Forms.Padding(6);
-            this.tbcLuong.Name = "tbcLuong";
-            this.tbcLuong.PasswordChar = '\0';
-            this.tbcLuong.Size = new System.Drawing.Size(362, 40);
-            this.tbcLuong.TabIndex = 18;
-            // 
-            // tbcMaNV
-            // 
-            this.tbcMaNV.BackColor = System.Drawing.Color.White;
-            this.tbcMaNV.ForeColor = System.Drawing.Color.White;
-            this.tbcMaNV.Location = new System.Drawing.Point(20, 54);
-            this.tbcMaNV.Margin = new System.Windows.Forms.Padding(4);
-            this.tbcMaNV.Name = "tbcMaNV";
-            this.tbcMaNV.PasswordChar = '\0';
-            this.tbcMaNV.Size = new System.Drawing.Size(362, 40);
-            this.tbcMaNV.TabIndex = 9;
-            // 
-            // tbcTenNV
-            // 
-            this.tbcTenNV.ForeColor = System.Drawing.Color.White;
-            this.tbcTenNV.Location = new System.Drawing.Point(20, 136);
-            this.tbcTenNV.Margin = new System.Windows.Forms.Padding(6);
-            this.tbcTenNV.Name = "tbcTenNV";
-            this.tbcTenNV.PasswordChar = '\0';
-            this.tbcTenNV.Size = new System.Drawing.Size(362, 40);
-            this.tbcTenNV.TabIndex = 11;
+            this.lblThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
+            this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblThongBao.Location = new System.Drawing.Point(261, 520);
+            this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(322, 19);
+            this.lblThongBao.TabIndex = 33;
+            this.lblThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
+            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ThemCapnhatNhanVien
             // 
@@ -334,12 +349,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(856, 562);
+            this.Controls.Add(this.lblThongBao);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.pnlThongTin);
             this.Name = "ThemCapnhatNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemCapnhatNhanVien";
+            this.Load += new System.EventHandler(this.ThemCapnhatNhanVien_Load);
             this.pnlThongTin.ResumeLayout(false);
             this.pnlThongTin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
@@ -369,5 +386,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbbChucVu;
         private System.Windows.Forms.Label lblChucVu;
+        private System.Windows.Forms.Label lblThongBao;
     }
 }

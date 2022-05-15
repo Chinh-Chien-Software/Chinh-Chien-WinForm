@@ -60,23 +60,81 @@ namespace ChinChin.GUI.formThem
         {
             if (ChucNang == 0)
             {
-                ThemDAL.NhanVien
-                    (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value,
-                    cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text, "quanchinhchien");
-                var f = (NhanSu)this.Owner;
-                f.RefreshDGV();
-                this.Close();
+                if (KiemTra())
+                {
+                    ThemDAL.NhanVien
+                     (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value,
+                     cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text, "quanchinhchien");
+                    var f = (NhanSu)this.Owner;
+                    f.RefreshDGV();
+                    this.Close();
+                }
             }
             else if (ChucNang == 1)
             {
-                btnLuu.Text = "Cập nhật";
-                CapNhatDAL.NhanVien
-                    (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value,
-                    cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text, "quanchinhchien");
-                var f1 = (NhanSu)this.Owner;
-                f1.RefreshDGV();
-                this.Close();
+                if (KiemTra())
+                {
+                    btnLuu.Text = "Cập nhật";
+                    CapNhatDAL.NhanVien
+                        (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value,
+                        cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text, "quanchinhchien");
+                    var f1 = (NhanSu)this.Owner;
+                    f1.RefreshDGV();
+                    this.Close();
+                }
             }
+        }
+
+        bool KiemTra()
+        {
+            if (tbcMaNV.Text == "")
+            {
+                lblThongBao.Visible = true;
+                lblThongBao.Text = "Mã nhân viên không được để trống";
+                return false;
+            }
+            if (tbcTenNV.Text == "")
+            {
+                lblThongBao.Visible = true;
+                lblThongBao.Text = "Tên nhân viên không được để trống";
+                return false;
+            }
+            if (tbcLuong.Text == "")
+            {
+                lblThongBao.Visible = true;
+                lblThongBao.Text = "Lương không được để trống";
+                return false;
+            }
+            if (cbbGioiTinh.Text == "")
+            {
+                lblThongBao.Visible = true;
+                lblThongBao.Text = "Giới tính không được để trống";
+                return false;
+            }
+            if (tbcSDT.Text == "")
+            {
+                lblThongBao.Visible = true;
+                lblThongBao.Text = "Số điện thoại không được để trống";
+                return false;
+            }
+            if (tbcDC.Text == "")
+            {
+                lblThongBao.Visible = true;
+                lblThongBao.Text = "Địa chỉ không được để trống";
+                return false;
+            }
+            if (cbbChucVu.Text == "")
+            {
+                lblThongBao.Visible = true;
+                lblThongBao.Text = "Chức vụ không được để trống";
+                return false;
+            }
+            return true;
+        }
+
+        private void ThemCapnhatNhanVien_Load(object sender, EventArgs e)
+        {
+            lblThongBao.Visible = false;
         }
     }
 }
