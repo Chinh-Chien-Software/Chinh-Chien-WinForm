@@ -21,7 +21,7 @@ namespace ChinChin.Forms_QuanLy
         {
             InitializeComponent();
         }
-
+        
         private void KhoHang_Load(object sender, EventArgs e)
         {
             dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVL);
@@ -31,9 +31,9 @@ namespace ChinChin.Forms_QuanLy
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            ChinChin.GUI.formThem.ThemCapnhatVatLieu ThemVatLieu = new ChinChin.GUI.formThem.ThemCapnhatVatLieu();
-            ThemVatLieu.Owner = this;
-            ThemVatLieu.Show();
+            ChinChin.GUI.formThem.ThemCapnhatVatLieu themCapnhatVatLieu = new ChinChin.GUI.formThem.ThemCapnhatVatLieu();
+            themCapnhatVatLieu.Owner = this;
+            themCapnhatVatLieu.Show();
         }
 
         public void RefreshDGV()
@@ -51,11 +51,12 @@ namespace ChinChin.Forms_QuanLy
             int SoLuong = int.Parse(dgvVatLieu.SelectedRows[0].Cells[3].Value.ToString());
             float Gia = float.Parse(dgvVatLieu.SelectedRows[0].Cells[4].Value.ToString());
             string DonViTinh = dgvVatLieu.SelectedRows[0].Cells[5].Value.ToString();
-            //MessageBox.Show(dgvVatLieu.SelectedRows[0].Cells[0].Value.ToString());
+            string MaQuan = "";
+            string MaKho = "";
 
             ChinChin.GUI.formThem.ThemCapnhatVatLieu ThemVatLieu
                 = new ChinChin.GUI.formThem.ThemCapnhatVatLieu(
-                    MaVatLieu, TenVatLieu, NhaCungCap, SoLuong, Gia, DonViTinh);
+                    MaVatLieu, TenVatLieu, NhaCungCap, SoLuong, Gia, DonViTinh, MaQuan, MaKho);
             ThemVatLieu.Owner = this;
             ThemVatLieu.Show();
         }

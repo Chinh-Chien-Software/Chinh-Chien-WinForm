@@ -29,17 +29,17 @@ namespace ChinChin.Forms_QuanLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvVatLieu = new System.Windows.Forms.DataGridView();
             this.btnEdit = new FontAwesome.Sharp.IconButton();
             this.pnlTopBar = new System.Windows.Forms.Panel();
+            this.ipbThemKho = new FontAwesome.Sharp.IconPictureBox();
             this.cbbKhoHang = new System.Windows.Forms.ComboBox();
             this.btnDelete = new FontAwesome.Sharp.IconButton();
             this.btnNew = new FontAwesome.Sharp.IconButton();
-            this.ipbThemQuan = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).BeginInit();
             this.pnlTopBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ipbThemQuan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ipbThemKho)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvVatLieu
@@ -59,9 +59,9 @@ namespace ChinChin.Forms_QuanLy
             this.dgvVatLieu.Name = "dgvVatLieu";
             this.dgvVatLieu.ReadOnly = true;
             this.dgvVatLieu.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.dgvVatLieu.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvVatLieu.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvVatLieu.RowTemplate.Height = 24;
             this.dgvVatLieu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvVatLieu.Size = new System.Drawing.Size(800, 318);
@@ -92,7 +92,7 @@ namespace ChinChin.Forms_QuanLy
             // pnlTopBar
             // 
             this.pnlTopBar.BackColor = System.Drawing.Color.White;
-            this.pnlTopBar.Controls.Add(this.ipbThemQuan);
+            this.pnlTopBar.Controls.Add(this.ipbThemKho);
             this.pnlTopBar.Controls.Add(this.cbbKhoHang);
             this.pnlTopBar.Controls.Add(this.btnDelete);
             this.pnlTopBar.Controls.Add(this.btnNew);
@@ -104,6 +104,23 @@ namespace ChinChin.Forms_QuanLy
             this.pnlTopBar.Name = "pnlTopBar";
             this.pnlTopBar.Size = new System.Drawing.Size(800, 48);
             this.pnlTopBar.TabIndex = 2;
+            // 
+            // ipbThemKho
+            // 
+            this.ipbThemKho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ipbThemKho.BackColor = System.Drawing.Color.White;
+            this.ipbThemKho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ipbThemKho.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.ipbThemKho.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ipbThemKho.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ipbThemKho.IconSize = 39;
+            this.ipbThemKho.Location = new System.Drawing.Point(265, 7);
+            this.ipbThemKho.Margin = new System.Windows.Forms.Padding(2);
+            this.ipbThemKho.Name = "ipbThemKho";
+            this.ipbThemKho.Size = new System.Drawing.Size(39, 39);
+            this.ipbThemKho.TabIndex = 6;
+            this.ipbThemKho.TabStop = false;
+            this.ipbThemKho.Click += new System.EventHandler(this.ipbThemQuan_Click);
             // 
             // cbbKhoHang
             // 
@@ -160,23 +177,6 @@ namespace ChinChin.Forms_QuanLy
             this.btnNew.UseVisualStyleBackColor = false;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
-            // ipbThemQuan
-            // 
-            this.ipbThemQuan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ipbThemQuan.BackColor = System.Drawing.Color.White;
-            this.ipbThemQuan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ipbThemQuan.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.ipbThemQuan.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ipbThemQuan.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ipbThemQuan.IconSize = 39;
-            this.ipbThemQuan.Location = new System.Drawing.Point(265, 7);
-            this.ipbThemQuan.Margin = new System.Windows.Forms.Padding(2);
-            this.ipbThemQuan.Name = "ipbThemQuan";
-            this.ipbThemQuan.Size = new System.Drawing.Size(39, 39);
-            this.ipbThemQuan.TabIndex = 6;
-            this.ipbThemQuan.TabStop = false;
-            this.ipbThemQuan.Click += new System.EventHandler(this.ipbThemQuan_Click);
-            // 
             // KhoHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,7 +190,7 @@ namespace ChinChin.Forms_QuanLy
             this.Load += new System.EventHandler(this.KhoHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).EndInit();
             this.pnlTopBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ipbThemQuan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ipbThemKho)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -203,6 +203,6 @@ namespace ChinChin.Forms_QuanLy
         private FontAwesome.Sharp.IconButton btnNew;
         private FontAwesome.Sharp.IconButton btnDelete;
         private System.Windows.Forms.ComboBox cbbKhoHang;
-        private FontAwesome.Sharp.IconPictureBox ipbThemQuan;
+        private FontAwesome.Sharp.IconPictureBox ipbThemKho;
     }
 }
