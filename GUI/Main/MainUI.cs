@@ -149,7 +149,7 @@ namespace ChinChin.UI
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color3, iconCurrentChildForm);
             MenuAnimation.OpenChildForm
-                (new ChinChin.Forms_ChuQuan.Menu(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
+                (new ChinChin.Forms_ChuQuan.QuanLyMenu(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 
         private void ibtnNhanSu_Click(object sender, EventArgs e)

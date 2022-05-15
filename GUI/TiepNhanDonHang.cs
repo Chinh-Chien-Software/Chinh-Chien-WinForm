@@ -103,7 +103,7 @@ namespace ChinChin.Forms_NhanVien
         
         private void btnTypeCaPhe_Click(object sender, EventArgs e)
         {
-
+            HienSanPham("Caphe");
         }
 
         private void lvSanPhamTheoLoai_SelectedIndexChanged(object sender, EventArgs e)
