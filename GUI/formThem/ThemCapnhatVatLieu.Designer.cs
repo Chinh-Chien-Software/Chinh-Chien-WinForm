@@ -35,15 +35,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblNgaySinh = new System.Windows.Forms.Label();
             this.pnlThongTin = new System.Windows.Forms.Panel();
-            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
-            this.lblThongBao = new System.Windows.Forms.Label();
-            this.btnLuuCapnhat = new ChinChin.Extra.BlackWhiteButton();
             this.tbcDVT = new ChinChin.Custom.TextBox_Custom();
             this.tbcGia = new ChinChin.Custom.TextBox_Custom();
             this.tbcSL = new ChinChin.Custom.TextBox_Custom();
             this.tbcNhaCC = new ChinChin.Custom.TextBox_Custom();
             this.tbcMaVL = new ChinChin.Custom.TextBox_Custom();
             this.tbcTenVL = new ChinChin.Custom.TextBox_Custom();
+            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
+            this.lblThongBao = new System.Windows.Forms.Label();
+            this.btnLuuCapnhat = new ChinChin.Extra.BlackWhiteButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
@@ -128,6 +130,8 @@
             // 
             // pnlThongTin
             // 
+            this.pnlThongTin.Controls.Add(this.comboBox1);
+            this.pnlThongTin.Controls.Add(this.label5);
             this.pnlThongTin.Controls.Add(this.tbcDVT);
             this.pnlThongTin.Controls.Add(this.tbcGia);
             this.pnlThongTin.Controls.Add(this.tbcSL);
@@ -142,61 +146,8 @@
             this.pnlThongTin.Controls.Add(this.lblNgaySinh);
             this.pnlThongTin.Location = new System.Drawing.Point(12, 11);
             this.pnlThongTin.Name = "pnlThongTin";
-            this.pnlThongTin.Size = new System.Drawing.Size(414, 550);
+            this.pnlThongTin.Size = new System.Drawing.Size(414, 629);
             this.pnlThongTin.TabIndex = 22;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(637, 11);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(46, 48);
-            this.btnExit.TabIndex = 25;
-            this.btnExit.TabStop = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // lblThongBao
-            // 
-            this.lblThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
-            this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblThongBao.Location = new System.Drawing.Point(96, 590);
-            this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(322, 19);
-            this.lblThongBao.TabIndex = 26;
-            this.lblThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
-            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // btnLuuCapnhat
-            // 
-            this.btnLuuCapnhat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLuuCapnhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnLuuCapnhat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnLuuCapnhat.BorderColor = System.Drawing.Color.Black;
-            this.btnLuuCapnhat.BorderRadius = 0;
-            this.btnLuuCapnhat.BorderSize = 0;
-            this.btnLuuCapnhat.FlatAppearance.BorderSize = 0;
-            this.btnLuuCapnhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuuCapnhat.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuuCapnhat.ForeColor = System.Drawing.Color.White;
-            this.btnLuuCapnhat.Location = new System.Drawing.Point(425, 571);
-            this.btnLuuCapnhat.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLuuCapnhat.Name = "btnLuuCapnhat";
-            this.btnLuuCapnhat.Size = new System.Drawing.Size(258, 50);
-            this.btnLuuCapnhat.TabIndex = 23;
-            this.btnLuuCapnhat.Text = "Lưu Cập nhật";
-            this.btnLuuCapnhat.TextColor = System.Drawing.Color.White;
-            this.btnLuuCapnhat.UseVisualStyleBackColor = false;
-            this.btnLuuCapnhat.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // tbcDVT
             // 
@@ -259,12 +210,87 @@
             this.tbcTenVL.Size = new System.Drawing.Size(362, 40);
             this.tbcTenVL.TabIndex = 11;
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 46;
+            this.btnExit.Location = new System.Drawing.Point(637, 11);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(46, 48);
+            this.btnExit.TabIndex = 25;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // lblThongBao
+            // 
+            this.lblThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
+            this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblThongBao.Location = new System.Drawing.Point(96, 658);
+            this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(322, 19);
+            this.lblThongBao.TabIndex = 26;
+            this.lblThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
+            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btnLuuCapnhat
+            // 
+            this.btnLuuCapnhat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLuuCapnhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnLuuCapnhat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnLuuCapnhat.BorderColor = System.Drawing.Color.Black;
+            this.btnLuuCapnhat.BorderRadius = 0;
+            this.btnLuuCapnhat.BorderSize = 0;
+            this.btnLuuCapnhat.FlatAppearance.BorderSize = 0;
+            this.btnLuuCapnhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuuCapnhat.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuuCapnhat.ForeColor = System.Drawing.Color.White;
+            this.btnLuuCapnhat.Location = new System.Drawing.Point(425, 639);
+            this.btnLuuCapnhat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLuuCapnhat.Name = "btnLuuCapnhat";
+            this.btnLuuCapnhat.Size = new System.Drawing.Size(258, 50);
+            this.btnLuuCapnhat.TabIndex = 23;
+            this.btnLuuCapnhat.Text = "Lưu Cập nhật";
+            this.btnLuuCapnhat.TextColor = System.Drawing.Color.White;
+            this.btnLuuCapnhat.UseVisualStyleBackColor = false;
+            this.btnLuuCapnhat.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(14, 542);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 33);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Kho";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(20, 579);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(362, 28);
+            this.comboBox1.TabIndex = 23;
+            // 
             // ThemCapnhatVatLieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(694, 632);
+            this.ClientSize = new System.Drawing.Size(694, 700);
             this.Controls.Add(this.lblThongBao);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLuuCapnhat);
@@ -297,5 +323,7 @@
         private Custom.TextBox_Custom tbcGia;
         private Custom.TextBox_Custom tbcDVT;
         private System.Windows.Forms.Label lblThongBao;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label5;
     }
 }

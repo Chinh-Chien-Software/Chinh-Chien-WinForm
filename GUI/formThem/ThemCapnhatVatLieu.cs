@@ -21,19 +21,18 @@ namespace ChinChin.GUI.formThem
             ChucNang = 0;
             lblThongBao.Visible = false;
         }
-        public string MaQuan
-        {
-            get;
-            set;
-        }
+
         
+
         public ThemCapnhatVatLieu(
             string MaVatLieu,
             string TenVatLieu,
             string NhaCungCap,
             int SoLuong,
             float Gia,
-            string DonViTinh
+            string DonViTinh,
+            string MaQuan,
+            string MaKho
             )
         {
             InitializeComponent();
@@ -59,7 +58,7 @@ namespace ChinChin.GUI.formThem
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            var f = (ChinChin.Forms_QuanLy.KhoHang)this.Owner;
+            var fKhoHang = (ChinChin.Forms_QuanLy.KhoHang)this.Owner;
             if (ChucNang == 0)
             {
                 if (tbcMaVL.Text == ""
@@ -85,7 +84,7 @@ namespace ChinChin.GUI.formThem
                 {
                     ThemDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
                     Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, "quanchinhchien");
-                    f.RefreshDGV();
+                    fKhoHang.RefreshDGV();
                     this.Close();
                 }
             }
@@ -93,7 +92,7 @@ namespace ChinChin.GUI.formThem
             {
                 CapNhatDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
                     Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, "quanchinhchien");
-                f.RefreshDGV();
+                fKhoHang.RefreshDGV();
                 this.Close();
             }
         }
