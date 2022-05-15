@@ -41,6 +41,9 @@ namespace ChinChin.UI
         );
         public static string username;
         public static string password;
+        string usernameSaved;
+        MainUI MainUI = new MainUI();
+
         public LogIn()
         {
             InitializeComponent();
@@ -67,59 +70,86 @@ namespace ChinChin.UI
             {
                 if (ckBxRememberSignIn.Checked)
                 {
-                    // Dẫn tới thứ mục %appdata% => the roaming current user 
-                    
-                    Directory.CreateDirectory(specificFolder);
-
-                    if (!System.IO.File.Exists(pathString))
-                    {
-                        using (System.IO.FileStream fs = System.IO.File.Create(pathString))
-                        {
-                            File.Create(pathString).Close();
-                        }
-                    }
-                    else
-                    {
-                        File.WriteAllText(Path.Combine(specificFolder, "SavedUsername.txt"), tbcUserName.Text);
-                    }
+                    LuuTenTaiKhoan();
                 }
                 else
                 {
-                    if (!System.IO.File.Exists(pathString))
-                    {
-                        using (System.IO.FileStream fs = System.IO.File.Create(pathString))
-                        {
-                            File.Create(pathString).Close();
-                        }
-                    }
-                    else
-                    {
-                        File.WriteAllText(Path.Combine(specificFolder, "SavedUsername.txt"), "");
-                    }
+                    XoaTenTaiKhoan();
                 }
-                QuanDAO quan = new QuanDAO();
-                DataTable dt = quan.searchQuanByTenTaiKhoan(username);
-
-                MainUI MainUI = new MainUI();
                 MainUI.TenTaiKhoan = username;
-                if (dt.Rows.Count > 0)
-                {
-                    MainUI.MaQuan = dt.Rows[0]["MaQuan"].ToString();
-                    MainUI.TenQuan = dt.Rows[0]["TenQuan"].ToString();
-                    MainUI.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    ChinChin.GUI.Main.ChuaCoQuan taoQuan = new ChinChin.GUI.Main.ChuaCoQuan();
-                    taoQuan.Show();
-                    this.Hide();
-                }
+                
+                MainUI.TenTaiKhoan = username; // để làm gì?
+                MoMainUI(MainUI.TenTaiKhoan);
             }
             else
             {
                 labelThongBao.Visible = true; // Cho phép hiện thông báo lỗi,kết thúc hiệu lực của txtBxUsername_Enter và txtBxPassword_Enter
                 labelThongBao.Text = "Không tìm thấy tài khoản hoặc sai mật khẩu";
+            }
+        }
+
+        /// <summary>
+        /// method <c>LuuTenTaiKhoan:</c>
+        /// Tìm thông tin quán của TaiKhoan, nếu có thì mơ MainUI, không có thì TaoQuan</summary>
+        void MoMainUI(string TenTaiKhoan)
+        {
+            QuanDAO quan = new QuanDAO();
+            DataTable dt = quan.searchQuanByTenTaiKhoan(TenTaiKhoan);
+
+            if (dt.Rows.Count > 0)
+            {
+                // Mở quán tìm thấy đầu tiên
+                MainUI.MaQuan = dt.Rows[0]["MaQuan"].ToString();
+                MainUI.TenQuan = dt.Rows[0]["TenQuan"].ToString();
+                
+                this.Hide();
+                MainUI.Show();
+            }
+            else
+            {
+                ChinChin.GUI.Main.ChuaCoQuan taoQuan = new ChinChin.GUI.Main.ChuaCoQuan();
+                taoQuan.Show();
+                this.Hide();
+            }
+        }
+        
+        /// <summary>
+        /// method <c>LuuTenTaiKhoan:</c>
+        /// Tạo folder và file lưu TenTaiKhoan từ tbcUserName.Text vào trong %APPDATA%</summary>
+        void LuuTenTaiKhoan()
+        {
+            // Dẫn tới thứ mục %appdata% => the roaming current user 
+
+            Directory.CreateDirectory(specificFolder);
+
+            if (!System.IO.File.Exists(pathString))
+            {
+                using (System.IO.FileStream fs = System.IO.File.Create(pathString))
+                {
+                    File.Create(pathString).Close();
+                }
+            }
+            else
+            {
+                File.WriteAllText(Path.Combine(specificFolder, "SavedUsername.txt"), tbcUserName.Text);
+            }
+        }
+
+        /// <summary>
+        /// method <c>LuuTenTaiKhoan:</c>
+        /// Xóa hết dữ liệu TenTaiKhoan trong %APPDATA%\SavedUsername.txt</summary>
+        void XoaTenTaiKhoan()
+        {
+            if (!System.IO.File.Exists(pathString))
+            {
+                using (System.IO.FileStream fs = System.IO.File.Create(pathString))
+                {
+                    File.Create(pathString).Close();
+                }
+            }
+            else
+            {
+                File.WriteAllText(Path.Combine(specificFolder, "SavedUsername.txt"), "");
             }
         }
 
@@ -182,12 +212,24 @@ namespace ChinChin.UI
                 adapter = new SqlDataAdapter(strSqlTaiKhoan, conn);
                 adapter.Fill(dsTaiKhoan, "TAIKHOAN");
                 dgvTaiKhoan.DataSource = dsTaiKhoan.Tables[0];
+                usernameSaved = System.IO.File.ReadAllText(@"C:\Users\taqua\AppData\Roaming\ChinhChien\SavedUsername.txt");
+                if (!usernameSaved.Equals(""))
+                {
+                    AutoSignInWithUsername();
+                }
             }
             else
             {
                 MessageBox.Show("Không có Database hoặc Dữ liệu bé ơi", "Oh My God", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            //string usernameSaved = System.IO.File.ReadAllText(pathString);
+        }
+
+        /// <summary>
+        /// method <c>LuuTenTaiKhoan:</c>
+        /// Đọc username trong %APPDATA%\ChinhChien\SavedUsername.txt và đăng nhập bằng username đó</summary>
+        void AutoSignInWithUsername()
+        {
+            MoMainUI(usernameSaved);
         }
 
         private void labelNoAccount_Click(object sender, EventArgs e)
@@ -226,6 +268,17 @@ namespace ChinChin.UI
         {
             //MessageBox.Show(ckBxRememberSignIn.Checked.ToString());
             //string pathString = @"%appdata%\ChinhChien";
+            
+            if (ckBxRememberSignIn.Checked)
+            {
+                LuuTenTaiKhoan();
+                MainUI.TenTaiKhoan = usernameSaved;
+            }
+            else
+            {
+                XoaTenTaiKhoan();
+                MainUI.TenTaiKhoan = username;
+            }            
         }
 
         private void iPBxShowHidePasword_Click(object sender, EventArgs e)
