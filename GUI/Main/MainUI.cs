@@ -148,8 +148,10 @@ namespace ChinChin.UI
         private void ibtnThucDon_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color3, iconCurrentChildForm);
+            ChinChin.Forms_ChuQuan.QuanLyMenu quanLyMenu = new ChinChin.Forms_ChuQuan.QuanLyMenu();
+            quanLyMenu.Owner = this;
             MenuAnimation.OpenChildForm
-                (new ChinChin.Forms_ChuQuan.QuanLyMenu(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
+                (quanLyMenu, ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 
         private void ibtnNhanSu_Click(object sender, EventArgs e)

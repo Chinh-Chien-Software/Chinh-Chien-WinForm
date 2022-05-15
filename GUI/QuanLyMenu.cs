@@ -13,16 +13,24 @@ namespace ChinChin.Forms_ChuQuan
 {
     public partial class QuanLyMenu : Form
     {
-        string sql = "SELECT * FROM SanPham";
+        string sql;
 
         public QuanLyMenu()
         {
             InitializeComponent();
         }
 
-        private void FormThucDon_Load(object sender, EventArgs e)
+        private void QuanLyMenu_Load(object sender, EventArgs e)
         {
+            var fMainUI = (ChinChin.UI.MainUI)this.Owner;
+            sql = "SELECT * FROM SanPham where MaQuan = '" + fMainUI.MaQuan + "'";
             dgvSanPham.DataSource = DataProvider.ReturnDataTable(sql);
+
+            dgvSanPham.Columns[0].HeaderText = "Mã sản phẩm";
+
+            dgvSanPham.Columns[1].HeaderText = "Tên sản phẩm";
+
+            dgvSanPham.Columns[2].HeaderText = "Đơn giá";
         }
 
         private void btnNew_Click(object sender, EventArgs e)

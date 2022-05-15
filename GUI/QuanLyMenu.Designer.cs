@@ -154,7 +154,7 @@ namespace ChinChin.Forms_ChuQuan
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThucDon";
             this.Text = "Quản Lý Menu";
-            this.Load += new System.EventHandler(this.FormThucDon_Load);
+            this.Load += new System.EventHandler(this.QuanLyMenu_Load);
             this.pnlTopBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
             this.ResumeLayout(false);
