@@ -32,9 +32,11 @@ namespace ChinChin.GUI
         {
             dgvNhanVien.DataSource = DataProvider.ReturnDataTable("SELECT * FROM NhanVien");
             dgvNhanVien.Columns[0].HeaderText = "Mã Nhân Viên";
-            dgvNhanVien.Columns[0].DisplayIndex = 1;
+            //dgvNhanVien.Columns[0].DisplayIndex = 1;
+            dgvNhanVien.Columns[0].FillWeight = 50;
             dgvNhanVien.Columns[1].HeaderText = "Tên Nhân Viên";
-            dgvNhanVien.Columns[0].DisplayIndex = 0;
+            dgvNhanVien.Columns[0].FillWeight = 50;
+            //dgvNhanVien.Columns[1].DisplayIndex = 0;
             dgvNhanVien.Columns[2].HeaderText = "Lương trên giờ";
             dgvNhanVien.Columns[3].HeaderText = "Ngày vào làm";
             dgvNhanVien.Columns[4].HeaderText = "Giới tính";
