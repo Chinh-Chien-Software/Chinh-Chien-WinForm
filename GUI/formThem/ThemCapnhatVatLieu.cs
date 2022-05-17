@@ -49,6 +49,7 @@ namespace ChinChin.GUI.formThem
         {
             this.FormBorderStyle = FormBorderStyle.None;
             lblThongBao.Visible = false;
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -64,8 +65,8 @@ namespace ChinChin.GUI.formThem
                 if (KiemTra())
                 {
                     ThemDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
-                    Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, "quanchinhchien");
-                    fKhoHang.RefreshDGV();
+                    Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, fKhoHang.MaQuan);
+                    fKhoHang.RefreshVatLieu(fKhoHang.TenKho);
                     this.Close();
                 }
             }
@@ -75,7 +76,7 @@ namespace ChinChin.GUI.formThem
                 {
                     CapNhatDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
                     Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, "quanchinhchien");
-                    fKhoHang.RefreshDGV();
+                    fKhoHang.RefreshVatLieu(fKhoHang.TenKho);
                     this.Close();
                 }
             }
