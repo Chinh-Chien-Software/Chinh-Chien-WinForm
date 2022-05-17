@@ -37,18 +37,18 @@
             this.pnlThongTin = new System.Windows.Forms.Panel();
             this.cbbKho = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
+            this.lblThongBao = new System.Windows.Forms.Label();
+            this.pnlMoveAndTitle = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.tbcDVT = new ChinChin.Custom.TextBox_Custom();
             this.tbcGia = new ChinChin.Custom.TextBox_Custom();
             this.tbcSL = new ChinChin.Custom.TextBox_Custom();
             this.tbcNhaCC = new ChinChin.Custom.TextBox_Custom();
             this.tbcMaVL = new ChinChin.Custom.TextBox_Custom();
             this.tbcTenVL = new ChinChin.Custom.TextBox_Custom();
-            this.btnExit = new FontAwesome.Sharp.IconPictureBox();
-            this.lblThongBao = new System.Windows.Forms.Label();
             this.btnLuuCapnhat = new ChinChin.Extra.BlackWhiteButton();
-            this.pnlMoveAndTitle = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.pnlMoveAndTitle.SuspendLayout();
@@ -178,6 +178,69 @@
             this.label5.Text = "Kho";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 46;
+            this.btnExit.Location = new System.Drawing.Point(659, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(46, 48);
+            this.btnExit.TabIndex = 25;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // lblThongBao
+            // 
+            this.lblThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
+            this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblThongBao.Location = new System.Drawing.Point(121, 18);
+            this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(322, 19);
+            this.lblThongBao.TabIndex = 26;
+            this.lblThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
+            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pnlMoveAndTitle
+            // 
+            this.pnlMoveAndTitle.Controls.Add(this.lblTitle);
+            this.pnlMoveAndTitle.Controls.Add(this.btnExit);
+            this.pnlMoveAndTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMoveAndTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnlMoveAndTitle.Name = "pnlMoveAndTitle";
+            this.pnlMoveAndTitle.Size = new System.Drawing.Size(707, 55);
+            this.pnlMoveAndTitle.TabIndex = 27;
+            this.pnlMoveAndTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMoveAndTitle_MouseDown);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblThongBao);
+            this.panel1.Controls.Add(this.btnLuuCapnhat);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 773);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(707, 60);
+            this.panel1.TabIndex = 28;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblTitle.Font = new System.Drawing.Font("Cascadia Code", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(464, 55);
+            this.lblTitle.TabIndex = 31;
+            this.lblTitle.Text = "Thêm Cập nhật Vật Liệu";
+            this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
+            // 
             // tbcDVT
             // 
             this.tbcDVT.ForeColor = System.Drawing.Color.White;
@@ -239,37 +302,6 @@
             this.tbcTenVL.Size = new System.Drawing.Size(362, 40);
             this.tbcTenVL.TabIndex = 11;
             // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(659, 2);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(46, 48);
-            this.btnExit.TabIndex = 25;
-            this.btnExit.TabStop = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // lblThongBao
-            // 
-            this.lblThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
-            this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblThongBao.Location = new System.Drawing.Point(121, 18);
-            this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(322, 19);
-            this.lblThongBao.TabIndex = 26;
-            this.lblThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
-            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // btnLuuCapnhat
             // 
             this.btnLuuCapnhat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -291,37 +323,6 @@
             this.btnLuuCapnhat.TextColor = System.Drawing.Color.White;
             this.btnLuuCapnhat.UseVisualStyleBackColor = false;
             this.btnLuuCapnhat.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // pnlMoveAndTitle
-            // 
-            this.pnlMoveAndTitle.Controls.Add(this.lblTitle);
-            this.pnlMoveAndTitle.Controls.Add(this.btnExit);
-            this.pnlMoveAndTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlMoveAndTitle.Location = new System.Drawing.Point(0, 0);
-            this.pnlMoveAndTitle.Name = "pnlMoveAndTitle";
-            this.pnlMoveAndTitle.Size = new System.Drawing.Size(707, 55);
-            this.pnlMoveAndTitle.TabIndex = 27;
-            this.pnlMoveAndTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMoveAndTitle_MouseDown);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lblThongBao);
-            this.panel1.Controls.Add(this.btnLuuCapnhat);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 773);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(707, 60);
-            this.panel1.TabIndex = 28;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblTitle.Font = new System.Drawing.Font("Cascadia Code", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(0, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(464, 55);
-            this.lblTitle.TabIndex = 31;
-            this.lblTitle.Text = "Thêm Cập nhật Vật Liệu";
             // 
             // ThemCapnhatVatLieu
             // 
