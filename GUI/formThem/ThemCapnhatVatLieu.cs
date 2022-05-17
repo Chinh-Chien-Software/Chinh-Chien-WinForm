@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChinChin.DAL_DAO;
+using System.Runtime.InteropServices;
 
 namespace ChinChin.GUI.formThem
 {
@@ -18,6 +19,7 @@ namespace ChinChin.GUI.formThem
         {
             InitializeComponent();
             btnLuuCapnhat.Text = "Lưu";
+            lblTitle.Text = "Thêm vật liệu";
             ChucNang = 0;
             lblThongBao.Visible = false;
         }
@@ -36,7 +38,11 @@ namespace ChinChin.GUI.formThem
             InitializeComponent();
             tbcMaVL.Enabled = false;
             btnLuuCapnhat.Text = "Cập nhật";
+            lblTitle.Text = "Cập nhật vật liệu";
+
             tbcMaVL.Text = MaVatLieu;
+            tbcMaVL.Enabled = false;
+
             tbcTenVL.Text = TenVatLieu;
             tbcNhaCC.Text = NhaCungCap;
             tbcSL.Text = SoLuong.ToString();
@@ -149,10 +155,16 @@ namespace ChinChin.GUI.formThem
                 return true;
             }
         }
-        
-        private void btnHuy_Click(object sender, EventArgs e)
-        {
 
+        [DllImport("user32")]
+        private static extern bool ReleaseCapture();
+        [DllImport("user32")]
+        private static extern int SendMessage(IntPtr hWnd, int Msg, int wp, int lp);
+
+        private void pnlMoveAndTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }
