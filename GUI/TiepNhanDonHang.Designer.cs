@@ -262,7 +262,7 @@ namespace ChinChin.Forms_NhanVien
             this.labelMenuList.Name = "labelMenuList";
             this.labelMenuList.Size = new System.Drawing.Size(556, 40);
             this.labelMenuList.TabIndex = 2;
-            this.labelMenuList.Text = "MENU";
+            this.labelMenuList.Text = "Thực Đơn";
             this.labelMenuList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelHoaDon
