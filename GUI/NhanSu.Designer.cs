@@ -104,7 +104,7 @@
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(110, 46);
             this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Xóa";
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = false;
             // 
@@ -125,7 +125,7 @@
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(89, 46);
             this.btnNew.TabIndex = 2;
-            this.btnNew.Text = "New";
+            this.btnNew.Text = "Thêm";
             this.btnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNew.UseVisualStyleBackColor = false;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
@@ -147,7 +147,7 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(89, 46);
             this.btnEdit.TabIndex = 1;
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.Text = "Sửa";
             this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
