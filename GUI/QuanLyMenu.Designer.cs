@@ -56,7 +56,7 @@ namespace ChinChin.Forms_ChuQuan
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(89, 46);
             this.btnNew.TabIndex = 2;
-            this.btnNew.Text = "New";
+            this.btnNew.Text = "Thêm";
             this.btnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNew.UseVisualStyleBackColor = false;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
@@ -78,7 +78,7 @@ namespace ChinChin.Forms_ChuQuan
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(110, 46);
             this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Xóa";
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -114,7 +114,7 @@ namespace ChinChin.Forms_ChuQuan
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(89, 46);
             this.btnEdit.TabIndex = 1;
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.Text = "Sửa";
             this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -144,7 +144,7 @@ namespace ChinChin.Forms_ChuQuan
             this.dgvSanPham.Size = new System.Drawing.Size(600, 318);
             this.dgvSanPham.TabIndex = 3;
             // 
-            // FormThucDon
+            // QuanLyMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -152,7 +152,7 @@ namespace ChinChin.Forms_ChuQuan
             this.Controls.Add(this.dgvSanPham);
             this.Controls.Add(this.pnlTopBar);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FormThucDon";
+            this.Name = "QuanLyMenu";
             this.Text = "Quản Lý Menu";
             this.Load += new System.EventHandler(this.QuanLyMenu_Load);
             this.pnlTopBar.ResumeLayout(false);
