@@ -30,7 +30,17 @@ namespace ChinChin.Forms_ChuQuan
 
             dgvSanPham.Columns[1].HeaderText = "Tên sản phẩm";
 
-            dgvSanPham.Columns[2].HeaderText = "Đơn giá";
+            dgvSanPham.Columns[2].HeaderText = "Công thức";
+
+            dgvSanPham.Columns[3].HeaderText = "Thành phần";
+
+            dgvSanPham.Columns[4].HeaderText = "Đánh giá";
+
+            dgvSanPham.Columns[5].HeaderText = "Giá";
+
+            dgvSanPham.Columns[6].HeaderText = "Loại";
+
+            dgvSanPham.Columns[7].Visible = false;
         }
 
         private void btnNew_Click(object sender, EventArgs e)

@@ -134,15 +134,12 @@ namespace ChinChin.UI
             MenuAnimation.OpenChildForm(new ThongTinTaiKhoan(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 
-        private void ibtn2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ibtnVatTu_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color2, iconCurrentChildForm);
-            MenuAnimation.OpenChildForm(new KhoHang(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
+            KhoHang khoHang = new KhoHang();
+            khoHang.Owner = this;
+            MenuAnimation.OpenChildForm(khoHang, ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 
         private void ibtnThucDon_Click(object sender, EventArgs e)
