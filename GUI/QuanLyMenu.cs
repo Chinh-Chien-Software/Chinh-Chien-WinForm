@@ -15,6 +15,12 @@ namespace ChinChin.Forms_ChuQuan
     {
         string sql;
 
+        public string MaQuan
+        {
+            get;
+            set;
+        }
+
         public QuanLyMenu()
         {
             InitializeComponent();
@@ -23,24 +29,8 @@ namespace ChinChin.Forms_ChuQuan
         private void QuanLyMenu_Load(object sender, EventArgs e)
         {
             var fMainUI = (ChinChin.UI.MainUI)this.Owner;
-            sql = "SELECT * FROM SanPham where MaQuan = '" + fMainUI.MaQuan + "'";
-            dgvSanPham.DataSource = DataProvider.ReturnDataTable(sql);
-
-            dgvSanPham.Columns[0].HeaderText = "Mã sản phẩm";
-
-            dgvSanPham.Columns[1].HeaderText = "Tên sản phẩm";
-
-            dgvSanPham.Columns[2].HeaderText = "Công thức";
-
-            dgvSanPham.Columns[3].HeaderText = "Thành phần";
-
-            dgvSanPham.Columns[4].HeaderText = "Đánh giá";
-
-            dgvSanPham.Columns[5].HeaderText = "Giá";
-
-            dgvSanPham.Columns[6].HeaderText = "Loại";
-
-            dgvSanPham.Columns[7].Visible = false;
+            this.MaQuan = fMainUI.MaQuan;
+            RefreshDGV();
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -59,7 +49,8 @@ namespace ChinChin.Forms_ChuQuan
                     dgvSanPham.CurrentRow.Cells["CongThuc"].Value.ToString(),
                     dgvSanPham.CurrentRow.Cells["ThanhPhan"].Value.ToString(),
                     float.Parse(dgvSanPham.CurrentRow.Cells["Gia"].Value.ToString()),
-                    int.Parse(dgvSanPham.CurrentRow.Cells["DanhGia"].Value.ToString())
+                    int.Parse(dgvSanPham.CurrentRow.Cells["DanhGia"].Value.ToString()),
+                    dgvSanPham.CurrentRow.Cells["Loai"].Value.ToString()
                     );
             ThemCapnhatSanPham.Owner = this;
             ThemCapnhatSanPham.Show();
@@ -74,7 +65,25 @@ namespace ChinChin.Forms_ChuQuan
 
         public void RefreshDGV()
         {
+            var fMainUI = (ChinChin.UI.MainUI)this.Owner;
+            sql = "SELECT * FROM SanPham where MaQuan = '" + fMainUI.MaQuan + "'";
             dgvSanPham.DataSource = DataProvider.ReturnDataTable(sql);
+
+            dgvSanPham.Columns["MaSanPham"].HeaderText = "Mã sản phẩm";
+
+            dgvSanPham.Columns["TenSanPham"].HeaderText = "Tên sản phẩm";
+
+            dgvSanPham.Columns["CongThuc"].HeaderText = "Công thức";
+
+            dgvSanPham.Columns[3].HeaderText = "Thành phần";
+
+            dgvSanPham.Columns[4].HeaderText = "Đánh giá";
+
+            dgvSanPham.Columns[5].HeaderText = "Giá";
+
+            dgvSanPham.Columns[6].HeaderText = "Loại";
+
+            dgvSanPham.Columns[7].Visible = false;
         }
     }
 }

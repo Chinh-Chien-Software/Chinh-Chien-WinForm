@@ -28,7 +28,8 @@ namespace ChinChin.GUI.formThem
             string CongThuc,
             string ThanhPhan,
             float Gia,
-            int DanhGia
+            int DanhGia,
+            string Loai
             )
         {
             InitializeComponent();
@@ -40,30 +41,32 @@ namespace ChinChin.GUI.formThem
             tbcTPhan.Text = ThanhPhan;
             tbcGia.Text = Gia.ToString();
             tbcDanhGia.Text = DanhGia.ToString();
+            cbbLoai.Text = Loai;
             ChucNang = 1;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            SanPhamDAO sanPhamDAO = new SanPhamDAO();
             if (KiemTra())
             {
-                var fMenu = (ChinChin.Forms_ChuQuan.QuanLyMenu)this.Owner;
+                var fQuanLyMenu = (ChinChin.Forms_ChuQuan.QuanLyMenu)this.Owner;
                 if (ChucNang == 0)
                 {
                     ChonLoai();
-                    ThemDAL.SanPham
+                    sanPhamDAO.Create
                         (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text,
-                        float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text), Loai, "quanchinhchien");
-                    fMenu.RefreshDGV();
+                        float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text), cbbLoai.Text, fQuanLyMenu.MaQuan);
+                    fQuanLyMenu.RefreshDGV();
                     this.Close();
                 }
                 else if (ChucNang == 1)
                 {
                     btnLuu.Text = "Cập nhật";
-                    CapNhatDAL.SanPham
+                    sanPhamDAO.Update
                         (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text,
-                        float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text), Loai, "quanchinhchien");
-                    fMenu.RefreshDGV();
+                        float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text), cbbLoai.Text, fQuanLyMenu.MaQuan);
+                    fQuanLyMenu.RefreshDGV();
                     this.Close();
                 }
             }
