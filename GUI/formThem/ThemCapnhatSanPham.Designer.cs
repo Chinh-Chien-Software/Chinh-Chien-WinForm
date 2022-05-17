@@ -162,7 +162,8 @@
             this.cbbLoai.FormattingEnabled = true;
             this.cbbLoai.Items.AddRange(new object[] {
             "Trà sữa",
-            "Cà phê"});
+            "Cà phê",
+            "Topping"});
             this.cbbLoai.Location = new System.Drawing.Point(20, 496);
             this.cbbLoai.Name = "cbbLoai";
             this.cbbLoai.Size = new System.Drawing.Size(362, 36);

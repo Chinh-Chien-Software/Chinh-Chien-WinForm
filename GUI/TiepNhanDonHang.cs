@@ -64,7 +64,7 @@ namespace ChinChin.Forms_NhanVien
         
         private void btnTypeTraSua_Click(object sender, EventArgs e)
         {
-            HienSanPham("Trasua");
+            HienSanPham("Trà sữa");
         }
 
         void HienSanPham(string Loai)
@@ -103,7 +103,7 @@ namespace ChinChin.Forms_NhanVien
         
         private void btnTypeCaPhe_Click(object sender, EventArgs e)
         {
-            HienSanPham("caphe");
+            HienSanPham("Cà phê");
         }
 
         private void lvSanPhamTheoLoai_SelectedIndexChanged(object sender, EventArgs e)
@@ -129,7 +129,7 @@ namespace ChinChin.Forms_NhanVien
 
         private void btnTypeTopping_Click(object sender, EventArgs e)
         {
-            HienSanPham("topping");
+            HienSanPham("Topping");
         }
     }
 }
