@@ -18,7 +18,7 @@ namespace ChinChin.Forms_NhanVien
         public TiepNhanDonHang()
         {
             InitializeComponent();
-            HienSanPham("Trasua");
+            HienSanPham("Trà sữa");
             //HienMenu();
             lblThongBao.Visible = false;
         }
@@ -28,8 +28,6 @@ namespace ChinChin.Forms_NhanVien
         HoaDonDAO hoaDonDAO = new HoaDonDAO();
 
         SqlConnection ketnoi;
-        //SqlCommand thuchien;
-        //SqlDataReader docdulieu;
 
         public void NhapSanPham()
         {
@@ -70,7 +68,7 @@ namespace ChinChin.Forms_NhanVien
         void HienSanPham(string Loai)
         {
             lvSanPhamTheoLoai.Items.Clear();
-            string query = "SELECT TenSanPham, Gia, MaSanPham FROM SanPham where Loai = '"+ Loai +"'";
+            string query = "SELECT TenSanPham, Gia, MaSanPham FROM SanPham where Loai = N'"+ Loai +"'";
             int i = 0;
             SqlDataReader table = DataProvider.ReturnSqlDataReader(query);
             while (table.Read())
