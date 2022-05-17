@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChinChin.DAL_DAO;
+using System.Runtime.InteropServices;
 
 namespace ChinChin.GUI.formThem
 {
@@ -135,6 +136,22 @@ namespace ChinChin.GUI.formThem
         private void ThemCapnhatNhanVien_Load(object sender, EventArgs e)
         {
             lblThongBao.Visible = false;
+        }
+
+        [DllImport("user32")]
+        private static extern bool ReleaseCapture();
+        [DllImport("user32")]
+        private static extern int SendMessage(IntPtr hWnd, int Msg, int wp, int lp);
+        private void pnlMoveAndTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

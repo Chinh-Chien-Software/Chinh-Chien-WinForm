@@ -358,6 +358,7 @@
             this.pnlMoveAndTitle.Name = "pnlMoveAndTitle";
             this.pnlMoveAndTitle.Size = new System.Drawing.Size(830, 55);
             this.pnlMoveAndTitle.TabIndex = 34;
+            this.pnlMoveAndTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMoveAndTitle_MouseDown);
             // 
             // pnlBottom
             // 
@@ -378,6 +379,7 @@
             this.lblTitle.Size = new System.Drawing.Size(464, 55);
             this.lblTitle.TabIndex = 33;
             this.lblTitle.Text = "Thêm Cập nhật Nhân Viên";
+            this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
             // ThemCapnhatNhanVien
             // 
