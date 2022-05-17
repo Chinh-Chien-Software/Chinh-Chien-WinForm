@@ -29,23 +29,23 @@ namespace ChinChin.FormsChuQuan
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelDoanhThu = new System.Windows.Forms.Panel();
+            this.pnlDoanhThu = new System.Windows.Forms.Panel();
             this.lblSanPham = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlLoiNhuan = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panelDoanhThu.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnlDoanhThu.SuspendLayout();
+            this.pnlLoiNhuan.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelDoanhThu
+            // pnlDoanhThu
             // 
-            this.panelDoanhThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.panelDoanhThu.Controls.Add(this.lblSanPham);
-            this.panelDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelDoanhThu.Location = new System.Drawing.Point(12, 12);
-            this.panelDoanhThu.Name = "panelDoanhThu";
-            this.panelDoanhThu.Size = new System.Drawing.Size(200, 100);
-            this.panelDoanhThu.TabIndex = 0;
+            this.pnlDoanhThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.pnlDoanhThu.Controls.Add(this.lblSanPham);
+            this.pnlDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlDoanhThu.Location = new System.Drawing.Point(12, 12);
+            this.pnlDoanhThu.Name = "pnlDoanhThu";
+            this.pnlDoanhThu.Size = new System.Drawing.Size(200, 100);
+            this.pnlDoanhThu.TabIndex = 0;
             // 
             // lblSanPham
             // 
@@ -56,18 +56,18 @@ namespace ChinChin.FormsChuQuan
             this.lblSanPham.Name = "lblSanPham";
             this.lblSanPham.Size = new System.Drawing.Size(200, 40);
             this.lblSanPham.TabIndex = 0;
-            this.lblSanPham.Text = "Best Seller";
+            this.lblSanPham.Text = "Sản phẩm bán chạy";
             this.lblSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel1
+            // pnlLoiNhuan
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(231, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
-            this.panel1.TabIndex = 1;
+            this.pnlLoiNhuan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.pnlLoiNhuan.Controls.Add(this.label1);
+            this.pnlLoiNhuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlLoiNhuan.Location = new System.Drawing.Point(231, 12);
+            this.pnlLoiNhuan.Name = "pnlLoiNhuan";
+            this.pnlLoiNhuan.Size = new System.Drawing.Size(200, 100);
+            this.pnlLoiNhuan.TabIndex = 1;
             // 
             // label1
             // 
@@ -87,23 +87,23 @@ namespace ChinChin.FormsChuQuan
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(686, 433);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelDoanhThu);
+            this.Controls.Add(this.pnlLoiNhuan);
+            this.Controls.Add(this.pnlDoanhThu);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThongKe";
             this.Text = "Xem Thống Kê";
             this.Load += new System.EventHandler(this.FormThongKe_Load);
-            this.panelDoanhThu.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.pnlDoanhThu.ResumeLayout(false);
+            this.pnlLoiNhuan.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelDoanhThu;
+        private System.Windows.Forms.Panel pnlDoanhThu;
         private System.Windows.Forms.Label lblSanPham;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlLoiNhuan;
         private System.Windows.Forms.Label label1;
     }
 }
