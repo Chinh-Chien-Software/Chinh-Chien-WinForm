@@ -103,7 +103,7 @@ namespace ChinChin.Forms_NhanVien
         
         private void btnTypeCaPhe_Click(object sender, EventArgs e)
         {
-            HienSanPham("Caphe");
+            HienSanPham("caphe");
         }
 
         private void lvSanPhamTheoLoai_SelectedIndexChanged(object sender, EventArgs e)
@@ -125,6 +125,11 @@ namespace ChinChin.Forms_NhanVien
         private void lvThongTinHoaDon_MouseDoubleClick(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void btnTypeTopping_Click(object sender, EventArgs e)
+        {
+            HienSanPham("topping");
         }
     }
 }
