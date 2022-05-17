@@ -14,19 +14,37 @@ namespace ChinChin.Forms_QuanLy
 {
     public partial class KhoHang : Form
     {
-        static string sqlVL = "SELECT * FROM VatLieu where MaQuan = 'quanchinhchien'";
-        static string sqlKH = "SELECT * FROM KhoHang where MaQuan = 'quanchinhchien'";
+        static string sqlVatLieu;
+        static string sqlKho = "SELECT * FROM Kho where MaQuan = 'quanchinhchien'";
+
+        public string MaQuan
+        {
+            get;
+            set;
+        }
+
+        public string MaKho
+        {
+            get;
+            set;
+        }
+
+        public string TenKho
+        {
+            get;
+            set;
+        }
 
         public KhoHang()
         {
             InitializeComponent();
+            
         }
         
         private void KhoHang_Load(object sender, EventArgs e)
         {
-            dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVL);
-            cbbKhoHang.DataSource = DataProvider.ReturnDataTable(sqlKH);
-            cbbKhoHang.DisplayMember = "TenKho";
+            RefreshKho();
+            RefreshVatLieu(cbbKho.Text);
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -36,9 +54,52 @@ namespace ChinChin.Forms_QuanLy
             themCapnhatVatLieu.Show();
         }
 
-        public void RefreshDGV()
+        public void RefreshKho()
         {
-            dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVL);
+            var fMainUI = (ChinChin.UI.MainUI)this.Owner;
+            this.MaQuan = fMainUI.MaQuan;
+            this.TenKho = cbbKho.Text;
+            cbbKho.DataSource = DataProvider.ReturnDataTable(sqlKho);
+            cbbKho.DisplayMember = "TenKho";
+            cbbKho.ValueMember = "MaKho";
+        }
+
+        public void RefreshVatLieu(string TenKho)
+        {
+            var fMainUI = (ChinChin.UI.MainUI)this.Owner;
+            this.MaQuan = fMainUI.MaQuan;
+            this.TenKho = cbbKho.Text;
+
+            sqlVatLieu = "SELECT vl.MaVatLieu, vl.TenVatLieu, vl.NhaCungCap, vl.SoLuong, vl.Gia, vl.DonViTinh FROM VatLieu vl, Kho k where vl.MaQuan = '"
+                + fMainUI.MaQuan + "' and k.TenKho = '" + TenKho + "' and vl.MaKho = k.MaKho";
+
+            dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVatLieu);
+
+            dgvVatLieu.Columns["MaVatLieu"].HeaderText = "Mã vật liệu";
+            dgvVatLieu.Columns["TenVatLieu"].HeaderText = "Tên vật liệu";
+            dgvVatLieu.Columns["NhaCungCap"].HeaderText = "Nhà cung cấp";
+            dgvVatLieu.Columns["SoLuong"].HeaderText = "Số lượng";
+            dgvVatLieu.Columns["Gia"].HeaderText = "Đơn giá";
+            dgvVatLieu.Columns["DonViTinh"].HeaderText = "Đơn vị tính";
+            //dgvVatLieu.Columns["MaQuan"].Visible = false;
+            //dgvVatLieu.Columns["MaKho"].Visible = false;
+        }
+
+        public void RefreshVatLieu()
+        {
+            var fMainUI = (ChinChin.UI.MainUI)this.Owner;
+            sqlVatLieu = "SELECT * FROM VatLieu where MaQuan = '" + fMainUI.MaQuan + "'";
+
+            dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVatLieu);
+
+            dgvVatLieu.Columns["MaVatLieu"].HeaderText = "Mã vật liệu";
+            dgvVatLieu.Columns["TenVatLieu"].HeaderText = "Tên vật liệu";
+            dgvVatLieu.Columns["NhaCungCap"].HeaderText = "Nhà cung cấp";
+            dgvVatLieu.Columns["SoLuong"].HeaderText = "Số lượng";
+            dgvVatLieu.Columns["Gia"].HeaderText = "Đơn giá";
+            dgvVatLieu.Columns["DonViTinh"].HeaderText = "Đơn vị tính";
+            dgvVatLieu.Columns["MaQuan"].Visible = false;
+            dgvVatLieu.Columns["MaKho"].Visible = false;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -67,9 +128,14 @@ namespace ChinChin.Forms_QuanLy
             XoaDAL.VatLieu(MaVatLieu);
         }
 
-        private void ipbThemQuan_Click(object sender, EventArgs e)
+        private void ipbThemKho_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbbKho_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RefreshVatLieu(cbbKho.Text);
         }
     }
 }

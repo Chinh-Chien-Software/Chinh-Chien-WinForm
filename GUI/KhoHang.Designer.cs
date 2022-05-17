@@ -34,7 +34,7 @@ namespace ChinChin.Forms_QuanLy
             this.btnEdit = new FontAwesome.Sharp.IconButton();
             this.pnlTopBar = new System.Windows.Forms.Panel();
             this.ipbThemKho = new FontAwesome.Sharp.IconPictureBox();
-            this.cbbKhoHang = new System.Windows.Forms.ComboBox();
+            this.cbbKho = new System.Windows.Forms.ComboBox();
             this.btnDelete = new FontAwesome.Sharp.IconButton();
             this.btnNew = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVatLieu)).BeginInit();
@@ -93,7 +93,7 @@ namespace ChinChin.Forms_QuanLy
             // 
             this.pnlTopBar.BackColor = System.Drawing.Color.White;
             this.pnlTopBar.Controls.Add(this.ipbThemKho);
-            this.pnlTopBar.Controls.Add(this.cbbKhoHang);
+            this.pnlTopBar.Controls.Add(this.cbbKho);
             this.pnlTopBar.Controls.Add(this.btnDelete);
             this.pnlTopBar.Controls.Add(this.btnNew);
             this.pnlTopBar.Controls.Add(this.btnEdit);
@@ -107,7 +107,6 @@ namespace ChinChin.Forms_QuanLy
             // 
             // ipbThemKho
             // 
-            this.ipbThemKho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ipbThemKho.BackColor = System.Drawing.Color.White;
             this.ipbThemKho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.ipbThemKho.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
@@ -120,18 +119,19 @@ namespace ChinChin.Forms_QuanLy
             this.ipbThemKho.Size = new System.Drawing.Size(39, 39);
             this.ipbThemKho.TabIndex = 6;
             this.ipbThemKho.TabStop = false;
-            this.ipbThemKho.Click += new System.EventHandler(this.ipbThemQuan_Click);
+            this.ipbThemKho.Click += new System.EventHandler(this.ipbThemKho_Click);
             // 
-            // cbbKhoHang
+            // cbbKho
             // 
-            this.cbbKhoHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbKhoHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbKhoHang.FormattingEnabled = true;
-            this.cbbKhoHang.Location = new System.Drawing.Point(2, 9);
-            this.cbbKhoHang.Name = "cbbKhoHang";
-            this.cbbKhoHang.Size = new System.Drawing.Size(258, 28);
-            this.cbbKhoHang.TabIndex = 5;
-            this.cbbKhoHang.Text = "Chọn Kho Hàng";
+            this.cbbKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbKho.FormattingEnabled = true;
+            this.cbbKho.Location = new System.Drawing.Point(2, 9);
+            this.cbbKho.Name = "cbbKho";
+            this.cbbKho.Size = new System.Drawing.Size(258, 28);
+            this.cbbKho.TabIndex = 5;
+            this.cbbKho.Text = "Chọn Kho Hàng";
+            this.cbbKho.SelectedIndexChanged += new System.EventHandler(this.cbbKho_SelectedIndexChanged);
             // 
             // btnDelete
             // 
@@ -202,7 +202,7 @@ namespace ChinChin.Forms_QuanLy
         private System.Windows.Forms.Panel pnlTopBar;
         private FontAwesome.Sharp.IconButton btnNew;
         private FontAwesome.Sharp.IconButton btnDelete;
-        private System.Windows.Forms.ComboBox cbbKhoHang;
+        private System.Windows.Forms.ComboBox cbbKho;
         private FontAwesome.Sharp.IconPictureBox ipbThemKho;
     }
 }
