@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChinChin.DAL_DAO;
+using System.Runtime.InteropServices;
 
 namespace ChinChin.GUI.formThem
 {
@@ -19,7 +20,9 @@ namespace ChinChin.GUI.formThem
         public ThemCapnhatSanPham()
         {
             InitializeComponent();
+            lblThongBao.Visible = false;
             btnLuu.Text = "Lưu";
+            lblTitle.Text = "Thêm sản phẩm";
             ChucNang = 0;
         }
         public ThemCapnhatSanPham(
@@ -35,6 +38,8 @@ namespace ChinChin.GUI.formThem
             InitializeComponent();
             lblThongBao.Visible = false;
             btnLuu.Text = "Cập nhật";
+            lblTitle.Text = "Cập nhật sản phẩm";
+            
             tbcMaSP.Text = MaSanPham;
             tbcTenSP.Text = TenSanPham;
             tbcCT.Text = CongThuc;
@@ -65,7 +70,7 @@ namespace ChinChin.GUI.formThem
                     btnLuu.Text = "Cập nhật";
                     sanPhamDAO.Update
                         (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcTPhan.Text,
-                        float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text), cbbLoai.Text, fQuanLyMenu.MaQuan);
+                        float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text), cbbLoai.Text);
                     fQuanLyMenu.RefreshDGV();
                     this.Close();
                 }
