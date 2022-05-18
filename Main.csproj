@@ -321,6 +321,9 @@
     <EmbeddedResource Include="GUI\formThem\ThemCapnhatNhanVien.resx">
       <DependentUpon>ThemCapnhatNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\formThem\ThemCapnhatQuan.resx">
+      <DependentUpon>ThemCapnhatQuan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\formThem\ThemCapnhatSanPham.resx">
       <DependentUpon>ThemCapnhatSanPham.cs</DependentUpon>
     </EmbeddedResource>
