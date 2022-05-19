@@ -89,5 +89,10 @@ namespace ChinChin.GUI
             ThemCapnhatNhanVien.Owner = this;
             ThemCapnhatNhanVien.Show();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
