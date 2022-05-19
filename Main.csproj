@@ -52,6 +52,11 @@
     <ApplicationIcon>Favicon\Logo_Chin_Chin.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
@@ -80,6 +85,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -92,6 +99,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCao\SoLuongVatLieu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoLuongVatLieu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BUS\HoaDonBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="BUS\ThongTinHoaDonBUS.cs" />
@@ -101,6 +114,12 @@
     <Compile Include="DAL-DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAL-DAO\ThongTinHoaDonDAO.cs" />
     <Compile Include="dbConnection.cs" />
+    <Compile Include="GUI\BaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BaoCao.Designer.cs">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\formThem\ThemCapnhatQuan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -312,11 +331,18 @@
     <Compile Include="GUI\Main\ThongTinTaiKhoan.Designer.cs">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BaoCao\SoLuongVatLieu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SoLuongVatLieu.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Custom\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom\TextBox_Custom.resx">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BaoCao.resx">
+      <DependentUpon>BaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\formThem\ThemCapnhatNhanVien.resx">
       <DependentUpon>ThemCapnhatNhanVien.cs</DependentUpon>
@@ -486,6 +512,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

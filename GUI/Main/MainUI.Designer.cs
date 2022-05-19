@@ -37,6 +37,8 @@
             this.ibtnNhanDon = new FontAwesome.Sharp.IconButton();
             this.ibtnThongKe = new FontAwesome.Sharp.IconButton();
             this.pnlQuan = new System.Windows.Forms.Panel();
+            this.ipbThemQuan = new FontAwesome.Sharp.IconPictureBox();
+            this.cbbChuyenQuan = new System.Windows.Forms.ComboBox();
             this.panelTittleBar = new System.Windows.Forms.Panel();
             this.pnlTaiKhoanVaButtons = new System.Windows.Forms.Panel();
             this.mnsTaiKhoan = new System.Windows.Forms.MenuStrip();
@@ -49,11 +51,11 @@
             this.btnMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
-            this.cbbChuyenQuan = new System.Windows.Forms.ComboBox();
-            this.ipbThemQuan = new FontAwesome.Sharp.IconPictureBox();
+            this.ibtnBaoCao = new FontAwesome.Sharp.IconButton();
             this.pnlBorderOfForm.SuspendLayout();
             this.panelLeftSidebar.SuspendLayout();
             this.pnlQuan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ipbThemQuan)).BeginInit();
             this.panelTittleBar.SuspendLayout();
             this.pnlTaiKhoanVaButtons.SuspendLayout();
             this.mnsTaiKhoan.SuspendLayout();
@@ -61,7 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ipbThemQuan)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlChildForm
@@ -71,7 +72,7 @@
             this.pnlChildForm.Location = new System.Drawing.Point(376, 70);
             this.pnlChildForm.Margin = new System.Windows.Forms.Padding(2);
             this.pnlChildForm.Name = "pnlChildForm";
-            this.pnlChildForm.Size = new System.Drawing.Size(607, 631);
+            this.pnlChildForm.Size = new System.Drawing.Size(607, 691);
             this.pnlChildForm.TabIndex = 14;
             // 
             // pnlBorderOfForm
@@ -84,12 +85,13 @@
             this.pnlBorderOfForm.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.pnlBorderOfForm.Location = new System.Drawing.Point(0, 0);
             this.pnlBorderOfForm.Name = "pnlBorderOfForm";
-            this.pnlBorderOfForm.Size = new System.Drawing.Size(985, 703);
+            this.pnlBorderOfForm.Size = new System.Drawing.Size(985, 763);
             this.pnlBorderOfForm.TabIndex = 0;
             // 
             // panelLeftSidebar
             // 
             this.panelLeftSidebar.BackColor = System.Drawing.Color.White;
+            this.panelLeftSidebar.Controls.Add(this.ibtnBaoCao);
             this.panelLeftSidebar.Controls.Add(this.ibtnNhanSu);
             this.panelLeftSidebar.Controls.Add(this.ibtnThucDon);
             this.panelLeftSidebar.Controls.Add(this.ibtnVatTu);
@@ -101,7 +103,7 @@
             this.panelLeftSidebar.Location = new System.Drawing.Point(0, 70);
             this.panelLeftSidebar.Margin = new System.Windows.Forms.Padding(2);
             this.panelLeftSidebar.Name = "panelLeftSidebar";
-            this.panelLeftSidebar.Size = new System.Drawing.Size(376, 631);
+            this.panelLeftSidebar.Size = new System.Drawing.Size(376, 691);
             this.panelLeftSidebar.TabIndex = 17;
             // 
             // ibtnNhanSu
@@ -225,6 +227,35 @@
             this.pnlQuan.Name = "pnlQuan";
             this.pnlQuan.Size = new System.Drawing.Size(376, 63);
             this.pnlQuan.TabIndex = 0;
+            // 
+            // ipbThemQuan
+            // 
+            this.ipbThemQuan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ipbThemQuan.BackColor = System.Drawing.Color.White;
+            this.ipbThemQuan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ipbThemQuan.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.ipbThemQuan.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ipbThemQuan.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ipbThemQuan.IconSize = 50;
+            this.ipbThemQuan.Location = new System.Drawing.Point(233, 11);
+            this.ipbThemQuan.Margin = new System.Windows.Forms.Padding(2);
+            this.ipbThemQuan.Name = "ipbThemQuan";
+            this.ipbThemQuan.Size = new System.Drawing.Size(50, 50);
+            this.ipbThemQuan.TabIndex = 3;
+            this.ipbThemQuan.TabStop = false;
+            // 
+            // cbbChuyenQuan
+            // 
+            this.cbbChuyenQuan.BackColor = System.Drawing.Color.White;
+            this.cbbChuyenQuan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbChuyenQuan.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbChuyenQuan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cbbChuyenQuan.FormattingEnabled = true;
+            this.cbbChuyenQuan.Location = new System.Drawing.Point(11, 14);
+            this.cbbChuyenQuan.Name = "cbbChuyenQuan";
+            this.cbbChuyenQuan.Size = new System.Drawing.Size(217, 36);
+            this.cbbChuyenQuan.TabIndex = 1;
+            this.cbbChuyenQuan.Text = "Chuyển quán";
             // 
             // panelTittleBar
             // 
@@ -380,40 +411,33 @@
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // cbbChuyenQuan
+            // ibtnBaoCao
             // 
-            this.cbbChuyenQuan.BackColor = System.Drawing.Color.White;
-            this.cbbChuyenQuan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbChuyenQuan.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbChuyenQuan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cbbChuyenQuan.FormattingEnabled = true;
-            this.cbbChuyenQuan.Location = new System.Drawing.Point(11, 14);
-            this.cbbChuyenQuan.Name = "cbbChuyenQuan";
-            this.cbbChuyenQuan.Size = new System.Drawing.Size(217, 36);
-            this.cbbChuyenQuan.TabIndex = 1;
-            this.cbbChuyenQuan.Text = "Chuyển quán";
-            // 
-            // ipbThemQuan
-            // 
-            this.ipbThemQuan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ipbThemQuan.BackColor = System.Drawing.Color.White;
-            this.ipbThemQuan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ipbThemQuan.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.ipbThemQuan.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ipbThemQuan.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ipbThemQuan.IconSize = 50;
-            this.ipbThemQuan.Location = new System.Drawing.Point(233, 11);
-            this.ipbThemQuan.Margin = new System.Windows.Forms.Padding(2);
-            this.ipbThemQuan.Name = "ipbThemQuan";
-            this.ipbThemQuan.Size = new System.Drawing.Size(50, 50);
-            this.ipbThemQuan.TabIndex = 3;
-            this.ipbThemQuan.TabStop = false;
+            this.ibtnBaoCao.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtnBaoCao.FlatAppearance.BorderSize = 0;
+            this.ibtnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtnBaoCao.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtnBaoCao.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtnBaoCao.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtnBaoCao.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtnBaoCao.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtnBaoCao.Location = new System.Drawing.Point(0, 571);
+            this.ibtnBaoCao.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnBaoCao.Name = "ibtnBaoCao";
+            this.ibtnBaoCao.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtnBaoCao.Size = new System.Drawing.Size(376, 102);
+            this.ibtnBaoCao.TabIndex = 14;
+            this.ibtnBaoCao.Text = "BÁO CÁO";
+            this.ibtnBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtnBaoCao.UseVisualStyleBackColor = true;
+            this.ibtnBaoCao.Click += new System.EventHandler(this.ibtnBaoCao_Click);
             // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 703);
+            this.ClientSize = new System.Drawing.Size(985, 763);
             this.Controls.Add(this.pnlBorderOfForm);
             this.Name = "MainUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -421,6 +445,7 @@
             this.pnlBorderOfForm.ResumeLayout(false);
             this.panelLeftSidebar.ResumeLayout(false);
             this.pnlQuan.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ipbThemQuan)).EndInit();
             this.panelTittleBar.ResumeLayout(false);
             this.panelTittleBar.PerformLayout();
             this.pnlTaiKhoanVaButtons.ResumeLayout(false);
@@ -431,7 +456,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ipbThemQuan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -461,5 +485,6 @@
         private FontAwesome.Sharp.IconButton ibtnNhanSu;
         private System.Windows.Forms.ComboBox cbbChuyenQuan;
         private FontAwesome.Sharp.IconPictureBox ipbThemQuan;
+        private FontAwesome.Sharp.IconButton ibtnBaoCao;
     }
 }
