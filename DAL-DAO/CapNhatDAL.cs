@@ -47,9 +47,10 @@ namespace ChinChin.DAL_DAO
             )
         {
             con.Open();
-            string sqlThemNhanVien
-                = "update NhanVien set TenNhanVien = N'" + TenNhanVien + "', LuongTrenGio = '" + LuongTrenGio.ToString() + "', NgayVaoLam = '" + NgayVaoLam + "', GioiTinh = '" + GioiTinh + "', NgaySinh = '" + NgaySinh + "', SoDienThoai = '" + SoDienThoai + "', DiaChi = N'" + DiaChi + "', LoaiNhanVien = '" + LoaiNhanVien + "', MaQuan = '" + MaQuan + "' where MaNhanVien = '" + MaNhanVien + "'";
-            cmd = new SqlCommand(sqlThemNhanVien, con);
+            string sqlCapNhatNhanVien
+                = "update NhanVien set TenNhanVien = N'" + TenNhanVien + "', LuongTrenGio = " + LuongTrenGio.ToString() + ", NgayVaoLam = " + NgayVaoLam.ToString("yyyy-mm-dd") + ", GioiTinh = '" + GioiTinh + "', NgaySinh = " + NgaySinh.ToString("yyyy-mm-dd") + ", SoDienThoai = '" + SoDienThoai + "', DiaChi = N'" + DiaChi + "', LoaiNhanVien = '" + LoaiNhanVien + "', MaQuan = '" + MaQuan + "' where MaNhanVien = '" + MaNhanVien + "'";
+            cmd = new SqlCommand(sqlCapNhatNhanVien, con);
+            Console.WriteLine(sqlCapNhatNhanVien);
             cmd.ExecuteNonQuery();
             con.Close();
         }

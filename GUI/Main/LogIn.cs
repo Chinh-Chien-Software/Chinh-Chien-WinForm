@@ -74,7 +74,7 @@ namespace ChinChin.UI
                 }
                 else
                 {
-                    XoaTenTaiKhoan();
+                    //XoaTenTaiKhoan();
                 }
                 MainUI.TenTaiKhoan = username;
                 
@@ -212,11 +212,11 @@ namespace ChinChin.UI
                 adapter = new SqlDataAdapter(strSqlTaiKhoan, conn);
                 adapter.Fill(dsTaiKhoan, "TAIKHOAN");
                 dgvTaiKhoan.DataSource = dsTaiKhoan.Tables[0];
-                usernameSaved = System.IO.File.ReadAllText(@"C:\Users\taqua\AppData\Roaming\ChinhChien\SavedUsername.txt");
-                if (!usernameSaved.Equals(""))
-                {
-                    AutoSignInWithUsername();
-                }
+                //usernameSaved = System.IO.File.ReadAllText(@"C:\Users\taqua\AppData\Roaming\ChinhChien\SavedUsername.txt");
+                //if (!usernameSaved.Equals(""))
+                //{
+                //    AutoSignInWithUsername();
+                //}
             }
             else
             {
