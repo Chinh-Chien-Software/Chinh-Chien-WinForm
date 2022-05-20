@@ -11,9 +11,15 @@ namespace ChinChin.BUS
     internal class TaiKhoanBUS
     {
         private TaiKhoanDAO taiKhoanDAO;
+        
         public TaiKhoanBUS()
         {
             taiKhoanDAO = new TaiKhoanDAO();
+        }
+        
+        public void ThemTaiKhoanBUS(TaiKhoanVO taiKhoanVO)
+        {
+            taiKhoanDAO.ThemTaiKhoanDAO(taiKhoanVO);
         }
     }
 }

@@ -6,22 +6,36 @@ using System.Threading.Tasks;
 
 namespace ChinChin.Classes
 {
-    internal class TaiKhoanVO
+    public class TaiKhoanVO
     {
-        public string tentaikhoan;
+        // Dùng để chứa data của đối tượng
+        string tentaikhoan;
+        string matkhau;
+        int uimode;
+        string email;
+
         public string TenTaiKhoan
         {
             get { return tentaikhoan; }
             set { tentaikhoan = value; }
         }
 
-        string loaitaikhoan;
-        string LoaiTaiKhoan
+        public string MatKhau
         {
-            set { loaitaikhoan = value; }
-            get { return loaitaikhoan; }
+            get { return matkhau; }
+            set { matkhau = value; }
         }
-        //string MaNhanVien;
-        //int UIMode;
+
+        public int UIMode
+        {
+            get { return uimode; }
+            set { uimode = value; }
+        }
+
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
     }
 }
