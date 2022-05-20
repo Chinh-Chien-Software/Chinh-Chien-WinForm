@@ -23,7 +23,7 @@ namespace ChinChin.DAL_DAO
             return true;
         }
         
-        public void Create(TaiKhoanVO taiKhoanVO)
+        public void ThemTaiKhoanDAO(TaiKhoanVO taiKhoanVO)
         {
             string sql = "INSERT INTO TaiKhoan(TenTaiKhoan, MatKhau, UIMode, Email) VALUES(@TenTaiKhoan, @MatKhau, @UIMode, @Email)";
             SqlParameter[] param = new SqlParameter[4];

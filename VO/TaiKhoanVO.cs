@@ -11,7 +11,7 @@ namespace ChinChin.Classes
         // Dùng để chứa data của đối tượng
         string tentaikhoan;
         string matkhau;
-        string uimode;
+        int uimode;
         string email;
 
         public string TenTaiKhoan
@@ -26,7 +26,7 @@ namespace ChinChin.Classes
             set { matkhau = value; }
         }
 
-        public string UIMode
+        public int UIMode
         {
             get { return uimode; }
             set { uimode = value; }
