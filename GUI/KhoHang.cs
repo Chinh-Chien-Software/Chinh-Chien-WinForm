@@ -60,7 +60,7 @@ namespace ChinChin.Forms_QuanLy
             this.MaQuan = fMainUI.MaQuan;
             this.TenKho = cbbKho.Text;
             
-            cbbKho.DataSource = khoDAO.LayKho(this.MaQuan);
+            cbbKho.DataSource = khoDAO.LayDanhSachKho(this.MaQuan);
             
             cbbKho.DisplayMember = "TenKho";
             cbbKho.ValueMember = "MaKho";
@@ -114,8 +114,8 @@ namespace ChinChin.Forms_QuanLy
             int SoLuong = int.Parse(dgvVatLieu.SelectedRows[0].Cells[3].Value.ToString());
             float Gia = float.Parse(dgvVatLieu.SelectedRows[0].Cells[4].Value.ToString());
             string DonViTinh = dgvVatLieu.SelectedRows[0].Cells[5].Value.ToString();
-            string MaQuan = "";
-            string MaKho = "";
+            string MaQuan = this.MaQuan;
+            string MaKho = this.MaKho;
 
             ChinChin.GUI.formThem.ThemCapnhatVatLieu ThemVatLieu
                 = new ChinChin.GUI.formThem.ThemCapnhatVatLieu(
