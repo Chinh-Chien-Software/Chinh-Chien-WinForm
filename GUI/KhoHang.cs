@@ -15,7 +15,7 @@ namespace ChinChin.Forms_QuanLy
     public partial class KhoHang : Form
     {
         static string sqlVatLieu;
-        static string sqlKho = "SELECT * FROM Kho where MaQuan = 'quanchinhchien'";
+        KhoDAO khoDAO = new KhoDAO();
 
         public string MaQuan
         {
@@ -59,7 +59,9 @@ namespace ChinChin.Forms_QuanLy
             var fMainUI = (ChinChin.UI.MainUI)this.Owner;
             this.MaQuan = fMainUI.MaQuan;
             this.TenKho = cbbKho.Text;
-            cbbKho.DataSource = DataProvider.ReturnDataTable(sqlKho);
+            
+            cbbKho.DataSource = khoDAO.LayKho(this.MaQuan);
+            
             cbbKho.DisplayMember = "TenKho";
             cbbKho.ValueMember = "MaKho";
         }

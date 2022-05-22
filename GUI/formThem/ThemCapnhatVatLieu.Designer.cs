@@ -269,7 +269,6 @@
             this.lblThongBao.TabIndex = 26;
             this.lblThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
             this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblThongBao.Click += new System.EventHandler(this.lblThongBao_Click);
             // 
             // pnlMoveAndTitle
             // 
