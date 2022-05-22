@@ -333,6 +333,7 @@
     <Compile Include="GUI\Main\ThongTinTaiKhoan.Designer.cs">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="VO\VatLieuVO.cs" />
     <EmbeddedResource Include="BaoCao\SoLuongVatLieu.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>SoLuongVatLieu.cs</LastGenOutput>
