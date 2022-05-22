@@ -8,5 +8,6 @@ namespace ChinChin.VO
 {
     internal class VatLieuVO
     {
+        // Sơn nói là cái này không cần thiết, Sơn muốn dùng parameter trực tiếp luôn
     }
 }
