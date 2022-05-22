@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChinChin.DAL_DAO;
 using System.Runtime.InteropServices;
+using ChinChin.BUS;
 
 namespace ChinChin.GUI.formThem
 {
@@ -49,6 +50,16 @@ namespace ChinChin.GUI.formThem
             tbcGia.Text = Gia.ToString();
             tbcDVT.Text = DonViTinh;
             ChucNang = 1;
+
+            KhoDAO khoDao = new KhoDAO();
+            cbbKho.DataSource = khoDao.LayDanhSachKho(MaQuan);
+            cbbKho.DisplayMember = "TenKho";
+            cbbKho.ValueMember = "MaKho";
+            //cbbKho.SelectedValue = MaKho;
+            
+            KhoBUS khoBus = new KhoBUS();
+
+            cbbKho.Text = khoBus.LayTenKhoBangMaKho(MaKho, MaQuan);
         }
 
         private void ThemVatLieu_Load(object sender, EventArgs e)
