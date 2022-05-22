@@ -15,17 +15,5 @@ namespace ChinChin.BUS
         {
             vatLieuDAO = new VatLieuDAO();
         }
-
-        public void Them(string MaVatLieu,
-            string TenVatLieu,
-            string NhaCungCap,
-            int SoLuong,
-            float Gia,
-            string DonViTinh,
-            string MaQuan,
-            string MaKho)
-        {
-            vatLieuDAO.Them(MaVatLieu, TenVatLieu, NhaCungCap, SoLuong, Gia, DonViTinh, MaQuan, MaKho);
-        }
     }
 }

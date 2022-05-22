@@ -59,11 +59,12 @@ namespace ChinChin.Forms_QuanLy
             var fMainUI = (ChinChin.UI.MainUI)this.Owner;
             this.MaQuan = fMainUI.MaQuan;
             this.TenKho = cbbKho.Text;
-            
+
             cbbKho.DataSource = khoDAO.LayDanhSachKho(this.MaQuan);
             
             cbbKho.DisplayMember = "TenKho";
             cbbKho.ValueMember = "MaKho";
+            this.MaKho = (string)cbbKho.SelectedValue;
         }
 
         public void RefreshVatLieu(string TenKho)
