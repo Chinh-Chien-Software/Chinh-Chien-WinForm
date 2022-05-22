@@ -1,4 +1,4 @@
-# Phần Mềm Quản Lý Quán Trà Sữa Chinh Chiến
+# Phần Mềm Quản Lý Bán Hàng Chinh Chiến
 # Tính năng
 - Tạo quán vô hạn
 - Thêm tài khoản khác vào quán
