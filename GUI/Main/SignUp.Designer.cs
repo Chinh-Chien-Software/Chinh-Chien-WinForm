@@ -41,6 +41,7 @@
             this.panelPassword = new System.Windows.Forms.Panel();
             this.tbcPassword = new ChinChin.Custom.TextBox_Custom();
             this.panelBackground = new System.Windows.Forms.Panel();
+            this.pnlThongBao = new System.Windows.Forms.Panel();
             this.pnlEmail = new System.Windows.Forms.Panel();
             this.lblEmail = new System.Windows.Forms.Label();
             this.tbcEmail = new ChinChin.Custom.TextBox_Custom();
@@ -49,17 +50,16 @@
             this.lblRewritePassword = new System.Windows.Forms.Label();
             this.tbcRewritePassword = new ChinChin.Custom.TextBox_Custom();
             this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
-            this.pnlThongBao = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHidePasword)).BeginInit();
             this.panelUsername.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPBCheckUsername)).BeginInit();
             this.panelPassword.SuspendLayout();
             this.panelBackground.SuspendLayout();
+            this.pnlThongBao.SuspendLayout();
             this.pnlEmail.SuspendLayout();
             this.pnlRewrite.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHideRewritePasword)).BeginInit();
-            this.pnlThongBao.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnExit
@@ -246,6 +246,17 @@
             this.panelBackground.Size = new System.Drawing.Size(800, 726);
             this.panelBackground.TabIndex = 11;
             // 
+            // pnlThongBao
+            // 
+            this.pnlThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlThongBao.BackColor = System.Drawing.Color.Transparent;
+            this.pnlThongBao.Controls.Add(this.lblThongBao);
+            this.pnlThongBao.Location = new System.Drawing.Point(0, 471);
+            this.pnlThongBao.Name = "pnlThongBao";
+            this.pnlThongBao.Size = new System.Drawing.Size(801, 58);
+            this.pnlThongBao.TabIndex = 19;
+            // 
             // pnlEmail
             // 
             this.pnlEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -356,17 +367,6 @@
             this.SignInButton.UseVisualStyleBackColor = false;
             this.SignInButton.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
-            // pnlThongBao
-            // 
-            this.pnlThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlThongBao.BackColor = System.Drawing.Color.Transparent;
-            this.pnlThongBao.Controls.Add(this.lblThongBao);
-            this.pnlThongBao.Location = new System.Drawing.Point(0, 471);
-            this.pnlThongBao.Name = "pnlThongBao";
-            this.pnlThongBao.Size = new System.Drawing.Size(801, 58);
-            this.pnlThongBao.TabIndex = 19;
-            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -388,12 +388,12 @@
             this.panelPassword.PerformLayout();
             this.panelBackground.ResumeLayout(false);
             this.panelBackground.PerformLayout();
+            this.pnlThongBao.ResumeLayout(false);
             this.pnlEmail.ResumeLayout(false);
             this.pnlEmail.PerformLayout();
             this.pnlRewrite.ResumeLayout(false);
             this.pnlRewrite.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHideRewritePasword)).EndInit();
-            this.pnlThongBao.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

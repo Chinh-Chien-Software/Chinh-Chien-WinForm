@@ -154,10 +154,10 @@
     <Compile Include="VO\NhanVien.cs" />
     <Compile Include="VO\QuanLy.cs" />
     <Compile Include="VO\TaiKhoanVO.cs" />
-    <Compile Include="Custom\TextBox_Custom.cs">
+    <Compile Include="GUI\Custom\TextBox_Custom.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Custom\TextBox_Custom.Designer.cs">
+    <Compile Include="GUI\Custom\TextBox_Custom.Designer.cs">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
     </Compile>
     <Compile Include="DAL-DAO\CapNhatDAL.cs" />
@@ -165,13 +165,13 @@
     <Compile Include="DAL-DAO\WorkingDatabase.cs" />
     <Compile Include="DAL-DAO\DataProvider.cs" />
     <Compile Include="DAL-DAO\XoaDAL.cs" />
-    <Compile Include="Custom\BlackWhiteButton.cs">
+    <Compile Include="GUI\Custom\BlackWhiteButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Custom\Notification.cs">
+    <Compile Include="GUI\Custom\Notification.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Custom\Notification.Designer.cs">
+    <Compile Include="GUI\Custom\Notification.Designer.cs">
       <DependentUpon>Notification.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSets\QuanLyQuanTraSuaDataSet.Designer.cs">
@@ -342,10 +342,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>SoLuongVatLieu.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom\Notification.resx">
+    <EmbeddedResource Include="GUI\Custom\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom\TextBox_Custom.resx">
+    <EmbeddedResource Include="GUI\Custom\TextBox_Custom.resx">
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\BaoCao.resx">
