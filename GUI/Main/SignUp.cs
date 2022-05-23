@@ -51,7 +51,16 @@ namespace ChinChin.UI
             }
             else if (WorkingDatabase.CheckUsername(tbcUsername.Text))
             {
+                WorkingDatabase.CreateAccount(tbcUsername.Text, tbcPassword.Text, tbcEmail.Text, 1);
                 TaiKhoanBUS taiKhoanBUS = new TaiKhoanBUS();
+                
+                
+                string TenTaiKhoan = tbcUsername.Text;
+                string MatKhau = tbcPassword.Text;
+                string Email = tbcEmail.Text;
+                int UIMode = 1;
+
+                taiKhoanBUS.ThemTaiKhoanBUS(TenTaiKhoan,MatKhau,UIMode,Email);
                 TaiKhoanVO taiKhoanOBJ = new TaiKhoanVO();
                 
                 taiKhoanOBJ.TenTaiKhoan = tbcUsername.Text;

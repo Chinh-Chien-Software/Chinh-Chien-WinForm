@@ -170,14 +170,7 @@ namespace ChinChin.UI
             CheckUserPassAndSignIn();
         }
 
-        private void txtBxUsername_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                tbcPassword.Focus();
-            }
-        }
-        private void txtBxPassword_KeyDown(object sender, KeyEventArgs e)
+        private void txtBxPasswordAndUsername_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
@@ -293,10 +286,6 @@ namespace ChinChin.UI
                 tbcPassword.PasswordChar = '\0';
                 iPBxShowHidePasword.IconChar = IconChar.EyeSlash;
             }
-        }
-        private void tbcUserName_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

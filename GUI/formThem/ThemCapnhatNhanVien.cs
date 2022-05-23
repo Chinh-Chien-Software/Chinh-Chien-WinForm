@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChinChin.DAL_DAO;
 using System.Runtime.InteropServices;
+using ChinChin.BUS;
 
 namespace ChinChin.GUI.formThem
 {
     public partial class ThemCapnhatNhanVien : Form
     {
         int ChucNang;
+        string TaiKhoan;
+        
         public ThemCapnhatNhanVien()
         {
             InitializeComponent();
@@ -30,7 +33,8 @@ namespace ChinChin.GUI.formThem
             DateTime NgaySinh,
             string SoDienThoai,
             string DiaChi,
-            string LoaiNhanVien
+            string LoaiNhanVien,
+            string TaiKhoan
             )
         {
             InitializeComponent();
@@ -45,11 +49,12 @@ namespace ChinChin.GUI.formThem
             tbcSDT.Text = SoDienThoai;
             tbcDC.Text = DiaChi;
             cbbChucVu.Text = LoaiNhanVien;
+            this.TaiKhoan = TaiKhoan;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -59,31 +64,40 @@ namespace ChinChin.GUI.formThem
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if (ChucNang == 0)
+            var f = (NhanSu)this.Owner;
+            NhanVienBUS nvBus = new NhanVienBUS();
+            try
             {
-                if (KiemTra())
+                if (ChucNang == 0)
                 {
-                    ThemDAL.NhanVien
-                     (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value,
-                     cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text, "quanchinhchien");
-                    var f = (NhanSu)this.Owner;
-                    f.RefreshDGV();
-                    this.Close();
+                    if (KiemTra())
+                    {
+                        nvBus.ThemNhanVienBUS
+                         (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value,
+                         cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text, f.MaQuan, TaiKhoan);
+
+                        f.RefreshDGV();
+                        this.Close();
+                    }
+                }
+                else if (ChucNang == 1)
+                {
+                    if (KiemTra())
+                    {
+                        btnLuu.Text = "Cập nhật";
+                        nvBus.SuaNhanVienBUS
+                            (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value,
+                            cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text, f.MaQuan, TaiKhoan);
+                        f.RefreshDGV();
+                        this.Close();
+                    }
                 }
             }
-            else if (ChucNang == 1)
+            catch (Exception ex)
             {
-                if (KiemTra())
-                {
-                    btnLuu.Text = "Cập nhật";
-                    CapNhatDAL.NhanVien
-                        (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value,
-                        cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text, "quanchinhchien");
-                    var f1 = (NhanSu)this.Owner;
-                    f1.RefreshDGV();
-                    this.Close();
-                }
+                MessageBox.Show("Có lỗi xảy ra: "+ex.Message);
             }
+           
         }
 
         bool KiemTra()
