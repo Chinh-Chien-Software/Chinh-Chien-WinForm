@@ -17,11 +17,13 @@ namespace ChinChin.GUI.formThem
     {
         int ChucNang;
         string TaiKhoan;
-        
+        NhanVienBUS nvBus;
+
         public ThemCapnhatNhanVien()
         {
             InitializeComponent();
             ChucNang = 0;
+            nvBus = new NhanVienBUS();
         }
 
         public ThemCapnhatNhanVien(
@@ -38,6 +40,7 @@ namespace ChinChin.GUI.formThem
             )
         {
             InitializeComponent();
+            nvBus = new NhanVienBUS();
             ChucNang = 1;
             tbcMaNV.Enabled = false;
             tbcMaNV.Text = MaNhanVien;
@@ -60,7 +63,7 @@ namespace ChinChin.GUI.formThem
         private void btnLuu_Click(object sender, EventArgs e)
         {
             var f = (NhanSu)this.Owner;
-            NhanVienBUS nvBus = new NhanVienBUS();
+            
             try
             {
                 if (ChucNang == 0)
@@ -69,7 +72,7 @@ namespace ChinChin.GUI.formThem
                     {
                         nvBus.ThemNhanVienBUS
                          (tbcMaNV.Text, tbcTenNV.Text, int.Parse(tbcLuong.Text), dtpNgayVL.Value,
-                         cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text, f.MaQuan, TaiKhoan);
+                         cbbGioiTinh.Text, dtpNgaySinh.Value, tbcSDT.Text, tbcDC.Text, cbbChucVu.Text, f.MaQuan);
 
                         f.RefreshDGV();
                         this.Close();
@@ -161,6 +164,116 @@ namespace ChinChin.GUI.formThem
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNgaySinh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlThongTin_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbbChucVu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblChucVu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbcSDT_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbcDC_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbbGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpNgaySinh_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpNgayVL_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbcLuong_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbcMaNV_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbcTenNV_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUserName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblThongBao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlMoveAndTitle_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlBottom_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

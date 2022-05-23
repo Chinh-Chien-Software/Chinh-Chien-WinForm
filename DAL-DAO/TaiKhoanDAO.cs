@@ -44,6 +44,13 @@ namespace ChinChin.DAL_DAO
             return data;
         }
 
+        public bool GoTaiKhoan(string MaNhanVien)
+        {
+            string sql = "UPDATE NhanVien set TenTaiKhoan = null WHERE MaNhanVien = @MaNhanVien";
+            SqlParameter[] param = new SqlParameter[1];
+            param[0] = new SqlParameter("@MaNhanVien", MaNhanVien);
+            return conn.executeUpdateQuery(sql,param);
+        }
         public bool SuaTaiKhoanDAO(string TenTaiKhoan, string MatKhau, int UIMode, string Email)
         {
             string sql = "EXEC UpdateAccount @TenTaiKhoan, @MatKhau, @UIMode, @Email";

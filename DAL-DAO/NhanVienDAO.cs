@@ -36,10 +36,10 @@ namespace ChinChin.DAL_DAO
             string SoDienThoai,
             string DiaChi,
             string LoaiNhanVien,
-            string MaQuan,string TenTaiKhoan)
+            string MaQuan)
         {
-            string sql = "EXEC TaoNhanVien @MaNhanVien, @TenNhanVien, @LuongTrenGio, @NgayVaoLam, @GioiTinh, @NgaySinh, @SoDienThoai, @DiaChi , @LoaiNhanVien, @MaQuan, @TenTaiKhoan";
-            SqlParameter[] param = new SqlParameter[11];
+            string sql = "EXEC TaoNhanVien @MaNhanVien, @TenNhanVien, @LuongTrenGio, @NgayVaoLam, @GioiTinh, @NgaySinh, @SoDienThoai, @DiaChi , @LoaiNhanVien, @MaQuan, null";
+            SqlParameter[] param = new SqlParameter[10];
             param[0] = new SqlParameter("@MaNhanVien", MaNhanVien);
             param[1] = new SqlParameter("@TenNhanVien", TenNhanVien);
             param[2] = new SqlParameter("@LuongTrenGio", LuongTrenGio);
@@ -50,20 +50,26 @@ namespace ChinChin.DAL_DAO
             param[7] = new SqlParameter("@DiaChi", DiaChi);
             param[8] = new SqlParameter("@LoaiNhanVien", LoaiNhanVien);
             param[9] = new SqlParameter("@MaQuan", MaQuan);
-            if (TenTaiKhoan == "")
-            {
-                param[10] = new SqlParameter("@TenTaiKhoan", DBNull.Value);
-            }
-            else
-            {
-                param[10] = new SqlParameter("@TenTaiKhoan", TenTaiKhoan);
-            }
+            
+           
             
             bool data = conn.executeInsertQuery(sql, param);
 
             return data;
         }
 
+        public bool ThemTaiKhoan(string TenTaiKhoan, string MaNhanVien)
+        {
+            string sql = "UPDATE NHANVIEN SET TENTAIKHOAN = @TenTaiKhoan WHERE MANHANVIEN = @MaNhanVien";
+            SqlParameter[] param = new SqlParameter[2];
+            param[0] = new SqlParameter("@TenTaiKhoan", TenTaiKhoan);
+            param[1] = new SqlParameter("@MaNhanVien", MaNhanVien);
+            
+
+            bool data = conn.executeInsertQuery(sql, param);
+
+            return data;
+        }
         public bool SuaNhanVienDAO(string MaNhanVien,
            string TenNhanVien,
            int LuongTrenGio,
