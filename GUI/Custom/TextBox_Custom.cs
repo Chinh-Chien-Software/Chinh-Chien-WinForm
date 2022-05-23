@@ -36,5 +36,10 @@ namespace ChinChin.Custom
             if (this.TextChanged != null)
                 this.TextChanged(this, e);
         }
+
+        private void textBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            this.OnKeyDown(e);
+        }
     }
 }
