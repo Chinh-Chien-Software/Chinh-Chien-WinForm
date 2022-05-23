@@ -45,6 +45,7 @@
             this.textBox.Size = new System.Drawing.Size(319, 34);
             this.textBox.TabIndex = 2;
             this.textBox.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            this.textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_KeyDown);
             // 
             // panelUnderline
             // 
