@@ -68,6 +68,7 @@
             this.pnlMoveAndTitle.Name = "pnlMoveAndTitle";
             this.pnlMoveAndTitle.Size = new System.Drawing.Size(542, 55);
             this.pnlMoveAndTitle.TabIndex = 37;
+            this.pnlMoveAndTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMoveAndTitle_MouseDown);
             // 
             // lblTitle
             // 
@@ -78,6 +79,7 @@
             this.lblTitle.Size = new System.Drawing.Size(464, 55);
             this.lblTitle.TabIndex = 33;
             this.lblTitle.Text = "Tạo tài khoản";
+            this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
             // btnExit
             // 
@@ -262,6 +264,7 @@
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.pnlMoveAndTitle);
             this.Controls.Add(this.pnlThongTin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TaoTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TaoTaiKhoan";
