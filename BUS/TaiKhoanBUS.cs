@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,5 +16,28 @@ namespace ChinChin.BUS
         {
             taiKhoanDAO = new TaiKhoanDAO();
         }
+<<<<<<< Updated upstream
+=======
+        
+        public DataTable getAccountBUS(string TenTaiKhoan)
+        {
+            return taiKhoanDAO.getAccount(TenTaiKhoan);
+        }
+
+        public bool ThemTaiKhoanBUS(string TenTaiKhoan, string MatKhau, int UIMode, string Email)
+        {
+            return taiKhoanDAO.ThemTaiKhoanDAO(TenTaiKhoan,MatKhau,UIMode,Email);
+        }
+
+        public bool SuaTaiKhoanBUS(string TenTaiKhoan, string MatKhau, int UIMode, string Email)
+        {
+            return taiKhoanDAO.SuaTaiKhoanDAO(TenTaiKhoan, MatKhau, UIMode, Email);
+        }
+
+        public bool XoaTaiKhoanBUS(string TenTaiKhoan)
+        {
+            return taiKhoanDAO.XoaTaiKhoanDAO(TenTaiKhoan);
+        }
+>>>>>>> Stashed changes
     }
 }

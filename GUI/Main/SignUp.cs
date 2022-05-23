@@ -49,7 +49,19 @@ namespace ChinChin.UI
             }
             else if (WorkingDatabase.CheckUsername(tbcUsername.Text))
             {
+<<<<<<< Updated upstream
                 WorkingDatabase.CreateAccount(tbcUsername.Text, tbcPassword.Text, tbcEmail.Text, 1);
+=======
+                TaiKhoanBUS taiKhoanBUS = new TaiKhoanBUS();
+                
+                
+                string TenTaiKhoan = tbcUsername.Text;
+                string MatKhau = tbcPassword.Text;
+                string Email = tbcEmail.Text;
+                int UIMode = 1;
+
+                taiKhoanBUS.ThemTaiKhoanBUS(TenTaiKhoan,MatKhau,UIMode,Email);
+>>>>>>> Stashed changes
                 ChinChin.GUI.Main.TaoQuan taoQuan = new ChinChin.GUI.Main.TaoQuan();
                 taoQuan.Show();
                 this.Hide();
