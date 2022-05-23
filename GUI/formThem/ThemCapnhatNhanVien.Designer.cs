@@ -40,7 +40,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cbbGioiTinh = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblGioiTinh = new System.Windows.Forms.Label();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.dtpNgayVL = new System.Windows.Forms.DateTimePicker();
@@ -48,11 +48,11 @@
             this.tbcMaNV = new ChinChin.Custom.TextBox_Custom();
             this.tbcTenNV = new ChinChin.Custom.TextBox_Custom();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
-            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
             this.lblThongBao = new System.Windows.Forms.Label();
             this.pnlMoveAndTitle = new System.Windows.Forms.Panel();
-            this.pnlBottom = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.pnlBottom = new System.Windows.Forms.Panel();
+            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.pnlMoveAndTitle.SuspendLayout();
@@ -120,7 +120,7 @@
             this.pnlThongTin.Controls.Add(this.label5);
             this.pnlThongTin.Controls.Add(this.label6);
             this.pnlThongTin.Controls.Add(this.cbbGioiTinh);
-            this.pnlThongTin.Controls.Add(this.label7);
+            this.pnlThongTin.Controls.Add(this.lblGioiTinh);
             this.pnlThongTin.Controls.Add(this.dtpNgaySinh);
             this.pnlThongTin.Controls.Add(this.label8);
             this.pnlThongTin.Controls.Add(this.dtpNgayVL);
@@ -221,19 +221,18 @@
             this.cbbGioiTinh.Size = new System.Drawing.Size(96, 21);
             this.cbbGioiTinh.TabIndex = 26;
             // 
-            // label7
+            // lblGioiTinh
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(443, 193);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 33);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Giới tính";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.lblGioiTinh.AutoSize = true;
+            this.lblGioiTinh.BackColor = System.Drawing.Color.Transparent;
+            this.lblGioiTinh.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGioiTinh.Location = new System.Drawing.Point(443, 193);
+            this.lblGioiTinh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGioiTinh.Name = "lblGioiTinh";
+            this.lblGioiTinh.Size = new System.Drawing.Size(116, 33);
+            this.lblGioiTinh.TabIndex = 25;
+            this.lblGioiTinh.Text = "Giới tính";
+            this.lblGioiTinh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dtpNgaySinh
             // 
@@ -313,28 +312,6 @@
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnLuu
-            // 
-            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnLuu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.btnLuu.BorderColor = System.Drawing.Color.Black;
-            this.btnLuu.BorderRadius = 0;
-            this.btnLuu.BorderSize = 0;
-            this.btnLuu.FlatAppearance.BorderSize = 0;
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(570, 4);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(258, 50);
-            this.btnLuu.TabIndex = 31;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.TextColor = System.Drawing.Color.White;
-            this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
             // lblThongBao
             // 
             this.lblThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -360,16 +337,6 @@
             this.pnlMoveAndTitle.TabIndex = 34;
             this.pnlMoveAndTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMoveAndTitle_MouseDown);
             // 
-            // pnlBottom
-            // 
-            this.pnlBottom.Controls.Add(this.btnLuu);
-            this.pnlBottom.Controls.Add(this.lblThongBao);
-            this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(0, 509);
-            this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(830, 56);
-            this.pnlBottom.TabIndex = 35;
-            // 
             // lblTitle
             // 
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
@@ -381,18 +348,51 @@
             this.lblTitle.Text = "Thêm Cập nhật Nhân Viên";
             this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
+            // pnlBottom
+            // 
+            this.pnlBottom.Controls.Add(this.btnLuu);
+            this.pnlBottom.Controls.Add(this.lblThongBao);
+            this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBottom.Location = new System.Drawing.Point(0, 509);
+            this.pnlBottom.Name = "pnlBottom";
+            this.pnlBottom.Size = new System.Drawing.Size(830, 56);
+            this.pnlBottom.TabIndex = 35;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnLuu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnLuu.BorderColor = System.Drawing.Color.Black;
+            this.btnLuu.BorderRadius = 0;
+            this.btnLuu.BorderSize = 0;
+            this.btnLuu.FlatAppearance.BorderSize = 0;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Location = new System.Drawing.Point(570, 4);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(258, 50);
+            this.btnLuu.TabIndex = 31;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.TextColor = System.Drawing.Color.White;
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
             // ThemCapnhatNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(830, 565);
+            this.ControlBox = false;
             this.Controls.Add(this.pnlThongTin);
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.pnlMoveAndTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ThemCapnhatNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ThemCapnhatNhanVien";
             this.Load += new System.EventHandler(this.ThemCapnhatNhanVien_Load);
             this.pnlThongTin.ResumeLayout(false);
             this.pnlThongTin.PerformLayout();
@@ -420,7 +420,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbbGioiTinh;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblGioiTinh;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbbChucVu;

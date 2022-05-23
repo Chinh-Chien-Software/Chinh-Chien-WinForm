@@ -57,11 +57,6 @@ namespace ChinChin.GUI.formThem
             this.Close();
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLuu_Click(object sender, EventArgs e)
         {
             var f = (NhanSu)this.Owner;

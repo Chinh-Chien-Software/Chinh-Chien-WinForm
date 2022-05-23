@@ -55,8 +55,6 @@ namespace ChinChin.GUI.formThem
             tbcDVT.Text = DonViTinh;
             ChucNang = 1;
 
-
-
             KhoBUS khoBus = new KhoBUS();
 
             cbbKho.Text = khoBus.LayTenKhoBangMaKho(MaKho, MaQuan);
@@ -64,8 +62,6 @@ namespace ChinChin.GUI.formThem
 
         private void ThemVatLieu_Load(object sender, EventArgs e)
         {
-            this.FormBorderStyle = FormBorderStyle.None;
-            
             var fKhoHang = (ChinChin.Forms_QuanLy.KhoHang)this.Owner;
             cbbKho.DataSource = khoDao.LayDanhSachKho(fKhoHang.MaQuan);
             lblThongBao.Visible = false;

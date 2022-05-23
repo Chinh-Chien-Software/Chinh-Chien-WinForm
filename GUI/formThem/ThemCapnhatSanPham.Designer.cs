@@ -31,7 +31,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblTenSanPham = new System.Windows.Forms.Label();
             this.lblThanhPhan = new System.Windows.Forms.Label();
             this.lblNgaySinh = new System.Windows.Forms.Label();
             this.pnlThongTin = new System.Windows.Forms.Panel();
@@ -39,7 +39,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tbcDanhGia = new ChinChin.Custom.TextBox_Custom();
             this.tbcGia = new ChinChin.Custom.TextBox_Custom();
-            this.tbcTPhan = new ChinChin.Custom.TextBox_Custom();
+            this.tbcThanhPhan = new ChinChin.Custom.TextBox_Custom();
             this.tbcCT = new ChinChin.Custom.TextBox_Custom();
             this.tbcMaSP = new ChinChin.Custom.TextBox_Custom();
             this.tbcTenSP = new ChinChin.Custom.TextBox_Custom();
@@ -57,7 +57,6 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -84,7 +83,6 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -96,22 +94,21 @@
             this.label3.Text = "Giá";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label2
+            // lblTenSanPham
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 97);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 33);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Tên sản phẩm";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblTenSanPham.AutoSize = true;
+            this.lblTenSanPham.BackColor = System.Drawing.Color.Transparent;
+            this.lblTenSanPham.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenSanPham.Location = new System.Drawing.Point(14, 97);
+            this.lblTenSanPham.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTenSanPham.Name = "lblTenSanPham";
+            this.lblTenSanPham.Size = new System.Drawing.Size(189, 33);
+            this.lblTenSanPham.TabIndex = 10;
+            this.lblTenSanPham.Text = "Tên sản phẩm";
+            this.lblTenSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblThanhPhan
             // 
-            this.lblThanhPhan.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblThanhPhan.AutoSize = true;
             this.lblThanhPhan.BackColor = System.Drawing.Color.Transparent;
             this.lblThanhPhan.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,7 +122,6 @@
             // 
             // lblNgaySinh
             // 
-            this.lblNgaySinh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNgaySinh.AutoSize = true;
             this.lblNgaySinh.BackColor = System.Drawing.Color.Transparent;
             this.lblNgaySinh.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -143,20 +139,20 @@
             this.pnlThongTin.Controls.Add(this.label5);
             this.pnlThongTin.Controls.Add(this.tbcDanhGia);
             this.pnlThongTin.Controls.Add(this.tbcGia);
-            this.pnlThongTin.Controls.Add(this.tbcTPhan);
+            this.pnlThongTin.Controls.Add(this.tbcThanhPhan);
             this.pnlThongTin.Controls.Add(this.tbcCT);
             this.pnlThongTin.Controls.Add(this.label4);
             this.pnlThongTin.Controls.Add(this.lblUserName);
             this.pnlThongTin.Controls.Add(this.label3);
             this.pnlThongTin.Controls.Add(this.tbcMaSP);
-            this.pnlThongTin.Controls.Add(this.label2);
+            this.pnlThongTin.Controls.Add(this.lblTenSanPham);
             this.pnlThongTin.Controls.Add(this.lblThanhPhan);
             this.pnlThongTin.Controls.Add(this.tbcTenSP);
             this.pnlThongTin.Controls.Add(this.lblNgaySinh);
             this.pnlThongTin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlThongTin.Location = new System.Drawing.Point(0, 55);
             this.pnlThongTin.Name = "pnlThongTin";
-            this.pnlThongTin.Size = new System.Drawing.Size(667, 685);
+            this.pnlThongTin.Size = new System.Drawing.Size(597, 685);
             this.pnlThongTin.TabIndex = 26;
             // 
             // cbbLoai
@@ -178,7 +174,6 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -210,15 +205,15 @@
             this.tbcGia.Size = new System.Drawing.Size(362, 40);
             this.tbcGia.TabIndex = 20;
             // 
-            // tbcTPhan
+            // tbcThanhPhan
             // 
-            this.tbcTPhan.ForeColor = System.Drawing.Color.White;
-            this.tbcTPhan.Location = new System.Drawing.Point(20, 312);
-            this.tbcTPhan.Margin = new System.Windows.Forms.Padding(6);
-            this.tbcTPhan.Name = "tbcTPhan";
-            this.tbcTPhan.PasswordChar = '\0';
-            this.tbcTPhan.Size = new System.Drawing.Size(362, 40);
-            this.tbcTPhan.TabIndex = 19;
+            this.tbcThanhPhan.ForeColor = System.Drawing.Color.White;
+            this.tbcThanhPhan.Location = new System.Drawing.Point(20, 312);
+            this.tbcThanhPhan.Margin = new System.Windows.Forms.Padding(6);
+            this.tbcThanhPhan.Name = "tbcThanhPhan";
+            this.tbcThanhPhan.PasswordChar = '\0';
+            this.tbcThanhPhan.Size = new System.Drawing.Size(362, 40);
+            this.tbcThanhPhan.TabIndex = 19;
             // 
             // tbcCT
             // 
@@ -260,7 +255,7 @@
             this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(619, 2);
+            this.btnExit.Location = new System.Drawing.Point(549, 2);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(46, 48);
@@ -280,7 +275,7 @@
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(407, 8);
+            this.btnLuu.Location = new System.Drawing.Point(337, 8);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(258, 50);
@@ -296,7 +291,7 @@
             this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
             this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblThongBao.Location = new System.Drawing.Point(81, 27);
+            this.lblThongBao.Location = new System.Drawing.Point(11, 27);
             this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblThongBao.Name = "lblThongBao";
             this.lblThongBao.Size = new System.Drawing.Size(322, 19);
@@ -311,7 +306,7 @@
             this.pnlMoveAndTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMoveAndTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlMoveAndTitle.Name = "pnlMoveAndTitle";
-            this.pnlMoveAndTitle.Size = new System.Drawing.Size(667, 55);
+            this.pnlMoveAndTitle.Size = new System.Drawing.Size(597, 55);
             this.pnlMoveAndTitle.TabIndex = 31;
             this.pnlMoveAndTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMoveAndTitle_MouseDown);
             // 
@@ -321,7 +316,7 @@
             this.lblTitle.Font = new System.Drawing.Font("Cascadia Code", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(368, 55);
+            this.lblTitle.Size = new System.Drawing.Size(489, 55);
             this.lblTitle.TabIndex = 30;
             this.lblTitle.Text = "Thêm Cập nhật Sản Phẩm";
             this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
@@ -333,7 +328,7 @@
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlBottom.Location = new System.Drawing.Point(0, 740);
             this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(667, 60);
+            this.pnlBottom.Size = new System.Drawing.Size(597, 60);
             this.pnlBottom.TabIndex = 32;
             // 
             // ThemCapnhatSanPham
@@ -341,13 +336,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(667, 800);
+            this.ClientSize = new System.Drawing.Size(597, 800);
             this.ControlBox = false;
             this.Controls.Add(this.pnlThongTin);
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.pnlMoveAndTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ThemCapnhatSanPham";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnlThongTin.ResumeLayout(false);
             this.pnlThongTin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
@@ -362,13 +358,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblTenSanPham;
         private System.Windows.Forms.Label lblThanhPhan;
         private System.Windows.Forms.Label lblNgaySinh;
         private System.Windows.Forms.Panel pnlThongTin;
         private Custom.TextBox_Custom tbcDanhGia;
         private Custom.TextBox_Custom tbcGia;
-        private Custom.TextBox_Custom tbcTPhan;
+        private Custom.TextBox_Custom tbcThanhPhan;
         private Custom.TextBox_Custom tbcCT;
         private Custom.TextBox_Custom tbcMaSP;
         private Custom.TextBox_Custom tbcTenSP;
