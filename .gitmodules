@@ -4,5 +4,5 @@
 	branch = main
 [submodule "Diagram"]
 	path = Diagram
-	url = https://gitlab.com/TaQuangKhoi/Diagram-ChinChin.git
+	url = https://github.com/Chinh-Chien-Software/Chinh-Chien-Database-Diagram.git
 	branch = main
