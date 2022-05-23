@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using ChinChin.Database;
 using ChinChin.UI;
+using ChinChin.BUS;
+using ChinChin.Classes;
 
 namespace ChinChin.UI
 {
@@ -40,7 +42,7 @@ namespace ChinChin.UI
             this.Hide();
         }
 
-        private void SignInButton_Click(object sender, EventArgs e)
+        private void SignUpButton_Click(object sender, EventArgs e)
         {
             if (tbcPassword.Text != tbcRewritePassword.Text)
             {
@@ -49,9 +51,7 @@ namespace ChinChin.UI
             }
             else if (WorkingDatabase.CheckUsername(tbcUsername.Text))
             {
-<<<<<<< Updated upstream
                 WorkingDatabase.CreateAccount(tbcUsername.Text, tbcPassword.Text, tbcEmail.Text, 1);
-=======
                 TaiKhoanBUS taiKhoanBUS = new TaiKhoanBUS();
                 
                 
@@ -61,7 +61,14 @@ namespace ChinChin.UI
                 int UIMode = 1;
 
                 taiKhoanBUS.ThemTaiKhoanBUS(TenTaiKhoan,MatKhau,UIMode,Email);
->>>>>>> Stashed changes
+                TaiKhoanVO taiKhoanOBJ = new TaiKhoanVO();
+                
+                taiKhoanOBJ.TenTaiKhoan = tbcUsername.Text;
+                taiKhoanOBJ.MatKhau = tbcPassword.Text;
+                taiKhoanOBJ.Email = tbcEmail.Text;
+                taiKhoanOBJ.UIMode = 1;
+
+                taiKhoanBUS.ThemTaiKhoanBUS(taiKhoanOBJ);
                 ChinChin.GUI.Main.TaoQuan taoQuan = new ChinChin.GUI.Main.TaoQuan();
                 taoQuan.Show();
                 this.Hide();

@@ -21,7 +21,7 @@ namespace ChinChin.DAL_DAO
         {
             DataTable dt = new DataTable(); //Khởi tạo một datatable để lưu dữ liệu
             conn = new SqlConnection(connStr); // Khởi tạo 1 kết nối - Cấm vào
-            SqlCommand cm = new SqlCommand(sql, conn); //Tạo các lệnh
+            cm = new SqlCommand(sql, conn); //Tạo các lệnh
             SqlDataAdapter da = new SqlDataAdapter(cm); //Thực thi những lệnh được truyền từ SqlCommand
             da.Fill(dt); //Đổ dữ liệu từ DataAdapter vào Datatable
             return dt;
@@ -56,6 +56,14 @@ namespace ChinChin.DAL_DAO
             //conn.Close();
             return SqlDataReader;
         }
+
+        static public string ReturnFirstCell(string sql)
+        {
+            conn = new SqlConnection(connStr); // Khởi tạo 1 kết nối - Cấm vào
+            conn.Open();
+            cm = new SqlCommand(sql, conn); //Tạo các lệnh
+            string kq = (string)cm.ExecuteScalar();
+            return kq;
+        }
     }
-    
 }

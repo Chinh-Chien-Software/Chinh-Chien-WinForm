@@ -354,7 +354,7 @@
             this.SignInButton.Text = "ĐĂNG KÝ";
             this.SignInButton.TextColor = System.Drawing.Color.White;
             this.SignInButton.UseVisualStyleBackColor = false;
-            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
+            this.SignInButton.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
             // pnlThongBao
             // 

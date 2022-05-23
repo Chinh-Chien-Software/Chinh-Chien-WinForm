@@ -107,14 +107,18 @@
     </Compile>
     <Compile Include="BUS\HoaDonBUS.cs" />
     <Compile Include="BUS\NhanVienBUS.cs" />
+    <Compile Include="BUS\KhoBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="BUS\ThongTinHoaDonBUS.cs" />
+    <Compile Include="BUS\VatLieuBUS.cs" />
     <Compile Include="DAL-DAO\HoaDonDAO.cs" />
     <Compile Include="DAL-DAO\NhanVienDAO.cs" />
+    <Compile Include="DAL-DAO\KhoDAO.cs" />
     <Compile Include="DAL-DAO\QuanDAO.cs" />
     <Compile Include="DAL-DAO\SanPhamDAO.cs" />
     <Compile Include="DAL-DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAL-DAO\ThongTinHoaDonDAO.cs" />
+    <Compile Include="DAL-DAO\VatLieuDAO.cs" />
     <Compile Include="dbConnection.cs" />
     <Compile Include="GUI\BaoCao.cs">
       <SubType>Form</SubType>
@@ -333,6 +337,7 @@
     <Compile Include="GUI\Main\ThongTinTaiKhoan.Designer.cs">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="VO\VatLieuVO.cs" />
     <EmbeddedResource Include="BaoCao\SoLuongVatLieu.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>SoLuongVatLieu.cs</LastGenOutput>

@@ -31,7 +31,6 @@ namespace ChinChin.UI
         {
             this.components = new System.ComponentModel.Container();
             this.panelBackground = new System.Windows.Forms.Panel();
-            this.dgvTaiKhoan = new System.Windows.Forms.DataGridView();
             this.lblNoAccount = new System.Windows.Forms.Label();
             this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
             this.labelThongBao = new System.Windows.Forms.Label();
@@ -49,7 +48,6 @@ namespace ChinChin.UI
             this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan();
             this.taiKhoanTableAdapter = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter();
             this.panelBackground.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTaiKhoan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panelUsername.SuspendLayout();
             this.panelPassword.SuspendLayout();
@@ -60,7 +58,6 @@ namespace ChinChin.UI
             // 
             // panelBackground
             // 
-            this.panelBackground.Controls.Add(this.dgvTaiKhoan);
             this.panelBackground.Controls.Add(this.lblNoAccount);
             this.panelBackground.Controls.Add(this.SignInButton);
             this.panelBackground.Controls.Add(this.labelThongBao);
@@ -76,16 +73,6 @@ namespace ChinChin.UI
             this.panelBackground.Size = new System.Drawing.Size(1134, 611);
             this.panelBackground.TabIndex = 10;
             this.panelBackground.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBackground_Paint);
-            // 
-            // dgvTaiKhoan
-            // 
-            this.dgvTaiKhoan.BackgroundColor = System.Drawing.Color.White;
-            this.dgvTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvTaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTaiKhoan.Location = new System.Drawing.Point(35, 380);
-            this.dgvTaiKhoan.Name = "dgvTaiKhoan";
-            this.dgvTaiKhoan.Size = new System.Drawing.Size(349, 179);
-            this.dgvTaiKhoan.TabIndex = 14;
             // 
             // lblNoAccount
             // 
@@ -304,7 +291,6 @@ namespace ChinChin.UI
             this.Load += new System.EventHandler(this.SignIn_Load);
             this.panelBackground.ResumeLayout(false);
             this.panelBackground.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTaiKhoan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.panelUsername.ResumeLayout(false);
             this.panelUsername.PerformLayout();
@@ -329,7 +315,6 @@ namespace ChinChin.UI
         private System.Windows.Forms.Panel panelPassword;
         private System.Windows.Forms.Label labelUserName;
         private System.Windows.Forms.Label lblNoAccount;
-        private System.Windows.Forms.DataGridView dgvTaiKhoan;
         private ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan quanLyQuanTraSuaDataSetTaiKhoan;
         private ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter taiKhoanTableAdapter;
         private System.Windows.Forms.BindingSource taiKhoanBindingSource;

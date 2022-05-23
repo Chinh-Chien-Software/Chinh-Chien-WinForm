@@ -9,12 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChinChin.DAL_DAO;
 using System.Runtime.InteropServices;
+using ChinChin.BUS;
 
 namespace ChinChin.GUI.formThem
 {
     public partial class ThemCapnhatVatLieu : Form
     {
         int ChucNang;
+        VatLieuBUS vatLieuBUS = new VatLieuBUS();
+        VatLieuDAO vatLieuDAO = new VatLieuDAO();
+        KhoDAO khoDao = new KhoDAO();
+        
         public ThemCapnhatVatLieu()
         {
             InitializeComponent();
@@ -49,13 +54,25 @@ namespace ChinChin.GUI.formThem
             tbcGia.Text = Gia.ToString();
             tbcDVT.Text = DonViTinh;
             ChucNang = 1;
+
+
+
+            KhoBUS khoBus = new KhoBUS();
+
+            cbbKho.Text = khoBus.LayTenKhoBangMaKho(MaKho, MaQuan);
         }
 
         private void ThemVatLieu_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
-            lblThongBao.Visible = false;
             
+            var fKhoHang = (ChinChin.Forms_QuanLy.KhoHang)this.Owner;
+            cbbKho.DataSource = khoDao.LayDanhSachKho(fKhoHang.MaQuan);
+            lblThongBao.Visible = false;
+            cbbKho.DisplayMember = "TenKho";
+            cbbKho.ValueMember = "MaKho";
+            
+            //cbbKho.SelectedValue = MaKho;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -70,8 +87,8 @@ namespace ChinChin.GUI.formThem
             {
                 if (KiemTra())
                 {
-                    ThemDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
-                    Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, fKhoHang.MaQuan);
+                    vatLieuDAO.Them(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
+                    Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, fKhoHang.MaQuan, fKhoHang.MaKho);
                     fKhoHang.RefreshVatLieu(fKhoHang.TenKho);
                     this.Close();
                 }
@@ -80,8 +97,8 @@ namespace ChinChin.GUI.formThem
             {
                 if (KiemTra())
                 {
-                    CapNhatDAL.VatLieu(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
-                    Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, "quanchinhchien");
+                    vatLieuDAO.CapNhat(tbcMaVL.Text, tbcTenVL.Text, tbcNhaCC.Text,
+                    Convert.ToInt32(tbcSL.Text), float.Parse(tbcGia.Text), tbcDVT.Text, fKhoHang.MaQuan, (string)cbbKho.SelectedValue);
                     fKhoHang.RefreshVatLieu(fKhoHang.TenKho);
                     this.Close();
                 }

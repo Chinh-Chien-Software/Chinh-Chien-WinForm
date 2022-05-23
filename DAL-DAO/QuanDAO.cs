@@ -28,7 +28,7 @@ namespace ChinChin.DAL_DAO
             return dt;
         }
 
-        public void createQuan(string MaQuan, string TenQuan)
+        public void ThemQuan(string MaQuan, string TenQuan)
         {
             string sql = "INSERT INTO Quan(MaQuan, TenQuan) VALUES(@MaQuan, @TenQuan)";
             SqlParameter[] parameters = new SqlParameter[2];

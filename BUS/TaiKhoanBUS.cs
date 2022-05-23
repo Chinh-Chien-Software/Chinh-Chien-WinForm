@@ -12,13 +12,12 @@ namespace ChinChin.BUS
     internal class TaiKhoanBUS
     {
         private TaiKhoanDAO taiKhoanDAO;
+        
         public TaiKhoanBUS()
         {
             taiKhoanDAO = new TaiKhoanDAO();
         }
-<<<<<<< Updated upstream
-=======
-        
+      
         public DataTable getAccountBUS(string TenTaiKhoan)
         {
             return taiKhoanDAO.getAccount(TenTaiKhoan);
@@ -38,6 +37,10 @@ namespace ChinChin.BUS
         {
             return taiKhoanDAO.XoaTaiKhoanDAO(TenTaiKhoan);
         }
->>>>>>> Stashed changes
+        
+        public void ThemTaiKhoanBUS(TaiKhoanVO taiKhoanVO)
+        {
+            taiKhoanDAO.ThemTaiKhoanDAO(taiKhoanVO);
+        }
     }
 }
