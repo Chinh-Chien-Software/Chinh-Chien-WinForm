@@ -106,11 +106,13 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="BUS\HoaDonBUS.cs" />
+    <Compile Include="BUS\NhanVienBUS.cs" />
     <Compile Include="BUS\KhoBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="BUS\ThongTinHoaDonBUS.cs" />
     <Compile Include="BUS\VatLieuBUS.cs" />
     <Compile Include="DAL-DAO\HoaDonDAO.cs" />
+    <Compile Include="DAL-DAO\NhanVienDAO.cs" />
     <Compile Include="DAL-DAO\KhoDAO.cs" />
     <Compile Include="DAL-DAO\QuanDAO.cs" />
     <Compile Include="DAL-DAO\SanPhamDAO.cs" />
