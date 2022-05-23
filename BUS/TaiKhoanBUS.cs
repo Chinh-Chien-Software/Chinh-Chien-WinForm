@@ -23,6 +23,10 @@ namespace ChinChin.BUS
             return taiKhoanDAO.getAccount(TenTaiKhoan);
         }
 
+        public bool goTaiKhoan(string MaNhanVien)
+        {
+            return taiKhoanDAO.GoTaiKhoan(MaNhanVien);
+        }
         public bool ThemTaiKhoanBUS(string TenTaiKhoan, string MatKhau, int UIMode, string Email)
         {
             return taiKhoanDAO.ThemTaiKhoanDAO(TenTaiKhoan,MatKhau,UIMode,Email);
