@@ -1,6 +1,6 @@
 [submodule "Database-SQL"]
 	path = Database-SQL
-	url = https://gitlab.com/TaQuangKhoi/Database-ChinChin.git
+	url = https://github.com/Chinh-Chien-Software/Chinh-Chien-Database-SQL.git
 	branch = main
 [submodule "Diagram"]
 	path = Diagram
