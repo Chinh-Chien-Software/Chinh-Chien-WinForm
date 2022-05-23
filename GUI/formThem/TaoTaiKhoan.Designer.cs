@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.pnlBottom = new System.Windows.Forms.Panel();
+            this.btnGo = new ChinChin.Extra.BlackWhiteButton();
+            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
             this.pnlMoveAndTitle = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pnlThongTin = new System.Windows.Forms.Panel();
-            this.lblUserName = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblNgaySinh = new System.Windows.Forms.Label();
-            this.btnGo = new ChinChin.Extra.BlackWhiteButton();
-            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
+            this.labelLoi = new System.Windows.Forms.Label();
             this.tbcMk = new ChinChin.Custom.TextBox_Custom();
             this.tbcEmail = new ChinChin.Custom.TextBox_Custom();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tbcTenTk = new ChinChin.Custom.TextBox_Custom();
-            this.labelLoi = new System.Windows.Forms.Label();
+            this.lblNgaySinh = new System.Windows.Forms.Label();
             this.pnlBottom.SuspendLayout();
             this.pnlMoveAndTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -51,6 +51,7 @@
             // 
             // pnlBottom
             // 
+            this.pnlBottom.BackColor = System.Drawing.Color.White;
             this.pnlBottom.Controls.Add(this.btnGo);
             this.pnlBottom.Controls.Add(this.btnLuu);
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -166,6 +167,7 @@
             this.lblNgaySinh.Text = "Email";
             this.lblNgaySinh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+
             // btnGo
             // 
             this.btnGo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -210,6 +212,88 @@
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
+            // pnlMoveAndTitle
+            // 
+            this.pnlMoveAndTitle.BackColor = System.Drawing.Color.White;
+            this.pnlMoveAndTitle.Controls.Add(this.lblTitle);
+            this.pnlMoveAndTitle.Controls.Add(this.btnExit);
+            this.pnlMoveAndTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMoveAndTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnlMoveAndTitle.Name = "pnlMoveAndTitle";
+            this.pnlMoveAndTitle.Size = new System.Drawing.Size(542, 55);
+            this.pnlMoveAndTitle.TabIndex = 37;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.BackColor = System.Drawing.Color.White;
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblTitle.Font = new System.Drawing.Font("Cascadia Code", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(464, 55);
+            this.lblTitle.TabIndex = 33;
+            this.lblTitle.Text = "Tạo tài khoản";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 46;
+            this.btnExit.Location = new System.Drawing.Point(494, 6);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(46, 48);
+            this.btnExit.TabIndex = 32;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 258);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 31);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Mật khẩu";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pnlThongTin
+            // 
+            this.pnlThongTin.BackColor = System.Drawing.Color.White;
+            this.pnlThongTin.Controls.Add(this.labelLoi);
+            this.pnlThongTin.Controls.Add(this.tbcMk);
+            this.pnlThongTin.Controls.Add(this.label5);
+            this.pnlThongTin.Controls.Add(this.tbcEmail);
+            this.pnlThongTin.Controls.Add(this.lblUserName);
+            this.pnlThongTin.Controls.Add(this.label2);
+            this.pnlThongTin.Controls.Add(this.tbcTenTk);
+            this.pnlThongTin.Controls.Add(this.lblNgaySinh);
+            this.pnlThongTin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlThongTin.Location = new System.Drawing.Point(0, 0);
+            this.pnlThongTin.Name = "pnlThongTin";
+            this.pnlThongTin.Size = new System.Drawing.Size(542, 475);
+            this.pnlThongTin.TabIndex = 36;
+            // 
+            // labelLoi
+            // 
+            this.labelLoi.AutoSize = true;
+            this.labelLoi.BackColor = System.Drawing.Color.Transparent;
+            this.labelLoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLoi.ForeColor = System.Drawing.Color.Red;
+            this.labelLoi.Location = new System.Drawing.Point(14, 366);
+            this.labelLoi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelLoi.Name = "labelLoi";
+            this.labelLoi.Size = new System.Drawing.Size(0, 31);
+            this.labelLoi.TabIndex = 31;
+            this.labelLoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // tbcMk
             // 
             this.tbcMk.ForeColor = System.Drawing.Color.White;
@@ -232,6 +316,32 @@
             this.tbcEmail.TabIndex = 18;
             this.tbcEmail.Tag = "Email";
             // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.BackColor = System.Drawing.Color.Transparent;
+            this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.Location = new System.Drawing.Point(14, 19);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(175, 31);
+            this.lblUserName.TabIndex = 8;
+            this.lblUserName.Text = "Mã nhân viên";
+            this.lblUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(14, 84);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(178, 31);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Tên tài khoản";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // tbcTenTk
             // 
             this.tbcTenTk.ForeColor = System.Drawing.Color.White;
@@ -243,31 +353,31 @@
             this.tbcTenTk.TabIndex = 11;
             this.tbcTenTk.Tag = "Tên tài khoản";
             // 
-            // labelLoi
+            // lblNgaySinh
             // 
-            this.labelLoi.AutoSize = true;
-            this.labelLoi.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLoi.ForeColor = System.Drawing.Color.Red;
-            this.labelLoi.Location = new System.Drawing.Point(14, 366);
-            this.labelLoi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelLoi.Name = "labelLoi";
-            this.labelLoi.Size = new System.Drawing.Size(0, 31);
-            this.labelLoi.TabIndex = 31;
-            this.labelLoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblNgaySinh.AutoSize = true;
+            this.lblNgaySinh.BackColor = System.Drawing.Color.Transparent;
+            this.lblNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgaySinh.Location = new System.Drawing.Point(14, 171);
+            this.lblNgaySinh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNgaySinh.Name = "lblNgaySinh";
+            this.lblNgaySinh.Size = new System.Drawing.Size(81, 31);
+            this.lblNgaySinh.TabIndex = 12;
+            this.lblNgaySinh.Text = "Email";
+            this.lblNgaySinh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TaoTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 475);
+            this.ControlBox = false;
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.pnlMoveAndTitle);
             this.Controls.Add(this.pnlThongTin);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "TaoTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TaoTaiKhoan";
             this.pnlBottom.ResumeLayout(false);
             this.pnlMoveAndTitle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
