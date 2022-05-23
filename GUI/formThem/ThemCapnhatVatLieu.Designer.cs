@@ -330,12 +330,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(534, 741);
+            this.ControlBox = false;
             this.Controls.Add(this.pnlThongTin);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlMoveAndTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ThemCapnhatVatLieu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Thêm Vật Liệu";
             this.Load += new System.EventHandler(this.ThemVatLieu_Load);
             this.pnlThongTin.ResumeLayout(false);
             this.pnlThongTin.PerformLayout();
