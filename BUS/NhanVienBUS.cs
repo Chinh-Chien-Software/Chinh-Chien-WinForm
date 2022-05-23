@@ -32,7 +32,7 @@ namespace ChinChin.BUS
             string SoDienThoai,
             string DiaChi,
             string LoaiNhanVien,
-            string MaQuan, string TenTaiKhoan)
+            string MaQuan)
         {
             return NhanVienDAO.ThemNhanVienDAO(MaNhanVien,
             TenNhanVien,
@@ -43,7 +43,7 @@ namespace ChinChin.BUS
             SoDienThoai,
             DiaChi,
             LoaiNhanVien,
-            MaQuan,TenTaiKhoan);
+            MaQuan);
         }
 
         public bool SuaNhanVienBUS(string MaNhanVien,
@@ -72,6 +72,11 @@ namespace ChinChin.BUS
         public bool XoaNhanVienBUS(string MaNhanVien)
         {
             return NhanVienDAO.XoaNhanVienDAO(MaNhanVien);
+        }
+
+        public bool ThemTaiKhoanBUS(string TenTaiKhoan,string MaNhanVien)
+        {
+            return NhanVienDAO.ThemTaiKhoan(TenTaiKhoan,MaNhanVien);
         }
     }
 }

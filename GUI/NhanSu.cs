@@ -16,16 +16,28 @@ namespace ChinChin.GUI
     public partial class NhanSu : Form
     {
         public string MaQuan;
-        
+        NhanVienBUS nvBus;
+        public string MaNhanVien;
+
         public NhanSu()
         {
             InitializeComponent();
-           
+            nvBus = new NhanVienBUS();
+
         }
 
         private void NhanSu_Load(object sender, EventArgs e)
         {
             RefreshDGV();
+            if (dgvNhanVien.SelectedRows[0].Cells[10].Value.ToString() == "")
+            {
+                btnTaoTK.Text = "Tạo tai khoản";
+            }
+            else
+            {
+                btnTaoTK.Text = "Sửa tài khoản";
+
+            }
         }
 
         public void ibtbRefresh_Click(object sender, EventArgs e)
@@ -35,7 +47,6 @@ namespace ChinChin.GUI
 
         public void RefreshDGV()
         {
-            NhanVienBUS nvBus = new NhanVienBUS();
             var fMainUI = (ChinChin.UI.MainUI)this.Owner;
             MaQuan = fMainUI.MaQuan;
             
@@ -82,11 +93,15 @@ namespace ChinChin.GUI
             dgvNhanVien.Columns[8].HeaderText = "Loại nhân viên";
             dgvNhanVien.Columns[8].DataPropertyName = "LoaiNhanVien";
 
+            dgvNhanVien.Columns[9].Visible = false;
+            dgvNhanVien.Columns[9].HeaderText = "Mã quán";
+            dgvNhanVien.Columns[9].DataPropertyName = "MaQuan";
+
 
             dgvNhanVien.Columns[10].HeaderText = "Tên tài khoản";
             dgvNhanVien.Columns[10].DataPropertyName = "TenTaiKhoan";
 
-            dgvNhanVien.Columns[9].Visible = false;
+           
 
         }
 
@@ -108,7 +123,7 @@ namespace ChinChin.GUI
             string SoDienThoai = dgvNhanVien.SelectedRows[0].Cells[6].Value.ToString();
             string DiaChi = dgvNhanVien.SelectedRows[0].Cells[7].Value.ToString();
             string LoaiNhanVien = dgvNhanVien.SelectedRows[0].Cells[8].Value.ToString();
-            string TaiKhoan = dgvNhanVien.SelectedRows[0].Cells[9].Value.ToString();
+            string TaiKhoan = dgvNhanVien.SelectedRows[0].Cells[10].Value.ToString();
 
             formThem.ThemCapnhatNhanVien ThemCapnhatNhanVien
                 = new formThem.ThemCapnhatNhanVien(
@@ -123,7 +138,7 @@ namespace ChinChin.GUI
         {
             try
             {
-                NhanVienBUS nvBus = new NhanVienBUS();
+                
                 string MaNhanVien = dgvNhanVien.SelectedRows[0].Cells[0].Value.ToString();
                 nvBus.XoaNhanVienBUS(MaNhanVien);
                 RefreshDGV();
@@ -135,6 +150,48 @@ namespace ChinChin.GUI
             }
            
 
+        }
+
+        private void btnTaoTK_Click(object sender, EventArgs e)
+        {
+            if (dgvNhanVien.SelectedRows[0] == null)
+            {
+                return;
+            }
+            string MaNhanVien = dgvNhanVien.SelectedRows[0].Cells[0].Value.ToString();
+            if (dgvNhanVien.SelectedRows[0].Cells[10].Value.ToString() == "")
+            {
+
+                formThem.TaoTaiKhoan f = new formThem.TaoTaiKhoan(MaNhanVien);
+                f.Owner = this;
+                f.Show();
+            }
+            else
+            {
+                TaiKhoanBUS tkBus = new TaiKhoanBUS();
+                DataTable dt = tkBus.getAccountBUS(dgvNhanVien.SelectedRows[0].Cells[10].Value.ToString());
+                string TaiKhoan = dt.Rows[0][0].ToString();
+                string MatKhau = dt.Rows[0][1].ToString();
+                string Email = dt.Rows[0][3].ToString();
+                formThem.TaoTaiKhoan f = new formThem.TaoTaiKhoan(TaiKhoan,MatKhau,Email,MaNhanVien);
+                f.Owner = this;
+                f.Show();
+            }
+           
+        }
+
+        private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            MaNhanVien = dgvNhanVien.SelectedRows[0].Cells[0].Value.ToString();
+            if (dgvNhanVien.SelectedRows[0].Cells[10].Value.ToString() == "")
+            {
+                btnTaoTK.Text = "Tạo tài khoản";
+            }
+            else
+            {
+                btnTaoTK.Text = "Sửa tài khoản";
+
+            }
         }
     }
 }
