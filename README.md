@@ -27,5 +27,8 @@ Xem trong Discussion..
 ___
 I use this tutorials for help: https://www.youtube.com/watch?v=5AsJJl7Bhvc
 
+# Hình ảnh phần mềm
+[Xem tại trang Notion này](https://keiosdichvufacebook.notion.site/H-nh-nh-ph-n-m-m-cf80a95151344f029bbd59be1e3b6aee)
+
 # About
 Tôi bắt đầu Phân tích và thiết kế phần mềm nay khi học **môn Phân tích và Thiết kế hệ thống** của thầy Phương tại trường Đại Học Bà Rịa Vũng Tàu cùng với 3 người bạn học khác là Trần Trọng Tiến, Lê Quốc Khánh và Hoàng Ngọc Trung
