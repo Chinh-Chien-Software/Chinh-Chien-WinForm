@@ -60,7 +60,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 561);
+            this.label4.Location = new System.Drawing.Point(397, 220);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(124, 33);
@@ -86,7 +86,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 358);
+            this.label3.Location = new System.Drawing.Point(397, 124);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 33);
@@ -99,7 +99,7 @@
             this.lblTenSanPham.AutoSize = true;
             this.lblTenSanPham.BackColor = System.Drawing.Color.Transparent;
             this.lblTenSanPham.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenSanPham.Location = new System.Drawing.Point(14, 97);
+            this.lblTenSanPham.Location = new System.Drawing.Point(397, 17);
             this.lblTenSanPham.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTenSanPham.Name = "lblTenSanPham";
             this.lblTenSanPham.Size = new System.Drawing.Size(189, 33);
@@ -112,7 +112,7 @@
             this.lblThanhPhan.AutoSize = true;
             this.lblThanhPhan.BackColor = System.Drawing.Color.Transparent;
             this.lblThanhPhan.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThanhPhan.Location = new System.Drawing.Point(14, 273);
+            this.lblThanhPhan.Location = new System.Drawing.Point(14, 335);
             this.lblThanhPhan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblThanhPhan.Name = "lblThanhPhan";
             this.lblThanhPhan.Size = new System.Drawing.Size(161, 33);
@@ -125,7 +125,7 @@
             this.lblNgaySinh.AutoSize = true;
             this.lblNgaySinh.BackColor = System.Drawing.Color.Transparent;
             this.lblNgaySinh.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgaySinh.Location = new System.Drawing.Point(14, 188);
+            this.lblNgaySinh.Location = new System.Drawing.Point(14, 124);
             this.lblNgaySinh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNgaySinh.Name = "lblNgaySinh";
             this.lblNgaySinh.Size = new System.Drawing.Size(143, 33);
@@ -152,7 +152,7 @@
             this.pnlThongTin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlThongTin.Location = new System.Drawing.Point(0, 55);
             this.pnlThongTin.Name = "pnlThongTin";
-            this.pnlThongTin.Size = new System.Drawing.Size(597, 685);
+            this.pnlThongTin.Size = new System.Drawing.Size(904, 685);
             this.pnlThongTin.TabIndex = 26;
             // 
             // cbbLoai
@@ -166,7 +166,7 @@
             "Trà sữa",
             "Cà phê",
             "Topping"});
-            this.cbbLoai.Location = new System.Drawing.Point(20, 496);
+            this.cbbLoai.Location = new System.Drawing.Point(20, 256);
             this.cbbLoai.Name = "cbbLoai";
             this.cbbLoai.Size = new System.Drawing.Size(362, 36);
             this.cbbLoai.TabIndex = 23;
@@ -177,7 +177,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(14, 460);
+            this.label5.Location = new System.Drawing.Point(14, 220);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 33);
@@ -188,7 +188,7 @@
             // tbcDanhGia
             // 
             this.tbcDanhGia.ForeColor = System.Drawing.Color.White;
-            this.tbcDanhGia.Location = new System.Drawing.Point(20, 600);
+            this.tbcDanhGia.Location = new System.Drawing.Point(403, 259);
             this.tbcDanhGia.Margin = new System.Windows.Forms.Padding(6);
             this.tbcDanhGia.Name = "tbcDanhGia";
             this.tbcDanhGia.PasswordChar = '\0';
@@ -198,7 +198,7 @@
             // tbcGia
             // 
             this.tbcGia.ForeColor = System.Drawing.Color.White;
-            this.tbcGia.Location = new System.Drawing.Point(20, 397);
+            this.tbcGia.Location = new System.Drawing.Point(403, 163);
             this.tbcGia.Margin = new System.Windows.Forms.Padding(6);
             this.tbcGia.Name = "tbcGia";
             this.tbcGia.PasswordChar = '\0';
@@ -208,7 +208,7 @@
             // tbcThanhPhan
             // 
             this.tbcThanhPhan.ForeColor = System.Drawing.Color.White;
-            this.tbcThanhPhan.Location = new System.Drawing.Point(20, 312);
+            this.tbcThanhPhan.Location = new System.Drawing.Point(20, 374);
             this.tbcThanhPhan.Margin = new System.Windows.Forms.Padding(6);
             this.tbcThanhPhan.Name = "tbcThanhPhan";
             this.tbcThanhPhan.PasswordChar = '\0';
@@ -218,7 +218,7 @@
             // tbcCT
             // 
             this.tbcCT.ForeColor = System.Drawing.Color.White;
-            this.tbcCT.Location = new System.Drawing.Point(20, 227);
+            this.tbcCT.Location = new System.Drawing.Point(20, 163);
             this.tbcCT.Margin = new System.Windows.Forms.Padding(6);
             this.tbcCT.Name = "tbcCT";
             this.tbcCT.PasswordChar = '\0';
@@ -239,7 +239,7 @@
             // tbcTenSP
             // 
             this.tbcTenSP.ForeColor = System.Drawing.Color.White;
-            this.tbcTenSP.Location = new System.Drawing.Point(20, 136);
+            this.tbcTenSP.Location = new System.Drawing.Point(403, 56);
             this.tbcTenSP.Margin = new System.Windows.Forms.Padding(6);
             this.tbcTenSP.Name = "tbcTenSP";
             this.tbcTenSP.PasswordChar = '\0';
@@ -255,7 +255,7 @@
             this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(549, 2);
+            this.btnExit.Location = new System.Drawing.Point(856, 2);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(46, 48);
@@ -275,7 +275,7 @@
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(337, 8);
+            this.btnLuu.Location = new System.Drawing.Point(644, 8);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(258, 50);
@@ -291,7 +291,7 @@
             this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
             this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblThongBao.Location = new System.Drawing.Point(11, 27);
+            this.lblThongBao.Location = new System.Drawing.Point(318, 27);
             this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblThongBao.Name = "lblThongBao";
             this.lblThongBao.Size = new System.Drawing.Size(322, 19);
@@ -306,7 +306,7 @@
             this.pnlMoveAndTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMoveAndTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlMoveAndTitle.Name = "pnlMoveAndTitle";
-            this.pnlMoveAndTitle.Size = new System.Drawing.Size(597, 55);
+            this.pnlMoveAndTitle.Size = new System.Drawing.Size(904, 55);
             this.pnlMoveAndTitle.TabIndex = 31;
             this.pnlMoveAndTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMoveAndTitle_MouseDown);
             // 
@@ -328,7 +328,7 @@
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlBottom.Location = new System.Drawing.Point(0, 740);
             this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(597, 60);
+            this.pnlBottom.Size = new System.Drawing.Size(904, 60);
             this.pnlBottom.TabIndex = 32;
             // 
             // ThemCapnhatSanPham
@@ -336,7 +336,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(597, 800);
+            this.ClientSize = new System.Drawing.Size(904, 800);
             this.ControlBox = false;
             this.Controls.Add(this.pnlThongTin);
             this.Controls.Add(this.pnlBottom);

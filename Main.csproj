@@ -99,24 +99,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaoCao\SoLuongVatLieu.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SoLuongVatLieu.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="BUS\HoaDonBUS.cs" />
     <Compile Include="BUS\NhanVienBUS.cs" />
     <Compile Include="BUS\KhoBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="BUS\ThongTinHoaDonBUS.cs" />
     <Compile Include="BUS\VatLieuBUS.cs" />
-    <Compile Include="CrystalReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="DAL-DAO\HoaDonDAO.cs" />
     <Compile Include="DAL-DAO\NhanVienDAO.cs" />
     <Compile Include="DAL-DAO\KhoDAO.cs" />
@@ -350,14 +338,6 @@
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="VO\VatLieuVO.cs" />
-    <EmbeddedResource Include="BaoCao\SoLuongVatLieu.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>SoLuongVatLieu.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Custom\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
