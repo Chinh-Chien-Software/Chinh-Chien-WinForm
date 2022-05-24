@@ -29,26 +29,14 @@ namespace ChinChin.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.cRV = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.SoLuongVatLieu1 = new ChinChin.BaoCao.SoLuongVatLieu();
             this.SuspendLayout();
-            // 
-            // cRV
-            // 
-            this.cRV.ActiveViewIndex = -1;
-            this.cRV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cRV.Cursor = System.Windows.Forms.Cursors.Default;
-            this.cRV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cRV.Location = new System.Drawing.Point(0, 0);
-            this.cRV.Name = "cRV";
-            this.cRV.Size = new System.Drawing.Size(800, 450);
-            this.cRV.TabIndex = 0;
             // 
             // BaoCao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cRV);
             this.Name = "BaoCao";
             this.Text = "BaoCao";
             this.ResumeLayout(false);
@@ -56,7 +44,6 @@ namespace ChinChin.GUI
         }
 
         #endregion
-
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer cRV;
+        private ChinChin.BaoCao.SoLuongVatLieu SoLuongVatLieu1;
     }
 }
