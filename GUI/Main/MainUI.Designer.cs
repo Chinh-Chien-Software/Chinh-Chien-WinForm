@@ -30,7 +30,8 @@
         {
             this.pnlChildForm = new System.Windows.Forms.Panel();
             this.pnlBorderOfForm = new System.Windows.Forms.Panel();
-            this.panelLeftSidebar = new System.Windows.Forms.Panel();
+            this.pnlLeftSidebar = new System.Windows.Forms.Panel();
+            this.ibtnBaoCao = new FontAwesome.Sharp.IconButton();
             this.ibtnNhanSu = new FontAwesome.Sharp.IconButton();
             this.ibtnThucDon = new FontAwesome.Sharp.IconButton();
             this.ibtnVatTu = new FontAwesome.Sharp.IconButton();
@@ -51,9 +52,8 @@
             this.btnMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
-            this.ibtnBaoCao = new FontAwesome.Sharp.IconButton();
             this.pnlBorderOfForm.SuspendLayout();
-            this.panelLeftSidebar.SuspendLayout();
+            this.pnlLeftSidebar.SuspendLayout();
             this.pnlQuan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ipbThemQuan)).BeginInit();
             this.panelTittleBar.SuspendLayout();
@@ -72,39 +72,61 @@
             this.pnlChildForm.Location = new System.Drawing.Point(376, 70);
             this.pnlChildForm.Margin = new System.Windows.Forms.Padding(2);
             this.pnlChildForm.Name = "pnlChildForm";
-            this.pnlChildForm.Size = new System.Drawing.Size(607, 691);
+            this.pnlChildForm.Size = new System.Drawing.Size(607, 730);
             this.pnlChildForm.TabIndex = 14;
             // 
             // pnlBorderOfForm
             // 
             this.pnlBorderOfForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlBorderOfForm.Controls.Add(this.pnlChildForm);
-            this.pnlBorderOfForm.Controls.Add(this.panelLeftSidebar);
+            this.pnlBorderOfForm.Controls.Add(this.pnlLeftSidebar);
             this.pnlBorderOfForm.Controls.Add(this.panelTittleBar);
             this.pnlBorderOfForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBorderOfForm.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.pnlBorderOfForm.Location = new System.Drawing.Point(0, 0);
             this.pnlBorderOfForm.Name = "pnlBorderOfForm";
-            this.pnlBorderOfForm.Size = new System.Drawing.Size(985, 763);
+            this.pnlBorderOfForm.Size = new System.Drawing.Size(985, 802);
             this.pnlBorderOfForm.TabIndex = 0;
             // 
-            // panelLeftSidebar
+            // pnlLeftSidebar
             // 
-            this.panelLeftSidebar.BackColor = System.Drawing.Color.White;
-            this.panelLeftSidebar.Controls.Add(this.ibtnBaoCao);
-            this.panelLeftSidebar.Controls.Add(this.ibtnNhanSu);
-            this.panelLeftSidebar.Controls.Add(this.ibtnThucDon);
-            this.panelLeftSidebar.Controls.Add(this.ibtnVatTu);
-            this.panelLeftSidebar.Controls.Add(this.ibtnNhanDon);
-            this.panelLeftSidebar.Controls.Add(this.ibtnThongKe);
-            this.panelLeftSidebar.Controls.Add(this.pnlQuan);
-            this.panelLeftSidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeftSidebar.ForeColor = System.Drawing.Color.Coral;
-            this.panelLeftSidebar.Location = new System.Drawing.Point(0, 70);
-            this.panelLeftSidebar.Margin = new System.Windows.Forms.Padding(2);
-            this.panelLeftSidebar.Name = "panelLeftSidebar";
-            this.panelLeftSidebar.Size = new System.Drawing.Size(376, 691);
-            this.panelLeftSidebar.TabIndex = 17;
+            this.pnlLeftSidebar.BackColor = System.Drawing.Color.White;
+            this.pnlLeftSidebar.Controls.Add(this.ibtnBaoCao);
+            this.pnlLeftSidebar.Controls.Add(this.ibtnNhanSu);
+            this.pnlLeftSidebar.Controls.Add(this.ibtnThucDon);
+            this.pnlLeftSidebar.Controls.Add(this.ibtnVatTu);
+            this.pnlLeftSidebar.Controls.Add(this.ibtnNhanDon);
+            this.pnlLeftSidebar.Controls.Add(this.ibtnThongKe);
+            this.pnlLeftSidebar.Controls.Add(this.pnlQuan);
+            this.pnlLeftSidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlLeftSidebar.ForeColor = System.Drawing.Color.Coral;
+            this.pnlLeftSidebar.Location = new System.Drawing.Point(0, 70);
+            this.pnlLeftSidebar.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlLeftSidebar.Name = "pnlLeftSidebar";
+            this.pnlLeftSidebar.Size = new System.Drawing.Size(376, 730);
+            this.pnlLeftSidebar.TabIndex = 17;
+            // 
+            // ibtnBaoCao
+            // 
+            this.ibtnBaoCao.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtnBaoCao.FlatAppearance.BorderSize = 0;
+            this.ibtnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtnBaoCao.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtnBaoCao.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ibtnBaoCao.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtnBaoCao.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.ibtnBaoCao.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtnBaoCao.Location = new System.Drawing.Point(0, 571);
+            this.ibtnBaoCao.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnBaoCao.Name = "ibtnBaoCao";
+            this.ibtnBaoCao.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.ibtnBaoCao.Size = new System.Drawing.Size(376, 102);
+            this.ibtnBaoCao.TabIndex = 14;
+            this.ibtnBaoCao.Text = "BÁO CÁO";
+            this.ibtnBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtnBaoCao.UseVisualStyleBackColor = true;
+            this.ibtnBaoCao.Click += new System.EventHandler(this.ibtnBaoCao_Click);
             // 
             // ibtnNhanSu
             // 
@@ -411,39 +433,17 @@
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // ibtnBaoCao
-            // 
-            this.ibtnBaoCao.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtnBaoCao.FlatAppearance.BorderSize = 0;
-            this.ibtnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtnBaoCao.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtnBaoCao.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtnBaoCao.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.ibtnBaoCao.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.ibtnBaoCao.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtnBaoCao.Location = new System.Drawing.Point(0, 571);
-            this.ibtnBaoCao.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtnBaoCao.Name = "ibtnBaoCao";
-            this.ibtnBaoCao.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnBaoCao.Size = new System.Drawing.Size(376, 102);
-            this.ibtnBaoCao.TabIndex = 14;
-            this.ibtnBaoCao.Text = "BÁO CÁO";
-            this.ibtnBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtnBaoCao.UseVisualStyleBackColor = true;
-            this.ibtnBaoCao.Click += new System.EventHandler(this.ibtnBaoCao_Click);
-            // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 763);
+            this.ClientSize = new System.Drawing.Size(985, 802);
             this.Controls.Add(this.pnlBorderOfForm);
             this.Name = "MainUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.MainUI_Load);
             this.pnlBorderOfForm.ResumeLayout(false);
-            this.panelLeftSidebar.ResumeLayout(false);
+            this.pnlLeftSidebar.ResumeLayout(false);
             this.pnlQuan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ipbThemQuan)).EndInit();
             this.panelTittleBar.ResumeLayout(false);
@@ -464,7 +464,7 @@
 
         private System.Windows.Forms.Panel pnlChildForm;
         private System.Windows.Forms.Panel pnlBorderOfForm;
-        private System.Windows.Forms.Panel panelLeftSidebar;
+        private System.Windows.Forms.Panel pnlLeftSidebar;
         private FontAwesome.Sharp.IconButton ibtnVatTu;
         private FontAwesome.Sharp.IconButton ibtnNhanDon;
         private FontAwesome.Sharp.IconButton ibtnThongKe;
