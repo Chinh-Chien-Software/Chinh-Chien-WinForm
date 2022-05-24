@@ -52,6 +52,8 @@
             this.btnMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
+            this.pnlLineSidebar = new System.Windows.Forms.Panel();
+            this.pnlLineTop = new System.Windows.Forms.Panel();
             this.pnlBorderOfForm.SuspendLayout();
             this.pnlLeftSidebar.SuspendLayout();
             this.pnlQuan.SuspendLayout();
@@ -98,6 +100,7 @@
             this.pnlLeftSidebar.Controls.Add(this.ibtnNhanDon);
             this.pnlLeftSidebar.Controls.Add(this.ibtnThongKe);
             this.pnlLeftSidebar.Controls.Add(this.pnlQuan);
+            this.pnlLeftSidebar.Controls.Add(this.pnlLineSidebar);
             this.pnlLeftSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeftSidebar.ForeColor = System.Drawing.Color.Coral;
             this.pnlLeftSidebar.Location = new System.Drawing.Point(0, 70);
@@ -121,7 +124,7 @@
             this.ibtnBaoCao.Margin = new System.Windows.Forms.Padding(2);
             this.ibtnBaoCao.Name = "ibtnBaoCao";
             this.ibtnBaoCao.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnBaoCao.Size = new System.Drawing.Size(376, 102);
+            this.ibtnBaoCao.Size = new System.Drawing.Size(375, 102);
             this.ibtnBaoCao.TabIndex = 14;
             this.ibtnBaoCao.Text = "BÁO CÁO";
             this.ibtnBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -143,7 +146,7 @@
             this.ibtnNhanSu.Margin = new System.Windows.Forms.Padding(2);
             this.ibtnNhanSu.Name = "ibtnNhanSu";
             this.ibtnNhanSu.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnNhanSu.Size = new System.Drawing.Size(376, 102);
+            this.ibtnNhanSu.Size = new System.Drawing.Size(375, 102);
             this.ibtnNhanSu.TabIndex = 13;
             this.ibtnNhanSu.Text = "NHÂN SỰ";
             this.ibtnNhanSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -165,7 +168,7 @@
             this.ibtnThucDon.Margin = new System.Windows.Forms.Padding(2);
             this.ibtnThucDon.Name = "ibtnThucDon";
             this.ibtnThucDon.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnThucDon.Size = new System.Drawing.Size(376, 102);
+            this.ibtnThucDon.Size = new System.Drawing.Size(375, 102);
             this.ibtnThucDon.TabIndex = 11;
             this.ibtnThucDon.Text = "THỰC ĐƠN";
             this.ibtnThucDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -187,7 +190,7 @@
             this.ibtnVatTu.Margin = new System.Windows.Forms.Padding(2);
             this.ibtnVatTu.Name = "ibtnVatTu";
             this.ibtnVatTu.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnVatTu.Size = new System.Drawing.Size(376, 102);
+            this.ibtnVatTu.Size = new System.Drawing.Size(375, 102);
             this.ibtnVatTu.TabIndex = 10;
             this.ibtnVatTu.Text = "VẬT TƯ";
             this.ibtnVatTu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -209,7 +212,7 @@
             this.ibtnNhanDon.Margin = new System.Windows.Forms.Padding(2);
             this.ibtnNhanDon.Name = "ibtnNhanDon";
             this.ibtnNhanDon.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnNhanDon.Size = new System.Drawing.Size(376, 102);
+            this.ibtnNhanDon.Size = new System.Drawing.Size(375, 102);
             this.ibtnNhanDon.TabIndex = 9;
             this.ibtnNhanDon.Text = "NHẬN ĐƠN";
             this.ibtnNhanDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -231,7 +234,7 @@
             this.ibtnThongKe.Margin = new System.Windows.Forms.Padding(2);
             this.ibtnThongKe.Name = "ibtnThongKe";
             this.ibtnThongKe.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnThongKe.Size = new System.Drawing.Size(376, 100);
+            this.ibtnThongKe.Size = new System.Drawing.Size(375, 100);
             this.ibtnThongKe.TabIndex = 7;
             this.ibtnThongKe.Text = "THỐNG KÊ";
             this.ibtnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -247,7 +250,7 @@
             this.pnlQuan.Location = new System.Drawing.Point(0, 0);
             this.pnlQuan.Margin = new System.Windows.Forms.Padding(2);
             this.pnlQuan.Name = "pnlQuan";
-            this.pnlQuan.Size = new System.Drawing.Size(376, 63);
+            this.pnlQuan.Size = new System.Drawing.Size(375, 63);
             this.pnlQuan.TabIndex = 0;
             // 
             // ipbThemQuan
@@ -259,7 +262,7 @@
             this.ipbThemQuan.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.ipbThemQuan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ipbThemQuan.IconSize = 50;
-            this.ipbThemQuan.Location = new System.Drawing.Point(233, 11);
+            this.ipbThemQuan.Location = new System.Drawing.Point(232, 11);
             this.ipbThemQuan.Margin = new System.Windows.Forms.Padding(2);
             this.ipbThemQuan.Name = "ipbThemQuan";
             this.ipbThemQuan.Size = new System.Drawing.Size(50, 50);
@@ -285,6 +288,7 @@
             this.panelTittleBar.Controls.Add(this.pnlTaiKhoanVaButtons);
             this.panelTittleBar.Controls.Add(this.iconCurrentChildForm);
             this.panelTittleBar.Controls.Add(this.labelTittleChildForm);
+            this.panelTittleBar.Controls.Add(this.pnlLineTop);
             this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTittleBar.Location = new System.Drawing.Point(0, 0);
             this.panelTittleBar.Margin = new System.Windows.Forms.Padding(2);
@@ -302,7 +306,7 @@
             this.pnlTaiKhoanVaButtons.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlTaiKhoanVaButtons.Location = new System.Drawing.Point(737, 0);
             this.pnlTaiKhoanVaButtons.Name = "pnlTaiKhoanVaButtons";
-            this.pnlTaiKhoanVaButtons.Size = new System.Drawing.Size(246, 70);
+            this.pnlTaiKhoanVaButtons.Size = new System.Drawing.Size(246, 69);
             this.pnlTaiKhoanVaButtons.TabIndex = 17;
             // 
             // mnsTaiKhoan
@@ -310,9 +314,9 @@
             this.mnsTaiKhoan.Dock = System.Windows.Forms.DockStyle.None;
             this.mnsTaiKhoan.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnsiIconTaiKhoan});
-            this.mnsTaiKhoan.Location = new System.Drawing.Point(0, 1);
+            this.mnsTaiKhoan.Location = new System.Drawing.Point(0, 0);
             this.mnsTaiKhoan.Name = "mnsTaiKhoan";
-            this.mnsTaiKhoan.Size = new System.Drawing.Size(77, 70);
+            this.mnsTaiKhoan.Size = new System.Drawing.Size(197, 70);
             this.mnsTaiKhoan.TabIndex = 16;
             this.mnsTaiKhoan.Text = "msTaiKhoan";
             // 
@@ -336,6 +340,7 @@
             // 
             // mnsiThongTinTaiKhoan
             // 
+            this.mnsiThongTinTaiKhoan.BackColor = System.Drawing.Color.White;
             this.mnsiThongTinTaiKhoan.Name = "mnsiThongTinTaiKhoan";
             this.mnsiThongTinTaiKhoan.Size = new System.Drawing.Size(181, 22);
             this.mnsiThongTinTaiKhoan.Text = "Thông Tin Tài Khoản";
@@ -343,6 +348,7 @@
             // 
             // mnsiCaiDat
             // 
+            this.mnsiCaiDat.BackColor = System.Drawing.Color.White;
             this.mnsiCaiDat.Name = "mnsiCaiDat";
             this.mnsiCaiDat.Size = new System.Drawing.Size(181, 22);
             this.mnsiCaiDat.Text = "Cài đặt";
@@ -350,6 +356,7 @@
             // 
             // mnsiDangXuat
             // 
+            this.mnsiDangXuat.BackColor = System.Drawing.Color.White;
             this.mnsiDangXuat.Name = "mnsiDangXuat";
             this.mnsiDangXuat.Size = new System.Drawing.Size(181, 22);
             this.mnsiDangXuat.Text = "Đăng Xuất";
@@ -433,6 +440,24 @@
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pnlLineSidebar
+            // 
+            this.pnlLineSidebar.BackColor = System.Drawing.Color.Black;
+            this.pnlLineSidebar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlLineSidebar.Location = new System.Drawing.Point(375, 0);
+            this.pnlLineSidebar.Name = "pnlLineSidebar";
+            this.pnlLineSidebar.Size = new System.Drawing.Size(1, 730);
+            this.pnlLineSidebar.TabIndex = 15;
+            // 
+            // pnlLineTop
+            // 
+            this.pnlLineTop.BackColor = System.Drawing.Color.Black;
+            this.pnlLineTop.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlLineTop.Location = new System.Drawing.Point(0, 69);
+            this.pnlLineTop.Name = "pnlLineTop";
+            this.pnlLineTop.Size = new System.Drawing.Size(983, 1);
+            this.pnlLineTop.TabIndex = 18;
+            // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -486,5 +511,7 @@
         private System.Windows.Forms.ComboBox cbbChuyenQuan;
         private FontAwesome.Sharp.IconPictureBox ipbThemQuan;
         private FontAwesome.Sharp.IconButton ibtnBaoCao;
+        private System.Windows.Forms.Panel pnlLineSidebar;
+        private System.Windows.Forms.Panel pnlLineTop;
     }
 }
