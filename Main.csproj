@@ -427,7 +427,7 @@
     <EmbeddedResource Include="GUI\NhanSu.resx">
       <DependentUpon>NhanSu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="BaoCao\BaoCaoOriginal.rdlc" />
     <EmbeddedResource Include="GUI\Main\MainUI.resx">
       <DependentUpon>MainUI.cs</DependentUpon>
     </EmbeddedResource>
