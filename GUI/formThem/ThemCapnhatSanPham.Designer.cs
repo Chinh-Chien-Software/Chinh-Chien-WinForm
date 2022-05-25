@@ -49,10 +49,12 @@
             this.pnlMoveAndTitle = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlBottom = new System.Windows.Forms.Panel();
+            this.dgvThanhPhan = new System.Windows.Forms.DataGridView();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.pnlMoveAndTitle.SuspendLayout();
             this.pnlBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThanhPhan)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -135,6 +137,7 @@
             // 
             // pnlThongTin
             // 
+            this.pnlThongTin.Controls.Add(this.dgvThanhPhan);
             this.pnlThongTin.Controls.Add(this.cbbLoai);
             this.pnlThongTin.Controls.Add(this.label5);
             this.pnlThongTin.Controls.Add(this.tbcDanhGia);
@@ -152,7 +155,7 @@
             this.pnlThongTin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlThongTin.Location = new System.Drawing.Point(0, 55);
             this.pnlThongTin.Name = "pnlThongTin";
-            this.pnlThongTin.Size = new System.Drawing.Size(904, 685);
+            this.pnlThongTin.Size = new System.Drawing.Size(785, 685);
             this.pnlThongTin.TabIndex = 26;
             // 
             // cbbLoai
@@ -255,7 +258,7 @@
             this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 46;
-            this.btnExit.Location = new System.Drawing.Point(856, 2);
+            this.btnExit.Location = new System.Drawing.Point(737, 2);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(46, 48);
@@ -275,7 +278,7 @@
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(644, 8);
+            this.btnLuu.Location = new System.Drawing.Point(525, 8);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(258, 50);
@@ -291,7 +294,7 @@
             this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
             this.lblThongBao.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThongBao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblThongBao.Location = new System.Drawing.Point(318, 27);
+            this.lblThongBao.Location = new System.Drawing.Point(199, 27);
             this.lblThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblThongBao.Name = "lblThongBao";
             this.lblThongBao.Size = new System.Drawing.Size(322, 19);
@@ -306,7 +309,7 @@
             this.pnlMoveAndTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMoveAndTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlMoveAndTitle.Name = "pnlMoveAndTitle";
-            this.pnlMoveAndTitle.Size = new System.Drawing.Size(904, 55);
+            this.pnlMoveAndTitle.Size = new System.Drawing.Size(785, 55);
             this.pnlMoveAndTitle.TabIndex = 31;
             this.pnlMoveAndTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMoveAndTitle_MouseDown);
             // 
@@ -328,15 +331,27 @@
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlBottom.Location = new System.Drawing.Point(0, 740);
             this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(904, 60);
+            this.pnlBottom.Size = new System.Drawing.Size(785, 60);
             this.pnlBottom.TabIndex = 32;
+            // 
+            // dgvThanhPhan
+            // 
+            this.dgvThanhPhan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvThanhPhan.BackgroundColor = System.Drawing.Color.White;
+            this.dgvThanhPhan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvThanhPhan.Location = new System.Drawing.Point(8, 442);
+            this.dgvThanhPhan.Name = "dgvThanhPhan";
+            this.dgvThanhPhan.Size = new System.Drawing.Size(765, 237);
+            this.dgvThanhPhan.TabIndex = 24;
             // 
             // ThemCapnhatSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(904, 800);
+            this.ClientSize = new System.Drawing.Size(785, 800);
             this.ControlBox = false;
             this.Controls.Add(this.pnlThongTin);
             this.Controls.Add(this.pnlBottom);
@@ -349,6 +364,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.pnlMoveAndTitle.ResumeLayout(false);
             this.pnlBottom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThanhPhan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -376,5 +392,6 @@
         private System.Windows.Forms.Panel pnlMoveAndTitle;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel pnlBottom;
+        private System.Windows.Forms.DataGridView dgvThanhPhan;
     }
 }
