@@ -21,5 +21,10 @@ namespace ChinChin.GUI.formThem
         {
             Application.Exit();
         }
+
+        private void btnTaoVaLuu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
