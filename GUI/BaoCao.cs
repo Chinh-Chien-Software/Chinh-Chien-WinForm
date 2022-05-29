@@ -16,5 +16,11 @@ namespace ChinChin.GUI
         {
             InitializeComponent();
         }
+
+        private void BaoCao_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }
