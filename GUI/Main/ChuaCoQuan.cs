@@ -15,7 +15,6 @@ namespace ChinChin.GUI.Main
         public ChuaCoQuan()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
