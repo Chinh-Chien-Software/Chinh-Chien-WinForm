@@ -32,9 +32,10 @@
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblMaQuan = new System.Windows.Forms.Label();
-            this.tbcMaQuan = new ChinChin.Custom.TextBox_Custom();
             this.lblTenQuan = new System.Windows.Forms.Label();
+            this.tbcMaQuan = new ChinChin.Custom.TextBox_Custom();
             this.tbcTenQuan = new ChinChin.Custom.TextBox_Custom();
+            this.btnTao = new ChinChin.Extra.BlackWhiteButton();
             this.pnlMoveAndTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
@@ -89,17 +90,6 @@
             this.lblMaQuan.Text = "Mã quán";
             this.lblMaQuan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // tbcMaQuan
-            // 
-            this.tbcMaQuan.BackColor = System.Drawing.Color.White;
-            this.tbcMaQuan.ForeColor = System.Drawing.Color.White;
-            this.tbcMaQuan.Location = new System.Drawing.Point(17, 108);
-            this.tbcMaQuan.Margin = new System.Windows.Forms.Padding(4);
-            this.tbcMaQuan.Name = "tbcMaQuan";
-            this.tbcMaQuan.PasswordChar = '\0';
-            this.tbcMaQuan.Size = new System.Drawing.Size(362, 40);
-            this.tbcMaQuan.TabIndex = 34;
-            // 
             // lblTenQuan
             // 
             this.lblTenQuan.AutoSize = true;
@@ -113,6 +103,17 @@
             this.lblTenQuan.Text = "Tên hiển thị";
             this.lblTenQuan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // tbcMaQuan
+            // 
+            this.tbcMaQuan.BackColor = System.Drawing.Color.White;
+            this.tbcMaQuan.ForeColor = System.Drawing.Color.White;
+            this.tbcMaQuan.Location = new System.Drawing.Point(17, 108);
+            this.tbcMaQuan.Margin = new System.Windows.Forms.Padding(4);
+            this.tbcMaQuan.Name = "tbcMaQuan";
+            this.tbcMaQuan.PasswordChar = '\0';
+            this.tbcMaQuan.Size = new System.Drawing.Size(362, 40);
+            this.tbcMaQuan.TabIndex = 34;
+            // 
             // tbcTenQuan
             // 
             this.tbcTenQuan.ForeColor = System.Drawing.Color.White;
@@ -123,13 +124,36 @@
             this.tbcTenQuan.Size = new System.Drawing.Size(362, 40);
             this.tbcTenQuan.TabIndex = 36;
             // 
+            // btnTao
+            // 
+            this.btnTao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnTao.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.btnTao.BorderColor = System.Drawing.Color.Black;
+            this.btnTao.BorderRadius = 0;
+            this.btnTao.BorderSize = 0;
+            this.btnTao.FlatAppearance.BorderSize = 0;
+            this.btnTao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTao.Font = new System.Drawing.Font("Inter", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTao.ForeColor = System.Drawing.Color.White;
+            this.btnTao.Location = new System.Drawing.Point(217, 252);
+            this.btnTao.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTao.Name = "btnTao";
+            this.btnTao.Size = new System.Drawing.Size(162, 50);
+            this.btnTao.TabIndex = 37;
+            this.btnTao.Text = "Tạo và Lưu";
+            this.btnTao.TextColor = System.Drawing.Color.White;
+            this.btnTao.UseVisualStyleBackColor = false;
+            this.btnTao.Click += new System.EventHandler(this.btnTaoVaLuu_Click);
+            // 
             // ThemCapnhatQuan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(416, 261);
+            this.ClientSize = new System.Drawing.Size(416, 328);
             this.ControlBox = false;
+            this.Controls.Add(this.btnTao);
             this.Controls.Add(this.lblMaQuan);
             this.Controls.Add(this.tbcMaQuan);
             this.Controls.Add(this.lblTenQuan);
@@ -153,5 +177,6 @@
         private Custom.TextBox_Custom tbcMaQuan;
         private System.Windows.Forms.Label lblTenQuan;
         private Custom.TextBox_Custom tbcTenQuan;
+        private Extra.BlackWhiteButton btnTao;
     }
 }
