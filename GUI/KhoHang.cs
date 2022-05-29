@@ -92,6 +92,8 @@ namespace ChinChin.Forms_QuanLy
             dgvVatLieu.Columns["Gia"].HeaderText = "Đơn giá";
             
             dgvVatLieu.Columns["DonViTinh"].HeaderText = "Đơn vị tính";
+            
+            // Mình hạn chế số cột trong Query nên các dòng ở dưới không tác dụng nữa
             //dgvVatLieu.Columns["MaQuan"].Visible = false;
             //dgvVatLieu.Columns["MaKho"].Visible = false;
         }
