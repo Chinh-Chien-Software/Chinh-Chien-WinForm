@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.pnlMoveAndTitle = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.lblMaQuan = new System.Windows.Forms.Label();
             this.tbcMaQuan = new ChinChin.Custom.TextBox_Custom();
             this.lblTenQuan = new System.Windows.Forms.Label();
@@ -49,16 +49,6 @@
             this.pnlMoveAndTitle.Size = new System.Drawing.Size(416, 55);
             this.pnlMoveAndTitle.TabIndex = 32;
             // 
-            // lblTitle
-            // 
-            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblTitle.Font = new System.Drawing.Font("Cascadia Code", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(0, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(489, 55);
-            this.lblTitle.TabIndex = 30;
-            this.lblTitle.Text = "Thêm Cập nhật Quán";
-            // 
             // btnExit
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -74,6 +64,17 @@
             this.btnExit.Size = new System.Drawing.Size(46, 48);
             this.btnExit.TabIndex = 29;
             this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblTitle.Font = new System.Drawing.Font("Cascadia Code", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(363, 55);
+            this.lblTitle.TabIndex = 30;
+            this.lblTitle.Text = "Thêm Cập nhật Quán";
             // 
             // lblMaQuan
             // 
