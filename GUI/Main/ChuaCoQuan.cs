@@ -25,7 +25,7 @@ namespace ChinChin.GUI.Main
 
         private void btnTaoQuan_Click(object sender, EventArgs e)
         {
-            ChinChin.GUI.Main.TaoQuan taoQuan = new ChinChin.GUI.Main.TaoQuan();
+            ChinChin.GUI.formThem.ThemCapnhatQuan taoQuan = new ChinChin.GUI.formThem.ThemCapnhatQuan();
             taoQuan.Show();
         }
 

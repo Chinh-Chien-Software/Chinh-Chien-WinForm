@@ -69,7 +69,7 @@ namespace ChinChin.UI
                 taiKhoanOBJ.UIMode = 1;
 
                 taiKhoanBUS.ThemTaiKhoanBUS(taiKhoanOBJ);
-                ChinChin.GUI.Main.TaoQuan taoQuan = new ChinChin.GUI.Main.TaoQuan();
+                ChinChin.GUI.formThem.ThemCapnhatQuan taoQuan = new ChinChin.GUI.formThem.ThemCapnhatQuan();
                 taoQuan.Show();
                 this.Hide();
             }
