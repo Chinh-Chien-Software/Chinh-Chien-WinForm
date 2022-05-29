@@ -79,10 +79,18 @@ namespace ChinChin.Forms_QuanLy
             dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVatLieu);
 
             dgvVatLieu.Columns["MaVatLieu"].HeaderText = "Mã vật liệu";
+            dgvVatLieu.Columns["MaVatLieu"].Width = 50;
+
             dgvVatLieu.Columns["TenVatLieu"].HeaderText = "Tên vật liệu";
+            dgvVatLieu.Columns["TenVatLieu"].Width = 200;
+
             dgvVatLieu.Columns["NhaCungCap"].HeaderText = "Nhà cung cấp";
+            dgvVatLieu.Columns["NhaCungCap"].Width = 200;
+
             dgvVatLieu.Columns["SoLuong"].HeaderText = "Số lượng";
+            
             dgvVatLieu.Columns["Gia"].HeaderText = "Đơn giá";
+            
             dgvVatLieu.Columns["DonViTinh"].HeaderText = "Đơn vị tính";
             //dgvVatLieu.Columns["MaQuan"].Visible = false;
             //dgvVatLieu.Columns["MaKho"].Visible = false;
