@@ -29,81 +29,78 @@ namespace ChinChin.FormsChuQuan
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlDoanhThu = new System.Windows.Forms.Panel();
-            this.lblSanPham = new System.Windows.Forms.Label();
-            this.pnlLoiNhuan = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnlDoanhThu.SuspendLayout();
-            this.pnlLoiNhuan.SuspendLayout();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dgvThongKe = new System.Windows.Forms.DataGridView();
+            this.pnlTopBar = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThongKe)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnlDoanhThu
+            // dgvThongKe
             // 
-            this.pnlDoanhThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.pnlDoanhThu.Controls.Add(this.lblSanPham);
-            this.pnlDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlDoanhThu.Location = new System.Drawing.Point(12, 12);
-            this.pnlDoanhThu.Name = "pnlDoanhThu";
-            this.pnlDoanhThu.Size = new System.Drawing.Size(200, 100);
-            this.pnlDoanhThu.TabIndex = 0;
+            this.dgvThongKe.AllowUserToAddRows = false;
+            this.dgvThongKe.AllowUserToDeleteRows = false;
+            this.dgvThongKe.AllowUserToResizeColumns = false;
+            this.dgvThongKe.AllowUserToResizeRows = false;
+            this.dgvThongKe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvThongKe.BackgroundColor = System.Drawing.Color.White;
+            this.dgvThongKe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvThongKe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvThongKe.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvThongKe.GridColor = System.Drawing.Color.White;
+            this.dgvThongKe.Location = new System.Drawing.Point(0, 59);
+            this.dgvThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvThongKe.MultiSelect = false;
+            this.dgvThongKe.Name = "dgvThongKe";
+            this.dgvThongKe.ReadOnly = true;
+            this.dgvThongKe.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dgvThongKe.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvThongKe.RowTemplate.Height = 24;
+            this.dgvThongKe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvThongKe.Size = new System.Drawing.Size(915, 474);
+            this.dgvThongKe.TabIndex = 7;
             // 
-            // lblSanPham
+            // pnlTopBar
             // 
-            this.lblSanPham.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblSanPham.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSanPham.ForeColor = System.Drawing.Color.White;
-            this.lblSanPham.Location = new System.Drawing.Point(0, 0);
-            this.lblSanPham.Name = "lblSanPham";
-            this.lblSanPham.Size = new System.Drawing.Size(200, 40);
-            this.lblSanPham.TabIndex = 0;
-            this.lblSanPham.Text = "Sản phẩm bán chạy";
-            this.lblSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pnlLoiNhuan
-            // 
-            this.pnlLoiNhuan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.pnlLoiNhuan.Controls.Add(this.label1);
-            this.pnlLoiNhuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlLoiNhuan.Location = new System.Drawing.Point(231, 12);
-            this.pnlLoiNhuan.Name = "pnlLoiNhuan";
-            this.pnlLoiNhuan.Size = new System.Drawing.Size(200, 100);
-            this.pnlLoiNhuan.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Cascadia Code", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 40);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Lợi Nhuận";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pnlTopBar.BackColor = System.Drawing.Color.White;
+            this.pnlTopBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTopBar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlTopBar.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlTopBar.Name = "pnlTopBar";
+            this.pnlTopBar.Size = new System.Drawing.Size(915, 59);
+            this.pnlTopBar.TabIndex = 8;
             // 
             // FormThongKe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(686, 433);
-            this.Controls.Add(this.pnlLoiNhuan);
-            this.Controls.Add(this.pnlDoanhThu);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.ClientSize = new System.Drawing.Size(915, 533);
+            this.Controls.Add(this.dgvThongKe);
+            this.Controls.Add(this.pnlTopBar);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormThongKe";
             this.Text = "Xem Thống Kê";
             this.Load += new System.EventHandler(this.FormThongKe_Load);
-            this.pnlDoanhThu.ResumeLayout(false);
-            this.pnlLoiNhuan.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThongKe)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlDoanhThu;
-        private System.Windows.Forms.Label lblSanPham;
-        private System.Windows.Forms.Panel pnlLoiNhuan;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvThongKe;
+        private System.Windows.Forms.Panel pnlTopBar;
     }
 }
