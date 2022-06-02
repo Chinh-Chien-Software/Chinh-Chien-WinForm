@@ -16,11 +16,10 @@ namespace ChinChin.GUI.formThem
     {
         int ChucNang;
         string Loai;
-        
+        ThanhPhanSanPhamDAO tpsp = new ThanhPhanSanPhamDAO();
         public ThemCapnhatSanPham()
         {
             InitializeComponent();
-            lblThongBao.Visible = false;
             btnLuu.Text = "Lưu";
             lblTitle.Text = "Thêm sản phẩm";
             ChucNang = 0;
@@ -36,7 +35,6 @@ namespace ChinChin.GUI.formThem
             )
         {
             InitializeComponent();
-            lblThongBao.Visible = false;
             btnLuu.Text = "Cập nhật";
             lblTitle.Text = "Cập nhật sản phẩm";
             
@@ -108,19 +106,19 @@ namespace ChinChin.GUI.formThem
             if (tbcMaSP.Text == "")
             {
                 lblThongBao.Visible = true;
-                MessageBox.Show("Mã sản phẩm không được để trống");
+                lblThongBao.Text = "Mã sản phẩm không được để trống";
                 KetQua = false;
             }
             else if (tbcTenSP.Text == "")
             {
                 lblThongBao.Visible = true;
-                MessageBox.Show("Tên sản phẩm không được để trống");
+                lblThongBao.Text = "Tên sản phẩm không được để trống";
                 KetQua = false;
             }
             else if (tbcCT.Text == "")
             {
                 lblThongBao.Visible = true;
-                MessageBox.Show("Công thức không được để trống");
+                lblThongBao.Text = "Công thức không được để trống";
                 KetQua = false;
             }
             /*else if (tbcTimVL.Text == "")
@@ -132,13 +130,13 @@ namespace ChinChin.GUI.formThem
             else if (tbcGia.Text == "")
             {
                 lblThongBao.Visible = true;
-                MessageBox.Show("Giá không được để trống");
+                lblThongBao.Text = "Giá không được để trống";
                 KetQua = false;
             }
             else if (cbbLoai.Text == "")
             {
                 lblThongBao.Visible = true;
-                MessageBox.Show("Loại không được để trống");
+                lblThongBao.Text = "Loại không được để trống";
                 KetQua = false;
             }
             return KetQua;
@@ -158,6 +156,11 @@ namespace ChinChin.GUI.formThem
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
