@@ -43,7 +43,10 @@ namespace ChinChin.GUI.formThem
             tbcMaSP.Text = MaSanPham;
             tbcTenSP.Text = TenSanPham;
             tbcCT.Text = CongThuc;
-            tbcThanhPhan.Text = ThanhPhan;
+
+            //tbcTimVL.Text = ThanhPhan;
+            //dgvThanhPhan.DataSource = 
+
             tbcGia.Text = Gia.ToString();
             tbcDanhGia.Text = DanhGia.ToString();
             cbbLoai.Text = Loai;
@@ -60,7 +63,7 @@ namespace ChinChin.GUI.formThem
                 {
                     ChonLoai();
                     sanPhamDAO.Create
-                        (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcThanhPhan.Text,
+                        (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, "",
                         float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text), cbbLoai.Text, fQuanLyMenu.MaQuan);
                     fQuanLyMenu.RefreshDGV();
                     this.Close();
@@ -69,7 +72,7 @@ namespace ChinChin.GUI.formThem
                 {
                     btnLuu.Text = "Cập nhật";
                     sanPhamDAO.Update
-                        (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, tbcThanhPhan.Text,
+                        (tbcMaSP.Text, tbcTenSP.Text, tbcCT.Text, "",
                         float.Parse(tbcGia.Text), int.Parse(tbcDanhGia.Text), cbbLoai.Text);
                     fQuanLyMenu.RefreshDGV();
                     this.Close();
@@ -120,12 +123,12 @@ namespace ChinChin.GUI.formThem
                 MessageBox.Show("Công thức không được để trống");
                 KetQua = false;
             }
-            else if (tbcThanhPhan.Text == "")
+            /*else if (tbcTimVL.Text == "")
             {
                 lblThongBao.Visible = true;
                 MessageBox.Show("Thành phần không được để trống");
                 KetQua = false;
-            }
+            }*/
             else if (tbcGia.Text == "")
             {
                 lblThongBao.Visible = true;

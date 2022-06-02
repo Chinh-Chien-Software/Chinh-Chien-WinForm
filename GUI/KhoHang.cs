@@ -79,7 +79,7 @@ namespace ChinChin.Forms_QuanLy
             dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVatLieu);
 
             dgvVatLieu.Columns["MaVatLieu"].HeaderText = "Mã vật liệu";
-            dgvVatLieu.Columns["MaVatLieu"].Width = 50;
+            dgvVatLieu.Columns["MaVatLieu"].Width = 75;
 
             dgvVatLieu.Columns["TenVatLieu"].HeaderText = "Tên vật liệu";
             dgvVatLieu.Columns["TenVatLieu"].Width = 200;
