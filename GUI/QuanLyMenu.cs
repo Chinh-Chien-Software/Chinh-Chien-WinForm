@@ -28,7 +28,7 @@ namespace ChinhChien.Forms_ChuQuan
 
         private void QuanLyMenu_Load(object sender, EventArgs e)
         {
-            var fMainUI = (ChinhChien.UI.MainUI)this.Owner;
+            var fMainUI = (ChinhChien.UI.frmMainUI)this.Owner;
             this.MaQuan = fMainUI.MaQuan;
             RefreshDGV();
         }
@@ -65,7 +65,7 @@ namespace ChinhChien.Forms_ChuQuan
 
         public void RefreshDGV()
         {
-            var fMainUI = (ChinhChien.UI.MainUI)this.Owner;
+            var fMainUI = (ChinhChien.UI.frmMainUI)this.Owner;
             sql = "SELECT * FROM SanPham where MaQuan = '" + fMainUI.MaQuan + "'";
             dgvSanPham.DataSource = DataProvider.ReturnDataTable(sql);
 

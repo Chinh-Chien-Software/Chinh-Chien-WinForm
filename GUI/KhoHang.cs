@@ -56,7 +56,7 @@ namespace ChinhChien.Forms_QuanLy
 
         public void RefreshKho()
         {
-            var fMainUI = (ChinhChien.UI.MainUI)this.Owner;
+            var fMainUI = (ChinhChien.UI.frmMainUI)this.Owner;
             this.MaQuan = fMainUI.MaQuan;
             this.TenKho = cbbKho.Text;
 
@@ -69,7 +69,7 @@ namespace ChinhChien.Forms_QuanLy
 
         public void RefreshVatLieu(string TenKho)
         {
-            var fMainUI = (ChinhChien.UI.MainUI)this.Owner;
+            var fMainUI = (ChinhChien.UI.frmMainUI)this.Owner;
             this.MaQuan = fMainUI.MaQuan;
             this.TenKho = cbbKho.Text;
 
@@ -100,7 +100,7 @@ namespace ChinhChien.Forms_QuanLy
 
         public void RefreshVatLieu()
         {
-            var fMainUI = (ChinhChien.UI.MainUI)this.Owner;
+            var fMainUI = (ChinhChien.UI.frmMainUI)this.Owner;
             sqlVatLieu = "SELECT * FROM VatLieu where MaQuan = '" + fMainUI.MaQuan + "'";
 
             dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVatLieu);

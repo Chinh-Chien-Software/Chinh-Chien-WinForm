@@ -47,7 +47,7 @@ namespace ChinhChien.GUI
 
         public void RefreshDGV()
         {
-            var fMainUI = (ChinhChien.UI.MainUI)this.Owner;
+            var fMainUI = (ChinhChien.UI.frmMainUI)this.Owner;
             MaQuan = fMainUI.MaQuan;
             
             dgvNhanVien.DataSource
