@@ -1,4 +1,4 @@
-[submodule "Database-SQL"]
+[submodule "Database SQL"]
 	path = Database-SQL
 	url = https://github.com/Chinh-Chien-Software/Chinh-Chien-Database-SQL.git
 	branch = main
