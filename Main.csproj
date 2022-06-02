@@ -139,6 +139,12 @@
     <Compile Include="GUI\formThem\ThemCapnhatQuan.Designer.cs">
       <DependentUpon>ThemCapnhatQuan.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\formThem\ThemCapnhatThanhPhanSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\formThem\ThemCapnhatThanhPhanSanPham.Designer.cs">
+      <DependentUpon>ThemCapnhatThanhPhanSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Main\ChuaCoQuan.cs">
       <SubType>Form</SubType>
     </Compile>
