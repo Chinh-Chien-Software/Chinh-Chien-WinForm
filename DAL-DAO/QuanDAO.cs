@@ -28,14 +28,12 @@ namespace ChinChin.DAL_DAO
             return dt;
         }
 
-        public void ThemQuan(string MaQuan, string TenQuan)
+        public void Them(string MaQuan, string TenQuan)
         {
             string sql = "INSERT INTO Quan(MaQuan, TenQuan) VALUES(@MaQuan, @TenQuan)";
             SqlParameter[] parameters = new SqlParameter[2];
-            parameters[0] = new SqlParameter("@MaQuan", SqlDbType.VarChar, 10);
-            parameters[0].Value = MaQuan;
-            parameters[1] = new SqlParameter("@TenQuan", SqlDbType.VarChar, 50);
-            parameters[1].Value = TenQuan;
+            parameters[0] = new SqlParameter("@MaQuan", MaQuan);
+            parameters[1] = new SqlParameter("@TenQuan", TenQuan);
             conn.executeInsertQuery(sql, parameters);
         }
     }
