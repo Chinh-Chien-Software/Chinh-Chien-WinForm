@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace ChinhChien.GUI.formThem
 {
-    public partial class TaoTaiKhoan : Form
+    public partial class frmTaoTaiKhoan : Form
     {
         string TaiKhoan;
         string MatKhau;
@@ -38,7 +38,7 @@ namespace ChinhChien.GUI.formThem
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-        public TaoTaiKhoan(string MaNhanVien)
+        public frmTaoTaiKhoan(string MaNhanVien)
         {
             InitializeComponent();
             btnGo.Visible = false;
@@ -48,7 +48,7 @@ namespace ChinhChien.GUI.formThem
             this.MaNhanVien = MaNhanVien;
         }
 
-        public TaoTaiKhoan(string TaiKhoan, string MatKhau,string Email, string MaNhanVien)
+        public frmTaoTaiKhoan(string TaiKhoan, string MatKhau,string Email, string MaNhanVien)
         {
             InitializeComponent();
             tkBUS = new TaiKhoanBUS();

@@ -162,7 +162,7 @@ namespace ChinhChien.GUI
             if (dgvNhanVien.SelectedRows[0].Cells[10].Value.ToString() == "")
             {
 
-                formThem.TaoTaiKhoan f = new formThem.TaoTaiKhoan(MaNhanVien);
+                formThem.frmTaoTaiKhoan f = new formThem.frmTaoTaiKhoan(MaNhanVien);
                 f.Owner = this;
                 f.Show();
             }
@@ -173,7 +173,7 @@ namespace ChinhChien.GUI
                 string TaiKhoan = dt.Rows[0][0].ToString();
                 string MatKhau = dt.Rows[0][1].ToString();
                 string Email = dt.Rows[0][3].ToString();
-                formThem.TaoTaiKhoan f = new formThem.TaoTaiKhoan(TaiKhoan,MatKhau,Email,MaNhanVien);
+                formThem.frmTaoTaiKhoan f = new formThem.frmTaoTaiKhoan(TaiKhoan,MatKhau,Email,MaNhanVien);
                 f.Owner = this;
                 f.Show();
             }
