@@ -111,7 +111,6 @@
     <Compile Include="DAL-DAO\QuanDAO.cs" />
     <Compile Include="DAL-DAO\SanPhamDAO.cs" />
     <Compile Include="DAL-DAO\TaiKhoanDAO.cs" />
-    <Compile Include="DAL-DAO\ThanhPhanSanPham.cs" />
     <Compile Include="DAL-DAO\ThanhPhanSanPhamDAO.cs" />
     <Compile Include="DAL-DAO\ThongTinHoaDonDAO.cs" />
     <Compile Include="DAL-DAO\VatLieuDAO.cs" />
