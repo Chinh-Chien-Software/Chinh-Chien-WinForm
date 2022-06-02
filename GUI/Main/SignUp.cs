@@ -20,9 +20,6 @@ namespace ChinhChien.UI
         public SignUp()
         {
             InitializeComponent();
-            lblThongBao.Visible = false;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
         }
 
         private void SignUp_Load(object sender, EventArgs e)
@@ -126,12 +123,12 @@ namespace ChinhChien.UI
 
         private void lblYesAccount_MouseHover(object sender, EventArgs e)
         {
-            lblYesAccount.Font = new Font("Inter", 12, ((FontStyle)((FontStyle.Bold | FontStyle.Underline))));
+            lblYesAccount.Font = new Font("Cascadia Code", 12, ((FontStyle)((FontStyle.Bold | FontStyle.Underline))));
         }
 
         private void lblYesAccount_MouseLeave(object sender, EventArgs e)
         {
-            lblYesAccount.Font = new Font("Inter", 12, FontStyle.Bold);
+            lblYesAccount.Font = new Font("Cascadia Code", 12, FontStyle.Bold);
         }
     }
 }

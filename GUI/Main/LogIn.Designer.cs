@@ -70,7 +70,7 @@ namespace ChinhChien.UI
             this.panelBackground.Location = new System.Drawing.Point(0, 0);
             this.panelBackground.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBackground.Name = "panelBackground";
-            this.panelBackground.Size = new System.Drawing.Size(441, 698);
+            this.panelBackground.Size = new System.Drawing.Size(441, 716);
             this.panelBackground.TabIndex = 10;
             this.panelBackground.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBackground_Paint);
             // 
@@ -79,11 +79,11 @@ namespace ChinhChien.UI
             this.lblNoAccount.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNoAccount.AutoSize = true;
             this.lblNoAccount.BackColor = System.Drawing.Color.Transparent;
-            this.lblNoAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoAccount.Location = new System.Drawing.Point(89, 704);
+            this.lblNoAccount.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoAccount.Location = new System.Drawing.Point(80, 659);
             this.lblNoAccount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNoAccount.Name = "lblNoAccount";
-            this.lblNoAccount.Size = new System.Drawing.Size(238, 25);
+            this.lblNoAccount.Size = new System.Drawing.Size(276, 27);
             this.lblNoAccount.TabIndex = 13;
             this.lblNoAccount.Text = "Bạn chưa có tài khoản?";
             this.lblNoAccount.Click += new System.EventHandler(this.labelNoAccount_Click);
@@ -97,7 +97,7 @@ namespace ChinhChien.UI
             this.labelThongBao.BackColor = System.Drawing.Color.Transparent;
             this.labelThongBao.Font = new System.Drawing.Font("Cascadia Code", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThongBao.ForeColor = System.Drawing.Color.Red;
-            this.labelThongBao.Location = new System.Drawing.Point(29, 473);
+            this.labelThongBao.Location = new System.Drawing.Point(29, 416);
             this.labelThongBao.Name = "labelThongBao";
             this.labelThongBao.Size = new System.Drawing.Size(400, 22);
             this.labelThongBao.TabIndex = 9;
@@ -113,7 +113,7 @@ namespace ChinhChien.UI
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.btnExit.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 55;
+            this.btnExit.IconSize = 50;
             this.btnExit.Location = new System.Drawing.Point(388, 2);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
@@ -141,7 +141,7 @@ namespace ChinhChien.UI
             this.ckBxRememberSignIn.AutoSize = true;
             this.ckBxRememberSignIn.BackColor = System.Drawing.Color.Transparent;
             this.ckBxRememberSignIn.Font = new System.Drawing.Font("Cascadia Code", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckBxRememberSignIn.Location = new System.Drawing.Point(95, 415);
+            this.ckBxRememberSignIn.Location = new System.Drawing.Point(85, 371);
             this.ckBxRememberSignIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ckBxRememberSignIn.Name = "ckBxRememberSignIn";
             this.ckBxRememberSignIn.Size = new System.Drawing.Size(256, 34);
@@ -157,7 +157,7 @@ namespace ChinhChien.UI
             this.panelUsername.BackColor = System.Drawing.Color.Transparent;
             this.panelUsername.Controls.Add(this.tbcUserName);
             this.panelUsername.Controls.Add(this.labelUserName);
-            this.panelUsername.Location = new System.Drawing.Point(3, 217);
+            this.panelUsername.Location = new System.Drawing.Point(3, 168);
             this.panelUsername.Margin = new System.Windows.Forms.Padding(4);
             this.panelUsername.Name = "panelUsername";
             this.panelUsername.Size = new System.Drawing.Size(438, 91);
@@ -171,7 +171,7 @@ namespace ChinhChien.UI
             this.labelUserName.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUserName.Location = new System.Drawing.Point(28, 2);
             this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(200, 45);
+            this.labelUserName.Size = new System.Drawing.Size(190, 44);
             this.labelUserName.TabIndex = 6;
             this.labelUserName.Text = "Tài khoản";
             this.labelUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -184,7 +184,7 @@ namespace ChinhChien.UI
             this.panelPassword.Controls.Add(this.iPBxShowHidePasword);
             this.panelPassword.Controls.Add(this.labelPasword);
             this.panelPassword.Controls.Add(this.tbcPassword);
-            this.panelPassword.Location = new System.Drawing.Point(0, 311);
+            this.panelPassword.Location = new System.Drawing.Point(0, 268);
             this.panelPassword.Margin = new System.Windows.Forms.Padding(4);
             this.panelPassword.Name = "panelPassword";
             this.panelPassword.Size = new System.Drawing.Size(441, 97);
@@ -215,7 +215,7 @@ namespace ChinhChien.UI
             this.labelPasword.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPasword.Location = new System.Drawing.Point(29, -1);
             this.labelPasword.Name = "labelPasword";
-            this.labelPasword.Size = new System.Drawing.Size(180, 45);
+            this.labelPasword.Size = new System.Drawing.Size(171, 44);
             this.labelPasword.TabIndex = 7;
             this.labelPasword.Text = "Mật khẩu";
             // 
@@ -245,7 +245,7 @@ namespace ChinhChien.UI
             this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignInButton.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignInButton.ForeColor = System.Drawing.Color.White;
-            this.SignInButton.Location = new System.Drawing.Point(37, 538);
+            this.SignInButton.Location = new System.Drawing.Point(37, 487);
             this.SignInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SignInButton.Name = "SignInButton";
             this.SignInButton.Size = new System.Drawing.Size(361, 150);
@@ -286,7 +286,7 @@ namespace ChinhChien.UI
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(441, 698);
+            this.ClientSize = new System.Drawing.Size(441, 716);
             this.ControlBox = false;
             this.Controls.Add(this.panelBackground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

@@ -234,12 +234,12 @@ namespace ChinhChien.UI
 
         private void labelNoAccount_MouseHover(object sender, EventArgs e)
         {
-            lblNoAccount.Font = new Font("Inter", 12, ((FontStyle)((FontStyle.Bold | FontStyle.Underline))));
+            lblNoAccount.Font = new Font("Cascadia Code", 12, ((FontStyle)((FontStyle.Bold | FontStyle.Underline))));
         }
 
         private void lblNoAccount_MouseLeave(object sender, EventArgs e)
         {
-            lblNoAccount.Font = new Font("Inter", 12, FontStyle.Bold);
+            lblNoAccount.Font = new Font("Cascadia Code", 12, FontStyle.Bold);
         }
 
         private void panelBackground_Paint(object sender, PaintEventArgs e)
