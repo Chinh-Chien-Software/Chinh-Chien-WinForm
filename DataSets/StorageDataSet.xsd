@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ChinhChienConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ChinhChienConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ChinChin.Properties.Settings.GlobalReference.Default.ChinhChienConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ChinhChienConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ChinhChienConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ChinhChien.Properties.Settings.GlobalReference.Default.ChinhChienConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="KhoHangTableAdapter" GeneratorDataComponentClassName="KhoHangTableAdapter" Name="KhoHang" UserDataComponentName="KhoHangTableAdapter">
@@ -79,31 +79,31 @@ SELECT MaKho, TenKho, DiaChi, DienTich FROM KhoHang WHERE (MaKho = @MaKho)</Comm
   <xs:element name="StorageDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="StorageDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="StorageDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="KhoHang" msprop:Generator_RowClassName="KhoHangRow" msprop:Generator_RowEvHandlerName="KhoHangRowChangeEventHandler" msprop:Generator_RowDeletedName="KhoHangRowDeleted" msprop:Generator_RowDeletingName="KhoHangRowDeleting" msprop:Generator_RowEvArgName="KhoHangRowChangeEvent" msprop:Generator_TablePropName="KhoHang" msprop:Generator_RowChangedName="KhoHangRowChanged" msprop:Generator_UserTableName="KhoHang" msprop:Generator_RowChangingName="KhoHangRowChanging" msprop:Generator_TableClassName="KhoHangDataTable" msprop:Generator_TableVarName="tableKhoHang">
+        <xs:element name="KhoHang" msprop:Generator_RowEvHandlerName="KhoHangRowChangeEventHandler" msprop:Generator_RowDeletedName="KhoHangRowDeleted" msprop:Generator_RowDeletingName="KhoHangRowDeleting" msprop:Generator_RowEvArgName="KhoHangRowChangeEvent" msprop:Generator_TablePropName="KhoHang" msprop:Generator_RowChangedName="KhoHangRowChanged" msprop:Generator_UserTableName="KhoHang" msprop:Generator_RowChangingName="KhoHangRowChanging" msprop:Generator_RowClassName="KhoHangRow" msprop:Generator_TableClassName="KhoHangDataTable" msprop:Generator_TableVarName="tableKhoHang">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="MaKho" msprop:Generator_UserColumnName="MaKho" msprop:Generator_ColumnPropNameInTable="MaKhoColumn" msprop:Generator_ColumnPropNameInRow="MaKho" msprop:Generator_ColumnVarNameInTable="columnMaKho">
+              <xs:element name="MaKho" msprop:Generator_ColumnPropNameInTable="MaKhoColumn" msprop:Generator_ColumnPropNameInRow="MaKho" msprop:Generator_UserColumnName="MaKho" msprop:Generator_ColumnVarNameInTable="columnMaKho">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="TenKho" msprop:Generator_UserColumnName="TenKho" msprop:Generator_ColumnPropNameInTable="TenKhoColumn" msprop:Generator_ColumnPropNameInRow="TenKho" msprop:Generator_ColumnVarNameInTable="columnTenKho" minOccurs="0">
+              <xs:element name="TenKho" msprop:Generator_ColumnPropNameInTable="TenKhoColumn" msprop:Generator_ColumnPropNameInRow="TenKho" msprop:Generator_UserColumnName="TenKho" msprop:Generator_ColumnVarNameInTable="columnTenKho" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="DiaChi" msprop:Generator_UserColumnName="DiaChi" msprop:Generator_ColumnPropNameInTable="DiaChiColumn" msprop:Generator_ColumnPropNameInRow="DiaChi" msprop:Generator_ColumnVarNameInTable="columnDiaChi" minOccurs="0">
+              <xs:element name="DiaChi" msprop:Generator_ColumnPropNameInTable="DiaChiColumn" msprop:Generator_ColumnPropNameInRow="DiaChi" msprop:Generator_UserColumnName="DiaChi" msprop:Generator_ColumnVarNameInTable="columnDiaChi" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="DienTich" msprop:Generator_UserColumnName="DienTich" msprop:Generator_ColumnPropNameInTable="DienTichColumn" msprop:Generator_ColumnPropNameInRow="DienTich" msprop:Generator_ColumnVarNameInTable="columnDienTich" type="xs:double" minOccurs="0" />
+              <xs:element name="DienTich" msprop:Generator_ColumnPropNameInTable="DienTichColumn" msprop:Generator_ColumnPropNameInRow="DienTich" msprop:Generator_UserColumnName="DienTich" msprop:Generator_ColumnVarNameInTable="columnDienTich" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

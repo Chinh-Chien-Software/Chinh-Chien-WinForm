@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{351DD642-65F5-4C8B-90C0-18014A4A2B3C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ChinChin</RootNamespace>
-    <AssemblyName>ChinChin</AssemblyName>
+    <RootNamespace>ChinhChien</RootNamespace>
+    <AssemblyName>ChinhChien</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

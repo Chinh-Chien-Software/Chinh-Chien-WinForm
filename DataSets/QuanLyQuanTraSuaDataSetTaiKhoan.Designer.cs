@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace ChinChin.DataSets {
+namespace ChinhChien.DataSets {
     
     
     /// <summary>
@@ -678,7 +678,7 @@ namespace ChinChin.DataSets {
         }
     }
 }
-namespace ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters {
+namespace ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters {
     
     
     /// <summary>
@@ -843,7 +843,7 @@ SELECT TenTaiKhoan, MatKhau, LoaiTaiKhoan FROM TaiKhoan WHERE (TenTaiKhoan = @Te
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ChinChin.Properties.Settings.Default.ChinhChienConnectionString;
+            this._connection.ConnectionString = global::ChinhChien.Properties.Settings.Default.ChinhChienConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

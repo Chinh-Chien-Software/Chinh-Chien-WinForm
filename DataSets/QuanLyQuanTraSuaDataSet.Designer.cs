@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace ChinChin.DataSets {
+namespace ChinhChien.DataSets {
     
     
     /// <summary>
@@ -805,7 +805,7 @@ namespace ChinChin.DataSets {
         }
     }
 }
-namespace ChinChin.DataSets.QuanLyQuanTraSuaDataSetTableAdapters {
+namespace ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTableAdapters {
     
     
     /// <summary>
@@ -990,7 +990,7 @@ SELECT MaVatLieu, TenVatLieu, NhaCungCap, SoLuong, Gia, DonViTinh FROM VatLieu W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ChinChin.Properties.Settings.Default.ChinhChienConnectionString;
+            this._connection.ConnectionString = global::ChinhChien.Properties.Settings.Default.ChinhChienConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
