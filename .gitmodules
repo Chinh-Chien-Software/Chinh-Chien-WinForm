@@ -3,6 +3,6 @@
 	url = https://github.com/Chinh-Chien-Software/Chinh-Chien-Database-SQL.git
 	branch = main
 [submodule "Diagrams"]
-	path = Diagram
+	path = Diagrams
 	url = https://github.com/Chinh-Chien-Software/Chinh-Chien-Database-Diagram.git
 	branch = main
