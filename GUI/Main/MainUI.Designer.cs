@@ -40,6 +40,7 @@
             this.pnlQuan = new System.Windows.Forms.Panel();
             this.ipbThemQuan = new FontAwesome.Sharp.IconPictureBox();
             this.cbbChuyenQuan = new System.Windows.Forms.ComboBox();
+            this.pnlLineSidebar = new System.Windows.Forms.Panel();
             this.panelTittleBar = new System.Windows.Forms.Panel();
             this.pnlTaiKhoanVaButtons = new System.Windows.Forms.Panel();
             this.mnsTaiKhoan = new System.Windows.Forms.MenuStrip();
@@ -52,7 +53,6 @@
             this.btnMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.labelTittleChildForm = new System.Windows.Forms.Label();
-            this.pnlLineSidebar = new System.Windows.Forms.Panel();
             this.pnlLineTop = new System.Windows.Forms.Panel();
             this.pnlBorderOfForm.SuspendLayout();
             this.pnlLeftSidebar.SuspendLayout();
@@ -71,10 +71,10 @@
             // 
             this.pnlChildForm.BackColor = System.Drawing.Color.White;
             this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlChildForm.Location = new System.Drawing.Point(376, 70);
-            this.pnlChildForm.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlChildForm.Location = new System.Drawing.Point(501, 86);
+            this.pnlChildForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlChildForm.Name = "pnlChildForm";
-            this.pnlChildForm.Size = new System.Drawing.Size(607, 730);
+            this.pnlChildForm.Size = new System.Drawing.Size(810, 899);
             this.pnlChildForm.TabIndex = 14;
             // 
             // pnlBorderOfForm
@@ -86,8 +86,9 @@
             this.pnlBorderOfForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBorderOfForm.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.pnlBorderOfForm.Location = new System.Drawing.Point(0, 0);
+            this.pnlBorderOfForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlBorderOfForm.Name = "pnlBorderOfForm";
-            this.pnlBorderOfForm.Size = new System.Drawing.Size(985, 802);
+            this.pnlBorderOfForm.Size = new System.Drawing.Size(1313, 987);
             this.pnlBorderOfForm.TabIndex = 0;
             // 
             // pnlLeftSidebar
@@ -103,10 +104,10 @@
             this.pnlLeftSidebar.Controls.Add(this.pnlLineSidebar);
             this.pnlLeftSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeftSidebar.ForeColor = System.Drawing.Color.Coral;
-            this.pnlLeftSidebar.Location = new System.Drawing.Point(0, 70);
-            this.pnlLeftSidebar.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlLeftSidebar.Location = new System.Drawing.Point(0, 86);
+            this.pnlLeftSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlLeftSidebar.Name = "pnlLeftSidebar";
-            this.pnlLeftSidebar.Size = new System.Drawing.Size(376, 730);
+            this.pnlLeftSidebar.Size = new System.Drawing.Size(501, 899);
             this.pnlLeftSidebar.TabIndex = 17;
             // 
             // ibtnBaoCao
@@ -116,15 +117,15 @@
             this.ibtnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibtnBaoCao.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ibtnBaoCao.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtnBaoCao.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtnBaoCao.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
             this.ibtnBaoCao.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.ibtnBaoCao.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtnBaoCao.Location = new System.Drawing.Point(0, 571);
-            this.ibtnBaoCao.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnBaoCao.Location = new System.Drawing.Point(0, 705);
+            this.ibtnBaoCao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnBaoCao.Name = "ibtnBaoCao";
-            this.ibtnBaoCao.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnBaoCao.Size = new System.Drawing.Size(375, 102);
+            this.ibtnBaoCao.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.ibtnBaoCao.Size = new System.Drawing.Size(500, 126);
             this.ibtnBaoCao.TabIndex = 14;
             this.ibtnBaoCao.Text = "BÁO CÁO";
             this.ibtnBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -138,15 +139,15 @@
             this.ibtnNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibtnNhanSu.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ibtnNhanSu.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtnNhanSu.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtnNhanSu.IconChar = FontAwesome.Sharp.IconChar.PeopleCarry;
             this.ibtnNhanSu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.ibtnNhanSu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnNhanSu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtnNhanSu.Location = new System.Drawing.Point(0, 469);
-            this.ibtnNhanSu.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnNhanSu.Location = new System.Drawing.Point(0, 579);
+            this.ibtnNhanSu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnNhanSu.Name = "ibtnNhanSu";
-            this.ibtnNhanSu.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnNhanSu.Size = new System.Drawing.Size(375, 102);
+            this.ibtnNhanSu.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.ibtnNhanSu.Size = new System.Drawing.Size(500, 126);
             this.ibtnNhanSu.TabIndex = 13;
             this.ibtnNhanSu.Text = "NHÂN SỰ";
             this.ibtnNhanSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -160,15 +161,15 @@
             this.ibtnThucDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibtnThucDon.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ibtnThucDon.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtnThucDon.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtnThucDon.IconChar = FontAwesome.Sharp.IconChar.MugHot;
             this.ibtnThucDon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.ibtnThucDon.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnThucDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtnThucDon.Location = new System.Drawing.Point(0, 367);
-            this.ibtnThucDon.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnThucDon.Location = new System.Drawing.Point(0, 453);
+            this.ibtnThucDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnThucDon.Name = "ibtnThucDon";
-            this.ibtnThucDon.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnThucDon.Size = new System.Drawing.Size(375, 102);
+            this.ibtnThucDon.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.ibtnThucDon.Size = new System.Drawing.Size(500, 126);
             this.ibtnThucDon.TabIndex = 11;
             this.ibtnThucDon.Text = "THỰC ĐƠN";
             this.ibtnThucDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -182,15 +183,15 @@
             this.ibtnVatTu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibtnVatTu.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ibtnVatTu.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtnVatTu.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.ibtnVatTu.IconChar = FontAwesome.Sharp.IconChar.Boxes;
             this.ibtnVatTu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.ibtnVatTu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnVatTu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtnVatTu.Location = new System.Drawing.Point(0, 265);
-            this.ibtnVatTu.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnVatTu.Location = new System.Drawing.Point(0, 327);
+            this.ibtnVatTu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnVatTu.Name = "ibtnVatTu";
-            this.ibtnVatTu.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnVatTu.Size = new System.Drawing.Size(375, 102);
+            this.ibtnVatTu.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.ibtnVatTu.Size = new System.Drawing.Size(500, 126);
             this.ibtnVatTu.TabIndex = 10;
             this.ibtnVatTu.Text = "VẬT TƯ";
             this.ibtnVatTu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -204,15 +205,15 @@
             this.ibtnNhanDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibtnNhanDon.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ibtnNhanDon.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtnNhanDon.IconChar = FontAwesome.Sharp.IconChar.MugHot;
+            this.ibtnNhanDon.IconChar = FontAwesome.Sharp.IconChar.Receipt;
             this.ibtnNhanDon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.ibtnNhanDon.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnNhanDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtnNhanDon.Location = new System.Drawing.Point(0, 163);
-            this.ibtnNhanDon.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnNhanDon.Location = new System.Drawing.Point(0, 201);
+            this.ibtnNhanDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnNhanDon.Name = "ibtnNhanDon";
-            this.ibtnNhanDon.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnNhanDon.Size = new System.Drawing.Size(375, 102);
+            this.ibtnNhanDon.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.ibtnNhanDon.Size = new System.Drawing.Size(500, 126);
             this.ibtnNhanDon.TabIndex = 9;
             this.ibtnNhanDon.Text = "NHẬN ĐƠN";
             this.ibtnNhanDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -226,15 +227,15 @@
             this.ibtnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibtnThongKe.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ibtnThongKe.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ibtnThongKe.IconChar = FontAwesome.Sharp.IconChar.ObjectGroup;
+            this.ibtnThongKe.IconChar = FontAwesome.Sharp.IconChar.ChartLine;
             this.ibtnThongKe.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.ibtnThongKe.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtnThongKe.Location = new System.Drawing.Point(0, 63);
-            this.ibtnThongKe.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnThongKe.Location = new System.Drawing.Point(0, 78);
+            this.ibtnThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnThongKe.Name = "ibtnThongKe";
-            this.ibtnThongKe.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.ibtnThongKe.Size = new System.Drawing.Size(375, 100);
+            this.ibtnThongKe.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.ibtnThongKe.Size = new System.Drawing.Size(500, 123);
             this.ibtnThongKe.TabIndex = 7;
             this.ibtnThongKe.Text = "THỐNG KÊ";
             this.ibtnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -248,9 +249,9 @@
             this.pnlQuan.Controls.Add(this.cbbChuyenQuan);
             this.pnlQuan.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlQuan.Location = new System.Drawing.Point(0, 0);
-            this.pnlQuan.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlQuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlQuan.Name = "pnlQuan";
-            this.pnlQuan.Size = new System.Drawing.Size(375, 63);
+            this.pnlQuan.Size = new System.Drawing.Size(500, 78);
             this.pnlQuan.TabIndex = 0;
             // 
             // ipbThemQuan
@@ -261,11 +262,11 @@
             this.ipbThemQuan.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.ipbThemQuan.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.ipbThemQuan.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ipbThemQuan.IconSize = 50;
-            this.ipbThemQuan.Location = new System.Drawing.Point(232, 11);
-            this.ipbThemQuan.Margin = new System.Windows.Forms.Padding(2);
+            this.ipbThemQuan.IconSize = 62;
+            this.ipbThemQuan.Location = new System.Drawing.Point(309, 14);
+            this.ipbThemQuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ipbThemQuan.Name = "ipbThemQuan";
-            this.ipbThemQuan.Size = new System.Drawing.Size(50, 50);
+            this.ipbThemQuan.Size = new System.Drawing.Size(67, 62);
             this.ipbThemQuan.TabIndex = 3;
             this.ipbThemQuan.TabStop = false;
             // 
@@ -276,11 +277,22 @@
             this.cbbChuyenQuan.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbChuyenQuan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.cbbChuyenQuan.FormattingEnabled = true;
-            this.cbbChuyenQuan.Location = new System.Drawing.Point(11, 14);
+            this.cbbChuyenQuan.Location = new System.Drawing.Point(15, 17);
+            this.cbbChuyenQuan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbChuyenQuan.Name = "cbbChuyenQuan";
-            this.cbbChuyenQuan.Size = new System.Drawing.Size(217, 36);
+            this.cbbChuyenQuan.Size = new System.Drawing.Size(288, 42);
             this.cbbChuyenQuan.TabIndex = 1;
             this.cbbChuyenQuan.Text = "Chuyển quán";
+            // 
+            // pnlLineSidebar
+            // 
+            this.pnlLineSidebar.BackColor = System.Drawing.Color.Black;
+            this.pnlLineSidebar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlLineSidebar.Location = new System.Drawing.Point(500, 0);
+            this.pnlLineSidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlLineSidebar.Name = "pnlLineSidebar";
+            this.pnlLineSidebar.Size = new System.Drawing.Size(1, 899);
+            this.pnlLineSidebar.TabIndex = 15;
             // 
             // panelTittleBar
             // 
@@ -291,9 +303,9 @@
             this.panelTittleBar.Controls.Add(this.pnlLineTop);
             this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTittleBar.Location = new System.Drawing.Point(0, 0);
-            this.panelTittleBar.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTittleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTittleBar.Name = "panelTittleBar";
-            this.panelTittleBar.Size = new System.Drawing.Size(983, 70);
+            this.panelTittleBar.Size = new System.Drawing.Size(1311, 86);
             this.panelTittleBar.TabIndex = 16;
             this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown);
             // 
@@ -304,19 +316,21 @@
             this.pnlTaiKhoanVaButtons.Controls.Add(this.btnMaximize);
             this.pnlTaiKhoanVaButtons.Controls.Add(this.btnMinimize);
             this.pnlTaiKhoanVaButtons.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlTaiKhoanVaButtons.Location = new System.Drawing.Point(737, 0);
+            this.pnlTaiKhoanVaButtons.Location = new System.Drawing.Point(983, 0);
+            this.pnlTaiKhoanVaButtons.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlTaiKhoanVaButtons.Name = "pnlTaiKhoanVaButtons";
-            this.pnlTaiKhoanVaButtons.Size = new System.Drawing.Size(246, 69);
+            this.pnlTaiKhoanVaButtons.Size = new System.Drawing.Size(328, 85);
             this.pnlTaiKhoanVaButtons.TabIndex = 17;
             // 
             // mnsTaiKhoan
             // 
             this.mnsTaiKhoan.Dock = System.Windows.Forms.DockStyle.None;
+            this.mnsTaiKhoan.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnsTaiKhoan.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnsiIconTaiKhoan});
             this.mnsTaiKhoan.Location = new System.Drawing.Point(0, 0);
             this.mnsTaiKhoan.Name = "mnsTaiKhoan";
-            this.mnsTaiKhoan.Size = new System.Drawing.Size(197, 70);
+            this.mnsTaiKhoan.Size = new System.Drawing.Size(95, 75);
             this.mnsTaiKhoan.TabIndex = 16;
             this.mnsTaiKhoan.Text = "msTaiKhoan";
             // 
@@ -333,7 +347,7 @@
             this.mnsiIconTaiKhoan.Name = "mnsiIconTaiKhoan";
             this.mnsiIconTaiKhoan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.mnsiIconTaiKhoan.RightToLeftAutoMirrorImage = true;
-            this.mnsiIconTaiKhoan.Size = new System.Drawing.Size(69, 66);
+            this.mnsiIconTaiKhoan.Size = new System.Drawing.Size(85, 71);
             this.mnsiIconTaiKhoan.Text = "Tài khoản";
             this.mnsiIconTaiKhoan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.mnsiIconTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -342,7 +356,7 @@
             // 
             this.mnsiThongTinTaiKhoan.BackColor = System.Drawing.Color.White;
             this.mnsiThongTinTaiKhoan.Name = "mnsiThongTinTaiKhoan";
-            this.mnsiThongTinTaiKhoan.Size = new System.Drawing.Size(181, 22);
+            this.mnsiThongTinTaiKhoan.Size = new System.Drawing.Size(226, 26);
             this.mnsiThongTinTaiKhoan.Text = "Thông Tin Tài Khoản";
             this.mnsiThongTinTaiKhoan.Click += new System.EventHandler(this.mnsiThongTinTaiKhoan_Click);
             // 
@@ -350,7 +364,7 @@
             // 
             this.mnsiCaiDat.BackColor = System.Drawing.Color.White;
             this.mnsiCaiDat.Name = "mnsiCaiDat";
-            this.mnsiCaiDat.Size = new System.Drawing.Size(181, 22);
+            this.mnsiCaiDat.Size = new System.Drawing.Size(226, 26);
             this.mnsiCaiDat.Text = "Cài đặt";
             this.mnsiCaiDat.Click += new System.EventHandler(this.mnsiCaiDat_Click);
             // 
@@ -358,7 +372,7 @@
             // 
             this.mnsiDangXuat.BackColor = System.Drawing.Color.White;
             this.mnsiDangXuat.Name = "mnsiDangXuat";
-            this.mnsiDangXuat.Size = new System.Drawing.Size(181, 22);
+            this.mnsiDangXuat.Size = new System.Drawing.Size(226, 26);
             this.mnsiDangXuat.Text = "Đăng Xuất";
             this.mnsiDangXuat.Click += new System.EventHandler(this.DangXuat_Click);
             // 
@@ -370,11 +384,11 @@
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 50;
-            this.btnExit.Location = new System.Drawing.Point(194, 2);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.IconSize = 62;
+            this.btnExit.Location = new System.Drawing.Point(259, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(50, 50);
+            this.btnExit.Size = new System.Drawing.Size(67, 62);
             this.btnExit.TabIndex = 2;
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -387,11 +401,11 @@
             this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
             this.btnMaximize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaximize.IconSize = 50;
-            this.btnMaximize.Location = new System.Drawing.Point(140, 2);
-            this.btnMaximize.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMaximize.IconSize = 62;
+            this.btnMaximize.Location = new System.Drawing.Point(187, 2);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(50, 50);
+            this.btnMaximize.Size = new System.Drawing.Size(67, 62);
             this.btnMaximize.TabIndex = 3;
             this.btnMaximize.TabStop = false;
             this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
@@ -404,11 +418,11 @@
             this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
             this.btnMinimize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMinimize.IconSize = 50;
-            this.btnMinimize.Location = new System.Drawing.Point(86, 2);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMinimize.IconSize = 62;
+            this.btnMinimize.Location = new System.Drawing.Point(115, 2);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(50, 50);
+            this.btnMinimize.Size = new System.Drawing.Size(67, 62);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
@@ -420,11 +434,11 @@
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 46;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(0, 11);
-            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(2);
+            this.iconCurrentChildForm.IconSize = 61;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(0, 14);
+            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(46, 50);
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(61, 62);
             this.iconCurrentChildForm.TabIndex = 0;
             this.iconCurrentChildForm.TabStop = false;
             // 
@@ -432,38 +446,30 @@
             // 
             this.labelTittleChildForm.AutoSize = true;
             this.labelTittleChildForm.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTittleChildForm.Location = new System.Drawing.Point(50, 21);
-            this.labelTittleChildForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTittleChildForm.Location = new System.Drawing.Point(67, 26);
             this.labelTittleChildForm.Name = "labelTittleChildForm";
-            this.labelTittleChildForm.Size = new System.Drawing.Size(45, 20);
+            this.labelTittleChildForm.Size = new System.Drawing.Size(56, 25);
             this.labelTittleChildForm.TabIndex = 1;
             this.labelTittleChildForm.Text = "Home";
             this.labelTittleChildForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pnlLineSidebar
-            // 
-            this.pnlLineSidebar.BackColor = System.Drawing.Color.Black;
-            this.pnlLineSidebar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlLineSidebar.Location = new System.Drawing.Point(375, 0);
-            this.pnlLineSidebar.Name = "pnlLineSidebar";
-            this.pnlLineSidebar.Size = new System.Drawing.Size(1, 730);
-            this.pnlLineSidebar.TabIndex = 15;
             // 
             // pnlLineTop
             // 
             this.pnlLineTop.BackColor = System.Drawing.Color.Black;
             this.pnlLineTop.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlLineTop.Location = new System.Drawing.Point(0, 69);
+            this.pnlLineTop.Location = new System.Drawing.Point(0, 85);
+            this.pnlLineTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlLineTop.Name = "pnlLineTop";
-            this.pnlLineTop.Size = new System.Drawing.Size(983, 1);
+            this.pnlLineTop.Size = new System.Drawing.Size(1311, 1);
             this.pnlLineTop.TabIndex = 18;
             // 
             // MainUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 802);
+            this.ClientSize = new System.Drawing.Size(1313, 987);
             this.Controls.Add(this.pnlBorderOfForm);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.MainUI_Load);

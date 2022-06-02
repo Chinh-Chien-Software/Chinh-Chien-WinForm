@@ -47,6 +47,7 @@ namespace ChinChin.UI
             //this.LoaiTaiKhoan = LoaiTaiKhoan;
             this.TenTaiKhoan = TenTaiKhoan;
         }
+
         private void MainUI_Load(object sender, EventArgs e)
         {
             //this.Text = "";
@@ -54,14 +55,27 @@ namespace ChinChin.UI
             mnsiIconTaiKhoan.Text = TenTaiKhoan;
             //lblTenQuan.Text = TenQuan;
 
-            ibtnThongKe.Text = "THỐNG KÊ"; ibtnThongKe.IconChar = IconChar.Dashcube;
+            ibtnThongKe.Text = "THỐNG KÊ";
+            //ibtnThongKe.IconChar = IconChar.Dashcube;
+
             //ibtn2.Text = "CHẤM CÔNG"; ibtnNhanDon.IconChar = IconChar.MoneyCheckAlt;
-            ibtnNhanDon.Text = "NHẬN ĐƠN"; ibtnThongKe.IconChar = IconChar.Receipt;
-            ibtnVatTu.Text = "KHO HÀNG"; //ibtn2.IconChar = IconChar.Boxes;
-            ibtnThucDon.Text = "THỰC ĐƠN"; ibtnVatTu.IconChar = IconChar.MugHot;
+
+            ibtnNhanDon.Text = "NHẬN ĐƠN";
+            //ibtnThongKe.IconChar = IconChar.Receipt;
+
+            //ibtnVatTu.Text = "KHO HÀNG";
+            //ibtn2.IconChar = IconChar.Boxes;
+
+            ibtnThucDon.Text = "THỰC ĐƠN";
+            //ibtnVatTu.IconChar = IconChar.MugHot;
+
             //ibtn6.Text = "LỊCH LÀM";
-            ibtnNhanDon.IconChar = IconChar.Calendar;
-            ibtnNhanSu.Text = "NHÂN SỰ"; //ibtn2.IconChar = IconChar.PeopleCarry;
+
+            //ibtnNhanDon.IconChar = IconChar.Calendar;
+
+            ibtnNhanSu.Text = "NHÂN SỰ";
+            //ibtn2.IconChar = IconChar.PeopleCarry;
+
             ShowQuanInCbbChuyenQuan();
         }
 
