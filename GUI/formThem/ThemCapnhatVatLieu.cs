@@ -26,7 +26,6 @@ namespace ChinhChien.GUI.formThem
             btnLuuCapnhat.Text = "Lưu";
             lblTitle.Text = "Thêm vật liệu";
             ChucNang = 0;
-            lblThongBao.Visible = false;
         }
 
         public ThemCapnhatVatLieu(
