@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ChinChin.DAL_DAO;
+using ChinhChien.DAL_DAO;
 
-namespace ChinChin.Forms_ChuQuan
+namespace ChinhChien.Forms_ChuQuan
 {
     public partial class QuanLyMenu : Form
     {
@@ -28,22 +28,22 @@ namespace ChinChin.Forms_ChuQuan
 
         private void QuanLyMenu_Load(object sender, EventArgs e)
         {
-            var fMainUI = (ChinChin.UI.MainUI)this.Owner;
+            var fMainUI = (ChinhChien.UI.MainUI)this.Owner;
             this.MaQuan = fMainUI.MaQuan;
             RefreshDGV();
         }
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            ChinChin.GUI.formThem.ThemCapnhatSanPham ThemCapnhatSanPham = new ChinChin.GUI.formThem.ThemCapnhatSanPham();
+            ChinhChien.GUI.formThem.ThemCapnhatSanPham ThemCapnhatSanPham = new ChinhChien.GUI.formThem.ThemCapnhatSanPham();
             ThemCapnhatSanPham.Owner = this;
             ThemCapnhatSanPham.Show();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            ChinChin.GUI.formThem.ThemCapnhatSanPham ThemCapnhatSanPham
-                = new ChinChin.GUI.formThem.ThemCapnhatSanPham(
+            ChinhChien.GUI.formThem.ThemCapnhatSanPham ThemCapnhatSanPham
+                = new ChinhChien.GUI.formThem.ThemCapnhatSanPham(
                     dgvSanPham.CurrentRow.Cells["MaSanPham"].Value.ToString(),
                     dgvSanPham.CurrentRow.Cells["TenSanPham"].Value.ToString(),
                     dgvSanPham.CurrentRow.Cells["CongThuc"].Value.ToString(),
@@ -65,7 +65,7 @@ namespace ChinChin.Forms_ChuQuan
 
         public void RefreshDGV()
         {
-            var fMainUI = (ChinChin.UI.MainUI)this.Owner;
+            var fMainUI = (ChinhChien.UI.MainUI)this.Owner;
             sql = "SELECT * FROM SanPham where MaQuan = '" + fMainUI.MaQuan + "'";
             dgvSanPham.DataSource = DataProvider.ReturnDataTable(sql);
 

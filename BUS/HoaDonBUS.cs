@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ChinChin.DAL_DAO;
+using ChinhChien.DAL_DAO;
 
-namespace ChinChin.BUS
+namespace ChinhChien.BUS
 {
     internal class HoaDonBUS
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin.UI
+namespace ChinhChien.UI
 {
     public partial class CaiDat : Form
     {

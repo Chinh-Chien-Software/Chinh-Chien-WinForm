@@ -1,4 +1,4 @@
-﻿namespace ChinChin.Custom
+﻿namespace ChinhChien.Custom
 {
     partial class TextBox_Custom
     {

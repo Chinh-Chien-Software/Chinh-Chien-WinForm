@@ -8,10 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using ChinChin.DAL_DAO;
-using ChinChin.GUI;
+using ChinhChien.DAL_DAO;
+using ChinhChien.GUI;
 
-namespace ChinChin.Forms_NhanVien
+namespace ChinhChien.Forms_NhanVien
 {
     public partial class TiepNhanDonHang : Form
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace ChinChin.Forms_QuanLy
+namespace ChinhChien.Forms_QuanLy
 {
     partial class BaoCaoDoanhThu
     {

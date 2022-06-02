@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ChinChin.DAL_DAO;
+using ChinhChien.DAL_DAO;
 using System.Runtime.InteropServices;
-using ChinChin.BUS;
+using ChinhChien.BUS;
 
-namespace ChinChin.GUI.formThem
+namespace ChinhChien.GUI.formThem
 {
     public partial class ThemCapnhatNhanVien : Form
     {

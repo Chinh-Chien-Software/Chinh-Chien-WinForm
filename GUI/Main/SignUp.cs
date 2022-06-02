@@ -8,12 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
-using ChinChin.Database;
-using ChinChin.UI;
-using ChinChin.BUS;
-using ChinChin.Classes;
+using ChinhChien.Database;
+using ChinhChien.UI;
+using ChinhChien.BUS;
+using ChinhChien.Classes;
 
-namespace ChinChin.UI
+namespace ChinhChien.UI
 {
     public partial class SignUp : Form
     {
@@ -69,7 +69,7 @@ namespace ChinChin.UI
                 taiKhoanOBJ.UIMode = 1;
 
                 taiKhoanBUS.ThemTaiKhoanBUS(taiKhoanOBJ);
-                ChinChin.GUI.formThem.ThemCapnhatQuan taoQuan = new ChinChin.GUI.formThem.ThemCapnhatQuan();
+                ChinhChien.GUI.formThem.ThemCapnhatQuan taoQuan = new ChinhChien.GUI.formThem.ThemCapnhatQuan();
                 taoQuan.Show();
                 this.Hide();
             }

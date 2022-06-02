@@ -1,4 +1,4 @@
-﻿namespace ChinChin.GUI.formThem
+﻿namespace ChinhChien.GUI.formThem
 {
     partial class TaoTaiKhoan
     {
@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.pnlBottom = new System.Windows.Forms.Panel();
-            this.btnGo = new ChinChin.Extra.BlackWhiteButton();
-            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
+            this.btnGo = new ChinhChien.Extra.BlackWhiteButton();
+            this.btnLuu = new ChinhChien.Extra.BlackWhiteButton();
             this.pnlMoveAndTitle = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pnlThongTin = new System.Windows.Forms.Panel();
             this.labelLoi = new System.Windows.Forms.Label();
-            this.tbcMk = new ChinChin.Custom.TextBox_Custom();
-            this.tbcEmail = new ChinChin.Custom.TextBox_Custom();
+            this.tbcMk = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcEmail = new ChinhChien.Custom.TextBox_Custom();
             this.lblUserName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbcTenTk = new ChinChin.Custom.TextBox_Custom();
+            this.tbcTenTk = new ChinhChien.Custom.TextBox_Custom();
             this.lblNgaySinh = new System.Windows.Forms.Label();
             this.pnlBottom.SuspendLayout();
             this.pnlMoveAndTitle.SuspendLayout();

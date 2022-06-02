@@ -1,5 +1,5 @@
 ﻿
-namespace ChinChin.Forms_ChuQuan
+namespace ChinhChien.Forms_ChuQuan
 {
     partial class QuanLyMenu
     {

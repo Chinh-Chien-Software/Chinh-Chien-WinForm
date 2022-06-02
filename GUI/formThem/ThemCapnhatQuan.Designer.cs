@@ -1,4 +1,4 @@
-﻿namespace ChinChin.GUI.formThem
+﻿namespace ChinhChien.GUI.formThem
 {
     partial class ThemCapnhatQuan
     {
@@ -33,9 +33,9 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblMaQuan = new System.Windows.Forms.Label();
             this.lblTenQuan = new System.Windows.Forms.Label();
-            this.tbcMaQuan = new ChinChin.Custom.TextBox_Custom();
-            this.tbcTenQuan = new ChinChin.Custom.TextBox_Custom();
-            this.btnTao = new ChinChin.Extra.BlackWhiteButton();
+            this.tbcMaQuan = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcTenQuan = new ChinhChien.Custom.TextBox_Custom();
+            this.btnTao = new ChinhChien.Extra.BlackWhiteButton();
             this.pnlMoveAndTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();

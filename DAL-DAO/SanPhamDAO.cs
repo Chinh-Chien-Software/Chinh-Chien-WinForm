@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace ChinChin.DAL_DAO
+namespace ChinhChien.DAL_DAO
 {
     internal class SanPhamDAO
     {

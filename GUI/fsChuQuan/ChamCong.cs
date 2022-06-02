@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin.FormsChuQuan
+namespace ChinhChien.FormsChuQuan
 {
     public partial class FormChamCong : Form
     {

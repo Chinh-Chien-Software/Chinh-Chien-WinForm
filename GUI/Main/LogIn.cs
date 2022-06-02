@@ -11,11 +11,11 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Windows.Input;
 using System.Data.SqlClient;
-using ChinChin.DAL_DAO;
-using ChinChin.UI;
+using ChinhChien.DAL_DAO;
+using ChinhChien.UI;
 using System.IO;
 
-namespace ChinChin.UI
+namespace ChinhChien.UI
 {
     public partial class LogIn : Form
     {
@@ -107,7 +107,7 @@ namespace ChinChin.UI
             }
             else
             {
-                ChinChin.GUI.Main.ChuaCoQuan taoQuan = new ChinChin.GUI.Main.ChuaCoQuan();
+                ChinhChien.GUI.Main.ChuaCoQuan taoQuan = new ChinhChien.GUI.Main.ChuaCoQuan();
                 taoQuan.Show();
                 this.Hide();
             }

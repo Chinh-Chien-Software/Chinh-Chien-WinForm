@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin.Forms_NhanVien
+namespace ChinhChien.Forms_NhanVien
 {
     public partial class KiemSoatLuongTonHang : Form
     {

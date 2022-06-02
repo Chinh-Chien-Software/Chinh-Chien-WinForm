@@ -1,5 +1,5 @@
 ﻿
-namespace ChinChin.FormsChuQuan
+namespace ChinhChien.FormsChuQuan
 {
     partial class formChuQuan
     {
@@ -37,7 +37,7 @@ namespace ChinChin.FormsChuQuan
             this.KhoHangBTN = new FontAwesome.Sharp.IconButton();
             this.ThongKeBTN = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.SignOutButton = new ChinChin.Extra.BlackWhiteButton();
+            this.SignOutButton = new ChinhChien.Extra.BlackWhiteButton();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Label();
             this.panelTittleBar = new System.Windows.Forms.Panel();

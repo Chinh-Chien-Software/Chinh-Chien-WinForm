@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ChinChin.DAL_DAO;
+using ChinhChien.DAL_DAO;
 using System.Data;
 
-namespace ChinChin.BUS
+namespace ChinhChien.BUS
 {
     internal class KhoBUS
     {

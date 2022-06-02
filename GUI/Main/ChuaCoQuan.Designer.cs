@@ -1,4 +1,4 @@
-﻿namespace ChinChin.GUI.Main
+﻿namespace ChinhChien.GUI.Main
 {
     partial class ChuaCoQuan
     {

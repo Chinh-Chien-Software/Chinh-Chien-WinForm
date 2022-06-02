@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ChinChin.DAL_DAO;
+using ChinhChien.DAL_DAO;
 using System.Runtime.InteropServices;
 
-namespace ChinChin.GUI.formThem
+namespace ChinhChien.GUI.formThem
 {
     public partial class ThemCapnhatSanPham : Form
     {
@@ -56,7 +56,7 @@ namespace ChinChin.GUI.formThem
             SanPhamDAO sanPhamDAO = new SanPhamDAO();
             if (KiemTra())
             {
-                var fQuanLyMenu = (ChinChin.Forms_ChuQuan.QuanLyMenu)this.Owner;
+                var fQuanLyMenu = (ChinhChien.Forms_ChuQuan.QuanLyMenu)this.Owner;
                 if (ChucNang == 0)
                 {
                     ChonLoai();

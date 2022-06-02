@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin
+namespace ChinhChien
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace ChinChin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChinChin.UI.LogIn());
+            Application.Run(new ChinhChien.UI.LogIn());
         }
     }
 }

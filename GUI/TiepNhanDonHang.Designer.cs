@@ -1,5 +1,5 @@
 ﻿
-namespace ChinChin.Forms_NhanVien
+namespace ChinhChien.Forms_NhanVien
 {
     partial class TiepNhanDonHang
     {
@@ -35,9 +35,9 @@ namespace ChinChin.Forms_NhanVien
             this.chTenSP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chGia = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.fpnlLoai = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnTypeTraSua = new ChinChin.Extra.BlackWhiteButton();
-            this.btnTypeCaPhe = new ChinChin.Extra.BlackWhiteButton();
-            this.btnTypeTopping = new ChinChin.Extra.BlackWhiteButton();
+            this.btnTypeTraSua = new ChinhChien.Extra.BlackWhiteButton();
+            this.btnTypeCaPhe = new ChinhChien.Extra.BlackWhiteButton();
+            this.btnTypeTopping = new ChinhChien.Extra.BlackWhiteButton();
             this.labelMenuList = new System.Windows.Forms.Label();
             this.panelHoaDon = new System.Windows.Forms.Panel();
             this.lblThongBao = new System.Windows.Forms.Label();

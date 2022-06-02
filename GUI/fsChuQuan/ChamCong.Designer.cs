@@ -1,5 +1,5 @@
 ﻿
-namespace ChinChin.FormsChuQuan
+namespace ChinhChien.FormsChuQuan
 {
     partial class FormChamCong
     {

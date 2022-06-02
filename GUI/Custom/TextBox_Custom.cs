@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin.Custom
+namespace ChinhChien.Custom
 {
     public partial class TextBox_Custom : UserControl
     {

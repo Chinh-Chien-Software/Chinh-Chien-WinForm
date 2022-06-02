@@ -1,4 +1,4 @@
-﻿namespace ChinChin.UI
+﻿namespace ChinhChien.UI
 {
     partial class SignUp
     {
@@ -37,19 +37,19 @@
             this.lblSignIn = new System.Windows.Forms.Label();
             this.panelUsername = new System.Windows.Forms.Panel();
             this.iPBCheckUsername = new FontAwesome.Sharp.IconPictureBox();
-            this.tbcUsername = new ChinChin.Custom.TextBox_Custom();
+            this.tbcUsername = new ChinhChien.Custom.TextBox_Custom();
             this.panelPassword = new System.Windows.Forms.Panel();
-            this.tbcPassword = new ChinChin.Custom.TextBox_Custom();
+            this.tbcPassword = new ChinhChien.Custom.TextBox_Custom();
             this.panelBackground = new System.Windows.Forms.Panel();
             this.pnlThongBao = new System.Windows.Forms.Panel();
             this.pnlEmail = new System.Windows.Forms.Panel();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.tbcEmail = new ChinChin.Custom.TextBox_Custom();
+            this.tbcEmail = new ChinhChien.Custom.TextBox_Custom();
             this.pnlRewrite = new System.Windows.Forms.Panel();
             this.iPBxShowHideRewritePasword = new FontAwesome.Sharp.IconPictureBox();
             this.lblRewritePassword = new System.Windows.Forms.Label();
-            this.tbcRewritePassword = new ChinChin.Custom.TextBox_Custom();
-            this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
+            this.tbcRewritePassword = new ChinhChien.Custom.TextBox_Custom();
+            this.SignInButton = new ChinhChien.Extra.BlackWhiteButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPBxShowHidePasword)).BeginInit();
             this.panelUsername.SuspendLayout();

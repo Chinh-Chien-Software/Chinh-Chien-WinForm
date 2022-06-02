@@ -1,5 +1,5 @@
 ﻿
-namespace ChinChin.FormsChuQuan
+namespace ChinhChien.FormsChuQuan
 {
     partial class FormKhoHang
     {
@@ -39,13 +39,13 @@ namespace ChinChin.FormsChuQuan
             this.giaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.donViTinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vatLieuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyQuanTraSuaDataSet = new ChinChin.DataSets.QuanLyQuanTraSuaDataSet();
+            this.quanLyQuanTraSuaDataSet = new ChinhChien.DataSets.QuanLyQuanTraSuaDataSet();
             this.khoHangBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.storageDataSet = new ChinChin.DataSets.StorageDataSet();
+            this.storageDataSet = new ChinhChien.DataSets.StorageDataSet();
             this.khoHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.khoHangTableAdapter = new ChinChin.DataSets.StorageDataSetTableAdapters.KhoHangTableAdapter();
-            this.vatLieuTableAdapter = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTableAdapters.VatLieuTableAdapter();
+            this.khoHangTableAdapter = new ChinhChien.DataSets.StorageDataSetTableAdapters.KhoHangTableAdapter();
+            this.vatLieuTableAdapter = new ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTableAdapters.VatLieuTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKhoHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vatLieuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyQuanTraSuaDataSet)).BeginInit();
@@ -191,13 +191,13 @@ namespace ChinChin.FormsChuQuan
         private System.Windows.Forms.Label labelKhoHang;
         private System.Windows.Forms.DataGridView dataGridViewKhoHang;
         private System.Windows.Forms.Panel panel1;
-        private ChinChin.DataSets.StorageDataSet storageDataSet;
+        private ChinhChien.DataSets.StorageDataSet storageDataSet;
         private System.Windows.Forms.BindingSource khoHangBindingSource;
-        private ChinChin.DataSets.StorageDataSetTableAdapters.KhoHangTableAdapter khoHangTableAdapter;
+        private ChinhChien.DataSets.StorageDataSetTableAdapters.KhoHangTableAdapter khoHangTableAdapter;
         private System.Windows.Forms.BindingSource khoHangBindingSource1;
-        private ChinChin.DataSets.QuanLyQuanTraSuaDataSet quanLyQuanTraSuaDataSet;
+        private ChinhChien.DataSets.QuanLyQuanTraSuaDataSet quanLyQuanTraSuaDataSet;
         private System.Windows.Forms.BindingSource vatLieuBindingSource;
-        private ChinChin.DataSets.QuanLyQuanTraSuaDataSetTableAdapters.VatLieuTableAdapter vatLieuTableAdapter;
+        private ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTableAdapters.VatLieuTableAdapter vatLieuTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn maVatLieuDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenVatLieuDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nhaCungCapDataGridViewTextBoxColumn;

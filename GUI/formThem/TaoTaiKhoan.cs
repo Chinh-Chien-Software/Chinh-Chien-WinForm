@@ -1,5 +1,5 @@
-﻿using ChinChin.BUS;
-using ChinChin.Database;
+﻿using ChinhChien.BUS;
+using ChinhChien.Database;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin.GUI.formThem
+namespace ChinhChien.GUI.formThem
 {
     public partial class TaoTaiKhoan : Form
     {

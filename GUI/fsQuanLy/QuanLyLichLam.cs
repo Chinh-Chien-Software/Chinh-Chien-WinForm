@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin.Forms_QuanLy
+namespace ChinhChien.Forms_QuanLy
 {
     public partial class QuanLyLichLam : Form
     {

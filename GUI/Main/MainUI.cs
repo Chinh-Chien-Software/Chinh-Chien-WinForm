@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
-using ChinChin.Forms_QuanLy;
-using ChinChin.DAL_DAO;
+using ChinhChien.Forms_QuanLy;
+using ChinhChien.DAL_DAO;
 
-namespace ChinChin.UI
+namespace ChinhChien.UI
 {
     public partial class MainUI : Form
     {
@@ -159,7 +159,7 @@ namespace ChinChin.UI
         private void ibtnThucDon_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color3, iconCurrentChildForm);
-            ChinChin.Forms_ChuQuan.QuanLyMenu quanLyMenu = new ChinChin.Forms_ChuQuan.QuanLyMenu();
+            ChinhChien.Forms_ChuQuan.QuanLyMenu quanLyMenu = new ChinhChien.Forms_ChuQuan.QuanLyMenu();
             quanLyMenu.Owner = this;
             MenuAnimation.OpenChildForm
                 (quanLyMenu, ref currentChildForm, pnlChildForm, labelTittleChildForm);
@@ -168,7 +168,7 @@ namespace ChinChin.UI
         private void ibtnNhanSu_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color4, iconCurrentChildForm);
-            ChinChin.GUI.NhanSu nhanSu = new ChinChin.GUI.NhanSu();
+            ChinhChien.GUI.NhanSu nhanSu = new ChinhChien.GUI.NhanSu();
             nhanSu.Owner = this;
             MenuAnimation.OpenChildForm
                 (nhanSu, ref currentChildForm, pnlChildForm, labelTittleChildForm);
@@ -178,14 +178,14 @@ namespace ChinChin.UI
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color5, iconCurrentChildForm);
             MenuAnimation.OpenChildForm
-                (new ChinChin.Forms_NhanVien.TiepNhanDonHang(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
+                (new ChinhChien.Forms_NhanVien.TiepNhanDonHang(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
 
         private void ibtnBaoCao_Click(object sender, EventArgs e)
         {
             MenuAnimation.ActivateButton(sender, MenuAnimation.RGBColors.color5, iconCurrentChildForm);
             MenuAnimation.OpenChildForm
-                (new ChinChin.GUI.BaoCao(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
+                (new ChinhChien.GUI.BaoCao(), ref currentChildForm, pnlChildForm, labelTittleChildForm);
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿
-namespace ChinChin.Forms_NhanVien
+namespace ChinhChien.Forms_NhanVien
 {
     partial class NhanVienPhaChe
     {
@@ -48,7 +48,7 @@ namespace ChinChin.Forms_NhanVien
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.SignOutButton = new ChinChin.Extra.BlackWhiteButton();
+            this.SignOutButton = new ChinhChien.Extra.BlackWhiteButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -305,7 +305,7 @@ namespace ChinChin.Forms_NhanVien
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.White;
-            this.panelDesktop.BackgroundImage = global::ChinChin.Properties.Resources.background_1920x1920;
+            this.panelDesktop.BackgroundImage = global::ChinhChien.Properties.Resources.background_1920x1920;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(376, 70);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(2);

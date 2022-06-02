@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using ChinChin.Classes;
+using ChinhChien.Classes;
 
-namespace ChinChin.DAL_DAO
+namespace ChinhChien.DAL_DAO
 {
     public class TaiKhoanDAO
     {

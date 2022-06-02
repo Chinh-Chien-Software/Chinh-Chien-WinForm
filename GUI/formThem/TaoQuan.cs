@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin.GUI.Main
+namespace ChinhChien.GUI.Main
 {
     public partial class TaoQuan : Form
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin.GUI.Main
+namespace ChinhChien.GUI.Main
 {
     public partial class ChuaCoQuan : Form
     {
@@ -24,7 +24,7 @@ namespace ChinChin.GUI.Main
 
         private void btnTaoQuan_Click(object sender, EventArgs e)
         {
-            ChinChin.GUI.formThem.ThemCapnhatQuan taoQuan = new ChinChin.GUI.formThem.ThemCapnhatQuan();
+            ChinhChien.GUI.formThem.ThemCapnhatQuan taoQuan = new ChinhChien.GUI.formThem.ThemCapnhatQuan();
             taoQuan.Show();
         }
 
@@ -35,7 +35,7 @@ namespace ChinChin.GUI.Main
 
         private void ipbBack_Click(object sender, EventArgs e)
         {
-            ChinChin.UI.LogIn LogIn = new ChinChin.UI.LogIn();
+            ChinhChien.UI.LogIn LogIn = new ChinhChien.UI.LogIn();
             LogIn.Show();
             this.Hide();
         }

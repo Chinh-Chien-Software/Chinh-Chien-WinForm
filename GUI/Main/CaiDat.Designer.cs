@@ -1,4 +1,4 @@
-﻿namespace ChinChin.UI
+﻿namespace ChinhChien.UI
 {
     partial class CaiDat
     {

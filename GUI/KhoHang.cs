@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ChinChin.Database;
-using ChinChin.DAL_DAO;
+using ChinhChien.Database;
+using ChinhChien.DAL_DAO;
 
-namespace ChinChin.Forms_QuanLy
+namespace ChinhChien.Forms_QuanLy
 {
     public partial class KhoHang : Form
     {
@@ -49,14 +49,14 @@ namespace ChinChin.Forms_QuanLy
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            ChinChin.GUI.formThem.ThemCapnhatVatLieu themCapnhatVatLieu = new ChinChin.GUI.formThem.ThemCapnhatVatLieu();
+            ChinhChien.GUI.formThem.ThemCapnhatVatLieu themCapnhatVatLieu = new ChinhChien.GUI.formThem.ThemCapnhatVatLieu();
             themCapnhatVatLieu.Owner = this;
             themCapnhatVatLieu.Show();
         }
 
         public void RefreshKho()
         {
-            var fMainUI = (ChinChin.UI.MainUI)this.Owner;
+            var fMainUI = (ChinhChien.UI.MainUI)this.Owner;
             this.MaQuan = fMainUI.MaQuan;
             this.TenKho = cbbKho.Text;
 
@@ -69,7 +69,7 @@ namespace ChinChin.Forms_QuanLy
 
         public void RefreshVatLieu(string TenKho)
         {
-            var fMainUI = (ChinChin.UI.MainUI)this.Owner;
+            var fMainUI = (ChinhChien.UI.MainUI)this.Owner;
             this.MaQuan = fMainUI.MaQuan;
             this.TenKho = cbbKho.Text;
 
@@ -100,7 +100,7 @@ namespace ChinChin.Forms_QuanLy
 
         public void RefreshVatLieu()
         {
-            var fMainUI = (ChinChin.UI.MainUI)this.Owner;
+            var fMainUI = (ChinhChien.UI.MainUI)this.Owner;
             sqlVatLieu = "SELECT * FROM VatLieu where MaQuan = '" + fMainUI.MaQuan + "'";
 
             dgvVatLieu.DataSource = DataProvider.ReturnDataTable(sqlVatLieu);
@@ -128,8 +128,8 @@ namespace ChinChin.Forms_QuanLy
             string MaQuan = this.MaQuan;
             string MaKho = this.MaKho;
 
-            ChinChin.GUI.formThem.ThemCapnhatVatLieu ThemVatLieu
-                = new ChinChin.GUI.formThem.ThemCapnhatVatLieu(
+            ChinhChien.GUI.formThem.ThemCapnhatVatLieu ThemVatLieu
+                = new ChinhChien.GUI.formThem.ThemCapnhatVatLieu(
                     MaVatLieu, TenVatLieu, NhaCungCap, SoLuong, Gia, DonViTinh, MaQuan, MaKho);
             ThemVatLieu.Owner = this;
             ThemVatLieu.Show();

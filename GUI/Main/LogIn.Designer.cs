@@ -1,5 +1,5 @@
 ﻿
-namespace ChinChin.UI
+namespace ChinhChien.UI
 {
     partial class LogIn
     {
@@ -42,11 +42,11 @@ namespace ChinChin.UI
             this.iPBxShowHidePasword = new FontAwesome.Sharp.IconPictureBox();
             this.labelPasword = new System.Windows.Forms.Label();
             this.taiKhoanBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan();
-            this.taiKhoanTableAdapter = new ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter();
-            this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
-            this.tbcUserName = new ChinChin.Custom.TextBox_Custom();
-            this.tbcPassword = new ChinChin.Custom.TextBox_Custom();
+            this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan();
+            this.taiKhoanTableAdapter = new ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter();
+            this.SignInButton = new ChinhChien.Extra.BlackWhiteButton();
+            this.tbcUserName = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcPassword = new ChinhChien.Custom.TextBox_Custom();
             this.panelBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panelUsername.SuspendLayout();
@@ -317,8 +317,8 @@ namespace ChinChin.UI
         private System.Windows.Forms.Panel panelPassword;
         private System.Windows.Forms.Label labelUserName;
         private System.Windows.Forms.Label lblNoAccount;
-        private ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan quanLyQuanTraSuaDataSetTaiKhoan;
-        private ChinChin.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter taiKhoanTableAdapter;
+        private ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan quanLyQuanTraSuaDataSetTaiKhoan;
+        private ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter taiKhoanTableAdapter;
         private System.Windows.Forms.BindingSource taiKhoanBindingSource;
         private FontAwesome.Sharp.IconPictureBox iPBxShowHidePasword;
         private Custom.TextBox_Custom tbcUserName;

@@ -1,4 +1,4 @@
-﻿namespace ChinChin.UI
+﻿namespace ChinhChien.UI
 {
     partial class ThongTinTaiKhoan
     {
@@ -37,12 +37,12 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox_Custom1 = new ChinChin.Custom.TextBox_Custom();
-            this.tbcUserName = new ChinChin.Custom.TextBox_Custom();
+            this.textBox_Custom1 = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcUserName = new ChinhChien.Custom.TextBox_Custom();
             this.pnlThongTin = new System.Windows.Forms.Panel();
-            this.SignInButton = new ChinChin.Extra.BlackWhiteButton();
-            this.blackWhiteButton1 = new ChinChin.Extra.BlackWhiteButton();
-            this.textBox_Custom2 = new ChinChin.Custom.TextBox_Custom();
+            this.SignInButton = new ChinhChien.Extra.BlackWhiteButton();
+            this.blackWhiteButton1 = new ChinhChien.Extra.BlackWhiteButton();
+            this.textBox_Custom2 = new ChinhChien.Custom.TextBox_Custom();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatarNhanVien)).BeginInit();
             this.pnlThongTin.SuspendLayout();
             this.SuspendLayout();

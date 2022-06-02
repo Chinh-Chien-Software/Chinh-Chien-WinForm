@@ -1,4 +1,4 @@
-﻿namespace ChinChin.GUI.formThem
+﻿namespace ChinhChien.GUI.formThem
 {
     partial class ThemCapnhatVatLieu
     {
@@ -37,18 +37,18 @@
             this.pnlThongTin = new System.Windows.Forms.Panel();
             this.cbbKho = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbcDVT = new ChinChin.Custom.TextBox_Custom();
-            this.tbcGia = new ChinChin.Custom.TextBox_Custom();
-            this.tbcSL = new ChinChin.Custom.TextBox_Custom();
-            this.tbcNhaCC = new ChinChin.Custom.TextBox_Custom();
-            this.tbcMaVL = new ChinChin.Custom.TextBox_Custom();
-            this.tbcTenVL = new ChinChin.Custom.TextBox_Custom();
+            this.tbcDVT = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcGia = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcSL = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcNhaCC = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcMaVL = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcTenVL = new ChinhChien.Custom.TextBox_Custom();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.lblThongBao = new System.Windows.Forms.Label();
             this.pnlMoveAndTitle = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnLuuCapnhat = new ChinChin.Extra.BlackWhiteButton();
+            this.btnLuuCapnhat = new ChinhChien.Extra.BlackWhiteButton();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.pnlMoveAndTitle.SuspendLayout();

@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
-namespace ChinChin
+namespace ChinhChien
 {
     public class dbConnection
     {

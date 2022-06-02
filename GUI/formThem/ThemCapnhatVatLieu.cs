@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ChinChin.DAL_DAO;
+using ChinhChien.DAL_DAO;
 using System.Runtime.InteropServices;
-using ChinChin.BUS;
+using ChinhChien.BUS;
 
-namespace ChinChin.GUI.formThem
+namespace ChinhChien.GUI.formThem
 {
     public partial class ThemCapnhatVatLieu : Form
     {
@@ -62,7 +62,7 @@ namespace ChinChin.GUI.formThem
 
         private void ThemVatLieu_Load(object sender, EventArgs e)
         {
-            var fKhoHang = (ChinChin.Forms_QuanLy.KhoHang)this.Owner;
+            var fKhoHang = (ChinhChien.Forms_QuanLy.KhoHang)this.Owner;
             cbbKho.DataSource = khoDao.LayDanhSachKho(fKhoHang.MaQuan);
             lblThongBao.Visible = false;
             cbbKho.DisplayMember = "TenKho";
@@ -78,7 +78,7 @@ namespace ChinChin.GUI.formThem
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            var fKhoHang = (ChinChin.Forms_QuanLy.KhoHang)this.Owner;
+            var fKhoHang = (ChinhChien.Forms_QuanLy.KhoHang)this.Owner;
             if (ChucNang == 0)
             {
                 if (KiemTra())

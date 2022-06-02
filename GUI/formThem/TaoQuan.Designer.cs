@@ -1,4 +1,4 @@
-﻿namespace ChinChin.GUI.Main
+﻿namespace ChinhChien.GUI.Main
 {
     partial class TaoQuan
     {
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbcMaQuan = new ChinChin.Custom.TextBox_Custom();
+            this.tbcMaQuan = new ChinhChien.Custom.TextBox_Custom();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.tbcTenQuan = new ChinChin.Custom.TextBox_Custom();
+            this.tbcTenQuan = new ChinhChien.Custom.TextBox_Custom();
             this.iPBCheckMaQuan = new FontAwesome.Sharp.IconPictureBox();
-            this.btnTao = new ChinChin.Extra.BlackWhiteButton();
+            this.btnTao = new ChinhChien.Extra.BlackWhiteButton();
             ((System.ComponentModel.ISupportInitialize)(this.iPBCheckMaQuan)).BeginInit();
             this.SuspendLayout();
             // 

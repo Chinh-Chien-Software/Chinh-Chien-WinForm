@@ -9,9 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
-using ChinChin.UI;
+using ChinhChien.UI;
 
-namespace ChinChin.FormsQuanLy
+namespace ChinhChien.FormsQuanLy
 {
     public partial class QuanLy : Form
     {

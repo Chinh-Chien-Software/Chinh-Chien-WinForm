@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChinChin.GUI
+namespace ChinhChien.GUI
 {
     public partial class NhapCapnhatSoLuong : Form
     {

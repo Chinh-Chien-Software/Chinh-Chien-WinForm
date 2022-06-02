@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 
-namespace ChinChin.DAL_DAO
+namespace ChinhChien.DAL_DAO
 {
     internal class KhoDAO
     {

@@ -5,9 +5,9 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ChinChin.Classes;
+using ChinhChien.Classes;
 
-namespace ChinChin.DAL_DAO
+namespace ChinhChien.DAL_DAO
 {
     internal class NhanVienDAO
     {

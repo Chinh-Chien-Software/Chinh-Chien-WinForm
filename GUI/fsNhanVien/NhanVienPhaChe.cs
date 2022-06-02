@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
-using ChinChin.UI;
-using ChinChin.DAL_DAO;
+using ChinhChien.UI;
+using ChinhChien.DAL_DAO;
 
-namespace ChinChin.Forms_NhanVien
+namespace ChinhChien.Forms_NhanVien
 {
     public partial class NhanVienPhaChe : Form
     {
@@ -92,7 +92,7 @@ namespace ChinChin.Forms_NhanVien
 
         private void NhanVienPhaChe_Load(object sender, EventArgs e)
         {
-            string sqlcode = "SELECT nv.TenNhanVien FROM TaiKhoan tk, NhanVien nv WHERE tk.TenTaiKhoan = '" + ChinChin.UI.LogIn.username + "' AND tk.MatKhau = '" + ChinChin.UI.LogIn.password + "' AND nv.MaNhanVien = tk.MaNhanVien";
+            string sqlcode = "SELECT nv.TenNhanVien FROM TaiKhoan tk, NhanVien nv WHERE tk.TenTaiKhoan = '" + ChinhChien.UI.LogIn.username + "' AND tk.MatKhau = '" + ChinhChien.UI.LogIn.password + "' AND nv.MaNhanVien = tk.MaNhanVien";
             DataTable TaiKhoan = new DataTable();
             TaiKhoan = DataProvider.ReturnDataTable(sqlcode);
             //MnsTaiKhoan.Text = TaiKhoan.Rows[0][0].ToString();

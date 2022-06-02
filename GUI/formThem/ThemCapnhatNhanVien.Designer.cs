@@ -1,4 +1,4 @@
-﻿namespace ChinChin.GUI.formThem
+﻿namespace ChinhChien.GUI.formThem
 {
     partial class ThemCapnhatNhanVien
     {
@@ -35,8 +35,8 @@
             this.pnlThongTin = new System.Windows.Forms.Panel();
             this.cbbChucVu = new System.Windows.Forms.ComboBox();
             this.lblChucVu = new System.Windows.Forms.Label();
-            this.tbcSDT = new ChinChin.Custom.TextBox_Custom();
-            this.tbcDC = new ChinChin.Custom.TextBox_Custom();
+            this.tbcSDT = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcDC = new ChinhChien.Custom.TextBox_Custom();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cbbGioiTinh = new System.Windows.Forms.ComboBox();
@@ -44,15 +44,15 @@
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.dtpNgayVL = new System.Windows.Forms.DateTimePicker();
-            this.tbcLuong = new ChinChin.Custom.TextBox_Custom();
-            this.tbcMaNV = new ChinChin.Custom.TextBox_Custom();
-            this.tbcTenNV = new ChinChin.Custom.TextBox_Custom();
+            this.tbcLuong = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcMaNV = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcTenNV = new ChinhChien.Custom.TextBox_Custom();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.lblThongBao = new System.Windows.Forms.Label();
             this.pnlMoveAndTitle = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlBottom = new System.Windows.Forms.Panel();
-            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
+            this.btnLuu = new ChinhChien.Extra.BlackWhiteButton();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.pnlMoveAndTitle.SuspendLayout();

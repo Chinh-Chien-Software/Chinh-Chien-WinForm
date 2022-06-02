@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChinChin.Classes
+namespace ChinhChien.Classes
 {
     public class TaiKhoanVO
     {

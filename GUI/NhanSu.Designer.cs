@@ -1,4 +1,4 @@
-﻿namespace ChinChin.GUI
+﻿namespace ChinhChien.GUI
 {
     partial class NhanSu
     {

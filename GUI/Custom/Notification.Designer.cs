@@ -1,5 +1,5 @@
 ﻿
-namespace ChinChin.Extra
+namespace ChinhChien.Extra
 {
     partial class Notification
     {

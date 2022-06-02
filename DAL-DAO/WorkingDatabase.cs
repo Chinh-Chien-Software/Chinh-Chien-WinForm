@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace ChinChin.Database
+namespace ChinhChien.Database
 {
     public class WorkingDatabase
     {

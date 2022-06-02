@@ -1,4 +1,4 @@
-﻿namespace ChinChin.GUI
+﻿namespace ChinhChien.GUI
 {
     partial class NhapCapnhatSoLuong
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblUserName = new System.Windows.Forms.Label();
-            this.tbcSL = new ChinChin.Custom.TextBox_Custom();
+            this.tbcSL = new ChinhChien.Custom.TextBox_Custom();
             this.btnOK = new System.Windows.Forms.Button();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();

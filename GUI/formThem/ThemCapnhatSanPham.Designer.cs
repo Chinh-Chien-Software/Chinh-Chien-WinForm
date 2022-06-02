@@ -1,4 +1,4 @@
-﻿namespace ChinChin.GUI.formThem
+﻿namespace ChinhChien.GUI.formThem
 {
     partial class ThemCapnhatSanPham
     {
@@ -47,12 +47,12 @@
             this.pnlMoveAndTitle = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlBottom = new System.Windows.Forms.Panel();
-            this.tbcDanhGia = new ChinChin.Custom.TextBox_Custom();
-            this.tbcGia = new ChinChin.Custom.TextBox_Custom();
-            this.tbcCT = new ChinChin.Custom.TextBox_Custom();
-            this.tbcMaSP = new ChinChin.Custom.TextBox_Custom();
-            this.tbcTenSP = new ChinChin.Custom.TextBox_Custom();
-            this.btnLuu = new ChinChin.Extra.BlackWhiteButton();
+            this.tbcDanhGia = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcGia = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcCT = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcMaSP = new ChinhChien.Custom.TextBox_Custom();
+            this.tbcTenSP = new ChinhChien.Custom.TextBox_Custom();
+            this.btnLuu = new ChinhChien.Extra.BlackWhiteButton();
             this.pnlThongTin.SuspendLayout();
             this.pnlThanhPhanSanPham.SuspendLayout();
             this.pnlButtonThanhPhanSanPham.SuspendLayout();

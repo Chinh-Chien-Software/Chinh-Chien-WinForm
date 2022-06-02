@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ChinChin.DAL_DAO;
-using ChinChin.BUS;
+using ChinhChien.DAL_DAO;
+using ChinhChien.BUS;
 
 
-namespace ChinChin.GUI
+namespace ChinhChien.GUI
 {
     public partial class NhanSu : Form
     {
@@ -47,7 +47,7 @@ namespace ChinChin.GUI
 
         public void RefreshDGV()
         {
-            var fMainUI = (ChinChin.UI.MainUI)this.Owner;
+            var fMainUI = (ChinhChien.UI.MainUI)this.Owner;
             MaQuan = fMainUI.MaQuan;
             
             dgvNhanVien.DataSource

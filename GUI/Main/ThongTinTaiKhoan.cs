@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ChinChin.Database;
+using ChinhChien.Database;
 
-namespace ChinChin.UI
+namespace ChinhChien.UI
 {
     public partial class ThongTinTaiKhoan : Form
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace ChinChin.Forms_NhanVien
+namespace ChinhChien.Forms_NhanVien
 {
     partial class ButtonSanPham
     {

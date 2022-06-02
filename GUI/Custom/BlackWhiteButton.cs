@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace ChinChin.Extra
+namespace ChinhChien.Extra
 {
     public class BlackWhiteButton : Button
     {

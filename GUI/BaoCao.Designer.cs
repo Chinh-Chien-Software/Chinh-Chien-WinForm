@@ -1,5 +1,5 @@
 ﻿
-namespace ChinChin.GUI
+namespace ChinhChien.GUI
 {
     partial class BaoCao
     {

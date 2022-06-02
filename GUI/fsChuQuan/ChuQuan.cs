@@ -3,10 +3,10 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
-using ChinChin.UI;
+using ChinhChien.UI;
 
 
-namespace ChinChin.FormsChuQuan
+namespace ChinhChien.FormsChuQuan
 {
     public partial class formChuQuan : Form
     {
