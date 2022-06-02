@@ -2,7 +2,7 @@
 	path = Database-SQL
 	url = https://github.com/Chinh-Chien-Software/Chinh-Chien-Database-SQL.git
 	branch = main
-[submodule "Diagram"]
+[submodule "Diagrams"]
 	path = Diagram
 	url = https://github.com/Chinh-Chien-Software/Chinh-Chien-Database-Diagram.git
 	branch = main
