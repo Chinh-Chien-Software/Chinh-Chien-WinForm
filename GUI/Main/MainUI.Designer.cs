@@ -1,6 +1,6 @@
 ﻿namespace ChinhChien.UI
 {
-    partial class MainUI
+    partial class frmMainUI
     {
         /// <summary>
         /// Required designer variable.
@@ -71,10 +71,10 @@
             // 
             this.pnlChildForm.BackColor = System.Drawing.Color.White;
             this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlChildForm.Location = new System.Drawing.Point(501, 86);
+            this.pnlChildForm.Location = new System.Drawing.Point(350, 80);
             this.pnlChildForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlChildForm.Name = "pnlChildForm";
-            this.pnlChildForm.Size = new System.Drawing.Size(810, 899);
+            this.pnlChildForm.Size = new System.Drawing.Size(961, 905);
             this.pnlChildForm.TabIndex = 14;
             // 
             // pnlBorderOfForm
@@ -104,10 +104,10 @@
             this.pnlLeftSidebar.Controls.Add(this.pnlLineSidebar);
             this.pnlLeftSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeftSidebar.ForeColor = System.Drawing.Color.Coral;
-            this.pnlLeftSidebar.Location = new System.Drawing.Point(0, 86);
+            this.pnlLeftSidebar.Location = new System.Drawing.Point(0, 80);
             this.pnlLeftSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlLeftSidebar.Name = "pnlLeftSidebar";
-            this.pnlLeftSidebar.Size = new System.Drawing.Size(501, 899);
+            this.pnlLeftSidebar.Size = new System.Drawing.Size(350, 905);
             this.pnlLeftSidebar.TabIndex = 17;
             // 
             // ibtnBaoCao
@@ -125,7 +125,7 @@
             this.ibtnBaoCao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnBaoCao.Name = "ibtnBaoCao";
             this.ibtnBaoCao.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.ibtnBaoCao.Size = new System.Drawing.Size(500, 100);
+            this.ibtnBaoCao.Size = new System.Drawing.Size(349, 100);
             this.ibtnBaoCao.TabIndex = 14;
             this.ibtnBaoCao.Text = "BÁO CÁO";
             this.ibtnBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -147,7 +147,7 @@
             this.ibtnNhanSu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnNhanSu.Name = "ibtnNhanSu";
             this.ibtnNhanSu.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.ibtnNhanSu.Size = new System.Drawing.Size(500, 100);
+            this.ibtnNhanSu.Size = new System.Drawing.Size(349, 100);
             this.ibtnNhanSu.TabIndex = 13;
             this.ibtnNhanSu.Text = "NHÂN SỰ";
             this.ibtnNhanSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -169,7 +169,7 @@
             this.ibtnThucDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnThucDon.Name = "ibtnThucDon";
             this.ibtnThucDon.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.ibtnThucDon.Size = new System.Drawing.Size(500, 100);
+            this.ibtnThucDon.Size = new System.Drawing.Size(349, 100);
             this.ibtnThucDon.TabIndex = 11;
             this.ibtnThucDon.Text = "THỰC ĐƠN";
             this.ibtnThucDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -191,7 +191,7 @@
             this.ibtnVatTu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnVatTu.Name = "ibtnVatTu";
             this.ibtnVatTu.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.ibtnVatTu.Size = new System.Drawing.Size(500, 100);
+            this.ibtnVatTu.Size = new System.Drawing.Size(349, 100);
             this.ibtnVatTu.TabIndex = 10;
             this.ibtnVatTu.Text = "VẬT TƯ";
             this.ibtnVatTu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -213,7 +213,7 @@
             this.ibtnNhanDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnNhanDon.Name = "ibtnNhanDon";
             this.ibtnNhanDon.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.ibtnNhanDon.Size = new System.Drawing.Size(500, 100);
+            this.ibtnNhanDon.Size = new System.Drawing.Size(349, 100);
             this.ibtnNhanDon.TabIndex = 9;
             this.ibtnNhanDon.Text = "NHẬN ĐƠN";
             this.ibtnNhanDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -235,7 +235,7 @@
             this.ibtnThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnThongKe.Name = "ibtnThongKe";
             this.ibtnThongKe.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.ibtnThongKe.Size = new System.Drawing.Size(500, 100);
+            this.ibtnThongKe.Size = new System.Drawing.Size(349, 100);
             this.ibtnThongKe.TabIndex = 7;
             this.ibtnThongKe.Text = "THỐNG KÊ";
             this.ibtnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -251,7 +251,7 @@
             this.pnlQuan.Location = new System.Drawing.Point(0, 0);
             this.pnlQuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlQuan.Name = "pnlQuan";
-            this.pnlQuan.Size = new System.Drawing.Size(500, 78);
+            this.pnlQuan.Size = new System.Drawing.Size(349, 78);
             this.pnlQuan.TabIndex = 0;
             // 
             // ipbThemQuan
@@ -263,7 +263,7 @@
             this.ipbThemQuan.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
             this.ipbThemQuan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ipbThemQuan.IconSize = 62;
-            this.ipbThemQuan.Location = new System.Drawing.Point(309, 14);
+            this.ipbThemQuan.Location = new System.Drawing.Point(275, 6);
             this.ipbThemQuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ipbThemQuan.Name = "ipbThemQuan";
             this.ipbThemQuan.Size = new System.Drawing.Size(67, 62);
@@ -280,7 +280,7 @@
             this.cbbChuyenQuan.Location = new System.Drawing.Point(15, 17);
             this.cbbChuyenQuan.Margin = new System.Windows.Forms.Padding(4);
             this.cbbChuyenQuan.Name = "cbbChuyenQuan";
-            this.cbbChuyenQuan.Size = new System.Drawing.Size(288, 42);
+            this.cbbChuyenQuan.Size = new System.Drawing.Size(213, 42);
             this.cbbChuyenQuan.TabIndex = 1;
             this.cbbChuyenQuan.Text = "Chuyển quán";
             // 
@@ -288,10 +288,10 @@
             // 
             this.pnlLineSidebar.BackColor = System.Drawing.Color.Black;
             this.pnlLineSidebar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlLineSidebar.Location = new System.Drawing.Point(500, 0);
+            this.pnlLineSidebar.Location = new System.Drawing.Point(349, 0);
             this.pnlLineSidebar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlLineSidebar.Name = "pnlLineSidebar";
-            this.pnlLineSidebar.Size = new System.Drawing.Size(1, 899);
+            this.pnlLineSidebar.Size = new System.Drawing.Size(1, 905);
             this.pnlLineSidebar.TabIndex = 15;
             // 
             // panelTittleBar
@@ -305,7 +305,7 @@
             this.panelTittleBar.Location = new System.Drawing.Point(0, 0);
             this.panelTittleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTittleBar.Name = "panelTittleBar";
-            this.panelTittleBar.Size = new System.Drawing.Size(1311, 86);
+            this.panelTittleBar.Size = new System.Drawing.Size(1311, 80);
             this.panelTittleBar.TabIndex = 16;
             this.panelTittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTittleBar_MouseDown);
             // 
@@ -319,7 +319,7 @@
             this.pnlTaiKhoanVaButtons.Location = new System.Drawing.Point(983, 0);
             this.pnlTaiKhoanVaButtons.Margin = new System.Windows.Forms.Padding(4);
             this.pnlTaiKhoanVaButtons.Name = "pnlTaiKhoanVaButtons";
-            this.pnlTaiKhoanVaButtons.Size = new System.Drawing.Size(328, 85);
+            this.pnlTaiKhoanVaButtons.Size = new System.Drawing.Size(328, 79);
             this.pnlTaiKhoanVaButtons.TabIndex = 17;
             // 
             // mnsTaiKhoan
@@ -330,7 +330,7 @@
             this.mnsiIconTaiKhoan});
             this.mnsTaiKhoan.Location = new System.Drawing.Point(0, 0);
             this.mnsTaiKhoan.Name = "mnsTaiKhoan";
-            this.mnsTaiKhoan.Size = new System.Drawing.Size(93, 75);
+            this.mnsTaiKhoan.Size = new System.Drawing.Size(95, 75);
             this.mnsTaiKhoan.TabIndex = 16;
             this.mnsTaiKhoan.Text = "msTaiKhoan";
             // 
@@ -457,20 +457,22 @@
             // 
             this.pnlLineTop.BackColor = System.Drawing.Color.Black;
             this.pnlLineTop.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlLineTop.Location = new System.Drawing.Point(0, 85);
+            this.pnlLineTop.Location = new System.Drawing.Point(0, 79);
             this.pnlLineTop.Margin = new System.Windows.Forms.Padding(4);
             this.pnlLineTop.Name = "pnlLineTop";
             this.pnlLineTop.Size = new System.Drawing.Size(1311, 1);
             this.pnlLineTop.TabIndex = 18;
             // 
-            // MainUI
+            // frmMainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1313, 987);
             this.Controls.Add(this.pnlBorderOfForm);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "MainUI";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmMainUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.MainUI_Load);
             this.pnlBorderOfForm.ResumeLayout(false);

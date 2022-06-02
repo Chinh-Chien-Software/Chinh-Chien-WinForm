@@ -14,9 +14,9 @@ using ChinhChien.DAL_DAO;
 
 namespace ChinhChien.UI
 {
-    public partial class MainUI : Form
+    public partial class frmMainUI : Form
     {
-        public MainUI()
+        public frmMainUI()
         {
             InitializeComponent();
         }
@@ -35,13 +35,13 @@ namespace ChinhChien.UI
             get;
             set;
         }
-        public MainUI(string TenTaiKhoan) : this()
+        public frmMainUI(string TenTaiKhoan) : this()
         {
             this.TenTaiKhoan = TenTaiKhoan;
         }
 
         // Hàm cũ trước khi còn trường LoaiTaiKhoan
-        public MainUI(string TenTaiKhoan, string LoaiTaiKhoan) : this()
+        public frmMainUI(string TenTaiKhoan, string LoaiTaiKhoan) : this()
         {
             // Viết hàm khởi tạo này để mang theo dữ liệu khi chạy Form MainUI
             //this.LoaiTaiKhoan = LoaiTaiKhoan;
