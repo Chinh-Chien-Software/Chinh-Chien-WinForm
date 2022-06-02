@@ -86,7 +86,7 @@ namespace ChinhChien.FormsQuanLy
 
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            LogIn logout = new LogIn();
+            frmLogIn logout = new frmLogIn();
             logout.Show();
             this.Hide();
         }

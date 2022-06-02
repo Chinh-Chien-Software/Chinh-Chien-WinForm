@@ -39,7 +39,7 @@ namespace ChinhChien.Forms_NhanVien
 
         private void SignOutButton_Click_1(object sender, EventArgs e)
         {
-            LogIn logout = new LogIn();
+            frmLogIn logout = new frmLogIn();
             logout.Show();
             this.Hide();
         }
@@ -92,7 +92,7 @@ namespace ChinhChien.Forms_NhanVien
 
         private void NhanVienPhaChe_Load(object sender, EventArgs e)
         {
-            string sqlcode = "SELECT nv.TenNhanVien FROM TaiKhoan tk, NhanVien nv WHERE tk.TenTaiKhoan = '" + ChinhChien.UI.LogIn.username + "' AND tk.MatKhau = '" + ChinhChien.UI.LogIn.password + "' AND nv.MaNhanVien = tk.MaNhanVien";
+            string sqlcode = "SELECT nv.TenNhanVien FROM TaiKhoan tk, NhanVien nv WHERE tk.TenTaiKhoan = '" + ChinhChien.UI.frmLogIn.username + "' AND tk.MatKhau = '" + ChinhChien.UI.frmLogIn.password + "' AND nv.MaNhanVien = tk.MaNhanVien";
             DataTable TaiKhoan = new DataTable();
             TaiKhoan = DataProvider.ReturnDataTable(sqlcode);
             //MnsTaiKhoan.Text = TaiKhoan.Rows[0][0].ToString();

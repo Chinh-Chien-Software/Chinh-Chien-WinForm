@@ -14,10 +14,12 @@ using System.Data.SqlClient;
 using ChinhChien.DAL_DAO;
 using ChinhChien.UI;
 using System.IO;
+using System.Runtime.InteropServices;
+
 
 namespace ChinhChien.UI
 {
-    public partial class LogIn : Form
+    public partial class frmLogIn : Form
     {
         SqlConnection conn;
         string connStr = Properties.Settings.Default.ChinhChienConnectionString;
@@ -39,21 +41,19 @@ namespace ChinhChien.UI
            int nWidthEllipse, // width of ellipse
            int nHeightEllipse // height of ellipse
         );
+
         public static string username;
         public static string password;
         string usernameSaved = "";
         frmMainUI MainUI = new frmMainUI();
 
-        public LogIn()
+        public frmLogIn()
         {
             InitializeComponent();
-            labelThongBao.Text = "";
-            //this.FormBorderStyle = FormBorderStyle.None;
-
-            this.ActiveControl = tbcUserName;
+            this.ActiveControl = tbcUserName; // Dòng này để làm gì ?? - Focus vào tbcUserName khi mở
 
             // Cho cửa sổ có kích thước vừa đẹp với màn hình làm việc
-            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            //this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
         }
 
         private void CheckUserPassAndSignIn()
@@ -286,6 +286,16 @@ namespace ChinhChien.UI
                 tbcPassword.PasswordChar = '\0';
                 iPBxShowHidePasword.IconChar = IconChar.EyeSlash;
             }
+        }
+
+        [DllImport("user32")]
+        private static extern bool ReleaseCapture();
+        [DllImport("user32")]
+        private static extern int SendMessage(IntPtr hWnd, int Msg, int wp, int lp);
+        private void lblSignIn_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

@@ -330,7 +330,7 @@
             this.mnsiIconTaiKhoan});
             this.mnsTaiKhoan.Location = new System.Drawing.Point(0, 0);
             this.mnsTaiKhoan.Name = "mnsTaiKhoan";
-            this.mnsTaiKhoan.Size = new System.Drawing.Size(95, 75);
+            this.mnsTaiKhoan.Size = new System.Drawing.Size(93, 75);
             this.mnsTaiKhoan.TabIndex = 16;
             this.mnsTaiKhoan.Text = "msTaiKhoan";
             // 
@@ -468,10 +468,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1313, 987);
+            this.ControlBox = false;
             this.Controls.Add(this.pnlBorderOfForm);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "frmMainUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.MainUI_Load);

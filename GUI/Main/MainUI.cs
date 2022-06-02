@@ -16,9 +16,14 @@ namespace ChinhChien.UI
 {
     public partial class frmMainUI : Form
     {
+        int TrangThaiCuaSo;
         public frmMainUI()
         {
             InitializeComponent();
+            if(WindowState == FormWindowState.Normal)
+            {
+                TrangThaiCuaSo = 0;
+            }
         }
         public string TenTaiKhoan
         {
@@ -51,7 +56,6 @@ namespace ChinhChien.UI
         private void MainUI_Load(object sender, EventArgs e)
         {
             //this.Text = "";
-            this.ControlBox = false;
             mnsiIconTaiKhoan.Text = TenTaiKhoan;
             //lblTenQuan.Text = TenQuan;
 
@@ -119,10 +123,19 @@ namespace ChinhChien.UI
 
         private void btnMaximize_Click(object sender, EventArgs e)
         {
-            if (WindowState == FormWindowState.Normal)
-                WindowState = FormWindowState.Maximized;
-            else
-                WindowState = FormWindowState.Normal;
+            if (TrangThaiCuaSo == 0)
+            {
+                this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+                this.Location = new System.Drawing.Point(0, 0);
+                TrangThaiCuaSo = 1;
+            }
+            else if (TrangThaiCuaSo == 1)
+            {
+                this.Location = new System.Drawing.Point(300, 300);
+                this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width - 500, Screen.PrimaryScreen.WorkingArea.Height - 250);
+                this.CenterToScreen();
+                TrangThaiCuaSo = 0;
+            }
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -132,7 +145,7 @@ namespace ChinhChien.UI
 
         private void DangXuat_Click(object sender, EventArgs e)
         {
-            LogIn logout = new LogIn();
+            frmLogIn logout = new frmLogIn();
             logout.Show();
             this.Hide();
         }

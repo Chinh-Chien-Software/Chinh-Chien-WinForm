@@ -37,7 +37,7 @@ namespace ChinhChien.UI
 
         private void lblNoAccount_Click(object sender, EventArgs e)
         {
-            LogIn LogIn = new LogIn();
+            frmLogIn LogIn = new frmLogIn();
             LogIn.Show();
             this.Hide();
         }

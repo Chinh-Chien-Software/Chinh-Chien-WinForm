@@ -35,7 +35,7 @@ namespace ChinhChien.GUI.Main
 
         private void ipbBack_Click(object sender, EventArgs e)
         {
-            ChinhChien.UI.LogIn LogIn = new ChinhChien.UI.LogIn();
+            ChinhChien.UI.frmLogIn LogIn = new ChinhChien.UI.frmLogIn();
             LogIn.Show();
             this.Hide();
         }
