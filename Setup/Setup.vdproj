@@ -675,7 +675,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Chinh Chien Winform"
         "ProductCode" = "8:{9D5DD298-C245-48BB-937C-E9F81473D88E}"
-        "PackageCode" = "8:{82B93DBD-2AD4-4DDD-A2FB-83C6575741B0}"
+        "PackageCode" = "8:{1C3EEBE4-C4A4-43DE-8E39-5AA3632F78B4}"
         "UpgradeCode" = "8:{3FFC526C-A581-4AB6-9B42-3A7A9D06952A}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -797,7 +797,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_004B7C74611B438587637789A7FE0882"
             {
-            "Name" = "8:Chinh Chiến"
+            "Name" = "8:Chinh Chien"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -811,7 +811,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8F2917766C1F44C595BACAC5A7C6DE49"
             {
-            "Name" = "8:Chinh Chiến"
+            "Name" = "8:Chinh Chien"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1224,7 +1224,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F276B2E86C674EF08D2412849D9B12C8"
             {
-            "SourcePath" = "8:..\\obj\\Debug\\ChinChin.exe"
+            "SourcePath" = "8:..\\obj\\Release\\ChinhChien.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_1485A3C27DD84BF294F548A0E34C8C95"

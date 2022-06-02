@@ -41,7 +41,7 @@ namespace ChinhChien.UI
         );
         public static string username;
         public static string password;
-        string usernameSaved;
+        string usernameSaved = "";
         MainUI MainUI = new MainUI();
 
         public LogIn()
