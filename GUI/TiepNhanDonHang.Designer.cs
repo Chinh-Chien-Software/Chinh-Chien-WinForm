@@ -29,6 +29,7 @@ namespace ChinhChien.Forms_NhanVien
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pnlChonMon = new System.Windows.Forms.Panel();
             this.lvSanPhamTheoLoai = new System.Windows.Forms.ListView();
@@ -48,6 +49,7 @@ namespace ChinhChien.Forms_NhanVien
             this.chSoLuong = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chTien = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.labelHoaDon = new System.Windows.Forms.Label();
+            this.tmDisableThongBao = new System.Windows.Forms.Timer(this.components);
             this.pnlMenu.SuspendLayout();
             this.pnlChonMon.SuspendLayout();
             this.fpnlLoai.SuspendLayout();
@@ -62,7 +64,7 @@ namespace ChinhChien.Forms_NhanVien
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(743, 1033);
+            this.pnlMenu.Size = new System.Drawing.Size(743, 639);
             this.pnlMenu.TabIndex = 0;
             // 
             // pnlChonMon
@@ -73,7 +75,7 @@ namespace ChinhChien.Forms_NhanVien
             this.pnlChonMon.Location = new System.Drawing.Point(0, 49);
             this.pnlChonMon.Margin = new System.Windows.Forms.Padding(4);
             this.pnlChonMon.Name = "pnlChonMon";
-            this.pnlChonMon.Size = new System.Drawing.Size(743, 984);
+            this.pnlChonMon.Size = new System.Drawing.Size(743, 590);
             this.pnlChonMon.TabIndex = 3;
             // 
             // lvSanPhamTheoLoai
@@ -90,7 +92,7 @@ namespace ChinhChien.Forms_NhanVien
             this.lvSanPhamTheoLoai.Location = new System.Drawing.Point(267, 0);
             this.lvSanPhamTheoLoai.Margin = new System.Windows.Forms.Padding(4);
             this.lvSanPhamTheoLoai.Name = "lvSanPhamTheoLoai";
-            this.lvSanPhamTheoLoai.Size = new System.Drawing.Size(476, 984);
+            this.lvSanPhamTheoLoai.Size = new System.Drawing.Size(476, 590);
             this.lvSanPhamTheoLoai.TabIndex = 1;
             this.lvSanPhamTheoLoai.UseCompatibleStateImageBehavior = false;
             this.lvSanPhamTheoLoai.View = System.Windows.Forms.View.Details;
@@ -117,7 +119,7 @@ namespace ChinhChien.Forms_NhanVien
             this.fpnlLoai.Location = new System.Drawing.Point(0, 0);
             this.fpnlLoai.Margin = new System.Windows.Forms.Padding(4);
             this.fpnlLoai.Name = "fpnlLoai";
-            this.fpnlLoai.Size = new System.Drawing.Size(267, 984);
+            this.fpnlLoai.Size = new System.Drawing.Size(267, 590);
             this.fpnlLoai.TabIndex = 0;
             // 
             // btnTypeTraSua
@@ -210,21 +212,22 @@ namespace ChinhChien.Forms_NhanVien
             this.pnlHoaDon.Location = new System.Drawing.Point(743, 0);
             this.pnlHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlHoaDon.Name = "pnlHoaDon";
-            this.pnlHoaDon.Size = new System.Drawing.Size(1089, 1033);
+            this.pnlHoaDon.Size = new System.Drawing.Size(793, 639);
             this.pnlHoaDon.TabIndex = 1;
             // 
             // lblThongBao
             // 
-            this.lblThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblThongBao.AutoSize = true;
+            this.lblThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblThongBao.BackColor = System.Drawing.Color.Transparent;
             this.lblThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThongBao.ForeColor = System.Drawing.Color.Red;
-            this.lblThongBao.Location = new System.Drawing.Point(516, 986);
+            this.lblThongBao.Location = new System.Drawing.Point(7, 592);
             this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(401, 25);
+            this.lblThongBao.Size = new System.Drawing.Size(642, 30);
             this.lblThongBao.TabIndex = 10;
             this.lblThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
+            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblThongBao.Visible = false;
             // 
             // btnThanhTien
@@ -235,7 +238,7 @@ namespace ChinhChien.Forms_NhanVien
             this.btnThanhTien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThanhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThanhTien.ForeColor = System.Drawing.Color.White;
-            this.btnThanhTien.Location = new System.Drawing.Point(952, 967);
+            this.btnThanhTien.Location = new System.Drawing.Point(656, 573);
             this.btnThanhTien.Margin = new System.Windows.Forms.Padding(4);
             this.btnThanhTien.Name = "btnThanhTien";
             this.btnThanhTien.Size = new System.Drawing.Size(133, 62);
@@ -263,7 +266,7 @@ namespace ChinhChien.Forms_NhanVien
             this.lvThongTinHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.lvThongTinHoaDon.MultiSelect = false;
             this.lvThongTinHoaDon.Name = "lvThongTinHoaDon";
-            this.lvThongTinHoaDon.Size = new System.Drawing.Size(1077, 905);
+            this.lvThongTinHoaDon.Size = new System.Drawing.Size(781, 511);
             this.lvThongTinHoaDon.TabIndex = 4;
             this.lvThongTinHoaDon.UseCompatibleStateImageBehavior = false;
             this.lvThongTinHoaDon.View = System.Windows.Forms.View.Details;
@@ -296,16 +299,21 @@ namespace ChinhChien.Forms_NhanVien
             this.labelHoaDon.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHoaDon.Location = new System.Drawing.Point(0, 0);
             this.labelHoaDon.Name = "labelHoaDon";
-            this.labelHoaDon.Size = new System.Drawing.Size(1089, 50);
+            this.labelHoaDon.Size = new System.Drawing.Size(793, 50);
             this.labelHoaDon.TabIndex = 1;
             this.labelHoaDon.Text = "HÓA ĐƠN";
             this.labelHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tmDisableThongBao
+            // 
+            this.tmDisableThongBao.Interval = 2000;
+            this.tmDisableThongBao.Tick += new System.EventHandler(this.tmDisableThongBao_Tick);
             // 
             // TiepNhanDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1832, 1033);
+            this.ClientSize = new System.Drawing.Size(1536, 639);
             this.Controls.Add(this.pnlHoaDon);
             this.Controls.Add(this.pnlMenu);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -315,7 +323,6 @@ namespace ChinhChien.Forms_NhanVien
             this.pnlChonMon.ResumeLayout(false);
             this.fpnlLoai.ResumeLayout(false);
             this.pnlHoaDon.ResumeLayout(false);
-            this.pnlHoaDon.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -340,5 +347,6 @@ namespace ChinhChien.Forms_NhanVien
         private System.Windows.Forms.Button btnThanhTien;
         private System.Windows.Forms.ColumnHeader chTien;
         private System.Windows.Forms.Label lblThongBao;
+        private System.Windows.Forms.Timer tmDisableThongBao;
     }
 }

@@ -24,6 +24,7 @@ namespace ChinhChien.Forms_NhanVien
         string sqlcode;
         string MaHoaDon;
         HoaDonDAO hoaDonDAO = new HoaDonDAO();
+        ThongBao tbao = new ThongBao();
 
         SqlConnection ketnoi;
 
@@ -83,30 +84,43 @@ namespace ChinhChien.Forms_NhanVien
         {
             //NhapCapnhatSoLuong nhapSL = new NhapCapnhatSoLuong();
             //nhapSL.ShowDialog();
-
-            if (!KiemTraSanPhamTonTai(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString()))
+            int i;
+            if (!KiemTraSanPhamTonTai(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString(), out i))
             {
                 //
+                Console.WriteLine(i);
                 lvThongTinHoaDon.Items.Add(lvSanPhamTheoLoai.SelectedItems[0].Text.ToString());
                 lvThongTinHoaDon.Items[lvThongTinHoaDon.Items.Count - 1].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString());
                 int DonGia = int.Parse(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString());
                 lvThongTinHoaDon.Items[lvThongTinHoaDon.Items.Count - 1].SubItems.Add("1");
                 lvThongTinHoaDon.Items[lvThongTinHoaDon.Items.Count - 1].SubItems.Add(DonGia.ToString());
                 lvThongTinHoaDon.Items[lvThongTinHoaDon.Items.Count - 1].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[2].Text.ToString());
+                tbao.Hien(lblThongBao, "Thêm một món thành công");
+                tmDisableThongBao.Start();
+                tmDisableThongBao.Enabled = true;
+
             }
-            
-            lblThongBao.Text = "Thêm một món thành công";
+            else
+            {
+                lvThongTinHoaDon.Items[i].SubItems[0].Text = (int.Parse(lvThongTinHoaDon.Items[i].Text) + 1).ToString();
+                lblThongBao.Text = "Đã cộng dồn số lượng vào món đã tồn tại";
+            }
+
         }
 
-        bool KiemTraSanPhamTonTai(string TenSanPham)
+        bool KiemTraSanPhamTonTai(string TenSanPham, out int i)
         {
             // Nếu có thì cộng số lượng thêm một
             bool KetQua = false;
-            for (int i = 1; i < lvThongTinHoaDon.Items.Count; i++)
+            for (i = 1; i < lvThongTinHoaDon.Items.Count; i++)
             {
                 if (TenSanPham == lvThongTinHoaDon.Items[i].ToString())
                 {
                     KetQua = true;
+                    break;
+                }
+                else
+                {
                     break;
                 }
             }
@@ -137,6 +151,12 @@ namespace ChinhChien.Forms_NhanVien
         private void btnTypeTopping_Click(object sender, EventArgs e)
         {
             HienSanPham("Topping");
+        }
+
+        private void tmDisableThongBao_Tick(object sender, EventArgs e)
+        {
+            lblThongBao.Visible = false;
+            tmDisableThongBao.Stop();
         }
     }
 }
