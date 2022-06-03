@@ -19,8 +19,6 @@ namespace ChinhChien.Forms_NhanVien
         {
             InitializeComponent();
             HienSanPham("Trà sữa");
-            //HienMenu();
-            lblThongBao.Visible = false;
         }
         string chuoiketnoi = Properties.Settings.Default.ChinhChienConnectionString;
         string sqlcode;
@@ -54,7 +52,7 @@ namespace ChinhChien.Forms_NhanVien
         
         int TaoMaHoaDon()
         {
-            // Kiêm Tra Mã Hóa Đơn Mới Nhất, Lấy mã HD đó +1
+            // Kiểm Tra Mã Hóa Đơn Mới Nhất, Lấy mã HD đó +1
             int MaHoaDonMoiNhat = hoaDonDAO.searchRecentMaHoaDon();
             return MaHoaDonMoiNhat + 1;
         }
@@ -85,28 +83,39 @@ namespace ChinhChien.Forms_NhanVien
         {
             lvThongTinHoaDon.Items.Add(lvSanPhamTheoLoai.SelectedItems[0].Text.ToString());
             lvThongTinHoaDon.Items[0].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString());
-            NhapCapnhatSoLuong nhapSL = new NhapCapnhatSoLuong();
-            nhapSL.ShowDialog();
-            int DonGia = int.Parse(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString()) * int.Parse(nhapSL.SoLuong);
-            lvThongTinHoaDon.Items[0].SubItems.Add(nhapSL.SoLuong);
+
+            //NhapCapnhatSoLuong nhapSL = new NhapCapnhatSoLuong();
+            //nhapSL.ShowDialog();
+            if (KiemTraSanPhamTonTai(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString()))
+            {
+                //
+            }
+            int DonGia = int.Parse(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString());
+            lvThongTinHoaDon.Items[0].SubItems.Add("1");
             lvThongTinHoaDon.Items[0].SubItems.Add(DonGia.ToString());
             lvThongTinHoaDon.Items[0].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[2].Text.ToString());
+            
             lblThongBao.Text = "Thêm một món thành công";
         }
 
-        void KiemTraSanPhamTonTai()
+        bool KiemTraSanPhamTonTai(string TenSanPham)
         {
             // Nếu có thì cộng số lượng thêm một
+            bool KetQua = false;
+            for (int i = 1; i < lvThongTinHoaDon.Items.Count; i++)
+            {
+                if (TenSanPham == lvThongTinHoaDon.Items[i].ToString())
+                {
+                    KetQua = true;
+                    break;
+                }
+            }
+            return KetQua;
         }
         
         private void btnTypeCaPhe_Click(object sender, EventArgs e)
         {
             HienSanPham("Cà phê");
-        }
-
-        private void lvSanPhamTheoLoai_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnThanhTien_Click(object sender, EventArgs e)

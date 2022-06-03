@@ -67,7 +67,6 @@ namespace ChinhChien.UI
             ibtnNhanDon.Text = "NHẬN ĐƠN";
             //ibtnThongKe.IconChar = IconChar.Receipt;
 
-            //ibtnVatTu.Text = "KHO HÀNG";
             //ibtn2.IconChar = IconChar.Boxes;
 
             ibtnThucDon.Text = "THỰC ĐƠN";
@@ -77,7 +76,6 @@ namespace ChinhChien.UI
 
             //ibtnNhanDon.IconChar = IconChar.Calendar;
 
-            ibtnNhanSu.Text = "NHÂN SỰ";
             //ibtn2.IconChar = IconChar.PeopleCarry;
 
             ShowQuanInCbbChuyenQuan();

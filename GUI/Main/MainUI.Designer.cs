@@ -149,7 +149,7 @@
             this.ibtnNhanSu.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
             this.ibtnNhanSu.Size = new System.Drawing.Size(349, 100);
             this.ibtnNhanSu.TabIndex = 13;
-            this.ibtnNhanSu.Text = "NHÂN SỰ";
+            this.ibtnNhanSu.Text = "NHÂN VIÊN";
             this.ibtnNhanSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtnNhanSu.UseVisualStyleBackColor = true;
             this.ibtnNhanSu.Click += new System.EventHandler(this.ibtnNhanSu_Click);
@@ -193,7 +193,7 @@
             this.ibtnVatTu.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
             this.ibtnVatTu.Size = new System.Drawing.Size(349, 100);
             this.ibtnVatTu.TabIndex = 10;
-            this.ibtnVatTu.Text = "VẬT TƯ";
+            this.ibtnVatTu.Text = "KHO HÀNG";
             this.ibtnVatTu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtnVatTu.UseVisualStyleBackColor = true;
             this.ibtnVatTu.Click += new System.EventHandler(this.ibtnVatTu_Click);
