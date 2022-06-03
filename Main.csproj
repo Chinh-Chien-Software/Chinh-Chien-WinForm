@@ -145,6 +145,7 @@
     <Compile Include="GUI\formThem\ThemCapnhatThanhPhanSanPham.Designer.cs">
       <DependentUpon>ThemCapnhatThanhPhanSanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ThongBao.cs" />
     <Compile Include="GUI\Main\ChuaCoQuan.cs">
       <SubType>Form</SubType>
     </Compile>
