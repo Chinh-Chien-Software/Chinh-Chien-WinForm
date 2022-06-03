@@ -81,19 +81,19 @@ namespace ChinhChien.Forms_NhanVien
 
         private void lvSanPhamTheoLoai_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            lvThongTinHoaDon.Items.Add(lvSanPhamTheoLoai.SelectedItems[0].Text.ToString());
-            lvThongTinHoaDon.Items[0].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString());
-
             //NhapCapnhatSoLuong nhapSL = new NhapCapnhatSoLuong();
             //nhapSL.ShowDialog();
-            if (KiemTraSanPhamTonTai(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString()))
+
+            if (!KiemTraSanPhamTonTai(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString()))
             {
                 //
+                lvThongTinHoaDon.Items.Add(lvSanPhamTheoLoai.SelectedItems[0].Text.ToString());
+                lvThongTinHoaDon.Items[lvThongTinHoaDon.Items.Count - 1].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString());
+                int DonGia = int.Parse(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString());
+                lvThongTinHoaDon.Items[lvThongTinHoaDon.Items.Count - 1].SubItems.Add("1");
+                lvThongTinHoaDon.Items[lvThongTinHoaDon.Items.Count - 1].SubItems.Add(DonGia.ToString());
+                lvThongTinHoaDon.Items[lvThongTinHoaDon.Items.Count - 1].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[2].Text.ToString());
             }
-            int DonGia = int.Parse(lvSanPhamTheoLoai.SelectedItems[0].SubItems[1].Text.ToString());
-            lvThongTinHoaDon.Items[0].SubItems.Add("1");
-            lvThongTinHoaDon.Items[0].SubItems.Add(DonGia.ToString());
-            lvThongTinHoaDon.Items[0].SubItems.Add(lvSanPhamTheoLoai.SelectedItems[0].SubItems[2].Text.ToString());
             
             lblThongBao.Text = "Thêm một món thành công";
         }
