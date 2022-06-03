@@ -33,22 +33,22 @@ namespace ChinhChien.UI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogIn));
             this.panelBackground = new System.Windows.Forms.Panel();
             this.lblNoAccount = new System.Windows.Forms.Label();
+            this.SignInButton = new ChinhChien.Extra.BlackWhiteButton();
             this.labelThongBao = new System.Windows.Forms.Label();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.lblSignIn = new System.Windows.Forms.Label();
             this.ckBxRememberSignIn = new System.Windows.Forms.CheckBox();
             this.panelUsername = new System.Windows.Forms.Panel();
+            this.tbcUserName = new ChinhChien.Custom.TextBox_Custom();
             this.labelUserName = new System.Windows.Forms.Label();
             this.panelPassword = new System.Windows.Forms.Panel();
             this.iPBxShowHidePasword = new FontAwesome.Sharp.IconPictureBox();
             this.labelPasword = new System.Windows.Forms.Label();
+            this.tbcPassword = new ChinhChien.Custom.TextBox_Custom();
             this.taiKhoanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan();
             this.taiKhoanTableAdapter = new ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter();
             this.niThongBao = new System.Windows.Forms.NotifyIcon(this.components);
-            this.SignInButton = new ChinhChien.Extra.BlackWhiteButton();
-            this.tbcUserName = new ChinhChien.Custom.TextBox_Custom();
-            this.tbcPassword = new ChinhChien.Custom.TextBox_Custom();
             this.panelBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panelUsername.SuspendLayout();
@@ -92,18 +92,41 @@ namespace ChinhChien.UI
             this.lblNoAccount.MouseLeave += new System.EventHandler(this.lblNoAccount_MouseLeave);
             this.lblNoAccount.MouseHover += new System.EventHandler(this.labelNoAccount_MouseHover);
             // 
+            // SignInButton
+            // 
+            this.SignInButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.SignInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.SignInButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
+            this.SignInButton.BorderColor = System.Drawing.Color.Black;
+            this.SignInButton.BorderRadius = 0;
+            this.SignInButton.BorderSize = 0;
+            this.SignInButton.FlatAppearance.BorderSize = 0;
+            this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignInButton.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignInButton.ForeColor = System.Drawing.Color.White;
+            this.SignInButton.Location = new System.Drawing.Point(37, 487);
+            this.SignInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SignInButton.Name = "SignInButton";
+            this.SignInButton.Size = new System.Drawing.Size(361, 150);
+            this.SignInButton.TabIndex = 4;
+            this.SignInButton.Text = "ĐĂNG NHẬP";
+            this.SignInButton.TextColor = System.Drawing.Color.White;
+            this.SignInButton.UseVisualStyleBackColor = false;
+            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
+            this.SignInButton.MouseHover += new System.EventHandler(this.SignInButton_MouseHover);
+            // 
             // labelThongBao
             // 
             this.labelThongBao.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelThongBao.AutoSize = true;
             this.labelThongBao.BackColor = System.Drawing.Color.Transparent;
-            this.labelThongBao.Font = new System.Drawing.Font("Cascadia Code", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThongBao.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThongBao.ForeColor = System.Drawing.Color.Red;
-            this.labelThongBao.Location = new System.Drawing.Point(29, 416);
+            this.labelThongBao.Location = new System.Drawing.Point(3, 419);
             this.labelThongBao.Name = "labelThongBao";
-            this.labelThongBao.Size = new System.Drawing.Size(400, 22);
+            this.labelThongBao.Size = new System.Drawing.Size(435, 22);
             this.labelThongBao.TabIndex = 9;
             this.labelThongBao.Text = "hiện thông báo về mật khẩu và tài khoản";
+            this.labelThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelThongBao.Visible = false;
             this.labelThongBao.Click += new System.EventHandler(this.labelThongBao_Click);
             // 
@@ -165,6 +188,19 @@ namespace ChinhChien.UI
             this.panelUsername.Size = new System.Drawing.Size(438, 91);
             this.panelUsername.TabIndex = 11;
             // 
+            // tbcUserName
+            // 
+            this.tbcUserName.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tbcUserName.ForeColor = System.Drawing.Color.White;
+            this.tbcUserName.Location = new System.Drawing.Point(36, 47);
+            this.tbcUserName.Margin = new System.Windows.Forms.Padding(5);
+            this.tbcUserName.Name = "tbcUserName";
+            this.tbcUserName.PasswordChar = '\0';
+            this.tbcUserName.Size = new System.Drawing.Size(361, 44);
+            this.tbcUserName.TabIndex = 1;
+            this.tbcUserName.Load += new System.EventHandler(this.SignIn_Load);
+            this.tbcUserName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBxPasswordAndUsername_KeyDown);
+            // 
             // labelUserName
             // 
             this.labelUserName.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -221,6 +257,18 @@ namespace ChinhChien.UI
             this.labelPasword.TabIndex = 7;
             this.labelPasword.Text = "Mật khẩu";
             // 
+            // tbcPassword
+            // 
+            this.tbcPassword.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tbcPassword.ForeColor = System.Drawing.Color.White;
+            this.tbcPassword.Location = new System.Drawing.Point(37, 43);
+            this.tbcPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.tbcPassword.Name = "tbcPassword";
+            this.tbcPassword.PasswordChar = '*';
+            this.tbcPassword.Size = new System.Drawing.Size(361, 44);
+            this.tbcPassword.TabIndex = 2;
+            this.tbcPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBxPasswordAndUsername_KeyDown);
+            // 
             // taiKhoanBindingSource
             // 
             this.taiKhoanBindingSource.DataMember = "TaiKhoan";
@@ -242,54 +290,6 @@ namespace ChinhChien.UI
             this.niThongBao.Icon = ((System.Drawing.Icon)(resources.GetObject("niThongBao.Icon")));
             this.niThongBao.Text = "notifyIconThongBao";
             this.niThongBao.Visible = true;
-            // 
-            // SignInButton
-            // 
-            this.SignInButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.SignInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.SignInButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(108)))), ((int)(((byte)(247)))));
-            this.SignInButton.BorderColor = System.Drawing.Color.Black;
-            this.SignInButton.BorderRadius = 0;
-            this.SignInButton.BorderSize = 0;
-            this.SignInButton.FlatAppearance.BorderSize = 0;
-            this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignInButton.Font = new System.Drawing.Font("Cascadia Code", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignInButton.ForeColor = System.Drawing.Color.White;
-            this.SignInButton.Location = new System.Drawing.Point(37, 487);
-            this.SignInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(361, 150);
-            this.SignInButton.TabIndex = 4;
-            this.SignInButton.Text = "ĐĂNG NHẬP";
-            this.SignInButton.TextColor = System.Drawing.Color.White;
-            this.SignInButton.UseVisualStyleBackColor = false;
-            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
-            this.SignInButton.MouseHover += new System.EventHandler(this.SignInButton_MouseHover);
-            // 
-            // tbcUserName
-            // 
-            this.tbcUserName.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.tbcUserName.ForeColor = System.Drawing.Color.White;
-            this.tbcUserName.Location = new System.Drawing.Point(36, 47);
-            this.tbcUserName.Margin = new System.Windows.Forms.Padding(5);
-            this.tbcUserName.Name = "tbcUserName";
-            this.tbcUserName.PasswordChar = '\0';
-            this.tbcUserName.Size = new System.Drawing.Size(361, 44);
-            this.tbcUserName.TabIndex = 1;
-            this.tbcUserName.Load += new System.EventHandler(this.SignIn_Load);
-            this.tbcUserName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBxPasswordAndUsername_KeyDown);
-            // 
-            // tbcPassword
-            // 
-            this.tbcPassword.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.tbcPassword.ForeColor = System.Drawing.Color.White;
-            this.tbcPassword.Location = new System.Drawing.Point(37, 43);
-            this.tbcPassword.Margin = new System.Windows.Forms.Padding(5);
-            this.tbcPassword.Name = "tbcPassword";
-            this.tbcPassword.PasswordChar = '*';
-            this.tbcPassword.Size = new System.Drawing.Size(361, 44);
-            this.tbcPassword.TabIndex = 2;
-            this.tbcPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBxPasswordAndUsername_KeyDown);
             // 
             // frmLogIn
             // 
