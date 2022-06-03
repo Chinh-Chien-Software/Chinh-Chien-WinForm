@@ -30,6 +30,7 @@ namespace ChinhChien.UI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogIn));
             this.panelBackground = new System.Windows.Forms.Panel();
             this.lblNoAccount = new System.Windows.Forms.Label();
             this.labelThongBao = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@ namespace ChinhChien.UI
             this.taiKhoanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan();
             this.taiKhoanTableAdapter = new ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter();
+            this.niThongBao = new System.Windows.Forms.NotifyIcon(this.components);
             this.SignInButton = new ChinhChien.Extra.BlackWhiteButton();
             this.tbcUserName = new ChinhChien.Custom.TextBox_Custom();
             this.tbcPassword = new ChinhChien.Custom.TextBox_Custom();
@@ -233,6 +235,14 @@ namespace ChinhChien.UI
             // 
             this.taiKhoanTableAdapter.ClearBeforeFill = true;
             // 
+            // niThongBao
+            // 
+            this.niThongBao.BalloonTipText = "Đăng nhập thành công";
+            this.niThongBao.BalloonTipTitle = "Thông báo";
+            this.niThongBao.Icon = ((System.Drawing.Icon)(resources.GetObject("niThongBao.Icon")));
+            this.niThongBao.Text = "notifyIconThongBao";
+            this.niThongBao.Visible = true;
+            // 
             // SignInButton
             // 
             this.SignInButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -328,6 +338,7 @@ namespace ChinhChien.UI
         private FontAwesome.Sharp.IconPictureBox iPBxShowHidePasword;
         private Custom.TextBox_Custom tbcUserName;
         private Custom.TextBox_Custom tbcPassword;
+        private System.Windows.Forms.NotifyIcon niThongBao;
     }
 }
 

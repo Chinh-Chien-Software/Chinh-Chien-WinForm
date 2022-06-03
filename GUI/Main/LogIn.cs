@@ -101,7 +101,7 @@ namespace ChinhChien.UI
                 // Mở quán tìm thấy đầu tiên
                 MainUI.MaQuan = dt.Rows[0]["MaQuan"].ToString();
                 MainUI.TenQuan = dt.Rows[0]["TenQuan"].ToString();
-                
+                niThongBao.ShowBalloonTip(2000);
                 this.Hide();
                 MainUI.Show();
             }
