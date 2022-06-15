@@ -13,17 +13,25 @@ namespace ChinhChien.Database
         static SqlConnection con = new SqlConnection(connString);
         static SqlCommand cmd;
         
-        public static bool CheckLocalDatabase()
+        public static bool CheckLocalDatabase(out string Exception)
         {
             // Tìm thử xem có tài khoản nào chuquan nào không..
             var sql = "select count(*) from TaiKhoan";
-
-            con.Open();
-            cmd = new SqlCommand(sql, con);
-            int i = Convert.ToInt32(cmd.ExecuteScalar());
-            con.Close();
-
-            return (i > 0);
+            int i;
+            try
+            {
+                con.Open();
+                cmd = new SqlCommand(sql, con);
+                i = Convert.ToInt32(cmd.ExecuteScalar());
+                con.Close();
+                Exception = "";
+                return (i > 0);
+            }
+            catch (System.Data.SqlClient.SqlException e)
+            {
+                Exception = e.Message;
+                return false;
+            }
         }
         public static void CreateLocalDatabase()
         {

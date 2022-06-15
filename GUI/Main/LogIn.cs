@@ -192,9 +192,10 @@ namespace ChinhChien.UI
             // #91 - Đọc file
 
             // Console.WriteLine(System.IO.File.ReadLines(pathString));
-            
+
             // Kiểm Tra Database
-            if (Database.WorkingDatabase.CheckLocalDatabase())
+            string Exception;
+            if (Database.WorkingDatabase.CheckLocalDatabase(out Exception))
             {
                 conn = new SqlConnection(connStr);
 
@@ -213,7 +214,7 @@ namespace ChinhChien.UI
             }
             else
             {
-                MessageBox.Show("Không có Database hoặc Dữ liệu bé ơi", "Oh My God", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Không có Database hoặc Dữ liệu bé ơi \n" + Exception, "Oh My God", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
