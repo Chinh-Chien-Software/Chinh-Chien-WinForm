@@ -1,8 +1,0 @@
-[submodule "Database SQL"]
-	path = Database-SQL
-	url = https://github.com/Chinh-Chien-Software/Chinh-Chien-Database-SQL.git
-	branch = main
-[submodule "Diagrams"]
-	path = Diagrams
-	url = https://github.com/Chinh-Chien-Software/Chinh-Chien-Database-Diagram.git
-	branch = main
