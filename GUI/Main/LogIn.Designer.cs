@@ -49,6 +49,7 @@ namespace ChinhChien.UI
             this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan();
             this.taiKhoanTableAdapter = new ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter();
             this.niThongBao = new System.Windows.Forms.NotifyIcon(this.components);
+            this.cbbIsLocalDB = new System.Windows.Forms.ComboBox();
             this.panelBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panelUsername.SuspendLayout();
@@ -60,6 +61,7 @@ namespace ChinhChien.UI
             // 
             // panelBackground
             // 
+            this.panelBackground.Controls.Add(this.cbbIsLocalDB);
             this.panelBackground.Controls.Add(this.lblNoAccount);
             this.panelBackground.Controls.Add(this.SignInButton);
             this.panelBackground.Controls.Add(this.labelThongBao);
@@ -149,11 +151,10 @@ namespace ChinhChien.UI
             // lblSignIn
             // 
             this.lblSignIn.BackColor = System.Drawing.Color.Transparent;
-            this.lblSignIn.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblSignIn.Font = new System.Drawing.Font("Cascadia Code", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignIn.Location = new System.Drawing.Point(0, 0);
+            this.lblSignIn.Location = new System.Drawing.Point(0, 54);
             this.lblSignIn.Name = "lblSignIn";
-            this.lblSignIn.Size = new System.Drawing.Size(441, 155);
+            this.lblSignIn.Size = new System.Drawing.Size(441, 101);
             this.lblSignIn.TabIndex = 3;
             this.lblSignIn.Text = "Đăng nhập";
             this.lblSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -290,6 +291,17 @@ namespace ChinhChien.UI
             this.niThongBao.Text = "notifyIconThongBao";
             this.niThongBao.Visible = true;
             // 
+            // cbbIsLocalDB
+            // 
+            this.cbbIsLocalDB.FormattingEnabled = true;
+            this.cbbIsLocalDB.Items.AddRange(new object[] {
+            "Local Database",
+            "Online Database"});
+            this.cbbIsLocalDB.Location = new System.Drawing.Point(7, 3);
+            this.cbbIsLocalDB.Name = "cbbIsLocalDB";
+            this.cbbIsLocalDB.Size = new System.Drawing.Size(193, 24);
+            this.cbbIsLocalDB.TabIndex = 14;
+            // 
             // frmLogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -338,6 +350,7 @@ namespace ChinhChien.UI
         private Custom.TextBox_Custom tbcUserName;
         private Custom.TextBox_Custom tbcPassword;
         private System.Windows.Forms.NotifyIcon niThongBao;
+        private System.Windows.Forms.ComboBox cbbIsLocalDB;
     }
 }
 
