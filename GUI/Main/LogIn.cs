@@ -14,7 +14,7 @@ using System.Data.SqlClient;
 using ChinhChien.DAL_DAO;
 using ChinhChien.UI;
 using System.IO;
-using System.Runtime.InteropServices;
+//using System.Runtime.InteropServices;
 
 
 namespace ChinhChien.UI
@@ -51,9 +51,6 @@ namespace ChinhChien.UI
         {
             InitializeComponent();
             this.ActiveControl = tbcUserName; // Dòng này để làm gì ?? - Focus vào tbcUserName khi mở
-
-            // Cho cửa sổ có kích thước vừa đẹp với màn hình làm việc
-            //this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
         }
 
         private void CheckUserPassAndSignIn()
