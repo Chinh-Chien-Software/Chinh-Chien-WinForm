@@ -169,7 +169,7 @@
       <DependentUpon>TextBox_Custom.cs</DependentUpon>
     </Compile>
     <Compile Include="DAL-DAO\CapNhatDAL.cs" />
-    <Compile Include="DAL-DAO\ThemDAL.cs" />
+    <Compile Include="DAL-DAO\ThemDAO.cs" />
     <Compile Include="DAL-DAO\WorkingDatabase.cs" />
     <Compile Include="DAL-DAO\DataProvider.cs" />
     <Compile Include="DAL-DAO\XoaDAL.cs" />
