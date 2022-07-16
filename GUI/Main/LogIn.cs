@@ -186,11 +186,16 @@ namespace ChinhChien.UI
 
         private void SignIn_Load(object sender, EventArgs e)
         {
-            // #91 - Đọc file
+            
 
-            // Console.WriteLine(System.IO.File.ReadLines(pathString));
+            
 
             // Kiểm Tra Database
+            //CheckDatabase();
+        }
+
+        void CheckDatabase()
+        {
             string Exception;
             if (Database.WorkingDatabase.CheckLocalDatabase(out Exception))
             {
