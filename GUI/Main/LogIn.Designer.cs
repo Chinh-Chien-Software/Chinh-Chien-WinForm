@@ -32,6 +32,7 @@ namespace ChinhChien.UI
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogIn));
             this.panelBackground = new System.Windows.Forms.Panel();
+            this.cbbIsLocalDB = new System.Windows.Forms.ComboBox();
             this.lblNoAccount = new System.Windows.Forms.Label();
             this.SignInButton = new ChinhChien.Extra.BlackWhiteButton();
             this.labelThongBao = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@ namespace ChinhChien.UI
             this.quanLyQuanTraSuaDataSetTaiKhoan = new ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoan();
             this.taiKhoanTableAdapter = new ChinhChien.DataSets.QuanLyQuanTraSuaDataSetTaiKhoanTableAdapters.TaiKhoanTableAdapter();
             this.niThongBao = new System.Windows.Forms.NotifyIcon(this.components);
-            this.cbbIsLocalDB = new System.Windows.Forms.ComboBox();
             this.panelBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panelUsername.SuspendLayout();
@@ -76,6 +76,18 @@ namespace ChinhChien.UI
             this.panelBackground.Name = "panelBackground";
             this.panelBackground.Size = new System.Drawing.Size(441, 716);
             this.panelBackground.TabIndex = 10;
+            // 
+            // cbbIsLocalDB
+            // 
+            this.cbbIsLocalDB.FormattingEnabled = true;
+            this.cbbIsLocalDB.Items.AddRange(new object[] {
+            "Local Database",
+            "Online Database"});
+            this.cbbIsLocalDB.Location = new System.Drawing.Point(7, 3);
+            this.cbbIsLocalDB.Name = "cbbIsLocalDB";
+            this.cbbIsLocalDB.Size = new System.Drawing.Size(193, 24);
+            this.cbbIsLocalDB.TabIndex = 14;
+            this.cbbIsLocalDB.SelectedIndexChanged += new System.EventHandler(this.cbbIsLocalDB_SelectedIndexChanged);
             // 
             // lblNoAccount
             // 
@@ -290,17 +302,6 @@ namespace ChinhChien.UI
             this.niThongBao.Icon = ((System.Drawing.Icon)(resources.GetObject("niThongBao.Icon")));
             this.niThongBao.Text = "notifyIconThongBao";
             this.niThongBao.Visible = true;
-            // 
-            // cbbIsLocalDB
-            // 
-            this.cbbIsLocalDB.FormattingEnabled = true;
-            this.cbbIsLocalDB.Items.AddRange(new object[] {
-            "Local Database",
-            "Online Database"});
-            this.cbbIsLocalDB.Location = new System.Drawing.Point(7, 3);
-            this.cbbIsLocalDB.Name = "cbbIsLocalDB";
-            this.cbbIsLocalDB.Size = new System.Drawing.Size(193, 24);
-            this.cbbIsLocalDB.TabIndex = 14;
             // 
             // frmLogIn
             // 

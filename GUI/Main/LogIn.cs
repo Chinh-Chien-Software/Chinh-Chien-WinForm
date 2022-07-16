@@ -186,7 +186,7 @@ namespace ChinhChien.UI
 
         private void SignIn_Load(object sender, EventArgs e)
         {
-            
+            // Không nên làm gì hết
 
             
 
@@ -299,6 +299,19 @@ namespace ChinhChien.UI
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        void CreateDB()
+        {
+
+        }
+
+        private void cbbIsLocalDB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbbIsLocalDB.SelectedIndex == 0)
+            {
+                CreateDB();
+            }
         }
     }
 }
