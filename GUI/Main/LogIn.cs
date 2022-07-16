@@ -50,7 +50,7 @@ namespace ChinhChien.UI
         public frmLogIn()
         {
             InitializeComponent();
-            this.ActiveControl = tbcUserName; // Dòng này để làm gì ?? - Focus vào tbcUserName khi mở
+            this.ActiveControl = tbcUserName; // Dòng này để làm gì ?? : Focus vào tbcUserName khi mở
         }
 
         private void CheckUserPassAndSignIn()

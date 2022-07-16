@@ -74,7 +74,6 @@ namespace ChinhChien.UI
             this.panelBackground.Name = "panelBackground";
             this.panelBackground.Size = new System.Drawing.Size(441, 716);
             this.panelBackground.TabIndex = 10;
-            this.panelBackground.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBackground_Paint);
             // 
             // lblNoAccount
             // 
