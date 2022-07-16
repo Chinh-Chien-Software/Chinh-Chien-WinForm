@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace ChinhChien.DAL_DAO
 {
-    public class ThemDAL
+    public class ThemDAO
     {
         static string connString = Properties.Settings.Default.ChinhChienConnectionString;
         static SqlConnection con = new SqlConnection(connString);
